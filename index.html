@@ -3,43 +3,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Site</title>
+  <title>Sam Barth</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       background: #0a0a0a;
       color: #f0f0f0;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
     }
-    h1 { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; }
-    h1 span { color: #7c6af7; }
-    p { color: #888; max-width: 400px; text-align: center; line-height: 1.6; }
-    a {
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1a1a1a;
+      max-width: 760px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .logo { font-weight: 700; font-size: 1.05rem; }
+    nav a {
+      color: #666;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.875rem;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: #f0f0f0; }
+
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4.5rem 2rem 3rem;
+    }
+    .hero-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #7c6af7;
+      margin-bottom: 1.1rem;
+    }
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .tagline {
+      font-size: 1rem;
+      color: #777;
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 2rem;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
       display: inline-block;
-      margin-top: 0.5rem;
       padding: 0.6rem 1.4rem;
       background: #7c6af7;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.875rem;
       transition: opacity 0.15s;
     }
-    a:hover { opacity: 0.85; }
-    .updated { font-size: 0.75rem; color: #555; margin-top: 0.5rem; }
+    .btn:hover { opacity: 0.85; }
+    .btn-ghost {
+      background: transparent;
+      color: #777;
+      border: 1px solid #252525;
+    }
+    .btn-ghost:hover { color: #f0f0f0; border-color: #444; opacity: 1; }
+
+    .posts {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+    }
+    .section-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #444;
+      margin-bottom: 1.25rem;
+    }
+    .post-grid { display: grid; gap: 0.75rem; }
+    .post-card {
+      background: #111;
+      border: 1px solid #1c1c1c;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      text-align: left;
+    }
+    .post-card:hover { border-color: #7c6af7; background: #131313; }
+    .post-date {
+      font-size: 0.68rem;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+    .post-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .post-excerpt { font-size: 0.82rem; color: #666; line-height: 1.55; }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: #111;
+      border: 1px solid #252525;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 580px;
+      width: 100%;
+      max-height: 82vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      color: #444;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: color 0.15s;
+    }
+    .modal-close:hover { color: #f0f0f0; }
+    .modal-date {
+      font-size: 0.68rem;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.75rem;
+    }
+    .modal-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+    .modal-body { font-size: 0.875rem; color: #999; line-height: 1.8; }
+    .modal-body p { margin-bottom: 1rem; }
+    .modal-body p:last-child { margin-bottom: 0; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      color: #2a2a2a;
+      font-size: 0.7rem;
+      border-top: 1px solid #141414;
+    }
   </style>
 </head>
 <body>
-  <h1>Built with <span>AI</span></h1>
-  <p>Tools and workflows powered by artificial intelligence.</p>
-  <a href="mailto:samcbarth@gmail.com">Get in touch</a>
-  <p class="updated">Last updated: DEPLOY_TIME</p>
+
+<header>
+  <div class="logo">Sam Barth</div>
+  <nav>
+    <a href="https://linkedin.com/in/samcbarth" target="_blank">LinkedIn</a>
+    <a href="mailto:samcbarth@gmail.com">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-label">Revenue Operations &middot; AI</div>
+  <h1>Building at the intersection of AI and business.</h1>
+  <p class="tagline">Revenue Operations professional exploring how AI tools and workflows can change the way teams work, ship, and grow.</p>
+  <div class="cta-row">
+    <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank">LinkedIn</a>
+    <a href="mailto:samcbarth@gmail.com" class="btn btn-ghost">Get in touch</a>
+  </div>
+</section>
+
+<section class="posts">
+  <div class="section-label">Latest Updates</div>
+  <div class="post-grid">
+
+    <div class="post-card" onclick="openPost('post1')">
+      <div class="post-date">May 28, 2026</div>
+      <div class="post-title">Why RevOps teams should care about AI agents</div>
+      <div class="post-excerpt">AI agents aren't just for engineers. Here's how I'm thinking about the opportunity for revenue operations.</div>
+    </div>
+
+    <div class="post-card" onclick="openPost('post2')">
+      <div class="post-date">May 20, 2026</div>
+      <div class="post-title">Site is live — built and deployed with AI</div>
+      <div class="post-excerpt">Built this entire site using Claude Code, pushed it to GitHub Pages in under an hour. A quick look at the workflow.</div>
+    </div>
+
+    <div class="post-card" onclick="openPost('post3')">
+      <div class="post-date">May 15, 2026</div>
+      <div class="post-title">The fastest way to ship internal tools in 2026</div>
+      <div class="post-excerpt">AI-assisted development has changed what's possible for non-engineers. Here are the tools and patterns I'm using.</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-date" id="modal-date"></div>
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<footer>Last updated: DEPLOY_TIME</footer>
+
+<script>
+const posts = {
+  post1: {
+    date: 'May 28, 2026',
+    title: 'Why RevOps teams should care about AI agents',
+    body: `
+      <p>Revenue Operations sits at the center of the data, systems, and processes that drive a business forward. That makes it one of the best places to deploy AI agents — and one of the most underexplored.</p>
+      <p>Most of the conversation around AI agents has been in engineering and product. But agents that can pull CRM data, surface pipeline risks, and trigger workflows? That's RevOps territory.</p>
+      <p>I'm experimenting with agents for forecasting accuracy, handoff automation, and territory planning. More to come.</p>
+    `
+  },
+  post2: {
+    date: 'May 20, 2026',
+    title: 'Site is live — built and deployed with AI',
+    body: `
+      <p>I built and shipped this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow — all of it.</p>
+      <p>The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no Stack Overflow rabbit holes.</p>
+      <p>This is what I mean when I talk about AI changing the pace of building. It's not replacing engineers — it's giving everyone else a seat at the table.</p>
+    `
+  },
+  post3: {
+    date: 'May 15, 2026',
+    title: 'The fastest way to ship internal tools in 2026',
+    body: `
+      <p>A year ago, building an internal dashboard or automation tool required engineering bandwidth. Today it doesn't — not if you're willing to work with AI.</p>
+      <p>The stack I keep coming back to: Claude Code for the build, GitHub for version control, and simple targets like GitHub Pages or Vercel. Fast feedback loops, no infra headaches.</p>
+      <p>The bottleneck is no longer writing code. It's knowing what to build and why. That's a much better problem to have.</p>
+    `
+  }
+};
+
+function openPost(id) {
+  const p = posts[id];
+  document.getElementById('modal-date').textContent = p.date;
+  document.getElementById('modal-title').textContent = p.title;
+  document.getElementById('modal-body').innerHTML = p.body;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeOnBackdrop(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+
 </body>
 </html>
