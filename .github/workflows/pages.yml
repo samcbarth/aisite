@@ -23,6 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Inject deploy timestamp
+        run: |
+          TIMESTAMP=$(date -u '+%B %-d, %Y at %H:%M UTC')
+          sed -i "s/DEPLOY_TIME/$TIMESTAMP/" index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
