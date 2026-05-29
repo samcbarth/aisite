@@ -168,9 +168,9 @@
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
-      color: #2a2a2a;
-      font-size: 0.7rem;
-      border-top: 1px solid #141414;
+      color: #555;
+      font-size: 0.75rem;
+      border-top: 1px solid #1a1a1a;
     }
   </style>
 </head>
@@ -197,6 +197,12 @@
 <section class="posts">
   <div class="section-label">Latest Updates</div>
   <div class="post-grid">
+
+    <div class="post-card" onclick="openPost('post4')">
+      <div class="post-date">May 29, 2026</div>
+      <div class="post-title">HubSpot vs. Salesforce: two very different bets on AI agents</div>
+      <div class="post-excerpt">Salesforce led with job cuts. HubSpot is leaning into the data it already has. That difference in approach matters more than most people realize.</div>
+    </div>
 
     <div class="post-card" onclick="openPost('post1')">
       <div class="post-date">May 27, 2026</div>
@@ -232,6 +238,15 @@
 
 <script>
 const posts = {
+  post4: {
+    date: 'May 29, 2026',
+    title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
+    body: `
+      <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
+      <p>HubSpot is taking a different approach. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
+      <p>That distinction matters. One model treats AI as a replacement. The other treats it as an upgrade to the system your team already runs on. For most SMBs and mid-market companies, HubSpot's version is the one that actually makes sense.</p>
+    `
+  },
   post1: {
     date: 'May 27, 2026',
     title: 'HubSpot\'s AI push is a signal every RevOps team should read',
