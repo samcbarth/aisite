@@ -167,6 +167,20 @@
     .modal-body { font-size: 0.875rem; color: #999; line-height: 1.8; }
     .modal-body p { margin-bottom: 1rem; }
     .modal-body p:last-child { margin-bottom: 0; }
+    .copy-btn {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1.1rem;
+      background: transparent;
+      border: 1px solid #2a2a2a;
+      color: #666;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .copy-btn:hover { border-color: #555; color: #f0f0f0; }
+    .copy-btn.copied { border-color: #7c6af7; color: #7c6af7; }
 
     footer {
       text-align: center;
@@ -234,6 +248,7 @@
     <div class="modal-date" id="modal-date"></div>
     <div class="modal-title" id="modal-title"></div>
     <div class="modal-body" id="modal-body"></div>
+    <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
   </div>
 </div>
 
@@ -295,6 +310,18 @@ function closeModal() {
 
 function closeOnBackdrop(e) {
   if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+function copyPost() {
+  const title = document.getElementById('modal-title').textContent;
+  const body = document.getElementById('modal-body').innerText;
+  const text = title + '\n\n' + body.trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy to clipboard'; btn.classList.remove('copied'); }, 2000);
+  });
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
