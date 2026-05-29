@@ -351,6 +351,88 @@
     .nav-btn:hover:not(:disabled) { border-color: var(--purple); color: #fff; }
     .nav-btn:disabled { opacity: 0.2; cursor: not-allowed; }
 
+    /* Featured post */
+    .featured-section { margin-bottom: 1.25rem; }
+    .featured-card {
+      background: #0f0f0f;
+      border: 1px solid var(--purple-dim);
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+      text-align: left;
+    }
+    .featured-card:hover {
+      border-color: var(--purple);
+      box-shadow: 0 0 24px rgba(124,106,247,0.15);
+    }
+    .featured-img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      background: #1a1a1a;
+    }
+    .featured-body { padding: 1.25rem 1.5rem 1.5rem; }
+    .featured-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--purple);
+      background: var(--purple-dim);
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+    .featured-meta-row { font-size: 0.68rem; color: #555; margin-bottom: 0.5rem; }
+    .featured-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .featured-excerpt { font-size: 0.84rem; color: #fff; opacity: 0.55; line-height: 1.6; }
+
+    /* Reading progress bar */
+    .modal-progress-bar {
+      position: sticky;
+      top: 0;
+      height: 2px;
+      background: var(--purple);
+      width: 0%;
+      z-index: 10;
+      border-radius: 0 2px 2px 0;
+    }
+
+    /* Related posts */
+    .related-posts { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid #1a1a1a; }
+    .related-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #444;
+      margin-bottom: 0.75rem;
+    }
+    .related-grid { display: grid; gap: 0.5rem; }
+    .related-card {
+      background: #0a0a0a;
+      border: 1px solid #1a1a1a;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      text-align: left;
+      width: 100%;
+      font-family: inherit;
+    }
+    .related-card:hover { border-color: var(--purple); background: #111; }
+    .related-card-meta { display: flex; gap: 0.4rem; align-items: center; margin-bottom: 0.3rem; flex-wrap: wrap; }
+    .related-card-title { font-size: 0.82rem; font-weight: 600; color: #fff; line-height: 1.3; }
+
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
@@ -410,6 +492,7 @@
     <input class="search-input" id="search-input" type="text" placeholder="Search posts...">
   </div>
   <div class="filter-bar" id="filter-bar"></div>
+  <div id="featured-section" class="featured-section"></div>
   <div class="post-grid">
 
     <div class="post-card" data-id="post6" onclick="openPost('post6')">
@@ -502,6 +585,7 @@
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
   <div class="modal" id="modal">
+    <div class="modal-progress-bar" id="modal-progress"></div>
     <img class="modal-hero" id="modal-hero" src="" alt="">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">✕</button>
@@ -523,6 +607,7 @@
         <button class="nav-btn" id="prev-btn" onclick="navigatePost(-1)">&#8592; Prev</button>
         <button class="nav-btn" id="next-btn" onclick="navigatePost(1)">Next &#8594;</button>
       </div>
+      <div class="related-posts" id="related-posts"></div>
     </div>
   </div>
 </div>
@@ -532,6 +617,7 @@
 <script>
 const posts = {
   post6: {
+    featured: true,
     date: 'May 29, 2026',
     title: 'Where AI actually falls apart',
     category: 'AI & Automation',
@@ -665,7 +751,47 @@ function applyFilters() {
   document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
 }
 
+function renderFeatured() {
+  const featuredId = postOrder.find(id => posts[id].featured);
+  const section = document.getElementById('featured-section');
+  if (!featuredId || !section) return;
+  const p = posts[featuredId];
+  const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
+  const imgSrc = p.image.replace('w=1160&h=440', 'w=760&h=190');
+  section.innerHTML = `<button class="featured-card" onclick="openPost('${featuredId}')">
+    <img class="featured-img" src="${imgSrc}" alt="${p.title}" loading="lazy">
+    <div class="featured-body">
+      <span class="featured-badge">Featured</span>
+      <div class="featured-meta-row">${p.date} &middot; ${p.category} &middot; ${readingTime(p.body)} min read</div>
+      <div class="featured-title">${p.title}</div>
+      <div class="featured-excerpt">${excerpt}</div>
+    </div>
+  </button>`;
+}
+
+function renderRelated(id) {
+  const p = posts[id];
+  const container = document.getElementById('related-posts');
+  const related = postOrder
+    .filter(pid => pid !== id)
+    .filter(pid => posts[pid].category === p.category || posts[pid].tag === p.tag)
+    .slice(0, 2);
+  if (related.length === 0) { container.innerHTML = ''; return; }
+  container.innerHTML = `<div class="related-label">More like this</div>
+    <div class="related-grid">${related.map(pid => {
+      const rp = posts[pid];
+      return `<button class="related-card" onclick="openPost('${pid}')">
+        <div class="related-card-meta">
+          <span class="post-category" style="font-size:0.6rem;padding:0.1rem 0.4rem">${rp.category}</span>
+          <span class="post-read-time">${readingTime(rp.body)} min read</span>
+        </div>
+        <div class="related-card-title">${rp.title}</div>
+      </button>`;
+    }).join('')}</div>`;
+}
+
 function initCards() {
+  renderFeatured();
   postOrder.forEach(id => {
     const card = document.querySelector(`[data-id="${id}"]`);
     if (!card) return;
@@ -678,6 +804,11 @@ function initCards() {
   document.getElementById('search-input').addEventListener('input', function () {
     searchQuery = this.value.toLowerCase().trim();
     applyFilters();
+  });
+
+  document.getElementById('modal').addEventListener('scroll', function () {
+    const pct = this.scrollTop / (this.scrollHeight - this.clientHeight) * 100;
+    document.getElementById('modal-progress').style.width = Math.min(100, pct || 0) + '%';
   });
 }
 
@@ -703,6 +834,8 @@ function openPost(id) {
   btn.textContent = 'Copy to clipboard';
   btn.classList.remove('copied');
 
+  document.getElementById('modal-progress').style.width = '0%';
+  renderRelated(id);
   document.getElementById('modal').scrollTop = 0;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
