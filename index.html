@@ -186,7 +186,7 @@
       line-height: 1.25;
       margin-bottom: 1.25rem;
     }
-    .modal-body { font-size: 0.875rem; color: #999; line-height: 1.8; }
+    .modal-body { font-size: 0.875rem; color: #e8e8e8; line-height: 1.8; }
     .modal-body p { margin-bottom: 1rem; }
     .modal-body p:last-child { margin-bottom: 0; }
     .copy-btn {
@@ -258,6 +258,15 @@
   <div class="section-label">Latest Updates</div>
   <div class="post-grid">
 
+    <div class="post-card" onclick="openPost('post5')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 29, 2026</div>
+        <div class="post-title">The shift from "AI tools" to AI with actual business context</div>
+        <div class="post-excerpt">HubSpot's Spring Spotlight updates feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</div>
+      </div>
+    </div>
+
     <div class="post-card" onclick="openPost('post4')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
@@ -314,6 +323,18 @@
 
 <script>
 const posts = {
+  post5: {
+    date: 'May 29, 2026',
+    title: 'The shift from "AI tools" to AI with actual business context',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
+      <p>HubSpot's recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
+      <p>The interesting part isn't just automation. It's that the AI can understand customer history, deal movement, support conversations, and business processes all in one place.</p>
+      <p>The companies that organize their CRM and operational data well are probably going to get disproportionately more value from AI over the next few years.</p>
+      <p>Clean systems and good process design are becoming even more important, not less.</p>
+    `
+  },
   post4: {
     date: 'May 29, 2026',
     title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
