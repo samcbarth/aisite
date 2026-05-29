@@ -8,6 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --purple: #7c6af7;
+      --purple-dim: #3d3380;
+      --cyan: #22d3ee;
+      --cyan-dim: #164e5a;
+      --amber: #f59e0b;
+      --amber-dim: #5c3b08;
+      --emerald: #10b981;
+      --emerald-dim: #064e35;
+      --orange: #f97316;
+      --orange-dim: #5c2a08;
+      --pink: #f472b6;
+      --pink-dim: #5c1c40;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
@@ -21,20 +36,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1f1f1f;
       max-width: 760px;
       margin: 0 auto;
       width: 100%;
     }
-    .logo { font-weight: 700; font-size: 1.05rem; }
+    .logo { font-weight: 700; font-size: 1.05rem; color: #fff; }
     nav a {
-      color: #666;
+      color: #888;
       text-decoration: none;
       margin-left: 1.5rem;
       font-size: 0.875rem;
       transition: color 0.15s;
     }
-    nav a:hover { color: #f0f0f0; }
+    nav a:hover { color: #fff; }
 
     .hero {
       max-width: 760px;
@@ -45,7 +60,7 @@
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: #7c6af7;
+      color: var(--purple);
       margin-bottom: 1.1rem;
     }
     h1 {
@@ -54,19 +69,21 @@
       letter-spacing: -0.03em;
       line-height: 1.1;
       margin-bottom: 1rem;
+      color: #fff;
     }
     .tagline {
       font-size: 1rem;
-      color: #777;
+      color: #fff;
       line-height: 1.7;
       max-width: 520px;
       margin-bottom: 2rem;
+      opacity: 0.75;
     }
     .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn {
       display: inline-block;
       padding: 0.6rem 1.4rem;
-      background: #7c6af7;
+      background: var(--purple);
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
@@ -77,10 +94,10 @@
     .btn:hover { opacity: 0.85; }
     .btn-ghost {
       background: transparent;
-      color: #777;
-      border: 1px solid #252525;
+      color: #aaa;
+      border: 1px solid #2a2a2a;
     }
-    .btn-ghost:hover { color: #f0f0f0; border-color: #444; opacity: 1; }
+    .btn-ghost:hover { color: #fff; border-color: #555; opacity: 1; }
 
     .posts {
       max-width: 760px;
@@ -91,23 +108,28 @@
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: #444;
+      color: var(--cyan);
       margin-bottom: 1.25rem;
+      opacity: 0.7;
     }
     .post-grid { display: grid; gap: 0.75rem; }
     .post-card {
-      background: #111;
-      border: 1px solid #1c1c1c;
+      background: #0f0f0f;
+      border: 1px solid #1f1f1f;
       border-radius: 8px;
       padding: 1.1rem 1.25rem;
       cursor: pointer;
-      transition: border-color 0.15s, background 0.15s;
+      transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
       text-align: left;
       display: flex;
       gap: 1rem;
       align-items: flex-start;
     }
-    .post-card:hover { border-color: #7c6af7; background: #131313; }
+    .post-card:hover {
+      border-color: var(--purple);
+      background: #121212;
+      box-shadow: 0 0 18px rgba(124,106,247,0.12);
+    }
     .post-thumb {
       width: 72px;
       height: 72px;
@@ -119,19 +141,18 @@
     .post-content { flex: 1; min-width: 0; }
     .post-date {
       font-size: 0.68rem;
-      color: #444;
+      color: #555;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: 0.4rem;
     }
-    .post-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; }
-    .post-excerpt { font-size: 0.82rem; color: #666; line-height: 1.55; }
+    .post-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; color: #fff; }
+    .post-excerpt { font-size: 0.82rem; color: #fff; line-height: 1.55; opacity: 0.55; }
 
     .modal-overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.85);
       z-index: 100;
       align-items: center;
       justify-content: center;
@@ -139,7 +160,7 @@
     }
     .modal-overlay.open { display: flex; }
     .modal {
-      background: #111;
+      background: #0f0f0f;
       border: 1px solid #252525;
       border-radius: 12px;
       padding: 0;
@@ -165,28 +186,29 @@
       margin: 0.75rem 0.75rem 0 0;
       background: none;
       border: none;
-      color: #444;
+      color: #555;
       font-size: 1.1rem;
       cursor: pointer;
       padding: 0.25rem 0.5rem;
       border-radius: 4px;
       transition: color 0.15s;
     }
-    .modal-close:hover { color: #f0f0f0; }
+    .modal-close:hover { color: #fff; }
     .modal-date {
       font-size: 0.68rem;
-      color: #444;
+      color: #555;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.6rem;
     }
     .modal-title {
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 1.25;
       margin-bottom: 1.25rem;
+      color: #fff;
     }
-    .modal-body { font-size: 0.875rem; color: #e8e8e8; line-height: 1.8; }
+    .modal-body { font-size: 0.875rem; color: #fff; line-height: 1.8; opacity: 0.85; }
     .modal-body p { margin-bottom: 1rem; }
     .modal-body p:last-child { margin-bottom: 0; }
     .copy-btn {
@@ -194,22 +216,23 @@
       padding: 0.5rem 1.1rem;
       background: transparent;
       border: 1px solid #2a2a2a;
-      color: #666;
+      color: #777;
       border-radius: 6px;
       font-family: inherit;
       font-size: 0.8rem;
       cursor: pointer;
       transition: border-color 0.15s, color 0.15s;
     }
-    .copy-btn:hover { border-color: #555; color: #f0f0f0; }
-    .copy-btn.copied { border-color: #7c6af7; color: #7c6af7; }
+    .copy-btn:hover { border-color: var(--purple); color: #fff; }
+    .copy-btn.copied { border-color: var(--purple); color: var(--purple); }
+
     .post-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
     .post-category {
       font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #7c6af7;
-      border: 1px solid #3d3380;
+      color: var(--purple);
+      border: 1px solid var(--purple-dim);
       border-radius: 4px;
       padding: 0.1rem 0.45rem;
       font-weight: 500;
@@ -218,16 +241,25 @@
       font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #555;
-      font-weight: 400;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid;
     }
+    .tag-cyan   { color: var(--cyan);    border-color: var(--cyan-dim);    }
+    .tag-amber  { color: var(--amber);   border-color: var(--amber-dim);   }
+    .tag-emerald{ color: var(--emerald); border-color: var(--emerald-dim); }
+    .tag-orange { color: var(--orange);  border-color: var(--orange-dim);  }
+    .tag-pink   { color: var(--pink);    border-color: var(--pink-dim);    }
+    .tag-purple { color: var(--purple);  border-color: var(--purple-dim);  }
+
     .modal-meta { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
     .modal-category {
       font-size: 0.65rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #7c6af7;
-      border: 1px solid #3d3380;
+      color: var(--purple);
+      border: 1px solid var(--purple-dim);
       border-radius: 4px;
       padding: 0.15rem 0.5rem;
       font-weight: 500;
@@ -236,13 +268,16 @@
       font-size: 0.65rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #555;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      border: 1px solid;
     }
 
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
-      color: #555;
+      color: #444;
       font-size: 0.75rem;
       border-top: 1px solid #1a1a1a;
     }
@@ -296,7 +331,7 @@
     <div class="post-card" onclick="openPost('post6')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag">Signal</span></div>
+        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag tag-cyan">Signal</span></div>
         <div class="post-title">Where AI actually falls apart</div>
         <div class="post-excerpt">Spent the weekend building agentic workflows with Claude. Started to see exactly what people mean when they say AI starts to fall apart.</div>
       </div>
@@ -305,7 +340,7 @@
     <div class="post-card" onclick="openPost('post5')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">CRM Strategy</span><span class="post-tag">Watch this space</span></div>
+        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">CRM Strategy</span><span class="post-tag tag-amber">Watch this space</span></div>
         <div class="post-title">The shift from "AI tools" to AI with actual business context</div>
         <div class="post-excerpt">HubSpot's Spring Spotlight updates feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</div>
       </div>
@@ -314,7 +349,7 @@
     <div class="post-card" onclick="openPost('post4')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">HubSpot</span><span class="post-tag">Worth noting</span></div>
+        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">HubSpot</span><span class="post-tag tag-emerald">Worth noting</span></div>
         <div class="post-title">HubSpot vs. Salesforce: two very different bets on AI agents</div>
         <div class="post-excerpt">Salesforce led with job cuts. HubSpot is leaning into the data it already has. That difference in approach matters more than most people realize.</div>
       </div>
@@ -323,7 +358,7 @@
     <div class="post-card" onclick="openPost('post1')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 27, 2026</span><span class="post-category">RevOps</span><span class="post-tag">On my radar</span></div>
+        <div class="post-meta"><span class="post-date">May 27, 2026</span><span class="post-category">RevOps</span><span class="post-tag tag-orange">On my radar</span></div>
         <div class="post-title">HubSpot's AI push is a signal every RevOps team should read</div>
         <div class="post-excerpt">HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are evolving into operational systems.</div>
       </div>
@@ -332,7 +367,7 @@
     <div class="post-card" onclick="openPost('post2')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 20, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag">In the wild</span></div>
+        <div class="post-meta"><span class="post-date">May 20, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag tag-pink">In the wild</span></div>
         <div class="post-title">Site is live, built and deployed with AI</div>
         <div class="post-excerpt">Built this entire site using Claude Code and pushed it to GitHub Pages in under an hour. Here's what that workflow looks like.</div>
       </div>
@@ -341,7 +376,7 @@
     <div class="post-card" onclick="openPost('post3')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 12, 2026</span><span class="post-category">Marketing Ops</span><span class="post-tag">Timeless</span></div>
+        <div class="post-meta"><span class="post-date">May 12, 2026</span><span class="post-category">Marketing Ops</span><span class="post-tag tag-purple">Timeless</span></div>
         <div class="post-title">What 10 years in marketing ops actually teaches you</div>
         <div class="post-excerpt">Lead gen, attribution, CRM hygiene, reporting. The answer is always the same: good data in, good decisions out.</div>
       </div>
@@ -375,7 +410,7 @@ const posts = {
     date: 'May 29, 2026',
     title: 'Where AI actually falls apart',
     category: 'AI & Automation',
-    tag: 'Signal',
+    tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do.</p>
@@ -391,7 +426,7 @@ const posts = {
     date: 'May 29, 2026',
     title: 'The shift from "AI tools" to AI with actual business context',
     category: 'CRM Strategy',
-    tag: 'Watch this space',
+    tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
@@ -405,7 +440,7 @@ const posts = {
     date: 'May 29, 2026',
     title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
     category: 'HubSpot',
-    tag: 'Worth noting',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
@@ -417,7 +452,7 @@ const posts = {
     date: 'May 27, 2026',
     title: 'HubSpot\'s AI push is a signal every RevOps team should read',
     category: 'RevOps',
-    tag: 'On my radar',
+    tag: 'On my radar', tagClass: 'tag-orange',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
@@ -429,7 +464,7 @@ const posts = {
     date: 'May 20, 2026',
     title: 'Site is live, built and deployed with AI',
     category: 'AI & Automation',
-    tag: 'In the wild',
+    tag: 'In the wild', tagClass: 'tag-pink',
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
@@ -441,7 +476,7 @@ const posts = {
     date: 'May 12, 2026',
     title: 'What 10 years in marketing ops actually teaches you',
     category: 'Marketing Ops',
-    tag: 'Timeless',
+    tag: 'Timeless', tagClass: 'tag-purple',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've spent over 8 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
@@ -457,7 +492,9 @@ function openPost(id) {
   document.getElementById('modal-hero').alt = p.title;
   document.getElementById('modal-date').textContent = p.date;
   document.getElementById('modal-category').textContent = p.category;
-  document.getElementById('modal-tag').textContent = p.tag;
+  const tagEl = document.getElementById('modal-tag');
+  tagEl.textContent = p.tag;
+  tagEl.className = 'modal-tag ' + p.tagClass;
   document.getElementById('modal-title').textContent = p.title;
   document.getElementById('modal-body').innerHTML = p.body;
   document.getElementById('modal').scrollTop = 0;
