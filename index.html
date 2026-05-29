@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Barth</title>
+
+  <!-- Open Graph / SEO -->
+  <meta name="description" content="Sam Barth — HubSpot Strategy & Operations Manager at LAIRE. Writing about RevOps, AI, and CRM strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samcbarth.github.io/aisite/">
+  <meta property="og:title" content="Sam Barth">
+  <meta property="og:description" content="HubSpot Strategy & Operations Manager. Writing about RevOps, AI, and CRM strategy.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sam Barth">
+  <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. Writing about RevOps, AI, and CRM strategy.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -104,14 +117,55 @@
       margin: 0 auto;
       padding: 0 2rem 4rem;
     }
+    .posts-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
     .section-label {
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--cyan);
-      margin-bottom: 1.25rem;
       opacity: 0.7;
     }
+    .post-count { font-size: 0.7rem; color: #444; }
+
+    .search-wrap { margin-bottom: 0.85rem; }
+    .search-input {
+      width: 100%;
+      background: #0f0f0f;
+      border: 1px solid #1f1f1f;
+      border-radius: 6px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.875rem;
+      padding: 0.6rem 1rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-input::placeholder { color: #383838; }
+    .search-input:focus { border-color: var(--purple); }
+
+    .filter-bar { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .filter-chip {
+      background: transparent;
+      border: 1px solid #222;
+      color: #555;
+      border-radius: 20px;
+      padding: 0.2rem 0.7rem;
+      font-family: inherit;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-chip:hover { border-color: #555; color: #ccc; }
+    .filter-chip.active { background: var(--purple); border-color: var(--purple); color: #fff; }
+
     .post-grid { display: grid; gap: 0.75rem; }
     .post-card {
       background: #0f0f0f;
@@ -139,14 +193,38 @@
       background: #1a1a1a;
     }
     .post-content { flex: 1; min-width: 0; }
-    .post-date {
-      font-size: 0.68rem;
-      color: #555;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
+    .post-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
+    .post-date { font-size: 0.68rem; color: #555; text-transform: uppercase; letter-spacing: 0.06em; }
+    .post-read-time { font-size: 0.62rem; color: #383838; }
     .post-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; color: #fff; }
     .post-excerpt { font-size: 0.82rem; color: #fff; line-height: 1.55; opacity: 0.55; }
+    .post-category {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--purple);
+      border: 1px solid var(--purple-dim);
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-weight: 500;
+    }
+    .post-tag {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid;
+    }
+    .tag-cyan   { color: var(--cyan);    border-color: var(--cyan-dim);    }
+    .tag-amber  { color: var(--amber);   border-color: var(--amber-dim);   }
+    .tag-emerald{ color: var(--emerald); border-color: var(--emerald-dim); }
+    .tag-orange { color: var(--orange);  border-color: var(--orange-dim);  }
+    .tag-pink   { color: var(--pink);    border-color: var(--pink-dim);    }
+    .tag-purple { color: var(--purple);  border-color: var(--purple-dim);  }
+
+    .no-results { color: #383838; font-size: 0.85rem; padding: 2.5rem 0; text-align: center; display: none; }
 
     .modal-overlay {
       display: none;
@@ -194,66 +272,20 @@
       transition: color 0.15s;
     }
     .modal-close:hover { color: #fff; }
+    .modal-header-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.6rem;
+    }
     .modal-date {
       font-size: 0.68rem;
       color: #555;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: 0.6rem;
     }
-    .modal-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      line-height: 1.25;
-      margin-bottom: 1.25rem;
-      color: #fff;
-    }
-    .modal-body { font-size: 0.875rem; color: #fff; line-height: 1.8; opacity: 0.85; }
-    .modal-body p { margin-bottom: 1rem; }
-    .modal-body p:last-child { margin-bottom: 0; }
-    .copy-btn {
-      margin-top: 1.5rem;
-      padding: 0.5rem 1.1rem;
-      background: transparent;
-      border: 1px solid #2a2a2a;
-      color: #777;
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .copy-btn:hover { border-color: var(--purple); color: #fff; }
-    .copy-btn.copied { border-color: var(--purple); color: var(--purple); }
-
-    .post-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
-    .post-category {
-      font-size: 0.62rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--purple);
-      border: 1px solid var(--purple-dim);
-      border-radius: 4px;
-      padding: 0.1rem 0.45rem;
-      font-weight: 500;
-    }
-    .post-tag {
-      font-size: 0.62rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 500;
-      border-radius: 4px;
-      padding: 0.1rem 0.45rem;
-      border: 1px solid;
-    }
-    .tag-cyan   { color: var(--cyan);    border-color: var(--cyan-dim);    }
-    .tag-amber  { color: var(--amber);   border-color: var(--amber-dim);   }
-    .tag-emerald{ color: var(--emerald); border-color: var(--emerald-dim); }
-    .tag-orange { color: var(--orange);  border-color: var(--orange-dim);  }
-    .tag-pink   { color: var(--pink);    border-color: var(--pink-dim);    }
-    .tag-purple { color: var(--purple);  border-color: var(--purple-dim);  }
-
-    .modal-meta { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .modal-read-time { font-size: 0.68rem; color: #383838; }
+    .modal-meta { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.9rem; flex-wrap: wrap; }
     .modal-category {
       font-size: 0.65rem;
       text-transform: uppercase;
@@ -273,6 +305,51 @@
       padding: 0.15rem 0.5rem;
       border: 1px solid;
     }
+    .modal-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      color: #fff;
+    }
+    .modal-body { font-size: 0.875rem; color: #fff; line-height: 1.8; opacity: 0.85; }
+    .modal-body p { margin-bottom: 1rem; }
+    .modal-body p:last-child { margin-bottom: 0; }
+    .modal-actions { display: flex; gap: 0.6rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .copy-btn, .share-btn {
+      padding: 0.5rem 1.1rem;
+      background: transparent;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .copy-btn { border: 1px solid #2a2a2a; color: #777; }
+    .copy-btn:hover { border-color: var(--purple); color: #fff; }
+    .copy-btn.copied { border-color: var(--purple); color: var(--purple); }
+    .share-btn { border: 1px solid #1a3a6b; color: #4a90d9; }
+    .share-btn:hover { border-color: #4a90d9; color: #fff; }
+    .modal-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #1a1a1a;
+    }
+    .nav-btn {
+      background: transparent;
+      border: 1px solid #222;
+      color: #555;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.78rem;
+      padding: 0.4rem 0.9rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) { border-color: var(--purple); color: #fff; }
+    .nav-btn:disabled { opacity: 0.2; cursor: not-allowed; }
 
     footer {
       text-align: center;
@@ -325,64 +402,102 @@
 </section>
 
 <section class="posts">
-  <div class="section-label">Latest Updates</div>
+  <div class="posts-header">
+    <span class="section-label">Latest Updates</span>
+    <span class="post-count" id="post-count"></span>
+  </div>
+  <div class="search-wrap">
+    <input class="search-input" id="search-input" type="text" placeholder="Search posts...">
+  </div>
+  <div class="filter-bar" id="filter-bar"></div>
   <div class="post-grid">
 
-    <div class="post-card" onclick="openPost('post6')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post6" onclick="openPost('post6')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag tag-cyan">Signal</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 29, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">AI &amp; Automation</span>
+          <span class="post-tag tag-cyan">Signal</span>
+        </div>
         <div class="post-title">Where AI actually falls apart</div>
         <div class="post-excerpt">Spent the weekend building agentic workflows with Claude. Started to see exactly what people mean when they say AI starts to fall apart.</div>
       </div>
     </div>
 
-    <div class="post-card" onclick="openPost('post5')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post5" onclick="openPost('post5')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">CRM Strategy</span><span class="post-tag tag-amber">Watch this space</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 29, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">CRM Strategy</span>
+          <span class="post-tag tag-amber">Watch this space</span>
+        </div>
         <div class="post-title">The shift from "AI tools" to AI with actual business context</div>
         <div class="post-excerpt">HubSpot's Spring Spotlight updates feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</div>
       </div>
     </div>
 
-    <div class="post-card" onclick="openPost('post4')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post4" onclick="openPost('post4')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 29, 2026</span><span class="post-category">HubSpot</span><span class="post-tag tag-emerald">Worth noting</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 29, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">HubSpot</span>
+          <span class="post-tag tag-emerald">Worth noting</span>
+        </div>
         <div class="post-title">HubSpot vs. Salesforce: two very different bets on AI agents</div>
         <div class="post-excerpt">Salesforce led with job cuts. HubSpot is leaning into the data it already has. That difference in approach matters more than most people realize.</div>
       </div>
     </div>
 
-    <div class="post-card" onclick="openPost('post1')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post1" onclick="openPost('post1')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 27, 2026</span><span class="post-category">RevOps</span><span class="post-tag tag-orange">On my radar</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 27, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">RevOps</span>
+          <span class="post-tag tag-orange">On my radar</span>
+        </div>
         <div class="post-title">HubSpot's AI push is a signal every RevOps team should read</div>
         <div class="post-excerpt">HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are evolving into operational systems.</div>
       </div>
     </div>
 
-    <div class="post-card" onclick="openPost('post2')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post2" onclick="openPost('post2')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 20, 2026</span><span class="post-category">AI &amp; Automation</span><span class="post-tag tag-pink">In the wild</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 20, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">AI &amp; Automation</span>
+          <span class="post-tag tag-pink">In the wild</span>
+        </div>
         <div class="post-title">Site is live, built and deployed with AI</div>
         <div class="post-excerpt">Built this entire site using Claude Code and pushed it to GitHub Pages in under an hour. Here's what that workflow looks like.</div>
       </div>
     </div>
 
-    <div class="post-card" onclick="openPost('post3')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="">
+    <div class="post-card" data-id="post3" onclick="openPost('post3')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
-        <div class="post-meta"><span class="post-date">May 12, 2026</span><span class="post-category">Marketing Ops</span><span class="post-tag tag-purple">Timeless</span></div>
+        <div class="post-meta">
+          <span class="post-date">May 12, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">Marketing Ops</span>
+          <span class="post-tag tag-purple">Timeless</span>
+        </div>
         <div class="post-title">What 10 years in marketing ops actually teaches you</div>
         <div class="post-excerpt">Lead gen, attribution, CRM hygiene, reporting. The answer is always the same: good data in, good decisions out.</div>
       </div>
     </div>
 
   </div>
+  <p class="no-results" id="no-results">No posts match that filter.</p>
 </section>
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
@@ -390,14 +505,24 @@
     <img class="modal-hero" id="modal-hero" src="" alt="">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">✕</button>
-      <div class="modal-date" id="modal-date"></div>
+      <div class="modal-header-row">
+        <span class="modal-date" id="modal-date"></span>
+        <span class="modal-read-time" id="modal-read-time"></span>
+      </div>
       <div class="modal-meta">
         <span class="modal-category" id="modal-category"></span>
         <span class="modal-tag" id="modal-tag"></span>
       </div>
       <div class="modal-title" id="modal-title"></div>
       <div class="modal-body" id="modal-body"></div>
-      <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
+      <div class="modal-actions">
+        <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
+        <button class="share-btn" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
+      </div>
+      <div class="modal-nav">
+        <button class="nav-btn" id="prev-btn" onclick="navigatePost(-1)">&#8592; Prev</button>
+        <button class="nav-btn" id="next-btn" onclick="navigatePost(1)">Next &#8594;</button>
+      </div>
     </div>
   </div>
 </div>
@@ -479,27 +604,114 @@ const posts = {
     tag: 'Timeless', tagClass: 'tag-purple',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I've spent over 8 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
+      <p>I've spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
       <p>The answer is always the same: garbage in, garbage out. The best automation in the world can't fix a dirty database or a broken handoff process.</p>
       <p>Good RevOps starts with clean systems and clear ownership. The tools, the dashboards, the AI, all of it builds on that foundation.</p>
     `
   }
 };
 
+const postOrder = ['post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+let currentPostId = null;
+let activeFilter = null;
+let searchQuery = '';
+
+function readingTime(html) {
+  const text = html.replace(/<[^>]+>/g, ' ');
+  const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+function buildFilters() {
+  const bar = document.getElementById('filter-bar');
+  const categories = [...new Set(postOrder.map(id => posts[id].category))];
+
+  const allChip = document.createElement('button');
+  allChip.className = 'filter-chip active';
+  allChip.textContent = 'All';
+  allChip.onclick = () => setFilter(null);
+  bar.appendChild(allChip);
+
+  categories.forEach(cat => {
+    const chip = document.createElement('button');
+    chip.className = 'filter-chip';
+    chip.textContent = cat;
+    chip.dataset.value = cat;
+    chip.onclick = () => setFilter(cat);
+    bar.appendChild(chip);
+  });
+}
+
+function setFilter(category) {
+  activeFilter = category || null;
+  document.querySelectorAll('.filter-chip').forEach(c => {
+    c.classList.toggle('active', (!category && c.textContent === 'All') || c.dataset.value === category);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  let visible = 0;
+  document.querySelectorAll('.post-card').forEach(card => {
+    const p = posts[card.dataset.id];
+    const matchesCat = !activeFilter || p.category === activeFilter;
+    const matchesSearch = !searchQuery || p.title.toLowerCase().includes(searchQuery) ||
+      p.body.replace(/<[^>]+>/g, '').toLowerCase().includes(searchQuery);
+    const show = matchesCat && matchesSearch;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  document.getElementById('post-count').textContent = visible + ' post' + (visible !== 1 ? 's' : '');
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+}
+
+function initCards() {
+  postOrder.forEach(id => {
+    const card = document.querySelector(`[data-id="${id}"]`);
+    if (!card) return;
+    const mins = readingTime(posts[id].body);
+    card.querySelector('.post-read-time').textContent = mins + ' min read';
+  });
+  buildFilters();
+  applyFilters();
+
+  document.getElementById('search-input').addEventListener('input', function () {
+    searchQuery = this.value.toLowerCase().trim();
+    applyFilters();
+  });
+}
+
 function openPost(id) {
+  currentPostId = id;
   const p = posts[id];
   document.getElementById('modal-hero').src = p.image;
   document.getElementById('modal-hero').alt = p.title;
   document.getElementById('modal-date').textContent = p.date;
+  document.getElementById('modal-read-time').textContent = readingTime(p.body) + ' min read';
   document.getElementById('modal-category').textContent = p.category;
   const tagEl = document.getElementById('modal-tag');
   tagEl.textContent = p.tag;
   tagEl.className = 'modal-tag ' + p.tagClass;
   document.getElementById('modal-title').textContent = p.title;
   document.getElementById('modal-body').innerHTML = p.body;
+
+  const idx = postOrder.indexOf(id);
+  document.getElementById('prev-btn').disabled = idx === 0;
+  document.getElementById('next-btn').disabled = idx === postOrder.length - 1;
+
+  const btn = document.getElementById('copy-btn');
+  btn.textContent = 'Copy to clipboard';
+  btn.classList.remove('copied');
+
   document.getElementById('modal').scrollTop = 0;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+function navigatePost(dir) {
+  const idx = postOrder.indexOf(currentPostId);
+  const next = idx + dir;
+  if (next >= 0 && next < postOrder.length) openPost(postOrder[next]);
 }
 
 function closeModal() {
@@ -514,8 +726,7 @@ function closeOnBackdrop(e) {
 function copyPost() {
   const title = document.getElementById('modal-title').textContent;
   const body = document.getElementById('modal-body').innerText;
-  const text = title + '\n\n' + body.trim();
-  navigator.clipboard.writeText(text).then(() => {
+  navigator.clipboard.writeText(title + '\n\n' + body.trim()).then(() => {
     const btn = document.getElementById('copy-btn');
     btn.textContent = 'Copied!';
     btn.classList.add('copied');
@@ -523,7 +734,19 @@ function copyPost() {
   });
 }
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+function shareOnLinkedIn() {
+  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
+}
+
+document.addEventListener('DOMContentLoaded', initCards);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+  if (document.getElementById('modal-overlay').classList.contains('open')) {
+    if (e.key === 'ArrowLeft') navigatePost(-1);
+    if (e.key === 'ArrowRight') navigatePost(1);
+  }
+});
 </script>
 
 </body>
