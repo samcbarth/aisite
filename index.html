@@ -99,12 +99,24 @@
       background: #111;
       border: 1px solid #1c1c1c;
       border-radius: 8px;
-      padding: 1.25rem 1.5rem;
+      padding: 1.1rem 1.25rem;
       cursor: pointer;
       transition: border-color 0.15s, background 0.15s;
       text-align: left;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
     }
     .post-card:hover { border-color: #7c6af7; background: #131313; }
+    .post-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 6px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #1a1a1a;
+    }
+    .post-content { flex: 1; min-width: 0; }
     .post-date {
       font-size: 0.68rem;
       color: #444;
@@ -130,17 +142,27 @@
       background: #111;
       border: 1px solid #252525;
       border-radius: 12px;
-      padding: 2rem;
+      padding: 0;
       max-width: 580px;
       width: 100%;
       max-height: 82vh;
       overflow-y: auto;
       position: relative;
     }
+    .modal-hero {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+      display: block;
+      background: #1a1a1a;
+    }
+    .modal-content { padding: 1.75rem 2rem 2rem; }
     .modal-close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+      position: sticky;
+      top: 0.75rem;
+      float: right;
+      margin: 0.75rem 0.75rem 0 0;
       background: none;
       border: none;
       color: #444;
@@ -237,27 +259,39 @@
   <div class="post-grid">
 
     <div class="post-card" onclick="openPost('post4')">
-      <div class="post-date">May 29, 2026</div>
-      <div class="post-title">HubSpot vs. Salesforce: two very different bets on AI agents</div>
-      <div class="post-excerpt">Salesforce led with job cuts. HubSpot is leaning into the data it already has. That difference in approach matters more than most people realize.</div>
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 29, 2026</div>
+        <div class="post-title">HubSpot vs. Salesforce: two very different bets on AI agents</div>
+        <div class="post-excerpt">Salesforce led with job cuts. HubSpot is leaning into the data it already has. That difference in approach matters more than most people realize.</div>
+      </div>
     </div>
 
     <div class="post-card" onclick="openPost('post1')">
-      <div class="post-date">May 27, 2026</div>
-      <div class="post-title">HubSpot's AI push is a signal every RevOps team should read</div>
-      <div class="post-excerpt">HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are evolving into operational systems.</div>
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 27, 2026</div>
+        <div class="post-title">HubSpot's AI push is a signal every RevOps team should read</div>
+        <div class="post-excerpt">HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are evolving into operational systems.</div>
+      </div>
     </div>
 
     <div class="post-card" onclick="openPost('post2')">
-      <div class="post-date">May 20, 2026</div>
-      <div class="post-title">Site is live, built and deployed with AI</div>
-      <div class="post-excerpt">Built this entire site using Claude Code and pushed it to GitHub Pages in under an hour. Here's what that workflow looks like.</div>
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 20, 2026</div>
+        <div class="post-title">Site is live, built and deployed with AI</div>
+        <div class="post-excerpt">Built this entire site using Claude Code and pushed it to GitHub Pages in under an hour. Here's what that workflow looks like.</div>
+      </div>
     </div>
 
     <div class="post-card" onclick="openPost('post3')">
-      <div class="post-date">May 12, 2026</div>
-      <div class="post-title">What 8 years in marketing ops actually teaches you</div>
-      <div class="post-excerpt">Lead gen, attribution, CRM hygiene, reporting. The answer is always the same: good data in, good decisions out.</div>
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 12, 2026</div>
+        <div class="post-title">What 8 years in marketing ops actually teaches you</div>
+        <div class="post-excerpt">Lead gen, attribution, CRM hygiene, reporting. The answer is always the same: good data in, good decisions out.</div>
+      </div>
     </div>
 
   </div>
@@ -265,11 +299,14 @@
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
   <div class="modal" id="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-date" id="modal-date"></div>
-    <div class="modal-title" id="modal-title"></div>
-    <div class="modal-body" id="modal-body"></div>
-    <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
+    <img class="modal-hero" id="modal-hero" src="" alt="">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-date" id="modal-date"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-body" id="modal-body"></div>
+      <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
+    </div>
   </div>
 </div>
 
@@ -280,6 +317,7 @@ const posts = {
   post4: {
     date: 'May 29, 2026',
     title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
       <p>HubSpot is taking a different approach. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
@@ -289,6 +327,7 @@ const posts = {
   post1: {
     date: 'May 27, 2026',
     title: 'HubSpot\'s AI push is a signal every RevOps team should read',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
       <p>For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understand the business. Knowing how to configure, prompt, and govern these systems is a real skill now.</p>
@@ -298,6 +337,7 @@ const posts = {
   post2: {
     date: 'May 20, 2026',
     title: 'Site is live, built and deployed with AI',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
       <p>The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lost in documentation.</p>
@@ -307,6 +347,7 @@ const posts = {
   post3: {
     date: 'May 12, 2026',
     title: 'What 8 years in marketing ops actually teaches you',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've spent over 8 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
       <p>The answer is always the same: garbage in, garbage out. The best automation in the world can't fix a dirty database or a broken handoff process.</p>
@@ -317,9 +358,12 @@ const posts = {
 
 function openPost(id) {
   const p = posts[id];
+  document.getElementById('modal-hero').src = p.image;
+  document.getElementById('modal-hero').alt = p.title;
   document.getElementById('modal-date').textContent = p.date;
   document.getElementById('modal-title').textContent = p.title;
   document.getElementById('modal-body').innerHTML = p.body;
+  document.getElementById('modal').scrollTop = 0;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
