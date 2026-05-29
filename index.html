@@ -258,6 +258,15 @@
   <div class="section-label">Latest Updates</div>
   <div class="post-grid">
 
+    <div class="post-card" onclick="openPost('post6')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="">
+      <div class="post-content">
+        <div class="post-date">May 29, 2026</div>
+        <div class="post-title">Where AI actually falls apart</div>
+        <div class="post-excerpt">Spent the weekend building agentic workflows with Claude. Started to see exactly what people mean when they say AI starts to fall apart.</div>
+      </div>
+    </div>
+
     <div class="post-card" onclick="openPost('post5')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="">
       <div class="post-content">
@@ -323,6 +332,20 @@
 
 <script>
 const posts = {
+  post6: {
+    date: 'May 29, 2026',
+    title: 'Where AI actually falls apart',
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do.</p>
+      <p>Today especially, I started to see what people mean when they say AI starts to fall apart.</p>
+      <p>Context windows are a big factor. Gemini has one of the largest, a couple million tokens, but even then, the memory that an AI has to maintain reasoning is not persistent beyond those limits. At the end of the day, it's still predicting the next token. It simulates persistence and reasoning, but it doesn't actually have it.</p>
+      <p>I think this is one of the biggest downfalls of AI right now. It's what's keeping it from being the fully disruptive, end-all tool that people are claiming it is.</p>
+      <p>That said, LLMs have enabled non-developers to build applications and communicate with computers using natural language, which is huge.</p>
+      <p>But it's not ready to just take the keys and go. Right now it's like: "Here are the keys, go drive." And it says "okay," but there are too many variables it can't account for.</p>
+      <p>That's why a single prompt approach doesn't work. Everything needs to be piecemealed out into structured steps, with systems in place for validation, verification, and consistency.</p>
+    `
+  },
   post5: {
     date: 'May 29, 2026',
     title: 'The shift from "AI tools" to AI with actual business context',
