@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
+    <link>https://samcbarth.github.io/aisite/</link>
+    <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2026 21:21:53 GMT</lastBuildDate>
+    <item>
+      <title>Dell&apos;s best day ever tells you where enterprise AI is actually going</title>
+      <link>https://samcbarth.github.io/aisite/#post7</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post7</guid>
+      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Dell&apos;s stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That&apos;s a materially d</description>
+    </item>
+    <item>
+      <title>Samsung just promised $400K bonuses. That&apos;s an AI story too.</title>
+      <link>https://samcbarth.github.io/aisite/#post8</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post8</guid>
+      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <category>RevOps</category>
+      <description>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. A</description>
+    </item>
+    <item>
+      <title>AI is making cybersecurity harder — and that&apos;s a GTM problem too</title>
+      <link>https://samcbarth.github.io/aisite/#post9</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post9</guid>
+      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws g</description>
+    </item>
+    <item>
+      <title>Where AI actually falls apart</title>
+      <link>https://samcbarth.github.io/aisite/#post6</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post6</guid>
+      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>I&apos;ve been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do. Today especially, I started to see what people mean when they say </description>
+    </item>
+    <item>
+      <title>The shift from &quot;AI tools&quot; to AI with actual business context</title>
+      <link>https://samcbarth.github.io/aisite/#post5</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post5</guid>
+      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <category>CRM Strategy</category>
+      <description>One thing I&apos;m watching closely in the HubSpot ecosystem right now is the shift from &quot;AI tools&quot; to AI with actual business context. HubSpot&apos;s recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginnin</description>
+    </item>
+    <item>
+      <title>HubSpot vs. Salesforce: two very different bets on AI agents</title>
+      <link>https://samcbarth.github.io/aisite/#post4</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post4</guid>
+      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot</category>
+      <description>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They&apos;ve since cut 4,000 customer service roles. The message is pretty clear: agents in, people out. HubSpot is taking a di</description>
+    </item>
+    <item>
+      <title>HubSpot&apos;s AI push is a signal every RevOps team should read</title>
+      <link>https://samcbarth.github.io/aisite/#post1</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post1</guid>
+      <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
+      <category>RevOps</category>
+      <description>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who u</description>
+    </item>
+    <item>
+      <title>Site is live, built and deployed with AI</title>
+      <link>https://samcbarth.github.io/aisite/#post2</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post2</guid>
+      <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>I built this entire site using Claude Code, Anthropic&apos;s AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lo</description>
+    </item>
+    <item>
+      <title>What 10 years in marketing ops actually teaches you</title>
+      <link>https://samcbarth.github.io/aisite/#post3</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post3</guid>
+      <pubDate>Tue, 12 May 2026 12:00:00 GMT</pubDate>
+      <category>Marketing Ops</category>
+      <description>I&apos;ve spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions. The answer is always the same: garbage in, garbage out. The best automation in the w</description>
+    </item>
+  </channel>
+</rss>

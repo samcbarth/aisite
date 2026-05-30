@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Content Security Policy. GitHub Pages can't send real HTTP headers, so the
+       policy ships as a meta tag. No inline JS is allowed (scripts are same-origin
+       only, plus the TradingView embed); inline styles stay allowed for the small
+       style="" attributes and CSSOM writes. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.tradingview.com; media-src 'self' https://commondatastorage.googleapis.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://s3.tradingview.com; frame-src https://*.tradingview.com https://*.tradingview-widget.com; connect-src 'self' https://*.tradingview.com https://*.tradingview-widget.com; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
+
+  <!-- SEO -->
+  <meta name="author" content="Sam C Barth">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://samcbarth.github.io/aisite/">
+  <link rel="alternate" type="application/rss+xml" title="Sam C Barth — Latest Updates" href="feed.xml">
 
   <!-- Open Graph / SEO -->
   <meta name="description" content="Sam C Barth — HubSpot Strategy & Operations Manager at LAIRE. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
@@ -20,10 +35,36 @@
   <!-- Brand favicon: SCB monogram -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Self-hosted variable font (no render-blocking third-party CSS request).
+       Preload the one woff2 that covers weights 400–700. -->
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Warm up the remaining third-party origins still used for media. -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://s3.tradingview.com">
   <style>
+    /* Self-hosted Space Grotesk (variable, one file per subset covers 400–700). */
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
     :root {
       --purple: #7c6af7;
       --purple-dim: #3d3380;
@@ -731,6 +772,78 @@
     }
     .media-wrap.reduced .media-play { display: flex; }
 
+    /* Reserve height for the lazily-injected ticker iframe (prevents CLS). */
+    .tradingview-widget-container { min-height: 46px; }
+
+    /* ── Accessibility ─────────────────────────────────────────────
+       Contrast bumps so muted text on the dark background clears WCAG AA
+       (≥4.5:1). Light-mode rules below have higher specificity and still win. */
+    .post-date, .modal-date, .featured-meta-row,
+    .post-read-time, .modal-read-time, .no-results,
+    .post-count, .related-label { color: #8a8a8a; }
+    .newsletter-sub, .work-sub { color: #9a9a9a; }
+    .filter-chip { color: #8c8c8c; }
+    .nav-btn { color: #8c8c8c; }
+    .modal-close { color: #8c8c8c; }
+    .logo-role { color: #9a9a9a; }
+    .work-cta-note, .work-card-price, .tier-price span { color: #9a9a9a; }
+    .sponsor-tag, .sponsor-blurb { color: #9a9a9a; }
+    .ad-inner { color: #777; }
+    .card-like { color: #9a9a9a; min-height: 24px; }
+    .featured-badge { color: #c4b9ff; }
+    .search-input::placeholder, .newsletter-input::placeholder { color: #6f6f6f; }
+
+    /* White text on brand fills needs a slightly deeper shade to clear 4.5:1. */
+    .btn:not(.btn-ghost) { background: #6d5ae8; }
+    .filter-chip.active { background: #6d5ae8; border-color: #6d5ae8; }
+    .newsletter-btn { color: #06281d; }
+
+    /* Visible keyboard focus for every interactive element (WCAG 2.4.7/2.4.11). */
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    .post-card:focus-visible, .featured-card:focus-visible, .related-card:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* Skip-to-content link (visible only when focused). */
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      z-index: 500;
+      background: var(--purple);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 0 0 6px 0;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* Visually-hidden labels for assistive tech. */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Honor reduced-motion: damp transitions/animations site-wide. */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
     /* Light mode */
     body.light-mode { background: #f5f5f5; color: #111; }
     body.light-mode header { border-color: #e0e0e0; }
@@ -812,60 +925,192 @@
     footer {
       text-align: center;
       padding: 2rem 2rem;
-      color: #444;
+      color: #8a8a8a;
       font-size: 0.75rem;
       border-top: 1px solid #1a1a1a;
       max-width: 760px;
       margin: 2rem auto 0;
     }
     .footer-brand { color: #888; font-weight: 600; font-size: 0.82rem; margin-bottom: 0.3rem; }
-    .footer-meta { color: #444; }
+    .footer-meta { color: #8a8a8a; }
   </style>
+  <!-- JSONLD:START -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://samcbarth.github.io/aisite/#person",
+      "name": "Sam C Barth",
+      "url": "https://samcbarth.github.io/aisite/",
+      "jobTitle": "HubSpot Strategy & Operations Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "LAIRE"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/samcbarth"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://samcbarth.github.io/aisite/#website",
+      "url": "https://samcbarth.github.io/aisite/",
+      "name": "Sam C Barth",
+      "description": "RevOps, AI, and CRM strategy from Sam C Barth.",
+      "publisher": {
+        "@id": "https://samcbarth.github.io/aisite/#person"
+      }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://samcbarth.github.io/aisite/#blog",
+      "url": "https://samcbarth.github.io/aisite/",
+      "name": "Sam C Barth — Latest Updates",
+      "author": {
+        "@id": "https://samcbarth.github.io/aisite/#person"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Dell's best day ever tells you where enterprise AI is actually going",
+          "datePublished": "2026-05-30",
+          "url": "https://samcbarth.github.io/aisite/#post7",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "AI & Automation",
+          "description": "Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue fro"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Samsung just promised $400K bonuses. That's an AI story too.",
+          "datePublished": "2026-05-30",
+          "url": "https://samcbarth.github.io/aisite/#post8",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "RevOps",
+          "description": "Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor d"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "AI is making cybersecurity harder — and that's a GTM problem too",
+          "datePublished": "2026-05-30",
+          "url": "https://samcbarth.github.io/aisite/#post9",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "AI & Automation",
+          "description": "An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at findin"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Where AI actually falls apart",
+          "datePublished": "2026-05-29",
+          "url": "https://samcbarth.github.io/aisite/#post6",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "AI & Automation",
+          "description": "I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actuall"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "The shift from \"AI tools\" to AI with actual business context",
+          "datePublished": "2026-05-29",
+          "url": "https://samcbarth.github.io/aisite/#post5",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "CRM Strategy",
+          "description": "One thing I'm watching closely in the HubSpot ecosystem right now is the shift from \"AI tools\" to AI with actual business context. HubSpot's recent Spring Spotlight updates around AEO, AI agents, and "
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "HubSpot vs. Salesforce: two very different bets on AI agents",
+          "datePublished": "2026-05-29",
+          "url": "https://samcbarth.github.io/aisite/#post4",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "HubSpot",
+          "description": "Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service r"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "HubSpot's AI push is a signal every RevOps team should read",
+          "datePublished": "2026-05-27",
+          "url": "https://samcbarth.github.io/aisite/#post1",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "RevOps",
+          "description": "HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Site is live, built and deployed with AI",
+          "datePublished": "2026-05-20",
+          "url": "https://samcbarth.github.io/aisite/#post2",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "AI & Automation",
+          "description": "I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: descri"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "What 10 years in marketing ops actually teaches you",
+          "datePublished": "2026-05-12",
+          "url": "https://samcbarth.github.io/aisite/#post3",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "Marketing Ops",
+          "description": "I've spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions. The "
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <!-- JSONLD:END -->
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header>
   <a class="logo" href="#" style="text-decoration:none">
     <span class="logo-mark">SCB</span>
     <span class="logo-name">Sam C Barth</span>
   </a>
-  <nav>
+  <nav aria-label="Primary">
     <a href="#work">Work with me</a>
-    <a href="https://linkedin.com/in/samcbarth" target="_blank">LinkedIn</a>
+    <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="mailto:samcbarth@gmail.com">Contact</a>
-    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">☀</button>
+    <button class="theme-toggle" id="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Toggle light and dark mode" title="Toggle light/dark mode">☀</button>
   </nav>
 </header>
 
-<div class="tradingview-widget-container">
+<!-- Market ticker. app.js injects the TradingView embed lazily (only when it
+     scrolls near view) so it never blocks first paint. The container reserves
+     height in CSS to avoid layout shift (CLS). -->
+<div class="tradingview-widget-container" aria-hidden="true">
   <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-    "symbols": [
-      {"proName": "NYSE:HUBS",   "title": "HubSpot"},
-      {"proName": "NYSE:CRM",    "title": "Salesforce"},
-      {"proName": "NASDAQ:MSFT", "title": "Microsoft"},
-      {"proName": "NASDAQ:ZI",   "title": "ZoomInfo"},
-      {"proName": "NASDAQ:MNDY", "title": "Monday.com"},
-      {"proName": "NASDAQ:GOOGL","title": "Alphabet"}
-    ],
-    "showSymbolLogo": true,
-    "colorTheme": "dark",
-    "isTransparent": true,
-    "displayMode": "adaptive",
-    "locale": "en"
-  }
-  </script>
 </div>
+
+<main id="main">
 
 <section class="hero">
   <div class="hero-label">HubSpot Strategy &amp; Operations &middot; LAIRE &middot; Dallas, TX</div>
   <h1>Building at the intersection of AI and business.</h1>
   <p class="tagline">10+ years helping organizations market smarter: generating leads, tracking results, and turning data into decisions. Now focused on how AI is reshaping the CRM and RevOps landscape.</p>
   <div class="cta-row">
-    <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank">LinkedIn</a>
+    <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <!-- TODO: replace with your real scheduling link -->
-    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank">Book a call</a>
+    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Book a call</a>
   </div>
 </section>
 
@@ -875,14 +1120,15 @@
     <span class="post-count" id="post-count"></span>
   </div>
   <div class="search-wrap">
+    <label class="sr-only" for="search-input">Search posts</label>
     <input class="search-input" id="search-input" type="text" placeholder="Search posts...">
   </div>
   <div class="filter-bar" id="filter-bar"></div>
   <div id="featured-section" class="featured-section"></div>
   <div class="post-grid">
 
-    <div class="post-card" data-id="post7" onclick="openPost('post7')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post7" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 30, 2026</span>
@@ -895,8 +1141,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post8" onclick="openPost('post8')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post8" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 30, 2026</span>
@@ -909,8 +1155,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post9" onclick="openPost('post9')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post9" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 30, 2026</span>
@@ -923,8 +1169,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post6" onclick="openPost('post6')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post6" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 29, 2026</span>
@@ -937,8 +1183,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post5" onclick="openPost('post5')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post5" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 29, 2026</span>
@@ -951,8 +1197,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post4" onclick="openPost('post4')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post4" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 29, 2026</span>
@@ -965,8 +1211,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post1" onclick="openPost('post1')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post1" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 27, 2026</span>
@@ -979,8 +1225,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post2" onclick="openPost('post2')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post2" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 20, 2026</span>
@@ -993,8 +1239,8 @@
       </div>
     </div>
 
-    <div class="post-card" data-id="post3" onclick="openPost('post3')">
-      <img class="post-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+    <div class="post-card" data-id="post3" data-action="open-post" role="button" tabindex="0">
+      <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
         <div class="post-meta">
           <span class="post-date">May 12, 2026</span>
@@ -1017,7 +1263,8 @@
     <div class="newsletter-label">Stay in the loop</div>
     <div class="newsletter-title">Get the next post in your inbox</div>
     <div class="newsletter-sub">RevOps, AI, and CRM insights — when I have something worth saying.</div>
-    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+    <form class="newsletter-form" id="newsletter-form">
+      <label class="sr-only" for="newsletter-email">Email address</label>
       <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
       <button type="submit" class="newsletter-btn">Subscribe →</button>
     </form>
@@ -1028,14 +1275,14 @@
         <div class="tier-name">Free</div>
         <div class="tier-price">$0</div>
         <div class="tier-desc">The weekly read — signals, takes, and what's worth your attention in RevOps &amp; AI.</div>
-        <a class="tier-btn tier-btn-free" href="#newsletter-email" onclick="document.getElementById('newsletter-email').focus()">You're set above ↑</a>
+        <a class="tier-btn tier-btn-free" href="#newsletter-email" data-action="focus-email">You're set above ↑</a>
       </div>
       <div class="tier tier-pro">
         <div class="tier-name">Pro</div>
         <div class="tier-price">$12 <span>/ month</span></div>
         <div class="tier-desc">Deep-dives, teardowns, and the HubSpot/RevOps playbooks I use with clients.</div>
         <!-- TODO: replace with your real Stripe / checkout link -->
-        <a class="tier-btn" href="https://buy.stripe.com/test_placeholder" target="_blank">Go Pro →</a>
+        <a class="tier-btn" href="https://buy.stripe.com/test_placeholder" target="_blank" rel="noopener noreferrer">Go Pro →</a>
       </div>
     </div>
   </div>
@@ -1065,22 +1312,24 @@
   </div>
   <div class="work-cta">
     <!-- TODO: replace with your real scheduling link -->
-    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank">Book a 30-min intro call</a>
+    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Book a 30-min intro call</a>
     <span class="work-cta-note">No pitch — just figuring out if it's a fit.</span>
   </div>
 </section>
 
+</main>
+
 <!-- Sponsor slot: rendered from the `sponsor` config in JS (placeholder when unset) -->
 <div class="sponsor-wrap"><div id="sponsor-slot"></div></div>
 
-<div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
-  <div class="modal" id="modal">
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
     <div class="modal-progress-bar" id="modal-progress"></div>
     <div class="media-wrap" id="modal-media">
       <img class="modal-hero" id="modal-hero" src="" alt="">
     </div>
     <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">✕</button>
+      <button class="modal-close" data-action="close-modal" aria-label="Close article">✕</button>
       <div class="modal-header-row">
         <span class="modal-date" id="modal-date"></span>
         <span class="modal-read-time" id="modal-read-time"></span>
@@ -1092,14 +1341,14 @@
       <div class="modal-title" id="modal-title"></div>
       <div class="modal-body" id="modal-body"></div>
       <div class="modal-actions">
-        <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
-        <button class="share-btn" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
-        <button class="share-btn share-btn-x" onclick="shareOnX()">Post on X</button>
-        <button class="like-btn" id="modal-like-btn" onclick="toggleModalLike()">♥ Like</button>
+        <button class="copy-btn" id="copy-btn" data-action="copy-post">Copy to clipboard</button>
+        <button class="share-btn" data-action="share-linkedin">Share on LinkedIn</button>
+        <button class="share-btn share-btn-x" data-action="share-x">Post on X</button>
+        <button class="like-btn" id="modal-like-btn" data-action="toggle-like" aria-pressed="false">♥ Like</button>
       </div>
       <div class="modal-nav">
-        <button class="nav-btn" id="prev-btn" onclick="navigatePost(-1)">&#8592; Prev</button>
-        <button class="nav-btn" id="next-btn" onclick="navigatePost(1)">Next &#8594;</button>
+        <button class="nav-btn" id="prev-btn" data-action="nav-prev">&#8592; Prev</button>
+        <button class="nav-btn" id="next-btn" data-action="nav-next">Next &#8594;</button>
       </div>
       <div class="related-posts" id="related-posts"></div>
     </div>
@@ -1107,8 +1356,8 @@
 </div>
 
 <div id="quote-popover" class="quote-popover">
-  <button class="quote-popover-btn" onclick="shareQuoteLinkedIn()">LinkedIn</button>
-  <button class="quote-popover-btn" onclick="shareQuoteX()">Post on X</button>
+  <button class="quote-popover-btn" data-action="share-quote-linkedin">LinkedIn</button>
+  <button class="quote-popover-btn" data-action="share-quote-x">Post on X</button>
 </div>
 
 <!-- Display ad slot: inactive placeholder, revealed on scroll. Drop an ad-network snippet inside .ad-inner to activate. -->
@@ -1120,565 +1369,19 @@
   <div class="footer-meta">© 2026 Sam C Barth · Last updated: DEPLOY_TIME</div>
 </footer>
 
-<script>
-const posts = {
-  post7: {
-    date: 'May 30, 2026',
-    title: "Dell's best day ever tells you where enterprise AI is actually going",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
-    // TODO: swap for your real short-video CDN URL (mp4/webm).
-    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue.</p>
-      <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
-      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer — Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
-      <p>For RevOps and GTM teams, this matters more than it might seem on the surface. If your competitors are building AI infrastructure at this pace, the operational gap between teams running AI-native processes and teams still doing things manually is going to widen faster than most people expect.</p>
-      <p>The window for getting ahead of this is still open. It won't be indefinitely.</p>
-    `
-  },
-  post8: {
-    date: 'May 30, 2026',
-    title: "Samsung just promised $400K bonuses. That's an AI story too.",
-    category: 'RevOps',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
-      <p>That's a significant number. And it's an interesting counterpoint to the prevailing narrative that AI is purely a headcount reduction play.</p>
-      <p>What Samsung is essentially saying is: the people who build and maintain the chips that power AI create enough value to warrant a meaningful share of the upside. That's a different model than "agents in, people out." It's closer to "AI creates value, and here's how we distribute it."</p>
-      <p>For RevOps leaders thinking about their own organizations — this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
-      <p>AI creates value. The question of who captures it is going to define a lot of organizational dynamics over the next decade. Samsung just put a number on one answer.</p>
-    `
-  },
-  post9: {
-    date: 'May 30, 2026',
-    title: "AI is making cybersecurity harder — and that's a GTM problem too",
-    category: 'AI & Automation',
-    tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered — on both sides of the equation.</p>
-      <p>That means the attack surface is expanding faster than most security teams can respond to it.</p>
-      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation — not just IT.</p>
-      <p>The practical takeaway isn't to panic. It's to ask your IT and security counterparts a straightforward question: are we auditing the integrations in our GTM stack the same way we audit financial systems? Most of the time, the answer is no. Those integrations are where your most sensitive commercial data moves, and they're often the least scrutinized.</p>
-      <p>As AI accelerates both sides of the security equation, that gap is worth closing before someone else finds it first.</p>
-    `
-  },
-  post6: {
-    featured: true,
-    date: 'May 29, 2026',
-    title: 'Where AI actually falls apart',
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
-    // TODO: swap for your real short-video CDN URL (mp4/webm). `poster` shows instantly; the clip only loads when scrolled into view.
-    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-    poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do.</p>
-      <p>Today especially, I started to see what people mean when they say AI starts to fall apart.</p>
-      <p>Context windows are a big factor. Gemini has one of the largest, a couple million tokens, but even then, the memory that an AI has to maintain reasoning is not persistent beyond those limits. At the end of the day, it's still predicting the next token. It simulates persistence and reasoning, but it doesn't actually have it.</p>
-      <p>I think this is one of the biggest downfalls of AI right now. It's what's keeping it from being the fully disruptive, end-all tool that people are claiming it is.</p>
-      <p>That said, LLMs have enabled non-developers to build applications and communicate with computers using natural language, which is huge.</p>
-      <p>But it's not ready to just take the keys and go. Right now it's like: "Here are the keys, go drive." And it says "okay," but there are too many variables it can't account for.</p>
-      <p>That's why a single prompt approach doesn't work. Everything needs to be piecemealed out into structured steps, with systems in place for validation, verification, and consistency.</p>
-    `
-  },
-  post5: {
-    date: 'May 29, 2026',
-    title: 'The shift from "AI tools" to AI with actual business context',
-    category: 'CRM Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
-      <p>HubSpot's recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
-      <p>The interesting part isn't just automation. It's that the AI can understand customer history, deal movement, support conversations, and business processes all in one place.</p>
-      <p>The companies that organize their CRM and operational data well are probably going to get disproportionately more value from AI over the next few years.</p>
-      <p>Clean systems and good process design are becoming even more important, not less.</p>
-    `
-  },
-  post4: {
-    date: 'May 29, 2026',
-    title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
-    category: 'HubSpot',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
-      <p>HubSpot is taking a different approach. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
-      <p>That distinction matters. One model treats AI as a replacement. The other treats it as an upgrade to the system your team already runs on. For most SMBs and mid-market companies, HubSpot's version is the one that actually makes sense.</p>
-    `
-  },
-  post1: {
-    date: 'May 27, 2026',
-    title: 'HubSpot\'s AI push is a signal every RevOps team should read',
-    category: 'RevOps',
-    tag: 'On my radar', tagClass: 'tag-orange',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
-      <p>For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understand the business. Knowing how to configure, prompt, and govern these systems is a real skill now.</p>
-      <p>The teams that will win aren't the ones waiting to see what happens. They're the ones building the right foundations today.</p>
-    `
-  },
-  post2: {
-    date: 'May 20, 2026',
-    title: 'Site is live, built and deployed with AI',
-    category: 'AI & Automation',
-    tag: 'In the wild', tagClass: 'tag-pink',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
-      <p>The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lost in documentation.</p>
-      <p>This is what I mean when I talk about AI changing the pace of building. It's not replacing engineers. It's giving everyone else a shot at shipping something.</p>
-    `
-  },
-  post3: {
-    date: 'May 12, 2026',
-    title: 'What 10 years in marketing ops actually teaches you',
-    category: 'Marketing Ops',
-    tag: 'Timeless', tagClass: 'tag-purple',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
-    body: `
-      <p>I've spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
-      <p>The answer is always the same: garbage in, garbage out. The best automation in the world can't fix a dirty database or a broken handoff process.</p>
-      <p>Good RevOps starts with clean systems and clear ownership. The tools, the dashboards, the AI, all of it builds on that foundation.</p>
-    `
-  }
-};
+<!-- Analytics (disabled by default — privacy-friendly, cookieless).
+     To enable GoatCounter (free for personal use):
+       1. Register a site at https://www.goatcounter.com
+       2. Add these origins to the CSP <meta> above:
+            script-src  …  https://gc.zgo.at
+            img-src     …  https://YOURCODE.goatcounter.com
+            connect-src …  https://YOURCODE.goatcounter.com
+       3. Uncomment the tag below and set YOURCODE:
+  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+-->
 
-const postOrder = ['post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
-let currentPostId = null;
-let activeFilter = null;
-let searchQuery = '';
-
-// ── Sponsor config ──────────────────────────────────────────────
-// Fill this in to feature a sponsor; leave name empty to show the "your brand here" placeholder.
-const sponsor = {
-  name: '',            // e.g. 'Acme RevOps'
-  blurb: '',           // e.g. 'The pipeline analytics tool GTM teams actually keep open.'
-  url: 'mailto:samcbarth@gmail.com?subject=Sponsoring%20the%20newsletter',
-  logo: ''             // optional square image URL
-};
-
-function renderSponsor() {
-  const el = document.getElementById('sponsor-slot');
-  if (!el) return;
-  if (sponsor.name) {
-    el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}" target="_blank" rel="noopener">
-      <span class="sponsor-tag">Sponsor</span>
-      ${sponsor.logo ? `<img class="sponsor-logo" src="${sponsor.logo}" alt="" loading="lazy">` : ''}
-      <span class="sponsor-body">
-        <span class="sponsor-name">${sponsor.name}</span>
-        <span class="sponsor-blurb">${sponsor.blurb}</span>
-      </span>
-      <span class="sponsor-cta">Visit →</span>
-    </a>`;
-  } else {
-    el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}">
-      <span class="sponsor-tag">Sponsor</span>
-      <span class="sponsor-body">
-        <span class="sponsor-name">Your brand here</span>
-        <span class="sponsor-blurb">Reach RevOps & GTM leaders reading every week.</span>
-      </span>
-      <span class="sponsor-cta">Sponsor this →</span>
-    </a>`;
-  }
-}
-
-// ── Lazy video infrastructure ───────────────────────────────────
-// Native loading="lazy" does NOT apply to <video>, so an IntersectionObserver
-// loads + plays a clip only while it's on screen, and pauses it when it leaves.
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-const videoObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    const v = entry.target;
-    if (entry.isIntersecting) {
-      if (!v.src && v.dataset.src) v.src = v.dataset.src; // load on first reveal
-      if (!reduceMotion) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
-    } else if (v.src) {
-      v.pause();
-    }
-  });
-}, { threshold: 0.25 }) : null;
-
-// Returns a media wrapper (poster <video> + badge) and registers it for lazy load/play.
-// `manualPlay` adds an inline play button for reduced-motion users; skip it when the
-// wrapper itself lives inside a clickable element (e.g. the featured card button).
-function makeLazyVideo({ src, poster, videoClass, manualPlay = true }) {
-  const wrap = document.createElement('div');
-  wrap.className = 'media-wrap' + (reduceMotion ? ' reduced' : '');
-
-  const v = document.createElement('video');
-  v.className = videoClass;
-  if (poster) v.poster = poster;
-  v.dataset.src = src;
-  v.muted = true; v.loop = true; v.playsInline = true;
-  v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
-  v.preload = 'none';
-  wrap.appendChild(v);
-
-  const badge = document.createElement('span');
-  badge.className = 'media-badge';
-  badge.textContent = 'Video';
-  wrap.appendChild(badge);
-
-  if (reduceMotion && manualPlay) {
-    // Show a manual play button instead of autoplaying.
-    const btn = document.createElement('button');
-    btn.className = 'media-play';
-    btn.innerHTML = '▶';
-    btn.setAttribute('aria-label', 'Play video');
-    btn.onclick = (e) => {
-      e.stopPropagation();
-      if (!v.src) v.src = v.dataset.src;
-      v.play(); btn.style.display = 'none';
-    };
-    wrap.appendChild(btn);
-  }
-
-  if (videoObserver) videoObserver.observe(v);
-  return wrap;
-}
-
-// Stop & release a video element (used when the modal closes / navigates away).
-function teardownVideo(v) {
-  if (!v) return;
-  if (videoObserver) videoObserver.unobserve(v);
-  v.pause();
-  v.removeAttribute('src');
-  v.load();
-}
-
-// ── Display ad slots: reveal placeholders on scroll (no third-party script) ──
-function setupAdSlots() {
-  const slots = document.querySelectorAll('.ad-slot');
-  if (!('IntersectionObserver' in window)) { slots.forEach(s => s.classList.add('revealed')); return; }
-  const obs = new IntersectionObserver((entries, o) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        // To activate: inject your ad-network snippet into entry.target.querySelector('.ad-inner') here.
-        o.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '200px' });
-  slots.forEach(s => obs.observe(s));
-}
-
-function readingTime(html) {
-  const text = html.replace(/<[^>]+>/g, ' ');
-  const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
-  return Math.max(1, Math.round(words / 200));
-}
-
-function buildFilters() {
-  const bar = document.getElementById('filter-bar');
-  const categories = [...new Set(postOrder.map(id => posts[id].category))];
-
-  const allChip = document.createElement('button');
-  allChip.className = 'filter-chip active';
-  allChip.textContent = 'All';
-  allChip.onclick = () => setFilter(null);
-  bar.appendChild(allChip);
-
-  categories.forEach(cat => {
-    const chip = document.createElement('button');
-    chip.className = 'filter-chip';
-    chip.textContent = cat;
-    chip.dataset.value = cat;
-    chip.onclick = () => setFilter(cat);
-    bar.appendChild(chip);
-  });
-}
-
-function setFilter(category) {
-  activeFilter = category || null;
-  document.querySelectorAll('.filter-chip').forEach(c => {
-    c.classList.toggle('active', (!category && c.textContent === 'All') || c.dataset.value === category);
-  });
-  applyFilters();
-}
-
-function applyFilters() {
-  let visible = 0;
-  document.querySelectorAll('.post-card').forEach(card => {
-    const p = posts[card.dataset.id];
-    const matchesCat = !activeFilter || p.category === activeFilter;
-    const matchesSearch = !searchQuery || p.title.toLowerCase().includes(searchQuery) ||
-      p.body.replace(/<[^>]+>/g, '').toLowerCase().includes(searchQuery);
-    const show = matchesCat && matchesSearch;
-    card.style.display = show ? '' : 'none';
-    if (show) visible++;
-  });
-  document.getElementById('post-count').textContent = visible + ' post' + (visible !== 1 ? 's' : '');
-  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
-}
-
-function renderFeatured() {
-  const featuredId = postOrder.find(id => posts[id].featured);
-  const section = document.getElementById('featured-section');
-  if (!featuredId || !section) return;
-  const p = posts[featuredId];
-  const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
-  const imgSrc = p.image.replace('w=1160&h=440', 'w=760&h=190');
-
-  const card = document.createElement('button');
-  card.className = 'featured-card';
-  card.onclick = () => openPost(featuredId);
-
-  // Featured media: a lazy-loaded short video when the post has one, otherwise the image.
-  if (p.video) {
-    card.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || imgSrc, videoClass: 'featured-video', manualPlay: false }));
-  } else {
-    const img = document.createElement('img');
-    img.className = 'featured-img';
-    img.src = imgSrc; img.alt = p.title; img.loading = 'lazy';
-    card.appendChild(img);
-  }
-
-  const body = document.createElement('div');
-  body.className = 'featured-body';
-  body.innerHTML = `<span class="featured-badge">Featured</span>
-      <div class="featured-meta-row">${p.date} &middot; ${p.category} &middot; ${readingTime(p.body)} min read</div>
-      <div class="featured-title">${p.title}</div>
-      <div class="featured-excerpt">${excerpt}</div>`;
-  card.appendChild(body);
-
-  section.innerHTML = '';
-  section.appendChild(card);
-}
-
-function renderRelated(id) {
-  const p = posts[id];
-  const container = document.getElementById('related-posts');
-  const related = postOrder
-    .filter(pid => pid !== id)
-    .filter(pid => posts[pid].category === p.category || posts[pid].tag === p.tag)
-    .slice(0, 2);
-  if (related.length === 0) { container.innerHTML = ''; return; }
-  container.innerHTML = `<div class="related-label">More like this</div>
-    <div class="related-grid">${related.map(pid => {
-      const rp = posts[pid];
-      return `<button class="related-card" onclick="openPost('${pid}')">
-        <div class="related-card-meta">
-          <span class="post-category" style="font-size:0.6rem;padding:0.1rem 0.4rem">${rp.category}</span>
-          <span class="post-read-time">${readingTime(rp.body)} min read</span>
-        </div>
-        <div class="related-card-title">${rp.title}</div>
-      </button>`;
-    }).join('')}</div>`;
-}
-
-// Like system
-function isLiked(id) { return localStorage.getItem('liked_' + id) === 'true'; }
-function toggleLike(id) {
-  localStorage.setItem('liked_' + id, String(!isLiked(id)));
-  updateLikeUI(id);
-}
-function toggleModalLike() { toggleLike(currentPostId); }
-function updateLikeUI(id) {
-  const liked = isLiked(id);
-  const cardLike = document.querySelector(`.card-like[data-id="${id}"]`);
-  if (cardLike) { cardLike.classList.toggle('liked', liked); cardLike.title = liked ? 'Unlike' : 'Like'; }
-  if (currentPostId === id) {
-    const btn = document.getElementById('modal-like-btn');
-    if (btn) { btn.textContent = liked ? '♥ Liked' : '♥ Like'; btn.classList.toggle('liked', liked); }
-  }
-}
-
-// Theme
-function toggleTheme() {
-  const isLight = document.body.classList.toggle('light-mode');
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  document.getElementById('theme-toggle').textContent = isLight ? '☽' : '☀';
-}
-
-// Share
-function shareOnLinkedIn() {
-  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
-  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
-}
-function shareOnX() {
-  const title = document.getElementById('modal-title').textContent;
-  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
-  window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + url, '_blank', 'width=600,height=600');
-}
-
-// Quote sharing
-let selectedQuote = '';
-function shareQuoteLinkedIn() {
-  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
-  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
-}
-function shareQuoteX() {
-  const title = document.getElementById('modal-title').textContent;
-  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
-  const text = encodeURIComponent('"' + selectedQuote.substring(0, 200) + '" — ' + title + ' ');
-  window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank', 'width=600,height=600');
-}
-
-// Newsletter
-function handleSubscribe(e) {
-  e.preventDefault();
-  document.getElementById('newsletter-note').textContent = '✓ Got it — talk soon.';
-  document.getElementById('newsletter-email').value = '';
-  const btn = e.target.querySelector('.newsletter-btn');
-  btn.textContent = 'Done ✓'; btn.disabled = true;
-}
-
-function initCards() {
-  if (localStorage.getItem('theme') === 'light') {
-    document.body.classList.add('light-mode');
-    document.getElementById('theme-toggle').textContent = '☽';
-  }
-
-  renderFeatured();
-  renderSponsor();
-  setupAdSlots();
-  postOrder.forEach(id => {
-    const card = document.querySelector(`[data-id="${id}"]`);
-    if (!card) return;
-    card.querySelector('.post-read-time').textContent = readingTime(posts[id].body) + ' min read';
-    const likeBtn = document.createElement('button');
-    likeBtn.className = 'card-like' + (isLiked(id) ? ' liked' : '');
-    likeBtn.dataset.id = id;
-    likeBtn.title = isLiked(id) ? 'Unlike' : 'Like';
-    likeBtn.textContent = '♥ Like';
-    likeBtn.onclick = (e) => { e.stopPropagation(); toggleLike(id); };
-    card.querySelector('.post-content').appendChild(likeBtn);
-  });
-  buildFilters();
-  applyFilters();
-
-  document.getElementById('search-input').addEventListener('input', function () {
-    searchQuery = this.value.toLowerCase().trim();
-    applyFilters();
-  });
-
-  document.getElementById('modal').addEventListener('scroll', function () {
-    const pct = this.scrollTop / (this.scrollHeight - this.clientHeight) * 100;
-    document.getElementById('modal-progress').style.width = Math.min(100, pct || 0) + '%';
-  });
-
-  document.getElementById('modal-body').addEventListener('mouseup', function () {
-    setTimeout(() => {
-      const sel = window.getSelection();
-      const text = sel ? sel.toString().trim() : '';
-      const popover = document.getElementById('quote-popover');
-      if (!text || text.length < 15) { popover.style.display = 'none'; selectedQuote = ''; return; }
-      selectedQuote = text;
-      try {
-        const rect = sel.getRangeAt(0).getBoundingClientRect();
-        popover.style.display = 'flex';
-        popover.style.top = Math.max(8, rect.top - 48) + 'px';
-        popover.style.left = Math.max(8, (rect.left + rect.right) / 2 - 90) + 'px';
-      } catch (err) {}
-    }, 10);
-  });
-
-  document.addEventListener('mousedown', function (e) {
-    if (!e.target.closest('#quote-popover')) document.getElementById('quote-popover').style.display = 'none';
-  });
-}
-
-function clearModalVideo() {
-  const media = document.getElementById('modal-media');
-  const v = media && media.querySelector('video');
-  if (v) teardownVideo(v);
-}
-
-function setModalMedia(p) {
-  const media = document.getElementById('modal-media');
-  clearModalVideo();
-  media.innerHTML = '';
-  if (p.video) {
-    media.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || p.image, videoClass: 'modal-video' }));
-  } else {
-    const img = document.createElement('img');
-    img.className = 'modal-hero';
-    img.id = 'modal-hero';
-    img.src = p.image;
-    img.alt = p.title;
-    media.appendChild(img);
-  }
-}
-
-function openPost(id) {
-  currentPostId = id;
-  const p = posts[id];
-  setModalMedia(p);
-  document.getElementById('modal-date').textContent = p.date;
-  document.getElementById('modal-read-time').textContent = readingTime(p.body) + ' min read';
-  document.getElementById('modal-category').textContent = p.category;
-  const tagEl = document.getElementById('modal-tag');
-  tagEl.textContent = p.tag;
-  tagEl.className = 'modal-tag ' + p.tagClass;
-  document.getElementById('modal-title').textContent = p.title;
-  document.getElementById('modal-body').innerHTML = p.body;
-
-  const idx = postOrder.indexOf(id);
-  document.getElementById('prev-btn').disabled = idx === 0;
-  document.getElementById('next-btn').disabled = idx === postOrder.length - 1;
-
-  const copyBtn = document.getElementById('copy-btn');
-  copyBtn.textContent = 'Copy to clipboard';
-  copyBtn.classList.remove('copied');
-
-  const likeBtn = document.getElementById('modal-like-btn');
-  likeBtn.textContent = isLiked(id) ? '♥ Liked' : '♥ Like';
-  likeBtn.classList.toggle('liked', isLiked(id));
-
-  document.getElementById('modal-progress').style.width = '0%';
-  document.getElementById('quote-popover').style.display = 'none';
-  renderRelated(id);
-  document.getElementById('modal').scrollTop = 0;
-  document.getElementById('modal-overlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function navigatePost(dir) {
-  const idx = postOrder.indexOf(currentPostId);
-  const next = idx + dir;
-  if (next >= 0 && next < postOrder.length) openPost(postOrder[next]);
-}
-
-function closeModal() {
-  clearModalVideo();
-  document.getElementById('modal-overlay').classList.remove('open');
-  document.getElementById('quote-popover').style.display = 'none';
-  document.body.style.overflow = '';
-}
-
-function closeOnBackdrop(e) {
-  if (e.target === document.getElementById('modal-overlay')) closeModal();
-}
-
-function copyPost() {
-  const title = document.getElementById('modal-title').textContent;
-  const body = document.getElementById('modal-body').innerText;
-  navigator.clipboard.writeText(title + '\n\n' + body.trim()).then(() => {
-    const btn = document.getElementById('copy-btn');
-    btn.textContent = 'Copied!';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Copy to clipboard'; btn.classList.remove('copied'); }, 2000);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', initCards);
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeModal();
-  if (document.getElementById('modal-overlay').classList.contains('open')) {
-    if (e.key === 'ArrowLeft') navigatePost(-1);
-    if (e.key === 'ArrowRight') navigatePost(1);
-  }
-});
-</script>
+<script src="posts.js" defer></script>
+<script src="app.js" defer></script>
 
 </body>
 </html>
