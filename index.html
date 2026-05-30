@@ -701,6 +701,48 @@
   <div id="featured-section" class="featured-section"></div>
   <div class="post-grid">
 
+    <div class="post-card" data-id="post7" onclick="openPost('post7')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">May 30, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">AI &amp; Automation</span>
+          <span class="post-tag tag-cyan">Signal</span>
+        </div>
+        <div class="post-title">Dell's best day ever tells you where enterprise AI is actually going</div>
+        <div class="post-excerpt">Stock up 32% on AI server revenue — not AI announcements, not pilots. Actual infrastructure spend. That's a different signal.</div>
+      </div>
+    </div>
+
+    <div class="post-card" data-id="post8" onclick="openPost('post8')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">May 30, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">RevOps</span>
+          <span class="post-tag tag-emerald">Worth noting</span>
+        </div>
+        <div class="post-title">Samsung just promised $400K bonuses. That's an AI story too.</div>
+        <div class="post-excerpt">A 10-year profit-sharing deal for semiconductor workers raises a question every RevOps leader should be sitting with: who captures the value AI creates?</div>
+      </div>
+    </div>
+
+    <div class="post-card" data-id="post9" onclick="openPost('post9')">
+      <img class="post-thumb" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">May 30, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">AI &amp; Automation</span>
+          <span class="post-tag tag-amber">Watch this space</span>
+        </div>
+        <div class="post-title">AI is making cybersecurity harder — and that's a GTM problem too</div>
+        <div class="post-excerpt">An ethical hacker warned this week that AI tools are outpacing human researchers at finding vulnerabilities. Your CRM integrations are part of that attack surface.</div>
+      </div>
+    </div>
+
     <div class="post-card" data-id="post6" onclick="openPost('post6')">
       <img class="post-thumb" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">
       <div class="post-content">
@@ -829,6 +871,48 @@
 
 <script>
 const posts = {
+  post7: {
+    date: 'May 30, 2026',
+    title: "Dell's best day ever tells you where enterprise AI is actually going",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue.</p>
+      <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
+      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer — Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
+      <p>For RevOps and GTM teams, this matters more than it might seem on the surface. If your competitors are building AI infrastructure at this pace, the operational gap between teams running AI-native processes and teams still doing things manually is going to widen faster than most people expect.</p>
+      <p>The window for getting ahead of this is still open. It won't be indefinitely.</p>
+    `
+  },
+  post8: {
+    date: 'May 30, 2026',
+    title: "Samsung just promised $400K bonuses. That's an AI story too.",
+    category: 'RevOps',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
+      <p>That's a significant number. And it's an interesting counterpoint to the prevailing narrative that AI is purely a headcount reduction play.</p>
+      <p>What Samsung is essentially saying is: the people who build and maintain the chips that power AI create enough value to warrant a meaningful share of the upside. That's a different model than "agents in, people out." It's closer to "AI creates value, and here's how we distribute it."</p>
+      <p>For RevOps leaders thinking about their own organizations — this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
+      <p>AI creates value. The question of who captures it is going to define a lot of organizational dynamics over the next decade. Samsung just put a number on one answer.</p>
+    `
+  },
+  post9: {
+    date: 'May 30, 2026',
+    title: "AI is making cybersecurity harder — and that's a GTM problem too",
+    category: 'AI & Automation',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered — on both sides of the equation.</p>
+      <p>That means the attack surface is expanding faster than most security teams can respond to it.</p>
+      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation — not just IT.</p>
+      <p>The practical takeaway isn't to panic. It's to ask your IT and security counterparts a straightforward question: are we auditing the integrations in our GTM stack the same way we audit financial systems? Most of the time, the answer is no. Those integrations are where your most sensitive commercial data moves, and they're often the least scrutinized.</p>
+      <p>As AI accelerates both sides of the security equation, that gap is worth closing before someone else finds it first.</p>
+    `
+  },
   post6: {
     featured: true,
     date: 'May 29, 2026',
@@ -910,7 +994,7 @@ const posts = {
   }
 };
 
-const postOrder = ['post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const postOrder = ['post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 let currentPostId = null;
 let activeFilter = null;
 let searchQuery = '';
