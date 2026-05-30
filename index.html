@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sam Barth</title>
+  <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
 
   <!-- Open Graph / SEO -->
-  <meta name="description" content="Sam Barth — HubSpot Strategy & Operations Manager at LAIRE. Writing about RevOps, AI, and CRM strategy.">
+  <meta name="description" content="Sam C Barth — HubSpot Strategy & Operations Manager at LAIRE. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://samcbarth.github.io/aisite/">
-  <meta property="og:title" content="Sam Barth">
-  <meta property="og:description" content="HubSpot Strategy & Operations Manager. Writing about RevOps, AI, and CRM strategy.">
+  <meta property="og:title" content="Sam C Barth">
+  <meta property="og:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy — and consulting for GTM teams.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sam Barth">
-  <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. Writing about RevOps, AI, and CRM strategy.">
+  <meta name="twitter:title" content="Sam C Barth">
+  <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy — and consulting for GTM teams.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Brand favicon: SCB monogram -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +57,24 @@
       margin: 0 auto;
       width: 100%;
     }
-    .logo { font-weight: 700; font-size: 1.05rem; color: #fff; }
+    .logo { font-weight: 700; font-size: 1.05rem; color: #fff; display: flex; align-items: center; gap: 0.55rem; }
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      color: #fff;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 0 14px rgba(124,106,247,0.35);
+    }
+    .logo-name { line-height: 1; }
+    .logo-role { display: block; font-size: 0.6rem; font-weight: 500; color: #666; letter-spacing: 0.04em; margin-top: 0.15rem; }
     nav a {
       color: #888;
       text-decoration: none;
@@ -559,6 +579,157 @@
     .newsletter-btn:disabled { opacity: 0.5; cursor: default; }
     .newsletter-note { font-size: 0.78rem; color: var(--emerald); margin-top: 0.75rem; min-height: 1.2em; }
 
+    /* Newsletter tiers */
+    .newsletter-tiers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .tier {
+      border: 1px solid #1f1f1f;
+      border-radius: 8px;
+      padding: 1rem 1.1rem 1.1rem;
+      text-align: left;
+      background: #0a0a0a;
+    }
+    .tier-pro { border-color: var(--amber-dim); background: rgba(245,158,11,0.04); }
+    .tier-name { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--emerald); margin-bottom: 0.35rem; }
+    .tier-pro .tier-name { color: var(--amber); }
+    .tier-price { font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.15rem; }
+    .tier-price span { font-size: 0.72rem; font-weight: 500; color: #777; }
+    .tier-desc { font-size: 0.78rem; color: #fff; opacity: 0.55; line-height: 1.5; margin-bottom: 0.85rem; }
+    .tier-btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid var(--amber-dim);
+      color: var(--amber);
+      background: transparent;
+      transition: all 0.15s;
+    }
+    .tier-btn:hover { background: var(--amber); color: #0a0a0a; border-color: var(--amber); }
+
+    /* Work with me */
+    .work { max-width: 760px; margin: 0 auto; padding: 1rem 2rem 0.5rem; }
+    .work-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.1rem; flex-wrap: wrap; }
+    .work-sub { font-size: 0.82rem; color: #777; max-width: 360px; line-height: 1.5; }
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1.25rem; }
+    .work-card {
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 1.1rem 1.1rem 1.2rem;
+      background: #0f0f0f;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .work-card:hover { border-color: var(--purple); box-shadow: 0 0 18px rgba(124,106,247,0.1); }
+    .work-card-title { font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
+    .work-card-desc { font-size: 0.78rem; color: #fff; opacity: 0.55; line-height: 1.55; }
+    .work-card-price { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cyan); margin-top: 0.7rem; }
+    .work-cta { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+    .work-cta-note { font-size: 0.74rem; color: #666; }
+
+    /* Sponsor slot */
+    .sponsor-wrap { max-width: 760px; margin: 1.5rem auto 0; padding: 0 2rem; }
+    .sponsor-slot {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      border: 1px dashed #2a2a2a;
+      border-radius: 8px;
+      padding: 0.85rem 1.1rem;
+      background: #0c0c0c;
+      text-decoration: none;
+    }
+    .sponsor-slot:hover { border-color: var(--cyan-dim); }
+    .sponsor-tag { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.12em; color: #555; font-weight: 600; flex-shrink: 0; }
+    .sponsor-logo { width: 34px; height: 34px; border-radius: 6px; object-fit: cover; background: #1a1a1a; flex-shrink: 0; }
+    .sponsor-body { flex: 1; min-width: 0; }
+    .sponsor-name { font-size: 0.82rem; font-weight: 600; color: #ddd; }
+    .sponsor-blurb { font-size: 0.74rem; color: #777; line-height: 1.4; }
+    .sponsor-cta { font-size: 0.74rem; color: var(--cyan); flex-shrink: 0; }
+
+    /* Display ad slots (inactive placeholders, lazy-revealed) */
+    .ad-slot {
+      max-width: 760px;
+      margin: 1.5rem auto;
+      padding: 0 2rem;
+      min-height: 110px;
+    }
+    .ad-inner {
+      height: 90px;
+      border: 1px solid #161616;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: repeating-linear-gradient(45deg, #0c0c0c, #0c0c0c 10px, #0e0e0e 10px, #0e0e0e 20px);
+      color: #3a3a3a;
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .ad-slot.revealed .ad-inner { opacity: 1; }
+
+    /* Featured / modal video (lazy-loaded) */
+    .media-wrap { position: relative; display: block; }
+    .featured-video {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      background: #1a1a1a;
+    }
+    .modal-video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+      display: block;
+      background: #1a1a1a;
+    }
+    .media-badge {
+      position: absolute;
+      top: 0.6rem;
+      left: 0.6rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.58rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      border-radius: 999px;
+      padding: 0.2rem 0.55rem;
+      pointer-events: none;
+    }
+    .media-badge::before { content: '▶'; font-size: 0.5rem; }
+    .media-play {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.25);
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+    .media-wrap.reduced .media-play { display: flex; }
+
     /* Light mode */
     body.light-mode { background: #f5f5f5; color: #111; }
     body.light-mode header { border-color: #e0e0e0; }
@@ -623,22 +794,42 @@
     body.light-mode .related-card-title { color: #111; }
     body.light-mode .quote-popover { background: #fff; border-color: #e0e0e0; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
     body.light-mode .quote-popover-btn { border-color: #e0e0e0; color: #666; }
-    body.light-mode footer { border-color: #e0e0e0; color: #bbb; }
+    body.light-mode footer { border-color: #e0e0e0; color: #999; }
+    body.light-mode .logo-role { color: #999; }
+    body.light-mode .work-card { background: #fff; border-color: #e0e0e0; }
+    body.light-mode .work-card-title { color: #111; }
+    body.light-mode .work-card-desc { color: #555; opacity: 1; }
+    body.light-mode .work-sub, body.light-mode .work-cta-note { color: #888; }
+    body.light-mode .tier { background: #fafafa; border-color: #e0e0e0; }
+    body.light-mode .tier-pro { background: rgba(245,158,11,0.06); border-color: #f0d49a; }
+    body.light-mode .tier-price { color: #111; }
+    body.light-mode .sponsor-slot { background: #fff; border-color: #ddd; }
+    body.light-mode .sponsor-name { color: #222; }
+    body.light-mode .ad-inner { background: repeating-linear-gradient(45deg, #f0f0f0, #f0f0f0 10px, #f5f5f5 10px, #f5f5f5 20px); border-color: #e5e5e5; color: #bbb; }
+    body.light-mode .featured-video, body.light-mode .modal-video { background: #e5e5e5; }
 
     footer {
       text-align: center;
-      padding: 1.5rem 2rem;
+      padding: 2rem 2rem;
       color: #444;
       font-size: 0.75rem;
       border-top: 1px solid #1a1a1a;
+      max-width: 760px;
+      margin: 2rem auto 0;
     }
+    .footer-brand { color: #888; font-weight: 600; font-size: 0.82rem; margin-bottom: 0.3rem; }
+    .footer-meta { color: #444; }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">Sam Barth</div>
+  <a class="logo" href="#" style="text-decoration:none">
+    <span class="logo-mark">SCB</span>
+    <span class="logo-name">Sam C Barth</span>
+  </a>
   <nav>
+    <a href="#work">Work with me</a>
     <a href="https://linkedin.com/in/samcbarth" target="_blank">LinkedIn</a>
     <a href="mailto:samcbarth@gmail.com">Contact</a>
     <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">☀</button>
@@ -671,8 +862,38 @@
   <h1>Building at the intersection of AI and business.</h1>
   <p class="tagline">10+ years helping organizations market smarter: generating leads, tracking results, and turning data into decisions. Now focused on how AI is reshaping the CRM and RevOps landscape.</p>
   <div class="cta-row">
-    <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank">LinkedIn</a>
-    <a href="mailto:samcbarth@gmail.com" class="btn btn-ghost">Get in touch</a>
+    <!-- TODO: replace with your real scheduling link -->
+    <a href="https://cal.com/samcbarth" class="btn" target="_blank">Book a call</a>
+    <a href="https://linkedin.com/in/samcbarth" class="btn btn-ghost" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="work-head">
+    <span class="section-label">Work with me</span>
+    <p class="work-sub">Fractional RevOps and HubSpot strategy for teams that want their CRM to actually run the business.</p>
+  </div>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-card-title">HubSpot Implementation</div>
+      <div class="work-card-desc">Onboarding, migration, and buildout — set up clean so it scales instead of sprawling.</div>
+      <div class="work-card-price">Project-based</div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-title">RevOps Audit</div>
+      <div class="work-card-desc">A full read on your data, pipeline, and reporting — with a prioritized fix list you can act on.</div>
+      <div class="work-card-price">From $2.5k</div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-title">Fractional RevOps</div>
+      <div class="work-card-desc">Ongoing strategy and hands-on ops, embedded with your GTM team a few days a month.</div>
+      <div class="work-card-price">Monthly retainer</div>
+    </div>
+  </div>
+  <div class="work-cta">
+    <!-- TODO: replace with your real scheduling link -->
+    <a href="https://cal.com/samcbarth" class="btn" target="_blank">Book a 30-min intro call</a>
+    <span class="work-cta-note">No pitch — just figuring out if it's a fit.</span>
   </div>
 </section>
 
@@ -686,8 +907,27 @@
       <button type="submit" class="newsletter-btn">Subscribe →</button>
     </form>
     <div class="newsletter-note" id="newsletter-note"></div>
+
+    <div class="newsletter-tiers">
+      <div class="tier">
+        <div class="tier-name">Free</div>
+        <div class="tier-price">$0</div>
+        <div class="tier-desc">The weekly read — signals, takes, and what's worth your attention in RevOps &amp; AI.</div>
+        <a class="tier-btn" href="#newsletter-email" onclick="document.getElementById('newsletter-email').focus()" style="border-color:var(--emerald-dim);color:var(--emerald)">You're set above ↑</a>
+      </div>
+      <div class="tier tier-pro">
+        <div class="tier-name">Pro</div>
+        <div class="tier-price">$12 <span>/ month</span></div>
+        <div class="tier-desc">Deep-dives, teardowns, and the HubSpot/RevOps playbooks I use with clients.</div>
+        <!-- TODO: replace with your real Stripe / checkout link -->
+        <a class="tier-btn" href="https://buy.stripe.com/test_placeholder" target="_blank">Go Pro →</a>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- Sponsor slot: rendered from the `sponsor` config in JS (placeholder when unset) -->
+<div class="sponsor-wrap"><div id="sponsor-slot"></div></div>
 
 <section class="posts">
   <div class="posts-header">
@@ -829,12 +1069,17 @@
 
   </div>
   <p class="no-results" id="no-results">No posts match that filter.</p>
+
+  <!-- Display ad slot: inactive placeholder, revealed on scroll. Drop an ad-network snippet inside .ad-inner to activate. -->
+  <div class="ad-slot" data-ad-slot="feed"><div class="ad-inner">Advertisement</div></div>
 </section>
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
   <div class="modal" id="modal">
     <div class="modal-progress-bar" id="modal-progress"></div>
-    <img class="modal-hero" id="modal-hero" src="" alt="">
+    <div class="media-wrap" id="modal-media">
+      <img class="modal-hero" id="modal-hero" src="" alt="">
+    </div>
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">✕</button>
       <div class="modal-header-row">
@@ -867,7 +1112,14 @@
   <button class="quote-popover-btn" onclick="shareQuoteX()">Post on X</button>
 </div>
 
-<footer>Last updated: DEPLOY_TIME</footer>
+<!-- Display ad slot: inactive placeholder, revealed on scroll. Drop an ad-network snippet inside .ad-inner to activate. -->
+<div class="ad-slot" data-ad-slot="footer"><div class="ad-inner">Advertisement</div></div>
+
+<footer>
+  <div class="footer-brand">Sam C Barth</div>
+  <div class="footer-meta">HubSpot Strategy &amp; Operations · LAIRE · Dallas, TX</div>
+  <div class="footer-meta">© 2026 Sam C Barth · Last updated: DEPLOY_TIME</div>
+</footer>
 
 <script>
 const posts = {
@@ -877,6 +1129,9 @@ const posts = {
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    // TODO: swap for your real short-video CDN URL (mp4/webm).
+    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue.</p>
       <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
@@ -920,6 +1175,9 @@ const posts = {
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
+    // TODO: swap for your real short-video CDN URL (mp4/webm). `poster` shows instantly; the clip only loads when scrolled into view.
+    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do.</p>
       <p>Today especially, I started to see what people mean when they say AI starts to fall apart.</p>
@@ -999,6 +1257,121 @@ let currentPostId = null;
 let activeFilter = null;
 let searchQuery = '';
 
+// ── Sponsor config ──────────────────────────────────────────────
+// Fill this in to feature a sponsor; leave name empty to show the "your brand here" placeholder.
+const sponsor = {
+  name: '',            // e.g. 'Acme RevOps'
+  blurb: '',           // e.g. 'The pipeline analytics tool GTM teams actually keep open.'
+  url: 'mailto:samcbarth@gmail.com?subject=Sponsoring%20the%20newsletter',
+  logo: ''             // optional square image URL
+};
+
+function renderSponsor() {
+  const el = document.getElementById('sponsor-slot');
+  if (!el) return;
+  if (sponsor.name) {
+    el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}" target="_blank" rel="noopener">
+      <span class="sponsor-tag">Sponsor</span>
+      ${sponsor.logo ? `<img class="sponsor-logo" src="${sponsor.logo}" alt="" loading="lazy">` : ''}
+      <span class="sponsor-body">
+        <span class="sponsor-name">${sponsor.name}</span>
+        <span class="sponsor-blurb">${sponsor.blurb}</span>
+      </span>
+      <span class="sponsor-cta">Visit →</span>
+    </a>`;
+  } else {
+    el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}">
+      <span class="sponsor-tag">Sponsor</span>
+      <span class="sponsor-body">
+        <span class="sponsor-name">Your brand here</span>
+        <span class="sponsor-blurb">Reach RevOps & GTM leaders reading every week.</span>
+      </span>
+      <span class="sponsor-cta">Sponsor this →</span>
+    </a>`;
+  }
+}
+
+// ── Lazy video infrastructure ───────────────────────────────────
+// Native loading="lazy" does NOT apply to <video>, so an IntersectionObserver
+// loads + plays a clip only while it's on screen, and pauses it when it leaves.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const videoObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const v = entry.target;
+    if (entry.isIntersecting) {
+      if (!v.src && v.dataset.src) v.src = v.dataset.src; // load on first reveal
+      if (!reduceMotion) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+    } else if (v.src) {
+      v.pause();
+    }
+  });
+}, { threshold: 0.25 }) : null;
+
+// Returns a media wrapper (poster <video> + badge) and registers it for lazy load/play.
+// `manualPlay` adds an inline play button for reduced-motion users; skip it when the
+// wrapper itself lives inside a clickable element (e.g. the featured card button).
+function makeLazyVideo({ src, poster, videoClass, manualPlay = true }) {
+  const wrap = document.createElement('div');
+  wrap.className = 'media-wrap' + (reduceMotion ? ' reduced' : '');
+
+  const v = document.createElement('video');
+  v.className = videoClass;
+  if (poster) v.poster = poster;
+  v.dataset.src = src;
+  v.muted = true; v.loop = true; v.playsInline = true;
+  v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+  v.preload = 'none';
+  wrap.appendChild(v);
+
+  const badge = document.createElement('span');
+  badge.className = 'media-badge';
+  badge.textContent = 'Video';
+  wrap.appendChild(badge);
+
+  if (reduceMotion && manualPlay) {
+    // Show a manual play button instead of autoplaying.
+    const btn = document.createElement('button');
+    btn.className = 'media-play';
+    btn.innerHTML = '▶';
+    btn.setAttribute('aria-label', 'Play video');
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      if (!v.src) v.src = v.dataset.src;
+      v.play(); btn.style.display = 'none';
+    };
+    wrap.appendChild(btn);
+  }
+
+  if (videoObserver) videoObserver.observe(v);
+  return wrap;
+}
+
+// Stop & release a video element (used when the modal closes / navigates away).
+function teardownVideo(v) {
+  if (!v) return;
+  if (videoObserver) videoObserver.unobserve(v);
+  v.pause();
+  v.removeAttribute('src');
+  v.load();
+}
+
+// ── Display ad slots: reveal placeholders on scroll (no third-party script) ──
+function setupAdSlots() {
+  const slots = document.querySelectorAll('.ad-slot');
+  if (!('IntersectionObserver' in window)) { slots.forEach(s => s.classList.add('revealed')); return; }
+  const obs = new IntersectionObserver((entries, o) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        // To activate: inject your ad-network snippet into entry.target.querySelector('.ad-inner') here.
+        o.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '200px' });
+  slots.forEach(s => obs.observe(s));
+}
+
 function readingTime(html) {
   const text = html.replace(/<[^>]+>/g, ' ');
   const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
@@ -1055,15 +1428,31 @@ function renderFeatured() {
   const p = posts[featuredId];
   const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
   const imgSrc = p.image.replace('w=1160&h=440', 'w=760&h=190');
-  section.innerHTML = `<button class="featured-card" onclick="openPost('${featuredId}')">
-    <img class="featured-img" src="${imgSrc}" alt="${p.title}" loading="lazy">
-    <div class="featured-body">
-      <span class="featured-badge">Featured</span>
+
+  const card = document.createElement('button');
+  card.className = 'featured-card';
+  card.onclick = () => openPost(featuredId);
+
+  // Featured media: a lazy-loaded short video when the post has one, otherwise the image.
+  if (p.video) {
+    card.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || imgSrc, videoClass: 'featured-video', manualPlay: false }));
+  } else {
+    const img = document.createElement('img');
+    img.className = 'featured-img';
+    img.src = imgSrc; img.alt = p.title; img.loading = 'lazy';
+    card.appendChild(img);
+  }
+
+  const body = document.createElement('div');
+  body.className = 'featured-body';
+  body.innerHTML = `<span class="featured-badge">Featured</span>
       <div class="featured-meta-row">${p.date} &middot; ${p.category} &middot; ${readingTime(p.body)} min read</div>
       <div class="featured-title">${p.title}</div>
-      <div class="featured-excerpt">${excerpt}</div>
-    </div>
-  </button>`;
+      <div class="featured-excerpt">${excerpt}</div>`;
+  card.appendChild(body);
+
+  section.innerHTML = '';
+  section.appendChild(card);
 }
 
 function renderRelated(id) {
@@ -1151,6 +1540,8 @@ function initCards() {
   }
 
   renderFeatured();
+  renderSponsor();
+  setupAdSlots();
   postOrder.forEach(id => {
     const card = document.querySelector(`[data-id="${id}"]`);
     if (!card) return;
@@ -1197,11 +1588,32 @@ function initCards() {
   });
 }
 
+function clearModalVideo() {
+  const media = document.getElementById('modal-media');
+  const v = media && media.querySelector('video');
+  if (v) teardownVideo(v);
+}
+
+function setModalMedia(p) {
+  const media = document.getElementById('modal-media');
+  clearModalVideo();
+  media.innerHTML = '';
+  if (p.video) {
+    media.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || p.image, videoClass: 'modal-video' }));
+  } else {
+    const img = document.createElement('img');
+    img.className = 'modal-hero';
+    img.id = 'modal-hero';
+    img.src = p.image;
+    img.alt = p.title;
+    media.appendChild(img);
+  }
+}
+
 function openPost(id) {
   currentPostId = id;
   const p = posts[id];
-  document.getElementById('modal-hero').src = p.image;
-  document.getElementById('modal-hero').alt = p.title;
+  setModalMedia(p);
   document.getElementById('modal-date').textContent = p.date;
   document.getElementById('modal-read-time').textContent = readingTime(p.body) + ' min read';
   document.getElementById('modal-category').textContent = p.category;
@@ -1238,6 +1650,7 @@ function navigatePost(dir) {
 }
 
 function closeModal() {
+  clearModalVideo();
   document.getElementById('modal-overlay').classList.remove('open');
   document.getElementById('quote-popover').style.display = 'none';
   document.body.style.overflow = '';
