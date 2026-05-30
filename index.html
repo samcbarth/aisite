@@ -433,6 +433,198 @@
     .related-card-meta { display: flex; gap: 0.4rem; align-items: center; margin-bottom: 0.3rem; flex-wrap: wrap; }
     .related-card-title { font-size: 0.82rem; font-weight: 600; color: #fff; line-height: 1.3; }
 
+    /* Theme toggle */
+    .theme-toggle {
+      background: none;
+      border: 1px solid #222;
+      color: #555;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0.2rem 0.5rem;
+      margin-left: 0.75rem;
+      transition: all 0.15s;
+      vertical-align: middle;
+    }
+    .theme-toggle:hover { border-color: #555; color: #ccc; }
+
+    /* Like button */
+    .card-like {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.68rem;
+      color: #383838;
+      cursor: pointer;
+      margin-top: 0.55rem;
+      border: none;
+      background: none;
+      font-family: inherit;
+      padding: 0;
+      transition: color 0.15s;
+    }
+    .card-like:hover, .card-like.liked { color: var(--pink); }
+    .like-btn {
+      padding: 0.5rem 1.1rem;
+      background: transparent;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.8rem;
+      color: #777;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .like-btn:hover { border-color: var(--pink); color: var(--pink); }
+    .like-btn.liked { border-color: var(--pink); color: var(--pink); }
+
+    /* X share button */
+    .share-btn-x { border-color: #2a2a2a; color: #888; }
+    .share-btn-x:hover { border-color: #555; color: #fff; }
+
+    /* Quote popover */
+    .quote-popover {
+      position: fixed;
+      display: none;
+      gap: 0.35rem;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 0.4rem 0.5rem;
+      z-index: 300;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .quote-popover-btn {
+      background: none;
+      border: 1px solid #333;
+      color: #aaa;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 0.72rem;
+      padding: 0.25rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .quote-popover-btn:hover { border-color: var(--purple); color: #fff; }
+
+    /* Newsletter */
+    .newsletter { max-width: 760px; margin: 0 auto; padding: 0 2rem 2.5rem; }
+    .newsletter-inner {
+      background: #0f0f0f;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 2rem 2rem 1.75rem;
+      text-align: center;
+    }
+    .newsletter-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--emerald);
+      opacity: 0.8;
+      margin-bottom: 0.6rem;
+    }
+    .newsletter-title { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
+    .newsletter-sub { font-size: 0.84rem; color: #555; margin-bottom: 1.25rem; line-height: 1.5; }
+    .newsletter-form { display: flex; gap: 0.5rem; max-width: 380px; margin: 0 auto; }
+    .newsletter-input {
+      flex: 1;
+      background: #0a0a0a;
+      border: 1px solid #222;
+      border-radius: 6px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.875rem;
+      padding: 0.6rem 1rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .newsletter-input::placeholder { color: #383838; }
+    .newsletter-input:focus { border-color: var(--emerald); }
+    .newsletter-btn {
+      background: var(--emerald);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.6rem 1.1rem;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .newsletter-btn:hover { opacity: 0.85; }
+    .newsletter-btn:disabled { opacity: 0.5; cursor: default; }
+    .newsletter-note { font-size: 0.78rem; color: var(--emerald); margin-top: 0.75rem; min-height: 1.2em; }
+
+    /* Light mode */
+    body.light-mode { background: #f5f5f5; color: #111; }
+    body.light-mode header { border-color: #e0e0e0; }
+    body.light-mode .logo { color: #111; }
+    body.light-mode nav a { color: #666; }
+    body.light-mode nav a:hover { color: #111; }
+    body.light-mode .theme-toggle { border-color: #d0d0d0; color: #888; }
+    body.light-mode .theme-toggle:hover { border-color: #888; color: #333; }
+    body.light-mode h1 { color: #111; }
+    body.light-mode .tagline { color: #333; }
+    body.light-mode .btn-ghost { color: #555; border-color: #d0d0d0; }
+    body.light-mode .btn-ghost:hover { color: #111; border-color: #888; }
+    body.light-mode .search-input { background: #fff; border-color: #e0e0e0; color: #111; }
+    body.light-mode .search-input::placeholder { color: #bbb; }
+    body.light-mode .filter-chip { border-color: #ddd; color: #999; }
+    body.light-mode .filter-chip:hover { border-color: #888; color: #333; }
+    body.light-mode .post-card { background: #fff; border-color: #e0e0e0; }
+    body.light-mode .post-card:hover { background: #f9f9f9; box-shadow: 0 0 18px rgba(124,106,247,0.08); }
+    body.light-mode .post-thumb { background: #e5e5e5; }
+    body.light-mode .post-date { color: #999; }
+    body.light-mode .post-read-time { color: #bbb; }
+    body.light-mode .post-title { color: #111; }
+    body.light-mode .post-excerpt { color: #444; opacity: 1; }
+    body.light-mode .post-count { color: #aaa; }
+    body.light-mode .card-like { color: #ccc; }
+    body.light-mode .card-like:hover, body.light-mode .card-like.liked { color: var(--pink); }
+    body.light-mode .no-results { color: #bbb; }
+    body.light-mode .featured-card { background: #fff; }
+    body.light-mode .featured-img { background: #e5e5e5; }
+    body.light-mode .featured-meta-row { color: #999; }
+    body.light-mode .featured-title { color: #111; }
+    body.light-mode .featured-excerpt { color: #555; opacity: 1; }
+    body.light-mode .newsletter-inner { background: #fff; border-color: #e0e0e0; }
+    body.light-mode .newsletter-title { color: #111; }
+    body.light-mode .newsletter-sub { color: #888; }
+    body.light-mode .newsletter-input { background: #f5f5f5; border-color: #d0d0d0; color: #111; }
+    body.light-mode .newsletter-input::placeholder { color: #bbb; }
+    body.light-mode .modal-overlay { background: rgba(0,0,0,0.6); }
+    body.light-mode .modal { background: #fff; border-color: #e0e0e0; }
+    body.light-mode .modal-hero { background: #e5e5e5; }
+    body.light-mode .modal-close { color: #bbb; }
+    body.light-mode .modal-close:hover { color: #111; }
+    body.light-mode .modal-date { color: #999; }
+    body.light-mode .modal-read-time { color: #bbb; }
+    body.light-mode .modal-title { color: #111; }
+    body.light-mode .modal-body { color: #222; }
+    body.light-mode .copy-btn { border-color: #d0d0d0; color: #999; }
+    body.light-mode .copy-btn:hover { border-color: var(--purple); color: #111; }
+    body.light-mode .copy-btn.copied { border-color: var(--purple); color: var(--purple); }
+    body.light-mode .like-btn { border-color: #d0d0d0; color: #aaa; }
+    body.light-mode .like-btn:hover { border-color: var(--pink); color: var(--pink); }
+    body.light-mode .like-btn.liked { border-color: var(--pink); color: var(--pink); }
+    body.light-mode .share-btn-x { border-color: #d0d0d0; color: #888; }
+    body.light-mode .share-btn-x:hover { border-color: #555; color: #111; }
+    body.light-mode .modal-nav { border-color: #e8e8e8; }
+    body.light-mode .nav-btn { border-color: #ddd; color: #999; }
+    body.light-mode .nav-btn:hover:not(:disabled) { border-color: var(--purple); color: #111; }
+    body.light-mode .related-posts { border-color: #e8e8e8; }
+    body.light-mode .related-label { color: #bbb; }
+    body.light-mode .related-card { background: #f5f5f5; border-color: #e0e0e0; }
+    body.light-mode .related-card:hover { background: #ebebeb; border-color: var(--purple); }
+    body.light-mode .related-card-title { color: #111; }
+    body.light-mode .quote-popover { background: #fff; border-color: #e0e0e0; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+    body.light-mode .quote-popover-btn { border-color: #e0e0e0; color: #666; }
+    body.light-mode footer { border-color: #e0e0e0; color: #bbb; }
+
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
@@ -449,6 +641,7 @@
   <nav>
     <a href="https://linkedin.com/in/samcbarth" target="_blank">LinkedIn</a>
     <a href="mailto:samcbarth@gmail.com">Contact</a>
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">☀</button>
   </nav>
 </header>
 
@@ -480,6 +673,19 @@
   <div class="cta-row">
     <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank">LinkedIn</a>
     <a href="mailto:samcbarth@gmail.com" class="btn btn-ghost">Get in touch</a>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="newsletter-label">Stay in the loop</div>
+    <div class="newsletter-title">Get the next post in your inbox</div>
+    <div class="newsletter-sub">RevOps, AI, and CRM insights — when I have something worth saying.</div>
+    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+      <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit" class="newsletter-btn">Subscribe →</button>
+    </form>
+    <div class="newsletter-note" id="newsletter-note"></div>
   </div>
 </section>
 
@@ -602,6 +808,8 @@
       <div class="modal-actions">
         <button class="copy-btn" id="copy-btn" onclick="copyPost()">Copy to clipboard</button>
         <button class="share-btn" onclick="shareOnLinkedIn()">Share on LinkedIn</button>
+        <button class="share-btn share-btn-x" onclick="shareOnX()">Post on X</button>
+        <button class="like-btn" id="modal-like-btn" onclick="toggleModalLike()">♥ Like</button>
       </div>
       <div class="modal-nav">
         <button class="nav-btn" id="prev-btn" onclick="navigatePost(-1)">&#8592; Prev</button>
@@ -610,6 +818,11 @@
       <div class="related-posts" id="related-posts"></div>
     </div>
   </div>
+</div>
+
+<div id="quote-popover" class="quote-popover">
+  <button class="quote-popover-btn" onclick="shareQuoteLinkedIn()">LinkedIn</button>
+  <button class="quote-popover-btn" onclick="shareQuoteX()">Post on X</button>
 </div>
 
 <footer>Last updated: DEPLOY_TIME</footer>
@@ -790,13 +1003,81 @@ function renderRelated(id) {
     }).join('')}</div>`;
 }
 
+// Like system
+function isLiked(id) { return localStorage.getItem('liked_' + id) === 'true'; }
+function toggleLike(id) {
+  localStorage.setItem('liked_' + id, String(!isLiked(id)));
+  updateLikeUI(id);
+}
+function toggleModalLike() { toggleLike(currentPostId); }
+function updateLikeUI(id) {
+  const liked = isLiked(id);
+  const cardLike = document.querySelector(`.card-like[data-id="${id}"]`);
+  if (cardLike) { cardLike.classList.toggle('liked', liked); cardLike.title = liked ? 'Unlike' : 'Like'; }
+  if (currentPostId === id) {
+    const btn = document.getElementById('modal-like-btn');
+    if (btn) { btn.textContent = liked ? '♥ Liked' : '♥ Like'; btn.classList.toggle('liked', liked); }
+  }
+}
+
+// Theme
+function toggleTheme() {
+  const isLight = document.body.classList.toggle('light-mode');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  document.getElementById('theme-toggle').textContent = isLight ? '☽' : '☀';
+}
+
+// Share
+function shareOnLinkedIn() {
+  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
+}
+function shareOnX() {
+  const title = document.getElementById('modal-title').textContent;
+  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
+  window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + url, '_blank', 'width=600,height=600');
+}
+
+// Quote sharing
+let selectedQuote = '';
+function shareQuoteLinkedIn() {
+  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
+  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
+}
+function shareQuoteX() {
+  const title = document.getElementById('modal-title').textContent;
+  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
+  const text = encodeURIComponent('"' + selectedQuote.substring(0, 200) + '" — ' + title + ' ');
+  window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank', 'width=600,height=600');
+}
+
+// Newsletter
+function handleSubscribe(e) {
+  e.preventDefault();
+  document.getElementById('newsletter-note').textContent = '✓ Got it — talk soon.';
+  document.getElementById('newsletter-email').value = '';
+  const btn = e.target.querySelector('.newsletter-btn');
+  btn.textContent = 'Done ✓'; btn.disabled = true;
+}
+
 function initCards() {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-mode');
+    document.getElementById('theme-toggle').textContent = '☽';
+  }
+
   renderFeatured();
   postOrder.forEach(id => {
     const card = document.querySelector(`[data-id="${id}"]`);
     if (!card) return;
-    const mins = readingTime(posts[id].body);
-    card.querySelector('.post-read-time').textContent = mins + ' min read';
+    card.querySelector('.post-read-time').textContent = readingTime(posts[id].body) + ' min read';
+    const likeBtn = document.createElement('button');
+    likeBtn.className = 'card-like' + (isLiked(id) ? ' liked' : '');
+    likeBtn.dataset.id = id;
+    likeBtn.title = isLiked(id) ? 'Unlike' : 'Like';
+    likeBtn.textContent = '♥ Like';
+    likeBtn.onclick = (e) => { e.stopPropagation(); toggleLike(id); };
+    card.querySelector('.post-content').appendChild(likeBtn);
   });
   buildFilters();
   applyFilters();
@@ -809,6 +1090,26 @@ function initCards() {
   document.getElementById('modal').addEventListener('scroll', function () {
     const pct = this.scrollTop / (this.scrollHeight - this.clientHeight) * 100;
     document.getElementById('modal-progress').style.width = Math.min(100, pct || 0) + '%';
+  });
+
+  document.getElementById('modal-body').addEventListener('mouseup', function () {
+    setTimeout(() => {
+      const sel = window.getSelection();
+      const text = sel ? sel.toString().trim() : '';
+      const popover = document.getElementById('quote-popover');
+      if (!text || text.length < 15) { popover.style.display = 'none'; selectedQuote = ''; return; }
+      selectedQuote = text;
+      try {
+        const rect = sel.getRangeAt(0).getBoundingClientRect();
+        popover.style.display = 'flex';
+        popover.style.top = Math.max(8, rect.top - 48) + 'px';
+        popover.style.left = Math.max(8, (rect.left + rect.right) / 2 - 90) + 'px';
+      } catch (err) {}
+    }, 10);
+  });
+
+  document.addEventListener('mousedown', function (e) {
+    if (!e.target.closest('#quote-popover')) document.getElementById('quote-popover').style.display = 'none';
   });
 }
 
@@ -830,11 +1131,16 @@ function openPost(id) {
   document.getElementById('prev-btn').disabled = idx === 0;
   document.getElementById('next-btn').disabled = idx === postOrder.length - 1;
 
-  const btn = document.getElementById('copy-btn');
-  btn.textContent = 'Copy to clipboard';
-  btn.classList.remove('copied');
+  const copyBtn = document.getElementById('copy-btn');
+  copyBtn.textContent = 'Copy to clipboard';
+  copyBtn.classList.remove('copied');
+
+  const likeBtn = document.getElementById('modal-like-btn');
+  likeBtn.textContent = isLiked(id) ? '♥ Liked' : '♥ Like';
+  likeBtn.classList.toggle('liked', isLiked(id));
 
   document.getElementById('modal-progress').style.width = '0%';
+  document.getElementById('quote-popover').style.display = 'none';
   renderRelated(id);
   document.getElementById('modal').scrollTop = 0;
   document.getElementById('modal-overlay').classList.add('open');
@@ -849,6 +1155,7 @@ function navigatePost(dir) {
 
 function closeModal() {
   document.getElementById('modal-overlay').classList.remove('open');
+  document.getElementById('quote-popover').style.display = 'none';
   document.body.style.overflow = '';
 }
 
@@ -865,11 +1172,6 @@ function copyPost() {
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = 'Copy to clipboard'; btn.classList.remove('copied'); }, 2000);
   });
-}
-
-function shareOnLinkedIn() {
-  const url = encodeURIComponent('https://samcbarth.github.io/aisite/');
-  window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=600');
 }
 
 document.addEventListener('DOMContentLoaded', initCards);
