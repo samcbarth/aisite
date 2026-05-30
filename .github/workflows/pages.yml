@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: Build, audit & deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -15,20 +16,34 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install build dependencies
+        run: npm install
+      - name: Build optimized site (minify + regenerate SEO + deploy timestamp)
+        run: npm run build
+      - name: Lighthouse CI (perf, a11y, SEO, best-practices budgets)
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./.lighthouserc.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
   deploy:
+    # Only publish from main (and manual runs) — PRs build + audit but don't deploy.
+    if: github.event_name != 'pull_request'
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - name: Inject deploy timestamp
-        run: |
-          TIMESTAMP=$(date -u '+%B %-d, %Y at %H:%M UTC')
-          sed -i "s/DEPLOY_TIME/$TIMESTAMP/" index.html
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - id: deployment
         uses: actions/deploy-pages@v4
