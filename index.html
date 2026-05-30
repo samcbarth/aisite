@@ -87,7 +87,7 @@
     .hero {
       max-width: 760px;
       margin: 0 auto;
-      padding: 4.5rem 2rem 3rem;
+      padding: 3rem 2rem 2rem;
     }
     .hero-label {
       font-size: 0.7rem;
@@ -593,12 +593,11 @@
       text-align: left;
       background: #0a0a0a;
     }
-    .tier-pro { border-color: var(--amber-dim); background: rgba(245,158,11,0.04); }
-    .tier-name { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: var(--emerald); margin-bottom: 0.35rem; }
-    .tier-pro .tier-name { color: var(--amber); }
-    .tier-price { font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.15rem; }
-    .tier-price span { font-size: 0.72rem; font-weight: 500; color: #777; }
-    .tier-desc { font-size: 0.78rem; color: #fff; opacity: 0.55; line-height: 1.5; margin-bottom: 0.85rem; }
+    .tier-pro { border-color: #242424; }
+    .tier-name { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; color: #888; margin-bottom: 0.35rem; }
+    .tier-price { font-size: 1.2rem; font-weight: 700; color: #ddd; margin-bottom: 0.15rem; }
+    .tier-price span { font-size: 0.72rem; font-weight: 500; color: #666; }
+    .tier-desc { font-size: 0.78rem; color: #fff; opacity: 0.5; line-height: 1.5; margin-bottom: 0.85rem; }
     .tier-btn {
       display: inline-block;
       width: 100%;
@@ -610,12 +609,14 @@
       font-weight: 600;
       cursor: pointer;
       text-decoration: none;
-      border: 1px solid var(--amber-dim);
-      color: var(--amber);
+      border: 1px solid #2a2a2a;
+      color: #aaa;
       background: transparent;
       transition: all 0.15s;
     }
-    .tier-btn:hover { background: var(--amber); color: #0a0a0a; border-color: var(--amber); }
+    .tier-btn:hover { border-color: var(--purple); color: #fff; }
+    .tier-btn-free { border-color: var(--emerald-dim); color: var(--emerald); }
+    .tier-btn-free:hover { border-color: var(--emerald); color: var(--emerald); }
 
     /* Work with me */
     .work { max-width: 760px; margin: 0 auto; padding: 1rem 2rem 0.5rem; }
@@ -632,7 +633,7 @@
     .work-card:hover { border-color: var(--purple); box-shadow: 0 0 18px rgba(124,106,247,0.1); }
     .work-card-title { font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
     .work-card-desc { font-size: 0.78rem; color: #fff; opacity: 0.55; line-height: 1.55; }
-    .work-card-price { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cyan); margin-top: 0.7rem; }
+    .work-card-price { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: #666; margin-top: 0.7rem; }
     .work-cta { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
     .work-cta-note { font-size: 0.74rem; color: #666; }
 
@@ -801,7 +802,7 @@
     body.light-mode .work-card-desc { color: #555; opacity: 1; }
     body.light-mode .work-sub, body.light-mode .work-cta-note { color: #888; }
     body.light-mode .tier { background: #fafafa; border-color: #e0e0e0; }
-    body.light-mode .tier-pro { background: rgba(245,158,11,0.06); border-color: #f0d49a; }
+    body.light-mode .tier-pro { background: #fafafa; border-color: #dcdcdc; }
     body.light-mode .tier-price { color: #111; }
     body.light-mode .sponsor-slot { background: #fff; border-color: #ddd; }
     body.light-mode .sponsor-name { color: #222; }
@@ -862,72 +863,11 @@
   <h1>Building at the intersection of AI and business.</h1>
   <p class="tagline">10+ years helping organizations market smarter: generating leads, tracking results, and turning data into decisions. Now focused on how AI is reshaping the CRM and RevOps landscape.</p>
   <div class="cta-row">
+    <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank">LinkedIn</a>
     <!-- TODO: replace with your real scheduling link -->
-    <a href="https://cal.com/samcbarth" class="btn" target="_blank">Book a call</a>
-    <a href="https://linkedin.com/in/samcbarth" class="btn btn-ghost" target="_blank">LinkedIn</a>
+    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank">Book a call</a>
   </div>
 </section>
-
-<section class="work" id="work">
-  <div class="work-head">
-    <span class="section-label">Work with me</span>
-    <p class="work-sub">Fractional RevOps and HubSpot strategy for teams that want their CRM to actually run the business.</p>
-  </div>
-  <div class="work-grid">
-    <div class="work-card">
-      <div class="work-card-title">HubSpot Implementation</div>
-      <div class="work-card-desc">Onboarding, migration, and buildout — set up clean so it scales instead of sprawling.</div>
-      <div class="work-card-price">Project-based</div>
-    </div>
-    <div class="work-card">
-      <div class="work-card-title">RevOps Audit</div>
-      <div class="work-card-desc">A full read on your data, pipeline, and reporting — with a prioritized fix list you can act on.</div>
-      <div class="work-card-price">From $2.5k</div>
-    </div>
-    <div class="work-card">
-      <div class="work-card-title">Fractional RevOps</div>
-      <div class="work-card-desc">Ongoing strategy and hands-on ops, embedded with your GTM team a few days a month.</div>
-      <div class="work-card-price">Monthly retainer</div>
-    </div>
-  </div>
-  <div class="work-cta">
-    <!-- TODO: replace with your real scheduling link -->
-    <a href="https://cal.com/samcbarth" class="btn" target="_blank">Book a 30-min intro call</a>
-    <span class="work-cta-note">No pitch — just figuring out if it's a fit.</span>
-  </div>
-</section>
-
-<section class="newsletter">
-  <div class="newsletter-inner">
-    <div class="newsletter-label">Stay in the loop</div>
-    <div class="newsletter-title">Get the next post in your inbox</div>
-    <div class="newsletter-sub">RevOps, AI, and CRM insights — when I have something worth saying.</div>
-    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
-      <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
-      <button type="submit" class="newsletter-btn">Subscribe →</button>
-    </form>
-    <div class="newsletter-note" id="newsletter-note"></div>
-
-    <div class="newsletter-tiers">
-      <div class="tier">
-        <div class="tier-name">Free</div>
-        <div class="tier-price">$0</div>
-        <div class="tier-desc">The weekly read — signals, takes, and what's worth your attention in RevOps &amp; AI.</div>
-        <a class="tier-btn" href="#newsletter-email" onclick="document.getElementById('newsletter-email').focus()" style="border-color:var(--emerald-dim);color:var(--emerald)">You're set above ↑</a>
-      </div>
-      <div class="tier tier-pro">
-        <div class="tier-name">Pro</div>
-        <div class="tier-price">$12 <span>/ month</span></div>
-        <div class="tier-desc">Deep-dives, teardowns, and the HubSpot/RevOps playbooks I use with clients.</div>
-        <!-- TODO: replace with your real Stripe / checkout link -->
-        <a class="tier-btn" href="https://buy.stripe.com/test_placeholder" target="_blank">Go Pro →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sponsor slot: rendered from the `sponsor` config in JS (placeholder when unset) -->
-<div class="sponsor-wrap"><div id="sponsor-slot"></div></div>
 
 <section class="posts">
   <div class="posts-header">
@@ -1069,10 +1009,69 @@
 
   </div>
   <p class="no-results" id="no-results">No posts match that filter.</p>
-
-  <!-- Display ad slot: inactive placeholder, revealed on scroll. Drop an ad-network snippet inside .ad-inner to activate. -->
-  <div class="ad-slot" data-ad-slot="feed"><div class="ad-inner">Advertisement</div></div>
 </section>
+
+<!-- Below-the-content surfaces: newsletter, consulting, sponsor — intentionally low-key -->
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="newsletter-label">Stay in the loop</div>
+    <div class="newsletter-title">Get the next post in your inbox</div>
+    <div class="newsletter-sub">RevOps, AI, and CRM insights — when I have something worth saying.</div>
+    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+      <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit" class="newsletter-btn">Subscribe →</button>
+    </form>
+    <div class="newsletter-note" id="newsletter-note"></div>
+
+    <div class="newsletter-tiers">
+      <div class="tier">
+        <div class="tier-name">Free</div>
+        <div class="tier-price">$0</div>
+        <div class="tier-desc">The weekly read — signals, takes, and what's worth your attention in RevOps &amp; AI.</div>
+        <a class="tier-btn tier-btn-free" href="#newsletter-email" onclick="document.getElementById('newsletter-email').focus()">You're set above ↑</a>
+      </div>
+      <div class="tier tier-pro">
+        <div class="tier-name">Pro</div>
+        <div class="tier-price">$12 <span>/ month</span></div>
+        <div class="tier-desc">Deep-dives, teardowns, and the HubSpot/RevOps playbooks I use with clients.</div>
+        <!-- TODO: replace with your real Stripe / checkout link -->
+        <a class="tier-btn" href="https://buy.stripe.com/test_placeholder" target="_blank">Go Pro →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="work-head">
+    <span class="section-label">Work with me</span>
+    <p class="work-sub">Fractional RevOps and HubSpot strategy for teams that want their CRM to actually run the business.</p>
+  </div>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-card-title">HubSpot Implementation</div>
+      <div class="work-card-desc">Onboarding, migration, and buildout — set up clean so it scales instead of sprawling.</div>
+      <div class="work-card-price">Project-based</div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-title">RevOps Audit</div>
+      <div class="work-card-desc">A full read on your data, pipeline, and reporting — with a prioritized fix list you can act on.</div>
+      <div class="work-card-price">From $2.5k</div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-title">Fractional RevOps</div>
+      <div class="work-card-desc">Ongoing strategy and hands-on ops, embedded with your GTM team a few days a month.</div>
+      <div class="work-card-price">Monthly retainer</div>
+    </div>
+  </div>
+  <div class="work-cta">
+    <!-- TODO: replace with your real scheduling link -->
+    <a href="https://cal.com/samcbarth" class="btn btn-ghost" target="_blank">Book a 30-min intro call</a>
+    <span class="work-cta-note">No pitch — just figuring out if it's a fit.</span>
+  </div>
+</section>
+
+<!-- Sponsor slot: rendered from the `sponsor` config in JS (placeholder when unset) -->
+<div class="sponsor-wrap"><div id="sponsor-slot"></div></div>
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBackdrop(event)">
   <div class="modal" id="modal">
