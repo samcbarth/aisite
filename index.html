@@ -869,6 +869,9 @@
   </div>
 </section>
 
+<!-- Sponsor slot: rendered from the `sponsor` config in JS (placeholder when unset) -->
+<div class="sponsor-wrap"><div id="sponsor-slot"></div></div>
+
 <section class="posts">
   <div class="posts-header">
     <span class="section-label">Latest Updates</span>
@@ -1009,6 +1012,9 @@
 
   </div>
   <p class="no-results" id="no-results">No posts match that filter.</p>
+
+  <!-- Display ad slot: inactive placeholder, revealed on scroll. Drop an ad-network snippet inside .ad-inner to activate. -->
+  <div class="ad-slot" data-ad-slot="feed"><div class="ad-inner">Advertisement</div></div>
 </section>
 
 <!-- Below-the-content surfaces: newsletter, consulting, sponsor — intentionally low-key -->
