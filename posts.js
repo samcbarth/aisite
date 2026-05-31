@@ -7,6 +7,20 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
+  post10: {
+    date: 'May 31, 2026',
+    iso: '2026-05-31',
+    title: "Costco's gas boom is a lesson in leveraging a great core business",
+    category: 'Business Strategy',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Costco's business model is a genuinely cool one. You get wholesale prices, and as long as you buy enough to clear more in savings than you pay in membership fees, you come out ahead. The catch-22 is that to capture those savings, you have to spend a lot. It's a smart trap, and large families are the ones most caught in it — they're the customers who actually need to buy in that kind of volume.</p>
+      <p>What I find most interesting right now is how they're handling gas. Prices are spiking nationwide, and Costco is using that moment to undercut everyone else at the pump. They can do that because they're not really in the business of making money on fuel — they're making it on memberships. The gas is just another reason to keep that card in your wallet.</p>
+      <p>That's the part worth sitting with. When you have a really, really successful central business model, you earn the ability to move laterally and leverage it into a different one. Costco isn't just a wholesale club; it's also a grocery store and a gas station, and each piece reinforces the others. They're far from the first company to run this play, but with the boom they're seeing right now, they're executing it about as well as anyone.</p>
+      <p>It's a good reminder for any operator: the strength of your core isn't just what it earns today. It's the optionality it buys you to expand into adjacent businesses other people can't touch. Very cool to see it play out in real time.</p>
+    `
+  },
   post7: {
     date: 'May 30, 2026',
     iso: '2026-05-30',
@@ -145,7 +159,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
