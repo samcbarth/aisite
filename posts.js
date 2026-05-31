@@ -8,6 +8,7 @@
  */
 const POSTS = {
   post10: {
+    featured: true,
     date: 'May 31, 2026',
     iso: '2026-05-31',
     title: "Costco's gas boom is a lesson in leveraging a great core business",
@@ -15,10 +16,10 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Costco's business model is a genuinely cool one. You get wholesale prices, and as long as you buy enough to clear more in savings than you pay in membership fees, you come out ahead. The catch-22 is that to capture those savings, you have to spend a lot. It's a smart trap, and large families are the ones most caught in it — they're the customers who actually need to buy in that kind of volume.</p>
-      <p>What I find most interesting right now is how they're handling gas. Prices are spiking nationwide, and Costco is using that moment to undercut everyone else at the pump. They can do that because they're not really in the business of making money on fuel — they're making it on memberships. The gas is just another reason to keep that card in your wallet.</p>
-      <p>That's the part worth sitting with. When you have a really, really successful central business model, you earn the ability to move laterally and leverage it into a different one. Costco isn't just a wholesale club; it's also a grocery store and a gas station, and each piece reinforces the others. They're far from the first company to run this play, but with the boom they're seeing right now, they're executing it about as well as anyone.</p>
-      <p>It's a good reminder for any operator: the strength of your core isn't just what it earns today. It's the optionality it buys you to expand into adjacent businesses other people can't touch. Very cool to see it play out in real time.</p>
+      <p>Costco is a super cool type of business model, being able to have the wholesale prices for people, and as long as they buy enough of it and get enough savings, then it covers the membership fees. So in order to get the quote unquote savings, they have to spend a lot.</p>
+      <p>It's a pretty good catch-22 that it's trapped a lot of, I would say, large families. I feel like they're the ones that are mostly utilizing it, because they do have to buy a lot.</p>
+      <p>I think one big thing is them being able to take advantage of high gas prices and then being able to offer lower gas in the midst of that. I think it's kind of related to the kind of lateralness that you can have if you have a really, really, really successful central business model. You're able to piggyback off of that and be able to leverage a different type of one.</p>
+      <p>And they're doing that in this case as a grocery store and also a gas station. They're not the first ones to do it, of course, but I think with their current boom that they're facing and seeing right now, they're definitely getting it to that point. It's very cool to see.</p>
     `
   },
   post7: {
@@ -70,7 +71,6 @@ const POSTS = {
     `
   },
   post6: {
-    featured: true,
     date: 'May 29, 2026',
     iso: '2026-05-29',
     title: 'Where AI actually falls apart',
