@@ -33,7 +33,14 @@ const jsonLd = {
       url: SITE,
       jobTitle: 'HubSpot Strategy & Operations Manager',
       worksFor: { '@type': 'Organization', name: 'LAIRE' },
-      sameAs: ['https://linkedin.com/in/samcbarth']
+      address: [
+        { '@type': 'PostalAddress', addressLocality: 'Dallas', addressRegion: 'TX', addressCountry: 'US' },
+        { '@type': 'PostalAddress', addressLocality: 'El Reno', addressRegion: 'OK', addressCountry: 'US' }
+      ],
+      sameAs: [
+        'https://linkedin.com/in/samcbarth',
+        'https://samcbarthresume.work/'
+      ]
     },
     {
       '@type': 'WebSite',
