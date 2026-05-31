@@ -12,6 +12,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { minify: minifyHtml } = require('html-minifier-terser');
 const { minify: minifyJs } = require('terser');
@@ -70,6 +71,24 @@ function copyRecursive(src, dest) {
     removeAttributeQuotes: false
   });
   fs.writeFileSync(path.join(dist, 'index.html'), minHtml);
+
+  // 5. Cache-bust the service worker. The browser only installs a new SW when
+  //    sw.js changes bytes, so stamp CACHE_VERSION with a hash of the built
+  //    shell. Any content change → new sw.js → new worker installs and purges
+  //    the stale cache. (Otherwise returning visitors keep the old posts.js.)
+  const swPath = path.join(dist, 'sw.js');
+  if (fs.existsSync(swPath)) {
+    const hash = crypto.createHash('sha256');
+    for (const f of ['index.html', 'app.js', 'posts.js', 'manifest.webmanifest']) {
+      const p = path.join(dist, f);
+      if (fs.existsSync(p)) hash.update(fs.readFileSync(p));
+    }
+    const version = 'scb-' + hash.digest('hex').slice(0, 12);
+    let sw = fs.readFileSync(swPath, 'utf8');
+    sw = sw.replace(/const CACHE_VERSION = '[^']*';/, `const CACHE_VERSION = '${version}';`);
+    fs.writeFileSync(swPath, sw);
+    console.log('build: service worker cache version = ' + version);
+  }
 
   console.log('build: dist/ ready (' + (minHtml.length / 1024).toFixed(1) + ' KB index.html)');
 })().catch((e) => { console.error(e); process.exit(1); });
