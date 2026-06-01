@@ -23,6 +23,19 @@
     logo: ''
   };
 
+  // ── Likes config (global, persistent via Supabase) ──────────────
+  // Clap-style: every click increments a shared counter stored in Supabase,
+  // so totals are consistent across all visitors and sessions. The anon key
+  // is safe to expose publicly (Row Level Security limits it to reading counts
+  // and calling the increment function). Until both are filled in, likes fall
+  // back to a local-only "Liked" toggle and no global number is shown.
+  const LIKES = {
+    url: '',      // e.g. https://abcdefgh.supabase.co  (Project URL)
+    anonKey: ''   // the project's anon / public API key
+  };
+  const likesEnabled = () => Boolean(LIKES.url && LIKES.anonKey);
+  const likeCounts = {}; // post_id -> global count, cached in memory
+
   function renderSponsor() {
     const el = document.getElementById('sponsor-slot');
     if (!el) return;
@@ -273,24 +286,76 @@
       }).join('')}</div>`;
   }
 
-  // ── Like system ─────────────────────────────────────────────────
-  function isLiked(id) { return localStorage.getItem('liked_' + id) === 'true'; }
-  function toggleLike(id) {
-    localStorage.setItem('liked_' + id, String(!isLiked(id)));
-    updateLikeUI(id);
+  // ── Like system (clap-style: every click bumps a shared global count) ──
+  // The count lives in Supabase so it's consistent and persistent across all
+  // sessions. localStorage no longer gates whether you can like (clicks are
+  // unlimited), it only remembers that this browser has liked at least once so
+  // the heart stays filled on return visits.
+  function hasLiked(id) { return localStorage.getItem('liked_' + id) === 'true'; }
+  function fmtCount(n) {
+    if (n == null) return '';
+    if (n >= 1000) return (n / 1000).toFixed(n % 1000 >= 100 ? 1 : 0).replace(/\.0$/, '') + 'k';
+    return String(n);
   }
-  function toggleModalLike() { toggleLike(currentPostId); }
+
+  // Fetch all counts once (single request) and paint them.
+  async function loadLikeCounts() {
+    if (!likesEnabled()) { renderAllLikeUI(); return; }
+    try {
+      const res = await fetch(LIKES.url + '/rest/v1/post_likes?select=post_id,likes', {
+        headers: { apikey: LIKES.anonKey, Authorization: 'Bearer ' + LIKES.anonKey }
+      });
+      if (res.ok) {
+        for (const row of await res.json()) likeCounts[row.post_id] = row.likes;
+      }
+    } catch (e) { /* offline or unconfigured — fall back silently */ }
+    renderAllLikeUI();
+  }
+
+  async function likePost(id) {
+    localStorage.setItem('liked_' + id, 'true');
+    if (!likesEnabled()) { updateLikeUI(id); return; } // local heart only, no fake number
+    // Optimistic: bump the global count immediately, then persist.
+    likeCounts[id] = (likeCounts[id] || 0) + 1;
+    updateLikeUI(id);
+    try {
+      const res = await fetch(LIKES.url + '/rest/v1/rpc/increment_likes', {
+        method: 'POST',
+        headers: {
+          apikey: LIKES.anonKey,
+          Authorization: 'Bearer ' + LIKES.anonKey,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ pid: id })
+      });
+      if (res.ok) {
+        const val = await res.json();
+        if (typeof val === 'number') { likeCounts[id] = val; updateLikeUI(id); }
+      }
+    } catch (e) { /* keep the optimistic value if the network hiccups */ }
+  }
+
+  function toggleModalLike() { likePost(currentPostId); }
+
+  function renderAllLikeUI() { postOrder.forEach(updateLikeUI); }
+
   function updateLikeUI(id) {
-    const liked = isLiked(id);
+    const liked = hasLiked(id);
+    const count = likeCounts[id];
+    const label = count != null ? fmtCount(count) : '';
     const cardLike = document.querySelector(`.card-like[data-id="${id}"]`);
     if (cardLike) {
       cardLike.classList.toggle('liked', liked);
-      cardLike.setAttribute('aria-pressed', String(liked));
-      cardLike.setAttribute('aria-label', liked ? 'Unlike this post' : 'Like this post');
+      cardLike.textContent = '♥' + (label ? ' ' + label : '');
+      cardLike.setAttribute('aria-label',
+        (count != null ? count + ' like' + (count === 1 ? '' : 's') + '. ' : '') + 'Like this post');
     }
     if (currentPostId === id) {
       const btn = document.getElementById('modal-like-btn');
-      if (btn) { btn.textContent = liked ? '♥ Liked' : '♥ Like'; btn.classList.toggle('liked', liked); btn.setAttribute('aria-pressed', String(liked)); }
+      if (btn) {
+        btn.textContent = (liked ? '♥ Liked' : '♥ Like') + (label ? ' · ' + label : '');
+        btn.classList.toggle('liked', liked);
+      }
     }
   }
 
@@ -387,10 +452,7 @@
     copyBtn.textContent = 'Copy to clipboard';
     copyBtn.classList.remove('copied');
 
-    const likeBtn = document.getElementById('modal-like-btn');
-    likeBtn.textContent = isLiked(id) ? '♥ Liked' : '♥ Like';
-    likeBtn.classList.toggle('liked', isLiked(id));
-    likeBtn.setAttribute('aria-pressed', String(isLiked(id)));
+    updateLikeUI(id);
 
     document.getElementById('modal-progress').style.width = '0%';
     document.getElementById('quote-popover').style.display = 'none';
@@ -465,16 +527,16 @@
       if (!card) return;
       card.querySelector('.post-read-time').textContent = readingTime(posts[id].body) + ' min read';
       const likeBtn = document.createElement('button');
-      likeBtn.className = 'card-like' + (isLiked(id) ? ' liked' : '');
+      likeBtn.className = 'card-like' + (hasLiked(id) ? ' liked' : '');
       likeBtn.dataset.id = id;
-      likeBtn.setAttribute('aria-pressed', String(isLiked(id)));
-      likeBtn.setAttribute('aria-label', isLiked(id) ? 'Unlike this post' : 'Like this post');
-      likeBtn.textContent = '♥ Like';
-      likeBtn.onclick = (e) => { e.stopPropagation(); toggleLike(id); };
+      likeBtn.textContent = '♥';
+      likeBtn.setAttribute('aria-label', 'Like this post');
+      likeBtn.onclick = (e) => { e.stopPropagation(); likePost(id); };
       card.querySelector('.post-content').appendChild(likeBtn);
     });
     buildFilters();
     applyFilters();
+    loadLikeCounts();
 
     // Delegated clicks for everything declared with data-action, plus modal backdrop.
     document.addEventListener('click', (e) => {
