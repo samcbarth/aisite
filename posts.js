@@ -8,8 +8,8 @@
  */
 const POSTS = {
   post11: {
-    date: 'May 31, 2026',
-    iso: '2026-05-31',
+    date: 'June 1, 2026',
+    iso: '2026-06-01',
     title: "The Bricks & Minifigs Lego mess is a resale-business problem waiting to happen",
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -23,8 +23,8 @@ const POSTS = {
   },
   post10: {
     featured: true,
-    date: 'May 31, 2026',
-    iso: '2026-05-31',
+    date: 'June 1, 2026',
+    iso: '2026-06-01',
     title: "Costco's gas boom is a lesson in leveraging a great core business",
     category: 'Business Strategy',
     tag: 'Worth noting', tagClass: 'tag-emerald',
