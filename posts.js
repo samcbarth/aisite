@@ -7,6 +7,20 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
+  post11: {
+    date: 'May 31, 2026',
+    iso: '2026-05-31',
+    title: "The Bricks & Minifigs Lego mess is a resale-business problem waiting to happen",
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1606166325683-e6deb697d301?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>There's a whole controversy going on right now with Bricks & Minifigs, the Lego resale chain, and one of their stores allegedly walking off with a man's father's lifetime collection of Star Wars Legos.</p>
+      <p>The way I see it, this is one of the huge parts of the resale business, especially when it comes to franchises and franchise owners. I think it can really start to become super, super messy when it comes to reselling somebody else's collectibles, and then new franchise owners come in that change hands and change how things are done.</p>
+      <p>And then it can leave somebody really kind of in the dust, which is kind of what's happening right now to this man's father's lifetime collection of Star Wars Legos. The family consigned it to a store in Oregon, the franchise changed ownership, and the new operators wouldn't honor the original arrangement or return what didn't sell.</p>
+      <p>That's the part that should scare anybody in a consignment or resale model. The inventory on your shelves often isn't yours. It belongs to the people who trusted you with it. When the business changes hands, that trust doesn't automatically transfer, and the people who get hurt are the ones who were furthest from the paperwork.</p>
+    `
+  },
   post10: {
     featured: true,
     date: 'May 31, 2026',
@@ -159,7 +173,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
