@@ -9,6 +9,9 @@
 
   const posts = window.POSTS || {};
   const postOrder = window.POST_ORDER || [];
+  function toSlug(title) {
+    return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
   let currentPostId = null;
   let activeFilter = null;
   let searchQuery = '';
@@ -241,7 +244,7 @@
     const card = document.createElement('a');
     card.className = 'featured-card';
     card.setAttribute('aria-label', 'Featured post: ' + p.title);
-    card.href = 'posts/' + featuredId + '/';
+    card.href = 'posts/' + toSlug(p.title) + '/';
 
     if (p.video) {
       card.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || imgSrc, videoClass: 'featured-video', manualPlay: false }));

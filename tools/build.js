@@ -111,6 +111,9 @@ function copyRecursive(src, dest) {
   function escAttr(str) {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
+  function toSlug(title) {
+    return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
   function makeOgImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=630');
   }
@@ -127,7 +130,7 @@ function copyRecursive(src, dest) {
     const cards = related.map(id => {
       const rp = POSTS[id];
       const thumb = rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300');
-      return `<a class="related-card" href="../${id}/">` +
+      return `<a class="related-card" href="../${toSlug(rp.title)}/">` +
         `<img src="${thumb}" alt="" loading="lazy">` +
         `<div class="related-info">` +
         `<span class="related-cat">${rp.category}</span>` +
@@ -143,7 +146,8 @@ function copyRecursive(src, dest) {
   for (const id of POST_ORDER) {
     const p = POSTS[id];
     if (!p) continue;
-    const canonical = `${BASE_URL}/posts/${id}/`;
+    const slug = toSlug(p.title);
+    const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
     const jsonLd = JSON.stringify({
@@ -177,7 +181,7 @@ function copyRecursive(src, dest) {
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))
       .replace('POST_JSON_LD', jsonLd);
 
-    const postDir = path.join(postsDir, id);
+    const postDir = path.join(postsDir, slug);
     fs.mkdirSync(postDir, { recursive: true });
 
     const minPage = await minifyHtml(page, {
