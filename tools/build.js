@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { minify: minifyHtml } = require('html-minifier-terser');
 const { minify: minifyJs } = require('terser');
+const { POSTS, POST_ORDER } = require('../posts.js');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
@@ -91,4 +92,104 @@ function copyRecursive(src, dest) {
   }
 
   console.log('build: dist/ ready (' + (minHtml.length / 1024).toFixed(1) + ' KB index.html)');
+
+  // 6. Generate individual post pages from post-template.html
+  const BASE_URL = 'https://samcbarth.github.io/aisite';
+  const template = fs.readFileSync(path.join(root, 'post-template.html'), 'utf8');
+
+  function stripHtml(html) {
+    return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  function readingTime(body) {
+    const words = stripHtml(body).split(/\s+/).filter(w => w.length > 0).length;
+    return Math.max(1, Math.round(words / 200));
+  }
+  function makeExcerpt(body) {
+    const text = stripHtml(body);
+    return text.length > 160 ? text.slice(0, 157) + '...' : text;
+  }
+  function escAttr(str) {
+    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function makeOgImage(imgUrl) {
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=630');
+  }
+  function makeHeroImage(imgUrl) {
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
+  }
+  function makeRelatedHtml(postId) {
+    const p = POSTS[postId];
+    if (!p) return '';
+    const related = POST_ORDER
+      .filter(id => id !== postId && POSTS[id] && (POSTS[id].category === p.category || POSTS[id].tag === p.tag))
+      .slice(0, 2);
+    if (!related.length) return '';
+    const cards = related.map(id => {
+      const rp = POSTS[id];
+      const thumb = rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300');
+      return `<a class="related-card" href="../${id}/">` +
+        `<img src="${thumb}" alt="" loading="lazy">` +
+        `<div class="related-info">` +
+        `<span class="related-cat">${rp.category}</span>` +
+        `<div class="related-post-title">${rp.title}</div>` +
+        `</div></a>`;
+    }).join('');
+    return `<div class="related-label">More posts</div><div class="related-grid">${cards}</div>`;
+  }
+
+  const postsDir = path.join(dist, 'posts');
+  fs.mkdirSync(postsDir, { recursive: true });
+
+  for (const id of POST_ORDER) {
+    const p = POSTS[id];
+    if (!p) continue;
+    const canonical = `${BASE_URL}/posts/${id}/`;
+    const excerpt = makeExcerpt(p.body);
+    const readTime = readingTime(p.body);
+    const jsonLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: p.title,
+      datePublished: p.iso,
+      url: canonical,
+      author: { '@type': 'Person', name: 'Sam C Barth', url: BASE_URL },
+      image: makeOgImage(p.image),
+      description: excerpt,
+      articleSection: p.category
+    });
+
+    const titleSafe = escAttr(p.title);
+    const excerptSafe = escAttr(excerpt);
+
+    let page = template
+      .replace(/POST_TITLE/g, titleSafe)
+      .replace(/POST_EXCERPT/g, excerptSafe)
+      .replace(/POST_IMAGE_OG/g, makeOgImage(p.image))
+      .replace(/POST_IMAGE_HERO/g, makeHeroImage(p.image))
+      .replace(/POST_DATE/g, p.date)
+      .replace(/POST_ISO/g, p.iso)
+      .replace(/POST_CATEGORY/g, p.category)
+      .replace(/POST_TAG_CLASS/g, p.tagClass)
+      .replace(/POST_TAG/g, p.tag)
+      .replace(/POST_READ_TIME/g, String(readTime))
+      .replace(/POST_CANONICAL/g, canonical)
+      .replace('POST_BODY', p.body.trim())
+      .replace('POST_RELATED_HTML', makeRelatedHtml(id))
+      .replace('POST_JSON_LD', jsonLd);
+
+    const postDir = path.join(postsDir, id);
+    fs.mkdirSync(postDir, { recursive: true });
+
+    const minPage = await minifyHtml(page, {
+      collapseWhitespace: true,
+      removeComments: true,
+      minifyCSS: true,
+      minifyJS: false,
+      keepClosingSlash: true,
+      removeAttributeQuotes: false
+    });
+    fs.writeFileSync(path.join(postDir, 'index.html'), minPage);
+  }
+  console.log(`build: generated ${POST_ORDER.length} post pages in dist/posts/`);
+
 })().catch((e) => { console.error(e); process.exit(1); });

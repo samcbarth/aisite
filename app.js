@@ -238,10 +238,10 @@
     const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
     const imgSrc = p.image.replace('w=1160&h=440', 'w=760&h=190');
 
-    const card = document.createElement('button');
+    const card = document.createElement('a');
     card.className = 'featured-card';
     card.setAttribute('aria-label', 'Featured post: ' + p.title);
-    card.onclick = () => openPost(featuredId);
+    card.href = 'posts/' + featuredId + '/';
 
     if (p.video) {
       card.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || imgSrc, videoClass: 'featured-video', manualPlay: false }));

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>POST_TITLE — Sam C Barth</title>
+  <meta name="author" content="Sam C Barth">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="POST_EXCERPT">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="POST_CANONICAL">
+  <meta property="og:title" content="POST_TITLE">
+  <meta property="og:description" content="POST_EXCERPT">
+  <meta property="og:image" content="POST_IMAGE_OG">
+  <meta property="article:published_time" content="POST_ISO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="POST_TITLE">
+  <meta name="twitter:description" content="POST_EXCERPT">
+  <meta name="twitter:image" content="POST_IMAGE_OG">
+  <link rel="canonical" href="POST_CANONICAL">
+  <link rel="alternate" type="application/rss+xml" title="Sam C Barth" href="../../feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="../../assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <script type="application/ld+json">POST_JSON_LD</script>
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('../../assets/fonts/space-grotesk-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('../../assets/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    :root {
+      --purple: #7c6af7;
+      --purple-dim: #3d3380;
+      --cyan: #22d3ee;
+      --cyan-dim: #164e5a;
+      --amber: #f59e0b;
+      --amber-dim: #5c3b08;
+      --emerald: #10b981;
+      --emerald-dim: #064e35;
+      --orange: #f97316;
+      --orange-dim: #5c2a08;
+      --pink: #f472b6;
+      --pink-dim: #5c1c40;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      background: var(--purple);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      z-index: 999;
+    }
+
+    /* Header */
+    .site-header {
+      border-bottom: 1px solid #1f1f1f;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      color: #fff;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 0 14px rgba(124,106,247,0.35);
+    }
+    .logo-name { line-height: 1; }
+    .logo-role {
+      display: block;
+      font-size: 0.6rem;
+      font-weight: 500;
+      color: #666;
+      letter-spacing: 0.04em;
+      margin-top: 0.15rem;
+    }
+    .back-link {
+      font-size: 0.82rem;
+      color: #666;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #fff; }
+
+    /* Hero image */
+    .hero-wrap {
+      width: 100%;
+      max-height: 420px;
+      overflow: hidden;
+      background: #111;
+    }
+    .hero-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Article container */
+    .post-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    /* Meta row */
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.1rem;
+    }
+    .post-date {
+      font-size: 0.68rem;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .sep { color: #2e2e2e; font-size: 0.7rem; }
+    .post-read-time { font-size: 0.68rem; color: #444; }
+    .post-category {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--purple);
+      border: 1px solid var(--purple-dim);
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-weight: 500;
+    }
+    .post-tag {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid;
+    }
+    .tag-cyan    { color: var(--cyan);    border-color: var(--cyan-dim);    }
+    .tag-amber   { color: var(--amber);   border-color: var(--amber-dim);   }
+    .tag-emerald { color: var(--emerald); border-color: var(--emerald-dim); }
+    .tag-orange  { color: var(--orange);  border-color: var(--orange-dim);  }
+    .tag-pink    { color: var(--pink);    border-color: var(--pink-dim);    }
+    .tag-purple  { color: var(--purple);  border-color: var(--purple-dim);  }
+
+    /* Title */
+    .post-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    /* Body */
+    .post-body {
+      font-size: 1rem;
+      color: #f0f0f0;
+      line-height: 1.85;
+      opacity: 0.88;
+    }
+    .post-body p { margin-bottom: 1.35rem; }
+    .post-body p:last-child { margin-bottom: 0; }
+    .post-body em { font-style: italic; }
+    .post-body strong { font-weight: 600; color: #fff; }
+    .post-body a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
+    .post-body a:hover { color: var(--cyan); }
+
+    /* Footer nav */
+    .post-footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-back {
+      font-size: 0.85rem;
+      color: #666;
+      transition: color 0.15s;
+    }
+    .footer-back:hover { color: #fff; }
+
+    /* Related posts */
+    .related-section {
+      border-top: 1px solid #1f1f1f;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+    .related-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--cyan);
+      opacity: 0.7;
+      margin-bottom: 1.25rem;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.75rem;
+    }
+    .related-card {
+      background: #0f0f0f;
+      border: 1px solid #1f1f1f;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover {
+      border-color: var(--purple);
+      box-shadow: 0 0 18px rgba(124,106,247,0.12);
+    }
+    .related-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+      background: #1a1a1a;
+    }
+    .related-info {
+      padding: 0.9rem 1rem;
+      flex: 1;
+    }
+    .related-cat {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--purple);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .related-post-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    /* Site footer */
+    .site-footer {
+      border-top: 1px solid #111;
+      padding: 2rem;
+      text-align: center;
+    }
+    .site-footer-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: #383838;
+    }
+    .site-footer-inner a { color: #444; transition: color 0.15s; }
+    .site-footer-inner a:hover { color: #aaa; }
+
+    @media (max-width: 600px) {
+      .post-container { padding: 2rem 1.25rem 3rem; }
+      .post-title { font-size: 1.55rem; }
+      .hero-img { height: 260px; }
+      .related-section { padding: 2rem 1.25rem 3rem; }
+      .header-inner { padding: 0.9rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#post-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../" class="logo">
+        <span class="logo-mark">SCB</span>
+        <span class="logo-name">
+          Sam C Barth
+          <span class="logo-role">RevOps &amp; AI Strategy</span>
+        </span>
+      </a>
+      <a href="../../" class="back-link">← All posts</a>
+    </div>
+  </header>
+
+  <div class="hero-wrap">
+    <img class="hero-img" src="POST_IMAGE_HERO" alt="">
+  </div>
+
+  <main>
+    <div class="post-container" id="post-content">
+      <div class="post-meta">
+        <span class="post-date">POST_DATE</span>
+        <span class="sep">·</span>
+        <span class="post-category">POST_CATEGORY</span>
+        <span class="post-tag POST_TAG_CLASS">POST_TAG</span>
+        <span class="sep">·</span>
+        <span class="post-read-time">POST_READ_TIME min read</span>
+      </div>
+      <h1 class="post-title">POST_TITLE</h1>
+      <div class="post-body">
+        POST_BODY
+      </div>
+      <div class="post-footer">
+        <a href="../../" class="footer-back">← Back to all posts</a>
+      </div>
+    </div>
+
+    <section class="related-section" aria-label="Related posts">
+      POST_RELATED_HTML
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>Sam C Barth</span>
+      <a href="../../">samcbarth.github.io/aisite</a>
+    </div>
+  </footer>
+</body>
+</html>
