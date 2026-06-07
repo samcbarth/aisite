@@ -8,6 +8,7 @@
  */
 const POSTS = {
   post12: {
+    featured: true,
     date: 'June 7, 2026',
     iso: '2026-06-07',
     title: "The most valuable AI use case isn't a product. It's a personal tool.",
@@ -63,7 +64,6 @@ const POSTS = {
     `
   },
   post10: {
-    featured: true,
     date: 'June 1, 2026',
     iso: '2026-06-01',
     title: "Costco's gas boom is a lesson in leveraging a great core business",
