@@ -26,15 +26,18 @@
     logo: ''
   };
 
-  // ── Likes config (global, persistent via Supabase) ──────────────
-  // Clap-style: every click increments a shared counter stored in Supabase,
-  // so totals are consistent across all visitors and sessions. The anon key
-  // is safe to expose publicly (Row Level Security limits it to reading counts
-  // and calling the increment function). Until both are filled in, likes fall
-  // back to a local-only "Liked" toggle and no global number is shown.
+  // ── Likes config ────────────────────────────────────────────────────
+  // Setup (one time):
+  //   1. Create a free project at supabase.com
+  //   2. Run supabase-setup.sql in the SQL Editor (Dashboard → SQL Editor)
+  //   3. Fill in url and anonKey below (Settings → API)
+  // Likes are clap-style (every click counts), stored in Supabase so they
+  // accumulate across all visitors and sessions. The anon key is safe to
+  // expose here — Row Level Security limits it to reading counts and calling
+  // the increment function.
   const LIKES = {
-    url: '',      // e.g. https://abcdefgh.supabase.co  (Project URL)
-    anonKey: ''   // the project's anon / public API key
+    url:     '',   // https://xxxxxxxxxxxx.supabase.co
+    anonKey: ''    // eyJhbGci...  (anon / public key)
   };
   const likesEnabled = () => Boolean(LIKES.url && LIKES.anonKey);
   const likeCounts = {}; // post_id -> global count, cached in memory
