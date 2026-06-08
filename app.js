@@ -32,7 +32,7 @@
   //   2. Extensions → Apps Script → paste google-apps-script.js → Deploy as web app
   //   3. Paste the web app URL below
   const LIKES = {
-    sheetsUrl: ''  // https://script.google.com/macros/s/.../exec
+    sheetsUrl: 'https://script.google.com/macros/s/AKfycbxDBkDGUwhzBF0556X97OuiBb29hfzDN-VMm5VoUvSbRts_za_orLbykiE5ztpwRnQP/exec'
   };
   const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
