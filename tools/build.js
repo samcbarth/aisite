@@ -177,6 +177,7 @@ function copyRecursive(src, dest) {
       .replace(/POST_TAG/g, p.tag)
       .replace(/POST_READ_TIME/g, String(readTime))
       .replace(/POST_CANONICAL/g, canonical)
+      .replace(/POST_ID/g, id)
       .replace('POST_BODY', p.body.trim())
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))
       .replace('POST_JSON_LD', jsonLd);
