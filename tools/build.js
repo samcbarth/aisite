@@ -55,7 +55,7 @@ function copyRecursive(src, dest) {
   execFileSync('node', [path.join(root, 'tools', 'generate-seo.js'), dist], { stdio: 'inherit' });
 
   // 4a. Minify the JS bundles
-  for (const f of ['posts.js', 'app.js']) {
+  for (const f of ['posts.js', 'app.js', 'post-likes.js']) {
     const code = fs.readFileSync(path.join(root, f), 'utf8');
     const out = await minifyJs(code, { compress: true, mangle: true });
     fs.writeFileSync(path.join(dist, f), out.code);

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>POST_TITLE — Sam C Barth</title>
   <meta name="author" content="Sam C Barth">
@@ -243,6 +243,22 @@
       transition: color 0.15s;
     }
     .footer-back:hover { color: #fff; }
+    .post-like-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: transparent;
+      border: 1px solid #2a2a2a;
+      color: #555;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .post-like-btn:hover { color: var(--pink); border-color: var(--pink-dim); }
+    .post-like-btn.liked  { color: var(--pink); border-color: var(--pink-dim); }
 
     /* Related posts */
     .related-section {
@@ -368,6 +384,7 @@
       </div>
       <div class="post-footer">
         <a href="../../" class="footer-back">← Back to all posts</a>
+        <button class="post-like-btn" id="post-like-btn" data-id="POST_ID" aria-label="Like this post">♥</button>
       </div>
     </div>
 
@@ -376,6 +393,7 @@
     </section>
   </main>
 
+  <script src="../../post-likes.js"></script>
   <footer class="site-footer">
     <div class="site-footer-inner">
       <span>Sam C Barth</span>
