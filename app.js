@@ -27,19 +27,14 @@
   };
 
   // ── Likes config ────────────────────────────────────────────────────
-  // Setup (one time):
-  //   1. Create a free project at supabase.com
-  //   2. Run supabase-setup.sql in the SQL Editor (Dashboard → SQL Editor)
-  //   3. Fill in url and anonKey below (Settings → API)
-  // Likes are clap-style (every click counts), stored in Supabase so they
-  // accumulate across all visitors and sessions. The anon key is safe to
-  // expose here — Row Level Security limits it to reading counts and calling
-  // the increment function.
+  // Setup (one time) — see google-apps-script.js for full instructions:
+  //   1. Create a Google Sheet with a tab named "likes" (headers: post_id, likes)
+  //   2. Extensions → Apps Script → paste google-apps-script.js → Deploy as web app
+  //   3. Paste the web app URL below
   const LIKES = {
-    url:     '',   // https://xxxxxxxxxxxx.supabase.co
-    anonKey: ''    // eyJhbGci...  (anon / public key)
+    sheetsUrl: ''  // https://script.google.com/macros/s/.../exec
   };
-  const likesEnabled = () => Boolean(LIKES.url && LIKES.anonKey);
+  const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
 
   function renderSponsor() {
@@ -304,15 +299,14 @@
     return String(n);
   }
 
-  // Fetch all counts once (single request) and paint them.
+  // Fetch all counts in one request and paint them.
   async function loadLikeCounts() {
     if (!likesEnabled()) { renderAllLikeUI(); return; }
     try {
-      const res = await fetch(LIKES.url + '/rest/v1/post_likes?select=post_id,likes', {
-        headers: { apikey: LIKES.anonKey, Authorization: 'Bearer ' + LIKES.anonKey }
-      });
+      const res = await fetch(LIKES.sheetsUrl + '?action=counts');
       if (res.ok) {
-        for (const row of await res.json()) likeCounts[row.post_id] = row.likes;
+        const counts = await res.json();
+        for (const [id, n] of Object.entries(counts)) likeCounts[id] = n;
       }
     } catch (e) { /* offline or unconfigured — fall back silently */ }
     renderAllLikeUI();
@@ -320,23 +314,14 @@
 
   async function likePost(id) {
     localStorage.setItem('liked_' + id, 'true');
-    if (!likesEnabled()) { updateLikeUI(id); return; } // local heart only, no fake number
-    // Optimistic: bump the global count immediately, then persist.
+    if (!likesEnabled()) { updateLikeUI(id); return; }
     likeCounts[id] = (likeCounts[id] || 0) + 1;
     updateLikeUI(id);
     try {
-      const res = await fetch(LIKES.url + '/rest/v1/rpc/increment_likes', {
-        method: 'POST',
-        headers: {
-          apikey: LIKES.anonKey,
-          Authorization: 'Bearer ' + LIKES.anonKey,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ pid: id })
-      });
+      const res = await fetch(LIKES.sheetsUrl + '?action=like&id=' + encodeURIComponent(id));
       if (res.ok) {
-        const val = await res.json();
-        if (typeof val === 'number') { likeCounts[id] = val; updateLikeUI(id); }
+        const data = await res.json();
+        if (typeof data.count === 'number') { likeCounts[id] = data.count; updateLikeUI(id); }
       }
     } catch (e) { /* keep the optimistic value if the network hiccups */ }
   }
