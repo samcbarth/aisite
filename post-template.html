@@ -218,6 +218,7 @@
       color: #f0f0f0;
       line-height: 1.85;
       opacity: 0.88;
+      display: flow-root;
     }
     .post-body p { margin-bottom: 1.35rem; }
     .post-body p:last-child { margin-bottom: 0; }
@@ -225,6 +226,30 @@
     .post-body strong { font-weight: 600; color: #fff; }
     .post-body a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
     .post-body a:hover { color: var(--cyan); }
+
+    .inline-media {
+      width: min(44%, 260px);
+      margin: 0 0 1rem 1rem;
+      background: #111;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .inline-media-left {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+    .inline-media-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
+    }
+    .inline-media img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #1a1a1a;
+    }
 
     /* Footer nav */
     .post-footer {
@@ -345,6 +370,13 @@
       .hero-img { height: 260px; }
       .related-section { padding: 2rem 1.25rem 3rem; }
       .header-inner { padding: 0.9rem 1.25rem; }
+      .inline-media,
+      .inline-media-left,
+      .inline-media-right {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+      }
     }
   </style>
 </head>

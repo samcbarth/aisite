@@ -120,6 +120,21 @@ function copyRecursive(src, dest) {
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
+  function makeInlineImage(imgUrl) {
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=650');
+  }
+  function injectInlineMedia(body, post, postId) {
+    const side = POST_ORDER.indexOf(postId) % 2 === 0 ? 'right' : 'left';
+    const imgUrl = makeInlineImage(post.inlineImage || post.image);
+    const inline = `<figure class="inline-media inline-media-${side}"><img src="${imgUrl}" alt="${escAttr(post.title)}" width="900" height="650" loading="lazy"></figure>`;
+    let paragraphCount = 0;
+    const replaced = body.replace(/<\/p>/g, (match) => {
+      paragraphCount += 1;
+      return paragraphCount === 2 ? match + '\n' + inline : match;
+    });
+    if (paragraphCount >= 2) return replaced;
+    return inline + body;
+  }
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
     if (!p) return '';
@@ -150,6 +165,7 @@ function copyRecursive(src, dest) {
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
+    const bodyHtml = injectInlineMedia(p.body.trim(), p, id);
     const jsonLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
@@ -178,7 +194,7 @@ function copyRecursive(src, dest) {
       .replace(/POST_READ_TIME/g, String(readTime))
       .replace(/POST_CANONICAL/g, canonical)
       .replace(/POST_ID/g, id)
-      .replace('POST_BODY', p.body.trim())
+      .replace('POST_BODY', bodyHtml)
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))
       .replace('POST_JSON_LD', jsonLd);
 
