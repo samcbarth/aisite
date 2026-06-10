@@ -142,22 +142,112 @@ function copyRecursive(src, dest) {
     post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
     post3: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
   };
-  const INLINE_QUOTES = {
-    post20: {
-      after: 4,
-      quotes: [
-        {
-          label: 'Bullish view',
-          text: 'We are now a few hundred billion dollars into it.',
-          meta: 'Jensen Huang, Nvidia CEO'
-        },
-        {
-          label: 'Reality check',
-          text: 'the daily water usage over the course of an entire year is roughly equivalent to what a single restaurant would use.',
-          meta: 'Satya Nadella, Microsoft CEO'
-        }
-      ]
+  const QUOTE_LIBRARY = {
+    huangInfra: {
+      text: 'We are now a few hundred billion dollars into it.',
+      source: 'South China Morning Post',
+      sourceUrl: 'https://www.scmp.com/tech/tech-war/article/3340709/watch-nvidia-ceo-jensen-huang-speak-davos'
+    },
+    nadellaWater: {
+      text: 'In fact, the daily water usage over the course of an entire year is roughly equivalent to what a single restaurant would use.',
+      source: 'Windows Central',
+      sourceUrl: 'https://www.windowscentral.com/microsoft/satya-nadella-microsofts-ai-data-center-water-cooling-a-single-restaurant'
+    },
+    yaminiDisconnection: {
+      text: 'Companies are struggling with unprecedented disconnection from their customers and each other.',
+      source: 'HubSpot',
+      sourceUrl: 'https://www.hubspot.com/web-guide/customer-connection-blueprint/future'
+    },
+    dharmeshProblems: {
+      text: 'Customers are usually very good at identifying their problems, not so much the solutions.',
+      source: 'HubSpot',
+      sourceUrl: 'https://blog.hubspot.com/service/customer-success-quotes'
+    },
+    ellisonImportant: {
+      text: 'Is this the most important new computer technology ever? Probably.',
+      source: 'Oracle',
+      sourceUrl: 'https://blogs.oracle.com/connect/larry-ellison-oracle-shape-future-healthcare'
+    },
+    ellisonProductive: {
+      text: 'We proved to ourselves that we could be much more productive.',
+      source: 'Oracle',
+      sourceUrl: 'https://blogs.oracle.com/connect/larry-ellison-commits-oracle-to-healthcare-big-challenges'
+    },
+    muskFuture: {
+      text: "You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about.",
+      source: 'SpaceX',
+      sourceUrl: 'https://www.spacex.com/mission'
+    },
+    costcoValue: {
+      text: 'We have one mission, to sell top-quality merchandise to our members at the lowest possible prices.',
+      source: 'Costco Investor Relations',
+      sourceUrl: 'https://investor.costco.com/news/news-details/2000/Costco-Wholesale-Opens-Two-Warehouses-in-the-State-of-Texas-09-20-2000/default.aspx'
+    },
+    andrewElectricity: {
+      text: 'AI is the new electricity.',
+      source: 'Stanford Graduate School of Business',
+      sourceUrl: 'https://www.gsb.stanford.edu/insights/andrew-ng-why-ai-new-electricity'
+    },
+    benioffAgentic: {
+      text: 'Agentic AI is a new labor model, new productivity model, and a new economic model.',
+      source: 'Salesforce',
+      sourceUrl: 'https://www.salesforce.com/news/stories/agentic-ai-reshapes-workforce/'
+    },
+    bradCommunity: {
+      text: 'Progress must go hand in hand with partnership.',
+      source: 'Brad Smith on LinkedIn',
+      sourceUrl: 'https://www.linkedin.com/posts/bradsmi_today-we-areannouncing-microsoftsfivepoint-activity-7416834807470649344-FhTt'
+    },
+    kurtzAgents: {
+      text: "The humans get elevated into a role where they're now controlling a fleet of agents.",
+      source: 'CRN',
+      sourceUrl: 'https://www.crn.com/news/security/2025/george-kurtz-s-5-boldest-ai-statements-at-crowdstrike-fal-con-2025'
+    },
+    dellAIFirst: {
+      text: 'machine intelligent systems will be the primary consumer of the world\'s IT computing power',
+      source: 'CRN',
+      sourceUrl: 'https://www.crn.com/news/channel-news/michael-dell-tech-built-for-ai-first-will-dominate-computing'
+    },
+    benioffTrust: {
+      text: 'In a world of so much mistrust, being a trusted enterprise means making trust your highest value.',
+      source: 'Salesforce',
+      sourceUrl: 'https://www.salesforce.com/blog/how-to/build-brand-trust/'
+    },
+    spaceXTrillions: {
+      text: 'to the Moon and Mars, energy production on the Moon and Mars, such future markets could be worth in the "trillions" of dollars',
+      source: 'SpaceX S-1 filing',
+      sourceUrl: 'https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/Project%20Apex%20-%20Australian%20Wrap%20and%20S-1%20-%20Final%20%28Lodgement%204%20June%202026%29%20-%20Compressed%20vF.pdf'
     }
+  };
+  function makeQuote(label, quote) {
+    return {
+      label,
+      text: quote.text,
+      source: quote.source,
+      sourceUrl: quote.sourceUrl
+    };
+  }
+  const INLINE_QUOTES = {
+    post20: { after: 4, quotes: [makeQuote('Bullish view', QUOTE_LIBRARY.huangInfra), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
+    post19: { after: 3, quotes: [makeQuote('Product view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Operator view', QUOTE_LIBRARY.dharmeshProblems)] },
+    post18: { after: 3, quotes: [makeQuote('Product view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Operator view', QUOTE_LIBRARY.dharmeshProblems)] },
+    post14: { after: 3, quotes: [makeQuote('Builder view', QUOTE_LIBRARY.muskFuture), makeQuote('Market view', QUOTE_LIBRARY.spaceXTrillions)] },
+    post13: { after: 3, quotes: [makeQuote('Expansion view', QUOTE_LIBRARY.ellisonImportant), makeQuote('Execution view', QUOTE_LIBRARY.ellisonProductive)] },
+    post15: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Platform view', QUOTE_LIBRARY.ellisonImportant)] },
+    post16: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
+    post17: { after: 3, quotes: [makeQuote('Future view', QUOTE_LIBRARY.muskFuture), makeQuote('Buildout view', QUOTE_LIBRARY.huangInfra)] },
+    post12: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Operator view', QUOTE_LIBRARY.benioffAgentic)] },
+    post11: { after: 3, quotes: [makeQuote('Value view', QUOTE_LIBRARY.costcoValue), makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems)] },
+    post10: { after: 3, quotes: [makeQuote('Value view', QUOTE_LIBRARY.costcoValue), makeQuote('Membership view', { text: 'This is consistent with Costco\'s goal of providing greater value to our members by continually providing incentives for greater use and greater purchases through their Costco membership.', source: 'Costco Investor Relations', sourceUrl: 'https://investor.costco.com/news/news-details/2000/Costco-Wholesale-Corporation-Reports-March-Sales-Results-and-the-National-Rollout-of-a-2-Annual-Reward-Program-for-Executive-Members-04-06-2000/default.aspx' })] },
+    post7: { after: 3, quotes: [makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst), makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra)] },
+    post8: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst)] },
+    post9: { after: 3, quotes: [makeQuote('Defender view', QUOTE_LIBRARY.kurtzAgents), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
+    post6: { after: 2, quotes: [makeQuote('Practical view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Execution view', QUOTE_LIBRARY.bradCommunity)] },
+    post5: { after: 2, quotes: [makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
+    post4: { after: 2, quotes: [makeQuote('Agentic view', QUOTE_LIBRARY.benioffAgentic), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
+    post1: { after: 2, quotes: [makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems)] },
+    post2: { after: 2, quotes: [makeQuote('Build view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust)] },
+    post3: { after: 2, quotes: [makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] }
   };
 
   function makeInlineImage(imgUrl) {
@@ -192,10 +282,13 @@ function copyRecursive(src, dest) {
     if (!block || !block.quotes || !block.quotes.length) return body;
 
     const quotes = block.quotes.map((quote) => {
+      const sourceHtml = quote.sourceUrl
+        ? `<a class="inline-quote-source" href="${escAttr(quote.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escAttr(quote.source)}</a>`
+        : `<span class="inline-quote-source">${escAttr(quote.source)}</span>`;
       return `<blockquote class="inline-quote">` +
         `<span class="inline-quote-label">${escAttr(quote.label)}</span>` +
         `<div class="inline-quote-text">"${escAttr(quote.text)}"</div>` +
-        `<div class="inline-quote-meta">${escAttr(quote.meta)}</div>` +
+        `<div class="inline-quote-meta">Source: ${sourceHtml}</div>` +
         `</blockquote>`;
     }).join('');
 
