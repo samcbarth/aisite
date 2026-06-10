@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 21:26:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 01:15:56 GMT</lastBuildDate>
+    <item>
+      <title>Oracle&apos;s AI data center boom is about to meet real-world pushback</title>
+      <link>https://samcbarth.github.io/aisite/#post13</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post13</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</description>
+    </item>
     <item>
       <title>The most valuable AI use case isn&apos;t a product. It&apos;s a personal tool.</title>
       <link>https://samcbarth.github.io/aisite/#post12</link>
