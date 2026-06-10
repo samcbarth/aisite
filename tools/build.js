@@ -120,20 +120,55 @@ function copyRecursive(src, dest) {
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
+  const INLINE_MEDIA = {
+    post20: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'The real bill is the physical footprint.', side: 'right', after: 2 },
+    post19: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Outcome-based pricing changes the conversation.', side: 'left', after: 2 },
+    post18: { image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop&q=80', caption: 'Context is the actual product here.', side: 'right', after: 2 },
+    post14: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'Public-market scrutiny changes the math.', side: 'left', after: 2 },
+    post13: { image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=900&h=650&fit=crop&q=80', caption: 'The buildout becomes physical fast.', side: 'right', after: 2 },
+    post15: { image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&h=650&fit=crop&q=80', caption: 'The race keeps moving toward orbit.', side: 'left', after: 2 },
+    post16: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Local approval is now the bottleneck.', side: 'right', after: 2 },
+    post17: { image: 'https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=900&h=650&fit=crop&q=80', caption: 'Orbit is the extreme version of the grid problem.', side: 'left', after: 2 },
+    post12: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The leverage is in local tooling.', side: 'right', after: 2 },
+    post11: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Trust is the inventory that really matters.', side: 'left', after: 2 },
+    post10: { image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&h=650&fit=crop&q=80', caption: 'A strong core business can subsidize new plays.', side: 'right', after: 2 },
+    post7: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Infrastructure is where the AI money is going.', side: 'left', after: 2 },
+    post8: { image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=650&fit=crop&q=80', caption: 'Value creation has to be shared.', side: 'right', after: 2 },
+    post9: { image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=900&h=650&fit=crop&q=80', caption: 'Security risk expands with the stack.', side: 'left', after: 2 },
+    post6: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'Prompting still needs structure.', side: 'right', after: 2 },
+    post5: { image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop&q=80', caption: 'Context beats generic automation.', side: 'left', after: 2 },
+    post4: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'Two different AI bets, same market.', side: 'right', after: 2 },
+    post1: { image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop&q=80', caption: 'Operational systems, not just databases.', side: 'left', after: 1 },
+    post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
+    post3: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
+  };
+
   function makeInlineImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=650');
   }
+
   function injectInlineMedia(body, post, postId) {
-    const side = POST_ORDER.indexOf(postId) % 2 === 0 ? 'right' : 'left';
-    const imgUrl = makeInlineImage(post.inlineImage || post.image);
-    const inline = `<figure class="inline-media inline-media-${side}"><img src="${imgUrl}" alt="${escAttr(post.title)}" width="900" height="650" loading="lazy"></figure>`;
+    const media = INLINE_MEDIA[postId] || {};
+    const side = media.side || (POST_ORDER.indexOf(postId) % 2 === 0 ? 'right' : 'left');
+    const imgUrl = makeInlineImage(media.image || post.inlineImage || post.image);
+    const caption = media.caption || post.inlineCaption || ('A visual reference for ' + post.title);
+    const after = Math.max(1, media.after || post.inlineAfter || 2);
+    const inline = `<figure class="inline-media inline-media-${side}"><img src="${imgUrl}" alt="${escAttr(post.title)}" width="900" height="650" loading="lazy"><figcaption>${escAttr(caption)}</figcaption></figure>`;
+
+    const totalParagraphs = (body.match(/<\/p>/g) || []).length;
+    if (totalParagraphs === 0) return inline + body;
+    const insertAfter = Math.min(after, Math.max(1, totalParagraphs - 1));
     let paragraphCount = 0;
+    let inserted = false;
     const replaced = body.replace(/<\/p>/g, (match) => {
       paragraphCount += 1;
-      return paragraphCount === 2 ? match + '\n' + inline : match;
+      if (!inserted && paragraphCount === insertAfter) {
+        inserted = true;
+        return match + '\n' + inline;
+      }
+      return match;
     });
-    if (paragraphCount >= 2) return replaced;
-    return inline + body;
+    return inserted ? replaced : body + '\n' + inline;
   }
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
