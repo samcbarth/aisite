@@ -8,7 +8,7 @@
  */
 const POSTS = {
   post19: {
-    featured: true,
+    featured: false,
     date: 'April 14, 2026',
     iso: '2026-04-14',
     title: "HubSpot's new AI pricing makes the product story feel more real",
