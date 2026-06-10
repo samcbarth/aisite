@@ -142,6 +142,23 @@ function copyRecursive(src, dest) {
     post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
     post3: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
   };
+  const INLINE_QUOTES = {
+    post20: {
+      after: 4,
+      quotes: [
+        {
+          label: 'Bullish view',
+          text: 'We are now a few hundred billion dollars into it.',
+          meta: 'Jensen Huang, Nvidia CEO'
+        },
+        {
+          label: 'Reality check',
+          text: 'the daily water usage over the course of an entire year is roughly equivalent to what a single restaurant would use.',
+          meta: 'Satya Nadella, Microsoft CEO'
+        }
+      ]
+    }
+  };
 
   function makeInlineImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=650');
@@ -158,6 +175,34 @@ function copyRecursive(src, dest) {
     const totalParagraphs = (body.match(/<\/p>/g) || []).length;
     if (totalParagraphs === 0) return inline + body;
     const insertAfter = Math.min(after, Math.max(1, totalParagraphs - 1));
+    let paragraphCount = 0;
+    let inserted = false;
+    const replaced = body.replace(/<\/p>/g, (match) => {
+      paragraphCount += 1;
+      if (!inserted && paragraphCount === insertAfter) {
+        inserted = true;
+        return match + '\n' + inline;
+      }
+      return match;
+    });
+    return inserted ? replaced : body + '\n' + inline;
+  }
+  function injectInlineQuotes(body, postId) {
+    const block = INLINE_QUOTES[postId];
+    if (!block || !block.quotes || !block.quotes.length) return body;
+
+    const quotes = block.quotes.map((quote) => {
+      return `<blockquote class="inline-quote">` +
+        `<span class="inline-quote-label">${escAttr(quote.label)}</span>` +
+        `<div class="inline-quote-text">"${escAttr(quote.text)}"</div>` +
+        `<div class="inline-quote-meta">${escAttr(quote.meta)}</div>` +
+        `</blockquote>`;
+    }).join('');
+
+    const inline = `<aside class="inline-quotes">${quotes}</aside>`;
+    const totalParagraphs = (body.match(/<\/p>/g) || []).length;
+    if (totalParagraphs === 0) return inline + body;
+    const insertAfter = Math.min(Math.max(1, block.after || 2), Math.max(1, totalParagraphs - 1));
     let paragraphCount = 0;
     let inserted = false;
     const replaced = body.replace(/<\/p>/g, (match) => {
@@ -200,7 +245,7 @@ function copyRecursive(src, dest) {
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
-    const bodyHtml = injectInlineMedia(p.body.trim(), p, id);
+    const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
     const jsonLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
