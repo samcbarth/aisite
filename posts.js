@@ -20,6 +20,8 @@ const POSTS = {
 
       <p>That is not a criticism. SpaceX has earned a lot of credibility by actually shipping. It has become one of those companies where people assume execution before the filing is even finished. That kind of reputation is hard to build and even harder to fake.</p>
 
+      <p>SpaceX also has a very real and established business model, which is part of why the IPO story matters so much. But Elon Musk clearly wants to connect it to xAI and a handful of other valuation stories in a way that feels aimed at building the first trillion-dollar company. That is where the whole thing gets both fascinating and unsettling. The upside is obvious if it works, but it also turns the whole structure into something a lot more fragile if the market stops believing the story all at once.</p>
+
       <p>But once a company like this goes public, the conversation changes. Private market hype is one thing. Public market accountability is another. Investors will want cleaner numbers, clearer margins, and a better explanation for how the story translates into real cash flow over time.</p>
 
       <p>I also think there is a broader lesson here for the rest of the market. A lot of businesses are being valued off future promise right now. SpaceX just happens to be the most visible example. When a company with this much momentum enters the public market, it raises the same question for everyone else: what is the actual business underneath the excitement?</p>
