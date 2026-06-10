@@ -6,12 +6,12 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 03:54:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 14:21:37 GMT</lastBuildDate>
     <item>
       <title>HubSpot&apos;s new AI pricing makes the product story feel more real</title>
       <link>https://samcbarth.github.io/aisite/#post19</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post19</guid>
-      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
+      <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
       <category>HubSpot</category>
       <description>The interesting part of HubSpot&apos;s Customer Agent and Prospecting Agent announcement is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful. Instead of treating these like shiny add-ons, HubSpot</description>
     </item>
@@ -19,7 +19,7 @@
       <title>HubSpot&apos;s Spring 2026 Spotlight is all about making AI actually useful</title>
       <link>https://samcbarth.github.io/aisite/#post18</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post18</guid>
-      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
       <category>HubSpot</category>
       <description>HubSpot&apos;s Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it. That is what I think makes this release more interesting than a normal product update. It is not just</description>
     </item>
@@ -27,7 +27,7 @@
       <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
       <link>https://samcbarth.github.io/aisite/#post14</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post14</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
       <description>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand. That is not a criticism. SpaceX has earned a lot of credibility by actually shi</description>
     </item>
@@ -35,7 +35,7 @@
       <title>Oracle&apos;s AI infrastructure rally is about to meet the real world</title>
       <link>https://samcbarth.github.io/aisite/#post13</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post13</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Sat, 06 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</description>
     </item>
@@ -43,7 +43,7 @@
       <title>Stargate is the clearest sign that AI is now a utility-scale business</title>
       <link>https://samcbarth.github.io/aisite/#post15</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post15</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether </description>
     </item>
@@ -51,7 +51,7 @@
       <title>The AI data center boom is running into a political problem</title>
       <link>https://samcbarth.github.io/aisite/#post16</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post16</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Wed, 03 Jun 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
       <description>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing </description>
     </item>
@@ -59,7 +59,7 @@
       <title>China&apos;s space-based AI plan says a lot about where this race is headed</title>
       <link>https://samcbarth.github.io/aisite/#post17</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post17</guid>
-      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. When people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on E</description>
     </item>
@@ -67,7 +67,7 @@
       <title>The most valuable AI use case isn&apos;t a product. It&apos;s a personal tool.</title>
       <link>https://samcbarth.github.io/aisite/#post12</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post12</guid>
-      <pubDate>Sun, 07 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Sun, 31 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>There is a version of AI that gets a lot of attention and a version that does not. The one that gets the attention is commercial: AI copilots, AI add-ons, AI agents that companies can license. The one that does not is quieter and, honestly, more genuinely useful. It is people bui</description>
     </item>
@@ -75,7 +75,7 @@
       <title>The Bricks &amp; Minifigs Lego mess is a resale-business problem waiting to happen</title>
       <link>https://samcbarth.github.io/aisite/#post11</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post11</guid>
-      <pubDate>Mon, 01 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
       <description>There&apos;s a whole controversy going on right now with Bricks &amp; Minifigs, the Lego resale chain, and one of their stores allegedly walking off with a man&apos;s father&apos;s lifetime collection of Star Wars Legos. The way I see it, this is one of the huge parts of the resale business, especi</description>
     </item>
@@ -83,7 +83,7 @@
       <title>Costco&apos;s gas boom is a lesson in leveraging a great core business</title>
       <link>https://samcbarth.github.io/aisite/#post10</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post10</guid>
-      <pubDate>Mon, 01 Jun 2026 12:00:00 GMT</pubDate>
+      <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
       <description>Costco is a super cool type of business model, being able to have the wholesale prices for people, and as long as they buy enough of it and get enough savings, then it covers the membership fees. So in order to get the quote unquote savings, they have to spend a lot. It&apos;s a prett</description>
     </item>
@@ -91,7 +91,7 @@
       <title>Dell&apos;s best day ever tells you where enterprise AI is actually going</title>
       <link>https://samcbarth.github.io/aisite/#post7</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post7</guid>
-      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Mon, 25 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>Dell&apos;s stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That&apos;s a materially d</description>
     </item>
@@ -99,7 +99,7 @@
       <title>Samsung just promised $400K bonuses. That&apos;s an AI story too.</title>
       <link>https://samcbarth.github.io/aisite/#post8</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post8</guid>
-      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
       <category>RevOps</category>
       <description>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. A</description>
     </item>
@@ -107,7 +107,7 @@
       <title>AI is making cybersecurity harder — and that&apos;s a GTM problem too</title>
       <link>https://samcbarth.github.io/aisite/#post9</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post9</guid>
-      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws g</description>
     </item>
@@ -115,7 +115,7 @@
       <title>Where AI actually falls apart</title>
       <link>https://samcbarth.github.io/aisite/#post6</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post6</guid>
-      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>I&apos;ve been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do. Today especially, I started to see what people mean when they say </description>
     </item>
@@ -123,7 +123,7 @@
       <title>The shift from &quot;AI tools&quot; to AI with actual business context</title>
       <link>https://samcbarth.github.io/aisite/#post5</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post5</guid>
-      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
       <category>CRM Strategy</category>
       <description>One thing I&apos;m watching closely in the HubSpot ecosystem right now is the shift from &quot;AI tools&quot; to AI with actual business context. HubSpot&apos;s recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginnin</description>
     </item>
@@ -131,7 +131,7 @@
       <title>HubSpot vs. Salesforce: two very different bets on AI agents</title>
       <link>https://samcbarth.github.io/aisite/#post4</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post4</guid>
-      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Sat, 16 May 2026 12:00:00 GMT</pubDate>
       <category>HubSpot</category>
       <description>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They&apos;ve since cut 4,000 customer service roles. The message is pretty clear: agents in, people out. HubSpot is taking a di</description>
     </item>
@@ -139,7 +139,7 @@
       <title>HubSpot&apos;s AI push is a signal every RevOps team should read</title>
       <link>https://samcbarth.github.io/aisite/#post1</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post1</guid>
-      <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Fri, 15 May 2026 12:00:00 GMT</pubDate>
       <category>RevOps</category>
       <description>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who u</description>
     </item>
@@ -147,7 +147,7 @@
       <title>Site is live, built and deployed with AI</title>
       <link>https://samcbarth.github.io/aisite/#post2</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post2</guid>
-      <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
+      <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>I built this entire site using Claude Code, Anthropic&apos;s AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lo</description>
     </item>

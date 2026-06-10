@@ -9,8 +9,8 @@
 const POSTS = {
   post19: {
     featured: false,
-    date: 'April 14, 2026',
-    iso: '2026-04-14',
+    date: 'June 10, 2026',
+    iso: '2026-06-10',
     title: "HubSpot's new AI pricing makes the product story feel more real",
     category: 'HubSpot',
     tag: 'Worth noting', tagClass: 'tag-emerald',
@@ -36,8 +36,8 @@ const POSTS = {
   },
   post18: {
     featured: false,
-    date: 'April 14, 2026',
-    iso: '2026-04-14',
+    date: 'June 9, 2026',
+    iso: '2026-06-09',
     title: "HubSpot's Spring 2026 Spotlight is all about making AI actually useful",
     category: 'HubSpot',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -63,8 +63,8 @@ const POSTS = {
   },
   post14: {
     featured: true,
-    date: 'June 9, 2026',
-    iso: '2026-06-09',
+    date: 'June 8, 2026',
+    iso: '2026-06-08',
     title: "SpaceX's IPO story is really a story about what the market will pay for momentum",
     category: 'Business Strategy',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -83,8 +83,8 @@ const POSTS = {
   },
   post13: {
     featured: false,
-    date: 'June 9, 2026',
-    iso: '2026-06-09',
+    date: 'June 6, 2026',
+    iso: '2026-06-06',
     title: "Oracle's AI infrastructure rally is about to meet the real world",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -103,8 +103,8 @@ const POSTS = {
   },
   post15: {
     featured: false,
-    date: 'June 9, 2026',
-    iso: '2026-06-09',
+    date: 'June 5, 2026',
+    iso: '2026-06-05',
     title: 'Stargate is the clearest sign that AI is now a utility-scale business',
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -121,8 +121,8 @@ const POSTS = {
   },
   post16: {
     featured: false,
-    date: 'June 9, 2026',
-    iso: '2026-06-09',
+    date: 'June 3, 2026',
+    iso: '2026-06-03',
     title: "The AI data center boom is running into a political problem",
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -139,8 +139,8 @@ const POSTS = {
   },
   post17: {
     featured: false,
-    date: 'June 9, 2026',
-    iso: '2026-06-09',
+    date: 'June 2, 2026',
+    iso: '2026-06-02',
     title: "China's space-based AI plan says a lot about where this race is headed",
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -157,8 +157,8 @@ const POSTS = {
   },
   post12: {
     featured: true,
-    date: 'June 7, 2026',
-    iso: '2026-06-07',
+    date: 'May 31, 2026',
+    iso: '2026-05-31',
     title: "The most valuable AI use case isn't a product. It's a personal tool.",
     category: 'AI & Automation',
     tag: 'In the wild', tagClass: 'tag-pink',
@@ -198,8 +198,8 @@ const POSTS = {
     `
   },
   post11: {
-    date: 'June 1, 2026',
-    iso: '2026-06-01',
+    date: 'May 29, 2026',
+    iso: '2026-05-29',
     title: "The Bricks & Minifigs Lego mess is a resale-business problem waiting to happen",
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -212,8 +212,8 @@ const POSTS = {
     `
   },
   post10: {
-    date: 'June 1, 2026',
-    iso: '2026-06-01',
+    date: 'May 27, 2026',
+    iso: '2026-05-27',
     title: "Costco's gas boom is a lesson in leveraging a great core business",
     category: 'Business Strategy',
     tag: 'Worth noting', tagClass: 'tag-emerald',
@@ -226,8 +226,8 @@ const POSTS = {
     `
   },
   post7: {
-    date: 'May 30, 2026',
-    iso: '2026-05-30',
+    date: 'May 25, 2026',
+    iso: '2026-05-25',
     title: "Dell's best day ever tells you where enterprise AI is actually going",
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -244,8 +244,8 @@ const POSTS = {
     `
   },
   post8: {
-    date: 'May 30, 2026',
-    iso: '2026-05-30',
+    date: 'May 24, 2026',
+    iso: '2026-05-24',
     title: "Samsung just promised $400K bonuses. That's an AI story too.",
     category: 'RevOps',
     tag: 'Worth noting', tagClass: 'tag-emerald',
@@ -259,8 +259,8 @@ const POSTS = {
     `
   },
   post9: {
-    date: 'May 30, 2026',
-    iso: '2026-05-30',
+    date: 'May 22, 2026',
+    iso: '2026-05-22',
     title: "AI is making cybersecurity harder — and that's a GTM problem too",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -274,8 +274,8 @@ const POSTS = {
     `
   },
   post6: {
-    date: 'May 29, 2026',
-    iso: '2026-05-29',
+    date: 'May 20, 2026',
+    iso: '2026-05-20',
     title: 'Where AI actually falls apart',
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
@@ -294,8 +294,8 @@ const POSTS = {
     `
   },
   post5: {
-    date: 'May 29, 2026',
-    iso: '2026-05-29',
+    date: 'May 18, 2026',
+    iso: '2026-05-18',
     title: 'The shift from "AI tools" to AI with actual business context',
     category: 'CRM Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
@@ -309,8 +309,8 @@ const POSTS = {
     `
   },
   post4: {
-    date: 'May 29, 2026',
-    iso: '2026-05-29',
+    date: 'May 16, 2026',
+    iso: '2026-05-16',
     title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
     category: 'HubSpot',
     tag: 'Worth noting', tagClass: 'tag-emerald',
@@ -322,8 +322,8 @@ const POSTS = {
     `
   },
   post1: {
-    date: 'May 27, 2026',
-    iso: '2026-05-27',
+    date: 'May 15, 2026',
+    iso: '2026-05-15',
     title: "HubSpot's AI push is a signal every RevOps team should read",
     category: 'RevOps',
     tag: 'On my radar', tagClass: 'tag-orange',
@@ -335,8 +335,8 @@ const POSTS = {
     `
   },
   post2: {
-    date: 'May 20, 2026',
-    iso: '2026-05-20',
+    date: 'May 13, 2026',
+    iso: '2026-05-13',
     title: 'Site is live, built and deployed with AI',
     category: 'AI & Automation',
     tag: 'In the wild', tagClass: 'tag-pink',
