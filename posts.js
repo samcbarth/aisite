@@ -7,6 +7,60 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
+  post19: {
+    featured: true,
+    date: 'April 14, 2026',
+    iso: '2026-04-14',
+    title: "HubSpot's new AI pricing makes the product story feel more real",
+    category: 'HubSpot',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>The interesting part of HubSpot's Customer Agent and Prospecting Agent announcement is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
+
+      <p>Instead of treating these like shiny add-ons, HubSpot is tying them to outcomes. That is a much cleaner story for teams that want to test AI without feeling like they are buying another seat-based promise they may or may not use.</p>
+
+      <p>What stands out to me most:</p>
+      <ul>
+        <li><strong>Customer Agent</strong> is designed to handle routine support work and work alongside the human team instead of trying to replace it.</li>
+        <li><strong>Prospecting Agent</strong> is built to help reps find better-fit accounts, spot signals, and get outreach moving faster.</li>
+        <li><strong>Task-complete pricing</strong> is the real signal here. HubSpot wants buyers to think about output, not just access.</li>
+        <li><strong>Lower-risk adoption</strong> makes the pitch easier for small and mid-sized teams that want to test AI without a huge commitment up front.</li>
+        <li><strong>Operational value</strong> is the point. These tools are supposed to save time on real work, not just look impressive in a demo.</li>
+      </ul>
+
+      <p>I think that matters because it makes the product feel more tangible. HubSpot is not just saying it has AI. It is saying, in effect, here is what the agent did, here is what it saved you, and here is what you paid for the result.</p>
+
+      <p>That is a much stronger position than vague AI branding. It is more measurable, easier to explain internally, and probably much easier to sell to teams that are already skeptical of software that promises too much and delivers too little.</p>
+    `
+  },
+  post18: {
+    featured: false,
+    date: 'April 14, 2026',
+    iso: '2026-04-14',
+    title: "HubSpot's Spring 2026 Spotlight is all about making AI actually useful",
+    category: 'HubSpot',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>HubSpot's Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it.</p>
+
+      <p>That is what I think makes this release more interesting than a normal product update. It is not just a feature dump. It is HubSpot leaning hard into context, and context is what separates real workflow value from generic AI output.</p>
+
+      <p>Here is the short version of what they pushed:</p>
+      <ul>
+        <li><strong>HubSpot AEO</strong> is their answer engine optimization play, built to help customers show up in AI search results instead of only traditional search.</li>
+        <li><strong>Breeze Assistant</strong> is being trained on Loop Marketing so it can help teams build ICPs, brand guides, and campaign briefs with more context.</li>
+        <li><strong>Smart Deal Progression</strong> takes the transcript plus CRM history and turns it into follow-up actions, CRM suggestions, and next-step guidance.</li>
+        <li><strong>Prospecting Agent</strong> looks at job posts, funding rounds, tech adoption, and other signals to surface better leads and accounts.</li>
+        <li><strong>Customer Agent</strong> is meant to handle routine support questions and let the human team stay focused on the harder problems.</li>
+      </ul>
+
+      <p>The part I keep coming back to is the benefit side of it. HubSpot is basically saying the same thing over and over in different forms: less generic AI, more business context, fewer random outputs, better outcomes.</p>
+
+      <p>That is a good direction for them. It feels more practical, more grounded, and more in line with how real teams actually work. Most people do not need another chatbot. They need software that understands the customer, the pipeline, and the next thing that should happen.</p>
+    `
+  },
   post14: {
     featured: true,
     date: 'June 9, 2026',
@@ -308,7 +362,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
