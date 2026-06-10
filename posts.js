@@ -7,24 +7,96 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
-  post13: {
+  post14: {
     featured: true,
     date: 'June 9, 2026',
     iso: '2026-06-09',
-    title: "Oracle's AI data center boom is about to meet real-world pushback",
+    title: "SpaceX's IPO story is really a story about what the market will pay for momentum",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand.</p>
+
+      <p>That is not a criticism. SpaceX has earned a lot of credibility by actually shipping. It has become one of those companies where people assume execution before the filing is even finished. That kind of reputation is hard to build and even harder to fake.</p>
+
+      <p>But once a company like this goes public, the conversation changes. Private market hype is one thing. Public market accountability is another. Investors will want cleaner numbers, clearer margins, and a better explanation for how the story translates into real cash flow over time.</p>
+
+      <p>I also think there is a broader lesson here for the rest of the market. A lot of businesses are being valued off future promise right now. SpaceX just happens to be the most visible example. When a company with this much momentum enters the public market, it raises the same question for everyone else: what is the actual business underneath the excitement?</p>
+    `
+  },
+  post13: {
+    featured: false,
+    date: 'June 9, 2026',
+    iso: '2026-06-09',
+    title: "Oracle's AI infrastructure rally is about to meet the real world",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</p>
 
-      <p>But I think we are getting to the point where the real-world bill starts to show up. The more these projects move into smaller towns and rural counties, the more people are asking what they are giving up in return. Power demand, water use, land, traffic, noise, and a lot of uncertainty tend to show up very quickly once the construction starts.</p>
+      <p>But I think we are getting to the point where the real-world bill starts to show up. The more these projects move into smaller towns and rural counties, the more people are asking what they are giving up in return. Power demand, water use, land, traffic, and noise tend to become very real once the construction actually starts.</p>
 
       <p>What worries me most is how often communities are left in the dark until the project is already moving. I have heard enough stories about NDAs, vague descriptions, and misleading early conversations to know that trust can disappear fast when a town realizes it is getting a data center instead of the economic development project it thought was being discussed.</p>
 
       <p>If these companies want to keep growing, they are going to have to become better neighbors. That means cleaner operations, more honest environmental planning, real communication with residents, and actual local benefits that people can point to. If a company wants long-term permission to expand, it has to earn it.</p>
 
       <p>I am not pretending the upside is not real. The AI infrastructure wave has helped the broader market, and it has helped my portfolio too. But I do think there needs to be a reckoning on valuation, on impact, and on whether this next phase of growth can be built in a way communities will still accept five years from now.</p>
+    `
+  },
+  post15: {
+    featured: false,
+    date: 'June 9, 2026',
+    iso: '2026-06-09',
+    title: 'Stargate is the clearest sign that AI is now a utility-scale business',
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether the country actually has enough grid capacity to support the plan.</p>
+
+      <p>That is why I think this matters. A lot of people still talk about AI like it is mostly a product layer. But the companies making the biggest bets know it is becoming a utility-scale business. The winners are not just the ones with the best model. They are the ones who can secure the physical resources to run it at scale.</p>
+
+      <p>There is also a risk hiding inside the optimism. Big infrastructure bets are easy to celebrate when everyone is expecting growth. They are a lot less comfortable when the economics tighten, the buildout slows, or the public starts asking why one of these projects needs so much water, electricity, and land in the first place.</p>
+
+      <p>So to me, Stargate is both a signal and a warning. It shows how serious the AI race has become, but it also shows how expensive the race is going to be for everyone involved. The next phase is not about who can make the flashiest demo. It is about who can keep the lights on.</p>
+    `
+  },
+  post16: {
+    featured: false,
+    date: 'June 9, 2026',
+    iso: '2026-06-09',
+    title: "The AI data center boom is running into a political problem",
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing to just trust the pitch.</p>
+
+      <p>That creates a real problem for the companies and the politicians who want the buildout to keep moving. You can announce as many data centers as you want, but if the towns and counties have to live with the side effects, they are going to start asking harder questions about who benefits and who pays.</p>
+
+      <p>The part that makes this even more sensitive is how little transparency some of these communities get. When residents feel like the details were hidden until the deal was already moving, it turns what should have been a development conversation into a trust conversation. Once that happens, the backlash usually gets a lot bigger.</p>
+
+      <p>My view is pretty simple. If these companies want to keep building, they need to act like they actually plan to stay. That means cleaner projects, honest communication, and some real return for the places taking on the burden. Without that, I think the political pushback is only going to get stronger.</p>
+    `
+  },
+  post17: {
+    featured: false,
+    date: 'June 9, 2026',
+    iso: '2026-06-09',
+    title: "China's space-based AI plan says a lot about where this race is headed",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. When people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on Earth is already getting extreme.</p>
+
+      <p>This is one of those stories that sounds futuristic until you realize it is just the logical end point of the infrastructure race. If demand keeps climbing, companies and governments will keep looking for places with more room, more energy, and fewer local constraints. Space is the most dramatic version of that thinking.</p>
+
+      <p>What stands out to me is that this is no longer just a Silicon Valley story. It is becoming a global infrastructure story. Countries are competing over chips, power, land, and long-term strategic control over the systems that run AI. That is a much bigger conversation than model quality or product launches.</p>
+
+      <p>My takeaway is that the AI buildout is not slowing down. It is just getting more physical, more expensive, and more political. The real question is not whether the race continues. It is where the next bottleneck shows up first.</p>
     `
   },
   post12: {
@@ -234,7 +306,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post13', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

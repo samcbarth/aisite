@@ -6,14 +6,46 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 01:15:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 02:32:29 GMT</lastBuildDate>
     <item>
-      <title>Oracle&apos;s AI data center boom is about to meet real-world pushback</title>
+      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
+      <link>https://samcbarth.github.io/aisite/#post14</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post14</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand. That is not a criticism. SpaceX has earned a lot of credibility by actually shi</description>
+    </item>
+    <item>
+      <title>Oracle&apos;s AI infrastructure rally is about to meet the real world</title>
       <link>https://samcbarth.github.io/aisite/#post13</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post13</guid>
       <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
       <description>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</description>
+    </item>
+    <item>
+      <title>Stargate is the clearest sign that AI is now a utility-scale business</title>
+      <link>https://samcbarth.github.io/aisite/#post15</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post15</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether </description>
+    </item>
+    <item>
+      <title>The AI data center boom is running into a political problem</title>
+      <link>https://samcbarth.github.io/aisite/#post16</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post16</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing </description>
+    </item>
+    <item>
+      <title>China&apos;s space-based AI plan says a lot about where this race is headed</title>
+      <link>https://samcbarth.github.io/aisite/#post17</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post17</guid>
+      <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. When people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on E</description>
     </item>
     <item>
       <title>The most valuable AI use case isn&apos;t a product. It&apos;s a personal tool.</title>
