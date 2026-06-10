@@ -7,6 +7,26 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
+  post20: {
+    featured: false,
+    date: 'June 10, 2026',
+    iso: '2026-06-10',
+    title: "Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that is the market seeing something real or just chasing the trade.</p>
+
+      <p>My honest read is that it is probably both. There is real demand behind this, and there is also a lot of hype layered on top of it. That is what makes it messy. Every new model launch, every new funding round, and every new warning gets treated like it is either the beginning of the future or the beginning of the end.</p>
+
+      <p>I do think some of the fear around these tools gets exaggerated. People have been warning that the latest release will break everything for a long time now, and we have heard versions of that before with earlier chatbot generations. The technology is obviously more capable than it was a few years ago, but it is also still miles away from the simplistic panic cycle people keep projecting onto it.</p>
+
+      <p>What does feel real is the infrastructure problem underneath all of this. If the hyperscalers are going to keep spending at this pace, then they are going to have to figure out how to build data centers that are actually feasible at scale. That means power, water, land, cooling, and probably a much more serious conversation about sustainability than most of the market is having right now.</p>
+
+      <p>I do not know if the answer is space, underground construction, vertical buildouts, or something else entirely. But I do know the companies that are serious about this will not be able to treat it like a temporary software trend. If the AI spending cycle keeps expanding, they will need to prove that the physical footprint can be built responsibly too.</p>
+    `
+  },
   post19: {
     featured: false,
     date: 'June 10, 2026',
@@ -362,7 +382,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post14', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

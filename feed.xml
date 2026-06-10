@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 14:21:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 21:26:51 GMT</lastBuildDate>
+    <item>
+      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
+      <link>https://samcbarth.github.io/aisite/#post14</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post14</guid>
+      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand. That is not a criticism. SpaceX has earned a lot of credibility by actually shi</description>
+    </item>
+    <item>
+      <title>Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead</title>
+      <link>https://samcbarth.github.io/aisite/#post20</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post20</guid>
+      <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that </description>
+    </item>
     <item>
       <title>HubSpot&apos;s new AI pricing makes the product story feel more real</title>
       <link>https://samcbarth.github.io/aisite/#post19</link>
@@ -22,14 +38,6 @@
       <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
       <category>HubSpot</category>
       <description>HubSpot&apos;s Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it. That is what I think makes this release more interesting than a normal product update. It is not just</description>
-    </item>
-    <item>
-      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
-      <link>https://samcbarth.github.io/aisite/#post14</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post14</guid>
-      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand. That is not a criticism. SpaceX has earned a lot of credibility by actually shi</description>
     </item>
     <item>
       <title>Oracle&apos;s AI infrastructure rally is about to meet the real world</title>
