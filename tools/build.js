@@ -288,7 +288,8 @@ function copyRecursive(src, dest) {
     const imgUrl = makeInlineImage(media.image || post.inlineImage || post.image);
     const caption = media.caption || post.inlineCaption || ('A visual reference for ' + post.title);
     const after = Math.max(1, media.after || post.inlineAfter || 2);
-    const inline = `<figure class="inline-media inline-media-${side}"><img src="${imgUrl}" alt="${escAttr(post.title)}" width="900" height="650" loading="lazy"><figcaption>${escAttr(caption)}</figcaption></figure>`;
+    const postClass = postId === 'post14' ? ' inline-media-spacex' : '';
+    const inline = `<figure class="inline-media inline-media-${side}${postClass}"><img src="${imgUrl}" alt="${escAttr(post.title)}" width="900" height="650" loading="lazy"><figcaption>${escAttr(caption)}</figcaption></figure>`;
 
     const totalParagraphs = (body.match(/<\/p>/g) || []).length;
     if (totalParagraphs === 0) return inline + body;
