@@ -111,6 +111,34 @@ function copyRecursive(src, dest) {
   function escAttr(str) {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
+  const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
+  const CONTEXT_CLAUSES = {
+    post20: 'The hyperscaler investment story is really about whether AI spend becomes a disciplined operating model or just a faster way to burn capital.',
+    post19: 'The pricing change matters because it turns AI from a feature checkbox into a measurable operating decision.',
+    post18: 'The release is interesting because it shows what happens when product context becomes the thing that makes AI useful.',
+    post14: 'The real question is how a company with clear execution momentum translates that into public-market discipline without losing the upside.',
+    post13: 'Oracle\'s rally matters because infrastructure narratives only last when the physical buildout and the commercial demand stay aligned.',
+    post15: 'Stargate is a reminder that AI has moved from software rhetoric into utility-scale planning.',
+    post16: 'The political pushback matters because every new data center now has to earn local permission, not just investor enthusiasm.',
+    post17: 'The space-based AI conversation matters because capacity constraints on Earth are starting to shape the strategic map.',
+    post12: 'The most valuable AI use case is still the one that changes someone\'s daily workflow, not the one that looks best in a demo.',
+    post11: 'The resale issue is really a trust problem, and trust is one of the most important operational assets in any business.',
+    post10: 'Costco\'s gas move is a good example of what happens when a strong core business gives you room to expand into adjacent economics.',
+    post7: 'Dell\'s numbers are useful because they show where AI is becoming a buying decision inside enterprise operations.',
+    post8: 'The bonus structure is interesting because it links AI-era productivity gains to the people who actually create the value.',
+    post9: 'The security story is really a GTM story too, because every vulnerable integration is also a revenue risk.',
+    post6: 'This is where the gap between AI promise and operational reality becomes easiest to see.',
+    post5: 'Context is what makes AI operational instead of decorative, and that is where the next wave of value sits.',
+    post4: 'The difference between replacement and enablement says a lot about how teams will adopt AI in practice.',
+    post1: 'HubSpot\'s direction matters because it shows how CRM strategy turns into operating leverage when the system is tied to real workflows.',
+    post2: 'This is the kind of story that matters because it shows how quickly production work can move when the tooling is good.',
+    post3: 'The lesson here is that systems discipline is still the foundation for every practical AI or RevOps workflow.'
+  };
+  function makeContextParagraph(postId) {
+    const clause = CONTEXT_CLAUSES[postId];
+    if (!clause) return '';
+    return `<p>${clause} For me, this connects directly to the work I do in RevOps and business development at ${SAM_LINK}. When I look at a story like this, I am not just asking whether it is interesting. I am asking how teams would actually use it, what it changes in the operating model, what it costs to implement, and where it could fail once it leaves the headline and enters the day-to-day workflow. That is the lens I bring to the analysis I publish at SamCBarth.com, because the practical details are usually the part that matters most. If I can trace the impact back to pipeline, margins, process, or customer behavior, then it is worth taking seriously.</p>`;
+  }
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
@@ -308,6 +336,11 @@ function copyRecursive(src, dest) {
     });
     return inserted ? replaced : body + '\n' + inline;
   }
+  function appendContextParagraph(body, postId) {
+    const context = makeContextParagraph(postId);
+    if (!context) return body;
+    return body + '\n' + context;
+  }
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
     if (!p) return '';
@@ -338,7 +371,7 @@ function copyRecursive(src, dest) {
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
-    const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
+    const bodyHtml = appendContextParagraph(injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id), id);
     const jsonLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
