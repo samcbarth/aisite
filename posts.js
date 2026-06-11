@@ -7,6 +7,106 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
+  post25: {
+    featured: false,
+    date: 'June 11, 2026',
+    iso: '2026-06-11',
+    title: "Anthropic's compute deal shows AI is turning into balance-sheet infrastructure",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.axios.com/2026/06/10/apollo-anthropic-blackstone-broadcom" target="_blank" rel="noopener noreferrer">Axios reported</a> that Apollo and Blackstone are leading a $35 billion debt deal to help finance Anthropic's compute. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure.</p>
+
+      <p>I think that is the part worth paying attention to. Once compute starts getting funded through huge debt structures, special purpose vehicles, and long-term leasing arrangements, the market is telling you that AI is not being treated like a normal software cycle anymore. It is being treated like something closer to railroads, telecom, cloud, or energy.</p>
+
+      <p>That does not automatically mean the economics are good. It means the stakes are getting bigger. If these companies need this much capital just to stay competitive, then the winners are not only going to be the companies with the best models. The winners are going to be the ones that can secure compute, structure financing intelligently, and keep customers growing fast enough to justify the buildout.</p>
+
+      <p>My hesitation is that this is where hype can get dressed up as financial engineering. Off-balance-sheet structures can make the story look cleaner than it feels underneath. The demand might be real, but the risk is also real. If customers slow down, if margins compress, or if compute gets cheaper faster than expected, these deals start to look a lot less elegant.</p>
+
+      <p>For business operators, the lesson is not to copy the scale. It is to understand the direction. AI is moving from a tool budget into an infrastructure decision. That means the teams adopting it need to think harder about where the cost shows up, who owns the risk, and whether the workflow value is real enough to justify the expense.</p>
+    `
+  },
+  post24: {
+    featured: false,
+    date: 'June 11, 2026',
+    iso: '2026-06-11',
+    title: "Amazon's new AI loan makes the spending story impossible to ignore",
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.marketwatch.com/story/amazon-lines-up-another-17-5-billion-for-ai-as-its-debt-pile-grows-further-5f16be9c" target="_blank" rel="noopener noreferrer">MarketWatch reported</a> that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle.</p>
+
+      <p>Amazon has a real business underneath this. AWS is not some speculative science project. It is one of the strongest cloud businesses in the world. But even for Amazon, the scale of this spending starts to change the conversation. When a company that large has to keep raising more capital to support AI infrastructure, the market has to ask what the return profile actually looks like.</p>
+
+      <p>I do not think this is automatically a bubble. I also do not think it is automatically brilliant. It is probably both, depending on the customer, the workload, and how much of this demand turns into durable revenue instead of one big race to keep up with everyone else. That is what makes it hard to read.</p>
+
+      <p>The scary part is that everybody is moving at once. If Amazon, Microsoft, Google, Meta, Oracle, and the model companies all keep spending this aggressively, then a lot of the upside depends on enterprise customers adopting AI fast enough to absorb the capacity. That is a big assumption. Enterprises do not move just because infrastructure is available. They move when the workflow value becomes obvious.</p>
+
+      <p>My view is that Amazon can probably carry the weight better than most companies. But the bigger lesson is that AI is starting to look less like software margin expansion and more like a capital allocation test. The companies that win will be the ones that can turn expensive infrastructure into practical customer outcomes.</p>
+    `
+  },
+  post23: {
+    featured: false,
+    date: 'June 11, 2026',
+    iso: '2026-06-11',
+    title: "Texas telling data centers to pay their own way is where this gets real",
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.businessinsider.com/texas-governor-proposes-new-data-center-regulations-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that Texas Governor Greg Abbott wants data centers to pay more of their own way when it comes to power, water, and infrastructure. That is a big signal because Texas is not exactly known for being hostile to business.</p>
+
+      <p>This is where the data center story starts to feel very practical. It is one thing for investors to talk about AI demand and cloud growth. It is another thing for people living near these projects to ask why their grid, water supply, or local tax base should carry the burden for a private infrastructure boom.</p>
+
+      <p>I think this is the natural next phase of the pushback. Small towns and state governments have watched these projects get announced with huge dollar amounts attached, but the local tradeoff is not always clear. If the data center creates stress on the grid, uses a meaningful amount of water, and gets tax breaks on top of that, people are going to ask a pretty basic question: what are we actually getting back?</p>
+
+      <p>That does not mean the projects should stop. It means the economics have to be more honest. If these companies believe the AI opportunity is worth hundreds of billions of dollars, then they should be able to build in a way that covers the real costs of power, water, roads, and community impact.</p>
+
+      <p>The companies that figure this out will have a real advantage. Not because they are better at PR, but because they will be able to keep building while everyone else is fighting local backlash. Being a good neighbor is starting to look like an infrastructure strategy.</p>
+    `
+  },
+  post22: {
+    featured: false,
+    date: 'June 11, 2026',
+    iso: '2026-06-11',
+    title: "OpenAI's data center influence warning shows the AI fight is bigger than zoning",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.businessinsider.com/openai-china-data-centers-influence-campaign-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that OpenAI disrupted a suspected China-linked influence operation trying to shape the conversation around US data centers. That is a strange story on the surface, but it makes sense once you think about where the AI race is heading.</p>
+
+      <p>Data centers are no longer just local construction projects. They are strategic infrastructure. They sit at the intersection of power, chips, cloud capacity, national competitiveness, and public opinion. If a country can slow down another country's AI infrastructure buildout by amplifying local resistance or creating confusion, that becomes part of the game.</p>
+
+      <p>I do not think this means every concern about data centers is manufactured. A lot of the concerns are very real. Power bills, water use, land use, and transparency all matter. But this story does show that the debate is going to get harder to read. Some pushback will be local and legitimate. Some will be political. Some might be shaped by outside actors trying to use real concerns for a different purpose.</p>
+
+      <p>That puts more responsibility on the companies building these projects. If they are vague, secretive, or dismissive, they leave a vacuum that other people can fill. If they are transparent and specific about costs, benefits, and environmental impact, they give communities something real to evaluate.</p>
+
+      <p>My takeaway is that the AI infrastructure story has moved into a much more complicated phase. It is not just a Wall Street story and it is not just a zoning story. It is a trust story, an information story, and increasingly a national strategy story.</p>
+    `
+  },
+  post21: {
+    featured: false,
+    date: 'June 11, 2026',
+    iso: '2026-06-11',
+    title: "HubSpot's agentic AI bet is really about whether CRM becomes the operating layer",
+    category: 'HubSpot',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://futurumgroup.com/insights/can-hubspots-agentic-ai-bet-disrupt-enterprise-crms-old-guard/" target="_blank" rel="noopener noreferrer">Futurum's analysis</a> of HubSpot's agentic AI push gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else?</p>
+
+      <p>That is why I think HubSpot's AI direction matters. If AI agents are going to be useful, they need context. They need to know the customer, the lifecycle stage, the deal history, the support issues, the last conversation, and the next best action. A generic chatbot cannot do that well. A CRM with clean data and good workflow design actually can.</p>
+
+      <p>This is also where HubSpot has an interesting opening. Salesforce has the enterprise depth, but it can also get heavy fast. HubSpot's advantage has always been that teams can understand it, adopt it, and actually use it. If they can keep that simplicity while adding agentic workflows, that is a meaningful position.</p>
+
+      <p>The risk is that AI agents sound better in a launch than they perform in a messy portal. Bad lifecycle stages, duplicate records, inconsistent properties, and unclear ownership will make any agent look worse than it is. That is why I keep coming back to operations. The quality of the AI output will depend on the quality of the system underneath it.</p>
+
+      <p>My view is that this is the right direction for HubSpot, but the winner will not be the platform with the loudest AI branding. It will be the platform that helps teams turn messy customer data into clear next steps without making the business harder to run.</p>
+    `
+  },
   post20: {
     featured: false,
     date: 'June 10, 2026',
@@ -382,7 +482,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post14', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post14', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

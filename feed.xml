@@ -6,7 +6,7 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 21:26:51 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 02:02:01 GMT</lastBuildDate>
     <item>
       <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
       <link>https://samcbarth.github.io/aisite/#post14</link>
@@ -14,6 +14,46 @@
       <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
       <description>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand. That is not a criticism. SpaceX has earned a lot of credibility by actually shi</description>
+    </item>
+    <item>
+      <title>Anthropic&apos;s compute deal shows AI is turning into balance-sheet infrastructure</title>
+      <link>https://samcbarth.github.io/aisite/#post25</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post25</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Axios reported that Apollo and Blackstone are leading a $35 billion debt deal to help finance Anthropic&apos;s compute. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure. I think that is the part worth paying</description>
+    </item>
+    <item>
+      <title>Amazon&apos;s new AI loan makes the spending story impossible to ignore</title>
+      <link>https://samcbarth.github.io/aisite/#post24</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post24</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>MarketWatch reported that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle. Amazon has a real business underneath this. AWS is not some speculati</description>
+    </item>
+    <item>
+      <title>Texas telling data centers to pay their own way is where this gets real</title>
+      <link>https://samcbarth.github.io/aisite/#post23</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post23</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Business Insider reported that Texas Governor Greg Abbott wants data centers to pay more of their own way when it comes to power, water, and infrastructure. That is a big signal because Texas is not exactly known for being hostile to business. This is where the data center story </description>
+    </item>
+    <item>
+      <title>OpenAI&apos;s data center influence warning shows the AI fight is bigger than zoning</title>
+      <link>https://samcbarth.github.io/aisite/#post22</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post22</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Business Insider reported that OpenAI disrupted a suspected China-linked influence operation trying to shape the conversation around US data centers. That is a strange story on the surface, but it makes sense once you think about where the AI race is heading. Data centers are no </description>
+    </item>
+    <item>
+      <title>HubSpot&apos;s agentic AI bet is really about whether CRM becomes the operating layer</title>
+      <link>https://samcbarth.github.io/aisite/#post21</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post21</guid>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot</category>
+      <description>Futurum&apos;s analysis of HubSpot&apos;s agentic AI push gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else? That is why I think HubSpot&apos;s A</description>
     </item>
     <item>
       <title>Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead</title>

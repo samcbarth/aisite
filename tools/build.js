@@ -113,6 +113,11 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post25: 'The Anthropic compute deal matters because it shows AI infrastructure becoming a financing and operating strategy, not just a product roadmap.',
+    post24: 'Amazon\'s loan matters because it turns AI infrastructure into a capital allocation question that operators should understand clearly.',
+    post23: 'The Texas data center story matters because it shows that infrastructure growth has to account for the communities carrying the cost.',
+    post22: 'OpenAI\'s influence warning matters because AI infrastructure is now tied to trust, public opinion, and national strategy.',
+    post21: 'HubSpot\'s agentic AI bet matters because CRM is becoming the place where workflow intelligence either works or falls apart.',
     post20: 'The hyperscaler investment story is really about whether AI spend becomes a disciplined operating model or just a faster way to burn capital.',
     post19: 'The pricing change matters because it turns AI from a feature checkbox into a measurable operating decision.',
     post18: 'The release is interesting because it shows what happens when product context becomes the thing that makes AI useful.',
@@ -149,6 +154,11 @@ function copyRecursive(src, dest) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
   const INLINE_MEDIA = {
+    post25: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Compute is becoming a financed asset class.', side: 'right', after: 2 },
+    post24: { image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop&q=80', caption: 'AI spend is now a capital allocation story.', side: 'left', after: 2 },
+    post23: { image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&h=650&fit=crop&q=80', caption: 'Power and water are becoming the real negotiation.', side: 'right', after: 2 },
+    post22: { image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=900&h=650&fit=crop&q=80', caption: 'Infrastructure debates are now information debates.', side: 'left', after: 2 },
+    post21: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'The CRM has to become the operating layer.', side: 'right', after: 2 },
     post20: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'The real bill is the physical footprint.', side: 'right', after: 2 },
     post19: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Outcome-based pricing changes the conversation.', side: 'left', after: 2 },
     post18: { image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop&q=80', caption: 'Context is the actual product here.', side: 'right', after: 2 },
@@ -256,6 +266,11 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post25: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
+    post24: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
+    post23: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
+    post22: { after: 3, quotes: [makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust), makeQuote('Community view', QUOTE_LIBRARY.bradCommunity)] },
+    post21: { after: 3, quotes: [makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Agentic view', QUOTE_LIBRARY.benioffAgentic)] },
     post20: { after: 4, quotes: [makeQuote('Bullish view', QUOTE_LIBRARY.huangInfra), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
     post19: { after: 3, quotes: [makeQuote('Product view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Operator view', QUOTE_LIBRARY.dharmeshProblems)] },
     post18: { after: 3, quotes: [makeQuote('Product view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Operator view', QUOTE_LIBRARY.dharmeshProblems)] },
