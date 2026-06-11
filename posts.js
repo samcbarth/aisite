@@ -190,15 +190,21 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I think the SpaceX IPO story is bigger than the IPO itself. It is really a test of how much confidence the market is willing to put behind a company that has spent years turning ambition into a brand.</p>
+      <p>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation.</p>
 
-      <p>That is not a criticism. SpaceX has earned a lot of credibility by actually shipping. It has become one of those companies where people assume execution before the filing is even finished. That kind of reputation is hard to build and even harder to fake.</p>
+      <p>That is what makes this interesting to me. SpaceX has earned the benefit of the doubt by actually shipping. It is not some empty brand. It has real momentum, and it has real business underneath it. That is why people take it seriously in the first place.</p>
 
-      <p>SpaceX also has a very real and established business model, which is part of why the IPO story matters so much. But Elon Musk clearly wants to connect it to xAI and a handful of other valuation stories in a way that feels aimed at building the first trillion-dollar company. That is where the whole thing gets both fascinating and unsettling. The upside is obvious if it works, but it also turns the whole structure into something a lot more fragile if the market stops believing the story all at once.</p>
+      <p>But the risk I want people to keep in mind is this: a lot of shareholder money is getting used to cover one man’s debts and one man’s bigger valuation story. The xAI connection is part of that. That is where a lot of the shareholder money is coming from, at least in the way Elon appears to be categorizing the whole ecosystem. Whether the tools end up being legitimate or not is one thing. The bigger point is that the whole structure is getting bundled together to support the trillion-dollar narrative.</p>
 
-      <p>But once a company like this goes public, the conversation changes. Private market hype is one thing. Public market accountability is another. Investors will want cleaner numbers, clearer margins, and a better explanation for how the story translates into real cash flow over time.</p>
+      <p>Once a company like this goes public, the story changes. It is not just private-market belief anymore. It is shareholder pressure, public scrutiny, and a much louder expectation that the company keeps performing no matter what the market mood looks like. That is a big shift. It makes everything more volatile if the valuation story slips.</p>
 
-      <p>I also think there is a broader lesson here for the rest of the market. A lot of businesses are being valued off future promise right now. SpaceX just happens to be the most visible example. When a company with this much momentum enters the public market, it raises the same question for everyone else: what is the actual business underneath the excitement?</p>
+      <p>And that is the part people should not miss. If this IPO is the thing that gets SpaceX to a trillion-dollar valuation, then the whole story gets a lot more aggressive. If it does not get there, then I think things get very volatile very fast. That is the real tradeoff here.</p>
+
+      <h2>FAQ</h2>
+      <p><strong>Why does the IPO matter if SpaceX is already a strong company?</strong> Because the public market forces the story to stand up under real scrutiny. A company can look great in private and still get much more fragile once shareholders start demanding clean answers.</p>
+      <p><strong>What is the biggest risk?</strong> In my view, it is the way shareholder money gets pulled into a larger debt and valuation story that is bigger than SpaceX alone.</p>
+      <p><strong>Why does xAI matter here?</strong> Because it is part of how the whole Elon ecosystem gets bundled together. That is where the valuation story starts to stretch beyond one company.</p>
+      <p><strong>What changes after the IPO?</strong> The company stops being judged mostly by believers. It gets judged by shareholders, the market, and the numbers they expect to see.</p>
     `
   },
   post13: {
