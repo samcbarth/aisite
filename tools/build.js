@@ -113,6 +113,11 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post30: 'The SpaceX retirement story matters because it shows how a strong company can still become a risky wrapper when ordinary retirement money gets pulled into a bigger Elon valuation narrative.',
+    post29: 'Apple\'s price warning matters because AI spend is now showing up in consumer hardware costs, not just cloud budgets.',
+    post28: 'The memory crunch matters because AI demand is colliding with real supply limits, and that cost pressure eventually leaks into everything else.',
+    post27: 'The data center pushback matters because local permission is becoming a real constraint on AI infrastructure, not a side issue.',
+    post26: 'The mega-IPO wave matters because public markets can only absorb so much narrative before valuation risk starts to crowd out the upside.',
     post25: 'The Anthropic compute deal matters because it shows AI infrastructure becoming a financing and operating strategy, not just a product roadmap.',
     post24: 'Amazon\'s loan matters because it turns AI infrastructure into a capital allocation question that operators should understand clearly.',
     post23: 'The Texas data center story matters because it shows that infrastructure growth has to account for the communities carrying the cost.',
@@ -154,6 +159,11 @@ function copyRecursive(src, dest) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
   const INLINE_MEDIA = {
+    post30: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
+    post29: { image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop&q=80', caption: 'Price pressure is how the boom reaches consumers.', side: 'right', after: 2 },
+    post28: { image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&h=650&fit=crop&q=80', caption: 'Supply is the part nobody gets to skip.', side: 'left', after: 2 },
+    post27: { image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&h=650&fit=crop&q=80', caption: 'Local resistance changes the build math.', side: 'right', after: 2 },
+    post26: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'The market can only price so much hope at once.', side: 'left', after: 2 },
     post25: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Compute is becoming a financed asset class.', side: 'right', after: 2 },
     post24: { image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop&q=80', caption: 'AI spend is now a capital allocation story.', side: 'left', after: 2 },
     post23: { image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&h=650&fit=crop&q=80', caption: 'Power and water are becoming the real negotiation.', side: 'right', after: 2 },
@@ -221,6 +231,11 @@ function copyRecursive(src, dest) {
       source: 'Costco Investor Relations',
       sourceUrl: 'https://investor.costco.com/news/news-details/2000/Costco-Wholesale-Opens-Two-Warehouses-in-the-State-of-Texas-09-20-2000/default.aspx'
     },
+    cookUnavoidable: {
+      text: 'price increases for some Apple products are unavoidable',
+      source: 'People',
+      sourceUrl: 'https://people.com/apple-may-raise-prices-as-ai-boom-makes-key-components-more-expensive-12003187'
+    },
     andrewElectricity: {
       text: 'AI is the new electricity.',
       source: 'Stanford Graduate School of Business',
@@ -266,6 +281,11 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post30: { after: 3, quotes: [makeQuote('Builder view', QUOTE_LIBRARY.muskFuture), makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust)] },
+    post29: { after: 3, quotes: [makeQuote('Apple view', QUOTE_LIBRARY.cookUnavoidable), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
+    post28: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst)] },
+    post27: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
+    post26: { after: 3, quotes: [makeQuote('Market view', QUOTE_LIBRARY.spaceXTrillions), makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust)] },
     post25: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
     post24: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
     post23: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
@@ -436,3 +456,5 @@ function copyRecursive(src, dest) {
   console.log(`build: generated ${POST_ORDER.length} post pages in dist/posts/`);
 
 })().catch((e) => { console.error(e); process.exit(1); });
+
+

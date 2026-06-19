@@ -7,7 +7,111 @@
  * here only — everything downstream regenerates.
  */
 const POSTS = {
-  post25: {
+  post30: {
+    featured: false,
+    date: 'June 19, 2026',
+    iso: '2026-06-19',
+    title: 'SpaceX in retirement accounts is where the hype gets personal',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.theguardian.com/science/2026/jun/19/spacex-retirement-savings-elon-musk" target="_blank" rel="noopener noreferrer">The Guardian reported</a> that the SpaceX story is starting to reach retirement savings, and that is where the whole thing gets more personal. Once a company becomes something index funds and 401(k)s have to carry, the risk stops being a billionaire game and starts touching ordinary people.</p>
+
+      <p>I think that is the part worth paying attention to. Retirement money is supposed to feel boring. People put that money aside because they want stability, not because they are trying to catch the next moonshot. If SpaceX becomes part of that system, the exposure is no longer optional for a lot of people.</p>
+
+      <p>SpaceX is still a good company. I already said that in the IPO piece, and I mean it. But a good company can still get folded into a much bigger valuation story that asks retirement money to carry some of the same volatility as the people chasing the upside.</p>
+
+      
+      <p>That is why I do not think this should be framed as a clean stock story. It is a structure story. It is about who ends up carrying the risk when the narrative gets big enough that it stops feeling like one company and starts feeling like an entire ecosystem.</p>
+
+      <p>My view is simple. The company can be real and the structure can still be too aggressive. Those are not contradictions.</p>
+    `
+  },
+  post29: {
+    featured: false,
+    date: 'June 18, 2026',
+    iso: '2026-06-18',
+    title: "Apple's price hike warning shows the AI boom is reaching consumers",
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://people.com/apple-may-raise-prices-as-ai-boom-makes-key-components-more-expensive-12003187" target="_blank" rel="noopener noreferrer">People reported</a> that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause.</p>
+
+      <p>I think this is where the AI boom stops being abstract. People like to talk about models, launches, and data centers. Fine. But the cost pressure does not stay inside those conversations forever. It eventually shows up in the products people actually buy.</p>
+
+      <p>Apple can handle more pressure than most companies. It has the scale, the supply chain, and the pricing power to absorb a lot. But even Apple has limits if component costs keep climbing and the whole market keeps pulling the same parts in the same direction.</p>
+
+      
+      <p>That is why I think this story matters. It is not just about Apple. It is about the AI buildout starting to move into consumer pricing and product decisions. Once that happens, people feel the boom directly.</p>
+
+      <p>If prices go up, that is not a side effect. That is the signal.</p>
+    `
+  },
+  post28: {
+    featured: false,
+    date: 'June 17, 2026',
+    iso: '2026-06-17',
+    title: 'The memory crunch is the part of the AI boom people are ignoring',
+    category: 'AI & Automation',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.wsj.com/tech/why-the-memory-crunch-is-almost-impossible-to-solve-4023cb40" target="_blank" rel="noopener noreferrer">The Wall Street Journal reported</a> that the memory crunch may be almost impossible to solve anytime soon. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story.</p>
+
+      <p>I think this is the real pressure point. Everyone wants to focus on the model demos and the launch headlines, but the actual choke point is physical supply. Memory is one of the things that makes the whole stack work.</p>
+
+      <p>If the AI buyers are willing to pay more for the scarce parts, everybody else gets squeezed. That includes consumer electronics, cloud customers, and anyone else trying to buy the same supply.</p>
+
+      
+      <p>That is why this feels less like a normal tech cycle and more like a real supply shock. The companies that planned for actual demand are going to handle it better. The ones that treated this like a temporary rush are going to feel it first.</p>
+
+      <p>This is the part of the boom that tells you who really has leverage.</p>
+    `
+  },
+  post27: {
+    featured: false,
+    date: 'June 16, 2026',
+    iso: '2026-06-16',
+    title: 'The pushback against data centers is the real AI story now',
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.businessinsider.com/data-center-bans-moratoriums-opposition-map-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that communities are pushing back on data centers and winning some of those fights. I think that is the next phase of the AI infrastructure story.</p>
+
+      <p>For a while, the industry acted like these projects could just show up anywhere and everyone would call it progress. Small towns are not treating it that way anymore.</p>
+
+      <p>They are looking at the actual tradeoff: power strain, water use, noise, traffic, land pressure, and a lot of vague promises that do not always survive contact with reality. If the project is not explained clearly, trust drops fast.</p>
+
+      
+      <p>I have heard enough stories about NDAs and fuzzy early conversations to know why people are fed up. If you want approval, be direct about what is being built and what it costs the community.</p>
+
+      <p>The companies that figure out how to be cleaner, clearer, and less evasive will have a real advantage. Not because it sounds good. Because they will keep getting approved.</p>
+    `
+  },
+  post26: {
+    featured: false,
+    date: 'June 15, 2026',
+    iso: '2026-06-15',
+    title: 'The mega-IPO wave is what happens when the market gets crowded with hype',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.businessinsider.com/profg-podcast-ed-elson-ipos-stocks-spacex-openai-anthropic-spcx-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that trader Ed Elson is bearish on the coming mega-IPO wave, including SpaceX, OpenAI, Anthropic, and other big names. I think that is the part worth paying attention to.</p>
+
+      <p>When too many giant stories hit the market at the same time, the market stops rewarding scarcity in the same way. SpaceX, OpenAI, and Anthropic can all be good businesses and still be part of a crowded valuation trade. Those are not the same thing.</p>
+
+      <p>Once the IPO window turns into a stampede, timing matters a lot more. Narrative fatigue starts to matter too. The market can only absorb so much promise before it starts asking harder questions.</p>
+
+      
+      <p>The risk is not just valuation. It is what happens when everyone tries to hit the market at peak confidence and assumes the window stays open forever. That can work. It can also get ugly very fast.</p>
+
+      <p>This feels less like healthy capital formation and more like too many giant promises arriving at once.</p>
+    `
+  },  post25: {
     featured: false,
     date: 'June 11, 2026',
     iso: '2026-06-11',
@@ -488,7 +592,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post14', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post14', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
@@ -498,3 +602,6 @@ if (typeof window !== 'undefined') {
   window.POSTS = POSTS;
   window.POST_ORDER = POST_ORDER;
 }
+
+
+
