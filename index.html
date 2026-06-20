@@ -261,6 +261,129 @@
     .post-read-time { font-size: 0.62rem; color: #383838; }
     .post-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; color: #fff; }
     .post-excerpt { font-size: 0.82rem; color: #fff; line-height: 1.55; opacity: 0.55; }
+
+    /* Mid-feed promo carousel */
+    .promo-break {
+      grid-column: 1 / -1;
+      margin: 0.5rem 0 0.75rem;
+      padding: 1rem;
+      border: 1px solid #242424;
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at top left, rgba(124,106,247,0.18), transparent 42%),
+        radial-gradient(circle at bottom right, rgba(34,211,238,0.12), transparent 36%),
+        #0b0b0b;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.02) inset;
+    }
+    .promo-break-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+    }
+    .promo-break-copy {
+      font-size: 0.86rem;
+      color: #9d9d9d;
+      line-height: 1.5;
+      max-width: 420px;
+    }
+    .promo-carousel-actions { display: flex; gap: 0.45rem; flex-shrink: 0; }
+    .carousel-btn {
+      border: 1px solid #262626;
+      background: #111;
+      color: #bbb;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .carousel-btn:hover { border-color: var(--cyan); color: #fff; background: #0f1114; }
+    .promo-carousel {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(230px, 1fr);
+      gap: 0.75rem;
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+      scroll-behavior: smooth;
+      padding-bottom: 0.1rem;
+      scrollbar-width: none;
+    }
+    .promo-carousel::-webkit-scrollbar { display: none; }
+    .promo-card {
+      min-height: 180px;
+      border-radius: 14px;
+      border: 1px solid #262626;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), transparent 50%),
+        #0f0f0f;
+      color: inherit;
+      text-decoration: none;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      scroll-snap-align: start;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .promo-card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(34,211,238,0.08);
+    }
+    .promo-card:nth-child(1) { background:
+      radial-gradient(circle at top right, rgba(124,106,247,0.14), transparent 40%),
+      linear-gradient(180deg, rgba(255,255,255,0.04), transparent 50%),
+      #0f0f0f; }
+    .promo-card:nth-child(2) { background:
+      radial-gradient(circle at top right, rgba(34,211,238,0.14), transparent 40%),
+      linear-gradient(180deg, rgba(255,255,255,0.04), transparent 50%),
+      #0f0f0f; }
+    .promo-card:nth-child(3) { background:
+      radial-gradient(circle at top right, rgba(245,158,11,0.14), transparent 40%),
+      linear-gradient(180deg, rgba(255,255,255,0.04), transparent 50%),
+      #0f0f0f; }
+    .promo-card-kicker {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #8a8a8a;
+      margin-bottom: 0.5rem;
+    }
+    .promo-card-title {
+      font-size: 1rem;
+      line-height: 1.25;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.45rem;
+      max-width: 14ch;
+    }
+    .promo-card-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #a4a4a4;
+      margin-bottom: 0.9rem;
+      max-width: 28ch;
+    }
+    .promo-card-cta {
+      display: inline-flex;
+      align-self: flex-start;
+      gap: 0.35rem;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #fff;
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
     .post-category {
       font-size: 0.62rem;
       text-transform: uppercase;
@@ -878,6 +1001,18 @@
     body.light-mode .featured-meta-row { color: #999; }
     body.light-mode .featured-title { color: #111; }
     body.light-mode .featured-excerpt { color: #555; opacity: 1; }
+    body.light-mode .promo-break {
+      background:
+        radial-gradient(circle at top left, rgba(124,106,247,0.06), transparent 42%),
+        radial-gradient(circle at bottom right, rgba(34,211,238,0.06), transparent 36%),
+        #fff;
+      border-color: #e7e7e7;
+    }
+    body.light-mode .promo-card { background: #fff; border-color: #e7e7e7; }
+    body.light-mode .promo-card:hover { border-color: var(--purple); box-shadow: 0 0 20px rgba(124,106,247,0.08); }
+    body.light-mode .promo-card-title { color: #111; }
+    body.light-mode .promo-card-text { color: #5b5b5b; }
+    body.light-mode .promo-card-cta { color: #111; background: #f4f4f4; border-color: #e3e3e3; }
     body.light-mode .newsletter-inner { background: #fff; border-color: #e0e0e0; }
     body.light-mode .newsletter-title { color: #111; }
     body.light-mode .newsletter-sub { color: #888; }
@@ -1513,6 +1648,45 @@
         <div class="post-excerpt">HubSpot's AI push is really about whether the CRM can move from record keeping into contextual workflow guidance.</div>
       </div>
     </a>
+
+    <div class="promo-break" id="promo-break">
+      <div class="promo-break-head">
+        <div>
+          <div class="section-label">Work with Sam</div>
+          <div class="promo-break-copy">If the posts are useful, here are the fastest ways to go deeper.</div>
+        </div>
+        <div class="promo-carousel-actions" aria-label="Carousel controls">
+          <button class="carousel-btn" type="button" data-action="promo-scroll" data-dir="-1">Prev</button>
+          <button class="carousel-btn" type="button" data-action="promo-scroll" data-dir="1">Next</button>
+        </div>
+      </div>
+      <div class="promo-carousel" id="promo-carousel" aria-label="Ways to connect with Sam C Barth">
+        <a class="promo-card" href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="promo-card-kicker">Book time</div>
+            <div class="promo-card-title">Set a meeting</div>
+            <div class="promo-card-text">If you want to talk RevOps, AI, CRM strategy, or a project scope, book a quick call.</div>
+          </div>
+          <span class="promo-card-cta">Meeting link →</span>
+        </a>
+        <a class="promo-card" href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="promo-card-kicker">Read more</div>
+            <div class="promo-card-title">Visit SamCBarth.com</div>
+            <div class="promo-card-text">See the broader work, the consulting angle, and how these ideas connect back to business development.</div>
+          </div>
+          <span class="promo-card-cta">Open site →</span>
+        </a>
+        <a class="promo-card" href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="promo-card-kicker">Stay connected</div>
+            <div class="promo-card-title">Follow on LinkedIn</div>
+            <div class="promo-card-text">For shorter takes, updates, and the day-to-day thinking behind the posts, LinkedIn is the easiest place to follow along.</div>
+          </div>
+          <span class="promo-card-cta">Go to LinkedIn →</span>
+        </a>
+      </div>
+    </div>
 
     <a class="post-card" href="posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/" data-id="post20">
       <img class="post-thumb" width="72" height="72" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=144&h=144&fit=crop&q=80" alt="" loading="lazy">

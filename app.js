@@ -178,6 +178,16 @@
     slots.forEach(s => obs.observe(s));
   }
 
+  function setupPromoCarousel() {
+    const track = document.getElementById('promo-carousel');
+    if (!track) return;
+    actions['promo-scroll'] = (el) => {
+      const dir = Number(el.dataset.dir || '1');
+      const distance = Math.max(280, track.clientWidth * 0.82);
+      track.scrollBy({ left: dir * distance, behavior: 'smooth' });
+    };
+  }
+
   function readingTime(html) {
     const text = html.replace(/<[^>]+>/g, ' ');
     const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
@@ -511,6 +521,7 @@
     renderFeatured();
     renderSponsor();
     setupAdSlots();
+    setupPromoCarousel();
     setupTradingView();
 
     postOrder.forEach(id => {
