@@ -311,7 +311,7 @@ function copyRecursive(src, dest) {
   };
 
   function makeInlineImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=650');
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=675');
   }
 
   function injectInlineMedia(body, post, postId) {
