@@ -32,6 +32,7 @@
       --text: #f0f0f0;
       --muted: #8a8a8a;
     }
+    html { font-size: 18pt; }
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -52,28 +53,28 @@
     .mark {
       width: 30px; height: 30px; border-radius: 9px;
       display: inline-flex; align-items: center; justify-content: center;
-      font-size: 0.65rem; font-weight: 700;
+      font-size: 1rem; font-weight: 700;
       background: linear-gradient(135deg, var(--purple), var(--cyan));
     }
     .brand-copy { display: flex; flex-direction: column; line-height: 1.05; }
     .brand-name { font-size: 1rem; font-weight: 700; }
-    .brand-sub { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; }
+    .brand-sub { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; }
     .nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .nav a {
-      text-decoration: none; font-size: 0.86rem; color: #aaa;
+      text-decoration: none; font-size: 1rem; color: #aaa;
       border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.8rem;
       background: rgba(255,255,255,0.02);
     }
     .nav a:hover { color: #fff; border-color: #343434; }
     .hero { max-width: 720px; padding: 1rem 0 2rem; }
-    .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 1rem; }
+    .label { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 1rem; }
     h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.02; margin: 0 0 1rem; }
     .lede { max-width: 56ch; color: #d8d8d8; line-height: 1.8; font-size: 1.15rem; }
     .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       padding: 0.72rem 1.1rem; border-radius: 10px; text-decoration: none;
-      font-weight: 600; font-size: 0.9rem; border: 1px solid transparent;
+      font-weight: 600; font-size: 1rem; border: 1px solid transparent;
     }
     .btn-primary { background: linear-gradient(135deg, var(--purple), var(--cyan)); color: #fff; }
     .btn-ghost { border-color: var(--line); color: #cfcfcf; background: rgba(255,255,255,0.02); }
@@ -95,7 +96,7 @@
       background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
       padding: 1.1rem; min-height: 160px;
     }
-    .card-kicker { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 0.5rem; }
+    .card-kicker { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 0.5rem; }
     .card h2 { font-size: 1rem; margin: 0 0 0.45rem; }
     .card p { color: #a9a9a9; line-height: 1.65; font-size: 1rem; }
     .section { margin-top: 2rem; }
@@ -121,8 +122,8 @@
     input:focus, textarea:focus, select:focus { border-color: var(--emerald); }
     .form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
     .status { min-height: 1.2em; color: var(--emerald); font-size: 1rem; }
-    .fineprint { margin-top: 0.85rem; color: #6f6f6f; font-size: 0.94rem; line-height: 1.65; }
-    .footer { margin-top: 2rem; color: #777; font-size: 0.95rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .fineprint { margin-top: 0.85rem; color: #6f6f6f; font-size: 1rem; line-height: 1.65; }
+    .footer { margin-top: 2rem; color: #777; font-size: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
     @media (max-width: 760px) {
       .grid, .bullets, .form-row { grid-template-columns: 1fr; }
       .shell { padding-inline: 1rem; }
