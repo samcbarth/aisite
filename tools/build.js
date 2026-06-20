@@ -314,20 +314,80 @@ function copyRecursive(src, dest) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=675');
   }
 
-  function imageKey(imgUrl) {
-    return (imgUrl || '').split('?')[0];
+  function hashString(input) {
+    let hash = 2166136261;
+    for (let i = 0; i < input.length; i += 1) {
+      hash ^= input.charCodeAt(i);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
   }
 
-  function pickSupportImage(postId) {
-    const current = POSTS[postId];
-    const primary = INLINE_MEDIA[postId] || {};
-    const seen = new Set([current && current.image, primary.image].filter(Boolean).map(imageKey));
-    const start = POST_ORDER.indexOf(postId);
-    for (let offset = 1; offset < POST_ORDER.length; offset += 1) {
-      const candidate = POSTS[POST_ORDER[(start + offset) % POST_ORDER.length]];
-      if (candidate && candidate.image && !seen.has(imageKey(candidate.image))) return candidate.image;
-    }
-    return current && current.image ? current.image : '';
+  function pickPalette(seed) {
+    const palettes = [
+      ['#7c6af7', '#22d3ee', '#111827'],
+      ['#f97316', '#f59e0b', '#1f2937'],
+      ['#10b981', '#22c55e', '#0f172a'],
+      ['#f472b6', '#7c6af7', '#111827'],
+      ['#38bdf8', '#0ea5e9', '#0b1120'],
+      ['#e879f9', '#fb7185', '#1f132b']
+    ];
+    return palettes[seed % palettes.length];
+  }
+
+  function makeSupportImage(post, postId) {
+    const seed = hashString(postId + '|' + post.title);
+    const [c1, c2, bg] = pickPalette(seed);
+    const title = escAttr(post.title).slice(0, 72);
+    const label = escAttr((post.category || 'Business') + ' / ' + (post.tag || 'Signal'));
+    const x1 = 20 + (seed % 25);
+    const y1 = 35 + (seed % 20);
+    const x2 = 170 + (seed % 50);
+    const y2 = 115 + (seed % 40);
+    const x3 = 360 + (seed % 60);
+    const y3 = 85 + (seed % 30);
+    const x4 = 610 + (seed % 70);
+    const y4 = 180 + (seed % 35);
+    const x5 = 830 + (seed % 80);
+    const y5 = 95 + (seed % 25);
+    const bars = Array.from({ length: 6 }, (_, i) => {
+      const height = 90 + ((seed >> (i * 3)) % 190);
+      const x = 120 + i * 150;
+      const y = 520 - height;
+      return `<rect x="${x}" y="${y}" width="86" height="${height}" rx="10" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.75 + (i * 0.03)}" />`;
+    }).join('');
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="${title}">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="${c1}"/>
+            <stop offset="1" stop-color="${c2}"/>
+          </linearGradient>
+          <radialGradient id="r" cx="50%" cy="35%" r="75%">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1200" height="675" rx="28" fill="${bg}"/>
+        <rect width="1200" height="675" rx="28" fill="url(#g)" opacity="0.18"/>
+        <circle cx="${x1}" cy="${y1}" r="86" fill="url(#r)" opacity="0.9"/>
+        <circle cx="${x2}" cy="${y2}" r="112" fill="url(#r)" opacity="0.65"/>
+        <circle cx="${x3}" cy="${y3}" r="54" fill="${c1}" opacity="0.28"/>
+        <circle cx="${x4}" cy="${y4}" r="74" fill="${c2}" opacity="0.22"/>
+        <circle cx="${x5}" cy="${y5}" r="42" fill="#ffffff" opacity="0.2"/>
+        <g fill="none" stroke="#ffffff" stroke-opacity="0.12">
+          <path d="M80 180 L310 160 L520 205 L760 150 L980 188 L1120 170" stroke-width="6" stroke-linecap="round"/>
+          <path d="M90 455 L220 420 L340 460 L470 330 L630 360 L790 285 L930 315 L1120 250" stroke-width="8" stroke-linecap="round"/>
+        </g>
+        <g opacity="0.95">
+          ${bars}
+        </g>
+        <rect x="58" y="56" width="340" height="82" rx="18" fill="#000" opacity="0.2"/>
+        <text x="86" y="102" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">${label}</text>
+        <text x="86" y="560" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">${title}</text>
+        <text x="86" y="606" font-family="Space Grotesk, Arial, sans-serif" font-size="22" fill="#e5e7eb" fill-opacity="0.82">Generated frame for the story</text>
+      </svg>`;
+    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg.replace(/\n\s+/g, ' ').trim());
   }
 
   function injectInlineMedia(body, post, postId) {
@@ -356,9 +416,7 @@ function copyRecursive(src, dest) {
   }
 
   function makeSupportMedia(post, postId) {
-    const imgUrl = pickSupportImage(postId);
-    if (!imgUrl) return '';
-    const supportImg = makeInlineImage(imgUrl);
+    const supportImg = makeSupportImage(post, postId);
     return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>A second frame on the same story.</figcaption></figure>`;
   }
   function injectInlineQuotes(body, postId) {
