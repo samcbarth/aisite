@@ -748,7 +748,7 @@
     /* Newsletter tiers */
     .newsletter-tiers {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 0.75rem;
       margin-top: 1.25rem;
     }
@@ -1977,7 +1977,7 @@
   <div class="newsletter-inner">
     <div class="newsletter-label">Stay in the loop</div>
     <div class="newsletter-title">Get the next post in your inbox</div>
-    <div class="newsletter-sub">RevOps, AI, and CRM insights — when I have something worth saying.</div>
+    <div class="newsletter-sub">RevOps, AI, and CRM notes written from the operator side. Clear, practical, and useful when something worth sharing comes up.</div>
     <form class="newsletter-form" id="newsletter-form">
       <label class="sr-only" for="newsletter-email">Email address</label>
       <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
@@ -1989,8 +1989,14 @@
       <div class="tier">
         <div class="tier-name">Free</div>
         <div class="tier-price">$0</div>
-        <div class="tier-desc">The weekly read — signals, takes, and what's worth your attention in RevOps &amp; AI.</div>
-        <a class="tier-btn tier-btn-free" href="#newsletter-email" data-action="focus-email">You're set above ↑</a>
+        <div class="tier-desc">The weekly read — signals, practical takes, and what is worth your attention in RevOps and AI.</div>
+        <a class="tier-btn tier-btn-free" href="#newsletter-email" data-action="focus-email">Join the list ↑</a>
+      </div>
+      <div class="tier tier-pro">
+        <div class="tier-name">Private access</div>
+        <div class="tier-price">Templates &amp; notes</div>
+        <div class="tier-desc">Teardowns, working examples, and reusable assets for people who want the more applied version of the ideas.</div>
+        <a class="tier-btn" href="mailto:samcbarth@gmail.com?subject=Private%20notes%20and%20templates" target="_blank" rel="noopener noreferrer">Ask about access</a>
       </div>
     </div>
   </div>
@@ -1999,28 +2005,28 @@
 <section class="work" id="work">
   <div class="work-head">
     <span class="section-label">Work with me</span>
-    <p class="work-sub">Fractional RevOps and HubSpot strategy for teams that want their CRM to actually run the business.</p>
+    <p class="work-sub">Practical RevOps and HubSpot support for teams that want systems, reporting, and execution to line up.</p>
   </div>
   <div class="work-grid">
     <div class="work-card">
       <div class="work-card-title">HubSpot Implementation</div>
-      <div class="work-card-desc">Onboarding, migration, and buildout — set up clean so it scales instead of sprawling.</div>
-      <div class="work-card-price">Project-based</div>
+      <div class="work-card-desc">Onboarding, migration, and buildout so the system is clean from day one and does not sprawl later.</div>
+      <div class="work-card-price">Scoped project</div>
     </div>
     <div class="work-card">
       <div class="work-card-title">RevOps Audit</div>
-      <div class="work-card-desc">A full read on your data, pipeline, and reporting — with a prioritized fix list you can act on.</div>
-      <div class="work-card-price">From $2.5k</div>
+      <div class="work-card-desc">A focused review of your data, pipeline, and reporting, with a prioritized fix list you can act on.</div>
+      <div class="work-card-price">Fixed-scope engagement</div>
     </div>
     <div class="work-card">
       <div class="work-card-title">Fractional RevOps</div>
-      <div class="work-card-desc">Ongoing strategy and hands-on ops, embedded with your GTM team a few days a month.</div>
-      <div class="work-card-price">Monthly retainer</div>
+      <div class="work-card-desc">Ongoing strategy and hands-on ops, embedded with your GTM team a few days each month.</div>
+      <div class="work-card-price">Monthly support</div>
     </div>
   </div>
   <div class="work-cta">
     <a href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Book a 30-min intro call</a>
-    <span class="work-cta-note">No pitch — just figuring out if it's a fit.</span>
+    <span class="work-cta-note">No hard sell. Just a fit check.</span>
   </div>
 </section>
 
