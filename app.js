@@ -369,6 +369,28 @@
     btn.setAttribute('aria-pressed', String(isLight));
   }
 
+  async function refreshSite() {
+    const btn = document.querySelector('[data-action="refresh-site"]');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Refreshing...';
+    }
+    try {
+      sessionStorage.clear();
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((reg) => reg.unregister()));
+      }
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((key) => caches.delete(key)));
+      }
+    } finally {
+      const freshUrl = window.location.pathname + '?fresh=' + Date.now();
+      window.location.replace(freshUrl);
+    }
+  }
+
   // ── Share ───────────────────────────────────────────────────────
   const SITE_URL = 'https://samcbarth.github.io/aisite/';
   function shareOnLinkedIn() {
@@ -507,7 +529,8 @@
     'nav-next': () => navigatePost(1),
     'focus-email': () => document.getElementById('newsletter-email').focus(),
     'share-quote-linkedin': shareQuoteLinkedIn,
-    'share-quote-x': shareQuoteX
+    'share-quote-x': shareQuoteX,
+    'refresh-site': refreshSite
   };
 
   function initCards() {

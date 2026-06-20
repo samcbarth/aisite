@@ -136,6 +136,18 @@
       transition: color 0.15s;
     }
     .desktop-nav a:hover { color: #fff; }
+    .nav-action {
+      border: 1px solid #2a2a2a;
+      background: #101010;
+      color: #ddd;
+      border-radius: 999px;
+      padding: 0.45rem 0.8rem;
+      font: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+    }
+    .nav-action:hover { color: #fff; border-color: #555; }
     .mobile-nav { display: none; position: relative; }
     .menu-toggle {
       list-style: none;
@@ -188,6 +200,15 @@
       padding: 0.45rem 0.2rem;
     }
     .mobile-panel a:hover { color: #fff; }
+    .mobile-panel .nav-action {
+      width: 100%;
+      text-align: left;
+      padding: 0.55rem 0.2rem;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+    }
+    .mobile-panel .nav-action:hover { background: rgba(255,255,255,0.04); }
 
     .hero {
       max-width: 760px;
@@ -1187,6 +1208,8 @@
     body.light-mode .logo { color: #111; }
     body.light-mode .desktop-nav a { color: #666; }
     body.light-mode .desktop-nav a:hover { color: #111; }
+    body.light-mode .nav-action { border-color: #d0d0d0; color: #666; background: #f5f5f5; }
+    body.light-mode .nav-action:hover { border-color: #888; color: #111; }
     body.light-mode .theme-toggle { border-color: #d0d0d0; color: #888; }
     body.light-mode .theme-toggle:hover { border-color: #888; color: #333; }
     body.light-mode h1 { color: #111; }
@@ -1268,6 +1291,8 @@
     body.light-mode .mobile-panel { background: #fff; border-color: #e0e0e0; }
     body.light-mode .mobile-panel a { color: #555; }
     body.light-mode .mobile-panel a:hover { color: #111; }
+    body.light-mode .mobile-panel .nav-action { background: transparent; border: 0; color: #555; }
+    body.light-mode .mobile-panel .nav-action:hover { background: rgba(0,0,0,0.04); color: #111; }
     body.light-mode .work-card { background: #fff; border-color: #e0e0e0; }
     body.light-mode .work-card-title { color: #111; }
     body.light-mode .work-card-desc { color: #555; opacity: 1; }
@@ -1698,6 +1723,7 @@
       <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a>
       <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:samcbarth@gmail.com">Contact</a>
+      <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
     </nav>
     <button class="theme-toggle" id="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Toggle light and dark mode" title="Toggle light/dark mode">☀</button>
     <details class="mobile-nav">
@@ -1713,6 +1739,7 @@
         <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a>
         <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:samcbarth@gmail.com">Contact</a>
+        <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
       </div>
     </details>
   </div>
