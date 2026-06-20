@@ -435,10 +435,13 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1606166325683-e6deb697d301?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>There's a whole controversy going on right now with Bricks & Minifigs, the Lego resale chain, and one of their stores allegedly walking off with a man's father's lifetime collection of Star Wars Legos.</p>
-      <p>The way I see it, this is one of the huge parts of the resale business, especially when it comes to franchises and franchise owners. I think it can really start to become super, super messy when it comes to reselling somebody else's collectibles, and then new franchise owners come in that change hands and change how things are done.</p>
-      <p>And then it can leave somebody really kind of in the dust, which is kind of what's happening right now to this man's father's lifetime collection of Star Wars Legos. The family consigned it to a store in Oregon, the franchise changed ownership, and the new operators wouldn't honor the original arrangement or return what didn't sell.</p>
-      <p>That's the part that should scare anybody in a consignment or resale model. The inventory on your shelves often isn't yours. It belongs to the people who trusted you with it. When the business changes hands, that trust doesn't automatically transfer, and the people who get hurt are the ones who were furthest from the paperwork.</p>
+      <p>There is a serious trust issue in the Bricks & Minifigs story. Once a resale business takes custody of somebody else's inventory, the business is responsible for protecting both the items and the expectation around them.</p>
+
+      <p>That is where this gets messy. Franchise changes, weak paperwork, and bad handoffs can turn a normal consignment arrangement into a customer nightmare. The inventory is not really the point. The trust is.</p>
+
+      <p>This is why resale models need tighter operations than people assume. If you are holding collectibles, antiques, or anything emotionally important to the owner, the process has to be clean from the start. If it is not, the damage is not just financial.</p>
+
+      <p>The bigger lesson is that trust is an operational asset. Once it breaks, it is hard to buy it back.</p>
     `
   },
   post10: {
@@ -449,10 +452,13 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Costco is a super cool type of business model, being able to have the wholesale prices for people, and as long as they buy enough of it and get enough savings, then it covers the membership fees. So in order to get the quote unquote savings, they have to spend a lot.</p>
-      <p>It's a pretty good catch-22 that it's trapped a lot of, I would say, large families. I feel like they're the ones that are mostly utilizing it, because they do have to buy a lot.</p>
-      <p>I think one big thing is them being able to take advantage of high gas prices and then being able to offer lower gas in the midst of that. I think it's kind of related to the kind of lateralness that you can have if you have a really, really, really successful central business model. You're able to piggyback off of that and be able to leverage a different type of one.</p>
-      <p>And they're doing that in this case as a grocery store and also a gas station. They're not the first ones to do it, of course, but I think with their current boom that they're facing and seeing right now, they're definitely getting it to that point. It's very cool to see.</p>
+      <p>Costco's gas business works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up.</p>
+
+      <p>That is the point I keep coming back to. A strong core business gives you room to build adjacent economics that would not work nearly as well on their own. Costco does not need gas to be the whole story. It just needs gas to make the whole membership package feel more valuable.</p>
+
+      <p>What makes this interesting is the discipline. Costco is not trying to do everything. It is using one strong business to support another one that pulls members back into the system. That is a much better move than chasing random adjacencies because they look good in a slide deck.</p>
+
+      <p>The lesson for operators is simple. If the core business is strong enough, it can subsidize a move into something adjacent and make the whole model harder to copy.</p>
     `
   },
   post7: {
@@ -514,13 +520,13 @@ const POSTS = {
     video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
     poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I've been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do.</p>
-      <p>Today especially, I started to see what people mean when they say AI starts to fall apart.</p>
-      <p>Context windows are a big factor. Gemini has one of the largest, a couple million tokens, but even then, the memory that an AI has to maintain reasoning is not persistent beyond those limits. At the end of the day, it's still predicting the next token. It simulates persistence and reasoning, but it doesn't actually have it.</p>
-      <p>I think this is one of the biggest downfalls of AI right now. It's what's keeping it from being the fully disruptive, end-all tool that people are claiming it is.</p>
-      <p>That said, LLMs have enabled non-developers to build applications and communicate with computers using natural language, which is huge.</p>
-      <p>But it's not ready to just take the keys and go. Right now it's like: "Here are the keys, go drive." And it says "okay," but there are too many variables it can't account for.</p>
-      <p>That's why a single prompt approach doesn't work. Everything needs to be piecemealed out into structured steps, with systems in place for validation, verification, and consistency.</p>
+      <p>I've been testing Claude, Claude Co-Work, and Claude Dispatch to see how much of my own workload I can actually hand off. The answer is: some of it, but not the parts that depend on memory, state, or judgment.</p>
+
+      <p>That is where AI falls apart. It can look persistent and helpful, but it still needs structure around it. The model itself does not keep durable state the way a good workflow system does.</p>
+
+      <p>The practical fix is not a bigger prompt. It is a better operating setup: break the work into smaller steps, store the context outside the model, validate each step, and keep the process simple enough that it does not drift.</p>
+
+      <p>The lesson is straightforward. AI is useful when the task is bounded. It gets messy when people ask it to hold the whole workflow in its head.</p>
     `
   },
   post5: {

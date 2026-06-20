@@ -147,7 +147,7 @@ function copyRecursive(src, dest) {
   function makeContextParagraph(postId) {
     const clause = CONTEXT_CLAUSES[postId];
     if (!clause) return '';
-    return `<p>${clause} For me, this connects directly to the work I do in RevOps and business development at ${SAM_LINK}. When I look at a story like this, I am not just asking whether it is interesting. I am asking how teams would actually use it, what it changes in the operating model, what it costs to implement, and where it could fail once it leaves the headline and enters the day-to-day workflow. That is the lens I bring to the analysis I publish at SamCBarth.com, because the practical details are usually the part that matters most. If I can trace the impact back to pipeline, margins, process, or customer behavior, then it is worth taking seriously.</p>`;
+    return `<p>${clause} For me, this connects directly to the work I do in RevOps and business development at ${SAM_LINK}. Practical takeaway: look for the effect on pipeline, margins, process, or customer behavior. That is the lens I use when I write about these stories.</p>`;
   }
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -300,12 +300,9 @@ function copyRecursive(src, dest) {
     post16: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
     post17: { after: 3, quotes: [makeQuote('Future view', QUOTE_LIBRARY.muskFuture), makeQuote('Buildout view', QUOTE_LIBRARY.huangInfra)] },
     post12: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Operator view', QUOTE_LIBRARY.benioffAgentic)] },
-    post11: { after: 3, quotes: [makeQuote('Value view', QUOTE_LIBRARY.costcoValue), makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems)] },
-    post10: { after: 3, quotes: [makeQuote('Value view', QUOTE_LIBRARY.costcoValue), makeQuote('Membership view', { text: 'This is consistent with Costco\'s goal of providing greater value to our members by continually providing incentives for greater use and greater purchases through their Costco membership.', source: 'Costco Investor Relations', sourceUrl: 'https://investor.costco.com/news/news-details/2000/Costco-Wholesale-Corporation-Reports-March-Sales-Results-and-the-National-Rollout-of-a-2-Annual-Reward-Program-for-Executive-Members-04-06-2000/default.aspx' })] },
     post7: { after: 3, quotes: [makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst), makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra)] },
     post8: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst)] },
     post9: { after: 3, quotes: [makeQuote('Defender view', QUOTE_LIBRARY.kurtzAgents), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
-    post6: { after: 2, quotes: [makeQuote('Practical view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Execution view', QUOTE_LIBRARY.bradCommunity)] },
     post5: { after: 2, quotes: [makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
     post4: { after: 2, quotes: [makeQuote('Agentic view', QUOTE_LIBRARY.benioffAgentic), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
     post1: { after: 2, quotes: [makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems)] },

@@ -6,7 +6,7 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 23:51:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:49 GMT</lastBuildDate>
     <item>
       <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
       <link>https://samcbarth.github.io/aisite/#post14</link>
@@ -165,7 +165,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post11</guid>
       <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>There&apos;s a whole controversy going on right now with Bricks &amp; Minifigs, the Lego resale chain, and one of their stores allegedly walking off with a man&apos;s father&apos;s lifetime collection of Star Wars Legos. The way I see it, this is one of the huge parts of the resale business, especi</description>
+      <description>There is a serious trust issue in the Bricks &amp; Minifigs story. Once a resale business takes custody of somebody else&apos;s inventory, the business is responsible for protecting both the items and the expectation around them. That is where this gets messy. Franchise changes, weak pape</description>
     </item>
     <item>
       <title>Costco&apos;s gas boom is a lesson in leveraging a great core business</title>
@@ -173,7 +173,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post10</guid>
       <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>Costco is a super cool type of business model, being able to have the wholesale prices for people, and as long as they buy enough of it and get enough savings, then it covers the membership fees. So in order to get the quote unquote savings, they have to spend a lot. It&apos;s a prett</description>
+      <description>Costco&apos;s gas business works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up. That is the point I keep coming back to. A strong core business gives you room to build adjacent economics </description>
     </item>
     <item>
       <title>Dell&apos;s best day ever tells you where enterprise AI is actually going</title>
@@ -205,7 +205,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post6</guid>
       <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>I&apos;ve been diving into Claude, Claude Co-Work, and Claude Dispatch this weekend, really trying to see how much of an agentic system process I can build to lessen my workload and focus on what I actually need to do. Today especially, I started to see what people mean when they say </description>
+      <description>I&apos;ve been testing Claude, Claude Co-Work, and Claude Dispatch to see how much of my own workload I can actually hand off. The answer is: some of it, but not the parts that depend on memory, state, or judgment. That is where AI falls apart. It can look persistent and helpful, but </description>
     </item>
     <item>
       <title>The shift from &quot;AI tools&quot; to AI with actual business context</title>
