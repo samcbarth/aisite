@@ -36,6 +36,7 @@
   };
   const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
+  const generatedAsset = (id, variant) => 'generated/' + id + '-' + variant + '.svg';
 
   function renderSponsor() {
     const el = document.getElementById('sponsor-slot');
@@ -241,13 +242,21 @@
     document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
   }
 
+  function refreshPostThumbs() {
+    document.querySelectorAll('.post-card').forEach(card => {
+      const img = card.querySelector('.post-thumb');
+      if (!img || !card.dataset.id) return;
+      img.src = generatedAsset(card.dataset.id, 'card');
+    });
+  }
+
   function renderFeatured() {
     const featuredId = postOrder.find(id => posts[id].featured);
     const section = document.getElementById('featured-section');
     if (!featuredId || !section) return;
     const p = posts[featuredId];
     const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
-    const imgSrc = p.image.replace('w=1160&h=440', 'w=760&h=190');
+    const imgSrc = generatedAsset(featuredId, 'hero');
 
     const card = document.createElement('a');
     card.className = 'featured-card';
@@ -433,12 +442,12 @@
     clearModalVideo();
     media.innerHTML = '';
     if (p.video) {
-      media.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || p.image, videoClass: 'modal-video' }));
+      media.appendChild(makeLazyVideo({ src: p.video, poster: p.poster || generatedAsset(currentPostId, 'hero'), videoClass: 'modal-video' }));
     } else {
       const img = document.createElement('img');
       img.className = 'modal-hero';
       img.id = 'modal-hero';
-      img.src = p.image;
+      img.src = generatedAsset(currentPostId, 'hero');
       img.alt = p.title;
       img.width = 580; img.height = 220;
       media.appendChild(img);
@@ -541,6 +550,7 @@
       tt.setAttribute('aria-pressed', 'true');
     }
 
+    refreshPostThumbs();
     renderFeatured();
     renderSponsor();
     setupAdSlots();
