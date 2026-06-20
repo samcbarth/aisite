@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Premium Access - Sam C Barth</title>
+  <meta name="description" content="Private notes, templates, and working assets from Sam C Barth.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://samcbarth.github.io/aisite/premium.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    :root {
+      --purple: #7c6af7;
+      --cyan: #22d3ee;
+      --emerald: #10b981;
+      --ink: #0a0a0a;
+      --panel: #101010;
+      --line: #1f1f1f;
+      --text: #f0f0f0;
+      --muted: #8a8a8a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,106,247,0.08), transparent 30%),
+        radial-gradient(circle at top right, rgba(34,211,238,0.06), transparent 28%),
+        var(--ink);
+      color: var(--text);
+    }
+    a { color: inherit; }
+    .shell { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .mark {
+      width: 30px; height: 30px; border-radius: 9px;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.05; }
+    .brand-name { font-size: 1rem; font-weight: 700; }
+    .brand-sub { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; }
+    .nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .nav a {
+      text-decoration: none; font-size: 0.86rem; color: #aaa;
+      border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.8rem;
+      background: rgba(255,255,255,0.02);
+    }
+    .nav a:hover { color: #fff; border-color: #343434; }
+    .hero { max-width: 720px; padding: 1rem 0 2rem; }
+    .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 1rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.02; margin: 0 0 1rem; }
+    .lede { max-width: 56ch; color: #d8d8d8; line-height: 1.7; font-size: 1rem; }
+    .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.72rem 1.1rem; border-radius: 10px; text-decoration: none;
+      font-weight: 600; font-size: 0.9rem; border: 1px solid transparent;
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--purple), var(--cyan)); color: #fff; }
+    .btn-ghost { border-color: var(--line); color: #cfcfcf; background: rgba(255,255,255,0.02); }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; margin-top: 2rem;
+    }
+    .card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+      padding: 1.1rem; min-height: 160px;
+    }
+    .card-kicker { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 0.5rem; }
+    .card h2 { font-size: 1rem; margin: 0 0 0.45rem; }
+    .card p { color: #a9a9a9; line-height: 1.55; font-size: 0.84rem; }
+    .section { margin-top: 2rem; }
+    .section h2 { font-size: 1.1rem; margin: 0 0 0.7rem; }
+    .bullets {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem;
+    }
+    .bullet {
+      padding: 0.95rem 1rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.02);
+      color: #d5d5d5; line-height: 1.5; font-size: 0.88rem;
+    }
+    .form-wrap {
+      margin-top: 2rem; padding: 1.1rem; border: 1px solid var(--line); border-radius: 16px; background: #0c0c0c;
+    }
+    .form-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
+    .form-head p { color: var(--muted); margin: 0; font-size: 0.85rem; }
+    form { margin-top: 1rem; display: grid; gap: 0.75rem; }
+    input, textarea, select {
+      width: 100%; background: #0a0a0a; color: #fff; border: 1px solid #222; border-radius: 10px;
+      font: inherit; padding: 0.8rem 0.9rem; outline: none;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    input:focus, textarea:focus, select:focus { border-color: var(--emerald); }
+    .form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+    .status { min-height: 1.2em; color: var(--emerald); font-size: 0.82rem; }
+    .fineprint { margin-top: 0.85rem; color: #6f6f6f; font-size: 0.76rem; line-height: 1.5; }
+    .footer { margin-top: 2rem; color: #777; font-size: 0.8rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      .grid, .bullets, .form-row { grid-template-columns: 1fr; }
+      .shell { padding-inline: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="index.html">
+        <span class="mark">SCB</span>
+        <span class="brand-copy">
+          <span class="brand-name">Sam C Barth</span>
+          <span class="brand-sub">Premium access</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html#work">Work with me</a>
+        <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:samcbarth@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="label">Private access</div>
+        <h1>Templates, notes, and the more applied version of the work.</h1>
+        <p class="lede">This is the private layer for people who want the reusable part of the site. Think teardowns, checklists, working examples, and the kind of notes that are useful when you are trying to apply an idea inside a real CRM or RevOps stack.</p>
+        <div class="actions">
+          <a class="btn btn-primary" id="access-url" href="#access-form">Request access</a>
+          <a class="btn btn-ghost" href="mailto:samcbarth@gmail.com?subject=Premium%20access%20and%20payment">Email for access</a>
+          <a class="btn btn-ghost" href="index.html">Back to the main site</a>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="What is included">
+        <div class="card">
+          <div class="card-kicker">Included</div>
+          <h2>Teardown memos</h2>
+          <p>Short, private writeups that go one level deeper than the public posts and focus on what actually matters operationally.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Included</div>
+          <h2>Templates and checklists</h2>
+          <p>Reusable assets for audits, CRM hygiene, reporting reviews, and small workflow improvements.</p>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Included</div>
+          <h2>Working examples</h2>
+          <p>Applied notes and examples that connect the commentary back to real RevOps and business development work.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>How access works</h2>
+        <div class="bullets">
+          <div class="bullet">1. Send the request below if you want manual access now.</div>
+          <div class="bullet">2. If a Stripe Payment Link is connected later, this page becomes the handoff after checkout.</div>
+          <div class="bullet">3. After approval, I will send the private access details directly by email.</div>
+          <div class="bullet">4. This keeps the public site clean while the premium layer stays easy to manage.</div>
+        </div>
+      </section>
+
+      <section class="form-wrap">
+        <div class="form-head">
+          <div>
+            <h2 style="margin:0 0 0.25rem;">Request access</h2>
+            <p>Send a note and I will follow up with the private link or payment instructions.</p>
+          </div>
+        </div>
+        <form id="access-form">
+          <div class="form-row">
+            <label>
+              <span class="sr-only">Name</span>
+              <input name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            </label>
+            <label>
+              <span class="sr-only">Email</span>
+              <input name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </label>
+          </div>
+          <label>
+            <span class="sr-only">Offer</span>
+            <select name="offer" aria-label="Offer">
+              <option value="private access">Private access</option>
+              <option value="templates and notes">Templates and notes</option>
+              <option value="working examples">Working examples</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Notes</span>
+            <textarea name="notes" placeholder="Tell me what you are looking for and how you want to use it."></textarea>
+          </label>
+          <button class="btn btn-primary" id="request-btn" type="submit">Send request</button>
+        </form>
+        <div class="status" id="access-status"></div>
+        <div class="fineprint">If you already have a Stripe Payment Link or Gumroad product, wire it into this page and use the request form for manual follow-up or edge cases.</div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <span>Sam C Barth</span>
+      <span>RevOps, AI, and CRM strategy</span>
+      <span><a href="index.html">Main site</a></span>
+    </div>
+  </div>
+
+  <script src="premium.js" defer></script>
+</body>
+</html>

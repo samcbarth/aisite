@@ -19,6 +19,9 @@ function doGet(e) {
   if (params.action === 'like' && params.id) {
     return incrementLike(sheet, params.id);
   }
+  if (params.action === 'requestAccess') {
+    return requestAccess(params);
+  }
   return getCounts(sheet);
 }
 
@@ -42,6 +45,26 @@ function incrementLike(sheet, postId) {
   }
   sheet.appendRow([postId, 1]);
   return respond({ count: 1 });
+}
+
+function requestAccess(params) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName('access_requests');
+  if (!sheet) {
+    sheet = ss.insertSheet('access_requests');
+    sheet.appendRow(['timestamp', 'name', 'email', 'offer', 'notes', 'source']);
+  } else if (sheet.getLastRow() === 0) {
+    sheet.appendRow(['timestamp', 'name', 'email', 'offer', 'notes', 'source']);
+  }
+  sheet.appendRow([
+    new Date().toISOString(),
+    params.name || '',
+    params.email || '',
+    params.offer || 'private access',
+    params.notes || '',
+    params.source || 'premium-page'
+  ]);
+  return respond({ ok: true });
 }
 
 function respond(obj) {

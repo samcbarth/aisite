@@ -37,7 +37,7 @@ function copyRecursive(src, dest) {
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });
 
-  const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll'];
+  const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js'];
   for (const f of staticFiles) {
     if (fs.existsSync(path.join(root, f))) fs.copyFileSync(path.join(root, f), path.join(dist, f));
   }
@@ -55,7 +55,7 @@ function copyRecursive(src, dest) {
   execFileSync('node', [path.join(root, 'tools', 'generate-seo.js'), dist], { stdio: 'inherit' });
 
   // 4a. Minify the JS bundles
-  for (const f of ['posts.js', 'app.js', 'post-likes.js']) {
+  for (const f of ['posts.js', 'app.js', 'post-likes.js', 'premium.js']) {
     const code = fs.readFileSync(path.join(root, f), 'utf8');
     const out = await minifyJs(code, { compress: true, mangle: true });
     fs.writeFileSync(path.join(dist, f), out.code);
@@ -80,7 +80,7 @@ function copyRecursive(src, dest) {
   const swPath = path.join(dist, 'sw.js');
   if (fs.existsSync(swPath)) {
     const hash = crypto.createHash('sha256');
-    for (const f of ['index.html', 'app.js', 'posts.js', 'manifest.webmanifest']) {
+    for (const f of ['index.html', 'premium.html', 'app.js', 'posts.js', 'premium.js', 'manifest.webmanifest']) {
       const p = path.join(dist, f);
       if (fs.existsSync(p)) hash.update(fs.readFileSync(p));
     }
