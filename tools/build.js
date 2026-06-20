@@ -314,6 +314,22 @@ function copyRecursive(src, dest) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=675');
   }
 
+  function imageKey(imgUrl) {
+    return (imgUrl || '').split('?')[0];
+  }
+
+  function pickSupportImage(postId) {
+    const current = POSTS[postId];
+    const primary = INLINE_MEDIA[postId] || {};
+    const seen = new Set([current && current.image, primary.image].filter(Boolean).map(imageKey));
+    const start = POST_ORDER.indexOf(postId);
+    for (let offset = 1; offset < POST_ORDER.length; offset += 1) {
+      const candidate = POSTS[POST_ORDER[(start + offset) % POST_ORDER.length]];
+      if (candidate && candidate.image && !seen.has(imageKey(candidate.image))) return candidate.image;
+    }
+    return current && current.image ? current.image : '';
+  }
+
   function injectInlineMedia(body, post, postId) {
     const media = INLINE_MEDIA[postId] || {};
     const side = media.side || (POST_ORDER.indexOf(postId) % 2 === 0 ? 'right' : 'left');
@@ -337,6 +353,13 @@ function copyRecursive(src, dest) {
       return match;
     });
     return inserted ? replaced : body + '\n' + inline;
+  }
+
+  function makeSupportMedia(post, postId) {
+    const imgUrl = pickSupportImage(postId);
+    if (!imgUrl) return '';
+    const supportImg = makeInlineImage(imgUrl);
+    return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>A second frame on the same story.</figcaption></figure>`;
   }
   function injectInlineQuotes(body, postId) {
     const block = INLINE_QUOTES[postId];
@@ -405,6 +428,7 @@ function copyRecursive(src, dest) {
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
     const bodyHtml = appendContextParagraph(injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id), id);
+    const supportMediaHtml = makeSupportMedia(p, id);
     const jsonLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
@@ -434,6 +458,7 @@ function copyRecursive(src, dest) {
       .replace(/POST_CANONICAL/g, canonical)
       .replace(/POST_ID/g, id)
       .replace('POST_BODY', bodyHtml)
+      .replace('POST_SUPPORT_MEDIA', supportMediaHtml)
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))
       .replace('POST_JSON_LD', jsonLd);
 
