@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Start Here - Sam C Barth</title>
+  <meta name="description" content="A reading map for Sam C Barth's posts by topic: AI, HubSpot, business strategy, and RevOps.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://samcbarth.github.io/aisite/start-here.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-latin.woff2') format('woff2');
+    }
+    :root {
+      --purple: #7c6af7;
+      --cyan: #22d3ee;
+      --emerald: #10b981;
+      --ink: #0a0a0a;
+      --panel: #101010;
+      --line: #1f1f1f;
+      --text: #f0f0f0;
+      --muted: #8a8a8a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,106,247,0.08), transparent 30%),
+        radial-gradient(circle at top right, rgba(34,211,238,0.06), transparent 28%),
+        var(--ink);
+      color: var(--text);
+    }
+    a { color: inherit; }
+    .shell { max-width: 1040px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .mark {
+      width: 30px; height: 30px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; background: linear-gradient(135deg, var(--purple), var(--cyan));
+    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.05; }
+    .brand-name { font-size: 1rem; font-weight: 700; }
+    .brand-sub { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; }
+    .nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .nav a {
+      text-decoration: none; font-size: 0.86rem; color: #aaa; border: 1px solid var(--line); border-radius: 999px;
+      padding: 0.45rem 0.8rem; background: rgba(255,255,255,0.02);
+    }
+    .nav a:hover { color: #fff; border-color: #343434; }
+    .hero { max-width: 760px; padding: 1rem 0 2rem; }
+    .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 1rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.02; margin: 0 0 1rem; }
+    .lede { max-width: 60ch; color: #d8d8d8; line-height: 1.7; font-size: 1rem; }
+    .section { margin-top: 2rem; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .section-sub { max-width: 520px; color: #777; font-size: 0.82rem; line-height: 1.5; }
+    .cluster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .cluster {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      padding: 1.1rem;
+    }
+    .cluster h2 { margin: 0 0 0.45rem; font-size: 1.1rem; }
+    .cluster p { margin: 0 0 0.9rem; color: #a7a7a7; line-height: 1.55; font-size: 0.84rem; }
+    .post-list { display: grid; gap: 0.55rem; }
+    .post-link {
+      display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+      padding: 0.7rem 0.8rem; border-radius: 10px; background: rgba(255,255,255,0.02);
+      border: 1px solid #191919; text-decoration: none;
+    }
+    .post-link:hover { border-color: #2d2d2d; }
+    .post-link span { font-size: 0.78rem; color: #fff; line-height: 1.4; }
+    .post-link em { font-style: normal; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.64rem; flex-shrink: 0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 1.1rem;
+    }
+    .card-kicker { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 0.5rem; }
+    .card h3 { margin: 0 0 0.45rem; font-size: 1rem; }
+    .card p { margin: 0; color: #a7a7a7; line-height: 1.55; font-size: 0.84rem; }
+    .footer {
+      margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line);
+      display: flex; gap: 0.75rem; flex-wrap: wrap; color: #777; font-size: 0.8rem;
+    }
+    @media (max-width: 860px) {
+      .cluster-grid, .cards { grid-template-columns: 1fr; }
+      .shell { padding-inline: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="index.html">
+        <span class="mark">SCB</span>
+        <span class="brand-copy">
+          <span class="brand-name">Sam C Barth</span>
+          <span class="brand-sub">Start here</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="label">Reading map</div>
+        <h1>A practical way to move through the site.</h1>
+        <p class="lede">This is the short path if you do not want to scroll the whole homepage. I write about AI infrastructure, HubSpot and CRM, business strategy, and the operator side of RevOps. Start with the lane that matches what you care about most, then move sideways from there.</p>
+      </section>
+
+      <section class="section" id="ai">
+        <div class="section-head">
+          <span class="label">AI &amp; Automation</span>
+          <p class="section-sub">The biggest theme on the site right now. I am focused on where the AI story becomes infrastructure, cost, and political reality.</p>
+        </div>
+        <div class="cluster-grid">
+          <div class="cluster">
+            <h2>What to read first</h2>
+            <p>These posts are the best entry point if you want the AI story from the business side, not the product-demo side.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/"><span>Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-memory-crunch-is-the-part-of-the-ai-boom-people-are-ignoring/"><span>The memory crunch is the part of the AI boom people are ignoring</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-pushback-against-data-centers-is-the-real-ai-story-now/"><span>The pushback against data centers is the real AI story now</span><em>Read</em></a>
+              <a class="post-link" href="posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/"><span>Oracle's AI infrastructure rally is about to meet the real world</span><em>Read</em></a>
+            </div>
+          </div>
+          <div class="cluster">
+            <h2>Why it matters</h2>
+            <p>These posts connect the dots between hype, infrastructure, power, memory, consumer pricing, and the tradeoffs that come with scale.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/apples-price-hike-warning-shows-the-ai-boom-is-reaching-consumers/"><span>Apple's price hike warning shows the AI boom is reaching consumers</span><em>Read</em></a>
+              <a class="post-link" href="posts/anthropics-compute-deal-shows-ai-is-turning-into-balance-sheet-infrastructure/"><span>Anthropic's compute deal shows AI is turning into balance-sheet infrastructure</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-mega-ipo-wave-is-what-happens-when-the-market-gets-crowded-with-hype/"><span>The mega-IPO wave is what happens when the market gets crowded with hype</span><em>Read</em></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="hubspot">
+        <div class="section-head">
+          <span class="label">HubSpot &amp; CRM</span>
+          <p class="section-sub">This is the lane where the site gets more operational. These posts are about how AI changes the system teams already work in every day.</p>
+        </div>
+        <div class="cluster-grid">
+          <div class="cluster">
+            <h2>What to read first</h2>
+            <p>If you work in CRM or RevOps, start here. These posts are the clearest on how I think about HubSpot as a real operating layer.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/hubspots-agentic-ai-bet-is-really-about-whether-crm-becomes-the-operating-layer/"><span>HubSpot's agentic AI bet is really about whether CRM becomes the operating layer</span><em>Read</em></a>
+              <a class="post-link" href="posts/hubspots-new-ai-pricing-makes-the-product-story-feel-more-real/"><span>HubSpot's new AI pricing makes the product story feel more real</span><em>Read</em></a>
+              <a class="post-link" href="posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/"><span>HubSpot's Spring 2026 Spotlight is all about making AI actually useful</span><em>Read</em></a>
+            </div>
+          </div>
+          <div class="cluster">
+            <h2>Related context</h2>
+            <p>These are good adjacent reads if you want to understand how CRM, AI, and workflow design fit together.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/hubspot-vs-salesforce-two-very-different-bets-on-ai-agents/"><span>HubSpot vs. Salesforce: two very different bets on AI agents</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-shift-from-ai-tools-to-ai-with-actual-business-context/"><span>The shift from "AI tools" to AI with actual business context</span><em>Read</em></a>
+              <a class="post-link" href="posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/"><span>HubSpot's AI push is a signal every RevOps team should read</span><em>Read</em></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="strategy">
+        <div class="section-head">
+          <span class="label">Business Strategy</span>
+          <p class="section-sub">These posts focus on public markets, valuation, monetization, and the practical limits that show up when scale gets real.</p>
+        </div>
+        <div class="cluster-grid">
+          <div class="cluster">
+            <h2>What to read first</h2>
+            <p>Start with the IPO and valuation pieces if you want the clearest version of my broader business take.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/"><span>SpaceX's IPO story is really a story about what the market will pay for momentum</span><em>Read</em></a>
+              <a class="post-link" href="posts/spacex-in-retirement-accounts-is-where-the-hype-gets-personal/"><span>SpaceX in retirement accounts is where the hype gets personal</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-mega-ipo-wave-is-what-happens-when-the-market-gets-crowded-with-hype/"><span>The mega-IPO wave is what happens when the market gets crowded with hype</span><em>Read</em></a>
+            </div>
+          </div>
+          <div class="cluster">
+            <h2>More angles</h2>
+            <p>These posts show how I think about community pushback, capital allocation, and the real costs of scale.</p>
+            <div class="post-list">
+              <a class="post-link" href="posts/texas-telling-data-centers-to-pay-their-own-way-is-where-this-gets-real/"><span>Texas telling data centers to pay their own way is where this gets real</span><em>Read</em></a>
+              <a class="post-link" href="posts/the-pushback-against-data-centers-is-the-real-ai-story-now/"><span>The pushback against data centers is the real AI story now</span><em>Read</em></a>
+              <a class="post-link" href="posts/amazons-new-ai-loan-makes-the-spending-story-impossible-to-ignore/"><span>Amazon's new AI loan makes the spending story impossible to ignore</span><em>Read</em></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="label">RevOps</span>
+          <p class="section-sub">The consulting and operating side of the site. If you want the practical version of the commentary, these are the posts to start with.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-kicker">Core</div>
+            <h3>What 10 years in marketing ops actually teaches you</h3>
+            <p>Good data in, good decisions out. This is the baseline for how I think about systems and reporting.</p>
+          </div>
+          <div class="card">
+            <div class="card-kicker">Useful</div>
+            <h3>Samsung just promised $400K bonuses. That's an AI story too.</h3>
+            <p>A good example of how AI changes incentives, labor, and value capture inside a business.</p>
+          </div>
+          <div class="card">
+            <div class="card-kicker">Practical</div>
+            <h3>AI is making cybersecurity harder and that's a GTM problem too</h3>
+            <p>Useful if you want the cross-functional version of the RevOps mindset.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <span><a href="index.html">Home</a></span>
+      <span><a href="resources.html">Resources</a></span>
+      <span><a href="premium.html">Premium access</a></span>
+    </div>
+  </div>
+</body>
+</html>

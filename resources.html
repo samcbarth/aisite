@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Resources - Sam C Barth</title>
+  <meta name="description" content="Resources, links, and working offers from Sam C Barth.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://samcbarth.github.io/aisite/resources.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-latin.woff2') format('woff2');
+    }
+    :root {
+      --purple: #7c6af7;
+      --cyan: #22d3ee;
+      --emerald: #10b981;
+      --ink: #0a0a0a;
+      --panel: #101010;
+      --line: #1f1f1f;
+      --text: #f0f0f0;
+      --muted: #8a8a8a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,106,247,0.08), transparent 30%),
+        radial-gradient(circle at top right, rgba(34,211,238,0.06), transparent 28%),
+        var(--ink);
+      color: var(--text);
+    }
+    a { color: inherit; }
+    .shell { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .mark {
+      width: 30px; height: 30px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700; background: linear-gradient(135deg, var(--purple), var(--cyan));
+    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.05; }
+    .brand-name { font-size: 1rem; font-weight: 700; }
+    .brand-sub { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.15rem; }
+    .nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .nav a {
+      text-decoration: none; font-size: 0.86rem; color: #aaa; border: 1px solid var(--line); border-radius: 999px;
+      padding: 0.45rem 0.8rem; background: rgba(255,255,255,0.02);
+    }
+    .nav a:hover { color: #fff; border-color: #343434; }
+    .hero { max-width: 760px; padding: 1rem 0 2rem; }
+    .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 1rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.02; margin: 0 0 1rem; }
+    .lede { max-width: 60ch; color: #d8d8d8; line-height: 1.7; font-size: 1rem; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 1.1rem;
+    }
+    .card-kicker { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cyan); margin-bottom: 0.5rem; }
+    .card h2 { margin: 0 0 0.45rem; font-size: 1rem; }
+    .card p { margin: 0; color: #a7a7a7; line-height: 1.55; font-size: 0.84rem; }
+    .card a {
+      display: inline-block; margin-top: 0.9rem; padding: 0.55rem 0.85rem; border-radius: 999px;
+      border: 1px solid #262626; text-decoration: none; font-size: 0.78rem; color: #ddd;
+    }
+    .card a:hover { color: #fff; border-color: var(--purple); }
+    .section { margin-top: 2rem; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .section-sub { max-width: 540px; color: #777; font-size: 0.82rem; line-height: 1.5; }
+    .bullets {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .bullet {
+      padding: 0.95rem 1rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.02);
+      color: #d5d5d5; line-height: 1.5; font-size: 0.88rem;
+    }
+    .footer {
+      margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line);
+      display: flex; gap: 0.75rem; flex-wrap: wrap; color: #777; font-size: 0.8rem;
+    }
+    @media (max-width: 860px) {
+      .cards, .bullets { grid-template-columns: 1fr; }
+      .shell { padding-inline: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="index.html">
+        <span class="mark">SCB</span>
+        <span class="brand-copy">
+          <span class="brand-name">Sam C Barth</span>
+          <span class="brand-sub">Resources</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="start-here.html">Start here</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="label">Resources</div>
+        <h1>Ways to work with the site and with me.</h1>
+        <p class="lede">This page is the short list. If you want the public commentary, start with the homepage. If you want a reading path, use the start-here page. If you want the private layer or direct help, the links below are the quickest way in.</p>
+      </section>
+
+      <section class="cards" aria-label="Resources">
+        <div class="card">
+          <div class="card-kicker">Work</div>
+          <h2>Book a call</h2>
+          <p>If you want to talk RevOps, HubSpot, AI workflow, or a project scope, this is the fastest route.</p>
+          <a href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" target="_blank" rel="noopener noreferrer">Book time</a>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Site</div>
+          <h2>SamCBarth.com</h2>
+          <p>The broader brand home for the consulting side, business development, and the practical operator perspective.</p>
+          <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Network</div>
+          <h2>LinkedIn</h2>
+          <p>Shorter takes, updates, and the day to day commentary that usually points back into the site.</p>
+          <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">Follow on LinkedIn</a>
+        </div>
+        <div class="card">
+          <div class="card-kicker">Private</div>
+          <h2>Premium access</h2>
+          <p>Templates, notes, and the more applied version of the public posts. This is the path for the private layer.</p>
+          <a href="premium.html">Open premium</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="label">What this site is for</span>
+          <p class="section-sub">The content is meant to pull people from broad interest into a clearer view of how AI, CRM, and business strategy show up in real work.</p>
+        </div>
+        <div class="bullets">
+          <div class="bullet">1. Public posts build the point of view.</div>
+          <div class="bullet">2. Start-here helps readers choose a lane quickly.</div>
+          <div class="bullet">3. Resources gives them a direct route into working with you.</div>
+          <div class="bullet">4. Premium access is where the reusable assets live.</div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <span><a href="index.html">Home</a></span>
+      <span><a href="start-here.html">Start here</a></span>
+      <span><a href="premium.html">Premium access</a></span>
+    </div>
+  </div>
+</body>
+</html>

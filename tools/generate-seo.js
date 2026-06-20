@@ -97,6 +97,18 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>${SITE}start-here.html</loc>
+    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>${SITE}resources.html</loc>
+    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
 `;
 fs.writeFileSync(path.join(targetDir, 'sitemap.xml'), sitemap);

@@ -173,6 +173,57 @@
     }
     .btn-ghost:hover { color: #fff; border-color: #555; opacity: 1; }
 
+    .content-paths {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2rem 2rem;
+    }
+    .path-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .path-sub {
+      max-width: 420px;
+      color: #777;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .path-card {
+      border: 1px solid #1f1f1f;
+      background: #0f0f0f;
+      border-radius: 12px;
+      padding: 1rem 1rem 1.1rem;
+    }
+    .path-card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+    .path-card-text {
+      color: #8c8c8c;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      margin-bottom: 0.9rem;
+    }
+    .path-card-link {
+      font-size: 0.75rem;
+      color: var(--cyan);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .path-card-link:hover { color: #fff; }
+
     .posts {
       max-width: 760px;
       margin: 0 auto;
@@ -981,6 +1032,11 @@
     body.light-mode .tagline { color: #333; }
     body.light-mode .btn-ghost { color: #555; border-color: #d0d0d0; }
     body.light-mode .btn-ghost:hover { color: #111; border-color: #888; }
+    body.light-mode .path-sub { color: #888; }
+    body.light-mode .path-card { background: #fff; border-color: #e0e0e0; }
+    body.light-mode .path-card-title { color: #111; }
+    body.light-mode .path-card-text { color: #666; }
+    body.light-mode .path-card-link { color: var(--purple); }
     body.light-mode .search-input { background: #fff; border-color: #e0e0e0; color: #111; }
     body.light-mode .search-input::placeholder { color: #bbb; }
     body.light-mode .filter-chip { border-color: #ddd; color: #999; }
@@ -1470,6 +1526,8 @@
     <span class="logo-name">Sam C Barth</span>
   </a>
   <nav aria-label="Primary">
+    <a href="#content-paths">Start here</a>
+    <a href="resources.html">Resources</a>
     <a href="#work">Work with me</a>
     <a href="premium.html">Premium</a>
     <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a>
@@ -1495,6 +1553,30 @@
   <div class="cta-row">
     <a href="https://linkedin.com/in/samcbarth" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Book a call</a>
+  </div>
+</section>
+
+<section class="content-paths" id="content-paths">
+  <div class="path-head">
+    <span class="section-label">Start here</span>
+    <p class="path-sub">If you want a cleaner way into the site, these are the main lanes I write in. Each one has a different angle, but they all tie back to how AI and operations actually change the business.</p>
+  </div>
+  <div class="path-grid">
+    <div class="path-card">
+      <div class="path-card-title">AI &amp; Automation</div>
+      <div class="path-card-text">Posts about infrastructure, pricing, chips, data centers, and where the AI story stops being theoretical.</div>
+      <a class="path-card-link" href="start-here.html#ai">Open the cluster</a>
+    </div>
+    <div class="path-card">
+      <div class="path-card-title">HubSpot &amp; CRM</div>
+      <div class="path-card-text">Notes on the CRM as an operating layer, plus how AI shows up in the tools teams already use.</div>
+      <a class="path-card-link" href="start-here.html#hubspot">Open the cluster</a>
+    </div>
+    <div class="path-card">
+      <div class="path-card-title">Business Strategy</div>
+      <div class="path-card-text">Valuation, public markets, monetization, and the practical side of scale and risk.</div>
+      <a class="path-card-link" href="start-here.html#strategy">Open the cluster</a>
+    </div>
   </div>
 </section>
 
