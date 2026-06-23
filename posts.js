@@ -338,7 +338,7 @@ const POSTS = {
     title: 'Stargate is the clearest sign that AI is now a utility-scale business',
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether the country actually has enough grid capacity to support the plan.</p>
 
