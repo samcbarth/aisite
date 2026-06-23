@@ -1,10 +1,10 @@
-/*
- * posts.js — single source of truth for post data.
+﻿/*
+ * posts.js â€” single source of truth for post data.
  *
  * Loaded directly in the browser (populates window.POSTS / window.POST_ORDER)
  * and required by tools/generate-seo.js at build time so the sitemap, RSS feed,
  * and JSON-LD structured data are generated from the same content. Add new posts
- * here only — everything downstream regenerates.
+ * here only â€” everything downstream regenerates.
  */
 const POSTS = {
   post30: {
@@ -14,7 +14,7 @@ const POSTS = {
     title: 'SpaceX in retirement accounts is where the hype gets personal',
     category: 'Business Strategy',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.theguardian.com/science/2026/jun/19/spacex-retirement-savings-elon-musk" target="_blank" rel="noopener noreferrer">The Guardian reported</a> that the SpaceX story is starting to reach retirement savings, and that is where the whole thing gets more personal. Once a company becomes something index funds and 401(k)s have to carry, the risk stops being a billionaire game and starts touching ordinary people.</p>
 
@@ -35,7 +35,7 @@ const POSTS = {
     title: "Apple's price hike warning shows the AI boom is reaching consumers",
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://people.com/apple-may-raise-prices-as-ai-boom-makes-key-components-more-expensive-12003187" target="_blank" rel="noopener noreferrer">People reported</a> that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause.</p>
 
@@ -56,7 +56,7 @@ const POSTS = {
     title: 'The memory crunch is the part of the AI boom people are ignoring',
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.wsj.com/tech/why-the-memory-crunch-is-almost-impossible-to-solve-4023cb40" target="_blank" rel="noopener noreferrer">The Wall Street Journal reported</a> that the memory crunch may be almost impossible to solve anytime soon. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story.</p>
 
@@ -77,7 +77,7 @@ const POSTS = {
     title: 'The pushback against data centers is the real AI story now',
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/data-center-bans-moratoriums-opposition-map-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that communities are pushing back on data centers and winning some of those fights. I think that is the next phase of the AI infrastructure story.</p>
 
@@ -118,7 +118,7 @@ const POSTS = {
     title: "Anthropic's compute deal shows AI is turning into balance-sheet infrastructure",
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.axios.com/2026/06/10/apollo-anthropic-blackstone-broadcom" target="_blank" rel="noopener noreferrer">Axios reported</a> that Apollo and Blackstone are leading a $35 billion debt deal to help finance Anthropic's compute. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure.</p>
 
@@ -138,7 +138,7 @@ const POSTS = {
     title: "Amazon's new AI loan makes the spending story impossible to ignore",
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.marketwatch.com/story/amazon-lines-up-another-17-5-billion-for-ai-as-its-debt-pile-grows-further-5f16be9c" target="_blank" rel="noopener noreferrer">MarketWatch reported</a> that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle.</p>
 
@@ -158,7 +158,7 @@ const POSTS = {
     title: "Texas telling data centers to pay their own way is where this gets real",
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/texas-governor-proposes-new-data-center-regulations-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that Texas Governor Greg Abbott wants data centers to pay more of their own way when it comes to power, water, and infrastructure. That is a big signal because Texas is not exactly known for being hostile to business.</p>
 
@@ -198,7 +198,7 @@ const POSTS = {
     title: "HubSpot's agentic AI bet is really about whether CRM becomes the operating layer",
     category: 'HubSpot',
     tag: 'Worth noting', tagClass: 'tag-emerald',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://futurumgroup.com/insights/can-hubspots-agentic-ai-bet-disrupt-enterprise-crms-old-guard/" target="_blank" rel="noopener noreferrer">Futurum's analysis</a> of HubSpot's agentic AI push gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else?</p>
 
@@ -218,7 +218,7 @@ const POSTS = {
     title: "Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead",
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that is the market seeing something real or just chasing the trade.</p>
 
@@ -238,7 +238,7 @@ const POSTS = {
     title: "HubSpot's new AI pricing makes the product story feel more real",
     category: 'HubSpot',
     tag: 'Worth noting', tagClass: 'tag-emerald',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>The interesting part of HubSpot's Customer Agent and Prospecting Agent announcement is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
 
@@ -265,7 +265,7 @@ const POSTS = {
     title: "HubSpot's Spring 2026 Spotlight is all about making AI actually useful",
     category: 'HubSpot',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>HubSpot's Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it.</p>
 
@@ -298,7 +298,7 @@ const POSTS = {
 
       <p>That is what makes this interesting to me. SpaceX has earned the benefit of the doubt by actually shipping. It is not some empty brand. It has real momentum, and it has real business underneath it. That is why people take it seriously in the first place.</p>
 
-      <p>But the risk I want people to keep in mind is this: a lot of shareholder money is getting used to cover one man’s debts and one man’s bigger valuation story. The xAI connection is part of that. That is where a lot of the shareholder money is coming from, at least in the way Elon appears to be categorizing the whole ecosystem. Whether the tools end up being legitimate or not is one thing. The bigger point is that the whole structure is getting bundled together to support the trillion-dollar narrative.</p>
+      <p>But the risk I want people to keep in mind is this: a lot of shareholder money is getting used to cover one manâ€™s debts and one manâ€™s bigger valuation story. The xAI connection is part of that. That is where a lot of the shareholder money is coming from, at least in the way Elon appears to be categorizing the whole ecosystem. Whether the tools end up being legitimate or not is one thing. The bigger point is that the whole structure is getting bundled together to support the trillion-dollar narrative.</p>
 
       <p>Once a company like this goes public, the story changes. It is not just private-market belief anymore. It is shareholder pressure, public scrutiny, and a much louder expectation that the company keeps performing no matter what the market mood looks like. That is a big shift. It makes everything more volatile if the valuation story slips.</p>
 
@@ -318,7 +318,7 @@ const POSTS = {
     title: "Oracle's AI infrastructure rally is about to meet the real world",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</p>
 
@@ -392,7 +392,7 @@ const POSTS = {
     title: "The most valuable AI use case isn't a product. It's a personal tool.",
     category: 'AI & Automation',
     tag: 'In the wild', tagClass: 'tag-pink',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1467987506553-8f3916508521?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>There is a version of AI that gets a lot of attention and a version that does not. The one that gets the attention is commercial: AI copilots, AI add-ons, AI agents that companies can license. The one that does not is quieter and, honestly, more genuinely useful.</p>
 
@@ -472,9 +472,9 @@ const POSTS = {
     video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
     poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue.</p>
+      <p>Dell's stock had its best single day ever on Thursday â€” up 32%. The reason: AI server revenue.</p>
       <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
-      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer — Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
+      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer â€” Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
       <p>For RevOps and GTM teams, this matters more than it might seem on the surface. If your competitors are building AI infrastructure at this pace, the operational gap between teams running AI-native processes and teams still doing things manually is going to widen faster than most people expect.</p>
       <p>The window for getting ahead of this is still open. It won't be indefinitely.</p>
     `
@@ -490,21 +490,21 @@ const POSTS = {
       <p>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
       <p>That's a significant number. And it's an interesting counterpoint to the prevailing narrative that AI is purely a headcount reduction play.</p>
       <p>What Samsung is essentially saying is: the people who build and maintain the chips that power AI create enough value to warrant a meaningful share of the upside. That's a different model than "agents in, people out." It's closer to "AI creates value, and here's how we distribute it."</p>
-      <p>For RevOps leaders thinking about their own organizations — this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
+      <p>For RevOps leaders thinking about their own organizations â€” this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
       <p>AI creates value. The question of who captures it is going to define a lot of organizational dynamics over the next decade. Samsung just put a number on one answer.</p>
     `
   },
   post9: {
     date: 'May 22, 2026',
     iso: '2026-05-22',
-    title: "AI is making cybersecurity harder — and that's a GTM problem too",
+    title: "AI is making cybersecurity harder â€” and that's a GTM problem too",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered — on both sides of the equation.</p>
+      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered â€” on both sides of the equation.</p>
       <p>That means the attack surface is expanding faster than most security teams can respond to it.</p>
-      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation — not just IT.</p>
+      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation â€” not just IT.</p>
       <p>The practical takeaway isn't to panic. It's to ask your IT and security counterparts a straightforward question: are we auditing the integrations in our GTM stack the same way we audit financial systems? Most of the time, the answer is no. Those integrations are where your most sensitive commercial data moves, and they're often the least scrutinized.</p>
       <p>As AI accelerates both sides of the security equation, that gap is worth closing before someone else finds it first.</p>
     `
@@ -535,7 +535,7 @@ const POSTS = {
     title: 'The shift from "AI tools" to AI with actual business context',
     category: 'CRM Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1160&h=440&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
       <p>HubSpot's recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
@@ -608,6 +608,7 @@ if (typeof window !== 'undefined') {
   window.POSTS = POSTS;
   window.POST_ORDER = POST_ORDER;
 }
+
 
 
 
