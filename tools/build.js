@@ -230,6 +230,9 @@ function copyRecursive(src, dest) {
     fs.writeFileSync(out, svg.replace(/\n\s+/g, ' ').trim(), 'utf8');
     return `generated/${postId}-card.svg`;
   }
+  for (const postId of POST_ORDER) {
+    if (POSTS[postId]) makeCardThumb(POSTS[postId], postId);
+  }
   const INLINE_MEDIA = {
     post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
     post29: { image: 'https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?w=900&h=650&fit=crop&q=80', caption: 'Price pressure is how the boom reaches consumers.', side: 'right', after: 2 },
