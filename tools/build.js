@@ -21,6 +21,7 @@ const { POSTS, POST_ORDER } = require('../posts.js');
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
 const BASE_URL = 'https://samcbarth.github.io/aisite';
+const generatedDir = path.join(dist, 'generated');
 function copyRecursive(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
@@ -36,6 +37,7 @@ function copyRecursive(src, dest) {
   // 1. Fresh dist + static assets
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });
+  fs.mkdirSync(generatedDir, { recursive: true });
 
   const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html'];
   for (const f of staticFiles) {
@@ -49,6 +51,10 @@ function copyRecursive(src, dest) {
     hour: '2-digit', minute: '2-digit', hour12: false
   }).replace(',', '') + ' UTC';
   let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8').replace('DEPLOY_TIME', timestamp);
+  html = html.replace(/(<a class="post-card"[^>]*data-id="(post\d+)"[^>]*>[\s\S]*?<img class="post-thumb"[^>]*src=")[^"]+(")/g, (match, prefix, id, suffix) => {
+    if (!POSTS[id]) return match;
+    return prefix + `generated/${id}-card.svg` + suffix;
+  });
   fs.writeFileSync(path.join(dist, 'index.html'), html);
 
   // 3. Regenerate SEO artifacts against dist (fresh JSON-LD + sitemap + feed)
@@ -155,6 +161,70 @@ function copyRecursive(src, dest) {
   }
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
+  }
+  function hashString(input) {
+    let hash = 2166136261;
+    for (let i = 0; i < input.length; i += 1) {
+      hash ^= input.charCodeAt(i);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  }
+  function pickPalette(seed) {
+    const palettes = [
+      ['#7c6af7', '#22d3ee', '#111827'],
+      ['#f97316', '#f59e0b', '#1f2937'],
+      ['#10b981', '#22c55e', '#0f172a'],
+      ['#f472b6', '#7c6af7', '#111827'],
+      ['#38bdf8', '#0ea5e9', '#0b1120'],
+      ['#e879f9', '#fb7185', '#1f132b']
+    ];
+    return palettes[seed % palettes.length];
+  }
+  function escAttr(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function makeCardThumb(post, postId) {
+    const seed = hashString(postId + '|' + post.title);
+    const [c1, c2, bg] = pickPalette(seed);
+    const title = escAttr(post.title).slice(0, 48);
+    const label = escAttr(post.category || 'Business');
+    const bars = Array.from({ length: 5 }, (_, i) => {
+      const h = 70 + ((seed >> (i * 4)) % 140);
+      const x = 74 + i * 78;
+      const y = 392 - h;
+      return `<rect x="${x}" y="${y}" width="54" height="${h}" rx="8" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.78 + i * 0.04}" />`;
+    }).join('');
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="${title}">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="${c1}"/>
+            <stop offset="1" stop-color="${c2}"/>
+          </linearGradient>
+          <radialGradient id="r" cx="50%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="512" height="512" rx="28" fill="${bg}"/>
+        <rect width="512" height="512" rx="28" fill="url(#g)" opacity="0.18"/>
+        <circle cx="${60 + (seed % 40)}" cy="${74 + (seed % 28)}" r="70" fill="url(#r)" opacity="0.9"/>
+        <circle cx="${360 + (seed % 35)}" cy="${118 + (seed % 30)}" r="82" fill="url(#r)" opacity="0.62"/>
+        <circle cx="${212 + (seed % 40)}" cy="${188 + (seed % 22)}" r="48" fill="${c1}" opacity="0.22"/>
+        <circle cx="${394 + (seed % 24)}" cy="${294 + (seed % 20)}" r="56" fill="${c2}" opacity="0.18"/>
+        <g fill="none" stroke="#fff" stroke-opacity="0.12" stroke-linecap="round">
+          <path d="M50 150 L190 136 L300 182 L460 142" stroke-width="6"/>
+          <path d="M54 308 L142 262 L238 312 L332 236 L452 268" stroke-width="7"/>
+        </g>
+        <g opacity="0.95">${bars}</g>
+        <rect x="28" y="28" width="200" height="52" rx="14" fill="#000" opacity="0.18"/>
+        <text x="48" y="60" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">${label}</text>
+        <text x="32" y="454" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">${title}</text>
+      </svg>`;
+    const out = path.join(generatedDir, `${postId}-card.svg`);
+    fs.writeFileSync(out, svg.replace(/\n\s+/g, ' ').trim(), 'utf8');
+    return `generated/${postId}-card.svg`;
   }
   const INLINE_MEDIA = {
     post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },

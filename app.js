@@ -36,6 +36,7 @@
   };
   const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
+  const generatedAsset = (id, variant) => 'generated/' + id + '-' + variant + '.svg';
 
   function renderSponsor() {
     const el = document.getElementById('sponsor-slot');
@@ -239,6 +240,14 @@
     });
     document.getElementById('post-count').textContent = visible + ' post' + (visible !== 1 ? 's' : '');
     document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  function refreshPostThumbs() {
+    document.querySelectorAll('.post-card').forEach(card => {
+      const img = card.querySelector('.post-thumb');
+      if (!img || !card.dataset.id) return;
+      img.src = generatedAsset(card.dataset.id, 'card');
+    });
   }
 
   function renderFeatured() {
@@ -541,6 +550,7 @@
       tt.setAttribute('aria-pressed', 'true');
     }
 
+    refreshPostThumbs();
     renderFeatured();
     renderSponsor();
     setupAdSlots();
