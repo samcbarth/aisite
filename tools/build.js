@@ -21,8 +21,6 @@ const { POSTS, POST_ORDER } = require('../posts.js');
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
 const BASE_URL = 'https://samcbarth.github.io/aisite';
-const generatedDir = path.join(dist, 'generated');
-
 function copyRecursive(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
@@ -38,7 +36,6 @@ function copyRecursive(src, dest) {
   // 1. Fresh dist + static assets
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });
-  fs.mkdirSync(generatedDir, { recursive: true });
 
   const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html'];
   for (const f of staticFiles) {
@@ -52,11 +49,6 @@ function copyRecursive(src, dest) {
     hour: '2-digit', minute: '2-digit', hour12: false
   }).replace(',', '') + ' UTC';
   let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8').replace('DEPLOY_TIME', timestamp);
-  html = html.replace(/(<a class="post-card"[^>]*data-id="(post\d+)"[^>]*>[\s\S]*?<img class="post-thumb"[^>]*src=")[^"]+(")/g, (match, prefix, id, suffix) => {
-    const post = POSTS[id];
-    if (!post) return match;
-    return prefix + `generated/${id}-card.svg` + suffix;
-  });
   fs.writeFileSync(path.join(dist, 'index.html'), html);
 
   // 3. Regenerate SEO artifacts against dist (fresh JSON-LD + sitemap + feed)
@@ -103,8 +95,6 @@ function copyRecursive(src, dest) {
 
   // 6. Generate individual post pages from post-template.html
   const template = fs.readFileSync(path.join(root, 'post-template.html'), 'utf8');
-  const generatedAssetCache = new Map();
-
   function stripHtml(html) {
     return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   }
@@ -166,106 +156,37 @@ function copyRecursive(src, dest) {
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
-  function generatedAssetName(postId, variant) {
-    return `${postId}-${variant}.svg`;
-  }
-  function makeGeneratedImage(post, postId, variant) {
-    const cacheKey = `${postId}:${variant}`;
-    if (generatedAssetCache.has(cacheKey)) return generatedAssetCache.get(cacheKey);
-    const seed = hashString(postId + '|' + variant + '|' + post.title);
-    const [c1, c2, bg] = pickPalette(seed);
-    const title = escAttr(post.title).slice(0, 72);
-    const label = escAttr((post.category || 'Business') + ' / ' + (post.tag || 'Signal'));
-    const accent = variant === 'hero' ? 1 : variant === 'inline' ? 2 : variant === 'related' ? 3 : 4;
-    const x1 = 20 + ((seed + accent * 7) % 30);
-    const y1 = 35 + ((seed + accent * 11) % 24);
-    const x2 = 170 + ((seed + accent * 13) % 60);
-    const y2 = 115 + ((seed + accent * 17) % 44);
-    const x3 = 360 + ((seed + accent * 19) % 70);
-    const y3 = 85 + ((seed + accent * 23) % 36);
-    const x4 = 610 + ((seed + accent * 29) % 85);
-    const y4 = 180 + ((seed + accent * 31) % 40);
-    const x5 = 830 + ((seed + accent * 37) % 90);
-    const y5 = 95 + ((seed + accent * 41) % 30);
-    const bars = Array.from({ length: 6 }, (_, i) => {
-      const height = 90 + ((seed >> (i * 3)) % 190);
-      const x = 120 + i * 150;
-      const y = 520 - height;
-      return `<rect x="${x}" y="${y}" width="86" height="${height}" rx="10" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.72 + (i * 0.03)}" />`;
-    }).join('');
-    const extraLine = variant === 'hero'
-      ? `<path d="M110 420 C260 330, 420 510, 620 360 S 980 280, 1110 340" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="10" stroke-linecap="round"/>`
-      : variant === 'inline'
-        ? `<path d="M95 455 L250 390 L410 450 L560 300 L760 340 L960 255 L1110 295" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="8" stroke-linecap="round"/>`
-        : variant === 'related'
-          ? `<path d="M80 180 L310 160 L520 205 L760 150 L980 188 L1120 170" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/>`
-          : `<path d="M90 455 L220 420 L340 460 L470 330 L630 360 L790 285 L930 315 L1120 250" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="8" stroke-linecap="round"/>`;
-    const svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="${title}">
-        <defs>
-          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="${c1}"/>
-            <stop offset="1" stop-color="${c2}"/>
-          </linearGradient>
-          <radialGradient id="r" cx="50%" cy="35%" r="75%">
-            <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
-            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="1200" height="675" rx="28" fill="${bg}"/>
-        <rect width="1200" height="675" rx="28" fill="url(#g)" opacity="0.18"/>
-        <circle cx="${x1}" cy="${y1}" r="86" fill="url(#r)" opacity="0.9"/>
-        <circle cx="${x2}" cy="${y2}" r="112" fill="url(#r)" opacity="0.65"/>
-        <circle cx="${x3}" cy="${y3}" r="54" fill="${c1}" opacity="0.28"/>
-        <circle cx="${x4}" cy="${y4}" r="74" fill="${c2}" opacity="0.22"/>
-        <circle cx="${x5}" cy="${y5}" r="42" fill="#ffffff" opacity="0.2"/>
-        <g fill="none">${extraLine}</g>
-        <g opacity="0.95">${bars}</g>
-        <rect x="58" y="56" width="360" height="82" rx="18" fill="#000" opacity="0.2"/>
-        <text x="86" y="102" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">${label}</text>
-        <text x="86" y="560" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">${title}</text>
-        <text x="86" y="606" font-family="Space Grotesk, Arial, sans-serif" font-size="22" fill="#e5e7eb" fill-opacity="0.82">Generated frame for the story</text>
-      </svg>`;
-    const svgPath = path.join(generatedDir, generatedAssetName(postId, variant));
-    fs.writeFileSync(svgPath, svg.replace(/\n\s+/g, ' ').trim(), 'utf8');
-    const relative = `generated/${generatedAssetName(postId, variant)}`;
-    generatedAssetCache.set(cacheKey, relative);
-    return relative;
-  }
-  function absoluteGeneratedImage(post, postId, variant) {
-    return `${BASE_URL}/${makeGeneratedImage(post, postId, variant)}`;
-  }
   const INLINE_MEDIA = {
-    post30: { caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
-    post29: { caption: 'Price pressure is how the boom reaches consumers.', side: 'right', after: 2 },
-    post28: { caption: 'Supply is the part nobody gets to skip.', side: 'left', after: 2 },
-    post27: { caption: 'Local resistance changes the build math.', side: 'right', after: 2 },
-    post26: { caption: 'The market can only price so much hope at once.', side: 'left', after: 2 },
-    post25: { caption: 'Compute is becoming a financed asset class.', side: 'right', after: 2 },
-    post24: { caption: 'AI spend is now a capital allocation story.', side: 'left', after: 2 },
-    post23: { caption: 'Power and water are becoming the real negotiation.', side: 'right', after: 2 },
-    post22: { caption: 'Infrastructure debates are now information debates.', side: 'left', after: 2 },
-    post21: { caption: 'The CRM has to become the operating layer.', side: 'right', after: 2 },
-    post20: { caption: 'The real bill is the physical footprint.', side: 'right', after: 2 },
-    post19: { caption: 'Outcome-based pricing changes the conversation.', side: 'left', after: 2 },
-    post18: { caption: 'Context is the actual product here.', side: 'right', after: 2 },
-    post14: { caption: 'The market starts asking who pays for the story.', side: 'left', after: 2 },
-    post13: { caption: 'The buildout becomes physical fast.', side: 'right', after: 2 },
-    post15: { caption: 'The race keeps moving toward orbit.', side: 'left', after: 2 },
-    post16: { caption: 'Local approval is now the bottleneck.', side: 'right', after: 2 },
-    post17: { caption: 'Orbit is the extreme version of the grid problem.', side: 'left', after: 2 },
-    post12: { caption: 'The leverage is in local tooling.', side: 'right', after: 2 },
-    post11: { caption: 'Trust is the inventory that really matters.', side: 'left', after: 2 },
-    post10: { caption: 'A strong core business can subsidize new plays.', side: 'right', after: 2 },
-    post7: { caption: 'Infrastructure is where the AI money is going.', side: 'left', after: 2 },
-    post8: { caption: 'Value creation has to be shared.', side: 'right', after: 2 },
-    post9: { caption: 'Security risk expands with the stack.', side: 'left', after: 2 },
-    post6: { caption: 'Prompting still needs structure.', side: 'right', after: 2 },
-    post5: { caption: 'Context beats generic automation.', side: 'left', after: 2 },
-    post4: { caption: 'Two different AI bets, same market.', side: 'right', after: 2 },
-    post1: { caption: 'Operational systems, not just databases.', side: 'left', after: 1 },
-    post2: { caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
-    post3: { caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
+    post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
+    post29: { image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop&q=80', caption: 'Price pressure is how the boom reaches consumers.', side: 'right', after: 2 },
+    post28: { image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=650&fit=crop&q=80', caption: 'Supply is the part nobody gets to skip.', side: 'left', after: 2 },
+    post27: { image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=900&h=650&fit=crop&q=80', caption: 'Local resistance changes the build math.', side: 'right', after: 2 },
+    post26: { image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&h=650&fit=crop&q=80', caption: 'The market can only price so much hope at once.', side: 'left', after: 2 },
+    post25: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Compute is becoming a financed asset class.', side: 'right', after: 2 },
+    post24: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'AI spend is now a capital allocation story.', side: 'left', after: 2 },
+    post23: { image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=650&fit=crop&q=80', caption: 'Power and water are becoming the real negotiation.', side: 'right', after: 2 },
+    post22: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Infrastructure debates are now information debates.', side: 'left', after: 2 },
+    post21: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'The CRM has to become the operating layer.', side: 'right', after: 2 },
+    post20: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'The real bill is the physical footprint.', side: 'right', after: 2 },
+    post19: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Outcome-based pricing changes the conversation.', side: 'left', after: 2 },
+    post18: { image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=650&fit=crop&q=80', caption: 'Context is the actual product here.', side: 'right', after: 2 },
+    post14: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'The market starts asking who pays for the story.', side: 'left', after: 2 },
+    post13: { image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=900&h=650&fit=crop&q=80', caption: 'The buildout becomes physical fast.', side: 'right', after: 2 },
+    post15: { image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&h=650&fit=crop&q=80', caption: 'The race keeps moving toward orbit.', side: 'left', after: 2 },
+    post16: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Local approval is now the bottleneck.', side: 'right', after: 2 },
+    post17: { image: 'https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=900&h=650&fit=crop&q=80', caption: 'Orbit is the extreme version of the grid problem.', side: 'left', after: 2 },
+    post12: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The leverage is in local tooling.', side: 'right', after: 2 },
+    post11: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Trust is the inventory that really matters.', side: 'left', after: 2 },
+    post10: { image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&h=650&fit=crop&q=80', caption: 'A strong core business can subsidize new plays.', side: 'right', after: 2 },
+    post7: { image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=650&fit=crop&q=80', caption: 'Infrastructure is where the AI money is going.', side: 'left', after: 2 },
+    post8: { image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=650&fit=crop&q=80', caption: 'Value creation has to be shared.', side: 'right', after: 2 },
+    post9: { image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=900&h=650&fit=crop&q=80', caption: 'Security risk expands with the stack.', side: 'left', after: 2 },
+    post6: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'Prompting still needs structure.', side: 'right', after: 2 },
+    post5: { image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=650&fit=crop&q=80', caption: 'Context beats generic automation.', side: 'left', after: 2 },
+    post4: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'Two different AI bets, same market.', side: 'right', after: 2 },
+    post1: { image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop&q=80', caption: 'Operational systems, not just databases.', side: 'left', after: 1 },
+    post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
+    post3: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
   };
   const QUOTE_LIBRARY = {
     huangInfra: {
@@ -412,65 +333,26 @@ function copyRecursive(src, dest) {
     return palettes[seed % palettes.length];
   }
 
-  function makeSupportImage(post, postId) {
-    const seed = hashString(postId + '|' + post.title);
-    const [c1, c2, bg] = pickPalette(seed);
-    const title = escAttr(post.title).slice(0, 72);
-    const label = escAttr((post.category || 'Business') + ' / ' + (post.tag || 'Signal'));
-    const x1 = 20 + (seed % 25);
-    const y1 = 35 + (seed % 20);
-    const x2 = 170 + (seed % 50);
-    const y2 = 115 + (seed % 40);
-    const x3 = 360 + (seed % 60);
-    const y3 = 85 + (seed % 30);
-    const x4 = 610 + (seed % 70);
-    const y4 = 180 + (seed % 35);
-    const x5 = 830 + (seed % 80);
-    const y5 = 95 + (seed % 25);
-    const bars = Array.from({ length: 6 }, (_, i) => {
-      const height = 90 + ((seed >> (i * 3)) % 190);
-      const x = 120 + i * 150;
-      const y = 520 - height;
-      return `<rect x="${x}" y="${y}" width="86" height="${height}" rx="10" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.75 + (i * 0.03)}" />`;
-    }).join('');
-    const svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="${title}">
-        <defs>
-          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="${c1}"/>
-            <stop offset="1" stop-color="${c2}"/>
-          </linearGradient>
-          <radialGradient id="r" cx="50%" cy="35%" r="75%">
-            <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
-            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="1200" height="675" rx="28" fill="${bg}"/>
-        <rect width="1200" height="675" rx="28" fill="url(#g)" opacity="0.18"/>
-        <circle cx="${x1}" cy="${y1}" r="86" fill="url(#r)" opacity="0.9"/>
-        <circle cx="${x2}" cy="${y2}" r="112" fill="url(#r)" opacity="0.65"/>
-        <circle cx="${x3}" cy="${y3}" r="54" fill="${c1}" opacity="0.28"/>
-        <circle cx="${x4}" cy="${y4}" r="74" fill="${c2}" opacity="0.22"/>
-        <circle cx="${x5}" cy="${y5}" r="42" fill="#ffffff" opacity="0.2"/>
-        <g fill="none" stroke="#ffffff" stroke-opacity="0.12">
-          <path d="M80 180 L310 160 L520 205 L760 150 L980 188 L1120 170" stroke-width="6" stroke-linecap="round"/>
-          <path d="M90 455 L220 420 L340 460 L470 330 L630 360 L790 285 L930 315 L1120 250" stroke-width="8" stroke-linecap="round"/>
-        </g>
-        <g opacity="0.95">
-          ${bars}
-        </g>
-        <rect x="58" y="56" width="340" height="82" rx="18" fill="#000" opacity="0.2"/>
-        <text x="86" y="102" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">${label}</text>
-        <text x="86" y="560" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">${title}</text>
-        <text x="86" y="606" font-family="Space Grotesk, Arial, sans-serif" font-size="22" fill="#e5e7eb" fill-opacity="0.82">Generated frame for the story</text>
-      </svg>`;
-    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg.replace(/\n\s+/g, ' ').trim());
+  function imageKey(imgUrl) {
+    return (imgUrl || '').split('?')[0];
+  }
+
+  function pickSupportImage(postId) {
+    const current = POSTS[postId];
+    const primary = INLINE_MEDIA[postId] || {};
+    const seen = new Set([current && current.image, primary.image].filter(Boolean).map(imageKey));
+    const start = POST_ORDER.indexOf(postId);
+    for (let offset = 1; offset < POST_ORDER.length; offset += 1) {
+      const candidate = POSTS[POST_ORDER[(start + offset) % POST_ORDER.length]];
+      if (candidate && candidate.image && !seen.has(imageKey(candidate.image))) return candidate.image;
+    }
+    return current && current.image ? current.image : '';
   }
 
   function injectInlineMedia(body, post, postId) {
     const media = INLINE_MEDIA[postId] || {};
     const side = media.side || (POST_ORDER.indexOf(postId) % 2 === 0 ? 'right' : 'left');
-    const imgUrl = `../../${makeGeneratedImage(post, postId, 'inline')}`;
+    const imgUrl = makeInlineImage(media.image || post.inlineImage || post.image);
     const caption = media.caption || post.inlineCaption || ('A visual reference for ' + post.title);
     const after = Math.max(1, media.after || post.inlineAfter || 2);
     const postClass = postId === 'post14' ? ' inline-media-spacex' : '';
@@ -493,7 +375,9 @@ function copyRecursive(src, dest) {
   }
 
   function makeSupportMedia(post, postId) {
-    const supportImg = `../../${makeGeneratedImage(post, postId, 'support')}`;
+    const imgUrl = pickSupportImage(postId);
+    if (!imgUrl) return '';
+    const supportImg = makeInlineImage(imgUrl);
     return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>A second frame on the same story.</figcaption></figure>`;
   }
   function injectInlineQuotes(body, postId) {
@@ -541,7 +425,7 @@ function copyRecursive(src, dest) {
     if (!related.length) return '';
     const cards = related.map(id => {
       const rp = POSTS[id];
-      const thumb = `../../${makeGeneratedImage(rp, id, 'related')}`;
+      const thumb = rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300');
       return `<a class="related-card" href="../${toSlug(rp.title)}/">` +
         `<img src="${thumb}" alt="" loading="lazy">` +
         `<div class="related-info">` +
@@ -558,15 +442,14 @@ function copyRecursive(src, dest) {
   for (const id of POST_ORDER) {
     const p = POSTS[id];
     if (!p) continue;
-    makeGeneratedImage(p, id, 'card');
     const slug = toSlug(p.title);
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
     const bodyHtml = appendContextParagraph(injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id), id);
     const supportMediaHtml = makeSupportMedia(p, id);
-    const heroImageRel = `../../${makeGeneratedImage(p, id, 'hero')}`;
-    const heroImageAbs = absoluteGeneratedImage(p, id, 'hero');
+    const heroImageRel = makeHeroImage(p.image);
+    const heroImageAbs = makeOgImage(p.image);
     const jsonLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
