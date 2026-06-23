@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,25 +11,25 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://*.tradingview.com; media-src 'self' https://commondatastorage.googleapis.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://s3.tradingview.com; frame-src https://*.tradingview.com https://*.tradingview-widget.com; connect-src 'self' https://*.tradingview.com https://*.tradingview-widget.com https://script.google.com https://script.googleusercontent.com; form-action 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
+  <title>Sam C Barth â€” RevOps, AI &amp; CRM Strategy</title>
 
   <!-- SEO -->
   <meta name="author" content="Sam C Barth">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="canonical" href="https://samcbarth.github.io/aisite/">
-  <link rel="alternate" type="application/rss+xml" title="Sam C Barth — Latest Updates" href="feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Sam C Barth â€” Latest Updates" href="feed.xml">
 
   <!-- Open Graph / SEO -->
-  <meta name="description" content="Sam C Barth — HubSpot Strategy & Operations Manager at LAIRE. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
+  <meta name="description" content="Sam C Barth â€” HubSpot Strategy & Operations Manager at LAIRE. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://samcbarth.github.io/aisite/">
   <meta property="og:title" content="Sam C Barth">
-  <meta property="og:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy — and consulting for GTM teams.">
+  <meta property="og:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy â€” and consulting for GTM teams.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sam C Barth">
-  <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy — and consulting for GTM teams.">
+  <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy â€” and consulting for GTM teams.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&h=630&fit=crop&q=80">
 
   <!-- Brand favicon: SCB monogram -->
@@ -40,14 +40,14 @@
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <!-- Self-hosted variable font (no render-blocking third-party CSS request).
-       Preload the one woff2 that covers weights 400–700. -->
+       Preload the one woff2 that covers weights 400â€“700. -->
   <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Warm up the remaining third-party origins still used for media. -->
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preconnect" href="https://s3.tradingview.com">
   <style>
-    /* Self-hosted Space Grotesk (variable, one file per subset covers 400–700). */
+    /* Self-hosted Space Grotesk (variable, one file per subset covers 400â€“700). */
     @font-face {
       font-family: 'Space Grotesk';
       font-style: normal;
@@ -265,14 +265,13 @@
     }
     .path-head {
       display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.45rem;
       margin-bottom: 1rem;
     }
     .path-sub {
-      max-width: 420px;
+      max-width: 680px;
       color: #777;
       font-size: 1rem;
       line-height: 1.65;
@@ -1018,7 +1017,7 @@
       padding: 0.2rem 0.55rem;
       pointer-events: none;
     }
-    .media-badge::before { content: '▶'; font-size: 1rem; }
+    .media-badge::before { content: 'â–¶'; font-size: 1rem; }
     .media-play {
       position: absolute;
       inset: 0;
@@ -1036,9 +1035,9 @@
     /* Reserve height for the lazily-injected ticker iframe (prevents CLS). */
     .tradingview-widget-container { min-height: 46px; }
 
-    /* ── Accessibility ─────────────────────────────────────────────
+    /* â”€â”€ Accessibility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Contrast bumps so muted text on the dark background clears WCAG AA
-       (≥4.5:1). Light-mode rules below have higher specificity and still win. */
+       (â‰¥4.5:1). Light-mode rules below have higher specificity and still win. */
     .post-date, .modal-date, .featured-meta-row,
     .post-read-time, .modal-read-time, .no-results,
     .post-count, .related-label { color: #8a8a8a; }
@@ -1368,7 +1367,7 @@
       "@type": "Blog",
       "@id": "https://samcbarth.github.io/aisite/#blog",
       "url": "https://samcbarth.github.io/aisite/",
-      "name": "Sam C Barth — Latest Updates",
+      "name": "Sam C Barth â€” Latest Updates",
       "author": {
         "@id": "https://samcbarth.github.io/aisite/#person"
       },
@@ -1613,7 +1612,7 @@
             "@id": "https://samcbarth.github.io/aisite/#person"
           },
           "articleSection": "AI & Automation",
-          "description": "Dell's stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue fro"
+          "description": "Dell's stock had its best single day ever on Thursday â€” up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue fro"
         },
         {
           "@type": "BlogPosting",
@@ -1628,7 +1627,7 @@
         },
         {
           "@type": "BlogPosting",
-          "headline": "AI is making cybersecurity harder — and that's a GTM problem too",
+          "headline": "AI is making cybersecurity harder â€” and that's a GTM problem too",
           "datePublished": "2026-05-22",
           "url": "https://samcbarth.github.io/aisite/#post9",
           "author": {
@@ -1723,12 +1722,12 @@
       <a href="resources.html">Resources</a>
       <a href="#work">Work with me</a>
       <a href="premium.html">Premium</a>
-      <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a>
+      <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">RÃ©sumÃ©</a>
       <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:samcbarth@gmail.com">Contact</a>
       <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
     </nav>
-    <button class="theme-toggle" id="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Toggle light and dark mode" title="Toggle light/dark mode">☀</button>
+    <button class="theme-toggle" id="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Toggle light and dark mode" title="Toggle light/dark mode">â˜€</button>
     <details class="mobile-nav">
       <summary class="menu-toggle" aria-label="Open navigation">
         <span class="menu-toggle-burger" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -1739,7 +1738,7 @@
         <a href="resources.html">Resources</a>
         <a href="#work">Work with me</a>
         <a href="premium.html">Premium</a>
-        <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a>
+        <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">RÃ©sumÃ©</a>
         <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:samcbarth@gmail.com">Contact</a>
         <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
@@ -1961,7 +1960,7 @@
             <div class="promo-card-title">Set a meeting</div>
             <div class="promo-card-text">If you want to talk RevOps, AI, CRM strategy, or a project scope, book a quick call.</div>
           </div>
-          <span class="promo-card-cta">Meeting link →</span>
+          <span class="promo-card-cta">Meeting link â†’</span>
         </a>
         <a class="promo-card" href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">
           <div>
@@ -1969,7 +1968,7 @@
             <div class="promo-card-title">Visit SamCBarth.com</div>
             <div class="promo-card-text">See the broader work, the consulting angle, and how these ideas connect back to business development.</div>
           </div>
-          <span class="promo-card-cta">Open site →</span>
+          <span class="promo-card-cta">Open site â†’</span>
         </a>
         <a class="promo-card" href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">
           <div>
@@ -1977,7 +1976,7 @@
             <div class="promo-card-title">Follow on LinkedIn</div>
             <div class="promo-card-text">For shorter takes, updates, and the day-to-day thinking behind the posts, LinkedIn is the easiest place to follow along.</div>
           </div>
-          <span class="promo-card-cta">Go to LinkedIn →</span>
+          <span class="promo-card-cta">Go to LinkedIn â†’</span>
         </a>
       </div>
     </div>
@@ -2104,7 +2103,7 @@
           <span class="post-tag tag-pink">In the wild</span>
         </div>
         <div class="post-title">The most valuable AI use case isn't a product. It's a personal tool.</div>
-        <div class="post-excerpt">Developers are building local tools that connect directly to Gmail, Calendar, Notion, and Slack — and dropping a shortcut on their desktop to trigger them. Here's what that actually looks like.</div>
+        <div class="post-excerpt">Developers are building local tools that connect directly to Gmail, Calendar, Notion, and Slack â€” and dropping a shortcut on their desktop to trigger them. Here's what that actually looks like.</div>
       </div>
     </a>
 
@@ -2146,7 +2145,7 @@
           <span class="post-tag tag-cyan">Signal</span>
         </div>
         <div class="post-title">Dell's best day ever tells you where enterprise AI is actually going</div>
-        <div class="post-excerpt">Stock up 32% on AI server revenue — not AI announcements, not pilots. Actual infrastructure spend. That's a different signal.</div>
+        <div class="post-excerpt">Stock up 32% on AI server revenue â€” not AI announcements, not pilots. Actual infrastructure spend. That's a different signal.</div>
       </div>
     </a>
 
@@ -2173,7 +2172,7 @@
           <span class="post-category">AI &amp; Automation</span>
           <span class="post-tag tag-amber">Watch this space</span>
         </div>
-        <div class="post-title">AI is making cybersecurity harder — and that's a GTM problem too</div>
+        <div class="post-title">AI is making cybersecurity harder â€” and that's a GTM problem too</div>
         <div class="post-excerpt">An ethical hacker warned this week that AI tools are outpacing human researchers at finding vulnerabilities. Your CRM integrations are part of that attack surface.</div>
       </div>
     </a>
@@ -2266,7 +2265,7 @@
   <p class="no-results" id="no-results">No posts match that filter.</p>
 </section>
 
-<!-- Below-the-content surfaces: newsletter, consulting, sponsor — intentionally low-key -->
+<!-- Below-the-content surfaces: newsletter, consulting, sponsor â€” intentionally low-key -->
 <section class="newsletter">
   <div class="newsletter-inner">
     <div class="newsletter-label">Stay in the loop</div>
@@ -2275,7 +2274,7 @@
     <form class="newsletter-form" id="newsletter-form">
       <label class="sr-only" for="newsletter-email">Email address</label>
       <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
-      <button type="submit" class="newsletter-btn">Subscribe →</button>
+      <button type="submit" class="newsletter-btn">Subscribe â†’</button>
     </form>
     <div class="newsletter-note" id="newsletter-note"></div>
 
@@ -2283,8 +2282,8 @@
       <div class="tier">
         <div class="tier-name">Free</div>
         <div class="tier-price">$0</div>
-        <div class="tier-desc">The weekly read — signals, practical takes, and what is worth your attention in RevOps and AI.</div>
-        <a class="tier-btn tier-btn-free" href="#newsletter-email" data-action="focus-email">Join the list ↑</a>
+        <div class="tier-desc">The weekly read â€” signals, practical takes, and what is worth your attention in RevOps and AI.</div>
+        <a class="tier-btn tier-btn-free" href="#newsletter-email" data-action="focus-email">Join the list â†‘</a>
       </div>
       <div class="tier tier-pro">
         <div class="tier-name">Private access</div>
@@ -2336,7 +2335,7 @@
       <img class="modal-hero" id="modal-hero" src="" alt="">
     </div>
     <div class="modal-content">
-      <button class="modal-close" data-action="close-modal" aria-label="Close article">✕</button>
+      <button class="modal-close" data-action="close-modal" aria-label="Close article">âœ•</button>
       <div class="modal-header-row">
         <span class="modal-date" id="modal-date"></span>
         <span class="modal-read-time" id="modal-read-time"></span>
@@ -2351,7 +2350,7 @@
         <button class="copy-btn" id="copy-btn" data-action="copy-post">Copy to clipboard</button>
         <button class="share-btn" data-action="share-linkedin">Share on LinkedIn</button>
         <button class="share-btn share-btn-x" data-action="share-x">Post on X</button>
-        <button class="like-btn" id="modal-like-btn" data-action="toggle-like" aria-pressed="false">♥ Like</button>
+        <button class="like-btn" id="modal-like-btn" data-action="toggle-like" aria-pressed="false">â™¥ Like</button>
       </div>
       <div class="modal-nav">
         <button class="nav-btn" id="prev-btn" data-action="nav-prev">&#8592; Prev</button>
@@ -2372,18 +2371,18 @@
 
 <footer>
   <div class="footer-brand">Sam C Barth</div>
-  <div class="footer-meta">HubSpot Strategy &amp; Operations · LAIRE · Dallas, TX &amp; El Reno, OK</div>
-  <div class="footer-meta"><a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Résumé</a> · <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="mailto:samcbarth@gmail.com">Contact</a></div>
-  <div class="footer-meta">© 2026 Sam C Barth · Last updated: DEPLOY_TIME</div>
+  <div class="footer-meta">HubSpot Strategy &amp; Operations Â· LAIRE Â· Dallas, TX &amp; El Reno, OK</div>
+  <div class="footer-meta"><a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">RÃ©sumÃ©</a> Â· <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a> Â· <a href="mailto:samcbarth@gmail.com">Contact</a></div>
+  <div class="footer-meta">Â© 2026 Sam C Barth Â· Last updated: DEPLOY_TIME</div>
 </footer>
 
-<!-- Analytics (disabled by default — privacy-friendly, cookieless).
+<!-- Analytics (disabled by default â€” privacy-friendly, cookieless).
      To enable GoatCounter (free for personal use):
        1. Register a site at https://www.goatcounter.com
        2. Add these origins to the CSP <meta> above:
-            script-src  …  https://gc.zgo.at
-            img-src     …  https://YOURCODE.goatcounter.com
-            connect-src …  https://YOURCODE.goatcounter.com
+            script-src  â€¦  https://gc.zgo.at
+            img-src     â€¦  https://YOURCODE.goatcounter.com
+            connect-src â€¦  https://YOURCODE.goatcounter.com
        3. Uncomment the tag below and set YOURCODE:
   <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 -->
@@ -2393,4 +2392,7 @@
 
 </body>
 </html>
+
+
+
 
