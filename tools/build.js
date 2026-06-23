@@ -50,11 +50,15 @@ function copyRecursive(src, dest) {
     timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric',
     hour: '2-digit', minute: '2-digit', hour12: false
   }).replace(',', '') + ' UTC';
+  const assetVersion = timestamp.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8').replace('DEPLOY_TIME', timestamp);
   html = html.replace(/(<a class="post-card"[^>]*data-id="(post\d+)"[^>]*>[\s\S]*?<img class="post-thumb"[^>]*src=")[^"]+(")/g, (match, prefix, id, suffix) => {
     if (!POSTS[id]) return match;
     return prefix + `generated/${id}-card.svg` + suffix;
   });
+  html = html
+    .replace(/src="posts\.js"/g, `src="posts.js?v=${assetVersion}"`)
+    .replace(/src="app\.js"/g, `src="app.js?v=${assetVersion}"`);
   fs.writeFileSync(path.join(dist, 'index.html'), html);
 
   // 3. Regenerate SEO artifacts against dist (fresh JSON-LD + sitemap + feed)
