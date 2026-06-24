@@ -21,7 +21,6 @@ const { POSTS, POST_ORDER } = require('../posts.js');
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
 const BASE_URL = 'https://samcbarth.github.io/aisite';
-const generatedDir = path.join(dist, 'generated');
 function copyRecursive(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
@@ -37,7 +36,6 @@ function copyRecursive(src, dest) {
   // 1. Fresh dist + static assets
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });
-  fs.mkdirSync(generatedDir, { recursive: true });
 
   const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html'];
   for (const f of staticFiles) {
@@ -52,10 +50,6 @@ function copyRecursive(src, dest) {
   }).replace(',', '') + ' UTC';
   const assetVersion = timestamp.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8').replace('DEPLOY_TIME', timestamp);
-  html = html.replace(/(<a class="post-card"[^>]*data-id="(post\d+)"[^>]*>[\s\S]*?<img class="post-thumb"[^>]*src=")[^"]+(")/g, (match, prefix, id, suffix) => {
-    if (!POSTS[id]) return match;
-    return prefix + `generated/${id}-card.svg` + suffix;
-  });
   html = html
     .replace(/src="posts\.js"/g, `src="posts.js?v=${assetVersion}"`)
     .replace(/src="app\.js"/g, `src="app.js?v=${assetVersion}"`);
@@ -165,79 +159,6 @@ function copyRecursive(src, dest) {
   }
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
-  }
-  function hashString(input) {
-    let hash = 2166136261;
-    for (let i = 0; i < input.length; i += 1) {
-      hash ^= input.charCodeAt(i);
-      hash = Math.imul(hash, 16777619);
-    }
-    return hash >>> 0;
-  }
-  function pickPalette(seed) {
-    const palettes = [
-      ['#7c6af7', '#22d3ee', '#111827'],
-      ['#f97316', '#f59e0b', '#1f2937'],
-      ['#10b981', '#22c55e', '#0f172a'],
-      ['#f472b6', '#7c6af7', '#111827'],
-      ['#38bdf8', '#0ea5e9', '#0b1120'],
-      ['#e879f9', '#fb7185', '#1f132b']
-    ];
-    return palettes[seed % palettes.length];
-  }
-  function escAttr(str) {
-    return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-  function makeCardThumb(post, postId) {
-    const seed = hashString(postId + '|' + post.title);
-    const [c1, c2, bg] = pickPalette(seed);
-    const title = escAttr(post.title).slice(0, 48);
-    const bars = Array.from({ length: 4 }, (_, i) => {
-      const h = 88 + (((seed >>> (i * 5)) % 150));
-      const x = 72 + i * 88;
-      const y = 376 - h;
-      return `<rect x="${x}" y="${y}" width="48" height="${h}" rx="10" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.72 + i * 0.06}" />`;
-    }).join('');
-    const orbs = Array.from({ length: 3 }, (_, i) => {
-      const r = 18 + (((seed >>> (i * 6)) % 18));
-      const cx = 110 + i * 134;
-      const cy = 118 + (((seed >>> (i * 4)) % 64));
-      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" opacity="${0.09 + i * 0.04}" />`;
-    }).join('');
-    const slant = seed % 2 === 0
-      ? `<path d="M52 332 L198 242 L304 274 L458 184" stroke="#fff" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`
-      : `<path d="M52 204 L180 258 L290 196 L458 286" stroke="#fff" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
-    const svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="${title}">
-        <defs>
-          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="${c1}"/>
-            <stop offset="1" stop-color="${c2}"/>
-          </linearGradient>
-          <radialGradient id="r" cx="50%" cy="35%" r="70%">
-            <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
-            <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="512" height="512" rx="28" fill="${bg}"/>
-        <rect width="512" height="512" rx="28" fill="url(#g)" opacity="0.18"/>
-        <circle cx="${78 + (seed % 44)}" cy="${86 + (seed % 32)}" r="92" fill="url(#r)" opacity="0.85"/>
-        <circle cx="${372 + (seed % 34)}" cy="${126 + (seed % 28)}" r="108" fill="url(#r)" opacity="0.48"/>
-        <circle cx="${220 + (seed % 30)}" cy="${198 + (seed % 18)}" r="70" fill="${c1}" opacity="0.18"/>
-        <circle cx="${402 + (seed % 18)}" cy="${304 + (seed % 18)}" r="78" fill="${c2}" opacity="0.14"/>
-        <g fill="none" stroke="#fff" stroke-opacity="0.11" stroke-linecap="round">
-          <path d="M50 150 L190 136 L300 182 L460 142" stroke-width="6"/>
-          <path d="M54 308 L142 262 L238 312 L332 236 L452 268" stroke-width="7"/>
-        </g>
-        ${slant}
-        <g opacity="0.95">${bars}</g>
-      </svg>`;
-    const out = path.join(generatedDir, `${postId}-card.svg`);
-    fs.writeFileSync(out, svg.replace(/\n\s+/g, ' ').trim(), 'utf8');
-    return `generated/${postId}-card.svg`;
-  }
-  for (const postId of POST_ORDER) {
-    if (POSTS[postId]) makeCardThumb(POSTS[postId], postId);
   }
   const INLINE_MEDIA = {
     post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },

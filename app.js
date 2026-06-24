@@ -36,7 +36,6 @@
   };
   const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
-  const generatedAsset = (id, variant) => 'generated/' + id + '-' + variant + '.svg';
 
   function renderSponsor() {
     const el = document.getElementById('sponsor-slot');
@@ -245,8 +244,9 @@
   function refreshPostThumbs() {
     document.querySelectorAll('.post-card').forEach(card => {
       const img = card.querySelector('.post-thumb');
-      if (!img || !card.dataset.id) return;
-      img.src = generatedAsset(card.dataset.id, 'card');
+      const post = posts[card.dataset.id];
+      if (!img || !post) return;
+      img.src = post.image;
     });
   }
 
