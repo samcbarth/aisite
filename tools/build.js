@@ -192,13 +192,21 @@ function copyRecursive(src, dest) {
     const seed = hashString(postId + '|' + post.title);
     const [c1, c2, bg] = pickPalette(seed);
     const title = escAttr(post.title).slice(0, 48);
-    const label = escAttr(post.category || 'Business');
-    const bars = Array.from({ length: 5 }, (_, i) => {
-      const h = 70 + ((seed >> (i * 4)) % 140);
-      const x = 74 + i * 78;
-      const y = 392 - h;
-      return `<rect x="${x}" y="${y}" width="54" height="${h}" rx="8" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.78 + i * 0.04}" />`;
+    const bars = Array.from({ length: 4 }, (_, i) => {
+      const h = 88 + (((seed >>> (i * 5)) % 150));
+      const x = 72 + i * 88;
+      const y = 376 - h;
+      return `<rect x="${x}" y="${y}" width="48" height="${h}" rx="10" fill="${i % 2 === 0 ? c1 : c2}" opacity="${0.72 + i * 0.06}" />`;
     }).join('');
+    const orbs = Array.from({ length: 3 }, (_, i) => {
+      const r = 18 + (((seed >>> (i * 6)) % 18));
+      const cx = 110 + i * 134;
+      const cy = 118 + (((seed >>> (i * 4)) % 64));
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" opacity="${0.09 + i * 0.04}" />`;
+    }).join('');
+    const slant = seed % 2 === 0
+      ? `<path d="M52 332 L198 242 L304 274 L458 184" stroke="#fff" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`
+      : `<path d="M52 204 L180 258 L290 196 L458 286" stroke="#fff" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
     const svg = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="${title}">
         <defs>
@@ -213,18 +221,16 @@ function copyRecursive(src, dest) {
         </defs>
         <rect width="512" height="512" rx="28" fill="${bg}"/>
         <rect width="512" height="512" rx="28" fill="url(#g)" opacity="0.18"/>
-        <circle cx="${60 + (seed % 40)}" cy="${74 + (seed % 28)}" r="70" fill="url(#r)" opacity="0.9"/>
-        <circle cx="${360 + (seed % 35)}" cy="${118 + (seed % 30)}" r="82" fill="url(#r)" opacity="0.62"/>
-        <circle cx="${212 + (seed % 40)}" cy="${188 + (seed % 22)}" r="48" fill="${c1}" opacity="0.22"/>
-        <circle cx="${394 + (seed % 24)}" cy="${294 + (seed % 20)}" r="56" fill="${c2}" opacity="0.18"/>
-        <g fill="none" stroke="#fff" stroke-opacity="0.12" stroke-linecap="round">
+        <circle cx="${78 + (seed % 44)}" cy="${86 + (seed % 32)}" r="92" fill="url(#r)" opacity="0.85"/>
+        <circle cx="${372 + (seed % 34)}" cy="${126 + (seed % 28)}" r="108" fill="url(#r)" opacity="0.48"/>
+        <circle cx="${220 + (seed % 30)}" cy="${198 + (seed % 18)}" r="70" fill="${c1}" opacity="0.18"/>
+        <circle cx="${402 + (seed % 18)}" cy="${304 + (seed % 18)}" r="78" fill="${c2}" opacity="0.14"/>
+        <g fill="none" stroke="#fff" stroke-opacity="0.11" stroke-linecap="round">
           <path d="M50 150 L190 136 L300 182 L460 142" stroke-width="6"/>
           <path d="M54 308 L142 262 L238 312 L332 236 L452 268" stroke-width="7"/>
         </g>
+        ${slant}
         <g opacity="0.95">${bars}</g>
-        <rect x="28" y="28" width="200" height="52" rx="14" fill="#000" opacity="0.18"/>
-        <text x="48" y="60" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">${label}</text>
-        <text x="32" y="454" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">${title}</text>
       </svg>`;
     const out = path.join(generatedDir, `${postId}-card.svg`);
     fs.writeFileSync(out, svg.replace(/\n\s+/g, ' ').trim(), 'utf8');
