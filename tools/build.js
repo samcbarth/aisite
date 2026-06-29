@@ -190,7 +190,14 @@ function copyRecursive(src, dest) {
     post4: { image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80', caption: 'Two different AI bets, same market.', side: 'right', after: 2 },
     post1: { image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop&q=80', caption: 'Operational systems, not just databases.', side: 'left', after: 1 },
     post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
-    post3: { image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80', caption: 'Good reporting starts with clean systems.', side: 'left', after: 1 }
+    post3: {
+      image: 'assets/images/post3-marketing-team.jpg',
+      caption: 'A live strategy session fits the point that marketing keeps changing.',
+      side: 'left',
+      after: 1,
+      supportImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'A dashboard-style view fits the reporting side of the work.'
+    }
   };
   const QUOTE_LIBRARY = {
     huangInfra: {
@@ -379,10 +386,12 @@ function copyRecursive(src, dest) {
   }
 
   function makeSupportMedia(post, postId) {
-    const imgUrl = pickSupportImage(postId);
+    const media = INLINE_MEDIA[postId] || {};
+    const imgUrl = media.supportImage || pickSupportImage(postId);
     if (!imgUrl) return '';
     const supportImg = makeInlineImage(imgUrl);
-    return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>A second frame on the same story.</figcaption></figure>`;
+    const caption = media.supportCaption || 'A second frame on the same story.';
+    return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>${escAttr(caption)}</figcaption></figure>`;
   }
   function injectInlineQuotes(body, postId) {
     const block = INLINE_QUOTES[postId];
