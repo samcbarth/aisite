@@ -16,7 +16,7 @@
 
   function render() {
     var label = count != null ? fmtCount(count) : '';
-    btn.textContent = '♥' + (label ? ' ' + label : '');
+    btn.textContent = 'Like' + (label ? ' ' + label : '');
     btn.classList.toggle('liked', hasLiked());
   }
 

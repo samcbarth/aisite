@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * build.js — produces an optimized dist/ for GitHub Pages.
+ * build.js - produces an optimized dist/ for GitHub Pages.
  *
  * Source stays hand-editable (index.html + app.js + posts.js). This script:
  *   1. copies static assets into dist/
@@ -43,7 +43,7 @@ function copyRecursive(src, dest) {
   }
   copyRecursive(path.join(root, 'assets'), path.join(dist, 'assets'));
 
-  // 2. index.html → dist with deploy timestamp
+  // 2. index.html -> dist with deploy timestamp
   const timestamp = new Date().toLocaleString('en-US', {
     timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric',
     hour: '2-digit', minute: '2-digit', hour12: false
@@ -53,6 +53,7 @@ function copyRecursive(src, dest) {
   html = html
     .replace(/src="posts\.js"/g, `src="posts.js?v=${assetVersion}"`)
     .replace(/src="app\.js"/g, `src="app.js?v=${assetVersion}"`);
+  html = syncHomepageCards(html);
   fs.writeFileSync(path.join(dist, 'index.html'), html);
 
   // 3. Regenerate SEO artifacts against dist (fresh JSON-LD + sitemap + feed)
@@ -79,7 +80,7 @@ function copyRecursive(src, dest) {
 
   // 5. Cache-bust the service worker. The browser only installs a new SW when
   //    sw.js changes bytes, so stamp CACHE_VERSION with a hash of the built
-  //    shell. Any content change → new sw.js → new worker installs and purges
+  //    shell. Any content change -> new sw.js -> new worker installs and purges
   //    the stale cache. (Otherwise returning visitors keep the old posts.js.)
   const swPath = path.join(dist, 'sw.js');
   if (fs.existsSync(swPath)) {
@@ -159,6 +160,21 @@ function copyRecursive(src, dest) {
   }
   function makeHeroImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
+  }
+  function makeCardImage(imgUrl) {
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=576&h=576').replace(/q=\d+/, 'q=85');
+  }
+  function makePostPageImage(imgUrl) {
+    if (!imgUrl) return '';
+    if (/^(https?:|data:|\/)/.test(imgUrl)) return imgUrl;
+    return '../../' + imgUrl.replace(/^\.?\//, '');
+  }
+  function syncHomepageCards(sourceHtml) {
+    return sourceHtml.replace(/(<a class="post-card"[\s\S]*?data-id="([^"]+)"[\s\S]*?<img class="post-thumb" )src="[^"]*" alt="[^"]*"/g, (match, prefix, id) => {
+      const post = POSTS[id];
+      if (!post || !post.image) return match;
+      return `${prefix}src="${makeCardImage(post.image)}" alt="${escAttr(post.title)} thumbnail"`;
+    });
   }
   const INLINE_MEDIA = {
     post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
@@ -320,7 +336,7 @@ function copyRecursive(src, dest) {
   };
 
   function makeInlineImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=675');
+    return makePostPageImage(imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=675'));
   }
 
   function hashString(input) {
@@ -390,7 +406,7 @@ function copyRecursive(src, dest) {
     const imgUrl = media.supportImage || pickSupportImage(postId);
     if (!imgUrl) return '';
     const supportImg = makeInlineImage(imgUrl);
-    const caption = media.supportCaption || 'A second frame on the same story.';
+    const caption = media.supportCaption || 'Another angle on the business impact.';
     return `<figure class="inline-media post-support-media"><img src="${supportImg}" alt="${escAttr(post.title)} supporting image" width="1200" height="675" loading="lazy"><figcaption>${escAttr(caption)}</figcaption></figure>`;
   }
   function injectInlineQuotes(body, postId) {
@@ -438,9 +454,9 @@ function copyRecursive(src, dest) {
     if (!related.length) return '';
     const cards = related.map(id => {
       const rp = POSTS[id];
-      const thumb = rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300');
+      const thumb = makePostPageImage(rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300'));
       return `<a class="related-card" href="../${toSlug(rp.title)}/">` +
-        `<img src="${thumb}" alt="" loading="lazy">` +
+        `<img src="${thumb}" alt="${escAttr(rp.title)} thumbnail" loading="lazy">` +
         `<div class="related-info">` +
         `<span class="related-cat">${rp.category}</span>` +
         `<div class="related-post-title">${rp.title}</div>` +
@@ -512,5 +528,3 @@ function copyRecursive(src, dest) {
   console.log(`build: generated ${POST_ORDER.length} post pages in dist/posts/`);
 
 })().catch((e) => { console.error(e); process.exit(1); });
-
-

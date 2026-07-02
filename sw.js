@@ -1,10 +1,10 @@
 /*
- * sw.js — service worker for the site (scope: the directory it's served from,
+ * sw.js - service worker for the site (scope: the directory it's served from,
  * i.e. /aisite/ in production). Provides an offline app-shell and tiered caching:
- *   • same-origin shell assets  → cache-first
- *   • navigations               → network-first, fall back to cached shell
- *   • Unsplash images           → stale-while-revalidate
- *   • everything else (video, TradingView, …) → straight to network, uncached
+ *   - same-origin shell assets -> cache-first
+ *   - navigations              -> network-first, fall back to cached shell
+ *   - Unsplash images          -> stale-while-revalidate
+ *   - everything else          -> straight to network, uncached
  *
  * Bump CACHE_VERSION whenever the precached shell changes so old caches are purged.
  */
@@ -82,5 +82,5 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Everything else (video CDN, TradingView, …): network, uncached.
+  // Everything else: network, uncached.
 });

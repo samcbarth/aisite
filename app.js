@@ -1,5 +1,5 @@
 /*
- * app.js — site behavior. Externalized from index.html so the page can ship a
+ * app.js - site behavior. Externalized from index.html so the page can ship a
  * strict Content-Security-Policy (script-src 'self') with no inline JavaScript.
  * All user interactions are wired here via addEventListener / event delegation
  * rather than inline on* attributes. Post data lives in posts.js (window.POSTS).
@@ -27,9 +27,9 @@
   };
 
   // ── Likes config ────────────────────────────────────────────────────
-  // Setup (one time) — see google-apps-script.js for full instructions:
+  // Setup (one time) - see google-apps-script.js for full instructions:
   //   1. Create a Google Sheet with a tab named "likes" (headers: post_id, likes)
-  //   2. Extensions → Apps Script → paste google-apps-script.js → Deploy as web app
+  //   2. Extensions -> Apps Script -> paste google-apps-script.js -> Deploy as web app
   //   3. Paste the web app URL below
   const LIKES = {
     sheetsUrl: 'https://script.google.com/macros/s/AKfycbxDBkDGUwhzBF0556X97OuiBb29hfzDN-VMm5VoUvSbRts_za_orLbykiE5ztpwRnQP/exec'
@@ -43,22 +43,15 @@
     if (sponsor.name) {
       el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}" target="_blank" rel="noopener noreferrer">
         <span class="sponsor-tag">Sponsor</span>
-        ${sponsor.logo ? `<img class="sponsor-logo" src="${sponsor.logo}" alt="" loading="lazy">` : ''}
+        ${sponsor.logo ? `<img class="sponsor-logo" src="${sponsor.logo}" alt="${sponsor.name} logo" loading="lazy">` : ''}
         <span class="sponsor-body">
           <span class="sponsor-name">${sponsor.name}</span>
           <span class="sponsor-blurb">${sponsor.blurb}</span>
         </span>
-        <span class="sponsor-cta">Visit →</span>
+        <span class="sponsor-cta">Visit</span>
       </a>`;
     } else {
-      el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}">
-        <span class="sponsor-tag">Sponsor</span>
-        <span class="sponsor-body">
-          <span class="sponsor-name">Your brand here</span>
-          <span class="sponsor-blurb">Reach RevOps & GTM leaders reading every week.</span>
-        </span>
-        <span class="sponsor-cta">Sponsor this →</span>
-      </a>`;
+      el.innerHTML = '';
     }
   }
 
@@ -141,7 +134,7 @@
     if (reduceMotion && manualPlay) {
       const btn = document.createElement('button');
       btn.className = 'media-play';
-      btn.innerHTML = '▶';
+      btn.textContent = 'Play';
       btn.setAttribute('aria-label', 'Play video');
       btn.onclick = (e) => {
         e.stopPropagation();
@@ -166,6 +159,7 @@
   // ── Display ad slots: reveal placeholders on scroll (no third-party script) ──
   function setupAdSlots() {
     const slots = document.querySelectorAll('.ad-slot');
+    if (!slots.length) return;
     if (!('IntersectionObserver' in window)) { slots.forEach(s => s.classList.add('revealed')); return; }
     const obs = new IntersectionObserver((entries, o) => {
       entries.forEach(entry => {
@@ -255,7 +249,7 @@
     const section = document.getElementById('featured-section');
     if (!featuredId || !section) return;
     const p = posts[featuredId];
-    const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '…';
+    const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '...';
     const imgSrc = p.image;
 
     const card = document.createElement('a');
@@ -327,7 +321,7 @@
         const counts = await res.json();
         for (const [id, n] of Object.entries(counts)) likeCounts[id] = n;
       }
-    } catch (e) { /* offline or unconfigured — fall back silently */ }
+    } catch (e) { /* offline or unconfigured - fall back silently */ }
     renderAllLikeUI();
   }
 
@@ -356,14 +350,14 @@
     const cardLike = document.querySelector(`.card-like[data-id="${id}"]`);
     if (cardLike) {
       cardLike.classList.toggle('liked', liked);
-      cardLike.textContent = '♥' + (label ? ' ' + label : '');
+      cardLike.textContent = 'Like' + (label ? ' ' + label : '');
       cardLike.setAttribute('aria-label',
         (count != null ? count + ' like' + (count === 1 ? '' : 's') + '. ' : '') + 'Like this post');
     }
     if (currentPostId === id) {
       const btn = document.getElementById('modal-like-btn');
       if (btn) {
-        btn.textContent = (liked ? '♥ Liked' : '♥ Like') + (label ? ' · ' + label : '');
+        btn.textContent = (liked ? 'Liked' : 'Like') + (label ? ' | ' + label : '');
         btn.classList.toggle('liked', liked);
       }
     }
@@ -374,7 +368,7 @@
     const isLight = document.body.classList.toggle('light-mode');
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
     const btn = document.getElementById('theme-toggle');
-    btn.textContent = isLight ? '☽' : '☀';
+    btn.textContent = isLight ? 'Dark' : 'Light';
     btn.setAttribute('aria-pressed', String(isLight));
   }
 
@@ -417,17 +411,17 @@
   }
   function shareQuoteX() {
     const title = document.getElementById('modal-title').textContent;
-    const text = encodeURIComponent('"' + selectedQuote.substring(0, 200) + '" — ' + title + ' ');
+    const text = encodeURIComponent('"' + selectedQuote.substring(0, 200) + '" - ' + title + ' ');
     window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + encodeURIComponent(SITE_URL), '_blank', 'noopener,width=600,height=600');
   }
 
   // ── Newsletter ──────────────────────────────────────────────────
   function handleSubscribe(e) {
     e.preventDefault();
-    document.getElementById('newsletter-note').textContent = '✓ Got it — talk soon.';
+    document.getElementById('newsletter-note').textContent = 'Got it. Talk soon.';
     document.getElementById('newsletter-email').value = '';
     const btn = e.target.querySelector('.newsletter-btn');
-    btn.textContent = 'Done ✓'; btn.disabled = true;
+    btn.textContent = 'Done'; btn.disabled = true;
   }
 
   // ── Modal media ─────────────────────────────────────────────────
@@ -546,7 +540,7 @@
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light-mode');
       const tt = document.getElementById('theme-toggle');
-      tt.textContent = '☽';
+      tt.textContent = 'Dark';
       tt.setAttribute('aria-pressed', 'true');
     }
 
@@ -564,7 +558,7 @@
       const likeBtn = document.createElement('button');
       likeBtn.className = 'card-like' + (hasLiked(id) ? ' liked' : '');
       likeBtn.dataset.id = id;
-      likeBtn.textContent = '♥';
+      likeBtn.textContent = 'Like';
       likeBtn.setAttribute('aria-label', 'Like this post');
       likeBtn.onclick = (e) => { e.stopPropagation(); likePost(id); };
       card.querySelector('.post-content').appendChild(likeBtn);

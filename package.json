@@ -1,7 +1,7 @@
 {
   "name": "aisite",
   "version": "1.0.0",
-  "description": "Sam C Barth — RevOps, AI & CRM Strategy. Static site for GitHub Pages.",
+  "description": "Sam C Barth - RevOps, AI & CRM Strategy. Static site for GitHub Pages.",
   "private": true,
   "scripts": {
     "seo": "node tools/generate-seo.js",

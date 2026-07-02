@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * generate-seo.js — regenerates SEO artifacts from the single source of truth
+ * generate-seo.js - regenerates SEO artifacts from the single source of truth
  * (posts.js): the JSON-LD block inside index.html, sitemap.xml, and feed.xml.
  *
  * Usage:  node tools/generate-seo.js [targetDir]
@@ -54,7 +54,7 @@ const jsonLd = {
       '@type': 'Blog',
       '@id': SITE + '#blog',
       url: SITE,
-      name: 'Sam C Barth — Latest Updates',
+      name: 'Sam C Barth - Latest Updates',
       author: { '@id': SITE + '#person' },
       blogPost: POST_ORDER.map((id) => {
         const p = POSTS[id];
@@ -131,7 +131,7 @@ const items = POST_ORDER.map((id) => {
 const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
+    <title>Sam C Barth - RevOps, AI &amp; CRM Strategy</title>
     <link>${SITE}</link>
     <atom:link href="${SITE}feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>

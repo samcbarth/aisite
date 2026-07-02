@@ -1,10 +1,10 @@
 ﻿/*
- * posts.js â€” single source of truth for post data.
+ * posts.js - single source of truth for post data.
  *
  * Loaded directly in the browser (populates window.POSTS / window.POST_ORDER)
  * and required by tools/generate-seo.js at build time so the sitemap, RSS feed,
  * and JSON-LD structured data are generated from the same content. Add new posts
- * here only â€” everything downstream regenerates.
+ * here only - everything downstream regenerates.
  */
 const POSTS = {
   post30: {
@@ -298,7 +298,7 @@ const POSTS = {
 
       <p>That is what makes this interesting to me. SpaceX has earned the benefit of the doubt by actually shipping. It is not some empty brand. It has real momentum, and it has real business underneath it. That is why people take it seriously in the first place.</p>
 
-      <p>But the risk I want people to keep in mind is this: a lot of shareholder money is getting used to cover one manâ€™s debts and one manâ€™s bigger valuation story. The xAI connection is part of that. That is where a lot of the shareholder money is coming from, at least in the way Elon appears to be categorizing the whole ecosystem. Whether the tools end up being legitimate or not is one thing. The bigger point is that the whole structure is getting bundled together to support the trillion-dollar narrative.</p>
+      <p>But the risk I want people to keep in mind is this: a lot of shareholder money is getting used to cover one man's debts and one man's bigger valuation story. The xAI connection is part of that. That is where a lot of the shareholder money is coming from, at least in the way Elon appears to be categorizing the whole ecosystem. Whether the tools end up being legitimate or not is one thing. The bigger point is that the whole structure is getting bundled together to support the trillion-dollar narrative.</p>
 
       <p>Once a company like this goes public, the story changes. It is not just private-market belief anymore. It is shareholder pressure, public scrutiny, and a much louder expectation that the company keeps performing no matter what the market mood looks like. That is a big shift. It makes everything more volatile if the valuation story slips.</p>
 
@@ -468,13 +468,11 @@ const POSTS = {
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
-    // TODO: swap for your real short-video CDN URL (mp4/webm).
-    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
     poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Dell's stock had its best single day ever on Thursday â€” up 32%. The reason: AI server revenue.</p>
+      <p>Dell's stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue.</p>
       <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
-      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer â€” Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
+      <p>For the past two years, a lot of the AI conversation in business has been about the tool layer - Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
       <p>For RevOps and GTM teams, this matters more than it might seem on the surface. If your competitors are building AI infrastructure at this pace, the operational gap between teams running AI-native processes and teams still doing things manually is going to widen faster than most people expect.</p>
       <p>The window for getting ahead of this is still open. It won't be indefinitely.</p>
     `
@@ -490,21 +488,21 @@ const POSTS = {
       <p>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
       <p>That's a significant number. And it's an interesting counterpoint to the prevailing narrative that AI is purely a headcount reduction play.</p>
       <p>What Samsung is essentially saying is: the people who build and maintain the chips that power AI create enough value to warrant a meaningful share of the upside. That's a different model than "agents in, people out." It's closer to "AI creates value, and here's how we distribute it."</p>
-      <p>For RevOps leaders thinking about their own organizations â€” this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
+      <p>For RevOps leaders thinking about their own organizations - this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
       <p>AI creates value. The question of who captures it is going to define a lot of organizational dynamics over the next decade. Samsung just put a number on one answer.</p>
     `
   },
   post9: {
     date: 'May 22, 2026',
     iso: '2026-05-22',
-    title: "AI is making cybersecurity harder â€” and that's a GTM problem too",
+    title: "AI is making cybersecurity harder - and that's a GTM problem too",
     category: 'AI & Automation',
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered â€” on both sides of the equation.</p>
+      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on both sides of the equation.</p>
       <p>That means the attack surface is expanding faster than most security teams can respond to it.</p>
-      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation â€” not just IT.</p>
+      <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation - not just IT.</p>
       <p>The practical takeaway isn't to panic. It's to ask your IT and security counterparts a straightforward question: are we auditing the integrations in our GTM stack the same way we audit financial systems? Most of the time, the answer is no. Those integrations are where your most sensitive commercial data moves, and they're often the least scrutinized.</p>
       <p>As AI accelerates both sides of the security equation, that gap is worth closing before someone else finds it first.</p>
     `
@@ -516,8 +514,6 @@ const POSTS = {
     category: 'AI & Automation',
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
-    // TODO: swap for your real short-video CDN URL (mp4/webm). `poster` shows instantly; the clip only loads when scrolled into view.
-    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
     poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've been testing Claude, Claude Co-Work, and Claude Dispatch to see how much of my own workload I can actually hand off. The answer is: some of it, but not the parts that depend on memory, state, or judgment.</p>
@@ -609,7 +605,6 @@ if (typeof window !== 'undefined') {
   window.POSTS = POSTS;
   window.POST_ORDER = POST_ORDER;
 }
-
 
 
 
