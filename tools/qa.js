@@ -126,6 +126,19 @@ function checkAssets() {
 }
 
 function checkImages() {
+  const home = read(path.join(dist, 'index.html'));
+  const homeThumbs = new Map();
+  for (const match of home.matchAll(/<img\b([^>]*class="post-thumb"[^>]*)>/g)) {
+    const src = (match[1].match(/src="([^"]*)"/) || [])[1] || '';
+    const alt = (match[1].match(/alt="([^"]*)"/) || [])[1];
+    if (!src) fail('blank homepage thumbnail src');
+    if (alt === undefined || alt.trim().length < 12) fail(`weak homepage thumbnail alt: ${src}`);
+    homeThumbs.set(src, (homeThumbs.get(src) || 0) + 1);
+  }
+  for (const [src, count] of homeThumbs.entries()) {
+    if (src && count > 1) fail(`duplicate homepage thumbnail: ${src}`);
+  }
+
   for (const file of walk(path.join(dist, 'posts'), item => item.endsWith('index.html'))) {
     const html = read(file);
     const counts = new Map();
