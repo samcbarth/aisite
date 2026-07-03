@@ -20,6 +20,8 @@ const esc = (s) => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&apos;');
 const stripHtml = (html) => html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+const toSlug = (title) => title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const postUrl = (post) => SITE + 'posts/' + toSlug(post.title) + '/';
 const now = new Date();
 
 // ── JSON-LD (Person + WebSite + Blog with each post) ──────────────
@@ -62,7 +64,7 @@ const jsonLd = {
           '@type': 'BlogPosting',
           headline: p.title,
           datePublished: p.iso,
-          url: SITE + '#' + id,
+          url: postUrl(p),
           author: { '@id': SITE + '#person' },
           articleSection: p.category,
           description: stripHtml(p.body).slice(0, 200)
@@ -83,32 +85,30 @@ html = html.replace(marker, '<!-- JSONLD:START -->\n  ' + ldScript + '\n  <!-- J
 fs.writeFileSync(indexPath, html);
 
 // ── sitemap.xml ───────────────────────────────────────────────────
+const staticUrls = [
+  { loc: SITE, changefreq: 'weekly', priority: '1.0' },
+  { loc: SITE + 'premium.html', changefreq: 'monthly', priority: '0.6' },
+  { loc: SITE + 'start-here.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: SITE + 'resources.html', changefreq: 'monthly', priority: '0.7' }
+];
+const sitemapEntries = staticUrls.map((item) => `  <url>
+    <loc>${esc(item.loc)}</loc>
+    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
+    <changefreq>${item.changefreq}</changefreq>
+    <priority>${item.priority}</priority>
+  </url>`).concat(POST_ORDER.map((id) => {
+  const p = POSTS[id];
+  return `  <url>
+    <loc>${esc(postUrl(p))}</loc>
+    <lastmod>${esc(p.iso)}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+})).join('\n');
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${SITE}</loc>
-    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${SITE}premium.html</loc>
-    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>${SITE}start-here.html</loc>
-    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>${SITE}resources.html</loc>
-    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+${sitemapEntries}
 </urlset>
 `;
 fs.writeFileSync(path.join(targetDir, 'sitemap.xml'), sitemap);
@@ -116,7 +116,7 @@ fs.writeFileSync(path.join(targetDir, 'sitemap.xml'), sitemap);
 // ── feed.xml (RSS 2.0) ────────────────────────────────────────────
 const items = POST_ORDER.map((id) => {
   const p = POSTS[id];
-  const link = SITE + '#' + id;
+  const link = postUrl(p);
   const pub = new Date(p.iso + 'T12:00:00Z').toUTCString();
   return `    <item>
       <title>${esc(p.title)}</title>

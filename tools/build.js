@@ -260,9 +260,29 @@ function copyRecursive(src, dest) {
       sourceUrl: 'https://www.spacex.com/mission'
     },
     costcoValue: {
-      text: 'We have one mission, to sell top-quality merchandise to our members at the lowest possible prices.',
-      source: 'Costco Investor Relations',
-      sourceUrl: 'https://investor.costco.com/news/news-details/2000/Costco-Wholesale-Opens-Two-Warehouses-in-the-State-of-Texas-09-20-2000/default.aspx'
+      text: 'Costco Gas Stations offer consistently low, member-exclusive prices.',
+      source: 'Costco',
+      sourceUrl: 'https://www.costco.com/f/-/my-life-fuel-costco-gas-stations'
+    },
+    costcoOperating: {
+      text: 'Keep costs down and pass the savings on to our members',
+      source: 'Fox Business',
+      sourceUrl: 'https://www.foxbusiness.com/retail/history-costco'
+    },
+    rackhamTrust: {
+      text: 'Trust is what makes business happen',
+      source: 'Trusted Advisor',
+      sourceUrl: 'https://trustedadvisor.com/trustmatters/neil-rackham-on-trust-in-professional-selling-trust-quotes-5'
+    },
+    ibmMemory: {
+      text: 'Short-term memory enables an AI agent to remember recent inputs',
+      source: 'IBM',
+      sourceUrl: 'https://www.ibm.com/think/topics/ai-agent-memory'
+    },
+    databricksMemory: {
+      text: 'memory scaling becomes a distinct and complementary axis',
+      source: 'Databricks',
+      sourceUrl: 'https://www.databricks.com/blog/memory-scaling-ai-agents'
     },
     cookUnavoidable: {
       text: 'price increases for some Apple products are unavoidable',
@@ -333,9 +353,12 @@ function copyRecursive(src, dest) {
     post16: { after: 3, quotes: [makeQuote('Community view', QUOTE_LIBRARY.bradCommunity), makeQuote('Reality check', QUOTE_LIBRARY.nadellaWater)] },
     post17: { after: 3, quotes: [makeQuote('Future view', QUOTE_LIBRARY.muskFuture), makeQuote('Buildout view', QUOTE_LIBRARY.huangInfra)] },
     post12: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Operator view', QUOTE_LIBRARY.benioffAgentic)] },
+    post11: { after: 3, quotes: [makeQuote('Trust view', QUOTE_LIBRARY.rackhamTrust), makeQuote('Enterprise view', QUOTE_LIBRARY.benioffTrust)] },
+    post10: { after: 3, quotes: [makeQuote('Costco view', QUOTE_LIBRARY.costcoValue), makeQuote('Operating view', QUOTE_LIBRARY.costcoOperating)] },
     post7: { after: 3, quotes: [makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst), makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra)] },
     post8: { after: 3, quotes: [makeQuote('Productivity view', QUOTE_LIBRARY.andrewElectricity), makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst)] },
     post9: { after: 3, quotes: [makeQuote('Defender view', QUOTE_LIBRARY.kurtzAgents), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
+    post6: { after: 3, quotes: [makeQuote('Memory view', QUOTE_LIBRARY.ibmMemory), makeQuote('Systems view', QUOTE_LIBRARY.databricksMemory)] },
     post5: { after: 2, quotes: [makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
     post4: { after: 2, quotes: [makeQuote('Agentic view', QUOTE_LIBRARY.benioffAgentic), makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection)] },
     post1: { after: 2, quotes: [makeQuote('Connection view', QUOTE_LIBRARY.yaminiDisconnection), makeQuote('Customer view', QUOTE_LIBRARY.dharmeshProblems)] },
