@@ -36,7 +36,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p><a href="https://people.com/apple-may-raise-prices-as-ai-boom-makes-key-components-more-expensive-12003187" target="_blank" rel="noopener noreferrer">People reported</a> that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause.</p>
+      <p><a href="https://www.aljazeera.com/news/2026/6/18/apple-ceo-warns-price-rises-unavoidable-amid-ai-boom" target="_blank" rel="noopener noreferrer">Al Jazeera reported</a> that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause.</p>
 
       <p>I think this is where the AI boom stops being abstract. People like to talk about models, launches, and data centers. Fine. But the cost pressure does not stay inside those conversations forever. It eventually shows up in the products people actually buy.</p>
 
@@ -60,7 +60,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p><a href="https://www.wsj.com/tech/why-the-memory-crunch-is-almost-impossible-to-solve-4023cb40" target="_blank" rel="noopener noreferrer">The Wall Street Journal reported</a> that the memory crunch may be almost impossible to solve anytime soon. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story.</p>
+      <p><a href="https://www.euronews.com/business/2026/06/18/apple-price-rises-are-unavoidable-ceo-warns-as-ai-chip-costs-surge" target="_blank" rel="noopener noreferrer">Euronews reported</a> that the AI-driven memory crunch is already pushing hardware costs higher. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story.</p>
 
       <p>I think this is the real pressure point. Everyone wants to focus on the model demos and the launch headlines, but the actual choke point is physical supply. Memory is one of the things that makes the whole stack work.</p>
 
@@ -131,7 +131,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p><a href="https://www.axios.com/2026/06/10/apollo-anthropic-blackstone-broadcom" target="_blank" rel="noopener noreferrer">Axios reported</a> that Apollo and Blackstone are leading a $35 billion debt deal to help finance Anthropic's compute. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure.</p>
+      <p><a href="https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai" target="_blank" rel="noopener noreferrer">Apollo announced</a> a $35 billion capital solution with Blackstone and Broadcom tied to AI compute infrastructure. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure.</p>
 
       <p>I think that is the part worth paying attention to. Once compute starts getting funded through huge debt structures, special purpose vehicles, and long-term leasing arrangements, the market is telling you that AI is not being treated like a normal software cycle anymore. It is being treated like something closer to railroads, telecom, cloud, or energy.</p>
 
@@ -151,7 +151,7 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p><a href="https://www.marketwatch.com/story/amazon-lines-up-another-17-5-billion-for-ai-as-its-debt-pile-grows-further-5f16be9c" target="_blank" rel="noopener noreferrer">MarketWatch reported</a> that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle.</p>
+      <p><a href="https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle.</p>
 
       <p>Amazon has a real business underneath this. AWS is not some speculative science project. It is one of the strongest cloud businesses in the world. But even for Amazon, the scale of this spending starts to change the conversation. When a company that large has to keep raising more capital to support AI infrastructure, the market has to ask what the return profile actually looks like.</p>
 
@@ -211,7 +211,7 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p><a href="https://futurumgroup.com/insights/can-hubspots-agentic-ai-bet-disrupt-enterprise-crms-old-guard/" target="_blank" rel="noopener noreferrer">Futurum's analysis</a> of HubSpot's agentic AI push gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else?</p>
+      <p><a href="https://www.fastslowmotion.com/agentic-ai-hubspot-crm-guide/" target="_blank" rel="noopener noreferrer">Fast Slow Motion's guide</a> to agentic AI in HubSpot gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else?</p>
 
       <p>That is why I think HubSpot's AI direction matters. If AI agents are going to be useful, they need context. They need to know the customer, the lifecycle stage, the deal history, the support issues, the last conversation, and the next best action. A generic chatbot cannot do that well. A CRM with clean data and good workflow design actually can.</p>
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sam C Barth — RevOps, AI &amp; CRM Strategy</title>
+    <title>Sam C Barth - RevOps, AI &amp; CRM Strategy</title>
     <link>https://samcbarth.github.io/aisite/</link>
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 00:13:47 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 02:22:55 GMT</lastBuildDate>
     <item>
       <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
       <link>https://samcbarth.github.io/aisite/#post14</link>
@@ -29,7 +29,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post29</guid>
       <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>People reported that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause. I think this is where the AI boom stops being abstract. People l</description>
+      <description>Al Jazeera reported that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause. I think this is where the AI boom stops being abstract. Peop</description>
     </item>
     <item>
       <title>The memory crunch is the part of the AI boom people are ignoring</title>
@@ -37,7 +37,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post28</guid>
       <pubDate>Wed, 17 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>The Wall Street Journal reported that the memory crunch may be almost impossible to solve anytime soon. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story. I think this is the real pressure point. Everyone wants to focus </description>
+      <description>Euronews reported that the AI-driven memory crunch is already pushing hardware costs higher. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story. I think this is the real pressure point. Everyone wants to focus on the mode</description>
     </item>
     <item>
       <title>The pushback against data centers is the real AI story now</title>
@@ -61,7 +61,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post25</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>Axios reported that Apollo and Blackstone are leading a $35 billion debt deal to help finance Anthropic&apos;s compute. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure. I think that is the part worth paying</description>
+      <description>Apollo announced a $35 billion capital solution with Blackstone and Broadcom tied to AI compute infrastructure. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure. I think that is the part worth paying at</description>
     </item>
     <item>
       <title>Amazon&apos;s new AI loan makes the spending story impossible to ignore</title>
@@ -69,7 +69,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post24</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>MarketWatch reported that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle. Amazon has a real business underneath this. AWS is not some speculati</description>
+      <description>TechCrunch reported that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle. Amazon has a real business underneath this. AWS is not some speculativ</description>
     </item>
     <item>
       <title>Texas telling data centers to pay their own way is where this gets real</title>
@@ -93,7 +93,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post21</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
       <category>HubSpot</category>
-      <description>Futurum&apos;s analysis of HubSpot&apos;s agentic AI push gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else? That is why I think HubSpot&apos;s A</description>
+      <description>Fast Slow Motion&apos;s guide to agentic AI in HubSpot gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else? That is why I think HubSpot&apos;s</description>
     </item>
     <item>
       <title>Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead</title>
@@ -181,7 +181,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post7</guid>
       <pubDate>Mon, 25 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>Dell&apos;s stock had its best single day ever on Thursday — up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That&apos;s a materially d</description>
+      <description>Dell&apos;s stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That&apos;s a materially d</description>
     </item>
     <item>
       <title>Samsung just promised $400K bonuses. That&apos;s an AI story too.</title>
@@ -192,7 +192,7 @@
       <description>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. A</description>
     </item>
     <item>
-      <title>AI is making cybersecurity harder — and that&apos;s a GTM problem too</title>
+      <title>AI is making cybersecurity harder - and that&apos;s a GTM problem too</title>
       <link>https://samcbarth.github.io/aisite/#post9</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/#post9</guid>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>

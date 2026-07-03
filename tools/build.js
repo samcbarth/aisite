@@ -170,10 +170,18 @@ function copyRecursive(src, dest) {
     return '../../' + imgUrl.replace(/^\.?\//, '');
   }
   function syncHomepageCards(sourceHtml) {
-    return sourceHtml.replace(/(<a class="post-card"[\s\S]*?data-id="([^"]+)"[\s\S]*?<img class="post-thumb" )src="[^"]*" alt="[^"]*"/g, (match, prefix, id) => {
+    return sourceHtml.replace(/<a class="post-card"[\s\S]*?<\/a>/g, (cardHtml) => {
+      const id = (cardHtml.match(/data-id="([^"]+)"/) || [])[1];
       const post = POSTS[id];
-      if (!post || !post.image) return match;
-      return `${prefix}src="${makeCardImage(post.image)}" alt="${escAttr(post.title)} thumbnail"`;
+      if (!post) return cardHtml;
+      const excerpt = makeExcerpt(post.body);
+      return cardHtml
+        .replace(/(<img class="post-thumb"[^>]*?)src="[^"]*" alt="[^"]*"/, `$1src="${makeCardImage(post.image)}" alt="${escAttr(post.title)} thumbnail"`)
+        .replace(/<span class="post-date">[\s\S]*?<\/span>/, `<span class="post-date">${escAttr(post.date)}</span>`)
+        .replace(/<span class="post-category">[\s\S]*?<\/span>/, `<span class="post-category">${escAttr(post.category)}</span>`)
+        .replace(/<span class="post-tag [^"]*">[\s\S]*?<\/span>/, `<span class="post-tag ${escAttr(post.tagClass)}">${escAttr(post.tag)}</span>`)
+        .replace(/<div class="post-title">[\s\S]*?<\/div>/, `<div class="post-title">${escAttr(post.title)}</div>`)
+        .replace(/<div class="post-excerpt">[\s\S]*?<\/div>/, `<div class="post-excerpt">${escAttr(excerpt)}</div>`);
     });
   }
   const INLINE_MEDIA = {
@@ -258,8 +266,8 @@ function copyRecursive(src, dest) {
     },
     cookUnavoidable: {
       text: 'price increases for some Apple products are unavoidable',
-      source: 'People',
-      sourceUrl: 'https://people.com/apple-may-raise-prices-as-ai-boom-makes-key-components-more-expensive-12003187'
+      source: 'Al Jazeera',
+      sourceUrl: 'https://www.aljazeera.com/news/2026/6/18/apple-ceo-warns-price-rises-unavoidable-amid-ai-boom'
     },
     andrewElectricity: {
       text: 'AI is the new electricity.',
@@ -273,8 +281,8 @@ function copyRecursive(src, dest) {
     },
     bradCommunity: {
       text: 'Progress must go hand in hand with partnership.',
-      source: 'Brad Smith on LinkedIn',
-      sourceUrl: 'https://www.linkedin.com/posts/bradsmi_today-we-areannouncing-microsoftsfivepoint-activity-7416834807470649344-FhTt'
+      source: 'Interesting Engineering',
+      sourceUrl: 'https://interestingengineering.com/culture/microsoft-ai-infrastructure-water-power'
     },
     kurtzAgents: {
       text: "The humans get elevated into a role where they're now controlling a fleet of agents.",

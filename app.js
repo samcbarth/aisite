@@ -12,6 +12,14 @@
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
+  function makeCardImage(imgUrl) {
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=576&h=576').replace(/q=\d+/, 'q=85');
+  }
+  function makeExcerpt(html, maxLen) {
+    const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const limit = maxLen || 160;
+    return text.length > limit ? text.slice(0, limit - 3) + '...' : text;
+  }
   let currentPostId = null;
   let activeFilter = null;
   let searchQuery = '';
@@ -235,12 +243,28 @@
     document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
   }
 
-  function refreshPostThumbs() {
+  function refreshPostCards() {
     document.querySelectorAll('.post-card').forEach(card => {
       const img = card.querySelector('.post-thumb');
       const post = posts[card.dataset.id];
-      if (!img || !post) return;
-      img.src = post.image;
+      if (!post) return;
+      if (img) {
+        img.src = makeCardImage(post.image);
+        img.alt = post.title + ' thumbnail';
+      }
+      const date = card.querySelector('.post-date');
+      const category = card.querySelector('.post-category');
+      const tag = card.querySelector('.post-tag');
+      const title = card.querySelector('.post-title');
+      const excerpt = card.querySelector('.post-excerpt');
+      if (date) date.textContent = post.date;
+      if (category) category.textContent = post.category;
+      if (tag) {
+        tag.textContent = post.tag;
+        tag.className = 'post-tag ' + post.tagClass;
+      }
+      if (title) title.textContent = post.title;
+      if (excerpt) excerpt.textContent = makeExcerpt(post.body, 150);
     });
   }
 
@@ -249,7 +273,7 @@
     const section = document.getElementById('featured-section');
     if (!featuredId || !section) return;
     const p = posts[featuredId];
-    const excerpt = p.body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 160) + '...';
+    const excerpt = makeExcerpt(p.body, 160);
     const imgSrc = p.image;
 
     const card = document.createElement('a');
@@ -544,7 +568,7 @@
       tt.setAttribute('aria-pressed', 'true');
     }
 
-    refreshPostThumbs();
+    refreshPostCards();
     renderFeatured();
     renderSponsor();
     setupAdSlots();
