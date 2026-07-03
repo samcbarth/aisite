@@ -22,7 +22,6 @@ const POSTS = {
 
       <p>SpaceX is still a good company. I already said that in the IPO piece, and I mean it. But a good company can still get folded into a much bigger valuation story that asks retirement money to carry some of the same volatility as the people chasing the upside.</p>
 
-      
       <p>That is why I do not think this should be framed as a clean stock story. It is a structure story. It is about who ends up carrying the risk when the narrative gets big enough that it stops feeling like one company and starts feeling like an entire ecosystem.</p>
 
       <p>My view is simple. The company can be real and the structure can still be too aggressive. Those are not contradictions.</p>
@@ -43,7 +42,10 @@ const POSTS = {
 
       <p>Apple can handle more pressure than most companies. It has the scale, the supply chain, and the pricing power to absorb a lot. But even Apple has limits if component costs keep climbing and the whole market keeps pulling the same parts in the same direction.</p>
 
-      
+      <p>This is also where the AI story starts to become easier for normal buyers to understand. Most people are not going to care about token costs, data center financing, or memory allocation until it changes the price of a phone, laptop, or subscription they already use. When that happens, the conversation gets a lot less theoretical.</p>
+
+      <p>I do not think that means Apple is in trouble. It means Apple is the kind of company where pressure shows up clearly because the business is so visible. If Apple has to talk about price increases, smaller companies with less leverage are probably feeling the same thing with fewer ways to absorb it.</p>
+
       <p>That is why I think this story matters. It is not just about Apple. It is about the AI buildout starting to move into consumer pricing and product decisions. Once that happens, people feel the boom directly.</p>
 
       <p>If prices go up, that is not a side effect. That is the signal.</p>
@@ -64,7 +66,10 @@ const POSTS = {
 
       <p>If the AI buyers are willing to pay more for the scarce parts, everybody else gets squeezed. That includes consumer electronics, cloud customers, and anyone else trying to buy the same supply.</p>
 
-      
+      <p>That is why this story feels more practical than a lot of AI coverage. It is not about whether the demo looks impressive. It is about whether the supply chain can keep up with the promises being made. When memory gets scarce, the cost of ambition starts moving through the whole market.</p>
+
+      <p>For operators, the lesson is pretty simple. If a tool becomes more expensive because the underlying infrastructure is constrained, you need to know where that cost lands. Does it hit your software bill, your hardware refresh cycle, your pricing, or your margin? Those questions matter more than another launch announcement.</p>
+
       <p>That is why this feels less like a normal tech cycle and more like a real supply shock. The companies that planned for actual demand are going to handle it better. The ones that treated this like a temporary rush are going to feel it first.</p>
 
       <p>This is the part of the boom that tells you who really has leverage.</p>
@@ -85,7 +90,10 @@ const POSTS = {
 
       <p>They are looking at the actual tradeoff: power strain, water use, noise, traffic, land pressure, and a lot of vague promises that do not always survive contact with reality. If the project is not explained clearly, trust drops fast.</p>
 
-      
+      <p>That is the part I think companies keep underestimating. The financial model might work on paper, but the community model has to work too. If people feel like the project was hidden from them, or explained only after the important decisions were already made, the relationship starts broken.</p>
+
+      <p>There is also a basic business lesson here. Speed is useful until it creates resistance that slows everything down later. The cleaner path is usually more direct: tell people what is being built, explain the burden honestly, show how the community benefits, and make the project easier to live next to.</p>
+
       <p>I have heard enough stories about NDAs and fuzzy early conversations to know why people are fed up. If you want approval, be direct about what is being built and what it costs the community.</p>
 
       <p>The companies that figure out how to be cleaner, clearer, and less evasive will have a real advantage. Not because it sounds good. Because they will keep getting approved.</p>
@@ -106,7 +114,10 @@ const POSTS = {
 
       <p>Once the IPO window turns into a stampede, timing matters a lot more. Narrative fatigue starts to matter too. The market can only absorb so much promise before it starts asking harder questions.</p>
 
-      
+      <p>This is where I think people need to separate admiration from underwriting. You can admire the ambition and still admit the price already assumes a lot of things go right. The business can be impressive, the founders can be talented, and the stock can still be too crowded if everyone is buying the same future at once.</p>
+
+      <p>There is also a portfolio reality here. When enough of these companies become public, the exposure does not stay neatly contained to people who choose the risk. It starts showing up through indexes, funds, retirement accounts, and the broader market story. That makes the hype cycle feel a lot less abstract.</p>
+
       <p>The risk is not just valuation. It is what happens when everyone tries to hit the market at peak confidence and assumes the window stays open forever. That can work. It can also get ugly very fast.</p>
 
       <p>This feels less like healthy capital formation and more like too many giant promises arriving at once.</p>
@@ -441,6 +452,10 @@ const POSTS = {
 
       <p>This is why resale models need tighter operations than people assume. If you are holding collectibles, antiques, or anything emotionally important to the owner, the process has to be clean from the start. If it is not, the damage is not just financial.</p>
 
+      <p>The basic operating model has to answer some unglamorous questions. Who owns the item at each step? What condition was it received in? What happens during a store transition? How does the customer prove what was handed over? If the business cannot answer those questions clearly, the brand is taking on more risk than it realizes.</p>
+
+      <p>I think a lot of companies treat process like paperwork until something breaks. Then suddenly the paperwork is the business. It is the proof, the customer experience, and the thing that decides whether a dispute turns into a small issue or a reputation problem.</p>
+
       <p>The bigger lesson is that trust is an operational asset. Once it breaks, it is hard to buy it back.</p>
     `
   },
@@ -458,6 +473,10 @@ const POSTS = {
 
       <p>What makes this interesting is the discipline. Costco is not trying to do everything. It is using one strong business to support another one that pulls members back into the system. That is a much better move than chasing random adjacencies because they look good in a slide deck.</p>
 
+      <p>The reason this works is that it is tied to behavior the company already understands. Costco knows people will drive for value, build routines around the warehouse, and renew when the membership keeps paying for itself. Gas supports that loop instead of distracting from it.</p>
+
+      <p>That is the difference between a smart adjacency and a random expansion. A smart adjacency makes the original business stronger. It gives customers another reason to stay in the system. A random expansion just adds complexity and hopes the brand is strong enough to carry it.</p>
+
       <p>The lesson for operators is simple. If the core business is strong enough, it can subsidize a move into something adjacent and make the whole model harder to copy.</p>
     `
   },
@@ -473,6 +492,8 @@ const POSTS = {
       <p>Dell's stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue.</p>
       <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
       <p>For the past two years, a lot of the AI conversation in business has been about the tool layer - Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
+      <p>That is why I think this is a cleaner signal than most AI headlines. Revenue from servers is not the same thing as a launch video. It means buyers are making budget decisions and putting real money behind capacity. That does not prove every AI use case will work, but it does prove the infrastructure layer is not imaginary.</p>
+      <p>The question now is what companies do with that capacity. Buying hardware is one thing. Turning that hardware into better workflows, faster service, better reporting, or more useful products is another. The winners are probably going to be the teams that connect the infrastructure spend back to actual operating outcomes.</p>
       <p>For RevOps and GTM teams, this matters more than it might seem on the surface. If your competitors are building AI infrastructure at this pace, the operational gap between teams running AI-native processes and teams still doing things manually is going to widen faster than most people expect.</p>
       <p>The window for getting ahead of this is still open. It won't be indefinitely.</p>
     `
@@ -522,6 +543,10 @@ const POSTS = {
 
       <p>The practical fix is not a bigger prompt. It is a better operating setup: break the work into smaller steps, store the context outside the model, validate each step, and keep the process simple enough that it does not drift.</p>
 
+      <p>This is the thing that gets missed in a lot of AI advice. People keep acting like the answer is one perfect prompt. Sometimes the prompt matters, but most of the time the real issue is that the work is not organized well enough for the model to help. If the handoff is vague, the output will be vague too.</p>
+
+      <p>I have found that AI works best when it is treated like a capable teammate with a very short memory. Give it a narrow job, a clean input, a clear definition of done, and a review step. Ask it to own the whole messy process and it starts making assumptions you may not catch until later.</p>
+
       <p>The lesson is straightforward. AI is useful when the task is bounded. It gets messy when people ask it to hold the whole workflow in its head.</p>
     `
   },
@@ -536,6 +561,8 @@ const POSTS = {
       <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
       <p>HubSpot's recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
       <p>The interesting part isn't just automation. It's that the AI can understand customer history, deal movement, support conversations, and business processes all in one place.</p>
+      <p>That is the piece that makes this different from generic AI. A chatbot sitting outside the business can be helpful, but it does not know the real operating context. It does not know which lifecycle stage matters, which deal is stuck, which account has a support issue, or which rep owns the next step unless that data is organized somewhere.</p>
+      <p>CRM context is what turns AI from a novelty into something a team can actually use. If the system knows the customer record, the deal history, and the workflow rules, then the output can be more specific. If the CRM is messy, the AI just becomes a faster way to expose that mess.</p>
       <p>The companies that organize their CRM and operational data well are probably going to get disproportionately more value from AI over the next few years.</p>
       <p>Clean systems and good process design are becoming even more important, not less.</p>
     `
@@ -550,6 +577,8 @@ const POSTS = {
     body: `
       <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
       <p>HubSpot is taking a different approach. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
+      <p>That difference matters because most companies do not need a dramatic AI story. They need fewer missed follow-ups, cleaner handoffs, better pipeline notes, and a faster way to understand what is happening with customers. That is not as flashy as replacing whole teams, but it is a lot more useful for the average business.</p>
+      <p>The risk for both platforms is the same. If the data underneath the agent is bad, the agent will make bad work feel automated. That is why the implementation matters so much. AI inside a CRM is only as good as the record quality, process design, and governance around it.</p>
       <p>That distinction matters. One model treats AI as a replacement. The other treats it as an upgrade to the system your team already runs on. For most SMBs and mid-market companies, HubSpot's version is the one that actually makes sense.</p>
     `
   },
@@ -563,6 +592,8 @@ const POSTS = {
     body: `
       <p>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
       <p>For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understand the business. Knowing how to configure, prompt, and govern these systems is a real skill now.</p>
+      <p>The mistake I see in a lot of AI conversations is that people talk about the tool before they talk about the process. HubSpot can add better automation, better agents, and better recommendations, but those features only help if the team has clear lifecycle stages, clean properties, and a real definition of what should happen next.</p>
+      <p>That is why this is a RevOps story more than a software story. AI in the CRM changes who can move faster, but it also makes bad operations louder. If your pipeline is messy, the AI will not magically make it strategic. It will just move the mess faster.</p>
       <p>The teams that will win aren't the ones waiting to see what happens. They're the ones building the right foundations today.</p>
     `
   },
@@ -576,6 +607,9 @@ const POSTS = {
     body: `
       <p>I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
       <p>The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lost in documentation.</p>
+      <p>The important part is not that the site exists. The important part is how much faster the gap has gotten between having an idea and putting something real in front of people. That changes the way small projects, experiments, and personal brands can move.</p>
+      <p>I still had to review the work. I still had to decide what belonged, what sounded right, and what needed to be cleaned up. AI did not remove judgment. It compressed the build cycle so the judgment could happen on a real working site instead of a blank page.</p>
+      <p>That is the useful part for business teams too. You can test a page, a workflow, a report, or a small internal tool without turning it into a six-week project. The bar is still quality. The difference is that the first usable version can show up much faster.</p>
       <p>This is what I mean when I talk about AI changing the pace of building. It's not replacing engineers. It's giving everyone else a shot at shipping something.</p>
     `
   },
@@ -591,6 +625,8 @@ const POSTS = {
       <p>The answer is always the same: garbage in, garbage out. The best automation in the world can't fix a dirty database or a broken handoff process.</p>
       <p>Good RevOps starts with clean systems and clear ownership. The tools, the dashboards, the AI, all of it builds on that foundation.</p>
       <p>Marketing today needs innovative ideas, not stagnant strategies that have been used for decades. Things are changing all the time. Buyer behavior changes, the channels change, and the tools change. If the strategy does not keep up, the work starts to feel old fast.</p>
+      <p>The part people underestimate is that marketing ops is not just reporting after the fact. It shapes what the business can actually see. If attribution is messy, if campaigns are named inconsistently, or if lifecycle stages mean different things to different teams, leadership is making decisions through a foggy window.</p>
+      <p>That is why I care so much about the boring foundation. Clean naming, clear ownership, good handoffs, and useful dashboards are not busywork. They are what let the creative ideas actually turn into revenue instead of disappearing into disconnected activity.</p>
     `
   }
 };
@@ -605,6 +641,3 @@ if (typeof window !== 'undefined') {
   window.POSTS = POSTS;
   window.POST_ORDER = POST_ORDER;
 }
-
-
-
