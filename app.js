@@ -29,7 +29,7 @@
   let searchQuery = '';
   let lastFocused = null;
 
-  // ── Sponsor config ──────────────────────────────────────────────
+  // Sponsor config.
   // Fill this in to feature a sponsor; leave name empty to show the placeholder.
   const sponsor = {
     name: '',
@@ -38,7 +38,7 @@
     logo: ''
   };
 
-  // ── Likes config ────────────────────────────────────────────────────
+  // Likes config.
   // Setup (one time) - see google-apps-script.js for full instructions:
   //   1. Create a Google Sheet with a tab named "likes" (headers: post_id, likes)
   //   2. Extensions -> Apps Script -> paste google-apps-script.js -> Deploy as web app
@@ -67,7 +67,7 @@
     }
   }
 
-  // ── TradingView ticker: injected lazily (not render-blocking) ────
+  // TradingView ticker: injected lazily, not render-blocking.
   // The embed script is appended only when the ticker scrolls near the viewport,
   // keeping it off the critical path. Its container reserves height in CSS so the
   // injected iframe doesn't cause layout shift (CLS).
@@ -107,7 +107,7 @@
     obs.observe(wrap);
   }
 
-  // ── Lazy video infrastructure ───────────────────────────────────
+  // Lazy video infrastructure.
   // Native loading="lazy" does NOT apply to <video>, so an IntersectionObserver
   // loads + plays a clip only while it's on screen, and pauses it when it leaves.
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -168,7 +168,7 @@
     v.load();
   }
 
-  // ── Display ad slots: reveal placeholders on scroll (no third-party script) ──
+  // Display ad slots: reveal placeholders on scroll, no third-party script.
   function setupAdSlots() {
     const slots = document.querySelectorAll('.ad-slot');
     if (!slots.length) return;
@@ -328,7 +328,7 @@
       }).join('')}</div>`;
   }
 
-  // ── Like system (clap-style: every click bumps a shared global count) ──
+  // Like system: every click bumps a shared global count.
   // The count lives in Supabase so it's consistent and persistent across all
   // sessions. localStorage no longer gates whether you can like (clicks are
   // unlimited), it only remembers that this browser has liked at least once so
@@ -389,7 +389,7 @@
     }
   }
 
-  // ── Theme ───────────────────────────────────────────────────────
+  // Theme.
   function toggleTheme() {
     const isLight = document.body.classList.toggle('light-mode');
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
@@ -420,7 +420,7 @@
     }
   }
 
-  // ── Share ───────────────────────────────────────────────────────
+  // Share.
   const SITE_URL = 'https://samcbarth.github.io/aisite/';
   function currentShareUrl() {
     return currentPostId ? postUrl(currentPostId) : SITE_URL;
@@ -433,7 +433,7 @@
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
 
-  // ── Quote sharing ───────────────────────────────────────────────
+  // Quote sharing.
   let selectedQuote = '';
   function shareQuoteLinkedIn() {
     window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
@@ -444,7 +444,7 @@
     window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
 
-  // ── Newsletter ──────────────────────────────────────────────────
+  // Newsletter.
   function handleSubscribe(e) {
     e.preventDefault();
     document.getElementById('newsletter-note').textContent = 'Got it. Talk soon.';
@@ -453,7 +453,7 @@
     btn.textContent = 'Done'; btn.disabled = true;
   }
 
-  // ── Modal media ─────────────────────────────────────────────────
+  // Modal media.
   function clearModalVideo() {
     const media = document.getElementById('modal-media');
     const v = media && media.querySelector('video');
@@ -477,7 +477,7 @@
     }
   }
 
-  // ── Modal open/close with focus management + deep linking ────────
+  // Modal open/close with focus management and deep linking.
   function getFocusable(container) {
     return [...container.querySelectorAll('a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])')]
       .filter(el => el.offsetParent !== null);
@@ -548,7 +548,7 @@
     });
   }
 
-  // ── Central click delegation (replaces inline on* handlers) ──────
+  // Central click delegation replaces inline on* handlers.
   const actions = {
     'toggle-theme': toggleTheme,
     'open-post': (el) => openPost(el.dataset.id),
@@ -661,7 +661,7 @@
     });
   }
 
-  // ── Keyboard: Esc closes, arrows navigate, Tab is trapped in modal ──
+  // Keyboard: Esc closes, arrows navigate, Tab is trapped in modal.
   document.addEventListener('keydown', e => {
     const overlay = document.getElementById('modal-overlay');
     const open = overlay && overlay.classList.contains('open');
@@ -679,7 +679,7 @@
     }
   });
 
-  // ── Service worker registration (offline + asset caching) ────────
+  // Service worker registration for offline support and asset caching.
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('sw.js').catch(() => {});

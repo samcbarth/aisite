@@ -24,7 +24,7 @@ const toSlug = (title) => title.toLowerCase().replace(/['']/g, '').replace(/[^a-
 const postUrl = (post) => SITE + 'posts/' + toSlug(post.title) + '/';
 const now = new Date();
 
-// ── JSON-LD (Person + WebSite + Blog with each post) ──────────────
+// JSON-LD: Person, WebSite, and Blog with each post.
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -84,7 +84,7 @@ if (!marker.test(html)) throw new Error('JSONLD markers not found in ' + indexPa
 html = html.replace(marker, '<!-- JSONLD:START -->\n  ' + ldScript + '\n  <!-- JSONLD:END -->');
 fs.writeFileSync(indexPath, html);
 
-// ── sitemap.xml ───────────────────────────────────────────────────
+// sitemap.xml.
 const staticUrls = [
   { loc: SITE, changefreq: 'weekly', priority: '1.0' },
   { loc: SITE + 'premium.html', changefreq: 'monthly', priority: '0.6' },
@@ -113,7 +113,7 @@ ${sitemapEntries}
 `;
 fs.writeFileSync(path.join(targetDir, 'sitemap.xml'), sitemap);
 
-// ── feed.xml (RSS 2.0) ────────────────────────────────────────────
+// feed.xml: RSS 2.0.
 const items = POST_ORDER.map((id) => {
   const p = POSTS[id];
   const link = postUrl(p);
