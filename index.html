@@ -144,7 +144,7 @@
       padding: 0.45rem 0.8rem;
       font: inherit;
       font-size: 1rem;
-      cursor: pointer;
+      cursor: default;
       transition: color 0.15s, border-color 0.15s, background 0.15s;
     }
     .nav-action:hover { color: #fff; border-color: #555; }
@@ -784,7 +784,7 @@
       padding: 0;
       transition: color 0.15s;
     }
-    .card-like:hover, .card-like.liked { color: var(--pink); }
+    .card-like.liked { color: var(--pink); }
     .like-btn {
       padding: 0.5rem 1.1rem;
       background: transparent;
@@ -1236,7 +1236,7 @@
     body.light-mode .post-excerpt { color: #444; opacity: 1; }
     body.light-mode .post-count { color: #aaa; }
     body.light-mode .card-like { color: #ccc; }
-    body.light-mode .card-like:hover, body.light-mode .card-like.liked { color: var(--pink); }
+    body.light-mode .card-like.liked { color: var(--pink); }
     body.light-mode .no-results { color: #bbb; }
     body.light-mode .featured-card { background: #fff; }
     body.light-mode .featured-img { background: #e5e5e5; }
@@ -2276,7 +2276,7 @@
       <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com" required autocomplete="email">
       <button type="submit" class="newsletter-btn">Subscribe</button>
     </form>
-    <div class="newsletter-note" id="newsletter-note"></div>
+    <div class="newsletter-note" id="newsletter-note" role="status" aria-live="polite"></div>
 
     <div class="newsletter-tiers">
       <div class="tier">

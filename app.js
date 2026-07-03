@@ -12,6 +12,10 @@
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
+  function postUrl(id) {
+    const post = posts[id];
+    return post ? SITE_URL + 'posts/' + toSlug(post.title) + '/' : SITE_URL;
+  }
   function makeCardImage(imgUrl) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=576&h=576').replace(/q=\d+/, 'q=85');
   }
@@ -374,9 +378,7 @@
     const cardLike = document.querySelector(`.card-like[data-id="${id}"]`);
     if (cardLike) {
       cardLike.classList.toggle('liked', liked);
-      cardLike.textContent = 'Like' + (label ? ' ' + label : '');
-      cardLike.setAttribute('aria-label',
-        (count != null ? count + ' like' + (count === 1 ? '' : 's') + '. ' : '') + 'Like this post');
+      cardLike.textContent = 'Likes' + (label ? ' ' + label : '');
     }
     if (currentPostId === id) {
       const btn = document.getElementById('modal-like-btn');
@@ -396,12 +398,12 @@
     btn.setAttribute('aria-pressed', String(isLight));
   }
 
-  async function refreshSite() {
-    const btn = document.querySelector('[data-action="refresh-site"]');
-    if (btn) {
+  async function refreshSite(trigger) {
+    const buttons = document.querySelectorAll('[data-action="refresh-site"]');
+    buttons.forEach((btn) => {
       btn.disabled = true;
-      btn.textContent = 'Refreshing...';
-    }
+      btn.textContent = btn === trigger ? 'Refreshing...' : 'Refresh locked';
+    });
     try {
       sessionStorage.clear();
       if ('serviceWorker' in navigator) {
@@ -420,23 +422,26 @@
 
   // ── Share ───────────────────────────────────────────────────────
   const SITE_URL = 'https://samcbarth.github.io/aisite/';
+  function currentShareUrl() {
+    return currentPostId ? postUrl(currentPostId) : SITE_URL;
+  }
   function shareOnLinkedIn() {
-    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(SITE_URL), '_blank', 'noopener,width=600,height=600');
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
   function shareOnX() {
     const title = document.getElementById('modal-title').textContent;
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + encodeURIComponent(SITE_URL), '_blank', 'noopener,width=600,height=600');
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
 
   // ── Quote sharing ───────────────────────────────────────────────
   let selectedQuote = '';
   function shareQuoteLinkedIn() {
-    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(SITE_URL), '_blank', 'noopener,width=600,height=600');
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
   function shareQuoteX() {
     const title = document.getElementById('modal-title').textContent;
     const text = encodeURIComponent('"' + selectedQuote.substring(0, 200) + '" - ' + title + ' ');
-    window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + encodeURIComponent(SITE_URL), '_blank', 'noopener,width=600,height=600');
+    window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
 
   // ── Newsletter ──────────────────────────────────────────────────
@@ -579,12 +584,10 @@
       const card = document.querySelector(`[data-id="${id}"]`);
       if (!card) return;
       card.querySelector('.post-read-time').textContent = readingTime(posts[id].body) + ' min read';
-      const likeBtn = document.createElement('button');
+      const likeBtn = document.createElement('span');
       likeBtn.className = 'card-like' + (hasLiked(id) ? ' liked' : '');
       likeBtn.dataset.id = id;
-      likeBtn.textContent = 'Like';
-      likeBtn.setAttribute('aria-label', 'Like this post');
-      likeBtn.onclick = (e) => { e.stopPropagation(); likePost(id); };
+      likeBtn.textContent = 'Likes';
       card.querySelector('.post-content').appendChild(likeBtn);
     });
     buildFilters();
