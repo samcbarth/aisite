@@ -66,6 +66,9 @@ function checkPostData() {
     if (!post.body || post.body.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length < 150) {
       fail(`thin post body under 150 words: ${id}`);
     }
+    if (![...(post.body || '').matchAll(/href="https?:[^"]+"/g)].length) {
+      fail(`post missing direct body link: ${id}`);
+    }
   }
 
   const featured = POST_ORDER.filter(id => POSTS[id] && POSTS[id].featured);

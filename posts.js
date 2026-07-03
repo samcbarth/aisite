@@ -231,7 +231,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that is the market seeing something real or just chasing the trade.</p>
+      <p><a href="https://www.ft.com/content/6e15876d-1882-45e2-a13c-16a1327079d7" target="_blank" rel="noopener noreferrer">The Financial Times reported</a> that AI demand is driving a record wave of power and utility dealmaking. I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that is the market seeing something real or just chasing the trade.</p>
 
       <p>My honest read is that it is probably both. There is real demand behind this, and there is also a lot of hype layered on top of it. That is what makes it messy. Every new model launch, every new funding round, and every new warning gets treated like it is either the beginning of the future or the beginning of the end.</p>
 
@@ -251,7 +251,7 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>The interesting part of HubSpot's Customer Agent and Prospecting Agent announcement is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
+      <p>The interesting part of <a href="https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete" target="_blank" rel="noopener noreferrer">HubSpot's Customer Agent and Prospecting Agent announcement</a> is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
 
       <p>Instead of treating these like shiny add-ons, HubSpot is tying them to outcomes. That is a much cleaner story for teams that want to test AI without feeling like they are buying another seat-based promise they may or may not use.</p>
 
@@ -278,7 +278,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>HubSpot's Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it.</p>
+      <p><a href="https://www.hubspot.com/company-news/spring-2026-spotlight" target="_blank" rel="noopener noreferrer">HubSpot's Spring 2026 Spotlight</a> reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it.</p>
 
       <p>That is what I think makes this release more interesting than a normal product update. It is not just a feature dump. It is HubSpot leaning hard into context, and context is what separates real workflow value from generic AI output.</p>
 
@@ -305,7 +305,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation.</p>
+      <p>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation. The <a href="https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/Project%20Apex%20-%20Australian%20Wrap%20and%20S-1%20-%20Final%20%28Lodgement%204%20June%202026%29%20-%20Compressed%20vF.pdf" target="_blank" rel="noopener noreferrer">SpaceX filing</a> makes the ambition very clear.</p>
 
       <p>That is what makes this interesting to me. SpaceX has earned the benefit of the doubt by actually shipping. It is not some empty brand. It has real momentum, and it has real business underneath it. That is why people take it seriously in the first place.</p>
 
@@ -331,7 +331,7 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</p>
+      <p>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow. <a href="https://blogs.oracle.com/connect/larry-ellison-oracle-shape-future-healthcare" target="_blank" rel="noopener noreferrer">Oracle's own AI positioning</a> shows how big that ambition has become.</p>
 
       <p>But I think we are getting to the point where the real-world bill starts to show up. The more these projects move into smaller towns and rural counties, the more people are asking what they are giving up in return. Power demand, water use, land, traffic, and noise tend to become very real once the construction actually starts.</p>
 
@@ -351,7 +351,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether the country actually has enough grid capacity to support the plan.</p>
+      <p><a href="https://openai.com/index/five-new-stargate-sites/" target="_blank" rel="noopener noreferrer">OpenAI, Oracle, and SoftBank's five-site Stargate expansion</a> is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether the country actually has enough grid capacity to support the plan.</p>
 
       <p>That is why I think this matters. A lot of people still talk about AI like it is mostly a product layer. But the companies making the biggest bets know it is becoming a utility-scale business. The winners are not just the ones with the best model. They are the ones who can secure the physical resources to run it at scale.</p>
 
@@ -369,7 +369,7 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing to just trust the pitch.</p>
+      <p>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. <a href="https://www.businessinsider.com/data-center-bans-moratoriums-opposition-map-2026-6" target="_blank" rel="noopener noreferrer">Business Insider has tracked</a> how data center opposition is showing up around the country. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing to just trust the pitch.</p>
 
       <p>That creates a real problem for the companies and the politicians who want the buildout to keep moving. You can announce as many data centers as you want, but if the towns and counties have to live with the side effects, they are going to start asking harder questions about who benefits and who pays.</p>
 
@@ -387,7 +387,7 @@ const POSTS = {
     tag: 'Signal', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. When people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on Earth is already getting extreme.</p>
+      <p>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. <a href="https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal" target="_blank" rel="noopener noreferrer">Tom's Hardware reported</a> on China's push toward orbiting AI data centers, and when people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on Earth is already getting extreme.</p>
 
       <p>This is one of those stories that sounds futuristic until you realize it is just the logical end point of the infrastructure race. If demand keeps climbing, companies and governments will keep looking for places with more room, more energy, and fewer local constraints. Space is the most dramatic version of that thinking.</p>
 
@@ -413,7 +413,7 @@ const POSTS = {
 
       <p>What the more technically inclined figured out is that you can build a bridge between an AI and those tools, run it on your own machine, and create a desktop launcher to trigger it whenever you need it. Then they went ahead and did it.</p>
 
-      <p>Simon Willison, the developer behind the open-source Datasette project, built a command-line tool called <em>llm</em> that now has over 12,000 GitHub stars. It lets you send files, clipboard contents, or any text directly to major AI models from your terminal. His personal tools repository has over 77 small apps and scripts, most of them AI-generated, and he adds new ones at a rate of several per week. That pace does not come from a chat interface. It comes from having purpose-built tools wired into an actual workflow.</p>
+      <p>Simon Willison, the developer behind the open-source Datasette project, built a command-line tool called <a href="https://github.com/simonw/LLM" target="_blank" rel="noopener noreferrer"><em>llm</em></a> that now has over 12,000 GitHub stars. It lets you send files, clipboard contents, or any text directly to major AI models from your terminal. His personal tools repository has over 77 small apps and scripts, most of them AI-generated, and he adds new ones at a rate of several per week. That pace does not come from a chat interface. It comes from having purpose-built tools wired into an actual workflow.</p>
 
       <p>Marc Bara documented a more elaborate version earlier this year in a detailed Medium post. He built what he calls MarcOS: a personal system running on SQLite that syncs bidirectionally with Gmail, Google Calendar, and Outlook, with a local HTML dashboard that costs zero AI tokens to read. His operating principle is blunt: "Every operation I do more than once a day should cost zero tokens." Claude Code handles the judgment-requiring work. Everything repetitive runs locally.</p>
 
@@ -423,11 +423,11 @@ const POSTS = {
 
       <p>Stephen Jayakar's take was simpler but pointed. He had 451 Notion journal entries he wanted auto-tagged. Notion's AI add-on costs $8 a month on top of the base subscription. He built his own tagger using GPT-4o and the Notion API, published the whole project on GitHub, and got the same result for almost nothing in API costs. His framing was direct: why pay for a feature when you can build it in a week and own it outright?</p>
 
-      <p>The technology making most of this possible is Anthropic's Model Context Protocol, or MCP. It is an open standard released in late 2024 that lets Claude and other AI systems connect to external services in a structured, consistent way. Since it launched, developers have built community MCP servers for nearly everything. Taylor Wilson's Google Workspace MCP has over 2,600 GitHub stars and gives Claude full access to Gmail, Calendar, Drive, Docs, and Sheets. Nate Spady's standalone Google Calendar MCP has over 1,100 stars and installs in Claude Desktop with a single line in a config file. The tooling has gotten genuinely accessible to anyone willing to spend an afternoon on it.</p>
+      <p>The technology making most of this possible is Anthropic's <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" rel="noopener noreferrer">Model Context Protocol</a>, or MCP. It is an open standard released in late 2024 that lets Claude and other AI systems connect to external services in a structured, consistent way. Since it launched, developers have built community MCP servers for nearly everything. Taylor Wilson's Google Workspace MCP has over 2,600 GitHub stars and gives Claude full access to Gmail, Calendar, Drive, Docs, and Sheets. Nate Spady's standalone Google Calendar MCP has over 1,100 stars and installs in Claude Desktop with a single line in a config file. The tooling has gotten genuinely accessible to anyone willing to spend an afternoon on it.</p>
 
-      <p>On the desktop launcher side, Raycast has become the go-to tool on macOS for wiring all of this together. The app, which raised a $30 million Series B in 2024, has built-in AI with Claude, GPT, and others, plus an extension marketplace covering Notion, Todoist, Linear, GitHub, Slack, and dozens more. You can write a custom AI command, bind it to a hotkey, and trigger it on selected text or clipboard content from anywhere on your machine. The community-built raycast-g4f extension alone has over 1,100 GitHub stars. Robert Oberg published an Alfred workflow called Kiki that does something similar for that launcher, with hotkey triggers, text transformation presets, and voice input via Whisper, all running locally on macOS.</p>
+      <p>On the desktop launcher side, <a href="https://www.raycast.com/blog/series-b" target="_blank" rel="noopener noreferrer">Raycast</a> has become the go-to tool on macOS for wiring all of this together. The app, which raised a $30 million Series B in 2024, has built-in AI with Claude, GPT, and others, plus an extension marketplace covering Notion, Todoist, Linear, GitHub, Slack, and dozens more. You can write a custom AI command, bind it to a hotkey, and trigger it on selected text or clipboard content from anywhere on your machine. The community-built raycast-g4f extension alone has over 1,100 GitHub stars. Robert Oberg published an Alfred workflow called Kiki that does something similar for that launcher, with hotkey triggers, text transformation presets, and voice input via Whisper, all running locally on macOS.</p>
 
-      <p>For a more complete desktop application, PyGPT is an open-source app running on Windows, Mac, and Linux that connects to Gmail, Calendar, and Slack through plugins while supporting every major AI model including local ones. Leon, another open-source personal assistant with over 17,000 GitHub stars, runs entirely on your own machine with local model support and a skills system you extend yourself.</p>
+      <p>For a more complete desktop application, <a href="https://pygpt.net/" target="_blank" rel="noopener noreferrer">PyGPT</a> is an open-source app running on Windows, Mac, and Linux that connects to Gmail, Calendar, and Slack through plugins while supporting every major AI model including local ones. Leon, another open-source personal assistant with over 17,000 GitHub stars, runs entirely on your own machine with local model support and a skills system you extend yourself.</p>
 
       <p>Paco Cantero built something he calls Mindset: a personal knowledge assistant running on SQLite with twelve specialized agents and a Slack bot as the interface. His description of it captures the appeal of this entire category well: "It is fast, private, and entirely mine." The system never sends his data anywhere he has not explicitly approved.</p>
 
@@ -446,7 +446,7 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1606166325683-e6deb697d301?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>There is a serious trust issue in the Bricks & Minifigs story. Once a resale business takes custody of somebody else's inventory, the business is responsible for protecting both the items and the expectation around them.</p>
+      <p>There is a serious trust issue in the <a href="https://katu.com/news/local/keizer-lego-collection-dispute-sparks-multiple-lawsuits-national-attention-keizer-oregon-viral-dispute-reckless-ben-youtube-consignment-local-lawsuit-legal" target="_blank" rel="noopener noreferrer">Bricks & Minifigs story</a>. Once a resale business takes custody of somebody else's inventory, the business is responsible for protecting both the items and the expectation around them.</p>
 
       <p>That is where this gets messy. Franchise changes, weak paperwork, and bad handoffs can turn a normal consignment arrangement into a customer nightmare. The inventory is not really the point. The trust is.</p>
 
@@ -467,7 +467,7 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Costco's gas business works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up.</p>
+      <p><a href="https://www.costco.com/f/-/my-life-fuel-costco-gas-stations" target="_blank" rel="noopener noreferrer">Costco's gas business</a> works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up.</p>
 
       <p>That is the point I keep coming back to. A strong core business gives you room to build adjacent economics that would not work nearly as well on their own. Costco does not need gas to be the whole story. It just needs gas to make the whole membership package feel more valuable.</p>
 
@@ -489,7 +489,7 @@ const POSTS = {
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Dell's stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue.</p>
+      <p><a href="https://www.crn.com/news/channel-news/michael-dell-tech-built-for-ai-first-will-dominate-computing" target="_blank" rel="noopener noreferrer">Dell's AI infrastructure story</a> explains why the market reacted so strongly. Dell's stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue.</p>
       <p>Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That's a materially different signal than most of what we've been watching.</p>
       <p>For the past two years, a lot of the AI conversation in business has been about the tool layer - Copilots, assistants, chatbots. What Dell's numbers tell you is that the infrastructure underneath all of that is being built out right now at serious, measurable scale. Companies aren't just experimenting anymore. They're buying hardware in volume.</p>
       <p>That is why I think this is a cleaner signal than most AI headlines. Revenue from servers is not the same thing as a launch video. It means buyers are making budget decisions and putting real money behind capacity. That does not prove every AI use case will work, but it does prove the infrastructure layer is not imaginary.</p>
@@ -506,7 +506,7 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
+      <p><a href="https://www.theguardian.com/technology/2026/may/27/samsung-memory-chip-staff-bonuses-ai-profit-sharing-deal" target="_blank" rel="noopener noreferrer">Samsung Electronics' profit-sharing deal</a> could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
       <p>That's a significant number. And it's an interesting counterpoint to the prevailing narrative that AI is purely a headcount reduction play.</p>
       <p>What Samsung is essentially saying is: the people who build and maintain the chips that power AI create enough value to warrant a meaningful share of the upside. That's a different model than "agents in, people out." It's closer to "AI creates value, and here's how we distribute it."</p>
       <p>For RevOps leaders thinking about their own organizations - this is worth sitting with. The companies that figure out how to share AI-driven productivity gains with the people doing the work are probably going to have an easier time retaining the talent that makes AI actually function inside a business. The ones that treat AI purely as a cost-reduction lever are going to feel that in attrition.</p>
@@ -521,7 +521,7 @@ const POSTS = {
     tag: 'Watch this space', tagClass: 'tag-amber',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on both sides of the equation.</p>
+      <p><a href="https://www.crn.com/news/security/2025/george-kurtz-s-5-boldest-ai-statements-at-crowdstrike-fal-con-2025" target="_blank" rel="noopener noreferrer">CrowdStrike's AI security comments</a> point to a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on both sides of the equation.</p>
       <p>That means the attack surface is expanding faster than most security teams can respond to it.</p>
       <p>This isn't just a security team problem. For RevOps and GTM operations, it has direct implications. Your CRM holds customer data, deal history, email sequences, and contact records. Your integrations connect your marketing automation, your sales stack, your support tools, your data warehouse. If any of those systems have vulnerabilities that AI-assisted attackers can now find faster than ever, the blast radius for a breach hits the entire revenue operation - not just IT.</p>
       <p>The practical takeaway isn't to panic. It's to ask your IT and security counterparts a straightforward question: are we auditing the integrations in our GTM stack the same way we audit financial systems? Most of the time, the answer is no. Those integrations are where your most sensitive commercial data moves, and they're often the least scrutinized.</p>
@@ -539,7 +539,7 @@ const POSTS = {
     body: `
       <p>I've been testing Claude, Claude Co-Work, and Claude Dispatch to see how much of my own workload I can actually hand off. The answer is: some of it, but not the parts that depend on memory, state, or judgment.</p>
 
-      <p>That is where AI falls apart. It can look persistent and helpful, but it still needs structure around it. The model itself does not keep durable state the way a good workflow system does.</p>
+      <p>That is where AI falls apart. It can look persistent and helpful, but it still needs structure around it. The model itself does not keep durable state the way a good workflow system does. The more technical version of that problem shows up in how <a href="https://www.ibm.com/think/topics/ai-agent-memory" target="_blank" rel="noopener noreferrer">IBM explains AI agent memory</a> and how <a href="https://www.databricks.com/blog/memory-scaling-ai-agents" target="_blank" rel="noopener noreferrer">Databricks frames memory scaling</a>.</p>
 
       <p>The practical fix is not a bigger prompt. It is a better operating setup: break the work into smaller steps, store the context outside the model, validate each step, and keep the process simple enough that it does not drift.</p>
 
@@ -559,7 +559,7 @@ const POSTS = {
     image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
-      <p>HubSpot's recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
+      <p><a href="https://www.hubspot.com/company-news/spring-2026-spotlight" target="_blank" rel="noopener noreferrer">HubSpot's recent Spring Spotlight updates</a> around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginning of operational AI inside GTM teams.</p>
       <p>The interesting part isn't just automation. It's that the AI can understand customer history, deal movement, support conversations, and business processes all in one place.</p>
       <p>That is the piece that makes this different from generic AI. A chatbot sitting outside the business can be helpful, but it does not know the real operating context. It does not know which lifecycle stage matters, which deal is stuck, which account has a support issue, or which rep owns the next step unless that data is organized somewhere.</p>
       <p>CRM context is what turns AI from a novelty into something a team can actually use. If the system knows the customer record, the deal history, and the workflow rules, then the output can be more specific. If the CRM is messy, the AI just becomes a faster way to expose that mess.</p>
@@ -575,8 +575,8 @@ const POSTS = {
     tag: 'Worth noting', tagClass: 'tag-emerald',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
-      <p>HubSpot is taking a different approach. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
+      <p><a href="https://www.salesforce.com/news/stories/agentic-ai-reshapes-workforce/" target="_blank" rel="noopener noreferrer">Salesforce has been loud</a> about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
+      <p><a href="https://www.hubspot.com/company-news/spring-2026-spotlight" target="_blank" rel="noopener noreferrer">HubSpot is taking a different approach</a>. Their Spring 2026 release put AI agents directly inside the CRM, but the pitch isn't about reducing headcount. It's about using the context HubSpot already has: your deal history, your pipeline definitions, your customer interactions, to make the people using it faster and sharper. The Prospecting Agent monitors funding rounds and intent signals. Smart Deal Progression reads your call transcripts and suggests next steps. It's all built on top of data that's already there.</p>
       <p>That difference matters because most companies do not need a dramatic AI story. They need fewer missed follow-ups, cleaner handoffs, better pipeline notes, and a faster way to understand what is happening with customers. That is not as flashy as replacing whole teams, but it is a lot more useful for the average business.</p>
       <p>The risk for both platforms is the same. If the data underneath the agent is bad, the agent will make bad work feel automated. That is why the implementation matters so much. AI inside a CRM is only as good as the record quality, process design, and governance around it.</p>
       <p>That distinction matters. One model treats AI as a replacement. The other treats it as an upgrade to the system your team already runs on. For most SMBs and mid-market companies, HubSpot's version is the one that actually makes sense.</p>
@@ -590,7 +590,7 @@ const POSTS = {
     tag: 'On my radar', tagClass: 'tag-orange',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
+      <p><a href="https://www.hubspot.com/web-guide/customer-connection-blueprint/future" target="_blank" rel="noopener noreferrer">HubSpot continuing to invest</a> into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
       <p>For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understand the business. Knowing how to configure, prompt, and govern these systems is a real skill now.</p>
       <p>The mistake I see in a lot of AI conversations is that people talk about the tool before they talk about the process. HubSpot can add better automation, better agents, and better recommendations, but those features only help if the team has clear lifecycle stages, clean properties, and a real definition of what should happen next.</p>
       <p>That is why this is a RevOps story more than a software story. AI in the CRM changes who can move faster, but it also makes bad operations louder. If your pipeline is messy, the AI will not magically make it strategic. It will just move the mess faster.</p>
@@ -605,7 +605,7 @@ const POSTS = {
     tag: 'In the wild', tagClass: 'tag-pink',
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I built this entire site using Claude Code, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
+      <p>I built this entire site using <a href="https://www.anthropic.com/product/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
       <p>The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lost in documentation.</p>
       <p>The important part is not that the site exists. The important part is how much faster the gap has gotten between having an idea and putting something real in front of people. That changes the way small projects, experiments, and personal brands can move.</p>
       <p>I still had to review the work. I still had to decide what belonged, what sounded right, and what needed to be cleaned up. AI did not remove judgment. It compressed the build cycle so the judgment could happen on a real working site instead of a blank page.</p>
@@ -621,7 +621,7 @@ const POSTS = {
     tag: 'Timeless', tagClass: 'tag-purple',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>I've spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
+      <p>I've spent over 10 years helping organizations market themselves online through <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
       <p>The answer is always the same: garbage in, garbage out. The best automation in the world can't fix a dirty database or a broken handoff process.</p>
       <p>Good RevOps starts with clean systems and clear ownership. The tools, the dashboards, the AI, all of it builds on that foundation.</p>
       <p>Marketing today needs innovative ideas, not stagnant strategies that have been used for decades. Things are changing all the time. Buyer behavior changes, the channels change, and the tools change. If the strategy does not keep up, the work starts to feel old fast.</p>
