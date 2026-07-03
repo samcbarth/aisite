@@ -397,7 +397,7 @@ const POSTS = {
     `
   },
   post12: {
-    featured: true,
+    featured: false,
     date: 'May 31, 2026',
     iso: '2026-05-31',
     title: "The most valuable AI use case isn't a product. It's a personal tool.",
