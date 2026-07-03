@@ -4,12 +4,12 @@
  * Setup:
  *  1. Create a Google Sheet. Rename one tab to "likes".
  *     Add headers in row 1: post_id (A1) and likes (B1).
- *  2. In the sheet, open Extensions → Apps Script.
+ *  2. In the sheet, open Extensions -> Apps Script.
  *  3. Paste this file, save, then:
- *     Deploy → New deployment → Web app
+ *     Deploy -> New deployment -> Web app
  *       Execute as: Me
  *       Who has access: Anyone
- *     → Deploy → copy the web app URL
+ *     -> Deploy -> copy the web app URL
  *  4. Paste that URL into LIKES.sheetsUrl in app.js.
  */
 

@@ -12,13 +12,18 @@ const CACHE_VERSION = 'scb-v1';
 const SHELL = [
   './',
   'index.html',
+  'premium.html',
+  'resources.html',
+  'start-here.html',
   'app.js',
   'posts.js',
+  'premium.js',
   'manifest.webmanifest',
   'assets/fonts/space-grotesk-latin.woff2',
   'assets/fonts/space-grotesk-latin-ext.woff2',
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png',
+  'assets/icons/icon-maskable-512.png',
   'assets/icons/apple-touch-icon.png'
 ];
 

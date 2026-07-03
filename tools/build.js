@@ -215,7 +215,7 @@ function copyRecursive(src, dest) {
     post1: { image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=650&fit=crop&q=80', caption: 'Operational systems, not just databases.', side: 'left', after: 1 },
     post2: { image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&h=650&fit=crop&q=80', caption: 'The shortest route from idea to shipped site.', side: 'right', after: 1 },
     post3: {
-      image: 'assets/images/post3-marketing-team.jpg',
+      image: 'assets/images/post3-marketing-team-1200.jpg',
       caption: 'A live strategy session fits the point that marketing keeps changing.',
       side: 'left',
       after: 1,
