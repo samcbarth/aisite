@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post32: {
+    featured: false,
+    date: 'July 7, 2026',
+    iso: '2026-07-07',
+    title: "Trump's $2.2 billion year is a public trust problem",
+    category: 'Business Strategy',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://www.wsj.com/finance/trump-investments-presidency-4ca88728" target="_blank" rel="noopener noreferrer">The Wall Street Journal reported</a> that President Donald Trump's personal income rose to more than $2.2 billion in the first year of his second term, with a huge portion of that tied to crypto ventures, licensing, investments, and his broader business holdings.</p>
+
+      <p><a href="https://gvwire.com/2026/06/30/trump-pulled-in-at-least-2-billion-after-returning-to-the-white-house/" target="_blank" rel="noopener noreferrer">A New York Times report republished by GV Wire</a> said Trump pulled in at least $2.2 billion after returning to the White House, including about $1.4 billion from family cryptocurrency businesses. That is the part that makes this feel less like a normal wealth story and more like a public trust story.</p>
+
+      <p>I think the critique here is pretty simple. If you are president of the United States, the job should not feel like the best business development opportunity on earth. There is a difference between already being wealthy and actively making huge amounts of money while your administration is making decisions that can affect those same markets.</p>
+
+      <p>The crypto piece is especially hard to ignore. When a president's family is tied to tokens, memecoins, stablecoins, foreign investment, and policy decisions around digital assets, the conflict question is not some abstract ethics-class problem. It is sitting right in the middle of the business model.</p>
+
+      <p>I also think this is where people get numb. The number is so big that it almost stops sounding real. Two point two billion dollars is not a normal disclosure footnote. It is a number that should make people stop and ask what the office is for, who benefits from access, and whether public service is being treated like a platform for private upside.</p>
+
+      <p>That does not mean every dollar is automatically illegal. That is not the point. The point is that legality is not the only standard that matters. Trust matters too. If the public cannot clearly separate national policy from personal profit, then the damage is already happening.</p>
+
+      <p>From a business operations perspective, this is also a governance failure. Any serious company would be expected to separate decision-making authority from financial incentives that could compromise judgment. If a CEO had this many overlapping personal interests, boards, auditors, and investors would be asking hard questions immediately.</p>
+
+      <p>The presidency should be held to at least that standard. Probably higher. Instead, the public is being asked to accept a structure where massive personal earnings, foreign business ties, crypto policy, and government power all sit next to each other and we are supposed to trust that nothing improper is happening.</p>
+
+      <p>I do not think that is good enough. The issue is not whether somebody likes Trump or hates Trump. The issue is whether the most powerful office in the country should be allowed to operate with this much personal financial upside attached to it.</p>
+
+      <p>That is why this story matters. It is not just about one disclosure. It is about whether public office still has a line between serving the country and monetizing the position. If that line disappears, it becomes much harder to ask people to trust anything that comes after it.</p>
+    `
+  },
   post31: {
     featured: true,
     date: 'July 7, 2026',
@@ -661,7 +691,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

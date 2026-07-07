@@ -116,6 +116,8 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post32: 'The Trump disclosure story matters because it shows how personal incentives, public power, and market access can blur together when governance is weak.',
+    post31: 'The Xbox and Sony layoffs matter because they show what happens when expensive creative bets are managed like short-term cost problems.',
     post30: 'The SpaceX retirement story matters because it shows how a strong company can still become a risky wrapper when ordinary retirement money gets pulled into a bigger Elon valuation narrative.',
     post29: 'Apple\'s price warning matters because AI spend is now showing up in consumer hardware costs, not just cloud budgets.',
     post28: 'The memory crunch matters because AI demand is colliding with real supply limits, and that cost pressure eventually leaks into everything else.',
@@ -185,6 +187,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post32: {
+      image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=900&h=650&fit=crop&q=80',
+      caption: 'Public trust gets harder when financial incentives overlap with public power.',
+      side: 'left',
+      after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The core issue is governance, disclosure, and who benefits from access.'
+    },
     post31: {
       image: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=900&h=650&fit=crop&q=80',
       caption: 'AAA gaming keeps asking teams to carry bigger and riskier bets.',
@@ -341,6 +351,16 @@ function copyRecursive(src, dest) {
       text: 'The PlayStation community means everything to us',
       source: 'Sony Interactive Entertainment',
       sourceUrl: 'https://sonyinteractive.com/en/news/blog/difficult-news-about-our-workforce/'
+    },
+    whiteHouseConflict: {
+      text: 'There are no conflicts of interest.',
+      source: 'New York Magazine',
+      sourceUrl: 'https://nymag.com/intelligencer/article/trump-made-more-money-2025-than-in-entire-first-term-usd-2-2-billion-crypto.html'
+    },
+    warrenCrypto: {
+      text: 'brazen crypto corruption',
+      source: 'New York Magazine',
+      sourceUrl: 'https://nymag.com/intelligencer/article/trump-made-more-money-2025-than-in-entire-first-term-usd-2-2-billion-crypto.html'
     }
   };
   function makeQuote(label, quote) {
@@ -352,6 +372,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post32: { after: 4, quotes: [makeQuote('Defense view', QUOTE_LIBRARY.whiteHouseConflict), makeQuote('Critic view', QUOTE_LIBRARY.warrenCrypto)] },
     post31: { after: 4, quotes: [makeQuote('Xbox view', QUOTE_LIBRARY.xboxNotHealthy), makeQuote('Sony view', QUOTE_LIBRARY.sonyCommunity)] },
     post30: { after: 3, quotes: [makeQuote('Builder view', QUOTE_LIBRARY.muskFuture), makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust)] },
     post29: { after: 3, quotes: [makeQuote('Apple view', QUOTE_LIBRARY.cookUnavoidable), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
