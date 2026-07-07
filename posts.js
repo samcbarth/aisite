@@ -8,7 +8,7 @@
  */
 const POSTS = {
   post31: {
-    featured: false,
+    featured: true,
     date: 'July 7, 2026',
     iso: '2026-07-07',
     title: 'The Xbox and Sony layoffs show why AAA gaming feels broken',
@@ -327,7 +327,7 @@ const POSTS = {
     `
   },
   post14: {
-    featured: true,
+    featured: false,
     date: 'June 8, 2026',
     iso: '2026-06-08',
     title: "SpaceX's IPO story is really a story about what the market will pay for momentum",
@@ -661,7 +661,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post14', 'post31', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

@@ -73,9 +73,6 @@ function checkPostData() {
 
   const featured = POST_ORDER.filter(id => POSTS[id] && POSTS[id].featured);
   if (featured.length !== 1) fail(`expected one featured post, found ${featured.length}`);
-  if (featured[0] && !POSTS[featured[0]].title.toLowerCase().includes('spacex')) {
-    fail(`featured post is not SpaceX: ${featured[0]}`);
-  }
 
   const normal = POST_ORDER.filter(id => POSTS[id] && !POSTS[id].featured);
   for (let i = 1; i < normal.length; i += 1) {
