@@ -185,6 +185,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post31: {
+      image: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=900&h=650&fit=crop&q=80',
+      caption: 'AAA gaming keeps asking teams to carry bigger and riskier bets.',
+      side: 'right',
+      after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'Players can feel when the business model starts crowding out the game.'
+    },
     post30: { image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=650&fit=crop&q=80', caption: 'Retirement money is not built for a moonshot.', side: 'left', after: 2 },
     post29: { image: 'https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?w=900&h=650&fit=crop&q=80', caption: 'Price pressure is how the boom reaches consumers.', side: 'right', after: 2 },
     post28: { image: 'https://images.unsplash.com/photo-1429514513361-8fa3226d0b08?w=900&h=650&fit=crop&q=80', caption: 'Supply is the part nobody gets to skip.', side: 'left', after: 2 },
@@ -323,6 +331,16 @@ function copyRecursive(src, dest) {
       text: 'to the Moon and Mars, energy production on the Moon and Mars, such future markets could be worth in the "trillions" of dollars',
       source: 'SpaceX S-1 filing',
       sourceUrl: 'https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/Project%20Apex%20-%20Australian%20Wrap%20and%20S-1%20-%20Final%20%28Lodgement%204%20June%202026%29%20-%20Compressed%20vF.pdf'
+    },
+    xboxNotHealthy: {
+      text: 'Our business today is not healthy.',
+      source: 'Xbox Wire',
+      sourceUrl: 'https://news.xbox.com/en-us/2026/07/06/resetting-xbox/'
+    },
+    sonyCommunity: {
+      text: 'The PlayStation community means everything to us',
+      source: 'Sony Interactive Entertainment',
+      sourceUrl: 'https://sonyinteractive.com/en/news/blog/difficult-news-about-our-workforce/'
     }
   };
   function makeQuote(label, quote) {
@@ -334,6 +352,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post31: { after: 4, quotes: [makeQuote('Xbox view', QUOTE_LIBRARY.xboxNotHealthy), makeQuote('Sony view', QUOTE_LIBRARY.sonyCommunity)] },
     post30: { after: 3, quotes: [makeQuote('Builder view', QUOTE_LIBRARY.muskFuture), makeQuote('Trust view', QUOTE_LIBRARY.benioffTrust)] },
     post29: { after: 3, quotes: [makeQuote('Apple view', QUOTE_LIBRARY.cookUnavoidable), makeQuote('Platform view', QUOTE_LIBRARY.andrewElectricity)] },
     post28: { after: 3, quotes: [makeQuote('Infrastructure view', QUOTE_LIBRARY.huangInfra), makeQuote('Factory view', QUOTE_LIBRARY.dellAIFirst)] },

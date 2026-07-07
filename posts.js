@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post31: {
+    featured: false,
+    date: 'July 7, 2026',
+    iso: '2026-07-07',
+    title: 'The Xbox and Sony layoffs show why AAA gaming feels broken',
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://news.xbox.com/en-us/2026/07/06/resetting-xbox/" target="_blank" rel="noopener noreferrer">Xbox announced</a> one of the most significant restructures in its history, with about 3,200 roles being reduced through FY27 and four studios leaving Xbox to new management. Microsoft also said it is eliminating around 4,800 roles overall, with the changes mostly falling within Commercial and Xbox.</p>
+
+      <p>There is no clean way to talk about that. It is horrible. These are people who built the games, maintained the platforms, handled QA, supported live services, managed community issues, and did the work that makes these giant entertainment machines actually run. Then the business turns around and calls it a reset.</p>
+
+      <p>I think this is one of the biggest stigmas of AAA gaming right now. The industry sells players on massive worlds, cinematic trailers, live service roadmaps, collector's editions, platform ecosystems, and ten-year franchise plans. Then the people making all of that happen get treated like a cost line that can be cut when the math gets uncomfortable.</p>
+
+      <p>Sony has its own version of this problem. <a href="https://sonyinteractive.com/en/news/blog/difficult-news-about-our-workforce/" target="_blank" rel="noopener noreferrer">Sony Interactive Entertainment announced</a> in 2024 that it planned to reduce its global headcount by about 8%, or around 900 people. Since then, the broader PlayStation ecosystem has also seen more cuts, including reports of layoffs at Bend Studio after live-service project changes.</p>
+
+      <p>That is the pattern that feels so broken. These companies chase bigger games, bigger scopes, bigger budgets, bigger subscriptions, bigger acquisitions, and bigger live-service dreams. When those bets do not perform perfectly, the people closest to the work often take the hit first.</p>
+
+      <p>I do not think players hate AAA games. I think a lot of people still love them. I do. But there is a growing distrust around the business model behind them. Players can feel when a game is being built around monetization before fun. They can feel when a studio is being pushed toward a live-service model it probably did not need. They can feel when a company wants the upside of creative work without protecting the creative people doing it.</p>
+
+      <p>From a business perspective, this is also just bad long-term operating discipline. You cannot keep telling the market that content is the moat while treating the people who make the content as disposable. That does not build trust with employees, and it does not build trust with players either.</p>
+
+      <p>AAA gaming has become expensive, risky, and slow. I understand that. But that is also the point. If the model requires massive teams to work for years on projects that can still be canceled, closed, or gutted after one bad turn, then maybe the model itself needs to be questioned.</p>
+
+      <p>The healthier version of gaming probably has to be more disciplined. Smaller scopes where they make sense. More realistic budgets. Less chasing every trend. Better protection for teams when leadership makes the wrong bet. More room for studios to build the kinds of games they are actually good at making.</p>
+
+      <p>That is the piece I keep coming back to. The layoffs are not just sad headlines. They are a sign that the AAA machine is too bloated, too reactive, and too willing to sacrifice people after overpromising to the market. If gaming wants to get healthier, the companies at the top need to stop treating layoffs like a normal part of the content cycle.</p>
+    `
+  },
   post30: {
     featured: false,
     date: 'June 19, 2026',
@@ -631,7 +661,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post14', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post14', 'post31', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
