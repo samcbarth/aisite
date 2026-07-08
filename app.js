@@ -207,7 +207,10 @@
     } else {
       const img = document.createElement('img');
       img.className = 'featured-img';
-      img.src = imgSrc; img.alt = p.title; img.loading = 'lazy';
+      img.src = imgSrc;
+      img.alt = p.title;
+      img.loading = 'eager';
+      img.fetchPriority = 'high';
       img.width = 980; img.height = 380;
       card.appendChild(img);
     }
@@ -216,7 +219,7 @@
     body.className = 'featured-body';
     body.innerHTML = `<span class="featured-badge">Featured</span>
         <div class="featured-meta-row">${p.date} &middot; ${p.category} &middot; ${readingTime(p.body)} min read</div>
-        <div class="featured-title">${p.title}</div>
+        <h2 class="featured-title">${p.title}</h2>
         <div class="featured-excerpt">${excerpt}</div>`;
     card.appendChild(body);
 

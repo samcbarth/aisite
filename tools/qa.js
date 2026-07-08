@@ -92,6 +92,8 @@ function checkGeneratedPages() {
   for (const file of htmlFiles) {
     const html = read(file);
     if (!/<main\b/.test(html)) fail(`missing main element: ${rel(file)}`);
+    const h1Count = (html.match(/<h1\b/g) || []).length;
+    if (h1Count !== 1) fail(`expected one h1, found ${h1Count}: ${rel(file)}`);
     if (!/<title>[^<]{10,}<\/title>/.test(html)) fail(`weak title: ${rel(file)}`);
     if (!/<meta name="description" content="[^"]{50,}"/.test(html)) fail(`weak meta description: ${rel(file)}`);
     for (const match of html.matchAll(/<button\b([^>]*)>([\s\S]*?)<\/button>/g)) {
