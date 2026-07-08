@@ -31,15 +31,6 @@
   let visibleLimit = PAGE_SIZE;
   let lastFocused = null;
 
-  // Sponsor config.
-  // Fill this in to feature a sponsor; leave name empty to show the placeholder.
-  const sponsor = {
-    name: '',
-    blurb: '',
-    url: 'mailto:samcbarth@gmail.com?subject=Sponsoring%20the%20newsletter',
-    logo: ''
-  };
-
   // Likes config.
   // Setup (one time) - see google-apps-script.js for full instructions:
   //   1. Create a Google Sheet with a tab named "likes" (headers: post_id, likes)
@@ -50,64 +41,6 @@
   };
   const likesEnabled = () => Boolean(LIKES.sheetsUrl);
   const likeCounts = {}; // post_id -> global count, cached in memory
-
-  function renderSponsor() {
-    const el = document.getElementById('sponsor-slot');
-    if (!el) return;
-    if (sponsor.name) {
-      el.innerHTML = `<a class="sponsor-slot" href="${sponsor.url}" target="_blank" rel="noopener noreferrer">
-        <span class="sponsor-tag">Sponsor</span>
-        ${sponsor.logo ? `<img class="sponsor-logo" src="${sponsor.logo}" alt="${sponsor.name} logo" loading="lazy">` : ''}
-        <span class="sponsor-body">
-          <span class="sponsor-name">${sponsor.name}</span>
-          <span class="sponsor-blurb">${sponsor.blurb}</span>
-        </span>
-        <span class="sponsor-cta">Visit</span>
-      </a>`;
-    } else {
-      el.innerHTML = '';
-    }
-  }
-
-  // TradingView ticker: injected lazily, not render-blocking.
-  // The embed script is appended only when the ticker scrolls near the viewport,
-  // keeping it off the critical path. Its container reserves height in CSS so the
-  // injected iframe doesn't cause layout shift (CLS).
-  function loadTradingView() {
-    const container = document.querySelector('.tradingview-widget-container__widget');
-    if (!container || container.dataset.loaded) return;
-    container.dataset.loaded = '1';
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
-    script.async = true;
-    script.innerHTML = JSON.stringify({
-      symbols: [
-        { proName: 'NYSE:HUBS', title: 'HubSpot' },
-        { proName: 'NYSE:CRM', title: 'Salesforce' },
-        { proName: 'NASDAQ:MSFT', title: 'Microsoft' },
-        { proName: 'NASDAQ:ZI', title: 'ZoomInfo' },
-        { proName: 'NASDAQ:MNDY', title: 'Monday.com' },
-        { proName: 'NASDAQ:GOOGL', title: 'Alphabet' }
-      ],
-      showSymbolLogo: true,
-      colorTheme: 'dark',
-      isTransparent: true,
-      displayMode: 'adaptive',
-      locale: 'en'
-    });
-    container.appendChild(script);
-  }
-
-  function setupTradingView() {
-    const wrap = document.querySelector('.tradingview-widget-container');
-    if (!wrap) return;
-    if (!('IntersectionObserver' in window)) { loadTradingView(); return; }
-    const obs = new IntersectionObserver((entries, o) => {
-      entries.forEach(e => { if (e.isIntersecting) { loadTradingView(); o.disconnect(); } });
-    }, { rootMargin: '300px' });
-    obs.observe(wrap);
-  }
 
   // Lazy video infrastructure.
   // Native loading="lazy" does NOT apply to <video>, so an IntersectionObserver
@@ -168,32 +101,6 @@
     v.pause();
     v.removeAttribute('src');
     v.load();
-  }
-
-  // Display ad slots: reveal placeholders on scroll, no third-party script.
-  function setupAdSlots() {
-    const slots = document.querySelectorAll('.ad-slot');
-    if (!slots.length) return;
-    if (!('IntersectionObserver' in window)) { slots.forEach(s => s.classList.add('revealed')); return; }
-    const obs = new IntersectionObserver((entries, o) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          o.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '200px' });
-    slots.forEach(s => obs.observe(s));
-  }
-
-  function setupPromoCarousel() {
-    const track = document.getElementById('promo-carousel');
-    if (!track) return;
-    actions['promo-scroll'] = (el) => {
-      const dir = Number(el.dataset.dir || '1');
-      const distance = Math.max(280, track.clientWidth * 0.82);
-      track.scrollBy({ left: dir * distance, behavior: 'smooth' });
-    };
   }
 
   function readingTime(html) {
@@ -455,15 +362,6 @@
     window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
   }
 
-  // Newsletter.
-  function handleSubscribe(e) {
-    e.preventDefault();
-    document.getElementById('newsletter-note').textContent = 'Got it. Talk soon.';
-    document.getElementById('newsletter-email').value = '';
-    const btn = e.target.querySelector('.newsletter-btn');
-    btn.textContent = 'Done'; btn.disabled = true;
-  }
-
   // Modal media.
   function clearModalVideo() {
     const media = document.getElementById('modal-media');
@@ -600,7 +498,6 @@
     'toggle-like': toggleModalLike,
     'nav-prev': () => navigatePost(-1),
     'nav-next': () => navigatePost(1),
-    'focus-email': () => document.getElementById('newsletter-email').focus(),
     'share-quote-linkedin': shareQuoteLinkedIn,
     'share-quote-x': shareQuoteX,
     'toggle-search': toggleSearch,
@@ -620,10 +517,6 @@
 
     refreshPostCards();
     renderFeatured();
-    renderSponsor();
-    setupAdSlots();
-    setupPromoCarousel();
-    setupTradingView();
 
     postOrder.forEach(id => {
       const card = document.querySelector(`[data-id="${id}"]`);
@@ -663,9 +556,6 @@
       const fn = actions[el.dataset.action];
       if (fn) { e.preventDefault(); fn(el); }
     });
-
-    const newsletterForm = document.getElementById('newsletter-form');
-    if (newsletterForm) newsletterForm.addEventListener('submit', handleSubscribe);
 
     document.getElementById('search-input').addEventListener('input', function () {
       searchQuery = this.value.toLowerCase().trim();
