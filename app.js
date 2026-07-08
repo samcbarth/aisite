@@ -201,34 +201,27 @@
   }
 
   function buildFilters() {
-    const bar = document.getElementById('filter-bar');
+    const select = document.getElementById('category-filter');
     const categories = [...new Set(postOrder.map(id => posts[id].category))];
 
-    const allChip = document.createElement('button');
-    allChip.className = 'filter-chip active';
-    allChip.textContent = 'All';
-    allChip.setAttribute('aria-pressed', 'true');
-    allChip.onclick = () => setFilter(null);
-    bar.appendChild(allChip);
+    const allOption = document.createElement('option');
+    allOption.value = '';
+    allOption.textContent = 'All topics';
+    select.appendChild(allOption);
 
     categories.forEach(cat => {
-      const chip = document.createElement('button');
-      chip.className = 'filter-chip';
-      chip.textContent = cat;
-      chip.dataset.value = cat;
-      chip.setAttribute('aria-pressed', 'false');
-      chip.onclick = () => setFilter(cat);
-      bar.appendChild(chip);
+      const option = document.createElement('option');
+      option.value = cat;
+      option.textContent = cat;
+      select.appendChild(option);
     });
+
+    select.addEventListener('change', () => setFilter(select.value));
   }
 
   function setFilter(category) {
     activeFilter = category || null;
-    document.querySelectorAll('.filter-chip').forEach(c => {
-      const active = (!category && c.textContent === 'All') || c.dataset.value === category;
-      c.classList.toggle('active', active);
-      c.setAttribute('aria-pressed', String(active));
-    });
+    document.getElementById('category-filter').value = activeFilter || '';
     applyFilters();
   }
 
@@ -550,6 +543,29 @@
     });
   }
 
+  function toggleSearch(el) {
+    const panel = document.getElementById('search-panel');
+    const input = document.getElementById('search-input');
+    const opening = panel.hidden;
+    panel.hidden = !opening;
+    el.setAttribute('aria-expanded', String(opening));
+    if (opening) {
+      input.focus();
+      return;
+    }
+    input.value = '';
+    searchQuery = '';
+    applyFilters();
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('search-input');
+    input.value = '';
+    searchQuery = '';
+    applyFilters();
+    input.focus();
+  }
+
   // Central click delegation replaces inline on* handlers.
   const actions = {
     'toggle-theme': toggleTheme,
@@ -564,6 +580,8 @@
     'focus-email': () => document.getElementById('newsletter-email').focus(),
     'share-quote-linkedin': shareQuoteLinkedIn,
     'share-quote-x': shareQuoteX,
+    'toggle-search': toggleSearch,
+    'clear-search': clearSearch,
     'refresh-site': refreshSite
   };
 
@@ -607,6 +625,11 @@
 
     // Keyboard activation for non-native controls (the post cards are role="button").
     document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const panel = document.getElementById('search-panel');
+        if (!panel.hidden) toggleSearch(document.querySelector('[data-action="toggle-search"]'));
+        return;
+      }
       if (e.key !== 'Enter' && e.key !== ' ') return;
       const el = e.target.closest('[data-action]');
       if (!el) return;

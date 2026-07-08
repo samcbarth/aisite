@@ -328,39 +328,62 @@
     }
     .post-count { font-size: 1rem; color: #444; }
 
-    .search-wrap { margin-bottom: 0.85rem; }
+    .article-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    .category-select,
+    .search-toggle,
+    .search-clear {
+      min-height: 42px;
+      border: 1px solid #242424;
+      border-radius: 8px;
+      background: #0f0f0f;
+      color: #b8b8b8;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+    .category-select {
+      min-width: 180px;
+      padding: 0.55rem 2.25rem 0.55rem 0.8rem;
+      cursor: pointer;
+    }
+    .search-toggle,
+    .search-clear {
+      padding: 0.55rem 0.9rem;
+      cursor: pointer;
+    }
+    .search-toggle:hover,
+    .search-clear:hover {
+      border-color: #555;
+      color: #fff;
+    }
+    .search-toggle[aria-expanded="true"] {
+      border-color: var(--purple);
+      color: #fff;
+    }
+    .search-panel {
+      display: flex;
+      gap: 0.5rem;
+      margin: -0.55rem 0 1.25rem;
+    }
+    .search-panel[hidden] { display: none; }
     .search-input {
-      width: 100%;
+      flex: 1;
       background: #0f0f0f;
       border: 1px solid #1f1f1f;
-      border-radius: 6px;
+      border-radius: 8px;
       color: #fff;
       font-family: inherit;
       font-size: 1rem;
-      padding: 0.6rem 1rem;
+      padding: 0.7rem 1rem;
       outline: none;
       transition: border-color 0.15s;
     }
     .search-input::placeholder { color: #383838; }
     .search-input:focus { border-color: var(--purple); }
-
-    .filter-bar { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
-    .filter-chip {
-      background: transparent;
-      border: 1px solid #222;
-      color: #555;
-      border-radius: 20px;
-      padding: 0.2rem 0.7rem;
-      font-family: inherit;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-    .filter-chip:hover { border-color: #555; color: #ccc; }
-    .filter-chip.active { background: var(--purple); border-color: var(--purple); color: #fff; }
 
     .post-grid { display: grid; gap: 1rem; }
     .post-card {
@@ -1042,7 +1065,6 @@
     .post-read-time, .modal-read-time, .no-results,
     .post-count, .related-label { color: #8a8a8a; }
     .newsletter-sub, .work-sub { color: #9a9a9a; }
-    .filter-chip { color: #8c8c8c; }
     .nav-btn { color: #8c8c8c; }
     .modal-close { color: #8c8c8c; }
     .logo-role { color: #9a9a9a; }
@@ -1055,11 +1077,10 @@
 
     /* White text on brand fills needs a slightly deeper shade to clear 4.5:1. */
     .btn:not(.btn-ghost) { background: #6d5ae8; }
-    .filter-chip.active { background: #6d5ae8; border-color: #6d5ae8; }
     .newsletter-btn { color: #06281d; }
 
     /* Visible keyboard focus for every interactive element (WCAG 2.4.7/2.4.11). */
-    a:focus-visible, button:focus-visible, input:focus-visible,
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible,
     .post-card:focus-visible, .featured-card:focus-visible, .related-card:focus-visible {
       outline: 2px solid var(--cyan);
       outline-offset: 2px;
@@ -1159,6 +1180,12 @@
         width: 100%;
         padding: 0 0.25rem 0.3rem;
       }
+      .article-controls { align-items: stretch; }
+      .category-select {
+        flex: 1;
+        min-width: 0;
+      }
+      .search-panel { margin-top: -0.55rem; }
       .post-title { font-size: 1.25rem; }
       .post-excerpt { font-size: 1rem; }
       .featured-img { height: clamp(200px, 56vw, 300px); }
@@ -1231,10 +1258,13 @@
     body.light-mode .path-card-title { color: #111; }
     body.light-mode .path-card-text { color: #666; }
     body.light-mode .path-card-link { color: var(--purple); }
-    body.light-mode .search-input { background: #fff; border-color: #e0e0e0; color: #111; }
+    body.light-mode .category-select,
+    body.light-mode .search-clear,
+    body.light-mode .search-toggle,
+    body.light-mode .search-input { background: #fff; border-color: #e0e0e0; color: #333; }
     body.light-mode .search-input::placeholder { color: #bbb; }
-    body.light-mode .filter-chip { border-color: #ddd; color: #999; }
-    body.light-mode .filter-chip:hover { border-color: #888; color: #333; }
+    body.light-mode .search-clear:hover,
+    body.light-mode .search-toggle:hover { border-color: #888; color: #111; }
     body.light-mode .post-card { background: #fff; border-color: #e0e0e0; }
     body.light-mode .post-card:hover { background: #f9f9f9; box-shadow: 0 0 18px rgba(124,106,247,0.08); }
     body.light-mode .post-thumb { background: #e5e5e5; }
@@ -1762,11 +1792,16 @@
     <span class="section-label">Latest Updates</span>
     <span class="post-count" id="post-count"></span>
   </div>
-  <div class="search-wrap">
+  <div class="article-controls">
+    <label class="sr-only" for="category-filter">Filter articles by topic</label>
+    <select class="category-select" id="category-filter"></select>
+    <button class="search-toggle" type="button" data-action="toggle-search" aria-expanded="false" aria-controls="search-panel">Search</button>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
     <label class="sr-only" for="search-input">Search posts</label>
     <input class="search-input" id="search-input" type="text" placeholder="Search posts...">
+    <button class="search-clear" type="button" data-action="clear-search">Clear</button>
   </div>
-  <div class="filter-bar" id="filter-bar"></div>
   <div id="featured-section" class="featured-section"></div>
   <div class="post-grid">
 
