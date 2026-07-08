@@ -27,6 +27,8 @@
   let currentPostId = null;
   let activeFilter = null;
   let searchQuery = '';
+  const PAGE_SIZE = 10;
+  let visibleLimit = PAGE_SIZE;
   let lastFocused = null;
 
   // Sponsor config.
@@ -221,23 +223,36 @@
 
   function setFilter(category) {
     activeFilter = category || null;
+    visibleLimit = PAGE_SIZE;
     document.getElementById('category-filter').value = activeFilter || '';
     applyFilters();
   }
 
   function applyFilters() {
+    let matching = 0;
     let visible = 0;
     document.querySelectorAll('.post-card').forEach(card => {
       const p = posts[card.dataset.id];
       const matchesCat = !activeFilter || p.category === activeFilter;
       const matchesSearch = !searchQuery || p.title.toLowerCase().includes(searchQuery) ||
         p.body.replace(/<[^>]+>/g, '').toLowerCase().includes(searchQuery);
-      const show = !p.featured && matchesCat && matchesSearch;
+      const matches = !p.featured && matchesCat && matchesSearch;
+      if (matches) matching++;
+      const show = matches && matching <= visibleLimit;
       card.style.display = show ? '' : 'none';
       if (show) visible++;
     });
-    document.getElementById('post-count').textContent = visible + ' post' + (visible !== 1 ? 's' : '');
-    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+    const suffix = matching === 1 ? ' post' : ' posts';
+    document.getElementById('post-count').textContent = matching > visible
+      ? visible + ' of ' + matching + suffix
+      : matching + suffix;
+    document.getElementById('no-results').style.display = matching === 0 ? 'block' : 'none';
+
+    const remaining = Math.max(0, matching - visible);
+    const loadMoreWrap = document.getElementById('load-more-wrap');
+    const loadMoreButton = document.getElementById('load-more');
+    loadMoreWrap.hidden = remaining === 0;
+    loadMoreButton.textContent = 'Load ' + Math.min(PAGE_SIZE, remaining) + ' more';
   }
 
   function refreshPostCards() {
@@ -555,6 +570,7 @@
     }
     input.value = '';
     searchQuery = '';
+    visibleLimit = PAGE_SIZE;
     applyFilters();
   }
 
@@ -562,8 +578,14 @@
     const input = document.getElementById('search-input');
     input.value = '';
     searchQuery = '';
+    visibleLimit = PAGE_SIZE;
     applyFilters();
     input.focus();
+  }
+
+  function loadMorePosts() {
+    visibleLimit += PAGE_SIZE;
+    applyFilters();
   }
 
   // Central click delegation replaces inline on* handlers.
@@ -582,6 +604,7 @@
     'share-quote-x': shareQuoteX,
     'toggle-search': toggleSearch,
     'clear-search': clearSearch,
+    'load-more': loadMorePosts,
     'refresh-site': refreshSite
   };
 
@@ -644,6 +667,7 @@
 
     document.getElementById('search-input').addEventListener('input', function () {
       searchQuery = this.value.toLowerCase().trim();
+      visibleLimit = PAGE_SIZE;
       applyFilters();
     });
 

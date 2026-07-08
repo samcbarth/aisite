@@ -569,6 +569,30 @@
     .tag-purple { color: var(--purple);  border-color: var(--purple-dim);  }
 
     .no-results { color: #383838; font-size: 1rem; padding: 2.5rem 0; text-align: center; display: none; }
+    .load-more-wrap {
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5rem;
+    }
+    .load-more-wrap[hidden] { display: none; }
+    .load-more-btn {
+      min-width: 180px;
+      min-height: 46px;
+      border: 1px solid #303030;
+      border-radius: 9px;
+      background: #111;
+      color: #ddd;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .load-more-btn:hover {
+      border-color: var(--purple);
+      background: #151515;
+      color: #fff;
+    }
 
     .modal-overlay {
       display: none;
@@ -1186,6 +1210,7 @@
         min-width: 0;
       }
       .search-panel { margin-top: -0.55rem; }
+      .load-more-btn { width: 100%; }
       .post-title { font-size: 1.25rem; }
       .post-excerpt { font-size: 1rem; }
       .featured-img { height: clamp(200px, 56vw, 300px); }
@@ -1276,6 +1301,16 @@
     body.light-mode .card-like { color: #ccc; }
     body.light-mode .card-like.liked { color: var(--pink); }
     body.light-mode .no-results { color: #bbb; }
+    body.light-mode .load-more-btn {
+      background: #fff;
+      border-color: #d8d8d8;
+      color: #333;
+    }
+    body.light-mode .load-more-btn:hover {
+      border-color: var(--purple);
+      background: #fafafa;
+      color: #111;
+    }
     body.light-mode .featured-card { background: #fff; }
     body.light-mode .featured-img { background: #e5e5e5; }
     body.light-mode .featured-meta-row { color: #999; }
@@ -1790,7 +1825,7 @@
 <section class="posts">
   <div class="posts-header">
     <span class="section-label">Latest Updates</span>
-    <span class="post-count" id="post-count"></span>
+    <span class="post-count" id="post-count" aria-live="polite"></span>
   </div>
   <div class="article-controls">
     <label class="sr-only" for="category-filter">Filter articles by topic</label>
@@ -2268,6 +2303,9 @@
 
   </div>
   <p class="no-results" id="no-results">No posts match that filter.</p>
+  <div class="load-more-wrap" id="load-more-wrap" hidden>
+    <button class="load-more-btn" id="load-more" type="button" data-action="load-more">Load more</button>
+  </div>
 </section>
 
 </main>
