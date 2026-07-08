@@ -17,7 +17,7 @@
     return post ? SITE_URL + 'posts/' + toSlug(post.title) + '/' : SITE_URL;
   }
   function makeCardImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=576&h=576').replace(/q=\d+/, 'q=85');
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=506').replace(/q=\d+/, 'q=85');
   }
   function makeExcerpt(html, maxLen) {
     const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -239,7 +239,7 @@
       const matchesCat = !activeFilter || p.category === activeFilter;
       const matchesSearch = !searchQuery || p.title.toLowerCase().includes(searchQuery) ||
         p.body.replace(/<[^>]+>/g, '').toLowerCase().includes(searchQuery);
-      const show = matchesCat && matchesSearch;
+      const show = !p.featured && matchesCat && matchesSearch;
       card.style.display = show ? '' : 'none';
       if (show) visible++;
     });
@@ -255,6 +255,8 @@
       if (img) {
         img.src = makeCardImage(post.image);
         img.alt = post.title + ' thumbnail';
+        img.width = 900;
+        img.height = 506;
       }
       const date = card.querySelector('.post-date');
       const category = card.querySelector('.post-category');
@@ -291,7 +293,7 @@
       const img = document.createElement('img');
       img.className = 'featured-img';
       img.src = imgSrc; img.alt = p.title; img.loading = 'lazy';
-      img.width = 760; img.height = 190;
+      img.width = 980; img.height = 380;
       card.appendChild(img);
     }
 

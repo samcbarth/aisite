@@ -79,7 +79,7 @@
       --pink: #f472b6;
       --pink-dim: #5c1c40;
     }
-    html { font-size: 10pt; }
+    html { font-size: 11pt; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
@@ -95,7 +95,7 @@
       align-items: center;
       gap: 1rem;
       border-bottom: 1px solid #1f1f1f;
-      max-width: 760px;
+      max-width: 980px;
       margin: 0 auto;
       width: 100%;
     }
@@ -309,7 +309,7 @@
     .path-card-link:hover { color: #fff; }
 
     .posts {
-      max-width: 760px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 2.5rem 2rem 4rem;
     }
@@ -320,7 +320,7 @@
       margin-bottom: 1rem;
     }
     .section-label {
-      font-size: 1rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--cyan);
@@ -362,18 +362,18 @@
     .filter-chip:hover { border-color: #555; color: #ccc; }
     .filter-chip.active { background: var(--purple); border-color: var(--purple); color: #fff; }
 
-    .post-grid { display: grid; gap: 0.75rem; }
+    .post-grid { display: grid; gap: 1rem; }
     .post-card {
       background: #0f0f0f;
       border: 1px solid #1f1f1f;
-      border-radius: 8px;
-      padding: 1.1rem 1.25rem;
+      border-radius: 12px;
+      padding: 1.15rem;
       cursor: pointer;
       transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
       text-align: left;
       display: flex;
-      gap: 1rem;
-      align-items: flex-start;
+      gap: 1.25rem;
+      align-items: center;
       text-decoration: none;
       color: inherit;
     }
@@ -383,19 +383,19 @@
       box-shadow: 0 0 18px rgba(124,106,247,0.12);
     }
     .post-thumb {
-      width: 72px;
-      height: 72px;
-      border-radius: 6px;
+      width: 190px;
+      height: 118px;
+      border-radius: 8px;
       object-fit: cover;
       flex-shrink: 0;
       background: #1a1a1a;
     }
     .post-content { flex: 1; min-width: 0; }
     .post-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
-    .post-date { font-size: 1rem; color: #555; text-transform: uppercase; letter-spacing: 0.06em; }
-    .post-read-time { font-size: 1rem; color: #383838; }
-    .post-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.35rem; color: #fff; }
-    .post-excerpt { font-size: 1rem; color: #fff; line-height: 1.7; opacity: 0.55; }
+    .post-date { font-size: 0.85rem; color: #777; text-transform: uppercase; letter-spacing: 0.06em; }
+    .post-read-time { font-size: 0.85rem; color: #666; }
+    .post-title { font-size: 1.3rem; line-height: 1.35; font-weight: 650; margin-bottom: 0.45rem; color: #fff; }
+    .post-excerpt { font-size: 1.05rem; color: #c5c5c5; line-height: 1.6; opacity: 0.8; }
 
     /* Mid-feed promo carousel */
     .promo-break {
@@ -418,7 +418,7 @@
       margin-bottom: 0.9rem;
     }
     .promo-break-copy {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: #9d9d9d;
       line-height: 1.65;
       max-width: 420px;
@@ -520,7 +520,7 @@
       border: 1px solid rgba(255,255,255,0.08);
     }
     .post-category {
-      font-size: 1rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--purple);
@@ -530,7 +530,7 @@
       font-weight: 500;
     }
     .post-tag {
-      font-size: 1rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-weight: 500;
@@ -673,11 +673,11 @@
     .nav-btn:disabled { opacity: 0.2; cursor: not-allowed; }
 
     /* Featured post */
-    .featured-section { margin-bottom: 1.25rem; }
+    .featured-section { margin-bottom: 1.5rem; }
     .featured-card {
       background: #0f0f0f;
       border: 1px solid var(--purple-dim);
-      border-radius: 10px;
+      border-radius: 14px;
       cursor: pointer;
       overflow: hidden;
       transition: border-color 0.2s, box-shadow 0.2s;
@@ -690,15 +690,15 @@
     }
     .featured-img {
       width: 100%;
-      height: 190px;
+      height: clamp(250px, 38vw, 380px);
       object-fit: cover;
       display: block;
       background: #1a1a1a;
     }
-    .featured-body { padding: 1.25rem 1.5rem 1.5rem; }
+    .featured-body { padding: 1.5rem 1.75rem 1.75rem; }
     .featured-badge {
       display: inline-block;
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-weight: 600;
@@ -708,15 +708,15 @@
       padding: 0.15rem 0.5rem;
       margin-bottom: 0.6rem;
     }
-    .featured-meta-row { font-size: 1rem; color: #555; margin-bottom: 0.5rem; }
+    .featured-meta-row { font-size: 0.9rem; color: #777; margin-bottom: 0.6rem; }
     .featured-title {
-      font-size: 1.15rem;
+      font-size: clamp(1.7rem, 3vw, 2.25rem);
       font-weight: 700;
       color: #fff;
-      line-height: 1.3;
-      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
     }
-    .featured-excerpt { font-size: 1rem; color: #fff; opacity: 0.55; line-height: 1.7; }
+    .featured-excerpt { font-size: 1.1rem; color: #c9c9c9; opacity: 0.85; line-height: 1.65; }
 
     /* Reading progress bar */
     .modal-progress-bar {
@@ -774,7 +774,7 @@
       display: inline-flex;
       align-items: center;
       gap: 0.25rem;
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: #383838;
       cursor: pointer;
       margin-top: 0.55rem;
@@ -1145,16 +1145,24 @@
         width: 100%;
       }
       .post-card {
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0.9rem 1rem;
-        gap: 0.8rem;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.85rem;
+        gap: 1rem;
       }
       .post-thumb {
-        width: 72px;
-        height: 72px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
       }
-      .post-content { width: 100%; }
+      .post-content {
+        width: 100%;
+        padding: 0 0.25rem 0.3rem;
+      }
+      .post-title { font-size: 1.25rem; }
+      .post-excerpt { font-size: 1rem; }
+      .featured-img { height: clamp(200px, 56vw, 300px); }
+      .featured-body { padding: 1.15rem; }
       .promo-break-head {
         display: flex;
         flex-direction: column;

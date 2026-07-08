@@ -165,7 +165,7 @@ function copyRecursive(src, dest) {
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
   }
   function makeCardImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=576&h=576').replace(/q=\d+/, 'q=85');
+    return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=506').replace(/q=\d+/, 'q=85');
   }
   function makePostPageImage(imgUrl) {
     if (!imgUrl) return '';
@@ -180,6 +180,7 @@ function copyRecursive(src, dest) {
       const excerpt = makeExcerpt(post.body);
       return cardHtml
         .replace(/(<img class="post-thumb"[^>]*?)src="[^"]*" alt="[^"]*"/, `$1src="${makeCardImage(post.image)}" alt="${escAttr(post.title)} thumbnail"`)
+        .replace(/(<img class="post-thumb") width="\d+" height="\d+"/, '$1 width="900" height="506"')
         .replace(/<span class="post-date">[\s\S]*?<\/span>/, `<span class="post-date">${escAttr(post.date)}</span>`)
         .replace(/<span class="post-category">[\s\S]*?<\/span>/, `<span class="post-category">${escAttr(post.category)}</span>`)
         .replace(/<span class="post-tag [^"]*">[\s\S]*?<\/span>/, `<span class="post-tag ${escAttr(post.tagClass)}">${escAttr(post.tag)}</span>`)
