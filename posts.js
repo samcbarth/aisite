@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post33: {
+    featured: false,
+    date: 'July 7, 2026',
+    iso: '2026-07-07',
+    title: "HubSpot's data enrichment reversal is really a trust problem",
+    category: 'HubSpot',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://community.hubspot.com/t/we-got-this-wrong-and-we-are-fixing-it/152063" target="_blank" rel="noopener noreferrer">HubSpot reversed its planned data enrichment terms change</a> after a pretty loud customer backlash, especially on LinkedIn. Duncan Lennox, HubSpot's Chief Product and Technology Officer, said they got it wrong and would not move forward with the terms of service changes communicated on July 1.</p>
+
+      <p>I think reversing it was the right call. But this definitely should not have happened in the first place. HubSpot is not just another data vendor sitting outside the customer relationship. It is the CRM. That changes the standard.</p>
+
+      <p>The part that made people react so strongly is pretty easy to understand. Customers import the contacts. Customers clean the records. Customers pay teams to maintain the data. Customers build the context inside the CRM. Then the platform says that enrichment data may be shared into a broader dataset unless customers opt out. That feels backwards.</p>
+
+      <p><a href="https://www.cmswire.com/customer-experience/hubspot-reverses-customer-data-enrichment-plan-after-customer-backlash/" target="_blank" rel="noopener noreferrer">CMSWire reported</a> that the plan would have allowed customer enrichment data to be shared across accounts before HubSpot reversed course. That is why this became such a big deal. It was not just a feature rollout. It felt like the rules around customer data were changing underneath people.</p>
+
+      <p>I have seen some people say that Apollo, ZoomInfo, and other enrichment providers do similar things. I get the comparison, but I do not think it is the same. Those companies are external data providers. You buy their dataset as a service. HubSpot is where the customer relationship lives. It is where the notes, contacts, companies, lifecycle stages, deals, lists, and workflows live.</p>
+
+      <p>That distinction matters. A corporation pulling together third-party data for a service is one thing. A CRM platform taking customer-contributed data and using it to power a similar enrichment product is a very different trust equation. Even if the intent was not malicious, the structure feels wrong.</p>
+
+      <p>The opt-out part is what really bothered me. For something this sensitive, the default should have been obvious: ask first. Make it clearly opt-in. Explain exactly what data is used, what is excluded, how it is governed, how customers benefit, and what happens if they say no. Anything less creates the feeling that the platform is helping itself to the customer's work.</p>
+
+      <p>I do give HubSpot credit for reversing quickly. They listened, they acknowledged the mistake, and they put a public statement behind it. That matters. But the trust issue does not disappear just because the rollback happened quickly.</p>
+
+      <p>For RevOps teams, this is a reminder that CRM data governance is not just an internal cleanup project. It is also a vendor-risk question. Who can access the data? What can the platform do with it? What changes when terms are updated? What defaults are turned on quietly? Those questions have to be part of the operating model now.</p>
+
+      <p>My view is simple. HubSpot can still build good enrichment tools. I actually think better enrichment inside the CRM would be useful. But if the product is powered by customer data, the permission model has to be clean. Not technically defensible. Clean. Obvious. Opt-in. Easy to explain to a client without feeling weird about it.</p>
+
+      <p>That is the whole issue. HubSpot has spent years building trust as the friendly CRM. This was the kind of move that makes people question whether that trust is still the center of the relationship. The reversal was good. The lesson should be louder than the apology.</p>
+    `
+  },
   post32: {
     featured: false,
     date: 'July 7, 2026',
@@ -691,7 +723,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
