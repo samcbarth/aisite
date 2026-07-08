@@ -136,6 +136,51 @@
       transition: color 0.15s;
     }
     .desktop-nav a:hover { color: #fff; }
+    .desktop-more {
+      position: relative;
+    }
+    .desktop-more > summary {
+      list-style: none;
+      color: #888;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .desktop-more > summary::-webkit-details-marker { display: none; }
+    .desktop-more > summary::after {
+      content: ' +';
+      color: #555;
+    }
+    .desktop-more[open] > summary,
+    .desktop-more > summary:hover { color: #fff; }
+    .desktop-more-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 0.7rem);
+      min-width: 210px;
+      padding: 0.7rem;
+      background: #0d0d0d;
+      border: 1px solid #222;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      z-index: 30;
+    }
+    .desktop-more-panel a,
+    .desktop-more-panel .nav-action {
+      width: 100%;
+      padding: 0.55rem 0.6rem;
+      text-align: left;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+    }
+    .desktop-more-panel a:hover,
+    .desktop-more-panel .nav-action:hover {
+      background: rgba(255,255,255,0.05);
+    }
     .nav-action {
       border: 1px solid #2a2a2a;
       background: #101010;
@@ -144,7 +189,7 @@
       padding: 0.45rem 0.8rem;
       font: inherit;
       font-size: 1rem;
-      cursor: default;
+      cursor: pointer;
       transition: color 0.15s, border-color 0.15s, background 0.15s;
     }
     .nav-action:hover { color: #fff; border-color: #555; }
@@ -1268,8 +1313,19 @@
     body.light-mode { background: #f5f5f5; color: #111; }
     body.light-mode header { border-color: #e0e0e0; }
     body.light-mode .logo { color: #111; }
-    body.light-mode .desktop-nav a { color: #666; }
-    body.light-mode .desktop-nav a:hover { color: #111; }
+    body.light-mode .desktop-nav a,
+    body.light-mode .desktop-more > summary { color: #666; }
+    body.light-mode .desktop-nav a:hover,
+    body.light-mode .desktop-more > summary:hover { color: #111; }
+    body.light-mode .desktop-more-panel {
+      background: #fff;
+      border-color: #e0e0e0;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    body.light-mode .desktop-more-panel a:hover,
+    body.light-mode .desktop-more-panel .nav-action:hover {
+      background: rgba(0,0,0,0.04);
+    }
     body.light-mode .nav-action { border-color: #d0d0d0; color: #666; background: #f5f5f5; }
     body.light-mode .nav-action:hover { border-color: #888; color: #111; }
     body.light-mode .theme-toggle { border-color: #d0d0d0; color: #888; }
@@ -1791,29 +1847,37 @@
     <span class="logo-name">Sam C Barth</span>
   </a>  <div class="header-actions">
     <nav class="desktop-nav" aria-label="Primary">
-      <a href="start-here.html">Start here</a>
+      <a href="./" aria-current="page">Articles</a>
+      <a href="start-here.html">Topics</a>
       <a href="resources.html">Resources</a>
-      <a href="resources.html">Work with me</a>
-      <a href="premium.html">Premium</a>
-      <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Resume</a>
-      <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="mailto:samcbarth@gmail.com">Contact</a>
-      <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
+      <details class="desktop-more">
+        <summary>More</summary>
+        <div class="desktop-more-panel">
+          <a href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" target="_blank" rel="noopener noreferrer">Work with Sam</a>
+          <a href="premium.html">Premium</a>
+          <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:samcbarth@gmail.com">Contact</a>
+          <button class="nav-action" type="button" data-action="toggle-theme" aria-pressed="false">Use light mode</button>
+          <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
+        </div>
+      </details>
     </nav>
-    <button class="theme-toggle" id="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Toggle light and dark mode" title="Toggle light/dark mode">Light</button>
     <details class="mobile-nav">
       <summary class="menu-toggle" aria-label="Open navigation">
         <span class="menu-toggle-burger" aria-hidden="true"><span></span><span></span><span></span></span>
         Menu
       </summary>
       <div class="mobile-panel" aria-label="Primary">
-        <a href="start-here.html">Start here</a>
+        <a href="./" aria-current="page">Articles</a>
+        <a href="start-here.html">Topics</a>
         <a href="resources.html">Resources</a>
-        <a href="resources.html">Work with me</a>
+        <a href="https://meetings.hubspot.com/sam-barth/meeting-with-sam" target="_blank" rel="noopener noreferrer">Work with Sam</a>
         <a href="premium.html">Premium</a>
         <a href="https://samcbarthresume.work/" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="https://linkedin.com/in/samcbarth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:samcbarth@gmail.com">Contact</a>
+        <button class="nav-action" type="button" data-action="toggle-theme" aria-pressed="false">Use light mode</button>
         <button class="nav-action" type="button" data-action="refresh-site">Refresh site</button>
       </div>
     </details>

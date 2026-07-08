@@ -403,9 +403,10 @@
   function toggleTheme() {
     const isLight = document.body.classList.toggle('light-mode');
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    const btn = document.getElementById('theme-toggle');
-    btn.textContent = isLight ? 'Dark' : 'Light';
-    btn.setAttribute('aria-pressed', String(isLight));
+    document.querySelectorAll('[data-action="toggle-theme"]').forEach(btn => {
+      btn.textContent = isLight ? 'Use dark mode' : 'Use light mode';
+      btn.setAttribute('aria-pressed', String(isLight));
+    });
   }
 
   async function refreshSite(trigger) {
@@ -611,9 +612,10 @@
   function initCards() {
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add('light-mode');
-      const tt = document.getElementById('theme-toggle');
-      tt.textContent = 'Dark';
-      tt.setAttribute('aria-pressed', 'true');
+      document.querySelectorAll('[data-action="toggle-theme"]').forEach(btn => {
+        btn.textContent = 'Use dark mode';
+        btn.setAttribute('aria-pressed', 'true');
+      });
     }
 
     refreshPostCards();
