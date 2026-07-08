@@ -614,7 +614,8 @@
       if (fn) { e.preventDefault(); fn(el); }
     });
 
-    document.getElementById('newsletter-form').addEventListener('submit', handleSubscribe);
+    const newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) newsletterForm.addEventListener('submit', handleSubscribe);
 
     document.getElementById('search-input').addEventListener('input', function () {
       searchQuery = this.value.toLowerCase().trim();
