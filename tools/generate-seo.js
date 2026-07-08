@@ -89,7 +89,9 @@ const staticUrls = [
   { loc: SITE, changefreq: 'weekly', priority: '1.0' },
   { loc: SITE + 'premium.html', changefreq: 'monthly', priority: '0.6' },
   { loc: SITE + 'start-here.html', changefreq: 'monthly', priority: '0.7' },
-  { loc: SITE + 'resources.html', changefreq: 'monthly', priority: '0.7' }
+  { loc: SITE + 'resources.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: SITE + 'about.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: SITE + 'work.html', changefreq: 'monthly', priority: '0.8' }
 ];
 const sitemapEntries = staticUrls.map((item) => `  <url>
     <loc>${esc(item.loc)}</loc>

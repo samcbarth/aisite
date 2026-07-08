@@ -37,7 +37,7 @@ function copyRecursive(src, dest) {
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });
 
-  const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html'];
+  const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html', 'about.html', 'work.html'];
   for (const f of staticFiles) {
     if (fs.existsSync(path.join(root, f))) fs.copyFileSync(path.join(root, f), path.join(dist, f));
   }
@@ -85,7 +85,7 @@ function copyRecursive(src, dest) {
   const swPath = path.join(dist, 'sw.js');
   if (fs.existsSync(swPath)) {
     const hash = crypto.createHash('sha256');
-    for (const f of ['index.html', 'premium.html', 'start-here.html', 'resources.html', 'app.js', 'posts.js', 'premium.js', 'manifest.webmanifest']) {
+    for (const f of ['index.html', 'premium.html', 'start-here.html', 'resources.html', 'about.html', 'work.html', 'assets/section-page.css', 'app.js', 'posts.js', 'premium.js', 'manifest.webmanifest']) {
       const p = path.join(dist, f);
       if (fs.existsSync(p)) hash.update(fs.readFileSync(p));
     }

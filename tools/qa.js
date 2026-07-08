@@ -169,7 +169,7 @@ function checkSeoArtifacts() {
 
 function checkServiceWorker() {
   const sw = read(path.join(dist, 'sw.js'));
-  for (const asset of ['premium.html', 'resources.html', 'start-here.html', 'premium.js', 'assets/icons/icon-maskable-512.png']) {
+  for (const asset of ['premium.html', 'resources.html', 'start-here.html', 'about.html', 'work.html', 'assets/section-page.css', 'premium.js', 'assets/icons/icon-maskable-512.png']) {
     if (!sw.includes(asset)) fail(`service worker missing cache asset: ${asset}`);
   }
 }
@@ -183,6 +183,8 @@ function checkSourceText() {
     'premium.html',
     'resources.html',
     'start-here.html',
+    'about.html',
+    'work.html',
     'google-apps-script.js',
     'sw.js',
     '.github/workflows/pages.yml'
