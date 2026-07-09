@@ -7,6 +7,30 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post42: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'IBM and Red Hat are turning open source security into an AI business',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>AI makes code faster. That is not the hard part anymore. The hard part is making sure the code can be trusted, patched, and shipped without breaking the system around it.</p>
+
+      <p><a href="https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source" target="_blank" rel="noopener noreferrer">IBM and Red Hat said on July 8</a> they are commercializing Lightwell, which starts with automated vulnerability remediation and a catalog of 6,500+ remediated, digitally signed dependencies. They say the first rollout is limited to financial services. That is not a consumer AI story. That is an enterprise trust story.</p>
+
+      <p>This builds on the <a href="https://newsroom.ibm.com/2026-05-28-ibm-and-red-hat-commit-5-billion-to-redefine-the-future-of-open-source-in-the-ai-era" target="_blank" rel="noopener noreferrer">$5 billion commitment</a> IBM and Red Hat announced in May to push open source security deeper into the AI era. The signal is pretty clear. The more AI speeds up software work, the more value shows up in the layer that keeps that software safe.</p>
+
+      <p>Matt Hicks called Lightwell a "fundamental structural shift." I think that is right. Enterprises do not just need more scans and more alerts. They need a way to get validated fixes into production without turning every patch into a migration project.</p>
+
+      <p>Rob Thomas said IBM and Red Hat are giving enterprises "certified fixes they can pull straight into the systems they already run, with no retooling or disruption." That is the business model in one sentence. Reduce friction. Reduce downtime. Keep the stack moving.</p>
+
+      <p>The interesting part is not the branding. It is the control point. If this works, IBM and Red Hat are not just helping companies patch old code. They are trying to own a piece of the trust layer around modern software supply chains. In regulated industries, that is worth real money.</p>
+
+      <p>My read is simple. AI is making software creation cheaper. That makes validation, remediation, and governance more valuable, not less. The companies that can package that pain into a clean product will have a real business. The ones that only sell speed will keep running into the same security wall.</p>
+    `
+  },
   post41: {
     featured: false,
     date: 'July 9, 2026',
@@ -957,7 +981,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

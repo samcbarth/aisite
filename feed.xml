@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 18:37:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 23:41:56 GMT</lastBuildDate>
+    <item>
+      <title>IBM and Red Hat are turning open source security into an AI business</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-are-turning-open-source-security-into-an-ai-business/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-are-turning-open-source-security-into-an-ai-business/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>AI makes code faster. That is not the hard part anymore. The hard part is making sure the code can be trusted, patched, and shipped without breaking the system around it. IBM and Red Hat said on July 8 they are commercializing Lightwell, which starts with automated vulnerability </description>
+    </item>
+    <item>
+      <title>Microsoft&apos;s Frontier Company is the real AI services story</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-real-ai-services-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-real-ai-services-story/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft&apos;s Frontier Company is not a normal product launch. It is Microsoft admitting that enterprise AI now needs people inside the customer workflow, not just another model to test. In its July 2 announcement , Microsoft said it is making a $2.5 billion investment and embeddin</description>
+    </item>
     <item>
       <title>OpenAI and Broadcom are pulling AI economics in-house</title>
       <link>https://samcbarth.github.io/aisite/posts/openai-and-broadcom-are-pulling-ai-economics-in-house/</link>

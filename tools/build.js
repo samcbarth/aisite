@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post42: 'The Lightwell story matters because AI only scales inside enterprises when the software underneath it is safe enough to trust and cheap enough to patch.',
     post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
     post39: 'Streaming changed the movie business because convenience, ad tiers, and selective theatrical demand now reward clearer ideas and tighter budgets.',
     post40: 'OpenAI and Broadcom matter because AI leaders are starting to own the compute economics instead of just renting them.',
@@ -205,6 +206,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post42: {
+      image: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?w=900&h=650&fit=crop&q=80',
+      caption: 'The AI security story sits in the workflow, not the keynote.',
+      side: 'left',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The business is moving toward trust, patching, and control over the software supply chain.'
+    },
     post38: {
       image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&h=650&fit=crop&q=80',
       caption: 'AI demand is pushing more attention onto the memory and server layer underneath everyday electronics.',
@@ -387,6 +396,16 @@ function copyRecursive(src, dest) {
       source: 'IBM',
       sourceUrl: 'https://www.ibm.com/think/topics/ai-agent-memory'
     },
+    lightwellStructuralShift: {
+      text: 'fundamental structural shift',
+      source: 'Red Hat',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source'
+    },
+    lightwellNoDisruption: {
+      text: 'certified fixes they can pull straight into the systems they already run, with no retooling or disruption',
+      source: 'IBM',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source'
+    },
     databricksMemory: {
       text: 'memory scaling becomes a distinct and complementary axis',
       source: 'Databricks',
@@ -547,6 +566,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post42: { after: 4, quotes: [makeQuote('Structural shift', QUOTE_LIBRARY.lightwellStructuralShift), makeQuote('No disruption', QUOTE_LIBRARY.lightwellNoDisruption)] },
     post40: { after: 4, quotes: [makeQuote('Compute economy', QUOTE_LIBRARY.openaiComputePowered), makeQuote('Roadmap', QUOTE_LIBRARY.broadcomRoadmap)] },
     post41: { after: 4, quotes: [makeQuote('Outcomes', QUOTE_LIBRARY.microsoftMeasuredOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },
     post38: { after: 4, quotes: [makeQuote('Supply', QUOTE_LIBRARY.reutersMemoryShortage), makeQuote('Cost pressure', QUOTE_LIBRARY.omdiaMemoryCosts)] },
