@@ -7,6 +7,32 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post39: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'Streaming changed movies, and theaters are rewarding smaller bets',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Streaming changed movies. It did not kill them. It just changed what people will show up for, what they will wait to watch at home, and what kind of movie can still feel like a win.</p>
+
+      <p>Netflix is still a big part of that story. In its <a href="https://ir.netflix.net/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf" target="_blank" rel="noopener noreferrer">Q1 2026 shareholder letter</a>, the company said revenue grew 16% year over year and that advertising revenue was on track to reach $3B in 2026. That is a streaming business still growing, still changing the rules, and still making more room for convenience.</p>
+
+      <p>The theater side is changing too. <a href="https://www.boxofficepro.com/art-house-convergence-releases-results-of-2026-national-audience-survey/" target="_blank" rel="noopener noreferrer">Art House Convergence's 2026 survey</a> said independent cinemas were up 8.8% year over year and 38% over 2019. That matters because it tells me people are not just staying home. They are choosing more specific movie experiences when the movie is worth the trip.</p>
+
+      <p>That is the part I keep coming back to. The old model wanted a giant budget, a giant opening weekend, and a giant marketing push to make everybody care at once. Now the better movie is often the one that knows exactly what it is and does not need to apologize for being smaller.</p>
+
+      <p>That is why movies like <em>Obsession</em> and <em>Backrooms</em> keep coming up in the conversation. People are responding to movies that feel more direct, more personal, and less like they were designed by committee. Lower budgets do not automatically make a movie good, but they do force a kind of discipline that expensive projects often lose.</p>
+
+      <p>I think that is where the industry is heading. Not away from big movies entirely, but away from the idea that big spending alone can carry weak ideas. The market is giving more room to films with a point of view, especially when the story is sharp enough that it can travel without a giant machine behind it.</p>
+
+      <p>That does not mean every movie needs to be tiny. It means the business is rewarding clarity. If the movie is interesting, people will still show up. If it is generic, the audience has more options than ever and no reason to be loyal to a bloated budget.</p>
+
+      <p>My read is simple. Streaming trained people to be selective. Theaters are adapting by leaning harder into movies that feel worth leaving home for. The winners are the projects that know how to do more with less and still feel like real art.</p>
+    `
+  },
   post38: {
     featured: false,
     date: 'July 9, 2026',
@@ -885,7 +911,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

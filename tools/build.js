@@ -117,6 +117,7 @@ function copyRecursive(src, dest) {
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
     post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
+    post39: 'Streaming changed the movie business because convenience, ad tiers, and selective theatrical demand now reward clearer ideas and tighter budgets.',
     post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
     post37: 'The HubSpot backlash matters because first-party data only stays valuable when customers can see who owns it, who can enrich it, and who can share it.',
     post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
@@ -210,6 +211,14 @@ function copyRecursive(src, dest) {
       after: 3,
       supportImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=650&fit=crop&q=80',
       supportCaption: 'When memory gets expensive, the pressure shows up in retail hardware first.'
+    },
+    post39: {
+      image: 'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=900&h=650&fit=crop&q=80',
+      caption: 'Theatrical viewing still matters when the movie gives people a reason to leave the house.',
+      side: 'right',
+      after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1643208589889-0735ad7218f0?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'Streaming changed the habit, but the living room still competes with the theater.'
     },
     post36: {
       image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&h=650&fit=crop&q=80',
@@ -376,6 +385,16 @@ function copyRecursive(src, dest) {
       source: 'Omdia',
       sourceUrl: 'https://omdia.tech.informa.com/blogs/2026/july/global-smartphones-priced-below-400-dollars-will-decline-by-22percent-as-memory-costs-soar'
     },
+    netflixDynamic: {
+      text: 'The entertainment business remains extraordinarily dynamic and competitive.',
+      source: 'Netflix',
+      sourceUrl: 'https://ir.netflix.net/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf'
+    },
+    artHouseRally: {
+      text: 'Our latest survey proves that audiences continue to rally around their local independent theaters.',
+      source: 'Boxoffice Pro',
+      sourceUrl: 'https://www.boxofficepro.com/art-house-convergence-releases-results-of-2026-national-audience-survey/'
+    },
     cookUnavoidable: {
       text: 'price increases for some Apple products are unavoidable',
       source: 'Al Jazeera',
@@ -492,6 +511,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post38: { after: 4, quotes: [makeQuote('Supply', QUOTE_LIBRARY.reutersMemoryShortage), makeQuote('Cost pressure', QUOTE_LIBRARY.omdiaMemoryCosts)] },
+    post39: { after: 4, quotes: [makeQuote('Streaming', QUOTE_LIBRARY.netflixDynamic), makeQuote('Theaters', QUOTE_LIBRARY.artHouseRally)] },
     post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },
     post37: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.hubspotControl), makeQuote('Dataset', QUOTE_LIBRARY.hubspotCommercialDataset)] },
     post35: { after: 6, quotes: [makeQuote('Strategy view', QUOTE_LIBRARY.hbrCustomerChoice), makeQuote('Search view', QUOTE_LIBRARY.googleSeoFoundation)] },
