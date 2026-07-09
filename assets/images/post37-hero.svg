@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract trust network hero</title>
+  <desc id="desc">Blue and violet data nodes surrounding a shield and linked panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f"/>
+      <stop offset="50%" stop-color="#102a4c"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="960" cy="126" r="180" fill="#7c3aed" opacity="0.16"/>
+  <circle cx="230" cy="560" r="220" fill="#22d3ee" opacity="0.12"/>
+  <g fill="none" stroke="url(#glow)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M240 160 L420 120 L600 180 L760 120 L930 180"/>
+    <path d="M210 260 L390 230 L610 280 L820 230 L1020 270"/>
+    <path d="M260 390 L460 340 L650 390 L820 340 L980 390"/>
+  </g>
+  <g fill="#e0f2fe" opacity="0.95">
+    <circle cx="240" cy="160" r="10"/>
+    <circle cx="420" cy="120" r="10"/>
+    <circle cx="600" cy="180" r="10"/>
+    <circle cx="760" cy="120" r="10"/>
+    <circle cx="930" cy="180" r="10"/>
+    <circle cx="210" cy="260" r="10"/>
+    <circle cx="390" cy="230" r="10"/>
+    <circle cx="610" cy="280" r="10"/>
+    <circle cx="820" cy="230" r="10"/>
+    <circle cx="1020" cy="270" r="10"/>
+    <circle cx="260" cy="390" r="10"/>
+    <circle cx="460" cy="340" r="10"/>
+    <circle cx="650" cy="390" r="10"/>
+    <circle cx="820" cy="340" r="10"/>
+    <circle cx="980" cy="390" r="10"/>
+  </g>
+  <g transform="translate(470 150)">
+    <path d="M130 0 L240 54 L240 172 C240 258 189 330 130 364 C71 330 20 258 20 172 L20 54 Z" fill="#06111d" stroke="#93c5fd" stroke-width="8"/>
+    <path d="M130 44 C162 70 185 94 185 140 C185 188 158 226 130 252 C102 226 75 188 75 140 C75 94 98 70 130 44 Z" fill="none" stroke="url(#glow)" stroke-width="10"/>
+    <rect x="86" y="134" width="88" height="72" rx="18" fill="#0f172a" stroke="#bfdbfe" stroke-width="6"/>
+    <path d="M106 170 h48" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M130 152 v36" stroke="#c084fc" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="#bfdbfe" opacity="0.96">
+    <rect x="112" y="500" width="176" height="94" rx="22" fill="#0f172a" opacity="0.85"/>
+    <rect x="106" y="488" width="176" height="94" rx="22" fill="none" stroke="#38bdf8" stroke-width="4"/>
+    <rect x="890" y="500" width="176" height="94" rx="22" fill="#0f172a" opacity="0.85"/>
+    <rect x="884" y="488" width="176" height="94" rx="22" fill="none" stroke="#c084fc" stroke-width="4"/>
+    <path d="M148 548 h92" stroke="#22d3ee" stroke-width="10" stroke-linecap="round"/>
+    <path d="M924 548 h92" stroke="#f472b6" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

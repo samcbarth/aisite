@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract ownership and control support art</title>
+  <desc id="desc">Warm orange and rose shapes with a lock, document, and handoff arrows.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b0a1e"/>
+      <stop offset="55%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg3)"/>
+  <circle cx="920" cy="110" r="170" fill="#fbbf24" opacity="0.18"/>
+  <circle cx="240" cy="590" r="210" fill="#fb7185" opacity="0.16"/>
+  <g transform="translate(154 124)">
+    <rect x="0" y="0" width="350" height="440" rx="34" fill="url(#card)" opacity="0.95"/>
+    <rect x="60" y="54" width="230" height="26" rx="13" fill="#fb7185"/>
+    <rect x="60" y="110" width="230" height="20" rx="10" fill="#f97316" opacity="0.8"/>
+    <rect x="60" y="150" width="180" height="20" rx="10" fill="#0f172a" opacity="0.35"/>
+    <rect x="60" y="190" width="210" height="20" rx="10" fill="#0f172a" opacity="0.28"/>
+    <rect x="60" y="240" width="230" height="110" rx="24" fill="#fee2e2"/>
+    <path d="M154 276 a32 32 0 0 1 64 0 v18 h-64 z" fill="#9f1239"/>
+    <rect x="150" y="294" width="72" height="54" rx="14" fill="#7f1d1d"/>
+  </g>
+  <g transform="translate(650 124)">
+    <rect x="0" y="0" width="396" height="260" rx="32" fill="#ffffff" opacity="0.92"/>
+    <path d="M58 58 h280" stroke="#f97316" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 102 h204" stroke="#9f1239" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 146 h240" stroke="#fb7185" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 190 h160" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#ffedd5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M555 470 C620 420 680 420 730 470"/>
+    <path d="M730 470 l-20 -4"/>
+    <path d="M730 470 l-8 18"/>
+    <path d="M840 470 C910 420 980 420 1040 470"/>
+    <path d="M1040 470 l-20 -4"/>
+    <path d="M1040 470 l-8 18"/>
+  </g>
+  <g transform="translate(488 402)">
+    <rect x="0" y="0" width="218" height="162" rx="26" fill="#fff7ed" opacity="0.94"/>
+    <path d="M62 78 a47 47 0 0 1 94 0 v24 h-94 z" fill="#f97316"/>
+    <rect x="56" y="102" width="106" height="42" rx="14" fill="#9f1239"/>
+  </g>
+</svg>

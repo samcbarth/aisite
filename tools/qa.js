@@ -24,6 +24,10 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/g, '/');
 }
 
+function imageBase(src) {
+  return (src || '').split('?')[0];
+}
+
 function toSlug(title) {
   return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
@@ -135,7 +139,8 @@ function checkImages() {
     const alt = (match[1].match(/alt="([^"]*)"/) || [])[1];
     if (!src) fail('blank homepage thumbnail src');
     if (alt === undefined || alt.trim().length < 12) fail(`weak homepage thumbnail alt: ${src}`);
-    homeThumbs.set(src, (homeThumbs.get(src) || 0) + 1);
+    const key = imageBase(src);
+    homeThumbs.set(key, (homeThumbs.get(key) || 0) + 1);
   }
   for (const [src, count] of homeThumbs.entries()) {
     if (src && count > 1) fail(`duplicate homepage thumbnail: ${src}`);
@@ -150,7 +155,8 @@ function checkImages() {
       const alt = (attrs.match(/alt="([^"]*)"/) || [])[1];
       if (!src) fail(`blank image src: ${rel(file)}`);
       if (alt === undefined || alt.trim().length < 12) fail(`weak image alt: ${rel(file)} -> ${src}`);
-      counts.set(src, (counts.get(src) || 0) + 1);
+      const key = imageBase(src);
+      counts.set(key, (counts.get(key) || 0) + 1);
     }
     for (const [src, count] of counts.entries()) {
       if (src && count > 1) fail(`duplicate image on page: ${rel(file)} -> ${src}`);

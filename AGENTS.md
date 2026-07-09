@@ -14,7 +14,7 @@
 - Do not invent opinions, experience, quotes, facts, or client stories.
 - Use current, credible sources for factual claims.
 - Use exact sourced quotes. Never present a paraphrase as a quote.
-- Add three relevant images that are unique across the site.
+- Add three relevant images that are unique across the site and do not reuse the same base image inside one post.
 - Keep the current featured post unless Sam requests a change.
 - Avoid generic AI language, filler, hype, and repetitive conclusions.
 
@@ -31,6 +31,7 @@
 - Commit intentionally and push `main`.
 - Poll the GitHub Pages workflow.
 - Verify the public homepage card, article URL, sources, images, quotes, and sitemap.
+- Search image bases before publishing. A hero image must not be reused for inline or support art in the same post.
 - Do not claim a post is live until public verification succeeds.
 
 ## Safety

@@ -162,13 +162,22 @@ function copyRecursive(src, dest) {
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
+  function cleanLocalAsset(imgUrl) {
+    return (imgUrl || '').replace(/^\.?\//, '');
+  }
   function makeOgImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=630');
+    if (!imgUrl) return '';
+    if (/^(https?:|data:|\/)/.test(imgUrl)) return imgUrl.replace(/w=\d+&h=\d+/, 'w=1200&h=630');
+    return `${BASE_URL}/${cleanLocalAsset(imgUrl)}`;
   }
   function makeHeroImage(imgUrl) {
-    return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
+    if (!imgUrl) return '';
+    if (/^(https?:|data:|\/)/.test(imgUrl)) return imgUrl.replace(/w=\d+&h=\d+/, 'w=1160&h=440');
+    return '../../' + cleanLocalAsset(imgUrl);
   }
   function makeCardImage(imgUrl) {
+    if (!imgUrl) return '';
+    if (!/^(https?:|data:|\/)/.test(imgUrl)) return cleanLocalAsset(imgUrl);
     return imgUrl.replace(/w=\d+&h=\d+/, 'w=900&h=506').replace(/q=\d+/, 'q=85');
   }
   function makePostPageImage(imgUrl) {
@@ -202,11 +211,11 @@ function copyRecursive(src, dest) {
       supportCaption: 'The game creates the value. Its governing institutions should remain accountable to the people who support it.'
     },
     post37: {
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=650&fit=crop&q=80',
+      image: 'assets/images/post37-inline.svg',
       caption: 'Trust gets shaky fast when a CRM starts sounding like a shared dataset.',
       side: 'left',
       after: 4,
-      supportImage: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80',
+      supportImage: 'assets/images/post37-support.svg',
       supportCaption: 'The real issue is permission, ownership, and whether the defaults still feel like customer control.'
     },
     post35: {
