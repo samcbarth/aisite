@@ -7,6 +7,28 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post41: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: "Microsoft's Frontier Company is the real AI services story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1496843916299-590492c751f4?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Microsoft's Frontier Company is not a normal product launch. It is Microsoft admitting that enterprise AI now needs people inside the customer workflow, not just another model to test.</p>
+
+      <p><a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/" target="_blank" rel="noopener noreferrer">In its July 2 announcement</a>, Microsoft said it is making a $2.5 billion investment and embedding 6,000 industry and engineering experts at customers. That is not a little pilot program. That is a services business built around AI deployment.</p>
+
+      <p>The line that matters most is simple: "measurable business outcomes." That is the whole game now. Most AI projects do not fail because the demo is bad. They fail because nobody can tie the work to a real business result.</p>
+
+      <p>The other line is even more blunt: "Customers shouldn't be locked into a single model any more than they should be locked into a single technology vendor." That tells me Microsoft knows the market is already multi-model. The winning stack will be the one that fits the workflow, not the one that sounds the coolest in a keynote.</p>
+
+      <p>Microsoft says early work with LSEG, Unilever, and Novo Nordisk is already producing results. That is the part I would watch closely. If the company can keep turning those examples into repeatable deployments, Frontier Company becomes more than a press release.</p>
+
+      <p>My read is simple. The AI market is moving from access to implementation. The hard part now is not getting a model. It is stitching the model into real work, protecting customer data, and proving the outcome was worth the spend.</p>
+    `
+  },
   post40: {
     featured: false,
     date: 'July 9, 2026',
@@ -935,7 +957,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

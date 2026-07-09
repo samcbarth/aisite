@@ -229,6 +229,14 @@ function copyRecursive(src, dest) {
       supportImage: 'https://images.unsplash.com/photo-1682559736721-c2e77ff4c650?w=900&h=650&fit=crop&q=80',
       supportCaption: 'Own more of the stack and you own more of the economics.'
     },
+    post41: {
+      image: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?w=900&h=650&fit=crop&q=80',
+      caption: 'Enterprise AI still needs people sitting close to the workflow.',
+      side: 'right',
+      after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1631085160969-6a4889625eec?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The money is in the messy middle between model access and business process.'
+    },
     post36: {
       image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&h=650&fit=crop&q=80',
       caption: 'International fans discovering local food is one of the best stories around the World Cup.',
@@ -404,6 +412,16 @@ function copyRecursive(src, dest) {
       source: 'OpenAI',
       sourceUrl: 'https://openai.com/index/openai-broadcom-jalapeno-inference-chip/'
     },
+    microsoftMeasuredOutcomes: {
+      text: 'measurable business outcomes',
+      source: 'Microsoft',
+      sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/'
+    },
+    microsoftModelChoice: {
+      text: "Customers shouldn't be locked into a single model any more than they should be locked into a single technology vendor.",
+      source: 'Microsoft',
+      sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/'
+    },
     broadcomRoadmap: {
       text: 'This is just the beginning of a multi-generation roadmap.',
       source: 'Broadcom',
@@ -530,6 +548,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post40: { after: 4, quotes: [makeQuote('Compute economy', QUOTE_LIBRARY.openaiComputePowered), makeQuote('Roadmap', QUOTE_LIBRARY.broadcomRoadmap)] },
+    post41: { after: 4, quotes: [makeQuote('Outcomes', QUOTE_LIBRARY.microsoftMeasuredOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },
     post38: { after: 4, quotes: [makeQuote('Supply', QUOTE_LIBRARY.reutersMemoryShortage), makeQuote('Cost pressure', QUOTE_LIBRARY.omdiaMemoryCosts)] },
     post39: { after: 4, quotes: [makeQuote('Streaming', QUOTE_LIBRARY.netflixDynamic), makeQuote('Theaters', QUOTE_LIBRARY.artHouseRally)] },
     post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },
