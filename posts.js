@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post35: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'Qualification, research, and AEO are how AI becomes normal business',
+    category: 'RevOps',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business" target="_blank" rel="noopener noreferrer">Harvard Business Review looked at how three small and midsize businesses</a>, including a manufacturer, a boutique hotel, and a B2B software company, are adapting as AI changes how customers research, evaluate, and choose suppliers.</p>
+
+      <p>I agree with the larger point, but what stands out to me is how practical the examples are. Qualification, research, and answer engine optimization are not weird edge cases. They are three of the most ideal places to use AI because they increase efficiency inside work companies already need to do.</p>
+
+      <p>Qualification is probably the clearest example. Every business has some version of deciding which leads, opportunities, customers, vendors, or requests deserve attention first. A lot of that work is still based on incomplete forms, manual review, and somebody making a quick judgment with limited context.</p>
+
+      <p>AI can help pull together the information, compare it against the criteria that matter, and give the team a more useful starting point. That does not mean the AI should make every final decision. It means people stop wasting as much time sorting through obvious mismatches and can focus their attention where judgment is actually valuable.</p>
+
+      <p>Research works the same way. Sales teams research prospects. Marketing teams research markets. Operators research tools and vendors. Leaders research competitors, pricing, and customer behavior. The work matters, but a lot of the process is slow because the information is scattered.</p>
+
+      <p>AI can compress that first pass. It can gather the available context, summarize the major points, identify gaps, and help somebody decide what deserves deeper investigation. The important part is still verification. Faster research is useful. Faster confidence in bad information is not.</p>
+
+      <p>Then there is AEO, or answer engine optimization. I think of this as the next part of SEO, not some completely separate discipline that requires a company to throw away everything it already knows. Customers are asking longer and more specific questions. AI systems are summarizing the available options and helping people build a shortlist before they ever visit a website.</p>
+
+      <p>That means companies need content that clearly explains what they do, who they help, where they operate, what problems they solve, and why somebody should trust them. The website has to be easy for a person to understand and easy for an answer engine to interpret. Clear service pages, useful examples, strong FAQs, consistent business information, and original expertise all matter.</p>
+
+      <p><a href="https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing" target="_blank" rel="noopener noreferrer">Google's own guidance on generative AI search</a> makes a similar point. The company says valuable, unique content matters and that normal SEO fundamentals are still foundational. That is important because AEO should not become another excuse to fill the internet with generic AI copy.</p>
+
+      <p>The common thread across qualification, research, and AEO is efficiency. None of these use cases requires a business to pretend it is becoming an AI company. It is still doing sales, marketing, operations, and customer acquisition. The tools are just helping the company do those things faster and with better context.</p>
+
+      <p>I think successful companies are going to treat this as the new normal. They will not keep AI locked inside a special innovation project that never touches the real workflow. They will look at each process and ask where the team is spending time collecting information, sorting options, repeating research, or answering the same questions.</p>
+
+      <p>From there, the implementation should be pretty straightforward. Define the process. Make sure the data is clean enough to use. Decide where a person still needs to approve the output. Measure whether the change improves speed, quality, conversion, or customer experience. Then keep adjusting it like any other operating system.</p>
+
+      <p>The mistake is treating AI as too different to take on. That makes teams either avoid it completely or overcomplicate it until nothing ships. Qualification, research, and AEO show the better path. Start with work people already understand. Use AI to remove friction. Keep people responsible for the judgment that matters.</p>
+
+      <p>That is where AI becomes useful instead of decorative. The companies that win will not be the ones that talk about AI the most. They will be the ones that quietly make it part of how the business qualifies opportunities, learns faster, and gets chosen.</p>
+    `
+  },
   post34: {
     featured: false,
     date: 'July 8, 2026',
@@ -757,7 +795,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

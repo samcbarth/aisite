@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
     post34: 'The Sony stock-sale story matters because leadership behavior, workforce cuts, and confidence in a strategy are all signals that employees, customers, and investors read together.',
     post33: 'The HubSpot enrichment reversal matters because CRM trust depends on clear data ownership, clean permissioning, and defaults that customers can defend to their own teams.',
     post32: 'The Trump disclosure story matters because it shows how personal incentives, public power, and market access can blur together when governance is weak.',
@@ -190,6 +191,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post35: {
+      image: 'https://images.unsplash.com/photo-1748609160056-7b95f30041f0?w=900&h=650&fit=crop&q=80',
+      caption: 'Research gets more useful when AI shortens the first pass without replacing verification.',
+      side: 'left',
+      after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1542744173-05336fcc7ad4?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The best AI use cases fit into work the team already understands.'
+    },
     post34: {
       image: 'https://images.unsplash.com/photo-1642984061431-fe76503975fd?w=900&h=650&fit=crop&q=80',
       caption: 'The gaming strategy looks different when employees carry the cuts and executives sell shares.',
@@ -400,6 +409,16 @@ function copyRecursive(src, dest) {
       text: 'Insider sells may not necessarily indicate a bearish view.',
       source: 'Benzinga',
       sourceUrl: 'https://www.benzinga.com/news/26/07/60335377/insider-unloading-hiroki-totoki-sells-4-73m-worth-sony-group-shares'
+    },
+    hbrCustomerChoice: {
+      text: 'Competitive advantage is shifting from direct customer understanding to managing AI-shaped interactions.',
+      source: 'Harvard Business Review',
+      sourceUrl: 'https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business'
+    },
+    googleSeoFoundation: {
+      text: 'SEO best practices remain relevant and foundational to success with our generative AI features.',
+      source: 'Google Search Central',
+      sourceUrl: 'https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing'
     }
   };
   function makeQuote(label, quote) {
@@ -411,6 +430,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post35: { after: 6, quotes: [makeQuote('Strategy view', QUOTE_LIBRARY.hbrCustomerChoice), makeQuote('Search view', QUOTE_LIBRARY.googleSeoFoundation)] },
     post34: { after: 5, quotes: [makeQuote('Sony view', QUOTE_LIBRARY.sonyMarathon), makeQuote('Market caution', QUOTE_LIBRARY.insiderSaleCaution)] },
     post33: { after: 4, quotes: [makeQuote('Accountability', QUOTE_LIBRARY.hubspotMistake), makeQuote('Trust standard', QUOTE_LIBRARY.hubspotControl)] },
     post32: { after: 4, quotes: [makeQuote('Defense view', QUOTE_LIBRARY.whiteHouseConflict), makeQuote('Critic view', QUOTE_LIBRARY.warrenCrypto)] },
