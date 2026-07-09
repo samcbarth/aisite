@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post34: {
+    featured: false,
+    date: 'July 8, 2026',
+    iso: '2026-07-08',
+    title: 'Sony executives selling stock makes the Bungie layoffs look even worse',
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Sony's executive stock sales are a bad look, especially when you put them next to what just happened at Bungie. <a href="https://www.sec.gov/Archives/edgar/data/313838/000119312526297130/xslF345X06/ownership.xml" target="_blank" rel="noopener noreferrer">Sony President and CEO Hiroki Totoki disclosed</a> that he sold 225,000 Sony shares on July 3 at $21.02 per share. That comes out to about $4.73 million.</p>
+
+      <p>The part that stands out is how much of his reported direct position that represents. The filing says Totoki had 173,250 shares remaining after the sale. In other words, he sold roughly 56.5% of the shares listed around that transaction. That is not somebody trimming a tiny amount around the edges.</p>
+
+      <p>He was not the only Sony leader selling. <a href="https://www.sec.gov/Archives/edgar/data/313838/000119312526297133/xslF345X06/ownership.xml" target="_blank" rel="noopener noreferrer">Chief Strategy Officer Toshimoto Mitomo also disclosed</a> a July 3 sale of 25,000 shares at the same $21.02 price, worth about $525,500. His filing showed 115,700 shares remaining.</p>
+
+      <p>I want to be fair about what this does and does not prove. Executives sell stock for all kinds of reasons. Taxes, diversification, personal financial planning, and scheduled transactions can all be part of it. A Form 4 tells us what happened. It does not tell us exactly what somebody thinks is going to happen next.</p>
+
+      <p>But I also do not think investors or employees are supposed to ignore the signal completely. When the CEO sells more than half of the direct shares shown in the filing and another senior executive sells on the same day, people are going to ask questions. They should ask questions.</p>
+
+      <p>The timing looks worse because of Bungie. <a href="https://www.geekwire.com/2026/sony-cuts-significant-number-of-jobs-at-bungie-following-end-of-destiny-2-development/" target="_blank" rel="noopener noreferrer">GeekWire reported</a> that Sony cut 292 Bungie jobs in Bellevue after ending active development on Destiny 2. The cuts affected most of the Destiny team, some Marathon team members, and Sony employees who supported Bungie.</p>
+
+      <p>Bungie has now cut more than 600 jobs across three rounds since Sony bought the studio for $3.6 billion in 2022. That is a horrible outcome for the people who actually built the games. Leadership made the acquisition, leadership pushed the live-service strategy, leadership approved the budgets, and workers keep absorbing the consequences when those bets do not perform.</p>
+
+      <p>That is why the stock sales bother me. The people at the top are able to turn their equity into millions of dollars while employees are losing their jobs because the company is trying to clean up expensive strategic decisions. Even if every sale was completely routine, the optics are awful.</p>
+
+      <p>I also think it is reasonable to wonder whether Sony leadership sees more downside ahead. Maybe there are more restructures coming. Maybe there are more write-downs, cancellations, studio changes, or pressure inside the gaming business. I cannot say these filings prove that. They do not. But when leadership starts selling this aggressively, it makes the possibility harder to dismiss.</p>
+
+      <p>This connects directly to the larger problem in AAA gaming. Companies make enormous bets, buy studios for billions, chase live-service revenue, and promise long-term ecosystems. When the plan fails, executives still have options. Developers, artists, producers, QA teams, and support staff get layoffs.</p>
+
+      <p>From a business operations perspective, confidence is not only communicated through earnings calls and press releases. It is communicated through incentives and behavior. If leadership says the future is strong while reducing teams and selling large portions of its own equity, the market is going to compare the words with the actions.</p>
+
+      <p>My take is simple. The sales may be legal and may have ordinary explanations. They are still a bad sign at a bad time. Sony needs to show that its leaders believe in the long-term strategy with more than talking points. Right now, the employees are carrying the downside while executives are cashing out part of the upside. That is not a healthy signal for Bungie, PlayStation, or the future of AAA gaming.</p>
+    `
+  },
   post33: {
     featured: false,
     date: 'July 7, 2026',
@@ -723,7 +757,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post34: 'The Sony stock-sale story matters because leadership behavior, workforce cuts, and confidence in a strategy are all signals that employees, customers, and investors read together.',
     post33: 'The HubSpot enrichment reversal matters because CRM trust depends on clear data ownership, clean permissioning, and defaults that customers can defend to their own teams.',
     post32: 'The Trump disclosure story matters because it shows how personal incentives, public power, and market access can blur together when governance is weak.',
     post31: 'The Xbox and Sony layoffs matter because they show what happens when expensive creative bets are managed like short-term cost problems.',
@@ -189,6 +190,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post34: {
+      image: 'https://images.unsplash.com/photo-1642984061431-fe76503975fd?w=900&h=650&fit=crop&q=80',
+      caption: 'The gaming strategy looks different when employees carry the cuts and executives sell shares.',
+      side: 'right',
+      after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1767424196045-030bbde122a4?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The filing does not explain motive, but the size and timing of the sales deserve attention.'
+    },
     post33: {
       image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=650&fit=crop&q=80',
       caption: 'CRM data only works when teams trust the system holding it.',
@@ -381,6 +390,16 @@ function copyRecursive(src, dest) {
       text: 'You control your data.',
       source: 'HubSpot Community',
       sourceUrl: 'https://community.hubspot.com/t/we-got-this-wrong-and-we-are-fixing-it/152063'
+    },
+    sonyMarathon: {
+      text: 'Marathon remains an important part of our portfolio',
+      source: 'GeekWire',
+      sourceUrl: 'https://www.geekwire.com/2026/sony-cuts-significant-number-of-jobs-at-bungie-following-end-of-destiny-2-development/'
+    },
+    insiderSaleCaution: {
+      text: 'Insider sells may not necessarily indicate a bearish view.',
+      source: 'Benzinga',
+      sourceUrl: 'https://www.benzinga.com/news/26/07/60335377/insider-unloading-hiroki-totoki-sells-4-73m-worth-sony-group-shares'
     }
   };
   function makeQuote(label, quote) {
@@ -392,6 +411,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post34: { after: 5, quotes: [makeQuote('Sony view', QUOTE_LIBRARY.sonyMarathon), makeQuote('Market caution', QUOTE_LIBRARY.insiderSaleCaution)] },
     post33: { after: 4, quotes: [makeQuote('Accountability', QUOTE_LIBRARY.hubspotMistake), makeQuote('Trust standard', QUOTE_LIBRARY.hubspotControl)] },
     post32: { after: 4, quotes: [makeQuote('Defense view', QUOTE_LIBRARY.whiteHouseConflict), makeQuote('Critic view', QUOTE_LIBRARY.warrenCrypto)] },
     post31: { after: 4, quotes: [makeQuote('Xbox view', QUOTE_LIBRARY.xboxNotHealthy), makeQuote('Sony view', QUOTE_LIBRARY.sonyCommunity)] },
