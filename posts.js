@@ -14,7 +14,7 @@ const POSTS = {
     title: 'RAM prices are turning into an electronics problem',
     category: 'Business Strategy',
     tag: 'Watch this space', tagClass: 'tag-amber',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/SEC_EDO_memory.jpg',
+    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>RAM is not just getting annoying. It is getting expensive in a way that can spill into phones, laptops, PCs, and anything else that needs memory to work.</p>
 

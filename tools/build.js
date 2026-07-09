@@ -204,11 +204,11 @@ function copyRecursive(src, dest) {
   }
   const INLINE_MEDIA = {
     post38: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wikimedia_Foundation_Servers_2015-63.jpg',
+      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&h=650&fit=crop&q=80',
       caption: 'AI demand is pushing more attention onto the memory and server layer underneath everyday electronics.',
       side: 'right',
       after: 3,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laptops_in_store_20170514.jpg',
+      supportImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=650&fit=crop&q=80',
       supportCaption: 'When memory gets expensive, the pressure shows up in retail hardware first.'
     },
     post36: {
