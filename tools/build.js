@@ -118,6 +118,7 @@ function copyRecursive(src, dest) {
   const CONTEXT_CLAUSES = {
     post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
     post39: 'Streaming changed the movie business because convenience, ad tiers, and selective theatrical demand now reward clearer ideas and tighter budgets.',
+    post40: 'OpenAI and Broadcom matter because AI leaders are starting to own the compute economics instead of just renting them.',
     post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
     post37: 'The HubSpot backlash matters because first-party data only stays valuable when customers can see who owns it, who can enrich it, and who can share it.',
     post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
@@ -219,6 +220,14 @@ function copyRecursive(src, dest) {
       after: 3,
       supportImage: 'https://images.unsplash.com/photo-1643208589889-0735ad7218f0?w=900&h=650&fit=crop&q=80',
       supportCaption: 'Streaming changed the habit, but the living room still competes with the theater.'
+    },
+    post40: {
+      image: 'https://images.unsplash.com/photo-1663932210347-164a05ed0ccd?w=900&h=650&fit=crop&q=80',
+      caption: 'The AI business is moving closer to the hardware and data center layer underneath the models.',
+      side: 'left',
+      after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1682559736721-c2e77ff4c650?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'Own more of the stack and you own more of the economics.'
     },
     post36: {
       image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&h=650&fit=crop&q=80',
@@ -390,6 +399,16 @@ function copyRecursive(src, dest) {
       source: 'Netflix',
       sourceUrl: 'https://ir.netflix.net/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf'
     },
+    openaiComputePowered: {
+      text: 'The world is moving to a compute-powered economy.',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/openai-broadcom-jalapeno-inference-chip/'
+    },
+    broadcomRoadmap: {
+      text: 'This is just the beginning of a multi-generation roadmap.',
+      source: 'Broadcom',
+      sourceUrl: 'https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor'
+    },
     artHouseRally: {
       text: 'Our latest survey proves that audiences continue to rally around their local independent theaters.',
       source: 'Boxoffice Pro',
@@ -510,6 +529,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post40: { after: 4, quotes: [makeQuote('Compute economy', QUOTE_LIBRARY.openaiComputePowered), makeQuote('Roadmap', QUOTE_LIBRARY.broadcomRoadmap)] },
     post38: { after: 4, quotes: [makeQuote('Supply', QUOTE_LIBRARY.reutersMemoryShortage), makeQuote('Cost pressure', QUOTE_LIBRARY.omdiaMemoryCosts)] },
     post39: { after: 4, quotes: [makeQuote('Streaming', QUOTE_LIBRARY.netflixDynamic), makeQuote('Theaters', QUOTE_LIBRARY.artHouseRally)] },
     post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },

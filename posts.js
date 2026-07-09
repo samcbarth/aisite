@@ -7,6 +7,30 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post40: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'OpenAI and Broadcom are pulling AI economics in-house',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>OpenAI and Broadcom said on June 24 that they are building Jalapeño, OpenAI's first Intelligence Processor, for LLM inference. That is the part that matters. It is not just a faster chip. It is OpenAI pushing deeper into the infrastructure underneath ChatGPT, Codex, and the API.</p>
+
+      <p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI said</a> the chip is "to be deployed at gigawatt scale with data center partners, over multiple generations." That is not startup language. That is utility-scale language. It tells me the company is thinking about power, racks, networking, and capital like a real infrastructure business.</p>
+
+      <p>The quote that stands out is Greg Brockman's: "The world is moving to a compute-powered economy." He is right. Once compute becomes the bottleneck, the winner is not just the company with the best model. It is the company that can deliver enough intelligence at a cost customers will actually pay for.</p>
+
+      <p>Broadcom's framing is just as telling. Hock Tan said, "This is just the beginning of a multi-generation roadmap." That sounds like a company expecting a long run of demand, not a one-off custom order. The economics of AI are moving from renting compute to owning more of the stack underneath it.</p>
+
+      <p>That matters because inference is where AI meets customers. Training gets the headlines. Inference is where the bills show up. If OpenAI can lower serving cost, it gets more room to price products, absorb demand spikes, and keep expanding without leaning quite so hard on someone else's hardware roadmap.</p>
+
+      <p>I also think this says something about where the market is headed. The companies with the biggest AI ambitions are no longer satisfied with being app layer buyers. They want control over chips, networking, data centers, and the software that ties all of it together. That is vertical integration with a very modern label on it.</p>
+
+      <p>My take is simple. This is a business story first and a chip story second. The chip is proof that the AI race is now about cost structure, supply chain control, and how much of the stack a company can own before the economics get too crowded.</p>
+    `
+  },
   post39: {
     featured: false,
     date: 'July 9, 2026',
@@ -911,7 +935,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
