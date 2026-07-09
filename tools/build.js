@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
     post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
     post34: 'The Sony stock-sale story matters because leadership behavior, workforce cuts, and confidence in a strategy are all signals that employees, customers, and investors read together.',
     post33: 'The HubSpot enrichment reversal matters because CRM trust depends on clear data ownership, clean permissioning, and defaults that customers can defend to their own teams.',
@@ -191,6 +192,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post36: {
+      image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&h=650&fit=crop&q=80',
+      caption: 'International fans discovering local food is one of the best stories around the World Cup.',
+      side: 'right',
+      after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1570498839593-e565b39455fc?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The game creates the value. Its governing institutions should remain accountable to the people who support it.'
+    },
     post35: {
       image: 'https://images.unsplash.com/photo-1748609160056-7b95f30041f0?w=900&h=650&fit=crop&q=80',
       caption: 'Research gets more useful when AI shortens the first pass without replacing verification.',
@@ -419,6 +428,16 @@ function copyRecursive(src, dest) {
       text: 'SEO best practices remain relevant and foundational to success with our generative AI features.',
       source: 'Google Search Central',
       sourceUrl: 'https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing'
+    },
+    restaurantWorldCup: {
+      text: 'You can\'t top American restaurants for amazing food and fantastic places to gather.',
+      source: 'Michelle Korsmo, National Restaurant Association',
+      sourceUrl: 'https://www.goodmorningamerica.com/travel/story/fifa-world-cup-tourists-love-american-food-133921609'
+    },
+    fifaCustodian: {
+      text: 'FIFA has forgotten that it is the custodian of the sport, not the owner.',
+      source: 'Transparency International',
+      sourceUrl: 'https://www.transparency.org/en/news/give-back-the-game-how-to-fix-fifa'
     }
   };
   function makeQuote(label, quote) {
@@ -430,6 +449,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },
     post35: { after: 6, quotes: [makeQuote('Strategy view', QUOTE_LIBRARY.hbrCustomerChoice), makeQuote('Search view', QUOTE_LIBRARY.googleSeoFoundation)] },
     post34: { after: 5, quotes: [makeQuote('Sony view', QUOTE_LIBRARY.sonyMarathon), makeQuote('Market caution', QUOTE_LIBRARY.insiderSaleCaution)] },
     post33: { after: 4, quotes: [makeQuote('Accountability', QUOTE_LIBRARY.hubspotMistake), makeQuote('Trust standard', QUOTE_LIBRARY.hubspotControl)] },

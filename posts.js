@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post36: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'The World Cup is at its best when the fans matter more than FIFA\'s money',
+    category: 'Business Strategy',
+    tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>One of my favorite stories around this World Cup has nothing to do with a score. It is seeing international soccer fans travel across North America and get genuinely excited about the food.</p>
+
+      <p><a href="https://apnews.com/article/eb084ee9e62040c71cecfe53637e0e0a" target="_blank" rel="noopener noreferrer">The Associated Press reported on fans trying local food across the United States, Canada, and Mexico</a>, from barbecue and Cuban food to tacos and poutine. Other visitors have gone viral for trying American chains, free refills, ranch, and Waffle House for the first time.</p>
+
+      <p>I think that is awesome. The best part of an international event is not just getting everybody into the same stadium. It is watching people experience a place, meet the people who live there, and find something they did not expect to enjoy.</p>
+
+      <p>Food does that better than almost anything. A fan might come for one match and leave talking about the barbecue, the people they met at a restaurant, or the neighborhood they found outside the official fan zone. That is the kind of cultural exchange the World Cup should create.</p>
+
+      <p>At the same time, I have been watching <a href="https://www.netflix.com/title/80221113" target="_blank" rel="noopener noreferrer"><em>FIFA Uncovered</em> on Netflix</a>. The documentary came out in 2022, but it is difficult to watch it during this World Cup without thinking about the difference between what soccer means to fans and what FIFA has allowed the business around soccer to become.</p>
+
+      <p>My takeaway is pretty simple. Once enough money got into the system, too much of the organization became focused on keeping control of that money. The game still mattered because the game created the audience. But the audience also created television rights, sponsorships, hosting power, political access, and a huge amount of leverage.</p>
+
+      <p>That is where the incentives can get ugly. FIFA is supposed to be a steward of international soccer. When the same organization controls the event, the commercial relationships, and much of the decision-making around who gets access, there has to be serious accountability outside that structure.</p>
+
+      <p>The history is not vague. <a href="https://www.justice.gov/archives/opa/pr/nine-fifa-officials-and-five-corporate-executives-indicted-racketeering-conspiracy-and" target="_blank" rel="noopener noreferrer">The U.S. Department of Justice's 2015 case charged 14 defendants</a> in what prosecutors described as a 24-year scheme involving racketeering, wire fraud, money laundering, bribes, and kickbacks connected to international soccer.</p>
+
+      <p>That does not mean every person working around FIFA is corrupt, and it does not mean the World Cup itself is bad. It means the excitement around the tournament cannot be used as a reason to stop asking where the money goes, who makes the decisions, and who can actually hold those decision-makers responsible.</p>
+
+      <p>FIFA's own financial reporting shows how large the business has become. <a href="https://ar.fifa.com/official-documents/annual-report/2024/financials/revised-2023-2026-budget" target="_blank" rel="noopener noreferrer">Its revised 2023 to 2026 budget increased projected cycle revenue by $2 billion</a>, driven by the commercial strength of its tournaments. That kind of growth can support players, federations, and the sport around the world. It can also make protecting the institution more important than fixing it.</p>
+
+      <p>Money does seem to corrupt, especially when it operates with no accountability. More precisely, money exposes whatever accountability a system is missing. If leaders can control billions of dollars, influence host countries, and make decisions behind closed doors, good intentions are not enough.</p>
+
+      <p>This applies far beyond soccer. In business, the strongest governance is usually built before something goes wrong. Clear ownership, independent review, transparent reporting, and consequences for bad decisions are not administrative details. They are what keep growth from turning into entitlement.</p>
+
+      <p>I still love seeing fans bring their flags, fill restaurants, and get excited about American food. That is the World Cup I want more of. It is international, local, loud, weird, and genuinely fun.</p>
+
+      <p>The people running the business should be held to a standard worthy of the people supporting the game. Fans should be able to enjoy the tournament without being asked to ignore the institution behind it. Soccer belongs to the people who play it and love it. FIFA should have to prove that it remembers that.</p>
+    `
+  },
   post35: {
     featured: false,
     date: 'July 9, 2026',
@@ -795,7 +833,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
