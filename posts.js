@@ -216,7 +216,7 @@ const POSTS = {
     title: "HubSpot's enrichment backlash is really about first-party data trust",
     category: 'HubSpot',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'assets/images/post37-hero.svg',
+    image: 'https://images.unsplash.com/photo-1783584731439-06cc9e1efbb2?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>HubSpot's data enrichment backlash was not really about one feature. It was about who people think owns the data once it lives in the CRM.</p>
 

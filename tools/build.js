@@ -211,11 +211,11 @@ function copyRecursive(src, dest) {
       supportCaption: 'The game creates the value. Its governing institutions should remain accountable to the people who support it.'
     },
     post37: {
-      image: 'assets/images/post37-inline.svg',
+      image: 'https://images.unsplash.com/photo-1758518730037-a16581a040e8?w=1200&h=675&fit=crop&q=80',
       caption: 'Trust gets shaky fast when a CRM starts sounding like a shared dataset.',
       side: 'left',
       after: 4,
-      supportImage: 'assets/images/post37-support.svg',
+      supportImage: 'https://images.unsplash.com/photo-1758518729794-456bbd9f70f8?w=1200&h=675&fit=crop&q=80',
       supportCaption: 'The real issue is permission, ownership, and whether the defaults still feel like customer control.'
     },
     post35: {

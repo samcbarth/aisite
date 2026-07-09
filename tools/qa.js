@@ -155,6 +155,7 @@ function checkImages() {
       const alt = (attrs.match(/alt="([^"]*)"/) || [])[1];
       if (!src) fail(`blank image src: ${rel(file)}`);
       if (alt === undefined || alt.trim().length < 12) fail(`weak image alt: ${rel(file)} -> ${src}`);
+      if (/\.svg(\?|$)/i.test(src)) fail(`svg image not allowed in post page: ${rel(file)} -> ${src}`);
       const key = imageBase(src);
       counts.set(key, (counts.get(key) || 0) + 1);
     }
