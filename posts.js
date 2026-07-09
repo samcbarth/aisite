@@ -7,6 +7,32 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post38: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'RAM prices are turning into an electronics problem',
+    category: 'Business Strategy',
+    tag: 'Watch this space', tagClass: 'tag-amber',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/SEC_EDO_memory.jpg',
+    body: `
+      <p>RAM is not just getting annoying. It is getting expensive in a way that can spill into phones, laptops, PCs, and anything else that needs memory to work.</p>
+
+      <p><a href="https://www.tbsnews.net/world/global-economy/ai-frenzy-driving-memory-chip-supply-crisis-1300721" target="_blank" rel="noopener noreferrer">Reuters reported on a global memory shortage</a> forcing AI and consumer-electronics companies to fight for supply, with some segments seeing prices more than double since February. That is the kind of thing that starts as a chip story and ends as a pricing story.</p>
+
+      <p><a href="https://omdia.tech.informa.com/blogs/2026/july/global-smartphones-priced-below-400-dollars-will-decline-by-22percent-as-memory-costs-soar" target="_blank" rel="noopener noreferrer">Omdia is saying the pressure is already hitting lower-end devices</a>. In its July 7 report, memory costs already accounted for nearly 60% of the total bill of materials in smartphones priced below $400.</p>
+
+      <p>That is not a small bump. That is the kind of cost structure that starts forcing companies to choose between higher prices, weaker margins, or worse hardware.</p>
+
+      <p>The lawsuit part matters too, but only if people keep the words straight. <a href="https://www.tomshardware.com/tech-industry/samsung-sk-hynix-and-micron-sued-over-alleged-dram-price-fixing-amid-record-memory-costs" target="_blank" rel="noopener noreferrer">A class-action filing in California alleges Samsung, SK Hynix, and Micron coordinated supply cuts and used the AI shift as cover to inflate DRAM prices</a>. The companies deny collusion. The allegations are not proof, but they do show how much suspicion is building around the market.</p>
+
+      <p>My view is simple. AI demand may be real. The shortage may be real. The legal allegations may or may not hold up. None of that changes the bigger point: when memory gets tight, everybody downstream pays for it.</p>
+
+      <p>That is why I keep watching this. The first place it shows up is usually the cheapest hardware, the lowest-margin products, and the devices where companies have the least room to absorb cost. Then it spreads from there.</p>
+
+      <p>If RAM keeps moving like this, the story stops being about one component and starts being about the price of basic electronics. That is the part worth paying attention to.</p>
+    `
+  },
   post36: {
     featured: false,
     date: 'July 9, 2026',
@@ -859,7 +885,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

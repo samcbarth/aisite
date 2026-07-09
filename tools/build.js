@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
     post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
     post37: 'The HubSpot backlash matters because first-party data only stays valuable when customers can see who owns it, who can enrich it, and who can share it.',
     post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
@@ -202,6 +203,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post38: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wikimedia_Foundation_Servers_2015-63.jpg',
+      caption: 'AI demand is pushing more attention onto the memory and server layer underneath everyday electronics.',
+      side: 'right',
+      after: 3,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laptops_in_store_20170514.jpg',
+      supportCaption: 'When memory gets expensive, the pressure shows up in retail hardware first.'
+    },
     post36: {
       image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&h=650&fit=crop&q=80',
       caption: 'International fans discovering local food is one of the best stories around the World Cup.',
@@ -357,6 +366,16 @@ function copyRecursive(src, dest) {
       source: 'Databricks',
       sourceUrl: 'https://www.databricks.com/blog/memory-scaling-ai-agents'
     },
+    reutersMemoryShortage: {
+      text: 'An acute global shortage of memory chips is forcing artificial intelligence and consumer-electronics companies to fight for dwindling supplies',
+      source: 'Reuters',
+      sourceUrl: 'https://www.tbsnews.net/world/global-economy/ai-frenzy-driving-memory-chip-supply-crisis-1300721'
+    },
+    omdiaMemoryCosts: {
+      text: 'In 1Q26, memory costs already accounted for nearly 60% of the total BOM cost in smartphones priced below $400',
+      source: 'Omdia',
+      sourceUrl: 'https://omdia.tech.informa.com/blogs/2026/july/global-smartphones-priced-below-400-dollars-will-decline-by-22percent-as-memory-costs-soar'
+    },
     cookUnavoidable: {
       text: 'price increases for some Apple products are unavoidable',
       source: 'Al Jazeera',
@@ -472,6 +491,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post38: { after: 4, quotes: [makeQuote('Supply', QUOTE_LIBRARY.reutersMemoryShortage), makeQuote('Cost pressure', QUOTE_LIBRARY.omdiaMemoryCosts)] },
     post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },
     post37: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.hubspotControl), makeQuote('Dataset', QUOTE_LIBRARY.hubspotCommercialDataset)] },
     post35: { after: 6, quotes: [makeQuote('Strategy view', QUOTE_LIBRARY.hbrCustomerChoice), makeQuote('Search view', QUOTE_LIBRARY.googleSeoFoundation)] },
