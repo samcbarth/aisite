@@ -6,14 +6,62 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 04:51:14 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 15:07:08 GMT</lastBuildDate>
     <item>
-      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
-      <link>https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
+      <title>The Xbox and Sony layoffs show why AAA gaming feels broken</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-xbox-and-sony-layoffs-show-why-aaa-gaming-feels-broken/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-xbox-and-sony-layoffs-show-why-aaa-gaming-feels-broken/</guid>
+      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation. That is what makes this interesti</description>
+      <description>Xbox announced one of the most significant restructures in its history, with about 3,200 roles being reduced through FY27 and four studios leaving Xbox to new management. Microsoft also said it is eliminating around 4,800 roles overall, with the changes mostly falling within Comm</description>
+    </item>
+    <item>
+      <title>HubSpot&apos;s enrichment backlash is really about first-party data trust</title>
+      <link>https://samcbarth.github.io/aisite/posts/hubspots-enrichment-backlash-is-really-about-first-party-data-trust/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-enrichment-backlash-is-really-about-first-party-data-trust/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot</category>
+      <description>HubSpot&apos;s data enrichment backlash was not really about one feature. It was about who people think owns the data once it lives in the CRM. That is why the reaction got loud so fast. If you run CRM the right way, first-party data is the asset. Notes, deals, lifecycle stages, call </description>
+    </item>
+    <item>
+      <title>The World Cup is at its best when the fans matter more than FIFA&apos;s money</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-world-cup-is-at-its-best-when-the-fans-matter-more-than-fifas-money/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-world-cup-is-at-its-best-when-the-fans-matter-more-than-fifas-money/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>One of my favorite stories around this World Cup has nothing to do with a score. It is seeing international soccer fans travel across North America and get genuinely excited about the food. The Associated Press reported on fans trying local food across the United States, Canada, </description>
+    </item>
+    <item>
+      <title>Qualification, research, and AEO are how AI becomes normal business</title>
+      <link>https://samcbarth.github.io/aisite/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>RevOps</category>
+      <description>Harvard Business Review looked at how three small and midsize businesses , including a manufacturer, a boutique hotel, and a B2B software company, are adapting as AI changes how customers research, evaluate, and choose suppliers. I agree with the larger point, but what stands out</description>
+    </item>
+    <item>
+      <title>Sony executives selling stock makes the Bungie layoffs look even worse</title>
+      <link>https://samcbarth.github.io/aisite/posts/sony-executives-selling-stock-makes-the-bungie-layoffs-look-even-worse/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/sony-executives-selling-stock-makes-the-bungie-layoffs-look-even-worse/</guid>
+      <pubDate>Wed, 08 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Sony&apos;s executive stock sales are a bad look, especially when you put them next to what just happened at Bungie. Sony President and CEO Hiroki Totoki disclosed that he sold 225,000 Sony shares on July 3 at $21.02 per share. That comes out to about $4.73 million. The part that stan</description>
+    </item>
+    <item>
+      <title>HubSpot&apos;s data enrichment reversal is really a trust problem</title>
+      <link>https://samcbarth.github.io/aisite/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</guid>
+      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot</category>
+      <description>HubSpot reversed its planned data enrichment terms change after a pretty loud customer backlash, especially on LinkedIn. Duncan Lennox, HubSpot&apos;s Chief Product and Technology Officer, said they got it wrong and would not move forward with the terms of service changes communicated</description>
+    </item>
+    <item>
+      <title>Trump&apos;s $2.2 billion year is a public trust problem</title>
+      <link>https://samcbarth.github.io/aisite/posts/trumps-2-2-billion-year-is-a-public-trust-problem/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/trumps-2-2-billion-year-is-a-public-trust-problem/</guid>
+      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>The Wall Street Journal reported that President Donald Trump&apos;s personal income rose to more than $2.2 billion in the first year of his second term, with a huge portion of that tied to crypto ventures, licensing, investments, and his broader business holdings. A New York Times rep</description>
     </item>
     <item>
       <title>SpaceX in retirement accounts is where the hype gets personal</title>
@@ -101,7 +149,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/</guid>
       <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that </description>
+      <description>The Financial Times reported that AI demand is driving a record wave of power and utility dealmaking. I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When</description>
     </item>
     <item>
       <title>HubSpot&apos;s new AI pricing makes the product story feel more real</title>
@@ -120,6 +168,14 @@
       <description>HubSpot&apos;s Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it. That is what I think makes this release more interesting than a normal product update. It is not just</description>
     </item>
     <item>
+      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
+      <link>https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</guid>
+      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation. The SpaceX filing makes the ambit</description>
+    </item>
+    <item>
       <title>Oracle&apos;s AI infrastructure rally is about to meet the real world</title>
       <link>https://samcbarth.github.io/aisite/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</guid>
@@ -133,7 +189,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/stargate-is-the-clearest-sign-that-ai-is-now-a-utility-scale-business/</guid>
       <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>The Stargate buildout is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether </description>
+      <description>OpenAI, Oracle, and SoftBank&apos;s five-site Stargate expansion is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, per</description>
     </item>
     <item>
       <title>The AI data center boom is running into a political problem</title>
@@ -141,7 +197,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-data-center-boom-is-running-into-a-political-problem/</guid>
       <pubDate>Wed, 03 Jun 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing </description>
+      <description>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. Business Insider has tracked how data center opposition is showing up around the country. People have seen what these projects can d</description>
     </item>
     <item>
       <title>China&apos;s space-based AI plan says a lot about where this race is headed</title>
@@ -149,7 +205,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/chinas-space-based-ai-plan-says-a-lot-about-where-this-race-is-headed/</guid>
       <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. When people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on E</description>
+      <description>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. Tom&apos;s Hardware reported on China&apos;s push toward orbiting AI data centers, and when people start talking seriously abou</description>
     </item>
     <item>
       <title>The most valuable AI use case isn&apos;t a product. It&apos;s a personal tool.</title>
@@ -165,7 +221,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-bricks-minifigs-lego-mess-is-a-resale-business-problem-waiting-to-happen/</guid>
       <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
       <category>Business Strategy</category>
-      <description>There is a serious trust issue in the Bricks &amp; Minifigs story. Once a resale business takes custody of somebody else&apos;s inventory, the business is responsible for protecting both the items and the expectation around them. That is where this gets messy. Franchise changes, weak pape</description>
+      <description>There is a serious trust issue in the Bricks &amp; Minifigs story . Once a resale business takes custody of somebody else&apos;s inventory, the business is responsible for protecting both the items and the expectation around them. That is where this gets messy. Franchise changes, weak pap</description>
     </item>
     <item>
       <title>Costco&apos;s gas boom is a lesson in leveraging a great core business</title>
@@ -181,7 +237,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/dells-best-day-ever-tells-you-where-enterprise-ai-is-actually-going/</guid>
       <pubDate>Mon, 25 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>Dell&apos;s stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from enterprises buying servers to run AI workloads at scale. That&apos;s a materially d</description>
+      <description>Dell&apos;s AI infrastructure story explains why the market reacted so strongly. Dell&apos;s stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from en</description>
     </item>
     <item>
       <title>Samsung just promised $400K bonuses. That&apos;s an AI story too.</title>
@@ -189,7 +245,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/samsung-just-promised-400k-bonuses-thats-an-ai-story-too/</guid>
       <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
       <category>RevOps</category>
-      <description>Samsung Electronics just approved a profit-sharing deal that could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. A</description>
+      <description>Samsung Electronics&apos; profit-sharing deal could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. And it&apos;s an interesti</description>
     </item>
     <item>
       <title>AI is making cybersecurity harder - and that&apos;s a GTM problem too</title>
@@ -197,7 +253,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ai-is-making-cybersecurity-harder-and-thats-a-gtm-problem-too/</guid>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>An award-winning ethical hacker made the rounds this week with a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws g</description>
+      <description>CrowdStrike&apos;s AI security comments point to a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on </description>
     </item>
     <item>
       <title>Where AI actually falls apart</title>
@@ -229,7 +285,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/</guid>
       <pubDate>Fri, 15 May 2026 12:00:00 GMT</pubDate>
       <category>RevOps</category>
-      <description>HubSpot continuing to invest heavily into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who u</description>
+      <description>HubSpot continuing to invest into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understan</description>
     </item>
     <item>
       <title>Site is live, built and deployed with AI</title>
@@ -237,7 +293,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/site-is-live-built-and-deployed-with-ai/</guid>
       <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
       <category>AI &amp; Automation</category>
-      <description>I built this entire site using Claude Code, Anthropic&apos;s AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting lo</description>
+      <description>I built this entire site using Claude Code , Anthropic&apos;s AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting l</description>
     </item>
     <item>
       <title>What 10 years in marketing ops actually teaches you</title>
@@ -245,7 +301,7 @@
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-10-years-in-marketing-ops-actually-teaches-you/</guid>
       <pubDate>Tue, 12 May 2026 12:00:00 GMT</pubDate>
       <category>Marketing Ops</category>
-      <description>I&apos;ve spent over 10 years helping organizations market themselves online: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions. The answer is always the same: garbage in, garbage out. The best automation in the w</description>
+      <description>I&apos;ve spent over 10 years helping organizations market themselves online through SamCBarth.com : generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions. The answer is always the same: garbage in, garbage out. The b</description>
     </item>
   </channel>
 </rss>

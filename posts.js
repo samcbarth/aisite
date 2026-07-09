@@ -209,6 +209,32 @@ const POSTS = {
       <p>That is the piece I keep coming back to. The layoffs are not just sad headlines. They are a sign that the AAA machine is too bloated, too reactive, and too willing to sacrifice people after overpromising to the market. If gaming wants to get healthier, the companies at the top need to stop treating layoffs like a normal part of the content cycle.</p>
     `
   },
+  post37: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: "HubSpot's enrichment backlash is really about first-party data trust",
+    category: 'HubSpot',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>HubSpot's data enrichment backlash was not really about one feature. It was about who people think owns the data once it lives in the CRM.</p>
+
+      <p>That is why the reaction got loud so fast. If you run CRM the right way, first-party data is the asset. Notes, deals, lifecycle stages, call recordings, and field history are not just records. They are the operating memory of the business.</p>
+
+      <p>Once HubSpot's terms started sounding like a shared enrichment dataset, a lot of people immediately started talking about Apollo or some other outside tool. I get that instinct. When trust gets shaky, people look for the cleaner alternative.</p>
+
+      <p>But switching tools is not the real fix by itself. If your data ownership is fuzzy in one system, it will be fuzzy in the next one too. The deeper problem is governance, not branding.</p>
+
+      <p>HubSpot's own announcement makes the issue pretty clear. Duncan Lennox said, <a href="https://community.hubspot.com/t/we-got-this-wrong-and-we-are-fixing-it/152063" target="_blank" rel="noopener noreferrer">"You control your data."</a> HubSpot's knowledge base also says <a href="https://knowledge.hubspot.com/records/get-started-with-data-enrichment" target="_blank" rel="noopener noreferrer">"Enrichment data is provided by HubSpot's commercial dataset."</a> Those two lines explain why people reacted the way they did.</p>
+
+      <p>My takeaway is simple. People still care about first-party data because they know it is the thing they actually control. They may use enrichment, they may use Apollo, and they may use HubSpot, but they want the defaults to be obvious and the permissioning to be clean.</p>
+
+      <p>That is the lesson for RevOps teams too. If you want a CRM to feel trustworthy, define what is customer-owned, what is vendor-provided, and what can never be shared by default. If the system cannot answer that fast, it probably needs more cleanup before it needs more AI.</p>
+
+      <p>HubSpot can still build useful enrichment tools. The bar is just higher now. Opt-in has to mean opt-in, and the data story has to be easy to explain without a long apology attached to it.</p>
+    `
+  },
   post30: {
     featured: false,
     date: 'June 19, 2026',
@@ -833,7 +859,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post31', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

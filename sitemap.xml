@@ -2,31 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://samcbarth.github.io/aisite/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://samcbarth.github.io/aisite/premium.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://samcbarth.github.io/aisite/start-here.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://samcbarth.github.io/aisite/resources.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <loc>https://samcbarth.github.io/aisite/about.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/work.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/the-xbox-and-sony-layoffs-show-why-aaa-gaming-feels-broken/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/hubspots-enrichment-backlash-is-really-about-first-party-data-trust/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/the-world-cup-is-at-its-best-when-the-fans-matter-more-than-fifas-money/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/sony-executives-selling-stock-makes-the-bungie-layoffs-look-even-worse/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/trumps-2-2-billion-year-is-a-public-trust-problem/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,6 +153,12 @@
   <url>
     <loc>https://samcbarth.github.io/aisite/posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/</loc>
     <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

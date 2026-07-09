@@ -117,6 +117,7 @@ function copyRecursive(src, dest) {
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
     post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
+    post37: 'The HubSpot backlash matters because first-party data only stays valuable when customers can see who owns it, who can enrich it, and who can share it.',
     post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
     post34: 'The Sony stock-sale story matters because leadership behavior, workforce cuts, and confidence in a strategy are all signals that employees, customers, and investors read together.',
     post33: 'The HubSpot enrichment reversal matters because CRM trust depends on clear data ownership, clean permissioning, and defaults that customers can defend to their own teams.',
@@ -199,6 +200,14 @@ function copyRecursive(src, dest) {
       after: 4,
       supportImage: 'https://images.unsplash.com/photo-1570498839593-e565b39455fc?w=900&h=650&fit=crop&q=80',
       supportCaption: 'The game creates the value. Its governing institutions should remain accountable to the people who support it.'
+    },
+    post37: {
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=650&fit=crop&q=80',
+      caption: 'Trust gets shaky fast when a CRM starts sounding like a shared dataset.',
+      side: 'left',
+      after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The real issue is permission, ownership, and whether the defaults still feel like customer control.'
     },
     post35: {
       image: 'https://images.unsplash.com/photo-1748609160056-7b95f30041f0?w=900&h=650&fit=crop&q=80',
@@ -409,6 +418,11 @@ function copyRecursive(src, dest) {
       source: 'HubSpot Community',
       sourceUrl: 'https://community.hubspot.com/t/we-got-this-wrong-and-we-are-fixing-it/152063'
     },
+    hubspotCommercialDataset: {
+      text: "Enrichment data is provided by HubSpot's commercial dataset.",
+      source: 'HubSpot Knowledge Base',
+      sourceUrl: 'https://knowledge.hubspot.com/records/get-started-with-data-enrichment'
+    },
     sonyMarathon: {
       text: 'Marathon remains an important part of our portfolio',
       source: 'GeekWire',
@@ -450,6 +464,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post36: { after: 6, quotes: [makeQuote('Fan experience', QUOTE_LIBRARY.restaurantWorldCup), makeQuote('Accountability', QUOTE_LIBRARY.fifaCustodian)] },
+    post37: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.hubspotControl), makeQuote('Dataset', QUOTE_LIBRARY.hubspotCommercialDataset)] },
     post35: { after: 6, quotes: [makeQuote('Strategy view', QUOTE_LIBRARY.hbrCustomerChoice), makeQuote('Search view', QUOTE_LIBRARY.googleSeoFoundation)] },
     post34: { after: 5, quotes: [makeQuote('Sony view', QUOTE_LIBRARY.sonyMarathon), makeQuote('Market caution', QUOTE_LIBRARY.insiderSaleCaution)] },
     post33: { after: 4, quotes: [makeQuote('Accountability', QUOTE_LIBRARY.hubspotMistake), makeQuote('Trust standard', QUOTE_LIBRARY.hubspotControl)] },
