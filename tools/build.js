@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post45: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
     post43: 'GPT-5.6 matters because AI is now being priced and sold as useful work inside the tools people already use. That connects straight to process design, context, and the cost of rework.',
     post42: 'The Lightwell story matters because AI only scales inside enterprises when the software underneath it is safe enough to trust and cheap enough to patch.',
@@ -208,6 +209,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post45: {
+      image: 'assets/images/post45-inline.jpg',
+      caption: 'Enterprise AI only matters when it fits the work teams already do every day.',
+      side: 'right',
+      after: 2,
+      supportImage: 'assets/images/post45-support.jpg',
+      supportCaption: 'The control point is workflow, not just model output.'
+    },
     post44: {
       image: 'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=900&h=650&fit=crop&q=80',
       caption: 'The real shift is from chat output to delegated workflow.',
@@ -359,6 +368,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    ibmBobWorkflowsBackbone: {
+      text: 'AI is good at open-ended problem-solving and bad at doing the same thing twice.',
+      source: 'IBM Bob Blog',
+      sourceUrl: 'https://bob.ibm.com/blog/bob-v2-release-announcement/'
+    },
+    jackHenryAccelerateRpg: {
+      text: 'our developers are able to accelerate RPG development workflows, improve code quality, and gain deeper insights into decades of accumulated system knowledge',
+      source: 'IBM Newsroom',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows'
+    },
     openaiWorkflowAction: {
       text: 'ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.',
       source: 'OpenAI',
@@ -604,6 +623,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post45: { after: 3, quotes: [makeQuote('Repeatable work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone), makeQuote('Customer proof', QUOTE_LIBRARY.jackHenryAccelerateRpg)] },
     post44: { after: 3, quotes: [makeQuote('Workflow agent', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Longer tasks', QUOTE_LIBRARY.openaiLongerTasks)] },
     post43: { after: 3, quotes: [makeQuote('OpenAI framing', QUOTE_LIBRARY.gpt56MoreIntelligence), makeQuote('Microsoft framing', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post42: { after: 4, quotes: [makeQuote('Structural shift', QUOTE_LIBRARY.lightwellStructuralShift), makeQuote('No disruption', QUOTE_LIBRARY.lightwellNoDisruption)] },

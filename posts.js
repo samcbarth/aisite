@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post45: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'IBM Bob is the real enterprise AI development story',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post45-hero.jpg',
+    body: `
+      <p>IBM Bob is not a coding toy. It is IBM trying to sell enterprise AI around the part of software work that actually costs money: review, validation, modernization, and cleanup.</p>
+
+      <p><a href="https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows" target="_blank" rel="noopener noreferrer">IBM says</a> the bottleneck has moved from writing code to reviewing and validating it. That is the right problem to chase. Bob adds multi-agent work, cost analytics, and prebuilt workflows for IBM Z, IBM i, and Java modernization.</p>
+
+      <p>The customer examples matter more than the launch copy. Jack Henry and Blue Pearl are the kind of proof IBM needs here. Enterprises do not need more demo output. They need repeatable work inside systems they already run.</p>
+
+      <p>That is the part most teams miss. Legacy modernization is where AI usually turns into a mess of half-finished work and hidden cleanup. If Bob can keep context clean, make the steps repeatable, and show cost in the open, that is more useful than another faster autocomplete box.</p>
+
+      <p>My takeaway is simple. Enterprise AI gets real when it helps teams move legacy work, keep spend visible, and ship with fewer handoffs. The winners will package that into process. The rest will keep selling a clever prompt box and call it transformation.</p>
+    `
+  },
   post44: {
     featured: false,
     date: 'July 9, 2026',
@@ -1022,7 +1042,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
