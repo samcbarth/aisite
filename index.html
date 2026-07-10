@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- GitHub Pages cannot send custom security headers, so the policy ships here. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com; media-src 'self' https://commondatastorage.googleapis.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://images.unsplash.com https://fastly.picsum.photos; media-src 'self' https://commondatastorage.googleapis.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <title>Sam C Barth - RevOps, AI &amp; CRM Strategy</title>
@@ -42,6 +42,7 @@
 
   <!-- Warm up the remaining third-party origins still used for media. -->
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://fastly.picsum.photos" crossorigin>
   <style>
     /* Self-hosted Space Grotesk (variable, one file per subset covers 400-700). */
     @font-face {
@@ -1015,6 +1016,17 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "IBM and OpenAI's cyber deal is really about control",
+          "datePublished": "2026-07-10",
+          "url": "https://samcbarth.github.io/aisite/posts/ibm-and-openais-cyber-deal-is-really-about-control/",
+          "author": {
+            "@id": "https://samcbarth.github.io/aisite/#person"
+          },
+          "articleSection": "Business Strategy",
+          "description": "IBM and OpenAI's cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control. IBM says it has launched a new application sec"
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "SAP's Dremio deal is really a data context play",
           "datePublished": "2026-07-10",
           "url": "https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/",
@@ -1604,6 +1616,20 @@
   </div>
   <div id="featured-section" class="featured-section"></div>
   <div class="post-grid">
+
+    <a class="post-card" href="posts/ibm-and-openais-cyber-deal-is-really-about-control/" data-id="post48">
+      <img class="post-thumb" width="72" height="72" src="https://fastly.picsum.photos/id/7/1200/630.jpg?hmac=Ly6Ie4eKcj-GNPD3gR1va_3mQIsWSPKxF0QEF6Zj_ss" alt="IBM and OpenAI's cyber deal is really about control thumbnail" loading="lazy">
+      <div class="post-content">
+        <div class="post-meta">
+          <span class="post-date">July 10, 2026</span>
+          <span class="post-read-time"></span>
+          <span class="post-category">Business Strategy</span>
+          <span class="post-tag tag-cyan">Signal</span>
+        </div>
+        <div class="post-title">IBM and OpenAI's cyber deal is really about control</div>
+        <div class="post-excerpt">IBM and OpenAI's cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control.</div>
+      </div>
+    </a>
 
     <a class="post-card" href="posts/saps-dremio-deal-is-really-a-data-context-play/" data-id="post47">
       <img class="post-thumb" width="72" height="72" src="assets/images/post47-hero.jpg" alt="SAP's Dremio deal is really a data context play thumbnail" loading="lazy">

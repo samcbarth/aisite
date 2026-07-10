@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 19:15:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 20:12:15 GMT</lastBuildDate>
+    <item>
+      <title>IBM and OpenAI&apos;s cyber deal is really about control</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-and-openais-cyber-deal-is-really-about-control/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-openais-cyber-deal-is-really-about-control/</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>IBM and OpenAI&apos;s cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control. IBM says it has launched a new application security service that uses OpenAI&apos;s cyber capabilities to help organizations identi</description>
+    </item>
     <item>
       <title>SAP&apos;s Dremio deal is really a data context play</title>
       <link>https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/</link>

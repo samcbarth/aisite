@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post48: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "IBM and OpenAI's cyber deal is really about control",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://fastly.picsum.photos/id/7/1200/630.jpg?hmac=Ly6Ie4eKcj-GNPD3gR1va_3mQIsWSPKxF0QEF6Zj_ss',
+    body: `
+      <p>IBM and OpenAI's cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control.</p>
+
+      <p><a href="https://newsroom.ibm.com/2026-06-22-ibm-and-openai-bring-frontier-ai-to-cyber-defense-helping-enterprises-keep-pace-with-machine-speed-threats" target="_blank" rel="noopener noreferrer">IBM says</a> it has launched a new application security service that uses OpenAI's cyber capabilities to help organizations identify and validate software vulnerabilities with more speed and precision. That is the real pitch. Not more noise. Less time between finding a hole and proving it matters.</p>
+
+      <p>The important detail is the setup. IBM says the work runs inside the client's environment, with read-only access and bounded execution. That is the part that makes this an enterprise story instead of a demo story. If AI is touching security, the conversation has to be about governance as much as capability.</p>
+
+      <p><a href="https://openai.com/daybreak/" target="_blank" rel="noopener noreferrer">OpenAI says</a> the point is "trusted, AI-powered cyber defense" for more organizations. That is the right frame. Attackers are already using AI. Defenders do not need a demo. They need a faster way to surface the risks that matter and act without handing over the keys.</p>
+
+      <p>My read is simple. This is what useful AI looks like in security: shorter vulnerability windows, clearer governance, and less chaos around the workflow. The model matters. The controls matter more.</p>
+    `
+  },
   post47: {
     featured: false,
     date: 'July 10, 2026',
@@ -1084,7 +1104,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

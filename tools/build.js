@@ -117,6 +117,7 @@ function copyRecursive(src, dest) {
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
     post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
+    post48: 'IBM and OpenAI\'s cyber deal matters because the business value is faster security work with tighter control over where the AI can act.',
     post46: 'OpenAI\'s partner network matters because enterprise AI is moving from model access to delivery, workflow redesign, and change management.',
     post45: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
@@ -218,6 +219,14 @@ function copyRecursive(src, dest) {
       after: 2,
       supportImage: 'assets/images/post47-support.jpg',
       supportCaption: 'Data movement is expensive when every team keeps rebuilding the same path.'
+    },
+    post48: {
+      image: 'https://fastly.picsum.photos/id/857/1200/630.jpg?hmac=OyKwOXHFPYC1QCjlGxczNl8flsBcJMFQbaV-DUQnwUU',
+      caption: 'Security work only matters if the control points stay clear.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://fastly.picsum.photos/id/294/1200/630.jpg?hmac=pRqnRvsg1Jx7HUftdoScJF5VbkTj38dHcrfhsMojJs0',
+      supportCaption: 'Enterprise AI in security has to move fast without losing the guardrails.'
     },
     post46: {
       image: 'assets/images/post46-inline.jpg',
@@ -415,6 +424,16 @@ function copyRecursive(src, dest) {
       text: 'ChatGPT Work is an agent for longer, more involved tasks.',
       source: 'OpenAI Help Center',
       sourceUrl: 'https://help.openai.com/en/articles/6825453-chatgpt-release-notes'
+    },
+    ibmDaybreakMachineSpeed: {
+      text: 'Attackers are already using AI to probe, exploit, and scale threats at machine speed. Defenders need the same advantage, with the security and control enterprises require.',
+      source: 'IBM Newsroom',
+      sourceUrl: 'https://newsroom.ibm.com/2026-06-22-ibm-and-openai-bring-frontier-ai-to-cyber-defense-helping-enterprises-keep-pace-with-machine-speed-threats'
+    },
+    openaiTrustedCyberDefense: {
+      text: 'Work with OpenAI to bring trusted, AI-powered cyber defense to more organizations through your products, services, and expertise.',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/daybreak/'
     },
     openaiPartnerSolutions: {
       text: 'build, sell, and deliver AI solutions with OpenAI.',
@@ -662,6 +681,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post47: { after: 3, quotes: [makeQuote('Data readiness', QUOTE_LIBRARY.sapDataContext), makeQuote('Open platform', QUOTE_LIBRARY.dremioOpenPlatform)] },
+    post48: { after: 3, quotes: [makeQuote('Machine speed', QUOTE_LIBRARY.ibmDaybreakMachineSpeed), makeQuote('Trusted defense', QUOTE_LIBRARY.openaiTrustedCyberDefense)] },
     post46: { after: 3, quotes: [makeQuote('Partner network', QUOTE_LIBRARY.openaiPartnerSolutions), makeQuote('Deployment', QUOTE_LIBRARY.openaiDeployEveryday)] },
     post45: { after: 3, quotes: [makeQuote('Repeatable work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone), makeQuote('Customer proof', QUOTE_LIBRARY.jackHenryAccelerateRpg)] },
     post44: { after: 3, quotes: [makeQuote('Workflow agent', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Longer tasks', QUOTE_LIBRARY.openaiLongerTasks)] },
