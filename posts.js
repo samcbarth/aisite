@@ -7,6 +7,29 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post43: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'GPT-5.6 is a price-per-task story',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1758518730151-cf64fddb4f0a?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>GPT-5.6 is not really a hype story. It is a cost story. OpenAI and Microsoft are both pushing the same idea: the win is more useful work for the same spend.</p>
+
+      <p><a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener noreferrer">OpenAI said GPT-5.6 brings "more intelligence from every token"</a>. That is the right lens. The company also split the family into Sol, Terra, and Luna, which tells me this release is about matching model strength to the job, not just chasing one giant benchmark number.</p>
+
+      <p><a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152" target="_blank" rel="noopener noreferrer">Microsoft said Copilot users will get "more useful work from every token"</a>. That matters more than the demo clips. It means the model is being sold as part of the workflow, not as a standalone novelty.</p>
+
+      <p>Once GPT-5.6 shows up in Word, Excel, PowerPoint, Chat, and Cowork, the question gets very practical. Does it cut rewrites. Does it reduce cleanup. Does it move a task from half-done to done without a human having to fix the same thing three times.</p>
+
+      <p>That is the part people miss when they talk about model launches. The useful question is not whether the model sounds smart. It is whether each useful task gets cheaper, faster, and more repeatable.</p>
+
+      <p>My read is simple. AI is moving from a feature test to a unit-economics test. The teams that win will have clean process, good context, and a clear reason to use the model. The rest will keep paying for clever output they still have to clean up.</p>
+
+    `
+  },
   post42: {
     featured: false,
     date: 'July 9, 2026',
@@ -981,7 +1004,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post43: 'GPT-5.6 matters because AI is now being priced and sold as useful work inside the tools people already use. That connects straight to process design, context, and the cost of rework.',
     post42: 'The Lightwell story matters because AI only scales inside enterprises when the software underneath it is safe enough to trust and cheap enough to patch.',
     post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
     post39: 'Streaming changed the movie business because convenience, ad tiers, and selective theatrical demand now reward clearer ideas and tighter budgets.',
@@ -206,6 +207,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post43: {
+      image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=650&fit=crop&q=80',
+      caption: 'AI only becomes useful when it fits the workflow people already run every day.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1782094673136-5198a372980c?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The economics still point back to compute, cooling, and the cost of delivering each useful task.'
+    },
     post42: {
       image: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?w=900&h=650&fit=crop&q=80',
       caption: 'The AI security story sits in the workflow, not the keynote.',
@@ -431,10 +440,20 @@ function copyRecursive(src, dest) {
       source: 'OpenAI',
       sourceUrl: 'https://openai.com/index/openai-broadcom-jalapeno-inference-chip/'
     },
+    gpt56MoreIntelligence: {
+      text: 'more intelligence from every token',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/gpt-5-6/'
+    },
     microsoftMeasuredOutcomes: {
       text: 'measurable business outcomes',
       source: 'Microsoft',
       sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/'
+    },
+    microsoftMoreUseful: {
+      text: 'more useful work from every token',
+      source: 'Microsoft 365 Copilot Blog',
+      sourceUrl: 'https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152'
     },
     microsoftModelChoice: {
       text: "Customers shouldn't be locked into a single model any more than they should be locked into a single technology vendor.",
@@ -566,6 +585,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post43: { after: 3, quotes: [makeQuote('OpenAI framing', QUOTE_LIBRARY.gpt56MoreIntelligence), makeQuote('Microsoft framing', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post42: { after: 4, quotes: [makeQuote('Structural shift', QUOTE_LIBRARY.lightwellStructuralShift), makeQuote('No disruption', QUOTE_LIBRARY.lightwellNoDisruption)] },
     post40: { after: 4, quotes: [makeQuote('Compute economy', QUOTE_LIBRARY.openaiComputePowered), makeQuote('Roadmap', QUOTE_LIBRARY.broadcomRoadmap)] },
     post41: { after: 4, quotes: [makeQuote('Outcomes', QUOTE_LIBRARY.microsoftMeasuredOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },
