@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post49: 'Microsoft Frontier Company matters because AI is shifting from model access to deployment, control, and the workflow work that makes the software stick.',
     post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
     post48: 'IBM and OpenAI\'s cyber deal matters because the business value is faster security work with tighter control over where the AI can act.',
     post46: 'OpenAI\'s partner network matters because enterprise AI is moving from model access to delivery, workflow redesign, and change management.',
@@ -212,6 +213,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post49: {
+      image: 'https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?w=900&h=650&fit=crop&q=80',
+      caption: 'The next AI win is installation, not another shiny demo.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1758873267345-535a381ea6be?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'Customers still want real people near the workflow when the work gets messy.'
+    },
     post47: {
       image: 'assets/images/post47-inline.jpg',
       caption: 'The useful AI stack is the one that keeps business context together.',
@@ -395,6 +404,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    microsoftOutcomes: {
+      text: 'measurable business outcomes',
+      source: 'Microsoft Frontier Company',
+      sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/'
+    },
+    microsoftModelChoice: {
+      text: "Customers shouldn't be locked into a single model any more than they should be locked into a single technology vendor.",
+      source: 'Microsoft Frontier Company',
+      sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/'
+    },
     sapDataContext: {
       text: 'Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents.',
       source: 'SAP News',
@@ -680,6 +699,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post49: { after: 3, quotes: [makeQuote('Business outcomes', QUOTE_LIBRARY.microsoftOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },
     post47: { after: 3, quotes: [makeQuote('Data readiness', QUOTE_LIBRARY.sapDataContext), makeQuote('Open platform', QUOTE_LIBRARY.dremioOpenPlatform)] },
     post48: { after: 3, quotes: [makeQuote('Machine speed', QUOTE_LIBRARY.ibmDaybreakMachineSpeed), makeQuote('Trusted defense', QUOTE_LIBRARY.openaiTrustedCyberDefense)] },
     post46: { after: 3, quotes: [makeQuote('Partner network', QUOTE_LIBRARY.openaiPartnerSolutions), makeQuote('Deployment', QUOTE_LIBRARY.openaiDeployEveryday)] },

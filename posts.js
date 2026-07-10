@@ -7,6 +7,28 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post49: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Microsoft's Frontier Company is the AI install phase",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Microsoft's Frontier Company is not a normal product launch. It is Microsoft admitting the hard part of AI is now installation.</p>
+
+      <p><a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/" target="_blank" rel="noopener noreferrer">Microsoft says</a> it is putting $2.5 billion into the effort and embedding more than 6,000 industry and engineering experts inside customer organizations. That is not a demo. That is deployment labor.</p>
+
+      <p>The line that matters is "measurable business outcomes." That is the test now. If AI does not change throughput, quality, or cost, it is just another expensive pilot with better branding.</p>
+
+      <p>Microsoft also says, "Customers shouldn't be locked into a single model any more than they should be locked into a single technology vendor." That is the real market shift. Enterprises want model choice, data control, and a team that can wire the thing into the actual workflow.</p>
+
+      <p>Microsoft names LSEG, Unilever, and Novo Nordisk as early work. That tells me the pitch is simple: keep the data private, keep the options open, and move from proof of concept to production without making every customer build the same plumbing twice.</p>
+
+      <p>My read is simple. The useful AI business is moving from model access to managed installation. The winners will be the ones who can make implementation feel boring, repeatable, and safe.</p>
+    `
+  },
   post48: {
     featured: false,
     date: 'July 10, 2026',
@@ -1104,7 +1126,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
