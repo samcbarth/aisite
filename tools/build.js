@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post46: 'OpenAI\'s partner network matters because enterprise AI is moving from model access to delivery, workflow redesign, and change management.',
     post45: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
     post43: 'GPT-5.6 matters because AI is now being priced and sold as useful work inside the tools people already use. That connects straight to process design, context, and the cost of rework.',
@@ -209,6 +210,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post46: {
+      image: 'assets/images/post46-inline.jpg',
+      caption: 'OpenAI is building a channel around implementation, not just model access.',
+      side: 'left',
+      after: 2,
+      supportImage: 'assets/images/post46-support.jpg',
+      supportCaption: 'Partners now matter because workflow design is the hard part.'
+    },
     post45: {
       image: 'assets/images/post45-inline.jpg',
       caption: 'Enterprise AI only matters when it fits the work teams already do every day.',
@@ -387,6 +396,16 @@ function copyRecursive(src, dest) {
       text: 'ChatGPT Work is an agent for longer, more involved tasks.',
       source: 'OpenAI Help Center',
       sourceUrl: 'https://help.openai.com/en/articles/6825453-chatgpt-release-notes'
+    },
+    openaiPartnerSolutions: {
+      text: 'build, sell, and deliver AI solutions with OpenAI.',
+      source: 'OpenAI Partner Network',
+      sourceUrl: 'https://openai.com/index/introducing-openai-partner-network/'
+    },
+    openaiDeployEveryday: {
+      text: 'build and deploy AI systems they can rely on every day',
+      source: 'OpenAI Deployment Company',
+      sourceUrl: 'https://openai.com/index/openai-launches-the-deployment-company/'
     },
     huangInfra: {
       text: 'We are now a few hundred billion dollars into it.',
@@ -623,6 +642,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post46: { after: 3, quotes: [makeQuote('Partner network', QUOTE_LIBRARY.openaiPartnerSolutions), makeQuote('Deployment', QUOTE_LIBRARY.openaiDeployEveryday)] },
     post45: { after: 3, quotes: [makeQuote('Repeatable work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone), makeQuote('Customer proof', QUOTE_LIBRARY.jackHenryAccelerateRpg)] },
     post44: { after: 3, quotes: [makeQuote('Workflow agent', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Longer tasks', QUOTE_LIBRARY.openaiLongerTasks)] },
     post43: { after: 3, quotes: [makeQuote('OpenAI framing', QUOTE_LIBRARY.gpt56MoreIntelligence), makeQuote('Microsoft framing', QUOTE_LIBRARY.microsoftMoreUseful)] },

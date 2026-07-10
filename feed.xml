@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 01:22:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 03:09:54 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI&apos;s partner network is the real enterprise AI channel</title>
+      <link>https://samcbarth.github.io/aisite/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>OpenAI&apos;s partner network is the part of this week&apos;s news I would watch. It says the company knows enterprise AI is no longer just a model problem. It is a delivery problem. OpenAI says the limiting factor is not model capability anymore. The harder work is finding the right use c</description>
+    </item>
+    <item>
+      <title>IBM Bob is the real enterprise AI development story</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-real-enterprise-ai-development-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-real-enterprise-ai-development-story/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>IBM Bob is not a coding toy. It is IBM trying to sell enterprise AI around the part of software work that actually costs money: review, validation, modernization, and cleanup. IBM says the bottleneck has moved from writing code to reviewing and validating it. That is the right pr</description>
+    </item>
     <item>
       <title>ChatGPT Work is the real workflow shift</title>
       <link>https://samcbarth.github.io/aisite/posts/chatgpt-work-is-the-real-workflow-shift/</link>

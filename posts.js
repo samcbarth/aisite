@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post46: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: "OpenAI's partner network is the real enterprise AI channel",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post46-hero.jpg',
+    body: `
+      <p>OpenAI's partner network is the part of this week's news I would watch. It says the company knows enterprise AI is no longer just a model problem. It is a delivery problem.</p>
+
+      <p><a href="https://openai.com/index/introducing-openai-partner-network/" target="_blank" rel="noopener noreferrer">OpenAI says</a> the limiting factor is not model capability anymore. The harder work is finding the right use cases, redesigning workflows, integrating with existing systems, and driving adoption. That is the honest version of the market.</p>
+
+      <p>OpenAI is putting <a href="https://openai.com/index/introducing-openai-partner-network/" target="_blank" rel="noopener noreferrer">$150 million behind the network</a> and says it wants to train 300,000 certified consultants by the end of 2026. That is not a tiny side project. That is a serious channel bet.</p>
+
+      <p>The interest form makes the filter obvious. OpenAI says it wants partners with <a href="https://openai.com/form/partner-network-interest/" target="_blank" rel="noopener noreferrer">strong customer relationships, proven AI implementation experience, and a clear commitment to building with OpenAI</a>. That is not flashy, but it is the right filter. Enterprises buy trust and execution before they buy hype.</p>
+
+      <p><a href="https://openai.com/index/openai-launches-the-deployment-company/" target="_blank" rel="noopener noreferrer">The deployment company announcement</a> says the same thing another way. OpenAI says it wants organizations to help customers build and deploy AI systems they can rely on every day across important work. That is the whole story. AI is moving from demo to delivery, and the real winner will be the company that can make the work stick.</p>
+    `
+  },
   post45: {
     featured: false,
     date: 'July 9, 2026',
@@ -1042,7 +1062,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
