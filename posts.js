@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post51: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Meta's Muse Image is really a monetization story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post3-marketing-team-1200.jpg',
+    body: `
+      <p>Meta's Muse Image is not just another AI feature. It is Meta trying to own the part of image generation that turns ideas into posts, ads, and product work people actually use.</p>
+
+      <p><a href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank" rel="noopener noreferrer">Meta says</a> Muse Image is "the first image generation model from Meta Superintelligence Labs, now available in Meta AI." That matters because Meta is putting the tool inside the same apps where attention already lives. This is distribution first, model second.</p>
+
+      <p>Meta also says the model "uses advanced reasoning to understand complex prompts, seamlessly blending multiple photos into high-quality creations you can download and share anywhere." That is a better business pitch than a novelty demo. It says the output is meant to be usable in feeds, stories, chats, and campaigns without a lot of cleanup.</p>
+
+      <p>The monetization part is plain. Meta says Muse Image is free for everyday creation, but "for people who want to create even more, it's available as part of Meta's subscription plans." It also says "advertisers and agencies will be able to tap into Muse Image through Advantage+ creative." That is the real play: free usage on the front end, paid usage on the back end, and ad tooling in the middle.</p>
+
+      <p>My read is simple. The model matters, but the business model matters more. If Meta can make image creation feel native to its apps, it keeps the work inside its ecosystem and gives businesses one more reason to stay there too. This is the kind of workflow and customer behavior shift I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The tool is the headline. The distribution is the business.</p>
+    `
+  },
   post50: {
     featured: false,
     date: 'July 10, 2026',
@@ -1146,7 +1166,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

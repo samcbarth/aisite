@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
     post50: 'Meta Business Agent matters because customer messaging is turning into a service layer that can answer, qualify, and book work at scale.',
     post49: 'Microsoft Frontier Company matters because AI is shifting from model access to deployment, control, and the workflow work that makes the software stick.',
     post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
@@ -214,6 +215,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post51: {
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=650&fit=crop&q=80',
+      caption: 'Image creation only matters when it fits the workflow people already use.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The commercial edge is in keeping the creative work inside the same ecosystem.'
+    },
     post50: {
       image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900&h=650&fit=crop&q=80',
       caption: 'Customer messaging is becoming a product layer, not just a support inbox.',
@@ -422,6 +431,16 @@ function copyRecursive(src, dest) {
       text: 'It handles customer conversations 24/7 in your brand voice.',
       source: 'Meta Business Agent',
       sourceUrl: 'https://metabusinessai.com/'
+    },
+    museCreativePartner: {
+      text: 'the creative partner that knows your world',
+      source: 'Meta Newsroom',
+      sourceUrl: 'https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/'
+    },
+    museSubscriptionPlans: {
+      text: "for people who want to create even more, it's available as part of Meta's subscription plans.",
+      source: 'Meta Newsroom',
+      sourceUrl: 'https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/'
     },
     metaHundredsSystems: {
       text: 'connect to a growing suite of hundreds of systems like Shopify, Zendesk, and Shopee',
@@ -723,6 +742,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post51: { after: 3, quotes: [makeQuote('Creative partner', QUOTE_LIBRARY.museCreativePartner), makeQuote('Subscription', QUOTE_LIBRARY.museSubscriptionPlans)] },
     post50: { after: 3, quotes: [makeQuote('Infinite team', QUOTE_LIBRARY.metaInfiniteTeam), makeQuote('Brand voice', QUOTE_LIBRARY.metaBrandVoice24_7)] },
     post49: { after: 3, quotes: [makeQuote('Business outcomes', QUOTE_LIBRARY.microsoftOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },
     post47: { after: 3, quotes: [makeQuote('Data readiness', QUOTE_LIBRARY.sapDataContext), makeQuote('Open platform', QUOTE_LIBRARY.dremioOpenPlatform)] },
