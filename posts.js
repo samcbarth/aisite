@@ -7,6 +7,28 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post47: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "SAP's Dremio deal is really a data context play",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post47-hero.jpg',
+    body: `
+      <p>SAP buying Dremio is not really a headline about M&amp;A. It is a headline about the part of enterprise AI most teams still skip: the data layer.</p>
+
+      <p><a href="https://news.sap.com/2026/07/sap-completes-dremio-acquisition/" target="_blank" rel="noopener noreferrer">SAP says</a> the deal is meant to accelerate agentic AI and combine SAP and non-SAP data in real time. That is the right problem. Most AI projects do not fail because the model is dumb. They fail because the data is messy, duplicated, and missing the context people need to trust it.</p>
+
+      <p><a href="https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/" target="_blank" rel="noopener noreferrer">SAP's original acquisition note</a> said, "Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents." That is the cleanest line in the whole story. It is also the part most vendors keep dancing around.</p>
+
+      <p><a href="https://www.dremio.com/blog/sap-intends-to-acquire-dremio/" target="_blank" rel="noopener noreferrer">Dremio said</a> it wants to deliver "one open platform where agents reason over all enterprise data, decide, and act." That is the real pitch. Not another dashboard. Not another copy job. A governed place where business context stays intact.</p>
+
+      <p>That matters because AI gets expensive when every team keeps moving the same data around to make a new tool work. If SAP can make the stack more open, more governed, and less dependent on data movement, that is a practical win. It cuts friction where enterprise software usually creates it.</p>
+
+      <p>My read is simple. The next useful AI stack is probably less about the model and more about how cleanly the company can unify data, lineage, access, and context. That is not flashy. But it is where the real money is.</p>
+    `
+  },
   post46: {
     featured: false,
     date: 'July 9, 2026',
@@ -1062,7 +1084,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

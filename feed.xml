@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 03:09:54 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 19:15:02 GMT</lastBuildDate>
+    <item>
+      <title>SAP&apos;s Dremio deal is really a data context play</title>
+      <link>https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>SAP buying Dremio is not really a headline about M&amp;amp;A. It is a headline about the part of enterprise AI most teams still skip: the data layer. SAP says the deal is meant to accelerate agentic AI and combine SAP and non-SAP data in real time. That is the right problem. Most AI </description>
+    </item>
     <item>
       <title>OpenAI&apos;s partner network is the real enterprise AI channel</title>
       <link>https://samcbarth.github.io/aisite/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</link>

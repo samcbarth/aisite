@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
     post46: 'OpenAI\'s partner network matters because enterprise AI is moving from model access to delivery, workflow redesign, and change management.',
     post45: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
@@ -210,6 +211,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post47: {
+      image: 'assets/images/post47-inline.jpg',
+      caption: 'The useful AI stack is the one that keeps business context together.',
+      side: 'right',
+      after: 2,
+      supportImage: 'assets/images/post47-support.jpg',
+      supportCaption: 'Data movement is expensive when every team keeps rebuilding the same path.'
+    },
     post46: {
       image: 'assets/images/post46-inline.jpg',
       caption: 'OpenAI is building a channel around implementation, not just model access.',
@@ -377,6 +386,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    sapDataContext: {
+      text: 'Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents.',
+      source: 'SAP News',
+      sourceUrl: 'https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/'
+    },
+    dremioOpenPlatform: {
+      text: 'one open platform where agents reason over all enterprise data, decide, and act',
+      source: 'Dremio',
+      sourceUrl: 'https://www.dremio.com/blog/sap-intends-to-acquire-dremio/'
+    },
     ibmBobWorkflowsBackbone: {
       text: 'AI is good at open-ended problem-solving and bad at doing the same thing twice.',
       source: 'IBM Bob Blog',
@@ -642,6 +661,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post47: { after: 3, quotes: [makeQuote('Data readiness', QUOTE_LIBRARY.sapDataContext), makeQuote('Open platform', QUOTE_LIBRARY.dremioOpenPlatform)] },
     post46: { after: 3, quotes: [makeQuote('Partner network', QUOTE_LIBRARY.openaiPartnerSolutions), makeQuote('Deployment', QUOTE_LIBRARY.openaiDeployEveryday)] },
     post45: { after: 3, quotes: [makeQuote('Repeatable work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone), makeQuote('Customer proof', QUOTE_LIBRARY.jackHenryAccelerateRpg)] },
     post44: { after: 3, quotes: [makeQuote('Workflow agent', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Longer tasks', QUOTE_LIBRARY.openaiLongerTasks)] },
