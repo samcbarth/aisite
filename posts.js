@@ -7,6 +7,24 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post44: {
+    featured: false,
+    date: 'July 9, 2026',
+    iso: '2026-07-09',
+    title: 'ChatGPT Work is the real workflow shift',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank" rel="noopener noreferrer">OpenAI's July 9 ChatGPT Work announcement</a> is not a chatbot story. It is a workflow story. The company is trying to move the product from answering questions to finishing repeatable work across the apps and files people already use.</p>
+
+      <p>That is why the pitch matters. OpenAI says ChatGPT Work can "take action across your apps and files" and "turn a goal into finished work." That is a different sales pitch. The buyer is not just a person who wants nicer writing. It is a team that wants less handoff pain.</p>
+
+      <p><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener noreferrer">The release notes make the control point clearer</a>. OpenAI says you can "follow its progress, answer questions, change direction, and approve important actions as it works." That is the line business teams should focus on. Useful AI is not magic. It is delegated work with guardrails.</p>
+
+      <p>My read is simple. This will matter most anywhere the work is already repeatable: sales ops, finance, marketing ops, admin, reporting, and the kind of internal tasks that eat hours because nobody owns the whole path. The companies that win will know what to hand off and what still needs a human. The companies that lose will use AI to speed up messy process and call it transformation.</p>
+    `
+  },
   post43: {
     featured: false,
     date: 'July 9, 2026',
@@ -1004,7 +1022,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

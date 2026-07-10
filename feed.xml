@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 23:41:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 01:22:44 GMT</lastBuildDate>
+    <item>
+      <title>ChatGPT Work is the real workflow shift</title>
+      <link>https://samcbarth.github.io/aisite/posts/chatgpt-work-is-the-real-workflow-shift/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/chatgpt-work-is-the-real-workflow-shift/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>OpenAI&apos;s July 9 ChatGPT Work announcement is not a chatbot story. It is a workflow story. The company is trying to move the product from answering questions to finishing repeatable work across the apps and files people already use. That is why the pitch matters. OpenAI says ChatG</description>
+    </item>
+    <item>
+      <title>GPT-5.6 is a price-per-task story</title>
+      <link>https://samcbarth.github.io/aisite/posts/gpt-5-6-is-a-price-per-task-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/gpt-5-6-is-a-price-per-task-story/</guid>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>GPT-5.6 is not really a hype story. It is a cost story. OpenAI and Microsoft are both pushing the same idea: the win is more useful work for the same spend. OpenAI said GPT-5.6 brings &quot;more intelligence from every token&quot; . That is the right lens. The company also split the family</description>
+    </item>
     <item>
       <title>IBM and Red Hat are turning open source security into an AI business</title>
       <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-are-turning-open-source-security-into-an-ai-business/</link>

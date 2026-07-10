@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
     post43: 'GPT-5.6 matters because AI is now being priced and sold as useful work inside the tools people already use. That connects straight to process design, context, and the cost of rework.',
     post42: 'The Lightwell story matters because AI only scales inside enterprises when the software underneath it is safe enough to trust and cheap enough to patch.',
     post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
@@ -207,6 +208,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post44: {
+      image: 'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=900&h=650&fit=crop&q=80',
+      caption: 'The real shift is from chat output to delegated workflow.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1497215842964-222b430dc094?w=900&h=650&fit=crop&q=80',
+      supportCaption: 'The hard part is still the workflow around the model.'
+    },
     post43: {
       image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=650&fit=crop&q=80',
       caption: 'AI only becomes useful when it fits the workflow people already run every day.',
@@ -350,6 +359,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    openaiWorkflowAction: {
+      text: 'ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/chatgpt-for-your-most-ambitious-work/'
+    },
+    openaiLongerTasks: {
+      text: 'ChatGPT Work is an agent for longer, more involved tasks.',
+      source: 'OpenAI Help Center',
+      sourceUrl: 'https://help.openai.com/en/articles/6825453-chatgpt-release-notes'
+    },
     huangInfra: {
       text: 'We are now a few hundred billion dollars into it.',
       source: 'South China Morning Post',
@@ -585,6 +604,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post44: { after: 3, quotes: [makeQuote('Workflow agent', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Longer tasks', QUOTE_LIBRARY.openaiLongerTasks)] },
     post43: { after: 3, quotes: [makeQuote('OpenAI framing', QUOTE_LIBRARY.gpt56MoreIntelligence), makeQuote('Microsoft framing', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post42: { after: 4, quotes: [makeQuote('Structural shift', QUOTE_LIBRARY.lightwellStructuralShift), makeQuote('No disruption', QUOTE_LIBRARY.lightwellNoDisruption)] },
     post40: { after: 4, quotes: [makeQuote('Compute economy', QUOTE_LIBRARY.openaiComputePowered), makeQuote('Roadmap', QUOTE_LIBRARY.broadcomRoadmap)] },
