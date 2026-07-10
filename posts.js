@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post50: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Meta's Business Agent is really a service business story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Meta's Business Agent is not really a chatbot launch. It is Meta trying to package first-line customer work as a product. The company says it can be set up in minutes or plugged directly into existing enterprise infrastructure so you can "10X or 100X output." That is a service business, not a demo.</p>
+
+      <p>More than one million businesses are already using a Meta Business Agent on WhatsApp and Messenger to respond around the clock. That is the part worth paying attention to. Meta already owns the place where a lot of customer conversations start. Now it is trying to monetize the handling of those conversations.</p>
+
+      <p>The site says the agent "handles customer conversations 24/7 in your brand voice." That is the line small business owners will understand fastest. They do not buy AI because they want AI. They buy it because they want someone to answer, qualify, book, and follow up when they are busy doing the actual work.</p>
+
+      <p>Meta says the platform can connect to a growing suite of hundreds of systems like Shopify, Zendesk, and Shopee. That is where this becomes more than auto-replies. Once the agent can touch the catalog, support system, and booking flow, it starts acting like a front-end operating layer.</p>
+
+      <p>My read is simple. If this works, Meta gets a new paid layer on top of messaging and a stronger hold on small-business revenue operations. If it does not, it is just another bot that sounds polished until a real customer needs a real answer. This is the kind of workflow and handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The tech matters, but the process around it matters just as much.</p>
+    `
+  },
   post49: {
     featured: false,
     date: 'July 10, 2026',
@@ -1126,7 +1146,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
