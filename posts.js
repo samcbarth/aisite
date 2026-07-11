@@ -7,6 +7,24 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post57: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: 'Deutsche Telekom is the real AI-native story',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://news.microsoft.com/source/asia/wp-content/uploads/2026/05/260422-CommBank-HR-005-1900x1268.jpg',
+    body: `
+      <p><a href="https://openai.com/index/deutsche-telekom/" target="_blank" rel="noopener noreferrer">OpenAI's July 10 Deutsche Telekom writeup</a> is not a chatbot story. It is an operating-model story. Deutsche Telekom is trying to become AI-native, and that is the right frame.</p>
+
+      <p>The real point is not the model. It is where the work moves. OpenAI says it is bringing AI directly into customer interactions through live translation, in-call assistants, and post-call summaries. That matters because it cuts handoffs and clears dead time out of support.</p>
+
+      <p>For telecom, that is the part worth watching. Customer care, employee workflows, and network ops are all different sides of the same machine. If AI does not change those paths, it is just another layer on top.</p>
+
+      <p>My read is simple. AI only gets real when it changes the operating model. The companies that win will decide where to let machines take over, where to keep a human check, and how to keep the whole thing secure enough to trust.</p>
+    `
+  },
   post56: {
     featured: false,
     date: 'July 10, 2026',
@@ -1266,7 +1284,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

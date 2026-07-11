@@ -228,6 +228,14 @@ function copyRecursive(src, dest) {
       supportImage: 'assets/images/post45-support.jpg',
       supportCaption: 'The finance question still decides how far the stack can scale.'
     },
+    post57: {
+      image: 'https://news.microsoft.com/source/asia/wp-content/uploads/2026/05/260422-CommBank-HR-004-1900x1268.jpg',
+      caption: 'AI only matters when it changes the work, not just the interface.',
+      side: 'left',
+      after: 2,
+      supportImage: 'https://news.microsoft.com/source/asia/wp-content/uploads/2026/05/260422-CommBank-HR-008-1900x1268.jpg',
+      supportCaption: 'The real test is whether service work gets simpler for customers and staff.'
+    },
     post55: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Virginia_Tech_-_data_center.jpg',
       caption: 'Consensus only matters when the network can keep moving through real failures.',
@@ -817,6 +825,16 @@ function copyRecursive(src, dest) {
       source: 'Microsoft Build 2026',
       sourceUrl: 'https://news.microsoft.com/build-2026/'
     },
+    deutscheTelekomAInative: {
+      text: 'Becoming AI-native is not about adding AI to the way we work today. It is about redesigning the work itself.',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/deutsche-telekom/'
+    },
+    deutscheTelekomPrivacyFirst: {
+      text: 'simple, multilingual, and privacy-first AI experiences',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/deutsche-telekom-collaboration/'
+    },
     cobalt50PercentBetter: {
       text: 'up to 50% better generational performance',
       source: 'Microsoft Azure Blog',
@@ -847,6 +865,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post57: { after: 3, quotes: [makeQuote('AI-native', QUOTE_LIBRARY.deutscheTelekomAInative), makeQuote('Customer AI', QUOTE_LIBRARY.deutscheTelekomPrivacyFirst)] },
     post56: { after: 3, quotes: [makeQuote('System', QUOTE_LIBRARY.microsoftBuildSystemRuns), makeQuote('Performance', QUOTE_LIBRARY.cobalt50PercentBetter), makeQuote('Agents', QUOTE_LIBRARY.cobaltAgentsUnique)] },
     post55: { after: 3, quotes: [makeQuote('Writes', QUOTE_LIBRARY.meerkatWritesAtAllTimes), makeQuote('Timeouts', QUOTE_LIBRARY.meerkatNoTimeoutHalt)] },
     post53: { after: 3, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Rules', QUOTE_LIBRARY.albertaBringYourOwnPower)] },

@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 04:13:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 05:12:38 GMT</lastBuildDate>
+    <item>
+      <title>Deutsche Telekom is the real AI-native story</title>
+      <link>https://samcbarth.github.io/aisite/posts/deutsche-telekom-is-the-real-ai-native-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/deutsche-telekom-is-the-real-ai-native-story/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>OpenAI&apos;s July 10 Deutsche Telekom writeup is not a chatbot story. It is an operating-model story. Deutsche Telekom is trying to become AI-native, and that is the right frame. The real point is not the model. It is where the work moves. OpenAI says it is bringing AI directly into </description>
+    </item>
     <item>
       <title>Microsoft&apos;s Cobalt 200 is really a cloud economics story</title>
       <link>https://samcbarth.github.io/aisite/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</link>
