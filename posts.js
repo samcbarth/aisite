@@ -7,6 +7,48 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post71: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'AWS is closing the door on its first enterprise AI stack',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post71-hero.jpg',
+    body: `
+      <p>A company bought Amazon Kendra to search its internal knowledge. It added Amazon Q Business so employees could ask questions against that information. It started testing Bedrock Agents to move from answers into actions. Each decision made sense on its own. Now all three products are being moved out of the path AWS wants new customers to take.</p>
+
+      <p>On June 30, AWS published a broad <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/" target="_blank" rel="noopener noreferrer">service availability update</a>. Starting July 30, new customers will no longer be able to access Amazon Kendra, Amazon Q Business, or the original Bedrock Agents, which has been renamed Bedrock Agents Classic. Existing customers can keep using them, and AWS says it will continue operating and supporting the services.</p>
+
+      <p>This is not a shutdown notice. It is still a major product signal. AWS is clearing three recognizable pieces of its first enterprise AI stack from the front door while directing new work toward Amazon Quick and Bedrock AgentCore.</p>
+
+      <p>The sequence tells the story. Kendra launched as enterprise search. Q Business wrapped generative AI around company data and gave employees a conversational interface. Bedrock Agents added task execution. Amazon Quick now pulls search, analytics, apps, and autonomous agents into one workspace. AgentCore provides the runtime, identity, memory, monitoring, and policy layer for agents built outside that workspace.</p>
+
+      <p>AWS is not leaving enterprise AI. It is collapsing several product paths into fewer operating systems.</p>
+
+      <p>The <a href="https://aws.amazon.com/q/business/" target="_blank" rel="noopener noreferrer">Q Business product page</a> makes that direction explicit. It calls Quick the next evolution of Q Business and says existing customers can use their current Q index inside Quick. That can protect some of the work already done connecting documents and permissions. It does not mean the move is automatic or free of design choices.</p>
+
+      <p>Q Business was centered on finding information, generating content, and creating lightweight applications. Quick is positioned around a broader promise: connect to business data, analyze it, and let agents perform recurring work. AWS describes the change as moving from answers to actions. That sounds clean on a product page. Inside a company, the distance between those two things contains approvals, audit logs, failure handling, process ownership, and a lot of security review.</p>
+
+      <p>That is why maintenance mode matters even when support continues. A customer can leave a working Kendra or Q Business deployment alone for now. But any expansion decision changes. Should another department be added to a product that new customers can no longer buy? Should a partner keep developing a Kendra-based solution? Should an internal team build another Q App when AWS is putting its newest agent features into Quick?</p>
+
+      <p>Partners will feel this quickly. Persistent Systems still markets customer service and sales solutions powered by Kendra. Its <a href="https://www.persistent.com/services/data-and-analytics/data-science-and-machine-learning/intelligent-search/elevate-sales-engagement-outcomes-with-intelligent-search/" target="_blank" rel="noopener noreferrer">sales engagement offer</a> promises users "accurate and contextual recommendations" inside Salesforce. The business need has not disappeared. The product underneath that promise now has a lifecycle question attached to it.</p>
+
+      <p>Migration services are already appearing in AWS Marketplace for moving Q Business workloads into Quick. That is another useful signal. When a platform change creates a consulting category, the technical reuse is probably real, but so is the implementation work.</p>
+
+      <p>The right response is not to panic and rip out a stable deployment. It is to inventory what the old service is actually doing. Map the connectors, indexes, permissions, applications, custom actions, usage levels, and contracts. Then separate the parts that can carry forward from the parts tied to one product interface.</p>
+
+      <p>For Q Business, the reusable index may reduce the data migration burden. The harder questions sit above it. Quick has a different user experience and a larger action surface. Teams need to test whether answers remain accurate, whether document-level access still behaves as expected, and whether agent actions can be limited to the right systems and people.</p>
+
+      <p>For Kendra, the decision may be less direct. Some deployments support customer-facing search, embedded applications, or retrieval pipelines that do not need an employee agent workspace. Moving those jobs into Quick may not fit. A team may need another search architecture, or it may decide that continuing on Kendra is safer until AWS provides a clearer destination.</p>
+
+      <p>Bedrock Agents Classic creates a similar split. Existing agents can continue running, but new agent development will naturally move toward AgentCore. That means comparing memory, identity, tool integration, observability, and runtime behavior instead of treating the newer name as a drop-in upgrade.</p>
+
+      <p>AWS says, "Customers already using these services and features can continue to do so." That sentence protects continuity. It should not be confused with a roadmap. Businesses need both.</p>
+
+      <p>This is the kind of platform change I watch at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because architecture decisions eventually become operating decisions. The question is no longer whether the old stack works. It is how much more process, data, and customer experience a company wants to attach to products AWS has removed from the new-customer path.</p>
+
+      <p>The July 30 cutoff gives teams a date, but not a reason to rush into a new logo. The useful work is tracing every answer, search result, and agent action back to the system that produces it. Once that map exists, AWS's consolidation becomes a migration that can be priced and tested instead of a surprise hidden inside the next renewal.</p>
+    `
+  },
   post70: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1692,6 +1734,7 @@ POST_ORDER.unshift('post67');
 POST_ORDER.unshift('post68');
 POST_ORDER.unshift('post69');
 POST_ORDER.unshift('post70');
+POST_ORDER.unshift('post71');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

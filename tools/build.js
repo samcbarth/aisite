@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post71: {
+      image: 'assets/images/post71-inline.jpg',
+      caption: 'AWS is moving enterprise search, workplace AI, and agent infrastructure toward fewer product paths.', side: 'right', after: 5,
+      supportImage: 'assets/images/post71-support.jpg',
+      supportCaption: 'A migration starts with mapping the indexes, permissions, actions, and workflows already tied to the older services.'
+    },
     post70: {
       image: 'https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?w=900&h=650&fit=crop&q=80',
       caption: 'A useful forecast shows the likely outcome and the uncertainty surrounding it.', side: 'left', after: 4,
@@ -500,6 +506,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    awsMaintenanceContinuity: {
+      text: 'Customers already using these services and features can continue to do so.',
+      source: 'AWS service availability update',
+      sourceUrl: 'https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/'
+    },
+    persistentContextualRecommendations: {
+      text: 'accurate and contextual recommendations relevant to the concerned customer and opportunity',
+      source: 'Persistent Systems',
+      sourceUrl: 'https://www.persistent.com/services/data-and-analytics/data-science-and-machine-learning/intelligent-search/elevate-sales-engagement-outcomes-with-intelligent-search/'
+    },
     microsoftAuroraPractical: {
       text: 'a meaningful step toward making weather foundation models more open, useful, and practical.',
       source: 'Sridhar Iyer, Microsoft AI',
@@ -983,6 +999,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post71: { after: 7, quotes: [makeQuote('Service continuity', QUOTE_LIBRARY.awsMaintenanceContinuity), makeQuote('Existing use case', QUOTE_LIBRARY.persistentContextualRecommendations)] },
     post70: { after: 6, quotes: [makeQuote('Open model', QUOTE_LIBRARY.microsoftAuroraPractical), makeQuote('Scientific use', QUOTE_LIBRARY.metOfficeAuroraPlatform)] },
     post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
     post68: { after: 5, quotes: [makeQuote('Performance lever', QUOTE_LIBRARY.langchainModelPart), makeQuote('Runtime policy', QUOTE_LIBRARY.nvidiaNetworkDefault)] },

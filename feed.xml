@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 15:03:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 16:03:54 GMT</lastBuildDate>
+    <item>
+      <title>AWS is closing the door on its first enterprise AI stack</title>
+      <link>https://samcbarth.github.io/aisite/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>A company bought Amazon Kendra to search its internal knowledge. It added Amazon Q Business so employees could ask questions against that information. It started testing Bedrock Agents to move from answers into actions. Each decision made sense on its own. Now all three products </description>
+    </item>
     <item>
       <title>The forecast businesses need is a range, not a number</title>
       <link>https://samcbarth.github.io/aisite/posts/the-forecast-businesses-need-is-a-range-not-a-number/</link>
