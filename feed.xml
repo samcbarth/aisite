@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 19:03:41 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 21:03:23 GMT</lastBuildDate>
+    <item>
+      <title>What $3.1 billion buys inside an industrial plant</title>
+      <link>https://samcbarth.github.io/aisite/posts/what-3-1-billion-buys-inside-an-industrial-plant/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-3-1-billion-buys-inside-an-industrial-plant/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>A factory already knows a lot about itself. Sensors record pressure, temperature, vibration, flow, energy use, alarms, and equipment states. Engineering systems know how the plant was designed. Maintenance systems know what broke and what was replaced. The problem is that those r</description>
+    </item>
+    <item>
+      <title>Geneva gave AI governance a room, not a rulebook</title>
+      <link>https://samcbarth.github.io/aisite/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Governance</category>
+      <description>For two days in Geneva, governments, researchers, companies, and civil society sat inside the same United Nations process to talk about AI. Then the meeting ended without a treaty, a regulator, or a global list of prohibited uses. That does not make the first Global Dialogue on A</description>
+    </item>
     <item>
       <title>The next AI bottleneck sits underneath the processor</title>
       <link>https://samcbarth.github.io/aisite/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</link>

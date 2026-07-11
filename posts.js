@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post76: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'What $3.1 billion buys inside an industrial plant',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>A factory already knows a lot about itself. Sensors record pressure, temperature, vibration, flow, energy use, alarms, and equipment states. Engineering systems know how the plant was designed. Maintenance systems know what broke and what was replaced. The problem is that those records often describe the same asset in different ways.</p>
+
+      <p>Schneider Electric is spending $3.1 billion to close that gap. On June 30, it signed an all-cash agreement to buy Cognite, an industrial data and AI software company. The deal is less about adding another AI model and more about giving software a dependable map of what is happening inside a real operation.</p>
+
+      <p>That distinction matters. A general AI assistant can summarize a maintenance manual. An industrial system has to connect that manual to the correct pump, its live sensor history, the work orders attached to it, the process it supports, and the operating limits that keep people and equipment safe.</p>
+
+      <p>Cognite's core product, Data Fusion, is built to connect those records and add context. Its knowledge graph models the relationships among physical assets, time-series data, documents, diagrams, maintenance events, and business systems. Atlas AI then uses that organized layer to support generative and agent-based applications.</p>
+
+      <p>Schneider already owns many of the other pieces. Its energy management and automation products sit in buildings, data centers, factories, and infrastructure. AVEVA, the industrial software company Schneider fully acquired in 2023, covers engineering, operations, information management, and optimization. Cognite adds a data layer designed to work across existing vendor systems instead of assuming the plant starts clean.</p>
+
+      <p>The <a href="https://www.se.com/ww/en/assets/pdf/Schneider-Electric-announces-agreement-to-acquire-Cognite" target="_blank" rel="noopener noreferrer">Schneider announcement</a> describes industrial AI moving from analysis toward execution. CEO Olivier Blum called Cognite "a truly industrial grade AI platform that turns the complexity of operational data into a competitive advantage." That is the promise. It is also the integration test.</p>
+
+      <p>Industrial buyers have heard platform stories before. A combined product diagram can look complete while customers still spend months reconciling asset names, permissions, data quality, network boundaries, and ownership. The purchase only becomes more than a large software deal if Schneider can reduce that work without forcing plants to abandon equipment and systems that may run for decades.</p>
+
+      <p>The price shows how much Schneider values that position. Cognite reported more than $170 million in 2025 revenue and 36% growth in annual recurring revenue bookings. A $3.1 billion enterprise value is more than 18 times that reported revenue. This is not a purchase priced around current earnings. Schneider is paying for growth, industrial specialization, and a place between operational data and future AI actions.</p>
+
+      <p>The seller's numbers make the deal even clearer. In its <a href="https://live.euronext.com/en/products/equities/company-news/2026-06-30-aker-asa-agreement-sell-cognite-schneider-electric" target="_blank" rel="noopener noreferrer">regulated market notice</a>, Aker said it expects about $1.48 billion in cash proceeds and roughly 20 times its invested capital. Aker CEO Oyvind Eriksen said the combination creates "a highly complementary platform with a broad software offering." Investors can already see value realized. Customers still need to see value delivered.</p>
+
+      <p>There are three places to look for that delivery. First is speed. If contextualized industrial data really becomes reusable across engineering, maintenance, energy, and operations, each new use case should require less integration work than the last.</p>
+
+      <p>Second is openness. Cognite has built its position partly by connecting data from mixed environments. Schneider will want the platform to strengthen AVEVA CONNECT and the rest of its portfolio. Customers will want proof that connections to competing automation, cloud, and analytics products remain first-class. Turning an open data layer into a sales funnel would weaken the thing Schneider paid for.</p>
+
+      <p>Third is control. Recommending that an operator inspect a pump is different from changing a set point or scheduling a shutdown. As AI moves from describing operations to acting on them, plants need clear authorization, simulation, approval, logging, rollback, and human escalation. Context makes an action more informed. It does not make every action safe.</p>
+
+      <p>The transaction still needs regulatory approval and is expected to close in the coming quarters. After closing, Cognite will sit inside Schneider's Industrial Automation business and be integrated with AVEVA. That reporting structure makes sense, but product integration will be harder than financial consolidation.</p>
+
+      <p>This connects to the systems work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because the same rule applies outside a factory: automation is only as useful as the context underneath it. In a plant, the cost of bad context is simply higher. The wrong asset, stale reading, or missing constraint can turn a confident answer into downtime or danger.</p>
+
+      <p>Schneider has bought the layer that can tell software what a plant's data means. Now it has to preserve Cognite's openness while connecting that meaning to AVEVA and Schneider controls. If the first combined deployments require less cleanup and produce safer actions, the $3.1 billion will look like infrastructure. If they create another closed stack, it will look like an expensive new silo beside the old ones.</p>
+    `
+  },
   post75: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1897,6 +1935,7 @@ POST_ORDER.unshift('post72');
 POST_ORDER.unshift('post73');
 POST_ORDER.unshift('post74');
 POST_ORDER.unshift('post75');
+POST_ORDER.unshift('post76');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

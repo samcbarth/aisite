@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post76: {
+      image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900&h=650&fit=crop&q=80',
+      caption: 'Industrial AI needs one usable map across sensor, engineering, maintenance, and business records.', side: 'left', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The deal works if better context produces safer actions without locking customers into another closed stack.'
+    },
     post75: {
       image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=900&h=650&fit=crop&q=80',
       caption: 'The first dialogue put governments, researchers, companies, and civil society into one recurring process.', side: 'right', after: 5,
@@ -530,6 +536,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    schneiderIndustrialGrade: {
+      text: 'a truly industrial grade AI platform that turns the complexity of operational data into a competitive advantage',
+      source: 'Olivier Blum, Schneider Electric CEO',
+      sourceUrl: 'https://www.se.com/ww/en/assets/pdf/Schneider-Electric-announces-agreement-to-acquire-Cognite'
+    },
+    akerComplementaryPlatform: {
+      text: 'a highly complementary platform with a broad software offering',
+      source: 'Oyvind Eriksen, Aker ASA CEO',
+      sourceUrl: 'https://live.euronext.com/en/products/equities/company-news/2026-06-30-aker-asa-agreement-sell-cognite-schneider-electric'
+    },
     unGovernTogether: {
       text: 'The question is whether we will govern this transformation together, or let it govern us.',
       source: 'António Guterres, United Nations Secretary-General',
@@ -1063,6 +1079,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post76: { after: 7, quotes: [makeQuote('Industrial data', QUOTE_LIBRARY.schneiderIndustrialGrade), makeQuote('Combined platform', QUOTE_LIBRARY.akerComplementaryPlatform)] },
     post75: { after: 7, quotes: [makeQuote('Shared governance', QUOTE_LIBRARY.unGovernTogether), makeQuote('Dialogue mandate', QUOTE_LIBRARY.unOpenDiscussion)] },
     post74: { after: 7, quotes: [makeQuote('Scaling constraint', QUOTE_LIBRARY.adiEnergyConstraint), makeQuote('Architecture pace', QUOTE_LIBRARY.siaPowerArchitecture)] },
     post73: { after: 7, quotes: [makeQuote('Automation boundary', QUOTE_LIBRARY.githubInputsFail), makeQuote('Operating language', QUOTE_LIBRARY.nistCommonLanguage)] },
