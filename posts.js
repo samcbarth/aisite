@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post62: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: 'Microsoft cut 4,800 jobs while rebuilding how it sells AI',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Microsoft eliminated about 4,800 roles this week, roughly 2.1% of its workforce. The number matters. The reason matters more. The cuts landed mostly in Microsoft's commercial and Xbox organizations while the company is rebuilding its commercial business around AI deployment.</p>
+
+      <p>That makes this more than another technology layoff. Microsoft is changing the shape of the team that takes its products into customers. In its <a href="https://blogs.microsoft.com/blog/2026/07/06/the-latest-in-our-company-transformation/" target="_blank" rel="noopener noreferrer">July 6 employee note</a>, the company said the commercial changes build on its new Frontier Company and involve "embedding our engineering experts alongside customers." That is a very different delivery model from selling licenses, handing the account to a partner, and waiting for renewal.</p>
+
+      <p>Four days earlier, Microsoft <a href="https://news.microsoft.com/signal/?link_id=714&threads=" target="_blank" rel="noopener noreferrer">introduced Microsoft Frontier Company</a> as a new operating business. It combines industry knowledge, change management, continuous improvement, and enterprise AI engineering. The pitch is that customers have moved past experimentation and now want measurable results from AI.</p>
+
+      <p>The important word is operating. Microsoft is not describing a product bundle or a new consulting badge. It is putting technical delivery closer to the customer and tying that work to business outcomes. That suggests the old lines between sales, services, engineering, and customer success are becoming less useful.</p>
+
+      <p>This is where the cuts get harder to separate from the strategy. Microsoft did not publish a role-by-role breakdown, so it would be wrong to claim every eliminated job was replaced by an engineer or an agent. The company did say it is moving people and investment toward its highest priorities, and that other parts of the business will change too. The direction is clear even if the final org chart is not.</p>
+
+      <p>For customers, this model could fix a real problem. Enterprise AI projects rarely fail because nobody can buy a model. They fail because the data is scattered, security ownership is unclear, the workflow was never redesigned, or the pilot cannot survive contact with production. An engineer working beside the customer can find those problems faster than a sales team working through a slide deck.</p>
+
+      <p>It also raises the bar for Microsoft. If the company puts engineering talent inside customer deployments, it is taking more responsibility for whether the software creates value. That is better than leaving the customer to connect a stack of products alone. It also makes weak adoption, unclear ROI, and bad implementation harder to dismiss as somebody else's problem.</p>
+
+      <p>The economics are different too. A traditional software sale can recognize value when seats are provisioned. A deployment-led model has to spend scarce technical time before the customer reaches a useful result. Microsoft will need to decide which accounts get that attention, how much work becomes repeatable, and when a customer is ready to move back to normal support. Otherwise, the new structure can create expensive custom projects that do not scale.</p>
+
+      <p>Partners should watch this closely. Microsoft still needs its partner ecosystem, especially for industry depth, local delivery, and the long tail of small and midmarket customers. But a vendor that brings its own engineers closer to strategic accounts can change who owns the customer relationship and who captures the highest-value work. The clean version is shared delivery. The messy version is channel conflict with a new name.</p>
+
+      <p>Employees are carrying the immediate cost of that transition. Microsoft's note says it will try to place people into roles aligned with new priorities and invest in AI skills, but 4,800 eliminated roles are still 4,800 disrupted careers. A strategy can make business sense and still deserve a direct accounting of the human cost.</p>
+
+      <p>The question I would ask at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> is whether the delivery model changes the result after the contract is signed. Microsoft is betting that fewer handoffs and more engineering inside the account will get AI into production faster. If Frontier Company cannot shorten that distance, the reorganization will look like a cost cut wrapped around an AI story. If it can, Microsoft will have changed what customers are actually buying from it.</p>
+    `
+  },
   post61: {
     featured: false,
     date: 'July 11, 2026',
@@ -1384,7 +1416,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post61', 'post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

@@ -224,6 +224,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post62: {
+      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&h=650&fit=crop&q=80',
+      caption: 'Microsoft is moving engineering closer to the customer and the deployment work.',
+      side: 'left',
+      after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The reorganization changes the people, handoffs, and accountability behind enterprise AI.'
+    },
     post61: {
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=650&fit=crop&q=80',
       caption: 'The real gain is redesigning the work, not adding another tool.',
@@ -511,6 +519,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    microsoftEmbeddingEngineers: {
+      text: 'embedding our engineering experts alongside customers',
+      source: 'Microsoft employee note',
+      sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/06/the-latest-in-our-company-transformation/'
+    },
+    microsoftFrontierSkills: {
+      text: 'deep industry knowledge, change management and continuous improvement experience and enterprise-grade AI engineering expertise',
+      source: 'Microsoft Frontier Company',
+      sourceUrl: 'https://news.microsoft.com/signal/?link_id=714&threads='
+    },
     swissWorkflowRedesign: {
       text: 'the ones willing to redesign how work itself is organized.',
       source: 'Microsoft Source EMEA',
@@ -936,6 +954,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post62: { after: 4, quotes: [makeQuote('Delivery model', QUOTE_LIBRARY.microsoftEmbeddingEngineers), makeQuote('Combined skills', QUOTE_LIBRARY.microsoftFrontierSkills)] },
     post61: { after: 3, quotes: [makeQuote('Redesign', QUOTE_LIBRARY.swissWorkflowRedesign), makeQuote('Judgment', QUOTE_LIBRARY.swissHumanJudgment)] },
     post60: { after: 3, quotes: [makeQuote('Assistant', QUOTE_LIBRARY.ibmBobBetterAssistant), makeQuote('Repeat', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post59: { after: 4, quotes: [makeQuote('Ownership', QUOTE_LIBRARY.crusoeManagedOwnership), makeQuote('Customer goal', QUOTE_LIBRARY.stackOneLatencyCost)] },

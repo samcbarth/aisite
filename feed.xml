@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 06:08:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 07:04:16 GMT</lastBuildDate>
+    <item>
+      <title>Microsoft cut 4,800 jobs while rebuilding how it sells AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft eliminated about 4,800 roles this week, roughly 2.1% of its workforce. The number matters. The reason matters more. The cuts landed mostly in Microsoft&apos;s commercial and Xbox organizations while the company is rebuilding its commercial business around AI deployment. That</description>
+    </item>
     <item>
       <title>Microsoft&apos;s AI report is really a workflow redesign story</title>
       <link>https://samcbarth.github.io/aisite/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</link>
