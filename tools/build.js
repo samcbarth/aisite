@@ -118,6 +118,7 @@ function copyRecursive(src, dest) {
   const CONTEXT_CLAUSES = {
     post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
     post50: 'Meta Business Agent matters because customer messaging is turning into a service layer that can answer, qualify, and book work at scale.',
+    post52: 'Google\'s bid update matters because paid search is turning into a control problem. Better targets, cleaner measurement, and tighter budget ownership now matter more.',
     post49: 'Microsoft Frontier Company matters because AI is shifting from model access to deployment, control, and the workflow work that makes the software stick.',
     post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
     post48: 'IBM and OpenAI\'s cyber deal matters because the business value is faster security work with tighter control over where the AI can act.',
@@ -215,6 +216,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post52: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Viewing_Website_Analytics_on_Mobile_Device.jpg/960px-Viewing_Website_Analytics_on_Mobile_Device.jpg',
+      caption: 'Budget control only works when someone owns the numbers behind it.',
+      side: 'left',
+      after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Website_Heatmap_Analysis_on_Desktop.jpg/960px-Website_Heatmap_Analysis_on_Desktop.jpg',
+      supportCaption: 'The real issue is not the button. It is the signal behind the button.'
+    },
     post51: {
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=650&fit=crop&q=80',
       caption: 'Image creation only matters when it fits the workflow people already use.',
@@ -572,6 +581,16 @@ function copyRecursive(src, dest) {
       source: 'IBM',
       sourceUrl: 'https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source'
     },
+    googlePredictablePerformance: {
+      text: 'more consistent and predictable performance',
+      source: 'Google Ads Help',
+      sourceUrl: 'https://support.google.com/google-ads/answer/17061251?hl=en'
+    },
+    googleNoAutoAdjust: {
+      text: 'Google will not automatically adjust your bidding targets or budgets.',
+      source: 'Google Ads Help',
+      sourceUrl: 'https://support.google.com/google-ads/answer/17061251?hl=en'
+    },
     databricksMemory: {
       text: 'memory scaling becomes a distinct and complementary axis',
       source: 'Databricks',
@@ -742,6 +761,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post52: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.googlePredictablePerformance), makeQuote('No auto fix', QUOTE_LIBRARY.googleNoAutoAdjust)] },
     post51: { after: 3, quotes: [makeQuote('Creative partner', QUOTE_LIBRARY.museCreativePartner), makeQuote('Subscription', QUOTE_LIBRARY.museSubscriptionPlans)] },
     post50: { after: 3, quotes: [makeQuote('Infinite team', QUOTE_LIBRARY.metaInfiniteTeam), makeQuote('Brand voice', QUOTE_LIBRARY.metaBrandVoice24_7)] },
     post49: { after: 3, quotes: [makeQuote('Business outcomes', QUOTE_LIBRARY.microsoftOutcomes), makeQuote('Model choice', QUOTE_LIBRARY.microsoftModelChoice)] },

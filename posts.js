@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post52: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Google's bid update is really a budget control story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Startup_Business_People_Working_on_Laptop_Copy_Space_%2826666483257%29.jpg',
+    body: `
+      <p>Google's bid update is not a small settings tweak. It is Google telling advertisers that target CPA and target ROAS need tighter discipline when budgets move.</p>
+
+      <p><a href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer">Google says</a> the change will make bidding systems deliver "more consistent and predictable performance" based on the targets you set. The new Bid Target Adjustment Tool is available July 6, and the actual behavior change starts August 17. That gives teams a short window to review campaigns before the system gets stricter.</p>
+
+      <p>That is the part that matters. Google also says campaigns that are limited by budget and have historically overachieved their target may see volatility if they do nothing. It is blunt about the next step too: "Google will not automatically adjust your bidding targets or budgets." If the target is wrong, the marketer owns it.</p>
+
+      <p>The bigger picture is on the <a href="https://blog.google/products/ads-commerce/bidding-budgeting-google-marketing-live-2026/" target="_blank" rel="noopener noreferrer">Google Marketing Live</a> side. Google says the new tools help advertisers "manage your budgets and stay ahead of shifting consumer behavior." It is also pushing "journey-aware bidding" and demand-led pacing, which is just Google saying it wants cleaner signals and less manual babysitting.</p>
+
+      <p>My read is simple. This is a budget control story, not just an ads story. The teams with clean funnels, honest targets, and someone who actually owns the spend will adjust fast. The teams that have been letting the algorithm hide bad planning are about to feel it. That is the kind of practical workflow change I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+    `
+  },
   post51: {
     featured: false,
     date: 'July 10, 2026',
@@ -1166,7 +1186,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
