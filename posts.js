@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post53: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Meta's Alberta data center is really a power and policy story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Cern_datacenter.jpg',
+    body: `
+      <p>Meta's Alberta data center is not just a capacity announcement. It is Meta saying AI now lives or dies on power, permitting, and site control.</p>
+
+      <p><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener noreferrer">Meta says</a> the site will "help power our AI innovations and core products." It is also a 1GW, AI-optimized data center in Sturgeon County, which makes this a serious infrastructure build, not a small campus upgrade.</p>
+
+      <p><a href="https://www.alberta.ca/release.cfm?xID=964679A5BC522-A153-A52F-1F8CC3D418C55411" target="_blank" rel="noopener noreferrer">Alberta says</a> Meta will invest more than $13 billion in the province, create thousands of jobs, and support new provincial revenue. That is why the province framed the deal as a policy win, not just a construction project.</p>
+
+      <p>The part I watch is the control stack. Alberta says large AI data centres have to bring their own power, pay for the infrastructure they need, and meet strict water rules. Meta says the site will use a closed-loop, liquid-cooled system with dry cooling. That tells me the real work is in how the project fits the grid, the water system, and the local permit path.</p>
+
+      <p>My read is simple. This is not just cloud capacity. It is a test of whether AI infrastructure can be built where the rules are clear enough, the power plan is real, and the public side can see a benefit. That is the kind of operating question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The hard part is not announcing compute. The hard part is making the whole stack hold together.</p>
+    `
+  },
   post52: {
     featured: false,
     date: 'July 10, 2026',
@@ -1186,7 +1206,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

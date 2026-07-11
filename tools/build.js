@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
     post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
     post50: 'Meta Business Agent matters because customer messaging is turning into a service layer that can answer, qualify, and book work at scale.',
     post52: 'Google\'s bid update matters because paid search is turning into a control problem. Better targets, cleaner measurement, and tighter budget ownership now matter more.',
@@ -216,6 +217,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post53: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Duga-1_radar_data_center_interior_server_room_2018.jpg',
+      caption: 'AI capacity only matters when the room, the power, and the cooling all work together.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Excavation_begins_under_high-voltage_power_lines_%287902576092%29.jpg',
+      supportCaption: 'The real story starts before the servers go live. It starts with power and site work.'
+    },
     post52: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Viewing_Website_Analytics_on_Mobile_Device.jpg/960px-Viewing_Website_Analytics_on_Mobile_Device.jpg',
       caption: 'Budget control only works when someone owns the numbers behind it.',
@@ -431,6 +440,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    metaAlbertaPower: {
+      text: 'help power our AI innovations and core products',
+      source: 'Meta Newsroom',
+      sourceUrl: 'https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/'
+    },
+    albertaBringYourOwnPower: {
+      text: 'large AI data centres have to bring their own power, pay for the infrastructure they need and meet strict water rules',
+      source: 'Government of Alberta',
+      sourceUrl: 'https://www.alberta.ca/release.cfm?xID=964679A5BC522-A153-A52F-1F8CC3D418C55411'
+    },
     metaInfiniteTeam: {
       text: 'as if they had an infinite team behind them',
       source: 'Meta Business Agent',
@@ -761,6 +780,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post53: { after: 3, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Rules', QUOTE_LIBRARY.albertaBringYourOwnPower)] },
     post52: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.googlePredictablePerformance), makeQuote('No auto fix', QUOTE_LIBRARY.googleNoAutoAdjust)] },
     post51: { after: 3, quotes: [makeQuote('Creative partner', QUOTE_LIBRARY.museCreativePartner), makeQuote('Subscription', QUOTE_LIBRARY.museSubscriptionPlans)] },
     post50: { after: 3, quotes: [makeQuote('Infinite team', QUOTE_LIBRARY.metaInfiniteTeam), makeQuote('Brand voice', QUOTE_LIBRARY.metaBrandVoice24_7)] },
