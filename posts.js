@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post54: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Microsoft's annual cloud pricing update is really a budgeting story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Desktop_with_laptop_and_calculator_%28Unsplash%29.jpg/1280px-Desktop_with_laptop_and_calculator_%28Unsplash%29.jpg',
+    body: `
+      <p>Microsoft's annual cloud pricing update is not just currency housekeeping. It is Microsoft telling finance teams that cloud spend now needs a calendar.</p>
+
+      <p><a href="https://news.microsoft.com/source/2026/07/08/microsoft-announces-moving-to-annual-local-currency-pricing-updates-for-commercial-cloud-services-every-january/" target="_blank" rel="noopener noreferrer">Microsoft says</a> it will move to annual local currency pricing updates every January because it wants "greater pricing predictability" while still accounting for foreign exchange swings. That is the real story. The vendor is making planning easier by making the adjustment cadence more regular.</p>
+
+      <p>It also says the next update lands on January 1, 2027, and that guidance will go out every November. That matters more than people think. Renewal math gets cleaner when finance knows when the price check is coming and when it is not.</p>
+
+      <p>Microsoft adds that this is meant to help customers and partners "plan with confidence and invest in the technologies they need to grow and adapt." I take that as a signal that cloud bills are becoming a budgeting input, not just an IT detail. Product-specific changes can still happen separately, which is another reason procurement has to stay awake.</p>
+
+      <p>My read is simple. The useful question is not whether the software is worth it. The question is whether the company can model the spend, the renewal, and the currency risk without surprise. That is the kind of operating problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+    `
+  },
   post53: {
     featured: false,
     date: 'July 10, 2026',
@@ -1206,7 +1226,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

@@ -117,6 +117,7 @@ function copyRecursive(src, dest) {
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
     post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
+    post54: 'Microsoft\'s annual cloud pricing update matters because cloud spend is turning into a budget and renewal planning problem, not just a currency line item.',
     post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
     post50: 'Meta Business Agent matters because customer messaging is turning into a service layer that can answer, qualify, and book work at scale.',
     post52: 'Google\'s bid update matters because paid search is turning into a control problem. Better targets, cleaner measurement, and tighter budget ownership now matter more.',
@@ -224,6 +225,14 @@ function copyRecursive(src, dest) {
       after: 2,
       supportImage: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Excavation_begins_under_high-voltage_power_lines_%287902576092%29.jpg',
       supportCaption: 'The real story starts before the servers go live. It starts with power and site work.'
+    },
+    post54: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Top_Workspace_Office.jpg/1280px-Top_Workspace_Office.jpg',
+      caption: 'Cloud pricing only matters when finance can plan around it.',
+      side: 'left',
+      after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Clean_minimalist_office_%28Unsplash%29.jpg/1280px-Clean_minimalist_office_%28Unsplash%29.jpg',
+      supportCaption: 'The real work is in renewals and budgets, not press releases.'
     },
     post52: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Viewing_Website_Analytics_on_Mobile_Device.jpg/960px-Viewing_Website_Analytics_on_Mobile_Device.jpg',
@@ -760,6 +769,16 @@ function copyRecursive(src, dest) {
       source: 'Google Search Central',
       sourceUrl: 'https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing'
     },
+    microsoftPricingPredictability: {
+      text: 'greater pricing predictability',
+      source: 'Microsoft Source',
+      sourceUrl: 'https://news.microsoft.com/source/2026/07/08/microsoft-announces-moving-to-annual-local-currency-pricing-updates-for-commercial-cloud-services-every-january/'
+    },
+    microsoftPlanConfidence: {
+      text: 'plan with confidence and invest in the technologies they need to grow and adapt',
+      source: 'Microsoft Source',
+      sourceUrl: 'https://news.microsoft.com/source/2026/07/08/microsoft-announces-moving-to-annual-local-currency-pricing-updates-for-commercial-cloud-services-every-january/'
+    },
     restaurantWorldCup: {
       text: 'You can\'t top American restaurants for amazing food and fantastic places to gather.',
       source: 'Michelle Korsmo, National Restaurant Association',
@@ -781,6 +800,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post53: { after: 3, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Rules', QUOTE_LIBRARY.albertaBringYourOwnPower)] },
+    post54: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post52: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.googlePredictablePerformance), makeQuote('No auto fix', QUOTE_LIBRARY.googleNoAutoAdjust)] },
     post51: { after: 3, quotes: [makeQuote('Creative partner', QUOTE_LIBRARY.museCreativePartner), makeQuote('Subscription', QUOTE_LIBRARY.museSubscriptionPlans)] },
     post50: { after: 3, quotes: [makeQuote('Infinite team', QUOTE_LIBRARY.metaInfiniteTeam), makeQuote('Brand voice', QUOTE_LIBRARY.metaBrandVoice24_7)] },
