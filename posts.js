@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post74: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'The next AI bottleneck sits underneath the processor',
+    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post74-hero.jpg',
+    body: `
+      <p>Look at an AI server from the top and the expensive processor gets all the attention. Look underneath it and a less glamorous problem appears: how do you deliver a huge amount of power to that chip without wasting space, losing energy, or missing a sudden change in demand?</p>
+
+      <p>Analog Devices just bought its way deeper into that problem. On July 7, the company <a href="https://investor.analog.com/news-releases/news-release-details/analog-devices-completes-acquisition-empower-semiconductor" target="_blank" rel="noopener noreferrer">completed its acquisition of Empower Semiconductor</a>. The price was not disclosed. The strategic target was clear. ADI wants to own more of the path that moves electricity from the grid all the way to the core of an AI processor.</p>
+
+      <p>That path is becoming part of compute performance. New accelerators can consume enormous power and change their load quickly. The server has to take rack-level power, convert it into precise voltages often below one volt, and deliver it close enough to the processor that resistance and response time do not eat into performance.</p>
+
+      <p>The traditional approach places voltage regulators and banks of capacitors around the processor on the circuit board. That works until the processor, memory, cooling hardware, and power components all compete for the same limited area. Longer electrical paths also create loss and make it harder to respond when a chip moves quickly from idle to full work.</p>
+
+      <p>Empower changes the geometry. Its <a href="https://www.empowersemi.com/solutions/" target="_blank" rel="noopener noreferrer">vertical power delivery architecture</a> moves regulation beneath or much closer to the processor. Its Crescendo platform is built for kilowatt-class AI and high-performance computing chips. The company says this placement reduces losses, improves transient response, and removes bulky external components.</p>
+
+      <p>In plain English, electricity takes a shorter trip. The board can devote more room to the processor, memory, and connections that move data. Power can react faster when the workload changes. Those gains are small at the level of one conversion step, but they compound across racks full of accelerators running around the clock.</p>
+
+      <p>ADI CEO Vincent Roche described energy as "one of the most persistent constraints to scaling next-generation systems." That is useful wording because it avoids pretending the acquisition solves the whole data center power problem. Grid connections, transformers, cooling, generation, and transmission still set hard boundaries. Empower works much closer to the chip, where delivered electricity can still be lost or limited before it becomes useful compute.</p>
+
+      <p>A recent <a href="https://www.semiconductors.org/wp-content/uploads/2026/05/Powering-AI_The-Semiconductor-Ecosystem-at-the-Foundation-of-Data-Centers_report.pdf" target="_blank" rel="noopener noreferrer">Semiconductor Industry Association and Deloitte report</a> shows why this layer matters. It describes an advanced compute tray taking in 48 volts or more and delivering tightly regulated voltages, often below one volt, to processors, memory, and other components. It also says the architecture of AI data center power delivery is changing almost annually and governs how much compute is extracted from each watt.</p>
+
+      <p>That makes this acquisition different from a simple product extension. Analog Devices already sells power management, sensing, conversion, and connectivity technology across industrial, automotive, communications, and data center markets. Empower brings specialized integrated voltage regulators, silicon capacitors, advanced packaging, and magnetics. ADI can now approach customers with more of the power chain and help design the pieces together.</p>
+
+      <p>The commercial advantage is co-design. A processor company does not want to discover late in development that the power system cannot fit, cannot respond fast enough, or creates too much heat. Bringing power architecture into the package and board design earlier can shorten redesign cycles and make a new accelerator easier to deploy at scale.</p>
+
+      <p>There is also integration risk. Empower's value comes from specialized engineering and close relationships with the companies designing advanced compute systems. ADI has to keep that speed while adding its own manufacturing reach, sales organization, product process, and customer base. A larger catalog only matters if the combined team can get designed into the next generation of hardware.</p>
+
+      <p>The acquisition price being undisclosed leaves another question open. Investors cannot directly compare the purchase cost with Empower's current revenue or customer commitments. ADI is asking the market to judge the deal through future design wins and an expanded addressable market. Those results will take longer to see than the closing announcement.</p>
+
+      <p>For businesses buying AI infrastructure, this is a reminder that processor specifications are not system economics. Performance per watt, rack density, cooling demand, utilization, and electrical losses determine how much useful work a facility can actually produce. A faster chip that forces a costly redesign of power and cooling may be the worse purchase.</p>
+
+      <p>That wider system view connects naturally to the technology decisions I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI capacity is not one procurement line. It is a chain of constraints, and the weakest link decides how much of the headline compute a business can use.</p>
+
+      <p>Empower's technology will mostly disappear beneath processors and inside packages. That is exactly why the deal matters. If ADI can turn a shorter electrical path into denser, cooler, more responsive systems, some of the next major AI performance gains will arrive from a component most users never see.</p>
+    `
+  },
   post73: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1817,6 +1855,7 @@ POST_ORDER.unshift('post70');
 POST_ORDER.unshift('post71');
 POST_ORDER.unshift('post72');
 POST_ORDER.unshift('post73');
+POST_ORDER.unshift('post74');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

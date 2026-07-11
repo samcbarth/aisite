@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 18:03:42 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 19:03:41 GMT</lastBuildDate>
+    <item>
+      <title>The next AI bottleneck sits underneath the processor</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Infrastructure</category>
+      <description>Look at an AI server from the top and the expensive processor gets all the attention. Look underneath it and a less glamorous problem appears: how do you deliver a huge amount of power to that chip without wasting space, losing energy, or missing a sudden change in demand? Analog</description>
+    </item>
     <item>
       <title>GitHub found the security control hiding in its org chart</title>
       <link>https://samcbarth.github.io/aisite/posts/github-found-the-security-control-hiding-in-its-org-chart/</link>

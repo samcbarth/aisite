@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post74: {
+      image: 'assets/images/post74-inline.jpg',
+      caption: 'Moving voltage regulation closer to the processor shortens the electrical path and frees board space.', side: 'left', after: 5,
+      supportImage: 'assets/images/post74-support.jpg',
+      supportCaption: 'AI server economics depend on the full power and cooling system, not only the accelerator specification.'
+    },
     post73: {
       image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=900&h=650&fit=crop&q=80',
       caption: 'Ownership data turns a repository inventory into a routing system for security and operations.', side: 'right', after: 5,
@@ -518,6 +524,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    adiEnergyConstraint: {
+      text: 'energy now one of the most persistent constraints to scaling next-generation systems.',
+      source: 'Vincent Roche, Analog Devices',
+      sourceUrl: 'https://investor.analog.com/news-releases/news-release-details/analog-devices-completes-acquisition-empower-semiconductor'
+    },
+    siaPowerArchitecture: {
+      text: 'The architecture of power delivery into AI data centers is now changing on an almost annual basis.',
+      source: 'SIA and Deloitte, Powering AI',
+      sourceUrl: 'https://www.semiconductors.org/wp-content/uploads/2026/05/Powering-AI_The-Semiconductor-Ecosystem-at-the-Foundation-of-Data-Centers_report.pdf'
+    },
     githubInputsFail: {
       text: 'assume your data sources will occasionally be wrong, and your notifications will sometimes get lost.',
       source: 'GitHub repository ownership team',
@@ -1031,6 +1047,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post74: { after: 7, quotes: [makeQuote('Scaling constraint', QUOTE_LIBRARY.adiEnergyConstraint), makeQuote('Architecture pace', QUOTE_LIBRARY.siaPowerArchitecture)] },
     post73: { after: 7, quotes: [makeQuote('Automation boundary', QUOTE_LIBRARY.githubInputsFail), makeQuote('Operating language', QUOTE_LIBRARY.nistCommonLanguage)] },
     post72: { after: 7, quotes: [makeQuote('Architecture', QUOTE_LIBRARY.commbankSeparateIntelligence), makeQuote('Human boundary', QUOTE_LIBRARY.commbankTrustNuance)] },
     post71: { after: 7, quotes: [makeQuote('Service continuity', QUOTE_LIBRARY.awsMaintenanceContinuity), makeQuote('Existing use case', QUOTE_LIBRARY.persistentContextualRecommendations)] },
