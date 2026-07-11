@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post75: {
+      image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=900&h=650&fit=crop&q=80',
+      caption: 'The first dialogue put governments, researchers, companies, and civil society into one recurring process.', side: 'right', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Common principles only become useful when countries and companies can turn them into operating controls.'
+    },
     post74: {
       image: 'assets/images/post74-inline.jpg',
       caption: 'Moving voltage regulation closer to the processor shortens the electrical path and frees board space.', side: 'left', after: 5,
@@ -524,6 +530,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    unGovernTogether: {
+      text: 'The question is whether we will govern this transformation together, or let it govern us.',
+      source: 'António Guterres, United Nations Secretary-General',
+      sourceUrl: 'https://www.un.org/global-dialogue-ai-governance/en'
+    },
+    unOpenDiscussion: {
+      text: 'open, transparent and inclusive discussions on artificial intelligence governance',
+      source: 'United Nations Global Dialogue on AI Governance',
+      sourceUrl: 'https://www.un.org/en/delegate-delegate-gva-delegate-nyc/inaugural-global-dialogue-ai-governance-convenes-geneva'
+    },
     adiEnergyConstraint: {
       text: 'energy now one of the most persistent constraints to scaling next-generation systems.',
       source: 'Vincent Roche, Analog Devices',
@@ -1047,6 +1063,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post75: { after: 7, quotes: [makeQuote('Shared governance', QUOTE_LIBRARY.unGovernTogether), makeQuote('Dialogue mandate', QUOTE_LIBRARY.unOpenDiscussion)] },
     post74: { after: 7, quotes: [makeQuote('Scaling constraint', QUOTE_LIBRARY.adiEnergyConstraint), makeQuote('Architecture pace', QUOTE_LIBRARY.siaPowerArchitecture)] },
     post73: { after: 7, quotes: [makeQuote('Automation boundary', QUOTE_LIBRARY.githubInputsFail), makeQuote('Operating language', QUOTE_LIBRARY.nistCommonLanguage)] },
     post72: { after: 7, quotes: [makeQuote('Architecture', QUOTE_LIBRARY.commbankSeparateIntelligence), makeQuote('Human boundary', QUOTE_LIBRARY.commbankTrustNuance)] },

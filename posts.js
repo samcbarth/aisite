@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post75: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Geneva gave AI governance a room, not a rulebook',
+    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>For two days in Geneva, governments, researchers, companies, and civil society sat inside the same United Nations process to talk about AI. Then the meeting ended without a treaty, a regulator, or a global list of prohibited uses.</p>
+
+      <p>That does not make the first <a href="https://www.un.org/global-dialogue-ai-governance/en" target="_blank" rel="noopener noreferrer">Global Dialogue on AI Governance</a> irrelevant. It makes the purpose easier to see. The UN has created a recurring place where countries that disagree on AI rules still have to show their work in front of each other.</p>
+
+      <p>The dialogue met July 6 and 7, immediately before the ITU's AI for Good Global Summit. It grew out of the Global Digital Compact adopted in 2024 and a General Assembly resolution passed in 2025. A second session is scheduled for May 2027 in New York.</p>
+
+      <p>The timing matters because AI policy is splitting into different systems. The European Union is building detailed product and risk rules. The United States has leaned more heavily on sector regulators, procurement, state laws, and voluntary commitments. China has its own requirements for algorithms, generated content, and security. Many smaller countries are being asked to govern systems they did not build with technical and regulatory capacity they do not yet have.</p>
+
+      <p>A single global rulebook was never a realistic two-day outcome. The useful first step was more basic: get every country into one formal conversation, put scientific evidence on the agenda, and let governments, companies, researchers, and public-interest groups challenge each other's assumptions.</p>
+
+      <p>The UN says six months of consultation produced more than 1,500 written submissions. The meeting also received the first public presentation from the 40-member Independent International Scientific Panel on AI. That panel is designed to publish an annual evidence base for the governance discussion, with members selected across regions and disciplines.</p>
+
+      <p>This separation between science and negotiation is worth keeping. Governments will argue about policy, trade, national security, and economic advantage. A standing scientific panel cannot remove those conflicts, but it can make it harder to pretend the underlying capabilities and risks are whatever happens to fit a country's position that week.</p>
+
+      <p>UN Secretary-General António Guterres framed the choice directly: "The question is whether we will govern this transformation together, or let it govern us." The line is broad, but the structure behind it is specific. The dialogue is meant to meet every year, accept input from more than governments, and connect that discussion to an independent scientific assessment.</p>
+
+      <p>The hard part starts after the meeting. A dialogue can identify common language without creating common enforcement. Countries can agree that AI should be safe, inclusive, transparent, and compatible with human rights while disagreeing sharply about surveillance, military use, model access, copyright, data localization, and who gets to inspect a powerful system.</p>
+
+      <p>Business leaders should not wait for those arguments to settle. Global companies already face overlapping requirements from customers, regulators, insurers, boards, and procurement teams. A model or agent may be acceptable in one market, restricted in another, and subject to a different documentation standard in a third.</p>
+
+      <p>That turns international governance into an architecture problem. Companies need an inventory of models and automated decisions, clear data boundaries, testing records, human escalation paths, and the ability to change a control by geography or use case. A policy PDF cannot do that job. The controls have to exist inside procurement, development, deployment, and monitoring.</p>
+
+      <p>The dialogue's own <a href="https://www.un.org/global-dialogue-ai-governance/en/programme" target="_blank" rel="noopener noreferrer">program</a> shows how wide the unfinished work is. Sessions covered scientific understanding, capacity building, inclusive participation, interoperability, and links between existing governance initiatives. That breadth helps countries enter the conversation. It also creates a risk that the process becomes a catalog of concerns without choosing which problems need action first.</p>
+
+      <p>Capacity may be the most concrete test. A country cannot enforce an AI procurement standard or investigate an automated decision if it lacks technical staff, testing tools, access to documentation, or leverage with a foreign vendor. If the global process only produces principles, the countries with the fewest resources will remain rule takers.</p>
+
+      <p>The UN's description of the dialogue is careful. It calls it a platform to discuss cooperation, share practices, and support "open, transparent and inclusive discussions." That is not the language of a global AI regulator. It is the language of coordination, and coordination can still matter when systems cross borders faster than laws do.</p>
+
+      <p>This is where the operating work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> meets policy. A company does not need to predict the final international agreement. It needs enough visibility into its own AI use to respond when two markets reach different answers.</p>
+
+      <p>Geneva did not close the gap between those answers. It created a place to measure it in public. By the New York session next May, the useful question will be whether the dialogue can turn one shared evidence base into a short list of actions countries can actually implement. If it returns with another broad set of principles, the room will exist, but the rulebook will still be written somewhere else.</p>
+    `
+  },
   post74: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1856,6 +1896,7 @@ POST_ORDER.unshift('post71');
 POST_ORDER.unshift('post72');
 POST_ORDER.unshift('post73');
 POST_ORDER.unshift('post74');
+POST_ORDER.unshift('post75');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
