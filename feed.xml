@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 13:03:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 14:03:35 GMT</lastBuildDate>
+    <item>
+      <title>Inside Accenture&apos;s plan to make enterprise AI fit the middle market</title>
+      <link>https://samcbarth.github.io/aisite/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Accenture drew a line around a market that large consulting firms have often struggled to serve efficiently. The new Accenture Edge business is aimed at companies with annual revenue between $300 million and $3 billion. Now Google Cloud is helping fill that business with prebuilt</description>
+    </item>
     <item>
       <title>A $4.48 agent run changes where teams should look for savings</title>
       <link>https://samcbarth.github.io/aisite/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</link>

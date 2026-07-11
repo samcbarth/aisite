@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post69: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: "Inside Accenture's plan to make enterprise AI fit the middle market",
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Accenture drew a line around a market that large consulting firms have often struggled to serve efficiently. The new Accenture Edge business is aimed at companies with annual revenue between $300 million and $3 billion. Now Google Cloud is helping fill that business with prebuilt AI offers.</p>
+
+      <p>The sequence matters. Accenture launched Edge on June 23, defining the customer and the delivery model first. On July 7, it announced a suite of Google Cloud solutions across customer growth, customer experience, cybersecurity, business operations, industry workflows, and workforce productivity. This is consulting being turned into something closer to a repeatable product.</p>
+
+      <p>That is not how most large transformation programs are sold. The familiar model starts with a broad assessment, builds a custom roadmap, assembles a large team, and runs for years. It can work for a global enterprise with a large budget and enough people to manage the program. A middle-market company may face the same data, security, ERP, and AI problems without having the same staff or tolerance for a long discovery phase.</p>
+
+      <p>Accenture is trying to remove some of that mismatch. Its <a href="https://newsroom.accenture.com/news/2026/accenture-launches-accenture-edge-to-help-mid-market-companies-harness-ai-and-reinvent-how-they-operate" target="_blank" rel="noopener noreferrer">Edge launch announcement</a> describes platform-led, ready-to-deploy solutions that are faster, more repeatable, and sized for this segment. Accenture says the addressable market is about $240 billion and growing at a high-single-digit rate.</p>
+
+      <p>Google Cloud gives the offer a defined technology base. The <a href="https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies" target="_blank" rel="noopener noreferrer">joint announcement</a> names Gemini Enterprise, the Gemini Enterprise Agent Platform, Agentic Data Cloud, Google Workspace, and AI Threat Defense, which includes Gemini, Mandiant, and Wiz. Accenture forward-deployed engineers will work alongside those products.</p>
+
+      <p>That packaging can shorten the path to production. Customer intelligence does not need to begin with a blank architecture diagram. A security project can arrive with threat analysis, monitoring, and response components already connected. Industry offers can reuse workflows across retail, banking, telecommunications, consumer goods, and supply chains.</p>
+
+      <p>Rajendra Prasad of Accenture said customers can deploy the solutions "in weeks and get measurable outcomes at the scale, budget and speed that they need to grow." Kevin Ichhpurani of Google Cloud said the partnership brings its full portfolio "directly to this sector." Those are strong promises. The next step is proving how much of the package is actually standard.</p>
+
+      <p>A repeatable offer has to make several decisions before the customer arrives. It needs a clear data model, defined integrations, security controls, operating roles, and a way to measure the result. If every implementation still needs months of custom work to clean data and settle ownership, the package may be easier to buy without being much faster to run.</p>
+
+      <p>There is also a real tradeoff in choosing one technology foundation. Standardizing on Google Cloud can reduce design work and make support cleaner. It can also create friction for companies already committed to Microsoft, AWS, Oracle, or a mix of systems built through years of acquisitions. Accenture Edge says its partner lineup will expand, and Avanade will continue serving Microsoft platform work. Buyers still need to know whether the solution is right-sized for their environment or simply right-sized for one vendor stack.</p>
+
+      <p>The revenue band is useful, but it does not make these companies alike. A $500 million manufacturer with plants, operational technology, and a small IT team has different constraints from a $500 million digital services firm. Prebuilt industry workflows help, but the operating model around them still needs local judgment. That is where the forward-deployed engineers may matter more than the agents.</p>
+
+      <p>Accenture's own Edge site is unusually direct about where projects stall. It says the proof comes after the pilot, when integration, change management, and iteration begin. It also promises clear ROI before commitment and results in months rather than years. Those claims create a useful standard for judging the new business. Customers should be able to see the baseline, the implementation boundary, the recurring service cost, and the metric that is expected to move before signing.</p>
+
+      <p>This model also changes Accenture's economics. Repeatable delivery can spread product development and specialized talent across more accounts. Managed services can keep Accenture involved after deployment. The company gets access to a large market that may have been too small for its traditional project structure, while Google Cloud gets a scaled route into customers that often rely on partners to make major platform decisions.</p>
+
+      <p>At <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>, I keep coming back to the point where a sales promise becomes an operating system. Accenture Edge will be convincing when a middle-market customer can recognize the solution, understand the price and ownership, and get it running without recreating a Global 2000 transformation program. The revenue band opened the door. Repeatability has to make the room fit.</p>
+    `
+  },
   post68: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1618,6 +1652,7 @@ POST_ORDER.unshift('post65');
 POST_ORDER.unshift('post66');
 POST_ORDER.unshift('post67');
 POST_ORDER.unshift('post68');
+POST_ORDER.unshift('post69');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

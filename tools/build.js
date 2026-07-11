@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     post21: 'HubSpot\'s agentic AI bet matters because CRM is becoming the place where workflow intelligence either works or falls apart.',
     post20: 'The hyperscaler investment story is really about whether AI spend becomes a disciplined operating model or just a faster way to burn capital.',
     post19: 'The pricing change matters because it turns AI from a feature checkbox into a measurable operating decision.',
+    post69: {
+      image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop&q=80',
+      caption: 'A repeatable offer still needs enough room for the customer\'s own systems and operating model.', side: 'right', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Accenture Edge works if standard delivery reduces the project burden without hiding ownership or cost.'
+    },
     post18: 'The release is interesting because it shows what happens when product context becomes the thing that makes AI useful.',
     post14: 'The real question is how SpaceX gets pulled into the wider Elon valuation story without turning shareholder money into a cover for bigger debts and a bigger bet.',
     post13: 'Oracle\'s rally matters because infrastructure narratives only last when the physical buildout and the commercial demand stay aligned.',
@@ -488,6 +494,16 @@ function copyRecursive(src, dest) {
       image: 'https://images.unsplash.com/photo-1642984061431-fe76503975fd?w=900&h=650&fit=crop&q=80',
       caption: 'The gaming strategy looks different when employees carry the cuts and executives sell shares.',
       side: 'right',
+    accentureWeeksOutcomes: {
+      text: 'in weeks and get measurable outcomes at the scale, budget and speed that they need to grow.',
+      source: 'Rajendra Prasad, Accenture',
+      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
+    },
+    googleDirectSector: {
+      text: 'directly to this sector.',
+      source: 'Kevin Ichhpurani, Google Cloud',
+      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
+    },
       after: 3,
       supportImage: 'https://images.unsplash.com/photo-1767424196045-030bbde122a4?w=900&h=650&fit=crop&q=80',
       supportCaption: 'The filing does not explain motive, but the size and timing of the sales deserve attention.'
@@ -951,6 +967,7 @@ function copyRecursive(src, dest) {
     insiderSaleCaution: {
       text: 'Insider sells may not necessarily indicate a bearish view.',
       source: 'Benzinga',
+    post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
       sourceUrl: 'https://www.benzinga.com/news/26/07/60335377/insider-unloading-hiroki-totoki-sells-4-73m-worth-sony-group-shares'
     },
     hbrCustomerChoice: {
