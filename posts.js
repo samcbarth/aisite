@@ -7,6 +7,27 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post63: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Rackspace is trading today\'s revenue for an AI infrastructure bet',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Rackspace just put a price on its AI pivot. The company lowered its 2026 revenue outlook by $150 million and adjusted EBITDA outlook by $20 million while it redirects capacity, people, and capital toward enterprise AI.</p>
+      <p>That is more useful than another announcement about an AI partnership. It shows the cost of changing the business before the new revenue arrives.</p>
+      <p>In its <a href="https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html" target="_blank" rel="noopener noreferrer">July 9 strategy and financial update</a>, Rackspace said it is leaving some colocation and basic hosting revenue behind so it can reserve private-cloud capacity for enterprise AI. It is also stepping away from low-margin public-cloud resale as hyperscalers move more customers to direct contracts.</p>
+      <p>Those are two different exits with the same logic. Rackspace does not want to be paid mainly for space, servers, or somebody else's cloud contract. It wants to operate the governed layer where a customer controls compute, models, identity, policy, and data across private and public infrastructure.</p>
+      <p>The old model may be shrinking, but it still produces real revenue now. Rackspace cut the midpoint of its public-cloud outlook from $1.6 billion to $1.475 billion. It cut private cloud from $1.05 billion to $1.025 billion. The company expects overall 2026 revenue to decline between 5% and 9% year over year.</p>
+      <p>The replacement is still mostly a forecast. Rackspace plans to reach 15 megawatts of enterprise AI capacity by the end of 2027 and 30 megawatts by the end of 2028. At full deployment, it estimates $450 million to $600 million in annual revenue and adjusted EBITDA margins above 50%. The company clearly labels those numbers as illustrative and dependent on GPU mix, contracts, demand, and hardware timing.</p>
+      <p>That distinction matters. Management is giving up lower-quality revenue it can see today for higher-margin revenue it expects tomorrow. The strategy can be right and the timing can still hurt.</p>
+      <p>Rackspace does have an early proof point. Its Palantir partnership has produced about 400 certifications across sales, engineering, delivery, and operations. The companies say their first joint deployment closed in under two months and cut quote-cycle time by 94% for a U.S. solar-tracking manufacturer.</p>
+      <p>I would not turn one customer result into a broad promise. But it shows what Rackspace is trying to sell. The product is not a GPU by itself. It is a team that can put governed AI into a regulated or operationally sensitive environment and connect the technology to a measurable workflow.</p>
+      <p>CEO Gajen Kandiah said the capital raise will let Rackspace "expedite our AI Enterprise strategy." Apollo partner Aaron Sobel said the company is taking "the right steps to fund its next phase of growth." Both quotes point back to financing. This pivot needs capacity before it creates revenue, and capacity is expensive.</p>
+      <p>The investor math and the customer math now have to meet. Investors need the AI business to replace declining resale revenue fast enough to justify the upfront cost. Customers need the governed stack to deliver better control without recreating the lock-in they were trying to avoid. Rackspace says it will stay model-agnostic and use private cloud where control matters and public cloud where elasticity matters. Execution will decide whether that remains a useful design or becomes another complicated bundle.</p>
+      <p>This is the kind of business transition I watch at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because the tradeoff is visible. Rackspace is not hiding the revenue it is walking away from or the capital it needs to spend. By the end of 2027, those 15 megawatts need to show that governed AI can become a better business than reselling cloud capacity. Until then, the gap between the lowered outlook and the promised margins is the whole Rackspace story.</p>
+    `
+  },
   post62: {
     featured: false,
     date: 'July 11, 2026',
@@ -1419,6 +1440,8 @@ const POSTS = {
 const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
+POST_ORDER.unshift('post63');
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
 }

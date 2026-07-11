@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post63: {
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=650&fit=crop&q=80',
+      caption: 'Rackspace is moving away from lower-margin resale toward infrastructure it can operate and govern.', side: 'right', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The bet depends on connecting private control, public-cloud flexibility, and measurable customer work.'
+    },
     post62: {
       image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&h=650&fit=crop&q=80',
       caption: 'Microsoft is moving engineering closer to the customer and the deployment work.',
@@ -519,6 +525,8 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    rackspaceExpediteStrategy: { text: 'expedite our AI Enterprise strategy', source: 'Gajen Kandiah, Rackspace Technology', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html' },
+    apolloNextPhase: { text: 'the right steps to fund its next phase of growth', source: 'Aaron Sobel, Apollo Global Management', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html' },
     microsoftEmbeddingEngineers: {
       text: 'embedding our engineering experts alongside customers',
       source: 'Microsoft employee note',
@@ -954,6 +962,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post63: { after: 6, quotes: [makeQuote('Capital plan', QUOTE_LIBRARY.rackspaceExpediteStrategy), makeQuote('Investor view', QUOTE_LIBRARY.apolloNextPhase)] },
     post62: { after: 4, quotes: [makeQuote('Delivery model', QUOTE_LIBRARY.microsoftEmbeddingEngineers), makeQuote('Combined skills', QUOTE_LIBRARY.microsoftFrontierSkills)] },
     post61: { after: 3, quotes: [makeQuote('Redesign', QUOTE_LIBRARY.swissWorkflowRedesign), makeQuote('Judgment', QUOTE_LIBRARY.swissHumanJudgment)] },
     post60: { after: 3, quotes: [makeQuote('Assistant', QUOTE_LIBRARY.ibmBobBetterAssistant), makeQuote('Repeat', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
