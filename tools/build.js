@@ -114,79 +114,6 @@ function copyRecursive(src, dest) {
   function escAttr(str) {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
-  const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
-  const CONTEXT_CLAUSES = {
-    post61: 'Microsoft\'s Work Trend Index matters because AI value now depends on redesigning work, not just adding tools.',
-    post60: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
-    post59: 'Crusoe matters because managed AI infrastructure is becoming a buying decision about ownership, variable cost, portability, and governance.',
-    post58: 'Lumen and Alkira matter because AI networking is becoming a control problem across clouds, data centers, security policies, and physical fiber.',
-    post56: 'Microsoft\'s Cobalt 200 matters because cloud buying is turning into a price-performance problem for agentic AI workloads.',
-    post55: 'Cloudflare\'s Meerkat matters because global consensus is turning reliability, failover, and control-plane cost into a business problem.',
-    post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
-    post54: 'Microsoft\'s annual cloud pricing update matters because cloud spend is turning into a budget and renewal planning problem, not just a currency line item.',
-    post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
-    post50: 'Meta Business Agent matters because customer messaging is turning into a service layer that can answer, qualify, and book work at scale.',
-    post52: 'Google\'s bid update matters because paid search is turning into a control problem. Better targets, cleaner measurement, and tighter budget ownership now matter more.',
-    post49: 'Microsoft Frontier Company matters because AI is shifting from model access to deployment, control, and the workflow work that makes the software stick.',
-    post47: 'SAP\'s Dremio deal matters because enterprise AI now depends on governed context, clean lineage, and less duplicated data movement.',
-    post48: 'IBM and OpenAI\'s cyber deal matters because the business value is faster security work with tighter control over where the AI can act.',
-    post46: 'OpenAI\'s partner network matters because enterprise AI is moving from model access to delivery, workflow redesign, and change management.',
-    post45: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
-    post44: 'ChatGPT Work matters because AI is moving from prompt output to delegated workflow, and the real value is in repeatable tasks with human approval where needed.',
-    post43: 'GPT-5.6 matters because AI is now being priced and sold as useful work inside the tools people already use. That connects straight to process design, context, and the cost of rework.',
-    post42: 'The Lightwell story matters because AI only scales inside enterprises when the software underneath it is safe enough to trust and cheap enough to patch.',
-    post38: 'The RAM story matters because AI demand, supply pressure, and market concentration can turn a component shortage into a broad electronics cost problem.',
-    post39: 'Streaming changed the movie business because convenience, ad tiers, and selective theatrical demand now reward clearer ideas and tighter budgets.',
-    post40: 'OpenAI and Broadcom matter because AI leaders are starting to own the compute economics instead of just renting them.',
-    post36: 'The FIFA story matters because growth without transparent ownership, independent review, and real consequences can turn a successful organization into one that mainly protects itself.',
-    post37: 'The HubSpot backlash matters because first-party data only stays valuable when customers can see who owns it, who can enrich it, and who can share it.',
-    post35: 'Qualification, research, and AEO matter because they connect AI directly to lead quality, decision speed, content clarity, and the customer journey.',
-    post34: 'The Sony stock-sale story matters because leadership behavior, workforce cuts, and confidence in a strategy are all signals that employees, customers, and investors read together.',
-    post33: 'The HubSpot enrichment reversal matters because CRM trust depends on clear data ownership, clean permissioning, and defaults that customers can defend to their own teams.',
-    post32: 'The Trump disclosure story matters because it shows how personal incentives, public power, and market access can blur together when governance is weak.',
-    post31: 'The Xbox and Sony layoffs matter because they show what happens when expensive creative bets are managed like short-term cost problems.',
-    post30: 'The SpaceX retirement story matters because it shows how a strong company can still become a risky wrapper when ordinary retirement money gets pulled into a bigger Elon valuation narrative.',
-    post29: 'Apple\'s price warning matters because AI spend is now showing up in consumer hardware costs, not just cloud budgets.',
-    post28: 'The memory crunch matters because AI demand is colliding with real supply limits, and that cost pressure eventually leaks into everything else.',
-    post27: 'The data center pushback matters because local permission is becoming a real constraint on AI infrastructure, not a side issue.',
-    post26: 'The mega-IPO wave matters because public markets can only absorb so much narrative before valuation risk starts to crowd out the upside.',
-    post25: 'The Anthropic compute deal matters because it shows AI infrastructure becoming a financing and operating strategy, not just a product roadmap.',
-    post24: 'Amazon\'s loan matters because it turns AI infrastructure into a capital allocation question that operators should understand clearly.',
-    post23: 'The Texas data center story matters because it shows that infrastructure growth has to account for the communities carrying the cost.',
-    post22: 'OpenAI\'s influence warning matters because AI infrastructure is now tied to trust, public opinion, and national strategy.',
-    post21: 'HubSpot\'s agentic AI bet matters because CRM is becoming the place where workflow intelligence either works or falls apart.',
-    post20: 'The hyperscaler investment story is really about whether AI spend becomes a disciplined operating model or just a faster way to burn capital.',
-    post19: 'The pricing change matters because it turns AI from a feature checkbox into a measurable operating decision.',
-    post69: {
-      image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop&q=80',
-      caption: 'A repeatable offer still needs enough room for the customer\'s own systems and operating model.', side: 'right', after: 5,
-      supportImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=675&fit=crop&q=80',
-      supportCaption: 'Accenture Edge works if standard delivery reduces the project burden without hiding ownership or cost.'
-    },
-    post18: 'The release is interesting because it shows what happens when product context becomes the thing that makes AI useful.',
-    post14: 'The real question is how SpaceX gets pulled into the wider Elon valuation story without turning shareholder money into a cover for bigger debts and a bigger bet.',
-    post13: 'Oracle\'s rally matters because infrastructure narratives only last when the physical buildout and the commercial demand stay aligned.',
-    post15: 'Stargate is a reminder that AI has moved from software rhetoric into utility-scale planning.',
-    post16: 'The political pushback matters because every new data center now has to earn local permission, not just investor enthusiasm.',
-    post17: 'The space-based AI conversation matters because capacity constraints on Earth are starting to shape the strategic map.',
-    post12: 'The most valuable AI use case is still the one that changes someone\'s daily workflow, not the one that looks best in a demo.',
-    post11: 'The resale issue is really a trust problem, and trust is one of the most important operational assets in any business.',
-    post10: 'Costco\'s gas move is a good example of what happens when a strong core business gives you room to expand into adjacent economics.',
-    post7: 'Dell\'s numbers are useful because they show where AI is becoming a buying decision inside enterprise operations.',
-    post8: 'The bonus structure is interesting because it links AI-era productivity gains to the people who actually create the value.',
-    post9: 'The security story is really a GTM story too, because every vulnerable integration is also a revenue risk.',
-    post6: 'This is where the gap between AI promise and operational reality becomes easiest to see.',
-    post5: 'Context is what makes AI operational instead of decorative, and that is where the next wave of value sits.',
-    post4: 'The difference between replacement and enablement says a lot about how teams will adopt AI in practice.',
-    post1: 'HubSpot\'s direction matters because it shows how CRM strategy turns into operating leverage when the system is tied to real workflows.',
-    post2: 'This is the kind of story that matters because it shows how quickly production work can move when the tooling is good.',
-    post3: 'The lesson here is that systems discipline is still the foundation for every practical AI or RevOps workflow.'
-  };
-  function makeContextParagraph(postId) {
-    const clause = CONTEXT_CLAUSES[postId];
-    if (!clause) return '';
-    return `<p>${clause} For me, this connects directly to the work I do in RevOps and business development at ${SAM_LINK}. Practical takeaway: look for the effect on pipeline, margins, process, or customer behavior. That is the lens I use when I write about these stories.</p>`;
-  }
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
@@ -230,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post69: {
+      image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop&q=80',
+      caption: 'A repeatable offer still needs enough room for the customer\'s own systems and operating model.', side: 'right', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Accenture Edge works if standard delivery reduces the project burden without hiding ownership or cost.'
+    },
     post68: {
       image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=900&h=650&fit=crop&q=80',
       caption: 'Agent economics depend on the full path through planning, tools, context, and review.', side: 'left', after: 5,
@@ -494,16 +427,6 @@ function copyRecursive(src, dest) {
       image: 'https://images.unsplash.com/photo-1642984061431-fe76503975fd?w=900&h=650&fit=crop&q=80',
       caption: 'The gaming strategy looks different when employees carry the cuts and executives sell shares.',
       side: 'right',
-    accentureWeeksOutcomes: {
-      text: 'in weeks and get measurable outcomes at the scale, budget and speed that they need to grow.',
-      source: 'Rajendra Prasad, Accenture',
-      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
-    },
-    googleDirectSector: {
-      text: 'directly to this sector.',
-      source: 'Kevin Ichhpurani, Google Cloud',
-      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
-    },
       after: 3,
       supportImage: 'https://images.unsplash.com/photo-1767424196045-030bbde122a4?w=900&h=650&fit=crop&q=80',
       supportCaption: 'The filing does not explain motive, but the size and timing of the sales deserve attention.'
@@ -571,6 +494,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    accentureWeeksOutcomes: {
+      text: 'in weeks and get measurable outcomes at the scale, budget and speed that they need to grow.',
+      source: 'Rajendra Prasad, Accenture',
+      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
+    },
+    googleDirectSector: {
+      text: 'directly to this sector.',
+      source: 'Kevin Ichhpurani, Google Cloud',
+      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
+    },
     langchainModelPart: {
       text: 'model choice is only one part of improving agent performance.',
       source: 'LangChain',
@@ -967,7 +900,6 @@ function copyRecursive(src, dest) {
     insiderSaleCaution: {
       text: 'Insider sells may not necessarily indicate a bearish view.',
       source: 'Benzinga',
-    post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
       sourceUrl: 'https://www.benzinga.com/news/26/07/60335377/insider-unloading-hiroki-totoki-sells-4-73m-worth-sony-group-shares'
     },
     hbrCustomerChoice: {
@@ -1035,6 +967,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
     post68: { after: 5, quotes: [makeQuote('Performance lever', QUOTE_LIBRARY.langchainModelPart), makeQuote('Runtime policy', QUOTE_LIBRARY.nvidiaNetworkDefault)] },
     post67: { after: 5, quotes: [makeQuote('Scale problem', QUOTE_LIBRARY.barracudaMspScale), makeQuote('Product design', QUOTE_LIBRARY.evoMspOperations)] },
     post66: { after: 5, quotes: [makeQuote('Visibility gap', QUOTE_LIBRARY.akamaiControlsCannotSee), makeQuote('Security problem', QUOTE_LIBRARY.layerxDefiningChallenge)] },
@@ -1210,11 +1143,6 @@ function copyRecursive(src, dest) {
     });
     return inserted ? replaced : body + '\n' + inline;
   }
-  function appendContextParagraph(body, postId) {
-    const context = makeContextParagraph(postId);
-    if (!context) return body;
-    return body + '\n' + context;
-  }
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
     if (!p) return '';
@@ -1245,7 +1173,7 @@ function copyRecursive(src, dest) {
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
-    const bodyHtml = appendContextParagraph(injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id), id);
+    const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
     const supportMediaHtml = makeSupportMedia(p, id);
     const heroImageRel = makeHeroImage(p.image);
     const heroImageAbs = makeOgImage(p.image);
