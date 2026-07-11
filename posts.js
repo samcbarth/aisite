@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post77: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'OpenAI is buying the people who make AI stick',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>In May, OpenAI launched a new company with more than $4 billion to spend and about 150 deployment specialists arriving through its planned acquisition of Tomoro. Less than two months later, that company is buying again.</p>
+
+      <p>On July 8, Axios <a href="https://www.axios.com/2026/07/08/openai-deployment-company-northslope-acquisition" target="_blank" rel="noopener noreferrer">reported</a> that the OpenAI Deployment Company agreed to acquire Northslope, an applied AI firm founded by former Palantir employees. Terms were not disclosed. The deal still needs customary regulatory approval, but the sequence already tells us something important about where enterprise AI is going.</p>
+
+      <p>OpenAI is not only trying to sell companies a better model. It is buying the people who can sit inside a company, find the work that matters, connect the model to existing systems, and stay long enough to make the result usable.</p>
+
+      <p>That is a different business from handing over an API key. It looks closer to a mix of software company, systems integrator, and consulting firm. The model may start the conversation, but deployment is becoming the part that protects the account.</p>
+
+      <p>The timeline is worth following. OpenAI <a href="https://openai.com/index/openai-launches-the-deployment-company/" target="_blank" rel="noopener noreferrer">announced the Deployment Company on May 11</a> as a majority-owned and controlled business. It said forward deployed engineers would work inside customer organizations to design, build, test, and deploy production systems connected to company data, tools, controls, and business processes.</p>
+
+      <p>The stated goal was to help organizations "build and deploy AI systems they can rely on every day." That wording puts reliability and daily use ahead of a model demonstration. It also admits where a lot of enterprise projects get stuck. A capable model is easy to show. A dependable workflow has owners, permissions, exceptions, measurements, and someone responsible when it fails.</p>
+
+      <p>Northslope fits that operating model. Its <a href="https://www.northslope.com/" target="_blank" rel="noopener noreferrer">own site</a> says, "At Northslope we are all Forward Deployed Engineers." The firm builds production applications around specific operating problems, including inventory, supply chain, and planning work. Its examples are not generic chat assistants. They are applications tied to decisions, data, and the economics of a business.</p>
+
+      <p>That Palantir background matters. Palantir has spent years sending technical teams close to customers and using the resulting work to turn a broad platform into something specific enough to run an operation. OpenAI is now assembling a similar capability around frontier models, but at acquisition speed.</p>
+
+      <p>The first deal brought an existing deployment team. The second adds hundreds more engineers, according to Axios. OpenAI is using capital to compress what would otherwise be a long hiring and training cycle. It can buy teams that already know how to translate between executives, operators, data systems, and software.</p>
+
+      <p>There is a clear reason to move quickly. Model access is spreading. Businesses can compare products from OpenAI, Anthropic, Google, Microsoft, and open-source providers. Performance differences still matter, but they do not answer the hardest customer question: what should this system do inside our company on Monday morning?</p>
+
+      <p>A forward deployed engineer can help answer that question, but the model creates tradeoffs. Custom work can produce a strong first result while making every customer expensive to serve. A deployment team can become a permanent layer of manual integration. The most useful knowledge can remain in a few engineers' heads instead of becoming a repeatable product.</p>
+
+      <p>OpenAI has to turn field work into leverage. When an engineer solves an approval problem, connects a common business system, or builds a reliable evaluation, the next customer should benefit. Otherwise the Deployment Company grows revenue by adding people at roughly the same rate it adds customers, which is consulting economics with an AI label.</p>
+
+      <p>Customers have their own risk to manage. An embedded team will see workflows, permissions, data quality problems, and internal politics that a software vendor normally sees from farther away. That access can speed delivery. It can also deepen dependence on one provider's models and operating approach.</p>
+
+      <p>The right contract is not only about model price. Businesses need to know who owns the application code, how data is separated, whether another model can be substituted, what happens when the deployed engineers leave, and which internal team can operate the system afterward. A successful pilot that cannot survive its original builders is still a pilot.</p>
+
+      <p>This is where the workflow work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> connects to the acquisition. The valuable step is usually not generating one good answer. It is putting that answer into a process with the right context, review, handoff, and measurement. Northslope gives OpenAI more people who know how to do that work in the field.</p>
+
+      <p>Watch what happens after those teams leave the conference room. If their fixes become reusable products, OpenAI will have built a distribution advantage that model benchmarks cannot show. If each deployment remains a custom engagement held together by the people assigned to it, the company will have bought an impressive bench of engineers and a very expensive way to keep every customer different.</p>
+    `
+  },
   post76: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1936,6 +1976,7 @@ POST_ORDER.unshift('post73');
 POST_ORDER.unshift('post74');
 POST_ORDER.unshift('post75');
 POST_ORDER.unshift('post76');
+POST_ORDER.unshift('post77');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

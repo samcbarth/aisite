@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post77: {
+      image: 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=900&h=650&fit=crop&q=80',
+      caption: 'Forward deployed engineers translate between operating problems, internal systems, and production software.', side: 'right', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The field work creates leverage only when one customer\'s solution makes the next deployment easier.'
+    },
     post76: {
       image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900&h=650&fit=crop&q=80',
       caption: 'Industrial AI needs one usable map across sensor, engineering, maintenance, and business records.', side: 'left', after: 5,
@@ -799,6 +805,11 @@ function copyRecursive(src, dest) {
       source: 'OpenAI Deployment Company',
       sourceUrl: 'https://openai.com/index/openai-launches-the-deployment-company/'
     },
+    northslopeAllFdes: {
+      text: 'At Northslope we are all Forward Deployed Engineers.',
+      source: 'Northslope',
+      sourceUrl: 'https://www.northslope.com/'
+    },
     huangInfra: {
       text: 'We are now a few hundred billion dollars into it.',
       source: 'South China Morning Post',
@@ -1079,6 +1090,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post77: { after: 7, quotes: [makeQuote('Daily reliability', QUOTE_LIBRARY.openaiDeployEveryday), makeQuote('Field model', QUOTE_LIBRARY.northslopeAllFdes)] },
     post76: { after: 7, quotes: [makeQuote('Industrial data', QUOTE_LIBRARY.schneiderIndustrialGrade), makeQuote('Combined platform', QUOTE_LIBRARY.akerComplementaryPlatform)] },
     post75: { after: 7, quotes: [makeQuote('Shared governance', QUOTE_LIBRARY.unGovernTogether), makeQuote('Dialogue mandate', QUOTE_LIBRARY.unOpenDiscussion)] },
     post74: { after: 7, quotes: [makeQuote('Scaling constraint', QUOTE_LIBRARY.adiEnergyConstraint), makeQuote('Architecture pace', QUOTE_LIBRARY.siaPowerArchitecture)] },
