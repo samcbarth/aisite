@@ -23,11 +23,11 @@
   <meta property="og:url" content="https://samcbarth.github.io/aisite/">
   <meta property="og:title" content="Sam C Barth">
   <meta property="og:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
-  <meta property="og:image" content="https://samcbarth.github.io/aisite/assets/images/samcbarth-social-preview.jpg?v=20260711">
+  <meta property="og:image" content="https://samcbarth.github.io/aisite/assets/images/samcbarth-social-preview.jpg?v=20260711b">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sam C Barth">
   <meta name="twitter:description" content="HubSpot Strategy & Operations Manager. RevOps, AI, and CRM strategy, plus consulting for GTM teams.">
-  <meta name="twitter:image" content="https://samcbarth.github.io/aisite/assets/images/samcbarth-social-preview.jpg?v=20260711">
+  <meta name="twitter:image" content="https://samcbarth.github.io/aisite/assets/images/samcbarth-social-preview.jpg?v=20260711b">
 
   <!-- Brand favicon: SCB monogram -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6af7'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESCB%3C/text%3E%3C/svg%3E">
@@ -260,7 +260,7 @@
     .site-banner {
       position: relative;
       display: block;
-      min-height: 176px;
+      height: clamp(220px, 28vw, 320px);
       margin-bottom: 1.4rem;
       border: 1px solid #242424;
       border-radius: 16px;
@@ -274,7 +274,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(8,8,10,0.94), rgba(8,8,10,0.68) 44%, rgba(8,8,10,0.1));
+      background: linear-gradient(180deg, rgba(8,8,10,0.04), rgba(8,8,10,0.22));
       z-index: 1;
     }
     .site-banner-img {
@@ -283,34 +283,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-    .site-banner-copy {
-      position: relative;
-      z-index: 2;
-      max-width: 520px;
-      padding: 1.45rem 1.6rem;
-    }
-    .site-banner-label {
-      display: inline-block;
-      margin-bottom: 0.55rem;
-      color: var(--cyan);
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.78;
-    }
-    .site-banner-title {
-      margin-bottom: 0.45rem;
-      color: #fff;
-      font-size: clamp(1.35rem, 3vw, 2rem);
-      line-height: 1.15;
-      font-weight: 700;
-    }
-    .site-banner-text {
-      color: #d2d2d2;
-      font-size: 1.02rem;
-      line-height: 1.55;
-      opacity: 0.88;
     }
     .site-banner:hover {
       border-color: var(--purple);
@@ -878,18 +850,11 @@
         padding-right: 1rem;
       }
       .site-banner {
-        min-height: 164px;
+        height: clamp(172px, 46vw, 230px);
         margin-bottom: 1.25rem;
       }
       .site-banner::before {
-        background: linear-gradient(180deg, rgba(8,8,10,0.82), rgba(8,8,10,0.92));
-      }
-      .site-banner-copy {
-        max-width: none;
-        padding: 1.15rem;
-      }
-      .site-banner-text {
-        font-size: 0.98rem;
+        background: linear-gradient(180deg, rgba(8,8,10,0.02), rgba(8,8,10,0.18));
       }
       .post-card,
       .featured-card {
@@ -1906,12 +1871,7 @@
 
 <section class="posts">
   <a class="site-banner" href="about.html" aria-label="Read more about Sam C Barth">
-    <img class="site-banner-img" src="assets/images/samcbarth-social-preview.jpg" alt="" loading="eager">
-    <span class="site-banner-copy">
-      <span class="site-banner-label">RevOps, AI &amp; CRM Strategy</span>
-      <span class="site-banner-title">Practical business tech notes without the noise</span>
-      <span class="site-banner-text">Ideas on AI, revenue operations, CRM systems, and how teams turn messy change into actual business decisions.</span>
-    </span>
+    <img class="site-banner-img" src="assets/images/samcbarth-social-preview.jpg" alt="" width="1200" height="630" loading="eager" decoding="async" fetchpriority="high">
   </a>
   <div class="posts-header">
     <h1 class="section-label">Latest Articles</h1>
