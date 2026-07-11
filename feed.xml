@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 17:05:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 18:03:42 GMT</lastBuildDate>
+    <item>
+      <title>GitHub found the security control hiding in its org chart</title>
+      <link>https://samcbarth.github.io/aisite/posts/github-found-the-security-control-hiding-in-its-org-chart/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/github-found-the-security-control-hiding-in-its-org-chart/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cybersecurity</category>
+      <description>A secret scanner can find an exposed credential in seconds. The awkward part starts when nobody knows who can safely rotate it. GitHub ran into that problem inside its own company. Its primary internal organization held more than 14,000 repositories, but fewer than half had clear</description>
+    </item>
     <item>
       <title>84.6% is the number to watch in CommBank&apos;s AI rollout</title>
       <link>https://samcbarth.github.io/aisite/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</link>

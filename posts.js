@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post73: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'GitHub found the security control hiding in its org chart',
+    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>A secret scanner can find an exposed credential in seconds. The awkward part starts when nobody knows who can safely rotate it.</p>
+
+      <p>GitHub ran into that problem inside its own company. Its primary internal organization held more than 14,000 repositories, but fewer than half had clear ownership. Security teams could identify a problem and still lose time reading commit history, checking documentation, asking in Slack, or guessing which team should make the change.</p>
+
+      <p>On July 9, GitHub published <a href="https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/" target="_blank" rel="noopener noreferrer">the system it built to close that gap</a>. In under 45 days, the company gave every active repository a validated owner and archived the rest. The result was about 3,000 active repositories and 11,000 archived ones.</p>
+
+      <p>The archive count is striking, but the ownership model is the more useful business story. GitHub did not treat ownership as a spreadsheet cleanup. It turned ownership into structured data, validated that data against real teams and services, and made it mandatory when a repository was created.</p>
+
+      <p>Two custom properties carried the model: an ownership type and an ownership name. A repository could belong to a service, a team, or an individual employee. Service records were checked against GitHub's internal catalog. Teams had to exist and have at least two members. Individual handles had to belong to a current employee.</p>
+
+      <p>That validation matters. A free-text owner field can create the appearance of accountability while pointing to a former employee, a misspelled team, or a group that no longer exists. GitHub wanted the entry process to be easy, but the underlying owner had to be real.</p>
+
+      <p>The rollout also avoided pretending that every old repository deserved a meeting. GitHub opened an issue on unowned repositories and gave people 30 days to claim them. Anything still unclaimed was archived. Archiving was reversible and non-destructive, so the company could reduce risk without deleting years of work.</p>
+
+      <p>That choice exposed dependencies the repository list did not show. One archived repository had been receiving monitoring issues from Datadog. When Datadog could no longer write to it, an internal monitor paged a team. GitHub fixed the notification path by mentioning repository administrators and assigning people with write access when no owner was available.</p>
+
+      <p>A second incident was more serious. GitHub realized a stale or corrupted service catalog could make valid repositories look abandoned. At that scale, a bad data source could trigger a mass archive. The team added a low-water-mark guardrail that stops the job and raises an alert when the proposed action count crosses a conservative threshold.</p>
+
+      <p>GitHub's advice is blunt: "assume your data sources will occasionally be wrong, and your notifications will sometimes get lost." That is the difference between a cleanup script and an operating control. The automation needs a limit that protects the company when its own inputs fail.</p>
+
+      <p>The broader security logic lines up with the <a href="https://csrc.nist.gov/projects/ssdf" target="_blank" rel="noopener noreferrer">NIST Secure Software Development Framework</a>. NIST puts "Prepare the Organization" first and describes it as ensuring that people, processes, and technology are ready to perform secure development. Tools can surface risk, but a company still needs named roles that can decide, act, and be held accountable.</p>
+
+      <p>NIST also describes the framework as "a common language for describing secure software development practices." GitHub's custom properties turn part of that language into queryable company data. Security policy can now target repositories by ownership type, incidents can reach a durable team, and compliance work can start from an inventory that reflects what is actually active.</p>
+
+      <p>There is a cost hiding in every unowned asset. It appears as investigation time during an incident, delayed patching, duplicate infrastructure, inactive automation, unnecessary licenses, and uncertainty during an audit. None of those costs look dramatic alone. Across thousands of repositories, they become an operating tax.</p>
+
+      <p>This is also a useful warning for the agent era. More AI-generated code means more repositories, branches, experiments, and automated actions. If creation gets cheaper while ownership stays optional, the inventory grows faster than the company can govern it. The right control is not another cleanup every year. It is making ownership part of creation and checking continuously that the owner still exists.</p>
+
+      <p>The workflow work I track at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> usually starts with handoffs, and this story shows why. A finding without an accountable destination is just a notification. GitHub improved the scanner's value without changing the scanner. It made sure every result had somewhere valid to go.</p>
+
+      <p>GitHub's 11,000 archived repositories are not the win by themselves. The win is that the next exposed secret, broken dependency, or policy exception no longer begins with a search for a person. The repository already knows who answers.</p>
+    `
+  },
   post72: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1776,6 +1816,7 @@ POST_ORDER.unshift('post69');
 POST_ORDER.unshift('post70');
 POST_ORDER.unshift('post71');
 POST_ORDER.unshift('post72');
+POST_ORDER.unshift('post73');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

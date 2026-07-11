@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post73: {
+      image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=900&h=650&fit=crop&q=80',
+      caption: 'Ownership data turns a repository inventory into a routing system for security and operations.', side: 'right', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Automation at portfolio scale needs a stop condition for stale data and unexpected action volume.'
+    },
     post72: {
       image: 'assets/images/post72-inline.jpg',
       caption: 'A central orchestration layer routes routine, regulated, and sensitive requests down different paths.', side: 'left', after: 5,
@@ -512,6 +518,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    githubInputsFail: {
+      text: 'assume your data sources will occasionally be wrong, and your notifications will sometimes get lost.',
+      source: 'GitHub repository ownership team',
+      sourceUrl: 'https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/'
+    },
+    nistCommonLanguage: {
+      text: 'a common language for describing secure software development practices',
+      source: 'NIST Secure Software Development Framework',
+      sourceUrl: 'https://csrc.nist.gov/projects/ssdf'
+    },
     commbankSeparateIntelligence: {
       text: 'separating intelligence from channels',
       source: 'Shashank Verma, CommBank',
@@ -1015,6 +1031,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post73: { after: 7, quotes: [makeQuote('Automation boundary', QUOTE_LIBRARY.githubInputsFail), makeQuote('Operating language', QUOTE_LIBRARY.nistCommonLanguage)] },
     post72: { after: 7, quotes: [makeQuote('Architecture', QUOTE_LIBRARY.commbankSeparateIntelligence), makeQuote('Human boundary', QUOTE_LIBRARY.commbankTrustNuance)] },
     post71: { after: 7, quotes: [makeQuote('Service continuity', QUOTE_LIBRARY.awsMaintenanceContinuity), makeQuote('Existing use case', QUOTE_LIBRARY.persistentContextualRecommendations)] },
     post70: { after: 6, quotes: [makeQuote('Open model', QUOTE_LIBRARY.microsoftAuroraPractical), makeQuote('Scientific use', QUOTE_LIBRARY.metOfficeAuroraPlatform)] },
