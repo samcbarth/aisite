@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post65: {
+      image: 'assets/images/post65-inline.jpg',
+      caption: 'One buying plan only works when linear and streaming inventory share usable campaign context.', side: 'right', after: 4,
+      supportImage: 'assets/images/post65-support.jpg',
+      supportCaption: 'WBD is turning planning, pricing, activation, and measurement into one connected operating system.'
+    },
     post64: {
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900&h=650&fit=crop&q=80',
       caption: 'Moving past a pilot means connecting strategy, validation, governance, and daily operations.', side: 'left', after: 4,
@@ -531,6 +537,8 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    wbdPlanAcrossBoth: { text: 'the fluidity to plan, package, and optimize across both', source: 'Dr. Nage Sethu, Warner Bros. Discovery', sourceUrl: 'https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider' },
+    awsBetterOutcomes: { text: 'better outcomes for brands and viewers alike', source: 'Samira Panah Bakhtiar, AWS', sourceUrl: 'https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider' },
     presidioDoneExperimenting: { text: 'done experimenting with AI', source: 'Bob Cagnazzi, Presidio', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html' },
     presidioOperatingRedesign: { text: 'an operating model redesign, not a technology project', source: 'Rob Kim, Presidio', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html' },
     rackspaceExpediteStrategy: { text: 'expedite our AI Enterprise strategy', source: 'Gajen Kandiah, Rackspace Technology', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html' },
@@ -970,6 +978,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post65: { after: 5, quotes: [makeQuote('WBD goal', QUOTE_LIBRARY.wbdPlanAcrossBoth), makeQuote('AWS view', QUOTE_LIBRARY.awsBetterOutcomes)] },
     post64: { after: 6, quotes: [makeQuote('Customer stage', QUOTE_LIBRARY.presidioDoneExperimenting), makeQuote('Scope of change', QUOTE_LIBRARY.presidioOperatingRedesign)] },
     post63: { after: 6, quotes: [makeQuote('Capital plan', QUOTE_LIBRARY.rackspaceExpediteStrategy), makeQuote('Investor view', QUOTE_LIBRARY.apolloNextPhase)] },
     post62: { after: 4, quotes: [makeQuote('Delivery model', QUOTE_LIBRARY.microsoftEmbeddingEngineers), makeQuote('Combined skills', QUOTE_LIBRARY.microsoftFrontierSkills)] },

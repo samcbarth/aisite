@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post65: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'WBD wants one advertising market across television and streaming',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post65-hero.jpg',
+    body: `
+      <p>Warner Bros. Discovery sells audiences across HBO Max, CNN, TNT, Discovery, and a long list of other brands. The problem is that an advertiser has not been buying all of that as one clean market. Linear television and digital inventory still come with different planning systems, order flows, measurements, and operating teams.</p>
+
+      <p>WBD is now trying to collapse those divisions into one advertising platform built on AWS. The company wants buyers to plan across television and streaming, let software recommend where inventory should go, and keep optimizing a campaign after it starts. That could change more than how an ad gets placed. It could change what WBD is able to sell.</p>
+
+      <p>The companies described the work in a <a href="https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider" target="_blank" rel="noopener noreferrer">July 8 announcement</a>. WBD says it began rolling out direct-response automation, audience forecasting, and better measurement earlier this year. Unified media planning is scheduled for the third quarter, followed by a phased rollout of order management, pricing, and stewardship in the fourth.</p>
+
+      <p>The sequence matters. This is not a chatbot sitting beside the old ad stack. WBD is replacing the path from planning through pricing, activation, optimization, and measurement. AI agents are supposed to use campaign results and audience signals to recommend inventory across linear and digital channels while the campaign is running.</p>
+
+      <p>That addresses a real commercial weakness in television. A streaming platform can target and measure an audience with software. Traditional TV still carries large audiences and premium events, but much of the buying process was designed around fixed schedules, broad demographics, and negotiations completed before the ad ran. Combining those models gives WBD a chance to sell the reach of television with more of the flexibility buyers expect from digital advertising.</p>
+
+      <p>Dr. Nage Sethu, WBD's SVP of Technology for converged advertising and linear systems, called the goal "the fluidity to plan, package, and optimize across both." AWS executive Samira Panah Bakhtiar said the platform should produce "better outcomes for brands and viewers alike." Those are useful ambitions, but they are not the same thing as proven results.</p>
+
+      <p>The hard part will be deciding what optimization means. An advertiser may care about sales, reach, attention, frequency, or the cost of finding a specific audience. WBD also needs to protect the price of premium inventory and avoid showing the same viewer too many ads across several services. A system can optimize the wrong number very efficiently if the commercial rules are vague.</p>
+
+      <p>WBD is building a composable data and interoperability layer underneath the agents. Amazon Bedrock AgentCore handles agent infrastructure, Bedrock hosts the models, SageMaker supports custom models, S3 stores the data lake in Apache Iceberg, and Amazon Quick gives ad-sales employees a natural-language interface to the data. The architecture tells us the company expects several models and applications to share one governed source of campaign context.</p>
+
+      <p>That shared context may be the most valuable part. Sales teams cannot make one cross-platform promise if inventory, audience definitions, pricing, and campaign results live in separate systems. The agent label will get attention, but the business gain depends on whether WBD can make those systems agree quickly enough for a buyer to trust the recommendation.</p>
+
+      <p>Transparency matters too. A recommendation engine that moves budget between CNN, HBO Max, TNT, and Discovery affects both the advertiser and WBD's own brands. Buyers need to know why the allocation changed and what result it produced. Internal teams need rules for conflicts, scarce inventory, data use, and pricing. Automation does not remove those decisions. It puts them into software where they need to be explicit and auditable.</p>
+
+      <p>There is also a broader competitive point. WBD is not just competing with other television networks. It is competing for advertising budgets that can move to YouTube, Amazon, social platforms, retail media, and programmatic marketplaces. Those companies trained buyers to expect fast audience selection, automated purchasing, and continuous measurement. WBD's content gives it differentiated supply. A unified platform is an attempt to remove the operational penalty attached to buying that supply.</p>
+
+      <p>This is the kind of system question I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>: can the company connect its data, commercial rules, and teams well enough for the automation to make a better decision? By the end of the year, WBD should have enough of the order, pricing, and stewardship stack in market to show whether one advertising market is real. If buyers still need separate plans and explanations for television and streaming, the agents will only be moving the old silos faster.</p>
+    `
+  },
   post64: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1476,6 +1508,7 @@ const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 POST_ORDER.unshift('post63');
 POST_ORDER.unshift('post64');
+POST_ORDER.unshift('post65');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
