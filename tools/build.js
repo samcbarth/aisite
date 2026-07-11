@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post68: {
+      image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=900&h=650&fit=crop&q=80',
+      caption: 'Agent economics depend on the full path through planning, tools, context, and review.', side: 'left', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'A benchmark becomes a business case only when the savings survive real data, policies, and failure costs.'
+    },
     post67: {
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&h=650&fit=crop&q=80',
       caption: 'MSPs need customer separation and one operating view across every environment they protect.', side: 'right', after: 4,
@@ -549,6 +555,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    langchainModelPart: {
+      text: 'model choice is only one part of improving agent performance.',
+      source: 'LangChain',
+      sourceUrl: 'https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint'
+    },
+    nvidiaNetworkDefault: {
+      text: 'Network access is denied by default.',
+      source: 'NVIDIA',
+      sourceUrl: 'https://build.nvidia.com/nvidia/nemoclaw-for-langchain-deep-agents-code/architecture'
+    },
     barracudaMspScale: {
       text: 'fail to meet the needs of MSPs that must scale to securely manage millions of identities across thousands of customer environments',
       source: 'Barracuda Networks',
@@ -1002,6 +1018,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post68: { after: 5, quotes: [makeQuote('Performance lever', QUOTE_LIBRARY.langchainModelPart), makeQuote('Runtime policy', QUOTE_LIBRARY.nvidiaNetworkDefault)] },
     post67: { after: 5, quotes: [makeQuote('Scale problem', QUOTE_LIBRARY.barracudaMspScale), makeQuote('Product design', QUOTE_LIBRARY.evoMspOperations)] },
     post66: { after: 5, quotes: [makeQuote('Visibility gap', QUOTE_LIBRARY.akamaiControlsCannotSee), makeQuote('Security problem', QUOTE_LIBRARY.layerxDefiningChallenge)] },
     post65: { after: 5, quotes: [makeQuote('WBD goal', QUOTE_LIBRARY.wbdPlanAcrossBoth), makeQuote('AWS view', QUOTE_LIBRARY.awsBetterOutcomes)] },

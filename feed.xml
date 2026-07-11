@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 12:02:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 13:03:34 GMT</lastBuildDate>
+    <item>
+      <title>A $4.48 agent run changes where teams should look for savings</title>
+      <link>https://samcbarth.github.io/aisite/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>$4.48 versus $43.48 is the kind of gap that changes a buying conversation. It is also the kind of benchmark result that needs to be read carefully. LangChain says NVIDIA&apos;s Nemotron 3 Ultra scored 0.86 on its agent evaluation suite when paired with a tuned Deep Agents harness. The</description>
+    </item>
     <item>
       <title>One identity console could change the economics of managed security</title>
       <link>https://samcbarth.github.io/aisite/posts/one-identity-console-could-change-the-economics-of-managed-security/</link>

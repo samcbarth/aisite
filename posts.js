@@ -7,6 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post68: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'A $4.48 agent run changes where teams should look for savings',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>$4.48 versus $43.48 is the kind of gap that changes a buying conversation. It is also the kind of benchmark result that needs to be read carefully.</p>
+
+      <p>LangChain says NVIDIA's Nemotron 3 Ultra scored 0.86 on its agent evaluation suite when paired with a tuned Deep Agents harness. The next closest model cost $43.48 on the same evaluation. That makes the Nemotron setup roughly ten times cheaper in this test, without giving up the top aggregate score.</p>
+
+      <p>The result comes from the new <a href="https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint" target="_blank" rel="noopener noreferrer">NemoClaw for LangChain Deep Agents blueprint</a>, announced July 8. It combines LangChain Deep Agents Code, NVIDIA Nemotron 3 Ultra, and NVIDIA OpenShell. The package is open, customizable, and meant to give companies a governed path from an agent experiment to something they can operate.</p>
+
+      <p>The important detail is where the savings came from. LangChain did not just swap one model for another. Its team tuned how the agent uses tools, manages context, and checks intermediate steps. The benchmark is evidence that the system around a model can affect cost and quality as much as the model selection itself.</p>
+
+      <p>LangChain puts it directly: "model choice is only one part of improving agent performance." That is a useful correction for companies still treating model comparison as the entire AI strategy. A model can be strong and still waste money if the agent repeats searches, carries unnecessary context, calls the wrong tool, or keeps working after it has enough information.</p>
+
+      <p>A harness controls that behavior. It gives the agent a planning method, access to files and tools, rules for delegating work, and a way to preserve or trim context. Tuning the harness means adjusting the operating process around the intelligence. That sounds less exciting than a new frontier model, but it is much closer to normal process improvement.</p>
+
+      <p>The business implication is not that every company should move to Nemotron tomorrow. The published number comes from LangChain's own evaluation suite, using a profile LangChain tuned for this model. It does not prove the same tenfold difference will appear in customer support, finance operations, research, or software development. Workloads have different tool calls, context sizes, latency requirements, and definitions of success.</p>
+
+      <p>It does show what teams should measure. Instead of asking only which model produced the best answer, measure the full run: task completion, inference cost, time, tool failures, retries, human corrections, and the number of steps required. A cheaper token price can lose quickly if the agent needs three attempts. A more expensive model can be economical if it finishes cleanly the first time.</p>
+
+      <p>The OpenShell layer handles a different cost, which is risk. <a href="https://build.nvidia.com/nvidia/nemoclaw-for-langchain-deep-agents-code/architecture" target="_blank" rel="noopener noreferrer">NVIDIA's blueprint architecture</a> says the agent runs in a sandbox with controlled network access, policy presets, logs, and snapshots. It also states that "Network access is denied by default." Credentials are handled outside the agent configuration, and teams can audit the plan, commands, test results, and code changes.</p>
+
+      <p>Those controls matter because a low-cost agent that can reach the wrong system is not cheap. One bad command, exposed credential, or unreviewed change can erase months of inference savings. The blueprint makes governance part of the runtime instead of asking every development team to bolt it on after the agent works.</p>
+
+      <p>There is a commercial move here for both companies. LangChain gets its agent framework into a packaged enterprise deployment path. NVIDIA makes Nemotron and OpenShell the engine and control layer underneath that path. The blueprint may be open, but successful deployments still create demand for NVIDIA inference, tooling, and infrastructure.</p>
+
+      <p>Buyers should also notice that the stack remains modular. The harness, model, and runtime are separate layers. That gives a company room to tune one without rebuilding everything else. It also creates real integration work. Version changes, evaluation drift, policy maintenance, and debugging across three layers do not disappear because the initial blueprint is easy to install.</p>
+
+      <p>This connects with the operating questions I work through at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If an AI project has no agreed task, success measure, owner, or review point, a better model will not fix the process. The harness forces those decisions into the system. What can the agent do? What context should it keep? When should it stop? Who reviews the result?</p>
+
+      <p>The $4.48 result is useful because it moves the conversation away from model rankings and toward unit economics. Now the work is to reproduce that result on a real company task, with its actual data, tools, policies, and failure costs. If the gap holds there, the winning AI stack may not be the one with the most powerful model. It may be the one that wastes the fewest moves.</p>
+    `
+  },
   post67: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1581,6 +1617,7 @@ POST_ORDER.unshift('post64');
 POST_ORDER.unshift('post65');
 POST_ORDER.unshift('post66');
 POST_ORDER.unshift('post67');
+POST_ORDER.unshift('post68');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
