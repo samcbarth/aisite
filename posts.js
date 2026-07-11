@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post72: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: '84.6% is the number to watch in CommBank\'s AI rollout',
+    category: 'Artificial Intelligence', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post72-hero.jpg',
+    body: `
+      <p>84.6%.</p>
+
+      <p>That is the share of Commonwealth Bank self-service messaging conversations resolved inside the messaging channel in May. It is a better number than another announcement about an AI banking assistant because it measures whether customers actually got through the work.</p>
+
+      <p>CommBank and Microsoft published the result on July 9 as part of a deeper look at the bank's new customer service architecture. The platform handles more than two million voice and messaging conversations each month. It also supports a contact center receiving about 50,000 calls a day.</p>
+
+      <p>The volume makes this different from a controlled chatbot pilot. A small error rate becomes a lot of bad customer experiences when a system is touching millions of conversations, especially in banking.</p>
+
+      <p>The architecture is the useful part. CommBank built a central orchestration agent with Microsoft Copilot Studio and Microsoft Foundry. Instead of putting separate AI logic inside chat, voice, and every other channel, the central layer reads the customer's intent and routes the request to the right response path.</p>
+
+      <p>A basic question can go to conversational AI. A question about public bank information can use retrieval-augmented generation to pull current content. A regulated process such as a fraud dispute follows a defined path with guardrails. A sensitive conversation moves to a human specialist in Dynamics 365 with the context and summary attached.</p>
+
+      <p>CommBank engineering leader Shashank Verma calls the design "separating intelligence from channels." That choice matters because a bank should not have to rebuild its decision logic every time customers move from messaging to voice or a new interface appears.</p>
+
+      <p>It also makes governance more visible. The company can define which requests are suitable for a flexible AI answer, which require a deterministic workflow, and which need a person. Those are operating decisions, not model settings.</p>
+
+      <p>The human handoff deserves as much attention as the 84.6% resolution rate. Rachel Round, who leads CommBank's self-service customer capabilities, said the bank is intentional about involving people "where trust and nuance are important." That includes language suggesting vulnerability, where empathy and deeper support matter more than completing a transaction with fewer steps.</p>
+
+      <p>This is a useful boundary. The goal is not 100% automation. Pushing every conversation toward self-service would make the metric look efficient while making difficult cases worse. A good orchestration system should resolve routine work quickly and recognize the moment routine work stops being routine.</p>
+
+      <p>CommBank did not get here by adding one chat window. The team migrated nearly 700 existing chatbot topics into Copilot Studio. Engineers spent three weeks at Microsoft headquarters testing new capabilities against banking scenarios. Microsoft then sent product engineers to Sydney to work beside the bank's team in a live production environment.</p>
+
+      <p>That level of co-engineering says something about the real cost. The published story does not give a project budget, model accuracy rate, or comparison with the previous channel resolution rate. It does show that production AI required product access, embedded engineers, operational-readiness criteria, deployment safeguards, and automated escalation paths.</p>
+
+      <p>CommBank's own <a href="https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report-print-friendly.pdf" target="_blank" rel="noopener noreferrer">2025 annual report</a> provides earlier context. It said generative AI messaging had increased customer interactions through unassisted channels by about 20%. The bank's <a href="https://news.microsoft.com/source/asia/features/how-commonwealth-bank-and-microsoft-are-reimagining-the-future-of-customer-service/" target="_blank" rel="noopener noreferrer">new Microsoft case study</a> moves the evidence forward with a current resolution number.</p>
+
+      <p>The next measurement should be harder. How often does the 15.4% that leaves self-service reach the correct human on the first handoff? How many customers repeat information? What happens to complaint rates, fraud dispute time, abandonment, and cost per resolved conversation? A channel resolution percentage is useful, but customer service is only finished when the customer's issue is finished.</p>
+
+      <p>This connects to the workflow work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because orchestration is where AI stops being a feature and starts becoming an operating model. The value comes from knowing which system should answer, which rules apply, when a person takes over, and what context follows the handoff.</p>
+
+      <p>CommBank's 84.6% gives the industry a real production marker. The more revealing number will come from the remaining 15.4%. If those customers reach the right person with the right context and no restart, the bank has built more than a capable bot. It has built a customer service system that knows its own limits.</p>
+    `
+  },
   post71: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1735,6 +1775,7 @@ POST_ORDER.unshift('post68');
 POST_ORDER.unshift('post69');
 POST_ORDER.unshift('post70');
 POST_ORDER.unshift('post71');
+POST_ORDER.unshift('post72');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

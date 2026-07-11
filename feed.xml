@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 16:03:54 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 17:05:38 GMT</lastBuildDate>
+    <item>
+      <title>84.6% is the number to watch in CommBank&apos;s AI rollout</title>
+      <link>https://samcbarth.github.io/aisite/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Artificial Intelligence</category>
+      <description>84.6%. That is the share of Commonwealth Bank self-service messaging conversations resolved inside the messaging channel in May. It is a better number than another announcement about an AI banking assistant because it measures whether customers actually got through the work. Comm</description>
+    </item>
     <item>
       <title>AWS is closing the door on its first enterprise AI stack</title>
       <link>https://samcbarth.github.io/aisite/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</link>

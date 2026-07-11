@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post72: {
+      image: 'assets/images/post72-inline.jpg',
+      caption: 'A central orchestration layer routes routine, regulated, and sensitive requests down different paths.', side: 'left', after: 5,
+      supportImage: 'assets/images/post72-support.jpg',
+      supportCaption: 'The quality of the human handoff will determine whether the system improves service, not only self-service.'
+    },
     post71: {
       image: 'assets/images/post71-inline.jpg',
       caption: 'AWS is moving enterprise search, workplace AI, and agent infrastructure toward fewer product paths.', side: 'right', after: 5,
@@ -506,6 +512,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    commbankSeparateIntelligence: {
+      text: 'separating intelligence from channels',
+      source: 'Shashank Verma, CommBank',
+      sourceUrl: 'https://news.microsoft.com/source/asia/features/how-commonwealth-bank-and-microsoft-are-reimagining-the-future-of-customer-service/'
+    },
+    commbankTrustNuance: {
+      text: 'where trust and nuance are important',
+      source: 'Rachel Round, CommBank',
+      sourceUrl: 'https://news.microsoft.com/source/asia/features/how-commonwealth-bank-and-microsoft-are-reimagining-the-future-of-customer-service/'
+    },
     awsMaintenanceContinuity: {
       text: 'Customers already using these services and features can continue to do so.',
       source: 'AWS service availability update',
@@ -999,6 +1015,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post72: { after: 7, quotes: [makeQuote('Architecture', QUOTE_LIBRARY.commbankSeparateIntelligence), makeQuote('Human boundary', QUOTE_LIBRARY.commbankTrustNuance)] },
     post71: { after: 7, quotes: [makeQuote('Service continuity', QUOTE_LIBRARY.awsMaintenanceContinuity), makeQuote('Existing use case', QUOTE_LIBRARY.persistentContextualRecommendations)] },
     post70: { after: 6, quotes: [makeQuote('Open model', QUOTE_LIBRARY.microsoftAuroraPractical), makeQuote('Scientific use', QUOTE_LIBRARY.metOfficeAuroraPlatform)] },
     post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
