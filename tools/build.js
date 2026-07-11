@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post66: {
+      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&h=650&fit=crop&q=80',
+      caption: 'The browser now sits between sensitive business data and a growing set of AI tools.', side: 'left', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Useful browser policy has to protect the company without becoming another obstacle to normal work.'
+    },
     post65: {
       image: 'assets/images/post65-inline.jpg',
       caption: 'One buying plan only works when linear and streaming inventory share usable campaign context.', side: 'right', after: 4,
@@ -537,6 +543,8 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    akamaiControlsCannotSee: { text: 'cannot see how employees are interacting with AI tools', source: 'Mani Sundaram, Akamai', sourceUrl: 'https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control' },
+    layerxDefiningChallenge: { text: 'one of the defining challenges in enterprise security', source: 'Or Eshed, LayerX', sourceUrl: 'https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control' },
     wbdPlanAcrossBoth: { text: 'the fluidity to plan, package, and optimize across both', source: 'Dr. Nage Sethu, Warner Bros. Discovery', sourceUrl: 'https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider' },
     awsBetterOutcomes: { text: 'better outcomes for brands and viewers alike', source: 'Samira Panah Bakhtiar, AWS', sourceUrl: 'https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider' },
     presidioDoneExperimenting: { text: 'done experimenting with AI', source: 'Bob Cagnazzi, Presidio', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html' },
@@ -978,6 +986,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post66: { after: 5, quotes: [makeQuote('Visibility gap', QUOTE_LIBRARY.akamaiControlsCannotSee), makeQuote('Security problem', QUOTE_LIBRARY.layerxDefiningChallenge)] },
     post65: { after: 5, quotes: [makeQuote('WBD goal', QUOTE_LIBRARY.wbdPlanAcrossBoth), makeQuote('AWS view', QUOTE_LIBRARY.awsBetterOutcomes)] },
     post64: { after: 6, quotes: [makeQuote('Customer stage', QUOTE_LIBRARY.presidioDoneExperimenting), makeQuote('Scope of change', QUOTE_LIBRARY.presidioOperatingRedesign)] },
     post63: { after: 6, quotes: [makeQuote('Capital plan', QUOTE_LIBRARY.rackspaceExpediteStrategy), makeQuote('Investor view', QUOTE_LIBRARY.apolloNextPhase)] },

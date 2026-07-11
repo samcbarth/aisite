@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 10:05:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 11:03:24 GMT</lastBuildDate>
+    <item>
+      <title>Akamai paid $205 million to put AI policy inside the browser</title>
+      <link>https://samcbarth.github.io/aisite/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cybersecurity</category>
+      <description>An employee pastes a customer record into an AI tool, uploads a contract for a summary, or lets an agent work through a SaaS application. The company firewall may be working exactly as designed. The data can still leave through the browser. That gap explains why Akamai spent appr</description>
+    </item>
     <item>
       <title>WBD wants one advertising market across television and streaming</title>
       <link>https://samcbarth.github.io/aisite/posts/wbd-wants-one-advertising-market-across-television-and-streaming/</link>

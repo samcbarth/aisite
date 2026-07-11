@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post66: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Akamai paid $205 million to put AI policy inside the browser',
+    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>An employee pastes a customer record into an AI tool, uploads a contract for a summary, or lets an agent work through a SaaS application. The company firewall may be working exactly as designed. The data can still leave through the browser.</p>
+
+      <p>That gap explains why Akamai spent approximately $205 million on LayerX. The acquisition, <a href="https://www.globenewswire.com/news-release/2026/07/02/3321349/0/en/akamai-completes-acquisition-of-secure-enterprise-browser-provider-layerx.html" target="_blank" rel="noopener noreferrer">completed July 2</a>, gives Akamai a way to see and control prompts, file uploads, web content, and SaaS activity at the point where a person or AI agent actually uses them.</p>
+
+      <p>The price is the first useful number. Akamai said in May that LayerX was expected to finish 2026 with about $10 million in annual recurring revenue. That puts the purchase price near 20 times that expected run rate. Akamai is not paying for a mature revenue stream. It is paying for a control point it believes will become much more important as AI moves into normal work.</p>
+
+      <p>LayerX does not require a company to replace Chrome, Edge, Safari, or another familiar browser. Its technology adds security controls to the browsers employees already use. That matters because security projects often fail at the adoption layer. A new corporate browser may give the security team more control, but it also creates another rollout, another support problem, and another reason for employees to find a workaround.</p>
+
+      <p>Akamai is taking the lighter path. Its <a href="https://www.akamai.com/resources/solution-brief/secure-enterprise-browser" target="_blank" rel="noopener noreferrer">secure enterprise browser brief</a> says the combined product can apply real-time content analysis, sensitive-data masking, and policy enforcement across SaaS applications, ordinary web activity, and AI models. The browser becomes a place to enforce rules without rebuilding the network around every new tool.</p>
+
+      <p>Mani Sundaram, who leads Akamai's Security Technology Group, said customers report that existing controls "cannot see how employees are interacting with AI tools." LayerX CEO Or Eshed called securing human and agentic AI usage "one of the defining challenges in enterprise security." Those statements are sales language, but they point at a real operational change.</p>
+
+      <p>Traditional access security asks whether this user and device should reach an application. AI use adds harder questions after access is granted. Which data can go into a model? Can the output be copied into another system? Is a personal AI account allowed? Can an agent download a file, approve an action, or follow a link on the user's behalf? The decision is no longer only about entering the application. It is about what happens inside the session.</p>
+
+      <p>This gives Akamai a more complete Zero Trust story. It already sells access controls for private applications, network segmentation, DNS security, and protection for AI applications and workloads. LayerX extends that coverage to the last few feet between the user, the browser, and the tool. Akamai can now pitch one policy chain across identity, application access, browser activity, and infrastructure.</p>
+
+      <p>The commercial logic is clear. Akamai has thousands of security customers and a large global network. LayerX brings a younger product and specialized browser telemetry. Akamai can put that product in front of a much larger customer base, while LayerX gives Akamai a reason to expand existing Zero Trust accounts instead of competing only on network access and segmentation.</p>
+
+      <p>The integration risk is just as clear. A browser control can become noisy fast. If it blocks harmless prompts, breaks common SaaS workflows, or forces employees through constant warnings, people will route around it. If the policy is too loose, the company gets a dashboard full of activity but no meaningful reduction in risk. The product has to know the difference between sensitive business data and ordinary work without becoming another approval queue.</p>
+
+      <p>Agents make that balance harder. A person pauses, notices an unusual page, or questions a request. An agent can move through several browser steps quickly and repeat the same mistake at scale. Security teams will need rules based on the action, the data, the agent, and the destination. They will also need a record that explains why an action was allowed or stopped.</p>
+
+      <p>That is where this story connects with the work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI governance becomes useful when it sits inside the workflow and can make a specific decision. A policy document that says employees should protect customer data does not stop a spreadsheet upload. A browser control can, assuming the company has defined the data, exceptions, and ownership clearly enough.</p>
+
+      <p>Akamai paid a rich multiple because it believes the browser is becoming an enforcement layer for both people and agents. The acquisition will earn that price only if LayerX can stay nearly invisible during normal work and become precise when data or automated actions cross a real boundary. If employees have to fight the control, they will find another route. If they barely notice it while risky actions stop, Akamai will have bought the right place in the stack.</p>
+    `
+  },
   post65: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1509,6 +1543,7 @@ const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 
 POST_ORDER.unshift('post63');
 POST_ORDER.unshift('post64');
 POST_ORDER.unshift('post65');
+POST_ORDER.unshift('post66');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
