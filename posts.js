@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post78: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Cognizant put itself inside the AI sales pitch',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Cognizant wants companies to trust it with a large AI rollout. So it is making its own workforce the first large reference account.</p>
+
+      <p>On July 7, the technology services company <a href="https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-expands-partnership-with-Google-Cloud-to-accelerate-enterprise-AI-adoption-with-Gemini-Enterprise-and-Google-Workspace/default.aspx" target="_blank" rel="noopener noreferrer">expanded its Google Cloud partnership</a> and laid out an unusually specific internal plan. Cognizant aims to deploy Gemini Enterprise to 100,000 associates this year, scale that to 200,000, and certify at least 10,000 professionals on the platform.</p>
+
+      <p>Those numbers matter less as a license count than as a test environment. Cognizant sells implementation work. If its own engineers, project managers, support teams, and delivery staff cannot turn Gemini into better operating results, the client pitch gets much harder. If they can, every internal workflow becomes training material for the next engagement.</p>
+
+      <p>The rollout covers software engineering, delivery operations, workforce tools, and customer support. Cognizant says its engineers are using Antigravity 2.0 and Gemini Enterprise for code explanation, automated test generation, and legacy application modernization. Internal benchmarks show development velocity improving by up to 30%.</p>
+
+      <p>Elsewhere, the company is deploying role-based agents that it says can automate 60% to 70% of manual effort in selected workflows. Project managers and delivery teams are using the tools to track milestones, streamline processes, and produce documentation.</p>
+
+      <p>That is the reported progress. The missing details are just as useful. Cognizant did not publish the baseline behind the development benchmark, the number of teams measured, the review work added by generated code, or whether the 60% to 70% estimate represents time saved, steps automated, or tasks completed without human correction.</p>
+
+      <p>A serious internal rollout should eventually answer those questions. Adoption is easy to count. A company can distribute licenses, announce a certification target, and report how many agents it built. The harder measurement is whether work finishes faster with equal or better quality, whether errors move downstream, and whether the same result survives outside the team that designed the workflow.</p>
+
+      <p>Cognizant is also changing how it delivers the work. Its Frontier Certified Engineers are meant to combine technical skill with industry and operating context. They audit workflows, evaluate agents, and deploy them inside client environments. CEO Ravi Kumar S said the company has "built this capability, proven it inside our own business, and are now bringing it to joint clients at scale."</p>
+
+      <p>Google Cloud gets something valuable from that model. Gemini Enterprise reaches customers with an implementation team attached, while Cognizant gets a large platform around which it can build repeatable services. Google Cloud executive Karthik Narain called Cognizant's first-hand experience something that "uniquely positions Cognizant to help our joint customers scale agentic AI solutions."</p>
+
+      <p>The two companies are taking packaged offers into retail, healthcare, communications, media, technology, and financial services. Cognizant says its Agent Foundry has built more than 2,000 agents and can shorten some development cycles into two-week sprints. A separate July 7 <a href="https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies" target="_blank" rel="noopener noreferrer">Google Cloud announcement with Accenture Edge</a> used a similar playbook: industry agents, forward deployed engineers, and preconfigured solutions intended to move mid-market customers from pilots into production.</p>
+
+      <p>That overlap is important. Google Cloud is building a delivery channel through several large services firms. The platform will not be the only differentiator. Cognizant has to show that its internal learning becomes better templates, evaluations, controls, and deployment speed than another partner can offer on the same underlying technology.</p>
+
+      <p>There is one customer example in the announcement. A U.S. communications and entertainment provider reportedly raised first-contact resolution by 17% against its pre-deployment baseline and automated nearly one-third of appointment requests. The agents went live in three months and received more than 500 model optimizations during the first year.</p>
+
+      <p>That last number should slow down anyone expecting a two-week sprint to produce a finished system. Fast development can get an agent into a workflow. Five hundred optimizations show how much operating work can follow. Someone still has to study failures, update instructions, test changes, protect customer data, watch for regressions, and decide when a human should take over.</p>
+
+      <p>This is where the workflow focus at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> fits the story. The useful asset is not a library of 2,000 agent demos. It is a record of which steps were safe to automate, what evidence proved the result, where review stayed necessary, and how the team kept improving the system after launch.</p>
+
+      <p>Cognizant now has a rare chance to make its own operations part of the product. The 100,000-person rollout will be convincing when the company publishes comparable results across roles, including quality and rework instead of adoption alone. Until then, the strongest part of the pitch is not that Cognizant knows Gemini. It is that Cognizant has volunteered to find the difficult parts before its clients do.</p>
+    `
+  },
   post77: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1977,6 +2015,7 @@ POST_ORDER.unshift('post74');
 POST_ORDER.unshift('post75');
 POST_ORDER.unshift('post76');
 POST_ORDER.unshift('post77');
+POST_ORDER.unshift('post78');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post78: {
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&h=650&fit=crop&q=80',
+      caption: 'Cognizant is using its own engineers, project teams, and support operations as the first large deployment environment.', side: 'left', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1522071901873-411886a10004?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The useful proof will connect adoption to quality, rework, and durable operating results.'
+    },
     post77: {
       image: 'https://images.unsplash.com/photo-1521791055366-0d553872125f?w=900&h=650&fit=crop&q=80',
       caption: 'Forward deployed engineers translate between operating problems, internal systems, and production software.', side: 'right', after: 5,
@@ -542,6 +548,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    cognizantProvenInside: {
+      text: 'We have built this capability, proven it inside our own business, and are now bringing it to joint clients at scale.',
+      source: 'Ravi Kumar S, Cognizant CEO',
+      sourceUrl: 'https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-expands-partnership-with-Google-Cloud-to-accelerate-enterprise-AI-adoption-with-Gemini-Enterprise-and-Google-Workspace/default.aspx'
+    },
+    googleFirstHand: {
+      text: 'This deep, first-hand experience uniquely positions Cognizant to help our joint customers scale agentic AI solutions and accelerate time-to-value.',
+      source: 'Karthik Narain, Google Cloud',
+      sourceUrl: 'https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-expands-partnership-with-Google-Cloud-to-accelerate-enterprise-AI-adoption-with-Gemini-Enterprise-and-Google-Workspace/default.aspx'
+    },
     schneiderIndustrialGrade: {
       text: 'a truly industrial grade AI platform that turns the complexity of operational data into a competitive advantage',
       source: 'Olivier Blum, Schneider Electric CEO',
@@ -1090,6 +1106,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post78: { after: 7, quotes: [makeQuote('Internal proof', QUOTE_LIBRARY.cognizantProvenInside), makeQuote('Partner view', QUOTE_LIBRARY.googleFirstHand)] },
     post77: { after: 7, quotes: [makeQuote('Daily reliability', QUOTE_LIBRARY.openaiDeployEveryday), makeQuote('Field model', QUOTE_LIBRARY.northslopeAllFdes)] },
     post76: { after: 7, quotes: [makeQuote('Industrial data', QUOTE_LIBRARY.schneiderIndustrialGrade), makeQuote('Combined platform', QUOTE_LIBRARY.akerComplementaryPlatform)] },
     post75: { after: 7, quotes: [makeQuote('Shared governance', QUOTE_LIBRARY.unGovernTogether), makeQuote('Dialogue mandate', QUOTE_LIBRARY.unOpenDiscussion)] },
