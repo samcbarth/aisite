@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 14:03:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 15:03:16 GMT</lastBuildDate>
+    <item>
+      <title>The forecast businesses need is a range, not a number</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-forecast-businesses-need-is-a-range-not-a-number/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-forecast-businesses-need-is-a-range-not-a-number/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>An energy trader sees clouds moving toward a solar farm. A shipping operator sees a storm forming near a port. A utility sees heat building across its service area. None of them only needs the most likely forecast. They need to know how wrong that forecast could be, and what the </description>
+    </item>
     <item>
       <title>Inside Accenture&apos;s plan to make enterprise AI fit the middle market</title>
       <link>https://samcbarth.github.io/aisite/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</link>

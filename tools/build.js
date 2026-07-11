@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post70: {
+      image: 'https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?w=900&h=650&fit=crop&q=80',
+      caption: 'A useful forecast shows the likely outcome and the uncertainty surrounding it.', side: 'left', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Weather intelligence creates value when uncertainty connects to a defined operating decision.'
+    },
     post69: {
       image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&h=650&fit=crop&q=80',
       caption: 'A repeatable offer still needs enough room for the customer\'s own systems and operating model.', side: 'right', after: 5,
@@ -494,6 +500,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    microsoftAuroraPractical: {
+      text: 'a meaningful step toward making weather foundation models more open, useful, and practical.',
+      source: 'Sridhar Iyer, Microsoft AI',
+      sourceUrl: 'https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/'
+    },
+    metOfficeAuroraPlatform: {
+      text: 'a great platform for learning how to translate these tools for use in climate projection',
+      source: 'Doug McNeall, UK Met Office',
+      sourceUrl: 'https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/'
+    },
     accentureWeeksOutcomes: {
       text: 'in weeks and get measurable outcomes at the scale, budget and speed that they need to grow.',
       source: 'Rajendra Prasad, Accenture',
@@ -967,6 +983,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post70: { after: 6, quotes: [makeQuote('Open model', QUOTE_LIBRARY.microsoftAuroraPractical), makeQuote('Scientific use', QUOTE_LIBRARY.metOfficeAuroraPlatform)] },
     post69: { after: 6, quotes: [makeQuote('Delivery promise', QUOTE_LIBRARY.accentureWeeksOutcomes), makeQuote('Market focus', QUOTE_LIBRARY.googleDirectSector)] },
     post68: { after: 5, quotes: [makeQuote('Performance lever', QUOTE_LIBRARY.langchainModelPart), makeQuote('Runtime policy', QUOTE_LIBRARY.nvidiaNetworkDefault)] },
     post67: { after: 5, quotes: [makeQuote('Scale problem', QUOTE_LIBRARY.barracudaMspScale), makeQuote('Product design', QUOTE_LIBRARY.evoMspOperations)] },

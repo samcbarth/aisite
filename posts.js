@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post70: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'The forecast businesses need is a range, not a number',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>An energy trader sees clouds moving toward a solar farm. A shipping operator sees a storm forming near a port. A utility sees heat building across its service area. None of them only needs the most likely forecast. They need to know how wrong that forecast could be, and what the expensive version of wrong looks like.</p>
+
+      <p>That is the useful change in Microsoft's new Aurora 1.5 weather model. The headline is not simply that AI can produce another weather forecast. Aurora can now produce a range of plausible outcomes, attach probabilities to them, and update at hourly resolution. That turns weather from a number on a screen into an input for an operating decision.</p>
+
+      <p>Microsoft <a href="https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/" target="_blank" rel="noopener noreferrer">released Aurora 1.5 on July 9</a> as an open-source model, with checkpoints available through Hugging Face and access through Microsoft Foundry. The update expands Aurora from four weather variables to 26. It adds fields for wind, temperature, humidity, precipitation, radiation, and other conditions that matter across energy, agriculture, transportation, and climate planning.</p>
+
+      <p>The ensemble capability is the bigger business story. Traditional deterministic output gives one expected path. An ensemble runs multiple simulations with controlled variations, creating a distribution of possible paths. A company can then plan against both the likely result and the uncertainty around it.</p>
+
+      <p>Consider a renewable energy operator. A single forecast might predict a certain amount of solar generation tomorrow afternoon. A range can show whether that estimate is tightly clustered or whether cloud uncertainty creates a meaningful chance of a shortfall. The operator can decide whether to buy backup power, hold battery capacity, or accept the risk. The forecast does not make the decision. It gives the decision a better price.</p>
+
+      <p>Microsoft says Aurora 1.5 outperformed the European Centre for Medium-Range Weather Forecasts ensemble on 88.9% of the variable and lead-time targets it evaluated. Across tropical cyclones in 2024 and 2025, Microsoft reports that the ensemble median reduced track error by roughly one-third compared with the original Aurora by day five.</p>
+
+      <p>Those results are strong, but they need the right boundary. The tropical cyclone result measures track position, not every consequence of a storm. The broader evaluation comes from the team releasing the model. Open weights and checkpoints make independent testing possible, which matters more than treating one benchmark as a finished verdict.</p>
+
+      <p>Independent research already shows why that testing is necessary. A <a href="https://arxiv.org/abs/2603.06516" target="_blank" rel="noopener noreferrer">March study of Aurora and extreme weather</a> found strong skill across several event types at one to seven days. At 14 to 21 days, the model often kept the large weather pattern while losing the intensity of threshold-based extremes. In plain English, it could still see the setup while smoothing away how severe the event might become.</p>
+
+      <p>That is not a reason to dismiss the model. It is a reason to match the decision to the forecast horizon. A logistics team rerouting trucks tomorrow is making a different bet from an insurer estimating regional exposure three weeks out. Both can use AI weather intelligence, but they should not use the same confidence threshold or fallback plan.</p>
+
+      <p>Microsoft is also making a deliberate open-plus-managed move. Researchers and companies can inspect and adapt Aurora 1.5 themselves. Microsoft Weather is offering the data, cloud infrastructure, integrations, and operational support needed to put it into production. The open model expands the developer base. The managed path creates the commercial product.</p>
+
+      <p>Sridhar Iyer of Microsoft AI called the release "a meaningful step toward making weather foundation models more open, useful, and practical." Doug McNeall of the UK Met Office called Aurora "a great platform for learning how to translate these tools for use in climate projection." Both descriptions are careful. This is a platform to test and apply, not permission to remove meteorologists or established physics-based systems from the process.</p>
+
+      <p>That distinction will matter in procurement. A buyer should ask which historical periods and regions were used for evaluation, how forecast uncertainty is calibrated, when the model falls back to another system, and who is accountable when the outputs disagree. It should also measure the cost of acting too early against the cost of waiting. Better forecast skill only creates value when it changes a real decision.</p>
+
+      <p>BKW, a Swiss energy company, is an early example. Microsoft says BKW is using Aurora 1.5 alongside existing operational weather models to manage renewable generation and infrastructure planning. The phrase "alongside" is important. Weather is too consequential for a clean replacement story. The practical path is comparison, calibration, and then a measured increase in trust.</p>
+
+      <p>This fits the work I think about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because uncertainty is often where a workflow becomes real. A dashboard that says rain is likely is information. A system that shows the range, connects it to inventory or capacity, and defines the action threshold is an operating tool.</p>
+
+      <p>Aurora 1.5 will matter if companies stop asking it for one confident answer and start using it to make better bets. For a solar farm, port, farm, insurer, or emergency planner, the most valuable forecast may be the one that admits several futures and makes the cost of each one visible.</p>
+    `
+  },
   post69: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1653,6 +1691,7 @@ POST_ORDER.unshift('post66');
 POST_ORDER.unshift('post67');
 POST_ORDER.unshift('post68');
 POST_ORDER.unshift('post69');
+POST_ORDER.unshift('post70');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
