@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post59: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: 'Crusoe is selling an exit door with its AI cloud',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post59-hero.jpg',
+    body: `
+      <p><a href="https://www.globenewswire.com/news-release/2026/07/07/3323398/0/en/Crusoe-Launches-Serverless-Fine-Tuning-and-Self-Serve-Inference-Deployments-Accelerating-Open-Model-Development-From-Experiment-to-Production.html" target="_blank" rel="noopener noreferrer">Crusoe launched serverless fine-tuning and self-serve inference on July 7</a>. The interesting part is not that another cloud can customize an open model. It is that Crusoe is trying to make the managed experience easier without taking ownership of the model away from the customer.</p>
+
+      <p>That is a real tension in AI infrastructure. Teams want somebody else to handle failed hardware, idle clusters, restarts, and deployment plumbing. They do not want that convenience to turn into a permanent dependency on one provider.</p>
+
+      <p>Crusoe's answer is portability. A team can choose an open-weight model, upload its own data, run a tuning job, and receive the finished weights in the portable .safetensors format. It can deploy those weights inside Crusoe with one click or download them and run them somewhere else.</p>
+
+      <p>Erwan Menard, Crusoe Cloud's senior vice president of product, put the pitch clearly: "You shouldn't have to choose between a managed experience and ownership of your model." That is the strongest part of the announcement. The exit door is part of the product.</p>
+
+      <p>The pricing model is just as important. Fine-tuning is billed by the million tokens processed, and billing stops when the model stops improving. Production inference is billed by GPU hour. Those are different meters for different stages of the work, which gives a team a cleaner way to separate experimentation from a steady production workload.</p>
+
+      <p>Cleaner does not mean automatically cheaper. Token billing removes the need to reserve a training cluster, but a team still has to know how often it will tune, how large the data set is, and whether each new version creates enough value to justify another run. GPU-hour pricing is predictable only when demand is predictable.</p>
+
+      <p>The customer quote in the release gets to the practical goal. AI researchers at StackOne said they expect to use the service to "optimize the latency and cost of our AI agents as we scale our infrastructure." That is the test. A custom model is only useful if it improves the operating math after it reaches production.</p>
+
+      <p>There is also a governance benefit hiding in the technical details. Crusoe says every tuned artifact can be traced back to the exact data and configuration that produced it. That kind of lineage matters when a company needs to explain why one model version behaves differently from another, or prove which data went into a release.</p>
+
+      <p>I like the direction because it treats model ownership as leverage, not a developer preference. Managed infrastructure can save time. Portable weights keep the provider honest. Clear lineage makes the work easier to govern. The buyer still has to test whether the promised convenience holds up under real usage, but at least the tradeoff is visible.</p>
+
+      <p>That is the business question I would keep in front of the technical one. Who owns the model, what makes the bill move, and how hard is it to leave? Those are the practical AI operating questions I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Crusoe is making a useful bet that customers will pay for convenience when control stays with them.</p>
+    `
+  },
   post58: {
     featured: false,
     date: 'July 11, 2026',
@@ -1312,7 +1342,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

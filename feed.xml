@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 05:31:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 05:44:09 GMT</lastBuildDate>
+    <item>
+      <title>Crusoe is selling an exit door with its AI cloud</title>
+      <link>https://samcbarth.github.io/aisite/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Crusoe launched serverless fine-tuning and self-serve inference on July 7 . The interesting part is not that another cloud can customize an open model. It is that Crusoe is trying to make the managed experience easier without taking ownership of the model away from the customer. </description>
+    </item>
     <item>
       <title>Lumen is buying control of the AI network</title>
       <link>https://samcbarth.github.io/aisite/posts/lumen-is-buying-control-of-the-ai-network/</link>

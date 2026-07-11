@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post59: 'Crusoe matters because managed AI infrastructure is becoming a buying decision about ownership, variable cost, portability, and governance.',
     post58: 'Lumen and Alkira matter because AI networking is becoming a control problem across clouds, data centers, security policies, and physical fiber.',
     post56: 'Microsoft\'s Cobalt 200 matters because cloud buying is turning into a price-performance problem for agentic AI workloads.',
     post55: 'Cloudflare\'s Meerkat matters because global consensus is turning reliability, failover, and control-plane cost into a business problem.',
@@ -221,6 +222,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post59: {
+      image: 'assets/images/post59-inline.jpg',
+      caption: 'The useful product is a simpler path from custom data to a model a team still owns.',
+      side: 'left',
+      after: 3,
+      supportImage: 'assets/images/post59-support.jpg',
+      supportCaption: 'Ownership and cost have to stay clear when an experiment becomes an operating system.'
+    },
     post58: {
       image: 'assets/images/post58-inline.jpg',
       caption: 'The customer needs one clear view across a network that spans many systems.',
@@ -484,6 +493,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    crusoeManagedOwnership: {
+      text: "You shouldn't have to choose between a managed experience and ownership of your model.",
+      source: 'Erwan Menard, Crusoe Cloud',
+      sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/07/3323398/0/en/Crusoe-Launches-Serverless-Fine-Tuning-and-Self-Serve-Inference-Deployments-Accelerating-Open-Model-Development-From-Experiment-to-Production.html'
+    },
+    stackOneLatencyCost: {
+      text: 'optimize the latency and cost of our AI agents as we scale our infrastructure',
+      source: 'StackOne AI researchers',
+      sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/07/3323398/0/en/Crusoe-Launches-Serverless-Fine-Tuning-and-Self-Serve-Inference-Deployments-Accelerating-Open-Model-Development-From-Experiment-to-Production.html'
+    },
     lumenSimplerNetworks: {
       text: 'make complex environments simpler for customers',
       source: 'Kate Johnson, Lumen CEO',
@@ -884,6 +903,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post59: { after: 4, quotes: [makeQuote('Ownership', QUOTE_LIBRARY.crusoeManagedOwnership), makeQuote('Customer goal', QUOTE_LIBRARY.stackOneLatencyCost)] },
     post58: { after: 4, quotes: [makeQuote('Customer promise', QUOTE_LIBRARY.lumenSimplerNetworks), makeQuote('Market view', QUOTE_LIBRARY.gartnerLumenLeadership)] },
     post57: { after: 3, quotes: [makeQuote('AI-native', QUOTE_LIBRARY.deutscheTelekomAInative), makeQuote('Customer AI', QUOTE_LIBRARY.deutscheTelekomPrivacyFirst)] },
     post56: { after: 3, quotes: [makeQuote('System', QUOTE_LIBRARY.microsoftBuildSystemRuns), makeQuote('Performance', QUOTE_LIBRARY.cobalt50PercentBetter), makeQuote('Agents', QUOTE_LIBRARY.cobaltAgentsUnique)] },
