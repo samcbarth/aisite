@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 03:09:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 04:13:39 GMT</lastBuildDate>
+    <item>
+      <title>Microsoft&apos;s Cobalt 200 is really a cloud economics story</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft&apos;s Cobalt 200 is not just another chip announcement. It is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again. Microsoft says &quot;AI alone won’t change your business. The system running it will.&quot; That is the right frame. The system no</description>
+    </item>
     <item>
       <title>Cloudflare&apos;s Meerkat is really a control-plane story</title>
       <link>https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</link>

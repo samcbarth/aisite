@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post56: 'Microsoft\'s Cobalt 200 matters because cloud buying is turning into a price-performance problem for agentic AI workloads.',
     post55: 'Cloudflare\'s Meerkat matters because global consensus is turning reliability, failover, and control-plane cost into a business problem.',
     post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
     post54: 'Microsoft\'s annual cloud pricing update matters because cloud spend is turning into a budget and renewal planning problem, not just a currency line item.',
@@ -219,6 +220,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post56: {
+      image: 'assets/images/post56-inline.jpg',
+      caption: 'Agentic AI changes the compute stack, not just the model layer.',
+      side: 'right',
+      after: 2,
+      supportImage: 'assets/images/post45-support.jpg',
+      supportCaption: 'The finance question still decides how far the stack can scale.'
+    },
     post55: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Virginia_Tech_-_data_center.jpg',
       caption: 'Consensus only matters when the network can keep moving through real failures.',
@@ -803,6 +812,21 @@ function copyRecursive(src, dest) {
       source: 'Microsoft Source',
       sourceUrl: 'https://news.microsoft.com/source/2026/07/08/microsoft-announces-moving-to-annual-local-currency-pricing-updates-for-commercial-cloud-services-every-january/'
     },
+    microsoftBuildSystemRuns: {
+      text: 'AI alone won’t change your business. The system running it will.',
+      source: 'Microsoft Build 2026',
+      sourceUrl: 'https://news.microsoft.com/build-2026/'
+    },
+    cobalt50PercentBetter: {
+      text: 'up to 50% better generational performance',
+      source: 'Microsoft Azure Blog',
+      sourceUrl: 'https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/'
+    },
+    cobaltAgentsUnique: {
+      text: 'agents are unique from traditional workloads',
+      source: 'Microsoft Azure Blog',
+      sourceUrl: 'https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/'
+    },
     restaurantWorldCup: {
       text: 'You can\'t top American restaurants for amazing food and fantastic places to gather.',
       source: 'Michelle Korsmo, National Restaurant Association',
@@ -823,6 +847,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post56: { after: 3, quotes: [makeQuote('System', QUOTE_LIBRARY.microsoftBuildSystemRuns), makeQuote('Performance', QUOTE_LIBRARY.cobalt50PercentBetter), makeQuote('Agents', QUOTE_LIBRARY.cobaltAgentsUnique)] },
     post55: { after: 3, quotes: [makeQuote('Writes', QUOTE_LIBRARY.meerkatWritesAtAllTimes), makeQuote('Timeouts', QUOTE_LIBRARY.meerkatNoTimeoutHalt)] },
     post53: { after: 3, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Rules', QUOTE_LIBRARY.albertaBringYourOwnPower)] },
     post54: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },

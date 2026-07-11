@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post56: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Microsoft's Cobalt 200 is really a cloud economics story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post56-hero.jpg',
+    body: `
+      <p>Microsoft's Cobalt 200 is not just another chip announcement. It is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again.</p>
+
+      <p><a href="https://news.microsoft.com/build-2026/" target="_blank" rel="noopener noreferrer">Microsoft says</a> "AI alone won’t change your business. The system running it will." That is the right frame. The system now includes the CPUs, the servers, the networking, and the workflow that keeps agents busy.</p>
+
+      <p><a href="https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/" target="_blank" rel="noopener noreferrer">Azure says</a> the new Arm-based VMs are built for scale-out, cloud-native, Linux-based agentic AI workloads, and they offer "up to 50% better generational performance over Cobalt 100." That is a pricing story hiding inside a hardware story.</p>
+
+      <p>The detail I keep coming back to is Microsoft’s line that "agents are unique from traditional workloads." That is useful because the work does not behave like a normal request-response app. If agents reason, make sequential decisions, and run continuously at scale, the infrastructure has to be built for that pattern too.</p>
+
+      <p>My read is simple. The companies that win here will not just ask what model to buy. They will ask what the work costs per run, what the infra costs per hour, and whether the stack can stay boring as usage grows. That is the part I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI only matters when the operating math works.</p>
+    `
+  },
   post55: {
     featured: false,
     date: 'July 10, 2026',
@@ -1246,7 +1266,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
