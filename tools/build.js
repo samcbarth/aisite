@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post61: 'Microsoft\'s Work Trend Index matters because AI value now depends on redesigning work, not just adding tools.',
     post60: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post59: 'Crusoe matters because managed AI infrastructure is becoming a buying decision about ownership, variable cost, portability, and governance.',
     post58: 'Lumen and Alkira matter because AI networking is becoming a control problem across clouds, data centers, security policies, and physical fiber.',
@@ -223,6 +224,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post61: {
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=900&h=650&fit=crop&q=80',
+      caption: 'The real gain is redesigning the work, not adding another tool.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Leadership alignment is what turns adoption into output.'
+    },
     post60: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Data_centers_in_Ashburn.jpg',
       caption: 'The software story is still tied to the physical stack underneath it.',
@@ -502,6 +511,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    swissWorkflowRedesign: {
+      text: 'the ones willing to redesign how work itself is organized.',
+      source: 'Microsoft Source EMEA',
+      sourceUrl: 'https://news.microsoft.com/source/emea/2026/07/swiss-ai-users-outperform-global-peers-on-productivity/'
+    },
+    swissHumanJudgment: {
+      text: 'AI can accelerate execution, but human judgment remains critical.',
+      source: 'Catrin Hinkel, Microsoft Switzerland',
+      sourceUrl: 'https://news.microsoft.com/source/emea/2026/07/swiss-ai-users-outperform-global-peers-on-productivity/'
+    },
     crusoeManagedOwnership: {
       text: "You shouldn't have to choose between a managed experience and ownership of your model.",
       source: 'Erwan Menard, Crusoe Cloud',
@@ -917,6 +936,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post61: { after: 3, quotes: [makeQuote('Redesign', QUOTE_LIBRARY.swissWorkflowRedesign), makeQuote('Judgment', QUOTE_LIBRARY.swissHumanJudgment)] },
     post60: { after: 3, quotes: [makeQuote('Assistant', QUOTE_LIBRARY.ibmBobBetterAssistant), makeQuote('Repeat', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post59: { after: 4, quotes: [makeQuote('Ownership', QUOTE_LIBRARY.crusoeManagedOwnership), makeQuote('Customer goal', QUOTE_LIBRARY.stackOneLatencyCost)] },
     post58: { after: 4, quotes: [makeQuote('Customer promise', QUOTE_LIBRARY.lumenSimplerNetworks), makeQuote('Market view', QUOTE_LIBRARY.gartnerLumenLeadership)] },

@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 06:00:19 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 06:08:31 GMT</lastBuildDate>
+    <item>
+      <title>Microsoft&apos;s AI report is really a workflow redesign story</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft&apos;s July 9 Swiss AI note and the linked 2026 Work Trend Index Annual Report say the same thing in different words. AI value does not come from stacking on more tools. It comes from changing how work gets done. The numbers are the useful part. 65% of Swiss AI users say the</description>
+    </item>
     <item>
       <title>IBM Bob is the workflow control story</title>
       <link>https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-workflow-control-story/</link>

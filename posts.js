@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post61: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: "Microsoft's AI report is really a workflow redesign story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p><a href="https://news.microsoft.com/source/emea/2026/07/swiss-ai-users-outperform-global-peers-on-productivity/" target="_blank" rel="noopener noreferrer">Microsoft's July 9 Swiss AI note</a> and the linked <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization" target="_blank" rel="noopener noreferrer">2026 Work Trend Index Annual Report</a> say the same thing in different words. AI value does not come from stacking on more tools. It comes from changing how work gets done.</p>
+
+      <p>The numbers are the useful part. 65% of Swiss AI users say they can now do work they could not do a year ago, versus 58% globally. Among Frontier Professionals, that jumps to 83%. That is real progress, but it is not automatic.</p>
+
+      <p>The gap is leadership. Only 24% of Swiss AI users say leadership is clearly and consistently aligned on AI. That is where a lot of these projects stall. If the team is still using old approvals, old handoffs, and old ownership, the tool just speeds up the mess.</p>
+
+      <p>Microsoft's own framing is blunt, and it is the right one. The work has to be redesigned, and human judgment still has to sit at the center of it. That is the part a lot of companies want to skip.</p>
+
+      <p>My read is simple. The teams that win will not be the ones with the most copilots on the shelf. They will be the ones that clean up the operating model so AI can actually move the work forward. That is the business question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+    `
+  },
   post60: {
     featured: false,
     date: 'July 11, 2026',
@@ -1364,7 +1384,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post61', 'post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
