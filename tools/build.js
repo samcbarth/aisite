@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post64: {
+      image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=900&h=650&fit=crop&q=80',
+      caption: 'Moving past a pilot means connecting strategy, validation, governance, and daily operations.', side: 'left', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The $6 million engagement will be judged by the business capacity it creates, not the number of use cases launched.'
+    },
     post63: {
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=650&fit=crop&q=80',
       caption: 'Rackspace is moving away from lower-margin resale toward infrastructure it can operate and govern.', side: 'right', after: 4,
@@ -525,6 +531,8 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    presidioDoneExperimenting: { text: 'done experimenting with AI', source: 'Bob Cagnazzi, Presidio', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html' },
+    presidioOperatingRedesign: { text: 'an operating model redesign, not a technology project', source: 'Rob Kim, Presidio', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html' },
     rackspaceExpediteStrategy: { text: 'expedite our AI Enterprise strategy', source: 'Gajen Kandiah, Rackspace Technology', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html' },
     apolloNextPhase: { text: 'the right steps to fund its next phase of growth', source: 'Aaron Sobel, Apollo Global Management', sourceUrl: 'https://www.globenewswire.com/news-release/2026/07/09/3324723/0/en/Rackspace-Technology-Announces-Plans-to-Accelerate-Enterprise-AI-Growth-Vector-Provides-Preliminary-2Q26-Results-and-Updates-FY26-Outlook.html' },
     microsoftEmbeddingEngineers: {
@@ -962,6 +970,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post64: { after: 6, quotes: [makeQuote('Customer stage', QUOTE_LIBRARY.presidioDoneExperimenting), makeQuote('Scope of change', QUOTE_LIBRARY.presidioOperatingRedesign)] },
     post63: { after: 6, quotes: [makeQuote('Capital plan', QUOTE_LIBRARY.rackspaceExpediteStrategy), makeQuote('Investor view', QUOTE_LIBRARY.apolloNextPhase)] },
     post62: { after: 4, quotes: [makeQuote('Delivery model', QUOTE_LIBRARY.microsoftEmbeddingEngineers), makeQuote('Combined skills', QUOTE_LIBRARY.microsoftFrontierSkills)] },
     post61: { after: 3, quotes: [makeQuote('Redesign', QUOTE_LIBRARY.swissWorkflowRedesign), makeQuote('Judgment', QUOTE_LIBRARY.swissHumanJudgment)] },

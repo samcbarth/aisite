@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post64: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Presidio has put a $6 million price tag on escaping AI pilot mode',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>What does it actually cost to move a company beyond AI pilots? Presidio just gave us one answer: 18 months and $6 million for a large investment firm.</p>
+
+      <p>That number is more interesting than the usual promise that a new framework will help companies scale AI. It turns an abstract transformation into a real consulting engagement, with more than 25 back-office use cases and a stated goal of helping the client add $10 billion in assets under management without adding headcount.</p>
+
+      <p>Presidio disclosed the project in its <a href="https://www.globenewswire.com/news-release/2026/07/09/3325086/0/en/Presidio-Addresses-AI-Value-Paradox-with-New-Investments-Dedicated-AI-Consulting-Group-AI-Blueprint-and-Innovation-Lab.html" target="_blank" rel="noopener noreferrer">July 9 announcement</a> of its largest AI investment to date. The company is launching a dedicated consulting group called Lighthouse, formalizing an AI Blueprint, and expanding the role of its P.A.T.H. validation lab.</p>
+
+      <p>Together, those pieces create a clear commercial offer. Presidio can help decide which use cases matter, build and test them, then stay involved through governance, monitoring, compliance, and managed services. This is not a software license. It is a long-term services relationship built around getting AI into production and keeping it there.</p>
+
+      <p>The timing makes sense. A <a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/where-ai-will-create-value-and-where-it-wont" target="_blank" rel="noopener noreferrer">McKinsey analysis published in April</a> said nearly nine out of ten surveyed companies had deployed AI in at least one business function by the end of 2025, while 94% reported that they were not seeing significant value. Adoption is not the scarce thing anymore. Turning adoption into operating results is.</p>
+
+      <p>Presidio has organized its method into three stages: clarify, realize, and scale. Clarify connects the AI plan to business value and governance. Realize is where teams build and validate production-ready systems. Scale covers monitoring, regulatory compliance, agent operations, and continuous improvement.</p>
+
+      <p>The names are simple. The handoffs are not. A company can identify a strong use case and still fail because its data cannot support it, the security team gets involved too late, nobody owns the new workflow, or the pilot depends on people and tools that cannot survive a production rollout. Presidio is selling one accountable path across those gaps.</p>
+
+      <p>CEO Bob Cagnazzi said customers are "done experimenting with AI." CTO Rob Kim described the change as "an operating model redesign, not a technology project." Those statements explain why Presidio is investing in consulting and validation at the same time. The company is betting that the hard part has shifted from showing what AI can do to changing the business around it.</p>
+
+      <p>There is some evidence behind the offer. Presidio says its own employees use an internal agent platform in a governed environment, giving the company direct experience with testing and adoption. Its P.A.T.H. lab, <a href="https://www.presidio.com/news/presidio-launches-new-ai-technology-hub-to-spark-enterprise-innovation-and-transformation/" target="_blank" rel="noopener noreferrer">introduced in 2025</a>, combines Cisco compute and networking, NVIDIA software and GPUs, Vertiv power systems, cloud capacity, and private deployment options. Customers can test an architecture before committing it to their own environment.</p>
+
+      <p>That is useful, but the proof still needs scrutiny. Presidio did not name the investment firm in the $6 million engagement, publish a baseline for the 25 use cases, or say how much of the $10 billion growth target has been reached. The goal may be credible. It is not yet a verified result.</p>
+
+      <p>The headcount claim also deserves a careful reading. Growing assets without adding employees does not mean the system removes all human work. It means Presidio and the client expect automation to absorb more volume while people manage exceptions, judgment, client relationships, controls, and the workflows around the agents. That can improve the operating model, but only if the work is measured beyond hours saved.</p>
+
+      <p>For buyers, the better questions are specific. Which business metric changes? Who owns the process after launch? How are errors found? What happens when a model, vendor, policy, or data source changes? How much of the work becomes reusable, and how much remains custom consulting?</p>
+
+      <p>Those are the same implementation questions I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>, especially when a technology project crosses sales, operations, data, and governance. Presidio now has a neat structure for answering them. The investment-firm engagement will tell us whether that structure can do more than organize a pilot. If the client reaches meaningful progress toward $10 billion in new assets without matching headcount growth, Presidio will have a case study worth much more than another AI blueprint.</p>
+    `
+  },
   post63: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1441,6 +1475,7 @@ const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 POST_ORDER.unshift('post63');
+POST_ORDER.unshift('post64');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
