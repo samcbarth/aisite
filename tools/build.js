@@ -224,6 +224,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post67: {
+      image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&h=650&fit=crop&q=80',
+      caption: 'MSPs need customer separation and one operating view across every environment they protect.', side: 'right', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The acquisition works if identity policy becomes easier to operate across a large partner customer base.'
+    },
     post66: {
       image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&h=650&fit=crop&q=80',
       caption: 'The browser now sits between sensitive business data and a growing set of AI tools.', side: 'left', after: 4,
@@ -543,6 +549,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    barracudaMspScale: {
+      text: 'fail to meet the needs of MSPs that must scale to securely manage millions of identities across thousands of customer environments',
+      source: 'Barracuda Networks',
+      sourceUrl: 'https://www.barracuda.com/company/news/2026/barracuda-acquires-evo-security-complete-identity-resilience'
+    },
+    evoMspOperations: {
+      text: 'designed from day one for MSP operations',
+      source: 'Evo Security',
+      sourceUrl: 'https://www.evosecurity.com/blog/barracuda-acquires-evo-security'
+    },
     akamaiControlsCannotSee: { text: 'cannot see how employees are interacting with AI tools', source: 'Mani Sundaram, Akamai', sourceUrl: 'https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control' },
     layerxDefiningChallenge: { text: 'one of the defining challenges in enterprise security', source: 'Or Eshed, LayerX', sourceUrl: 'https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control' },
     wbdPlanAcrossBoth: { text: 'the fluidity to plan, package, and optimize across both', source: 'Dr. Nage Sethu, Warner Bros. Discovery', sourceUrl: 'https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider' },
@@ -986,6 +1002,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post67: { after: 5, quotes: [makeQuote('Scale problem', QUOTE_LIBRARY.barracudaMspScale), makeQuote('Product design', QUOTE_LIBRARY.evoMspOperations)] },
     post66: { after: 5, quotes: [makeQuote('Visibility gap', QUOTE_LIBRARY.akamaiControlsCannotSee), makeQuote('Security problem', QUOTE_LIBRARY.layerxDefiningChallenge)] },
     post65: { after: 5, quotes: [makeQuote('WBD goal', QUOTE_LIBRARY.wbdPlanAcrossBoth), makeQuote('AWS view', QUOTE_LIBRARY.awsBetterOutcomes)] },
     post64: { after: 6, quotes: [makeQuote('Customer stage', QUOTE_LIBRARY.presidioDoneExperimenting), makeQuote('Scope of change', QUOTE_LIBRARY.presidioOperatingRedesign)] },

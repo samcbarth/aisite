@@ -7,6 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post67: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'One identity console could change the economics of managed security',
+    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>A managed service provider does not have one identity system to protect. It may have hundreds, spread across customers with different tools, rules, users, and risk levels. Every extra console adds another login, another alert queue, and another place for a small mistake to become a large problem.</p>
+
+      <p>That is the operating problem behind <a href="https://www.barracuda.com/company/news/2026/barracuda-acquires-evo-security-complete-identity-resilience" target="_blank" rel="noopener noreferrer">Barracuda's acquisition of Evo Security</a>. The deal was announced July 7. Financial terms were not disclosed, which makes this less of a valuation story and more of a product strategy story. Barracuda is buying identity and privileged access technology built specifically for the people managing security across many separate businesses.</p>
+
+      <p>Evo combines identity and access management with privileged access management in one multi-tenant platform. In plain English, an MSP can control who gets into a customer environment, what an administrator can do after getting in, and how that access is reviewed without treating every customer like a separate internal IT department.</p>
+
+      <p>That multi-tenant design is the key. Large enterprise identity products can be powerful, but they are usually built around one organization. An MSP needs separation between customers and one operating view across them. It needs to apply a policy to 100 clients without mixing their data, then make an exception for one client without breaking the other 99.</p>
+
+      <p>Barracuda plans to put Evo inside BarracudaONE, its broader platform for email, data, network, cloud, and managed detection security. That gives partners a path to manage access control, privileged accounts, identity protection, and identity threat response beside the other security work they already sell.</p>
+
+      <p>Barracuda CEO Rohit Ghai said existing identity products "fail to meet the needs of MSPs that must scale to securely manage millions of identities across thousands of customer environments." Evo founder Michael Roth described the product as "designed from day one for MSP operations." Both quotes are acquisition messaging, but the distinction is real. A tool can have the right security features and still have the wrong operating model.</p>
+
+      <p>The immediate business case is fewer disconnected products. Every point solution has a license, an integration, a training requirement, and a support burden. Consolidation can reduce that overhead. It can also give the MSP a clearer service to package and sell: identity controls, privileged access, and threat monitoring managed from one place.</p>
+
+      <p>There is a revenue argument too. Barracuda already has a channel of managed service providers selling its products. Evo adds a new identity layer those partners can take into existing accounts. The MSP does not have to find a new customer before it can create new recurring revenue. It can expand the security program around customers it already supports.</p>
+
+      <p>The risk is that platform consolidation can hide weak integration. One invoice and one dashboard do not automatically create one useful workflow. Alerts still need consistent context. Policies need to move cleanly between access, email, endpoint, and response tools. If an identity signal appears in BarracudaONE but still requires three separate investigations, the platform has consolidated the screen, not the work.</p>
+
+      <p>Barracuda also has to preserve what made Evo useful to MSPs. Acquisitions often pull a focused product toward the parent company's broader roadmap. Existing Evo customers will watch pricing, support, integrations, and product pace. The promise is more scale without losing the partner-first design. That balance will matter more than how quickly the Evo logo disappears.</p>
+
+      <p>The threat data supports the need for a wider view, but it also adds an important warning. <a href="https://www.verizon.com/about/news/breach-industry-wide-dbir-finds" target="_blank" rel="noopener noreferrer">Verizon's 2026 Data Breach Investigations Report summary</a> says exploitation of vulnerabilities passed stolen credentials as the leading initial breach route for the first time in the report's 19-year history. Third-party involvement also rose sharply. Identity still matters, but it cannot become the only control an MSP sells while exposed software and supplier access keep opening other doors.</p>
+
+      <p>AI makes the identity model wider again. Companies now have human users, service accounts, API keys, bots, and agents that may act across several systems. Barracuda calls these human and non-human identities. The useful question is not whether an agent has a login. It is who authorized it, what it can reach, how long that authority lasts, and whether the MSP can explain its actions after something goes wrong.</p>
+
+      <p>That connects directly to the operating work I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Access rules only help when ownership and handoffs are clear. If nobody owns the privileged account, the exception process, or the response after a risky login, more automation just moves the confusion faster.</p>
+
+      <p>Barracuda did not disclose what it paid for Evo, so the clearest way to judge this deal will be inside the MSP's day. If one technician can protect more customers without losing separation or context, the acquisition improves the economics of managed security. If BarracudaONE becomes one more place to check before opening the same old consoles, it has bought features without removing the real cost.</p>
+    `
+  },
   post66: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -1544,6 +1580,7 @@ POST_ORDER.unshift('post63');
 POST_ORDER.unshift('post64');
 POST_ORDER.unshift('post65');
 POST_ORDER.unshift('post66');
+POST_ORDER.unshift('post67');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

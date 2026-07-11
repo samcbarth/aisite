@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 11:03:24 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 12:02:34 GMT</lastBuildDate>
+    <item>
+      <title>One identity console could change the economics of managed security</title>
+      <link>https://samcbarth.github.io/aisite/posts/one-identity-console-could-change-the-economics-of-managed-security/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/one-identity-console-could-change-the-economics-of-managed-security/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cybersecurity</category>
+      <description>A managed service provider does not have one identity system to protect. It may have hundreds, spread across customers with different tools, rules, users, and risk levels. Every extra console adds another login, another alert queue, and another place for a small mistake to become</description>
+    </item>
     <item>
       <title>Akamai paid $205 million to put AI policy inside the browser</title>
       <link>https://samcbarth.github.io/aisite/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</link>
