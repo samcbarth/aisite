@@ -7,6 +7,34 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post58: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: 'Lumen is buying control of the AI network',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Cabinet_Network_Fiber_Open.jpg',
+    body: `
+      <p><a href="https://ir.lumen.com/news/news-details/2026/Lumen-Completes-Alkira-Acquisition-Accelerating-Its-Unified-Digital-Platform-for-AI-Era-Networking/default.aspx" target="_blank" rel="noopener noreferrer">Lumen completed its acquisition of Alkira on July 7</a>. The useful part is not another company attaching AI to a press release. Lumen owns a large fiber network. Alkira gives it software that can control how traffic moves across clouds, data centers, partners, and AI workloads.</p>
+
+      <p>That combination matters because enterprise infrastructure is getting harder to see and slower to change. A company might have private circuits from one provider, workloads in several clouds, security rules in another system, and an AI project pulling data across all of it. Every handoff adds another place for cost, delay, or risk to hide.</p>
+
+      <p>Lumen says the combined platform will let customers apply consistent security policies, improve visibility, and cut manual provisioning. CEO Kate Johnson described the goal as making "complex environments simpler for customers." That is the right promise. The network should feel like one operating layer even when the infrastructure underneath it is spread everywhere.</p>
+
+      <p>The acquisition also gives Lumen a better product story. Fiber alone can look like a commodity. A control plane that lets a customer build, change, and monitor connections on demand gives Lumen something more valuable to sell on top of that fiber. It moves the company closer to cloud-style consumption for networking, where the customer buys an outcome instead of waiting on a chain of tickets.</p>
+
+      <p>That changes the sales motion too. Network deals have traditionally been shaped by locations, circuits, term lengths, and installation dates. A programmable layer creates room to sell speed, visibility, and policy control as ongoing value. If Lumen can make changes easier after the initial install, it has a better chance of turning a fixed connectivity contract into a broader operating relationship.</p>
+
+      <p>There is a real integration test ahead. Lumen says Alkira is expected to become part of Lumen Connect, bringing its multi-cloud gateway, cloud on-ramps, and other connectivity into one experience. Expected is doing work in that sentence. The value only shows up if customers can manage the combined product without inheriting another portal, another contract layer, and another set of exceptions.</p>
+
+      <p>The outside signal is useful too. Lumen cites Gartner's June assessment that the combination "strengthens its ability to extend its leadership into enterprise AI WAN and connectivity services." That does not prove execution, but it explains why Lumen made the deal. AI workloads create more traffic across more locations, and the company wants to own both the physical path and the software that programs it.</p>
+
+      <p>Customers should still keep one eye on lock-in. A single control layer can remove a lot of friction, but it can also make the provider harder to replace. The best version of this deal gives teams one view without taking away their choice of cloud, carrier, or security tool. Alkira's carrier-agnostic design is important for that reason. Lumen needs to preserve it while connecting the software to its own network.</p>
+
+      <p>My takeaway is that the control point is moving. AI infrastructure is not only about models, chips, and data centers. It is also about who can move the data, enforce the rules, and show the customer what is happening without slowing the work down. That is the practical systems question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Lumen has bought a stronger position. Now it has to make the network feel like one product.</p>
+    `
+  },
   post57: {
     featured: false,
     date: 'July 11, 2026',
@@ -1284,7 +1312,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

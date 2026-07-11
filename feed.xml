@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 05:12:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 05:27:56 GMT</lastBuildDate>
+    <item>
+      <title>Lumen is buying control of the AI network</title>
+      <link>https://samcbarth.github.io/aisite/posts/lumen-is-buying-control-of-the-ai-network/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/lumen-is-buying-control-of-the-ai-network/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Lumen completed its acquisition of Alkira on July 7 . The useful part is not another company attaching AI to a press release. Lumen owns a large fiber network. Alkira gives it software that can control how traffic moves across clouds, data centers, partners, and AI workloads. Tha</description>
+    </item>
     <item>
       <title>Deutsche Telekom is the real AI-native story</title>
       <link>https://samcbarth.github.io/aisite/posts/deutsche-telekom-is-the-real-ai-native-story/</link>

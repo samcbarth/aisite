@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post58: 'Lumen and Alkira matter because AI networking is becoming a control problem across clouds, data centers, security policies, and physical fiber.',
     post56: 'Microsoft\'s Cobalt 200 matters because cloud buying is turning into a price-performance problem for agentic AI workloads.',
     post55: 'Cloudflare\'s Meerkat matters because global consensus is turning reliability, failover, and control-plane cost into a business problem.',
     post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
@@ -220,6 +221,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post58: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Batelco_Network_Operations_Centre_%28NOC%29.JPG',
+      caption: 'The customer needs one clear view across a network that spans many systems.',
+      side: 'right',
+      after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Azaleos_NOC.jpg',
+      supportCaption: 'The deal works only if software makes the physical network easier to operate.'
+    },
     post56: {
       image: 'assets/images/post56-inline.jpg',
       caption: 'Agentic AI changes the compute stack, not just the model layer.',
@@ -475,6 +484,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    lumenSimplerNetworks: {
+      text: 'make complex environments simpler for customers',
+      source: 'Kate Johnson, Lumen CEO',
+      sourceUrl: 'https://ir.lumen.com/news/news-details/2026/Lumen-Completes-Alkira-Acquisition-Accelerating-Its-Unified-Digital-Platform-for-AI-Era-Networking/default.aspx'
+    },
+    gartnerLumenLeadership: {
+      text: 'strengthens its ability to extend its leadership into enterprise AI WAN and connectivity services',
+      source: 'Gartner, cited by Lumen',
+      sourceUrl: 'https://ir.lumen.com/news/news-details/2026/Lumen-Completes-Alkira-Acquisition-Accelerating-Its-Unified-Digital-Platform-for-AI-Era-Networking/default.aspx'
+    },
     meerkatWritesAtAllTimes: {
       text: 'all replicas can perform writes at all times',
       source: 'Cloudflare Blog',
@@ -865,6 +884,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post58: { after: 4, quotes: [makeQuote('Customer promise', QUOTE_LIBRARY.lumenSimplerNetworks), makeQuote('Market view', QUOTE_LIBRARY.gartnerLumenLeadership)] },
     post57: { after: 3, quotes: [makeQuote('AI-native', QUOTE_LIBRARY.deutscheTelekomAInative), makeQuote('Customer AI', QUOTE_LIBRARY.deutscheTelekomPrivacyFirst)] },
     post56: { after: 3, quotes: [makeQuote('System', QUOTE_LIBRARY.microsoftBuildSystemRuns), makeQuote('Performance', QUOTE_LIBRARY.cobalt50PercentBetter), makeQuote('Agents', QUOTE_LIBRARY.cobaltAgentsUnique)] },
     post55: { after: 3, quotes: [makeQuote('Writes', QUOTE_LIBRARY.meerkatWritesAtAllTimes), makeQuote('Timeouts', QUOTE_LIBRARY.meerkatNoTimeoutHalt)] },
