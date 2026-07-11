@@ -7,6 +7,28 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post60: {
+    featured: false,
+    date: 'July 11, 2026',
+    iso: '2026-07-11',
+    title: 'IBM Bob is the workflow control story',
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mobile_developer_at_work_%28Unsplash%29.jpg',
+    body: `
+      <p><a href="https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows" target="_blank" rel="noopener noreferrer">IBM's July 9 Bob update</a> is not about a better autocomplete box. It is IBM trying to sell control over how enterprise software gets written, checked, and modernized.</p>
+
+      <p>The company says the bottleneck has moved from writing code to reviewing and validating it. That is the real shift. Once AI can draft fast, the value moves to orchestration, auditability, and the tools that keep the work from turning into a mess.</p>
+
+      <p>IBM is adding multi-agent capabilities, built-in cost and usage analytics, and prebuilt workflows for IBM Z, IBM i, and Java modernization. That matters because the hardest modernization work still lives inside old systems that companies cannot just replace. If Bob can make that work repeatable, IBM gets closer to owning the process, not just the prompt.</p>
+
+      <p>Neel Sundaresan, IBM's GM for Automation and AI, is saying the bar is no longer a better coding assistant. IBM's own Bob blog makes the same point a different way: the work has to keep repeating cleanly. Those two lines are the whole story.</p>
+
+      <p>Jack Henry says its developers can "accelerate RPG development workflows, improve code quality, and gain deeper insights into decades of accumulated system knowledge." Blue Pearl says a legacy modernization program that was supposed to take nine months with 14 engineers was finished in three days. I would treat that as a proof point, not a promise, but the direction is clear.</p>
+
+      <p>My read is simple. IBM is trying to turn AI development into something enterprises can measure, govern, and budget. That is the business question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The winner here is not the prettiest coding assistant. It is the one that makes legacy change less risky and less expensive.</p>
+    `
+  },
   post59: {
     featured: false,
     date: 'July 11, 2026',
@@ -1342,7 +1364,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {

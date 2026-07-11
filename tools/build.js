@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post60: 'IBM Bob matters because enterprise AI is moving from code generation to workflow control, modernization, and cost discipline inside the systems companies already own.',
     post59: 'Crusoe matters because managed AI infrastructure is becoming a buying decision about ownership, variable cost, portability, and governance.',
     post58: 'Lumen and Alkira matter because AI networking is becoming a control problem across clouds, data centers, security policies, and physical fiber.',
     post56: 'Microsoft\'s Cobalt 200 matters because cloud buying is turning into a price-performance problem for agentic AI workloads.',
@@ -222,6 +223,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post60: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Data_centers_in_Ashburn.jpg',
+      caption: 'The software story is still tied to the physical stack underneath it.',
+      side: 'left',
+      after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Minimalist_meeting_room_%28Unsplash%29.jpg',
+      supportCaption: 'Modernization gets real when the work can be discussed, reviewed, and approved.'
+    },
     post59: {
       image: 'assets/images/post59-inline.jpg',
       caption: 'The useful product is a simpler path from custom data to a model a team still owns.',
@@ -583,6 +592,11 @@ function copyRecursive(src, dest) {
       source: 'Dremio',
       sourceUrl: 'https://www.dremio.com/blog/sap-intends-to-acquire-dremio/'
     },
+    ibmBobBetterAssistant: {
+      text: 'The bar for enterprise AI is no longer a better coding assistant.',
+      source: 'IBM Newsroom',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows'
+    },
     ibmBobWorkflowsBackbone: {
       text: 'AI is good at open-ended problem-solving and bad at doing the same thing twice.',
       source: 'IBM Bob Blog',
@@ -903,6 +917,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post60: { after: 3, quotes: [makeQuote('Assistant', QUOTE_LIBRARY.ibmBobBetterAssistant), makeQuote('Repeat', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post59: { after: 4, quotes: [makeQuote('Ownership', QUOTE_LIBRARY.crusoeManagedOwnership), makeQuote('Customer goal', QUOTE_LIBRARY.stackOneLatencyCost)] },
     post58: { after: 4, quotes: [makeQuote('Customer promise', QUOTE_LIBRARY.lumenSimplerNetworks), makeQuote('Market view', QUOTE_LIBRARY.gartnerLumenLeadership)] },
     post57: { after: 3, quotes: [makeQuote('AI-native', QUOTE_LIBRARY.deutscheTelekomAInative), makeQuote('Customer AI', QUOTE_LIBRARY.deutscheTelekomPrivacyFirst)] },

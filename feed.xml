@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 05:44:09 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 06:00:19 GMT</lastBuildDate>
+    <item>
+      <title>IBM Bob is the workflow control story</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-workflow-control-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-workflow-control-story/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>IBM&apos;s July 9 Bob update is not about a better autocomplete box. It is IBM trying to sell control over how enterprise software gets written, checked, and modernized. The company says the bottleneck has moved from writing code to reviewing and validating it. That is the real shift.</description>
+    </item>
     <item>
       <title>Crusoe is selling an exit door with its AI cloud</title>
       <link>https://samcbarth.github.io/aisite/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</link>
