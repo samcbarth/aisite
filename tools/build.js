@@ -116,6 +116,7 @@ function copyRecursive(src, dest) {
   }
   const SAM_LINK = '<a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>';
   const CONTEXT_CLAUSES = {
+    post55: 'Cloudflare\'s Meerkat matters because global consensus is turning reliability, failover, and control-plane cost into a business problem.',
     post53: 'Meta\'s Alberta data center matters because AI infrastructure is turning into a power, permitting, and policy problem.',
     post54: 'Microsoft\'s annual cloud pricing update matters because cloud spend is turning into a budget and renewal planning problem, not just a currency line item.',
     post51: 'Meta\'s Muse Image matters because image creation is turning into a distribution and monetization layer inside the apps people already use.',
@@ -218,6 +219,14 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post55: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Virginia_Tech_-_data_center.jpg',
+      caption: 'Consensus only matters when the network can keep moving through real failures.',
+      side: 'right',
+      after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Wikimedia_Servers-0051_19.jpg',
+      supportCaption: 'The business problem is still the same: keep the stack available when the links get messy.'
+    },
     post53: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Duga-1_radar_data_center_interior_server_room_2018.jpg',
       caption: 'AI capacity only matters when the room, the power, and the cooling all work together.',
@@ -449,6 +458,21 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    meerkatWritesAtAllTimes: {
+      text: 'all replicas can perform writes at all times',
+      source: 'Cloudflare Blog',
+      sourceUrl: 'https://blog.cloudflare.com/meerkat-introduction/'
+    },
+    meerkatNoTimeoutHalt: {
+      text: 'progress is never halted due to a timeout',
+      source: 'Cloudflare Blog',
+      sourceUrl: 'https://blog.cloudflare.com/meerkat-introduction/'
+    },
+    quepaxaNoTimeouts: {
+      text: 'the first protocol offering state-of-the-art normal-case efficiency without depending on timeouts',
+      source: 'QuePaxa paper',
+      sourceUrl: 'https://bford.info/pub/os/quepaxa/quepaxa.pdf'
+    },
     metaAlbertaPower: {
       text: 'help power our AI innovations and core products',
       source: 'Meta Newsroom',
@@ -799,6 +823,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post55: { after: 3, quotes: [makeQuote('Writes', QUOTE_LIBRARY.meerkatWritesAtAllTimes), makeQuote('Timeouts', QUOTE_LIBRARY.meerkatNoTimeoutHalt)] },
     post53: { after: 3, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Rules', QUOTE_LIBRARY.albertaBringYourOwnPower)] },
     post54: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post52: { after: 3, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.googlePredictablePerformance), makeQuote('No auto fix', QUOTE_LIBRARY.googleNoAutoAdjust)] },

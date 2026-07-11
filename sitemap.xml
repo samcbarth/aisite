@@ -37,6 +37,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/microsofts-annual-cloud-pricing-update-is-really-a-budgeting-story/</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samcbarth.github.io/aisite/posts/metas-alberta-data-center-is-really-a-power-and-policy-story/</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>

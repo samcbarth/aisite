@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 01:07:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 03:09:26 GMT</lastBuildDate>
+    <item>
+      <title>Cloudflare&apos;s Meerkat is really a control-plane story</title>
+      <link>https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Cloudflare&apos;s Meerkat is not a shiny product launch. It is Cloudflare saying its control plane has become too important to leave on a leader-and-timeout setup. Cloudflare says the service is needed because internal systems across its 330+ data centers have to read and modify the s</description>
+    </item>
+    <item>
+      <title>Microsoft&apos;s annual cloud pricing update is really a budgeting story</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsofts-annual-cloud-pricing-update-is-really-a-budgeting-story/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-annual-cloud-pricing-update-is-really-a-budgeting-story/</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft&apos;s annual cloud pricing update is not just currency housekeeping. It is Microsoft telling finance teams that cloud spend now needs a calendar. Microsoft says it will move to annual local currency pricing updates every January because it wants &quot;greater pricing predictabil</description>
+    </item>
     <item>
       <title>Meta&apos;s Alberta data center is really a power and policy story</title>
       <link>https://samcbarth.github.io/aisite/posts/metas-alberta-data-center-is-really-a-power-and-policy-story/</link>

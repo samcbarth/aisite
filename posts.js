@@ -7,6 +7,26 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post55: {
+    featured: false,
+    date: 'July 10, 2026',
+    iso: '2026-07-10',
+    title: "Cloudflare's Meerkat is really a control-plane story",
+    category: 'Business Strategy',
+    tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/CERN_Server_03.jpg',
+    body: `
+      <p>Cloudflare's Meerkat is not a shiny product launch. It is Cloudflare saying its control plane has become too important to leave on a leader-and-timeout setup.</p>
+
+      <p><a href="https://blog.cloudflare.com/meerkat-introduction/" target="_blank" rel="noopener noreferrer">Cloudflare says</a> the service is needed because internal systems across its 330+ data centers have to read and modify the same state. The company says Meerkat is designed so "all replicas can perform writes at all times." That is the real business point. Global software only feels simple when the failure modes stay hidden.</p>
+
+      <p>Cloudflare also says "progress is never halted due to a timeout." That is the line I keep coming back to. The company is not trying to make distributed systems cute. It is trying to keep the work moving when links wobble, data centers fail, and the network stops behaving.</p>
+
+      <p>The paper behind QuePaxa says it is "the first protocol offering state-of-the-art normal-case efficiency without depending on timeouts." That is the useful tradeoff. Keep the common case fast, but do not let one slow leader or one bad link freeze the whole system.</p>
+
+      <p>My read is simple. This is still experimental and internal-only, but it is a real business story because it shows where the hard work sits in global software. Consensus is part of the operating stack now, not just academic plumbing. That is the kind of system-level problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+    `
+  },
   post54: {
     featured: false,
     date: 'July 10, 2026',
@@ -1226,7 +1246,7 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+const POST_ORDER = ['post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 if (typeof module !== 'undefined' && module.exports) {
