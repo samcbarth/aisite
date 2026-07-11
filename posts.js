@@ -14,7 +14,7 @@ const POSTS = {
     title: 'Lumen is buying control of the AI network',
     category: 'Business Strategy',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Cabinet_Network_Fiber_Open.jpg',
+    image: 'assets/images/post58-hero.jpg',
     body: `
       <p><a href="https://ir.lumen.com/news/news-details/2026/Lumen-Completes-Alkira-Acquisition-Accelerating-Its-Unified-Digital-Platform-for-AI-Era-Networking/default.aspx" target="_blank" rel="noopener noreferrer">Lumen completed its acquisition of Alkira on July 7</a>. The useful part is not another company attaching AI to a press release. Lumen owns a large fiber network. Alkira gives it software that can control how traffic moves across clouds, data centers, partners, and AI workloads.</p>
 

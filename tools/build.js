@@ -222,11 +222,11 @@ function copyRecursive(src, dest) {
   }
   const INLINE_MEDIA = {
     post58: {
-      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Batelco_Network_Operations_Centre_%28NOC%29.JPG',
+      image: 'assets/images/post58-inline.jpg',
       caption: 'The customer needs one clear view across a network that spans many systems.',
       side: 'right',
       after: 3,
-      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Azaleos_NOC.jpg',
+      supportImage: 'assets/images/post58-support.jpg',
       supportCaption: 'The deal works only if software makes the physical network easier to operate.'
     },
     post56: {
