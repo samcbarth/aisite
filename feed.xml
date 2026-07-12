@@ -6,7 +6,55 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 21:03:23 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 02:43:17 GMT</lastBuildDate>
+    <item>
+      <title>Cloudflare gave the web a third door</title>
+      <link>https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Digital Business</category>
+      <description>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated. On July 1, the company introduced new controls for AI traffic and said websites can now treat Search, Agent, and Training crawlers differently. Cloudflare says &quot;not all AI</description>
+    </item>
+    <item>
+      <title>A memory chip company just raised Wall Street money</title>
+      <link>https://samcbarth.github.io/aisite/posts/a-memory-chip-company-just-raised-wall-street-money/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/a-memory-chip-company-just-raised-wall-street-money/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>SK Hynix did not need an American listing to prove it matters. Its memory already sits beside the processors running much of the AI boom. The company is profitable, established in South Korea, and one of the few suppliers capable of producing high-bandwidth memory at scale. What </description>
+    </item>
+    <item>
+      <title>Reddit cannot sell a conversation nobody trusts</title>
+      <link>https://samcbarth.github.io/aisite/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Digital Business</category>
+      <description>Picture the ordinary Reddit thread that starts with a simple question: Which accounting tool works for a five-person company? The answers look personal. One person describes a clean migration. Another warns about support. A third mentions a product nobody else has considered. Now</description>
+    </item>
+    <item>
+      <title>The model is no longer the whole agent</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-model-is-no-longer-the-whole-agent/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-model-is-no-longer-the-whole-agent/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Engineering</category>
+      <description>An AI agent can fail while using a perfectly capable model. It can stop reading a file too early, call the wrong tool, carry the wrong context forward, or take an action outside the boundary a company intended. That is why the most interesting part of a new LangChain and NVIDIA r</description>
+    </item>
+    <item>
+      <title>Cognizant put itself inside the AI sales pitch</title>
+      <link>https://samcbarth.github.io/aisite/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Cognizant wants companies to trust it with a large AI rollout. So it is making its own workforce the first large reference account. On July 7, the technology services company expanded its Google Cloud partnership and laid out an unusually specific internal plan. Cognizant aims to</description>
+    </item>
+    <item>
+      <title>OpenAI is buying the people who make AI stick</title>
+      <link>https://samcbarth.github.io/aisite/posts/openai-is-buying-the-people-who-make-ai-stick/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-is-buying-the-people-who-make-ai-stick/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>In May, OpenAI launched a new company with more than $4 billion to spend and about 150 deployment specialists arriving through its planned acquisition of Tomoro. Less than two months later, that company is buying again. On July 8, Axios reported that the OpenAI Deployment Company</description>
+    </item>
     <item>
       <title>What $3.1 billion buys inside an industrial plant</title>
       <link>https://samcbarth.github.io/aisite/posts/what-3-1-billion-buys-inside-an-industrial-plant/</link>

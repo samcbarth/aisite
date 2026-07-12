@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post82: {
+      image: 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=900&h=650&fit=crop&q=80',
+      caption: 'Cloudflare turned crawler policy into a business rule that site owners can tune.', side: 'left', after: 5,
+      supportImage: 'https://images.unsplash.com/photo-1496104679561-38d9d6f8f2f9?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The old search-referral bargain gets weaker when AI answers keep users off the source page.'
+    },
     post81: {
       image: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=900&h=650&fit=crop&q=80',
       caption: 'A U.S. listing connects SK Hynix more directly to the investors and customers financing AI infrastructure.', side: 'right', after: 6,
@@ -764,6 +770,16 @@ function copyRecursive(src, dest) {
       source: 'Cloudflare Blog',
       sourceUrl: 'https://blog.cloudflare.com/meerkat-introduction/'
     },
+    cloudflareTrafficIsDifferent: {
+      text: 'not all AI traffic is the same.',
+      source: 'Cloudflare',
+      sourceUrl: 'https://blog.cloudflare.com/content-independence-day-ai-options/'
+    },
+    cloudflareReadersRevenue: {
+      text: 'keep the automated traffic that sends readers and revenue back to you',
+      source: 'Cloudflare Docs',
+      sourceUrl: 'https://developers.cloudflare.com/changelog/post/2026-07-01-ai-traffic-options/'
+    },
     quepaxaNoTimeouts: {
       text: 'the first protocol offering state-of-the-art normal-case efficiency without depending on timeouts',
       source: 'QuePaxa paper',
@@ -1154,6 +1170,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post82: { after: 7, quotes: [makeQuote('Traffic types', QUOTE_LIBRARY.cloudflareTrafficIsDifferent), makeQuote('Publisher choice', QUOTE_LIBRARY.cloudflareReadersRevenue)] },
     post81: { after: 8, quotes: [makeQuote('Investor access', QUOTE_LIBRARY.skHynixInvestorDoor), makeQuote('Capital demand', QUOTE_LIBRARY.nasdaqInfrastructureDemand)] },
     post80: { after: 8, quotes: [makeQuote('Detection problem', QUOTE_LIBRARY.redditArtificialHype), makeQuote('Review burden', QUOTE_LIBRARY.aiDdosDefinition)] },
     post79: { after: 7, quotes: [makeQuote('System tuning', QUOTE_LIBRARY.langchainTunedTogether), makeQuote('Harness goal', QUOTE_LIBRARY.nvidiaHarnessGoal)] },

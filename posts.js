@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post82: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Cloudflare gave the web a third door',
+    category: 'Digital Business', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated.</p>
+
+      <p>On July 1, <a href="https://blog.cloudflare.com/content-independence-day-ai-options/" target="_blank" rel="noopener noreferrer">Cloudflare</a> introduced new controls for AI traffic and said websites can now treat Search, Agent, and Training crawlers differently. Cloudflare says "not all AI traffic is the same," which is the cleanest way to describe the change. A search crawler can send people back to the source. An agent may be acting on a person's behalf in real time. A training crawler takes content to build a model that may never send a reader back.</p>
+
+      <p>The practical detail is the important one. Cloudflare's changelog says all customers, including Free plans, can choose to block AI crawlers on all pages, only on pages with ads, or not block them at all. Starting September 15, new domains will see Training and Agent blocked by default on ad pages, while Search stays allowed. That is not a tiny settings tweak. It is a policy change about what kind of machine traffic a publisher wants to treat like a customer and what kind it wants to keep out of the room.</p>
+
+      <p>Cloudflare frames the tradeoff bluntly. It wants site owners to "keep the automated traffic that sends readers and revenue back to you" and block the traffic that only takes from the content. That matters because the old web bargain was simple: index my page, send me a click. AI has broken that exchange. The crawler still arrives. The reader often does not.</p>
+
+      <p>The company backs that view with traffic data. In its Cloudflare Radar report, it says 52% of crawler requests are now for AI training as of June 2026, up from 22% in spring 2025. Mixed-use crawlers make up more than 36% of activity, and pure search crawling is becoming a smaller slice of the total. That is why Cloudflare keeps talking about taxonomy instead of a single block button. The traffic is no longer one thing.</p>
+
+      <p>That split also explains why the new defaults favor ad pages. A page with ads is a business signal. The owner is not just publishing for fun. It is trying to fund the work. Cloudflare's default policy says the site should not hand that attention to bots that do not return value. Search gets a different treatment because, in Cloudflare's view, it still funnels readers back.</p>
+
+      <p>The new controls are only half of the story. Cloudflare also says BotBase will give Enterprise customers a searchable view of known bots and agents, so they can see what is visiting before deciding what to do about it. That is the operating reality here. You cannot govern what you cannot name. Once bots blur together, a blanket allow or block setting stops being enough.</p>
+
+      <p>This is where the business story gets bigger than publishing. Retail, software, finance, and media all depend on content that used to earn value through discovery. If AI systems turn answers into the destination, the owner has to decide whether to supply content for free, block access, charge for it, or selectively allow only the traffic that still creates return. Cloudflare's new controls are basically a business model menu disguised as a security setting.</p>
+
+      <p>The company has been moving this direction for a while. Its docs already point to managed robots.txt and pay-per-crawl style controls, and the new AI traffic presets sit on top of that work. The direction is clear: content owners want a way to say yes to useful discovery, no to extraction, and maybe to direct monetization where the economics justify it.</p>
+
+      <p>That is why the old binary feels wrong now. Search is discovery. Training is extraction. Agent traffic is something in between, but not the same as a human reader. If a site depends on ads, subscriptions, or lead flow, the next question is not whether AI touched it. The question is which kind of machine touched it, what came back, and whether the owner got anything in return.</p>
+
+      <p>Cloudflare did not solve the agentic web. It just gave publishers a way to stop pretending every bot means the same thing. That is the real shift. The web is moving from a simple crawl-and-click loop to a traffic policy problem, and the owners who understand the difference between search, agents, and training will have a much better shot at keeping the economics intact.</p>
+    `
+  },
   post81: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2145,6 +2175,7 @@ POST_ORDER.unshift('post78');
 POST_ORDER.unshift('post79');
 POST_ORDER.unshift('post80');
 POST_ORDER.unshift('post81');
+POST_ORDER.unshift('post82');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
