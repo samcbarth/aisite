@@ -7,6 +7,34 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post86: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: "Meta bought room on Alberta's grid",
+    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Data_centers_in_Ashburn.jpg/1280px-Data_centers_in_Ashburn.jpg',
+    body: `
+      <p>A 1GW data center is not a product launch. It is a site plan, a transmission order, a water decision, and a lot of trucks.</p>
+
+      <p>That is what Meta says it is building in Sturgeon County, north of Edmonton. In its <a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener noreferrer">announcement</a>, the company says the new facility will be its first data center in Canada and its 33rd globally. Meta says the project is a more than CAD $13 billion investment that will support roughly 3,000 construction workers at peak and more than 300 permanent jobs. It also says the site will receive about CAD $60 million in local infrastructure improvements.</p>
+
+      <p>Meta's own framing is straightforward. The company says the site will "help power our AI innovations and core products." The physical pitch is messier. Alberta's project listing says the data center will be powered by a natural gas power plant and will use a closed-loop water cooling system. Those details matter more than the press release language, because they are the parts that have to work in the real world.</p>
+
+      <p>Meta says it is working with Greenlight Limited Partnership, Altalink, Capitol Power, and the Alberta Electric System Operator to plan for its energy needs years in advance. The company also says it will fully fund new generation and grid infrastructure in Alberta. It says the site's electricity use will be matched with 100% clean and renewable energy, and that the cooling system will not use operational water. That reads like a corporate matching claim, not a claim that the local grid itself changes overnight.</p>
+
+      <p>Alberta has been setting itself up for this kind of project. The province's AI data center strategy says it wants to secure its position as "the most attractive place to build artificial intelligence (AI) data centres in North America." Its three pillars are power capacity, sustainable cooling, and economic growth. That is a simple list, but it is the right list. A site like this lives or dies on those three things.</p>
+
+      <p>The interesting part is that Alberta is selling different advantages to different audiences. The province likes to talk about cold weather, natural resources, competitive taxes, and a business-friendly regulatory environment. Meta likes to talk about AI capacity, community grants, and infrastructure upgrades. Both sides are really talking about the same thing. A hyperscale data center is only useful if the region can absorb the load without turning every line item into a delay.</p>
+
+      <p>The bill for that pitch is not small. Data centers need substations, transmission, road access, construction crews, and long-term utility planning. They also need political patience when the public asks who pays for the grid work and what happens to water and electricity costs after the ribbon cutting. Meta says it pays the full costs of its data centers' energy use and water service. That helps, but the test is whether the local system still feels the strain when the load goes live.</p>
+
+      <p>This is why the Alberta story matters beyond one company. The next phase of AI infrastructure is not just about more chips. It is about where the chips can sit, how much power the region can deliver, and how much local infrastructure has to move before the data center can open its doors. Sturgeon County is now in that queue. The real scorecard will be whether the county gets a working industrial site, the province gets the promised jobs and revenue, and the grid does not turn into the hidden bottleneck.</p>
+
+      <p>The job counts matter, but they do not mean the same thing. Three thousand construction workers is a build phase number. More than 300 permanent jobs is the steady-state number. The CAD $60 million in roads and water work is the part the county will feel for years. Meta's community grants help make the local pitch easier, but the lasting value comes from whether the infrastructure outlives the construction cycle and can support more than one industrial tenant over time.</p>
+
+      <p>If Meta keeps the schedule, the question will not be whether it can open another campus. It will be whether Alberta can host a 1GW AI load without treating the grid, water system, and road network like afterthoughts or short-term exceptions for everyone involved.</p>
+    `
+  },
   post85: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2273,6 +2301,7 @@ POST_ORDER.unshift('post82');
 POST_ORDER.unshift('post83');
 POST_ORDER.unshift('post84');
 POST_ORDER.unshift('post85');
+POST_ORDER.unshift('post86');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

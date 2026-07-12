@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post86: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Powerlines_In_The_Pasture_%28Unsplash%29.jpg/1280px-Powerlines_In_The_Pasture_%28Unsplash%29.jpg',
+      caption: 'A 1GW data center is really a grid and land-use problem with servers attached.', side: 'right', after: 4,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Canola_field.jpg/1280px-Canola_field.jpg',
+      supportCaption: 'Alberta is selling land, climate, and power capacity as one package.'
+    },
     post85: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Laptop_Google_Search.jpg/1280px-Laptop_Google_Search.jpg',
       caption: 'The real issue is not drafting the first thing. It is carrying the same context across the tools.',
@@ -819,6 +825,11 @@ function copyRecursive(src, dest) {
       source: 'Meta Newsroom',
       sourceUrl: 'https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/'
     },
+    albertaMostAttractive: {
+      text: 'the most attractive place to build artificial intelligence (AI) data centres in North America.',
+      source: 'Alberta AI Data Centres Strategy',
+      sourceUrl: 'https://www.alberta.ca/artificial-intelligence-data-centres-strategy'
+    },
     albertaBringYourOwnPower: {
       text: 'large AI data centres have to bring their own power, pay for the infrastructure they need and meet strict water rules',
       source: 'Government of Alberta',
@@ -1209,6 +1220,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post86: { after: 4, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Strategy', QUOTE_LIBRARY.albertaMostAttractive)] },
     post85: { after: 4, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Microsoft view', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post84: { after: 4, quotes: [makeQuote('Weeks to outcomes', QUOTE_LIBRARY.accentureWeeksToOutcomes), makeQuote('Workflow demand', QUOTE_LIBRARY.googleWorkflowDemand)] },
     post83: { after: 5, quotes: [makeQuote('Rack fit', QUOTE_LIBRARY.ibmRackFit), makeQuote('Entry point', QUOTE_LIBRARY.linuxoneCostAccess)] },

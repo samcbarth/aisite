@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 07:08:56 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 10:14:12 GMT</lastBuildDate>
+    <item>
+      <title>Meta bought room on Alberta&apos;s grid</title>
+      <link>https://samcbarth.github.io/aisite/posts/meta-bought-room-on-albertas-grid/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-bought-room-on-albertas-grid/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Infrastructure</category>
+      <description>A 1GW data center is not a product launch. It is a site plan, a transmission order, a water decision, and a lot of trucks. That is what Meta says it is building in Sturgeon County, north of Edmonton. In its announcement , the company says the new facility will be its first data c</description>
+    </item>
     <item>
       <title>The real AI race is for context</title>
       <link>https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</link>
