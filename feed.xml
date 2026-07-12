@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 10:14:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 13:10:38 GMT</lastBuildDate>
+    <item>
+      <title>IBM and Red Hat turned patching into a product</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-turned-patching-into-a-product/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-turned-patching-into-a-product/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cybersecurity</category>
+      <description>Every enterprise has packages it would rather not touch again. The version runs fine, the business depends on it, and the next &quot;simple&quot; upgrade comes with regression tests, dependency drift, and a lot of praying. IBM and Red Hat are trying to sell a way around that with Lightwell</description>
+    </item>
     <item>
       <title>Meta bought room on Alberta&apos;s grid</title>
       <link>https://samcbarth.github.io/aisite/posts/meta-bought-room-on-albertas-grid/</link>

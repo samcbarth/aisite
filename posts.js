@@ -7,6 +7,32 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post87: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'IBM and Red Hat turned patching into a product',
+    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Software%20Developer%20at%20Work.jpg',
+    body: `
+      <p>Every enterprise has packages it would rather not touch again. The version runs fine, the business depends on it, and the next "simple" upgrade comes with regression tests, dependency drift, and a lot of praying.</p>
+
+      <p>IBM and Red Hat are trying to sell a way around that with Lightwell, which they commercially launched on July 8. The launch comes in two pieces, <a href="https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source" target="_blank" rel="noopener noreferrer">Lightwell Network</a> and Lightwell Clearinghouse Premier. IBM says Network starts with more than 6,500 remediated, digitally signed dependencies across Java, Python, and other major ecosystems. That is not a new app layer. It is an attempt to make the fix itself the thing enterprises buy.</p>
+
+      <p>The best line in the IBM release is this: "certified fixes they can pull straight into the systems they already run, with no retooling or disruption." That is the opposite of the usual security advice, which tells companies to patch faster and then leaves them to absorb the upgrade cost. Lightwell is trying to land the fix on the version that is already in production.</p>
+
+      <p><a href="https://www.redhat.com/en/blog/securing-enterprise-software-fabric-blueprint-open-source" target="_blank" rel="noopener noreferrer">Red Hat's own Lightwell blueprint</a> frames the pressure a different way. It says "the threat window shrinks from months to hours." That matters because AI has made vulnerability discovery and exploit development faster, but most production systems did not get any younger. The old gap between finding a flaw and doing something useful about it is getting tighter.</p>
+
+      <p>Lightwell's backport model is the important bit. Instead of forcing every customer to jump to a newer release, Red Hat and IBM are trying to apply a fix to the exact stable version a company is already running, then contribute that fix upstream instead of leaving each team to carry its own private fork. That is a very different operating model from the normal upgrade-or-bust routine.</p>
+
+      <p>The clearinghouse piece matters too. Lightwell Clearinghouse Premier is limited availability and sits in the awkward middle of the process, where secured patch embargoes and vertical threat coordination need a trusted intermediary. That is boring language for a real business problem. Regulated companies do not just need a better scan. They need a way to get a validated fix through security, compliance, and operations without breaking the release train.</p>
+
+      <p>The launch also builds on the $5 billion commitment IBM and Red Hat announced in May, backed by a global force of more than 20,000 engineers. Scale matters here because this work is not a dashboard trick. Someone has to validate the fix, sign it, and prove it will not knock over the environment when it lands. That is why this kind of product belongs closer to engineering and release management than to a glossy security demo.</p>
+
+      <p>It is the same kind of operating problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the fix does not fit the workflow already in production, it is not really a fix yet. Lightwell is interesting because it treats trust as a delivery system, not just a policy layer.</p>
+
+      <p>The real shift is not that IBM and Red Hat found a faster patch. It is that they are trying to stop one bad dependency from turning into three separate jobs, a production fire, a compliance review, and a permanent private fork. That is the part of enterprise software people pay for when they say they want security without the upgrade pain.</p>
+    `
+  },
   post86: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2302,6 +2328,7 @@ POST_ORDER.unshift('post83');
 POST_ORDER.unshift('post84');
 POST_ORDER.unshift('post85');
 POST_ORDER.unshift('post86');
+POST_ORDER.unshift('post87');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

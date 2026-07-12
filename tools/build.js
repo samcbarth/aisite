@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post87: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laptop%20computer.jpg',
+      caption: 'The patch starts as a developer problem before it turns into a production decision.', side: 'right', after: 3,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/BalticServers%20data%20center.jpg',
+      supportCaption: 'Lightwell is really about getting fixes into the stack already carrying live workloads.'
+    },
     post86: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Powerlines_In_The_Pasture_%28Unsplash%29.jpg/1280px-Powerlines_In_The_Pasture_%28Unsplash%29.jpg',
       caption: 'A 1GW data center is really a grid and land-use problem with servers attached.', side: 'right', after: 4,
@@ -1005,6 +1011,16 @@ function copyRecursive(src, dest) {
       source: 'IBM',
       sourceUrl: 'https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source'
     },
+    lightwellCertifiedFixes: {
+      text: 'certified fixes they can pull straight into the systems they already run, with no retooling or disruption',
+      source: 'Rob Thomas, IBM',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-08-ibm-and-red-hat-expand-lightwell-with-new-commercial-offerings-to-build-the-trust-infrastructure-for-ai-era-open-source'
+    },
+    lightwellThreatWindow: {
+      text: 'the threat window shrinks from months to hours',
+      source: 'Red Hat',
+      sourceUrl: 'https://www.redhat.com/en/blog/securing-enterprise-software-fabric-blueprint-open-source'
+    },
     googlePredictablePerformance: {
       text: 'more consistent and predictable performance',
       source: 'Google Ads Help',
@@ -1220,6 +1236,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post87: { after: 4, quotes: [makeQuote('Certified fixes', QUOTE_LIBRARY.lightwellCertifiedFixes), makeQuote('Threat window', QUOTE_LIBRARY.lightwellThreatWindow)] },
     post86: { after: 4, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Strategy', QUOTE_LIBRARY.albertaMostAttractive)] },
     post85: { after: 4, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Microsoft view', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post84: { after: 4, quotes: [makeQuote('Weeks to outcomes', QUOTE_LIBRARY.accentureWeeksToOutcomes), makeQuote('Workflow demand', QUOTE_LIBRARY.googleWorkflowDemand)] },
