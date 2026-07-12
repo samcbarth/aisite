@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post80: {
+      image: 'https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=900&h=650&fit=crop&q=80',
+      caption: 'The value of a recommendation thread depends on readers believing the participants are real.', side: 'left', after: 6,
+      supportImage: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'As generation gets cheaper, verification and review become the scarce operating capacity.'
+    },
     post79: {
       image: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=900&h=650&fit=crop&q=80',
       caption: 'The harness connects model reasoning to context, memory, tools, and task execution.', side: 'right', after: 6,
@@ -554,6 +560,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    redditArtificialHype: {
+      text: 'We leverage LLMs to catch the highly subtle, coordinated patterns of fake behavior and artificial hype that older systems once missed.',
+      source: 'Reddit',
+      sourceUrl: 'https://redditinc.com/news/how-were-keeping-reddit-real-and-safe-in-the-ai-era'
+    },
+    aiDdosDefinition: {
+      text: 'a denial-of-service effect in which plausible but low-quality AI-generated contributions overwhelm OSS community capacity',
+      source: 'Afroz et al., arXiv',
+      sourceUrl: 'https://arxiv.org/abs/2607.04003'
+    },
     langchainTunedTogether: {
       text: 'agent performance improves when the model, harness, evals, and runtime are tuned together',
       source: 'LangChain Team',
@@ -1122,6 +1138,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post80: { after: 8, quotes: [makeQuote('Detection problem', QUOTE_LIBRARY.redditArtificialHype), makeQuote('Review burden', QUOTE_LIBRARY.aiDdosDefinition)] },
     post79: { after: 7, quotes: [makeQuote('System tuning', QUOTE_LIBRARY.langchainTunedTogether), makeQuote('Harness goal', QUOTE_LIBRARY.nvidiaHarnessGoal)] },
     post78: { after: 7, quotes: [makeQuote('Internal proof', QUOTE_LIBRARY.cognizantProvenInside), makeQuote('Partner view', QUOTE_LIBRARY.googleFirstHand)] },
     post77: { after: 7, quotes: [makeQuote('Daily reliability', QUOTE_LIBRARY.openaiDeployEveryday), makeQuote('Field model', QUOTE_LIBRARY.northslopeAllFdes)] },

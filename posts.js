@@ -7,6 +7,50 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post80: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Reddit cannot sell a conversation nobody trusts',
+    category: 'Digital Business', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1600267185393-e158a98703de?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Picture the ordinary Reddit thread that starts with a simple question: Which accounting tool works for a five-person company? The answers look personal. One person describes a clean migration. Another warns about support. A third mentions a product nobody else has considered.</p>
+
+      <p>Now remove the assumption that those people are real. The thread still looks useful, but its value collapses.</p>
+
+      <p>That is the business problem behind Reddit's <a href="https://redditinc.com/news/how-were-keeping-reddit-real-and-safe-in-the-ai-era" target="_blank" rel="noopener noreferrer">July 6 safety update</a>. The company says it is using large language models to detect coordinated fake behavior and artificial hype that older systems missed. It is fighting machine-made persuasion with more machines because authentic conversation has become part of the product it sells.</p>
+
+      <p>Reddit reports that its updated systems block 23 million spam views each day, catch about 25,000 new spam posts and comments, and revoke nearly two million inauthentic votes daily. From January through March, user exposure to spam fell about 20% compared with the prior three months.</p>
+
+      <p>Those are company-reported figures, not an independent audit. They also show the scale of the contest. A fake post does not need to stay online for long to influence a purchase, seed a talking point, or become source material for an AI answer. Reddit says its best enforcement happens before a human sees the content.</p>
+
+      <p>The old spam problem was usually easy to understand. Someone wanted a click, a sale, or a stolen password. Generative AI changes the cost and texture. A marketer can produce dozens of accounts with different writing styles, build histories for them, and stage a discussion that looks like several unrelated customers reaching the same conclusion.</p>
+
+      <p>Votes can make that conclusion appear popular. Replies can supply objections and convenient rebuttals. Once the exchange looks organic, it can travel beyond Reddit through screenshots, search results, summaries, and AI assistants that treat public discussion as evidence.</p>
+
+      <p>This is why Reddit's announcement matters outside social media. The company is protecting two connected markets. Users come for useful human discussion. Advertisers come because those users reveal what they care about. AI companies and search products value the same archive because it contains language, preferences, troubleshooting, and firsthand judgment that polished web pages often lack.</p>
+
+      <p>If synthetic promotion contaminates that archive, all three groups receive a weaker product. Users lose confidence. Advertisers pay to appear beside conversations that may be manufactured. AI systems learn from or cite material created to manipulate them.</p>
+
+      <p>Reddit describes a layered defense. Sitewide policies and internal safety teams sit above community moderators, reputation filters, crowd control, ban-evasion detection, and user voting. The company says it has also cut average enforcement time for detected hateful or violent English content to under five seconds while reducing false positives by more than 40%.</p>
+
+      <p>The architecture makes sense because authenticity is contextual. A brand-new account posting the same product link across 20 communities is an obvious signal. Ten established accounts quietly reinforcing one claim is harder. A joke that belongs in one subreddit may look hostile in another. Reddit needs platform-scale pattern detection without erasing the local judgment that gives each community its character.</p>
+
+      <p>The hard question is error cost. A system tuned to stop manipulation before anyone sees it will sometimes stop legitimate speech. Reddit says its false-positive rate improved, but it does not publish enough detail to judge performance by language, community, topic, or account type. A global average can hide serious misses in smaller communities.</p>
+
+      <p>There is also a labor issue. Automated detection may reduce what reaches moderators, but every uncertain case still creates review work. A <a href="https://arxiv.org/abs/2607.04003" target="_blank" rel="noopener noreferrer">new study of AI-generated contributions in open-source software</a> gives that burden a useful name: AI-DDoS. The researchers describe a denial-of-service effect in which plausible, low-quality submissions consume scarce community attention.</p>
+
+      <p>The study examined 294 repositories and more than two million pull requests and issues. It found that pull-request volume rose in 2025 while merge rates declined. One-time contributors saw an 18.18% drop in merge rates relative to the researchers' estimated counterfactual. The setting is different, but the economic pattern is familiar. Generation gets cheap. Verification does not.</p>
+
+      <p>That pattern should be on every company's risk register. Customer reviews, sales leads, support tickets, job applications, vendor questionnaires, code contributions, expense receipts, and market research can all be produced faster than a human team can validate them. The bottleneck moves from creating information to deciding which information deserves attention.</p>
+
+      <p>This connects directly to the operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. A business cannot solve the problem with a blanket rule that says “use AI carefully.” It needs signals, thresholds, evidence, ownership, and an appeal path. Which actions can happen automatically? Which claims need a second source? Which anomalies stop a workflow? Who reviews a false positive?</p>
+
+      <p>Reddit is now maintaining something closer to a trust ledger than a content feed. Every blocked campaign, restored account, suspicious vote, moderator decision, and user report updates its estimate of what deserves distribution. That ledger is becoming as important as the posts themselves.</p>
+
+      <p>The accounting-tool thread only has value while a reader believes it records real experience. Reddit can improve its models and publish bigger enforcement numbers, but its real inventory is that belief. Once a staged conversation becomes indistinguishable from an honest one, there is no ad format, data license, or AI search feature that can put the missing person back into the room.</p>
+    `
+  },
   post79: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2059,6 +2103,7 @@ POST_ORDER.unshift('post76');
 POST_ORDER.unshift('post77');
 POST_ORDER.unshift('post78');
 POST_ORDER.unshift('post79');
+POST_ORDER.unshift('post80');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
