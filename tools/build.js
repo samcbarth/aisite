@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post81: {
+      image: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=900&h=650&fit=crop&q=80',
+      caption: 'A U.S. listing connects SK Hynix more directly to the investors and customers financing AI infrastructure.', side: 'right', after: 6,
+      supportImage: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The capital raise only creates value when it becomes qualified capacity and delivered memory.'
+    },
     post80: {
       image: 'https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=900&h=650&fit=crop&q=80',
       caption: 'The value of a recommendation thread depends on readers believing the participants are real.', side: 'left', after: 6,
@@ -560,6 +566,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    skHynixInvestorDoor: {
+      text: 'Our ADR listing makes access easier. We are pleased to welcome a broader community of global investors to join our journey.',
+      source: 'Kwak Noh-Jung, SK Hynix CEO',
+      sourceUrl: 'https://www.nasdaq.com/newsroom/global-innovation-meets-global-capital-sk-hynix-lists-on-nasdaq'
+    },
+    nasdaqInfrastructureDemand: {
+      text: 'This historic listing is a powerful example of how global innovators use Nasdaq as an extension of their growth strategy to fund the massive infrastructure demands of tomorrow.',
+      source: 'Nelson Griggs, Nasdaq President',
+      sourceUrl: 'https://www.nasdaq.com/newsroom/global-innovation-meets-global-capital-sk-hynix-lists-on-nasdaq'
+    },
     redditArtificialHype: {
       text: 'We leverage LLMs to catch the highly subtle, coordinated patterns of fake behavior and artificial hype that older systems once missed.',
       source: 'Reddit',
@@ -1138,6 +1154,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post81: { after: 8, quotes: [makeQuote('Investor access', QUOTE_LIBRARY.skHynixInvestorDoor), makeQuote('Capital demand', QUOTE_LIBRARY.nasdaqInfrastructureDemand)] },
     post80: { after: 8, quotes: [makeQuote('Detection problem', QUOTE_LIBRARY.redditArtificialHype), makeQuote('Review burden', QUOTE_LIBRARY.aiDdosDefinition)] },
     post79: { after: 7, quotes: [makeQuote('System tuning', QUOTE_LIBRARY.langchainTunedTogether), makeQuote('Harness goal', QUOTE_LIBRARY.nvidiaHarnessGoal)] },
     post78: { after: 7, quotes: [makeQuote('Internal proof', QUOTE_LIBRARY.cognizantProvenInside), makeQuote('Partner view', QUOTE_LIBRARY.googleFirstHand)] },

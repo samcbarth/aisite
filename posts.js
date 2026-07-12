@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post81: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'A memory chip company just raised Wall Street money',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1634979150028-39f84c54d007?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>SK Hynix did not need an American listing to prove it matters. Its memory already sits beside the processors running much of the AI boom. The company is profitable, established in South Korea, and one of the few suppliers capable of producing high-bandwidth memory at scale.</p>
+
+      <p>What it wanted from Wall Street was money, access, and a closer seat at the same table as its largest customers.</p>
+
+      <p>On Friday, SK Hynix began trading on Nasdaq after selling 177.9 million American depositary receipts at $149 each. The offering raised $26.5 billion, according to the <a href="https://apnews.com/article/sk-hynix-nasdaq-memory-chips-nvidia-73f13a85ae00e30bad0540281bbe44f3" target="_blank" rel="noopener noreferrer">Associated Press</a>, making it the largest initial U.S. share sale by a foreign company. The receipts opened at $170 and closed at $168.01, a 12.8% first-day gain.</p>
+
+      <p>This was not a small chip startup asking investors to fund a prototype. SK Hynix reported nearly $65 billion in 2025 revenue and about $28 billion in profit. The United States accounted for 68.8% of revenue. The company already trades in Seoul. Each Nasdaq receipt simply represents one-tenth of a Korean common share.</p>
+
+      <p>The scale is the story. AI infrastructure is consuming enough capital that a mature supplier can raise more money in one listing than most technology companies will ever be worth.</p>
+
+      <p>The reason sits next to the GPU. High-bandwidth memory, or HBM, stacks memory close to an accelerator so data can move at much higher speed. A powerful processor waiting on data is expensive idle equipment. As models grow and inference volume rises, memory bandwidth becomes part of the performance limit.</p>
+
+      <p>That has changed the status of memory. It was once discussed mainly as a cyclical commodity where suppliers added capacity, prices fell, and the market corrected. HBM is still exposed to cycles, but it requires difficult manufacturing, advanced packaging, close work with accelerator companies, and large investments made before the demand is fully visible.</p>
+
+      <p>SK Hynix is using the listing to help fund that buildout. Its <a href="https://www.sec.gov/Archives/edgar/data/2120882/000119312526295501/d32785df1a.htm" target="_blank" rel="noopener noreferrer">SEC prospectus</a> estimated about $28 billion in net proceeds before final pricing. The filing says the company plans to use the money for production facilities, research and development, and general corporate purposes. It also describes a planned advanced packaging facility in Indiana, the company's first U.S. production site.</p>
+
+      <p>That Indiana project puts the financial decision into physical terms. SK Hynix is not raising money to build a generic cloud service that can be expanded with a software update. Semiconductor capacity takes land, equipment, suppliers, skilled labor, permits, power, water, and years of execution. A bad forecast leaves costly factories underused. A cautious forecast leaves customers short of a component they cannot easily replace.</p>
+
+      <p>The company is also moving toward the center of its customer base. At the Nasdaq ceremony, CEO Kwak Noh-Jung said, "The customers leading AI innovation are here, the partners building the ecosystem are here, and the talent driving the industry is here." That is a better explanation for the listing than the opening-day stock move.</p>
+
+      <p>American investors now get easier access to the shares in dollars and through familiar settlement systems. SK Hynix gets a broader investor base, more visibility among U.S. technology funds, and a currency it can potentially use for future deals or employee compensation. The listing also makes comparisons with Micron and other U.S.-traded infrastructure companies much more direct.</p>
+
+      <p>There is a strategic signal for customers too. Nvidia and other accelerator makers need suppliers that can finance capacity before every purchase order is guaranteed. Cloud companies need a credible path from announced clusters to delivered machines. A $26.5 billion capital raise tells the market that memory supply is no longer a supporting detail in those plans.</p>
+
+      <p>It does not remove the risk. The prospectus is clear about customer concentration, export controls, geopolitical tension, manufacturing complexity, and the industry's history of price swings. Demand tied to a handful of AI buyers can look durable right up until one customer changes architecture, delays a data center, or qualifies another supplier.</p>
+
+      <p>Investors also need to separate a strong first trading day from a strong long-term return. The shares arrived after SK Hynix had already more than tripled in Seoul this year. The offering funds capacity, but more capacity across the industry can eventually pressure prices. Capital solves the shortage only by creating the possibility of the next surplus.</p>
+
+      <p>For businesses buying AI systems, this financing explains why hardware roadmaps deserve the same attention as model roadmaps. A promised agent, search tool, or analytics product may depend on memory supply negotiated years earlier. The operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> starts with the workflow, but its cost and timing still inherit constraints from the physical stack underneath it.</p>
+
+      <p>The closing bell gave SK Hynix a new ticker. The more important clock is running inside its factories. The company now has billions more to turn into clean-room capacity, packaging lines, qualified parts, and delivered memory. Wall Street priced the promise in one morning. SK Hynix has to manufacture it one stack at a time.</p>
+    `
+  },
   post80: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2104,6 +2144,7 @@ POST_ORDER.unshift('post77');
 POST_ORDER.unshift('post78');
 POST_ORDER.unshift('post79');
 POST_ORDER.unshift('post80');
+POST_ORDER.unshift('post81');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
