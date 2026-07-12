@@ -7,6 +7,34 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post88: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'Britain made cloud uptime a bank problem',
+    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bank-of-England.jpg',
+    body: `
+      <p>On Monday, July 13, the cloud stops being invisible in London.</p>
+
+      <p>The UK Treasury has designated Microsoft Ireland Operations, Google Cloud EMEA, Amazon Web Services EMEA, and Oracle Corporation UK as Critical Third Parties. That puts the services behind a lot of financial plumbing into a new regulatory box. The announcement is on <a href="https://www.gov.uk/government/news/uk-financial-system-strengthened-with-new-safeguards-for-major-technology-providers" target="_blank" rel="noopener noreferrer">GOV.UK</a>, and the <a href="https://www.fca.org.uk/firms/critical-third-parties-strengthening-uk-financial-services" target="_blank" rel="noopener noreferrer">FCA</a> and <a href="https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt" target="_blank" rel="noopener noreferrer">Bank of England</a> pages spell out how the regime works.</p>
+
+      <p>The point is not that banks are ditching the cloud. They are not. The point is that a dependency this deep can no longer hide inside a vendor contract and a procurement slide. Rachel Blake put the political logic plainly: "We are a world-leading financial centre, and maintaining trust in our financial system is essential to its success."</p>
+
+      <p>The Bank of England's framing is more blunt. Its release says the regulators are acting because "disruption or failure could affect multiple firms or markets at the same time, potentially impacting UK financial stability and services used by millions of consumers and businesses." That is the whole story in one sentence. When a handful of providers sit under payments, trading, data, and customer access, an outage stops being a local IT event.</p>
+
+      <p>The FCA is careful about scope. This is targeted oversight of systemic services, not a takeover of the vendors' whole business. Firms still carry the third-party risk on their own books. That part matters because the UK is trying to build a sharper perimeter, not invent a new cloud ministry.</p>
+
+      <p>What changes now is the kind of evidence banks and providers have to keep ready. Resilience assessments. Incident reporting. Recovery plans that say more than "we will monitor closely." The new regime gives the regulators room to gather information, enforce CTP-specific rules where needed, and stay inside the services that actually touch the financial system. That means the cloud vendors and the banks that buy from them need cleaner answers on who owns what, what fails first, and how fast the failure can spread.</p>
+
+      <p>That makes the business case less abstract. Cloud vendors have spent years selling scale, speed, and convenience. London is now asking what happens when those same properties concentrate risk instead of removing it. A provider can still be essential and still be too important to ignore. In practice, that usually means more scrutiny on incident logs, recovery drills, data residency questions, and the handoff between vendor support and a bank's own incident command.</p>
+
+      <p>This is also a reminder that operational resilience is turning into a product requirement, not just a compliance topic. The bank that can map its dependency stack fast will have less chaos when something breaks. The cloud vendor that can prove its critical services recover cleanly will keep the conversation on reliability instead of reputation damage. That is the real commercial edge in a market where "secure and resilient" gets repeated a lot but rarely gets tested in a regulator's language.</p>
+
+      <p>The Treasury says the regime is rolling, which means more providers can be added if needed. That matters because the cloud market does not stop at four companies, and the UK's move sits next to the EU's broader operational-resilience push without copying it line for line. The British version is narrower and very explicit about systemic services. It is closer to "this is now part of financial supervision" than "we are trying to regulate tech in general."</p>
+
+      <p>That is why July 13 matters. After it, an outage in a cloud region is still a cloud problem, but it is also a banking-system problem in a way London can no longer pretend not to see. The new rule does not make the cloud smaller. It makes the risk visible.</p>
+    `
+  },
   post87: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2329,6 +2357,7 @@ POST_ORDER.unshift('post84');
 POST_ORDER.unshift('post85');
 POST_ORDER.unshift('post86');
 POST_ORDER.unshift('post87');
+POST_ORDER.unshift('post88');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

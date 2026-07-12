@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post88: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/London%20financial%20district.jpg',
+      caption: 'The cloud now sits inside the same risk map as the financial district it supports.', side: 'right', after: 4,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/A%20view%20of%20the%20server%20room%20at%20The%20National%20Archives.jpg',
+      supportCaption: 'A critical service needs a recovery path that can survive a bad day, not just a good demo.'
+    },
     post87: {
       image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laptop%20computer.jpg',
       caption: 'The patch starts as a developer problem before it turns into a production decision.', side: 'right', after: 3,
@@ -603,6 +609,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    ukTrustFinancialSystem: {
+      text: 'We are a world-leading financial centre, and maintaining trust in our financial system is essential to its success.',
+      source: 'Rachel Blake, Economic Secretary to the Treasury',
+      sourceUrl: 'https://www.gov.uk/government/news/uk-financial-system-strengthened-with-new-safeguards-for-major-technology-providers'
+    },
+    ukMultipleFirmsOrMarkets: {
+      text: 'As many firms rely on these services, disruption or failure could affect multiple firms or markets at the same time, potentially impacting UK financial stability and services used by millions of consumers and businesses.',
+      source: 'Bank of England',
+      sourceUrl: 'https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt'
+    },
     skHynixInvestorDoor: {
       text: 'Our ADR listing makes access easier. We are pleased to welcome a broader community of global investors to join our journey.',
       source: 'Kwak Noh-Jung, SK Hynix CEO',
@@ -1236,6 +1252,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
     post87: { after: 4, quotes: [makeQuote('Certified fixes', QUOTE_LIBRARY.lightwellCertifiedFixes), makeQuote('Threat window', QUOTE_LIBRARY.lightwellThreatWindow)] },
     post86: { after: 4, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Strategy', QUOTE_LIBRARY.albertaMostAttractive)] },
     post85: { after: 4, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Microsoft view', QUOTE_LIBRARY.microsoftMoreUseful)] },
