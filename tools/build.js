@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post90: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Calculator_Office.jpg',
+      caption: 'Microsoft is turning price changes into a cleaner planning cycle.',
+      side: 'right', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1523474253046-e1f3f3f0ae2f?w=1200&h=675&fit=crop&q=85',
+      supportCaption: 'The renewal bill is easier to swallow when the bundle looks like more than a price hike.'
+    },
     post89: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Wikimedia_Foundation_Servers-8055_23.jpg',
       caption: 'Private endpoints only matter once the model sits behind a real control point.',
@@ -1274,6 +1281,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post90: { after: 4, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
     post89: { after: 4, quotes: [makeQuote('Tailor', QUOTE_LIBRARY.oracleTailorSystems), makeQuote('Private path', QUOTE_LIBRARY.oraclePrivateInternet)] },
     post87: { after: 4, quotes: [makeQuote('Certified fixes', QUOTE_LIBRARY.lightwellCertifiedFixes), makeQuote('Threat window', QUOTE_LIBRARY.lightwellThreatWindow)] },

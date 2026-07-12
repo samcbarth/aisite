@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 19:13:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 22:09:45 GMT</lastBuildDate>
+    <item>
+      <title>Microsoft put cloud pricing on a January clock</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsoft-put-cloud-pricing-on-a-january-clock/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-put-cloud-pricing-on-a-january-clock/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Microsoft did two pricing things in early July, and both of them matter if you run a real commercial stack. On July 8, the company told Partner Center users it was moving commercial cloud local currency pricing updates to once a year every January. The Microsoft Learn note says t</description>
+    </item>
     <item>
       <title>Oracle added three gates to OCI AI</title>
       <link>https://samcbarth.github.io/aisite/posts/oracle-added-three-gates-to-oci-ai/</link>

@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post90: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'Microsoft put cloud pricing on a January clock',
+    category: 'Business Strategy', tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Laptop_computer.jpeg',
+    body: `
+      <p>Microsoft did two pricing things in early July, and both of them matter if you run a real commercial stack.</p>
+
+      <p>On July 8, the company told Partner Center users it was moving commercial cloud local currency pricing updates to once a year every January. The <a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-july" target="_blank" rel="noopener noreferrer">Microsoft Learn note</a> says the change is meant to provide customers with "greater pricing predictability" while still accounting for foreign exchange swings. A day earlier, <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates-faq" target="_blank" rel="noopener noreferrer">Microsoft said</a> its commercial Microsoft 365 price and packaging updates would take effect July 1, with existing customers seeing the new prices at their next renewal.</p>
+
+      <p>That sounds like housekeeping until you look at it from a buyer's seat. Then it is not housekeeping at all. It means Microsoft is pulling more of the pricing story into the normal renewal cycle instead of letting currency moves and product updates feel like random midyear noise. That is friendlier if you buy from Microsoft. It is also a sign that the company is tightening the link between product changes, FX movement, and the calendar your finance team already lives on.</p>
+
+      <p>The Microsoft 365 FAQ is broad. It covers Office 365 E3 and E5, Microsoft 365 E3 and E5, Business Basic and Business Standard, Frontline plans, Entra P1 and P2, and a long list of related commercial SKUs. Microsoft also says the new pricing applies to both annual and monthly billing plans, and that multi-year agreements stay on current pricing until renewal. If you have ever had to explain a renewal delta to finance, you already know why that sentence matters.</p>
+
+      <h2>The part finance teams care about</h2>
+
+      <p>The useful way to read this is not as a headline about Microsoft getting more expensive. It is a signal that Microsoft wants price movement to happen on a schedule buyers can plan around. That is a real difference. Annual FX updates give partners fewer surprises. Renewal-based pricing gives customers a cleaner moment to review contracts, usage, and seat mix. It does not make the bill smaller, but it does make the bill easier to model.</p>
+
+      <p>That matters more now because Microsoft is not just selling software. It is bundling more security, storage, and AI into the suite and tying that to the commercial value story. The FAQ says the update arrives alongside "additional security, storage, and AI capabilities," including Defender for Office 365 Plan 1, Intune Remote Help, Intune Advanced Analytics, Intune Plan 2, Intune Privilege Management, Microsoft Cloud PKI, and Intune Application Management. That is a lot of product movement attached to one pricing window.</p>
+
+      <p>Microsoft is also careful to frame the change as value, not just cost. The Learn note says Microsoft remains committed to helping customers and partners "plan with confidence and invest in the technologies they need to grow and adapt." That is the right corporate language for a company that knows buyers want both predictability and a story they can take to procurement.</p>
+
+      <p>TechRadar's read was less polished but basically the same. It warned that the new cadence could surface more of the bill impact when contracts are close to renewal, which is where a lot of budget pain already lives. That is the operational reality here. The pricing move lands right where finance, IT, and the procurement team already argue about timing, scope, and justification.</p>
+
+      <p>What I think is happening underneath all of this is simple. Microsoft is normalizing how it changes money, not just how it changes software. One annual FX update makes the currency side quieter. The July 1 Microsoft 365 update makes the packaging side louder. Put those together and the message is clear: Microsoft wants pricing to feel more predictable without giving up the right to reprice when the product mix shifts.</p>
+
+      <p>That has a few knock-on effects. Procurement teams will care more about renewal dates. RevOps and IT teams will care more about which SKUs actually moved. CFOs will care about whether the bundle really absorbs the cost of the added AI and security features. Anyone running a global Microsoft estate will care about how much of the bill is driven by product value versus currency cleanup.</p>
+
+      <p>This is also a good reminder that enterprise software vendors are getting better at selling the schedule as much as the feature. Keep the customer calm with predictability. Keep the roadmap noisy enough to justify the price. Make the renewal the place where those two stories meet. Microsoft just did it in a very clean, very visible way.</p>
+
+      <p>The thing to watch next is January. If Microsoft's annual FX cadence sticks, the next budget round will not just be about license count or seat mix. It will be about whether your Microsoft estate treats pricing as a fixed planning input or another variable that gets revised when the calendar turns.</p>
+    `
+  },
   post89: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2389,6 +2423,7 @@ POST_ORDER.unshift('post86');
 POST_ORDER.unshift('post87');
 POST_ORDER.unshift('post88');
 POST_ORDER.unshift('post89');
+POST_ORDER.unshift('post90');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
