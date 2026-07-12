@@ -37,6 +37,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samcbarth.github.io/aisite/posts/midmarket-ai-is-stuck-at-the-handoff/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>

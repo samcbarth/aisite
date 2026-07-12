@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post85: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Laptop_Google_Search.jpg/1280px-Laptop_Google_Search.jpg',
+      caption: 'The real issue is not drafting the first thing. It is carrying the same context across the tools.',
+      side: 'right', after: 4,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Video_Conference_Using_Laptop.jpg/1280px-Video_Conference_Using_Laptop.jpg',
+      supportCaption: 'The file only stays useful if it survives the review call and the follow-up.'
+    },
     post84: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Half_filled_server_racks.jpg',
       caption: 'Midmarket AI still has to fit inside the infrastructure and staffing a real business can actually support.', side: 'right', after: 4,
@@ -1202,6 +1209,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post85: { after: 4, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Microsoft view', QUOTE_LIBRARY.microsoftMoreUseful)] },
     post84: { after: 4, quotes: [makeQuote('Weeks to outcomes', QUOTE_LIBRARY.accentureWeeksToOutcomes), makeQuote('Workflow demand', QUOTE_LIBRARY.googleWorkflowDemand)] },
     post83: { after: 5, quotes: [makeQuote('Rack fit', QUOTE_LIBRARY.ibmRackFit), makeQuote('Entry point', QUOTE_LIBRARY.linuxoneCostAccess)] },
     post82: { after: 7, quotes: [makeQuote('Traffic types', QUOTE_LIBRARY.cloudflareTrafficIsDifferent), makeQuote('Publisher choice', QUOTE_LIBRARY.cloudflareReadersRevenue)] },

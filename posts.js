@@ -7,6 +7,34 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post85: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'The real AI race is for context',
+    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/New_office.jpg/1280px-New_office.jpg',
+    body: `
+      <p>The ugly part of office work is not the typing. It is the handoff. A number starts in Excel, gets summarized in Word, turns into slides, and then gets explained again in chat because the first three versions lost something.</p>
+
+      <p>That is why the latest moves from <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener noreferrer">OpenAI</a> and Microsoft matter. They are both aimed at the same problem: keeping context alive long enough for work to actually move. Not just answer a question. Not just draft a paragraph. Keep the task moving.</p>
+
+      <p>OpenAI says GPT-5.6 brings "more intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work." In the <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank" rel="noopener noreferrer">ChatGPT Work</a> launch, the company says the agent can "take action across your apps and files" and "turn a goal into finished work." That is a different pitch than a chat box. It is a pitch about persistence.</p>
+
+      <p>Microsoft made the same bet from the other side of the stack. Its Copilot update says GPT-5.6 is now the <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152" target="_blank" rel="noopener noreferrer">preferred model in Microsoft 365 Copilot</a> across Word, Excel, PowerPoint, Chat and Cowork. That matters because those are the places where office work already lives. If the model sits in the file, the message thread, and the presentation deck, the question changes from "can it answer" to "can it keep the work moving without breaking the format."</p>
+
+      <p>This is where the product story gets more interesting than the benchmark story. Microsoft is tying GPT-5.6 to Work IQ, Microsoft 365 apps, and enterprise-grade security, compliance, and privacy. OpenAI is tying ChatGPT Work to Codex, apps, files, and longer tasks. Both companies are making the same bet: the winner is not the model that sounds smartest in a demo. It is the one that can carry context forward without losing the thread.</p>
+
+      <p>That is the part AI demos still struggle with. They are usually fine at the first pass. They draft. They summarize. They generate a clean-looking answer. Then the work needs a second pass, a template, a permission check, or a handoff to another person, and the seams show. The business value is not in the first response. It is in the second and third steps that keep the work from stalling.</p>
+
+      <p>The useful version of this is easy to picture. A finance team can ask for a month-end variance summary and then ask for slides that still match the same numbers. A sales manager can turn meeting notes into next steps by owner. A marketing lead can turn a rough brief into a cleaner campaign doc without starting from scratch every time. None of that removes judgment. It just cuts down the junk between the idea and the usable draft.</p>
+
+      <p>The risk is just as obvious. If the file is messy, the permissions are wrong, or the source of truth is not clear, GPT-5.6 just makes a bad workflow move faster. The model does not fix the operating system around it. It amplifies it. That is true whether you are inside ChatGPT Work or inside Microsoft 365 Copilot.</p>
+
+      <p>This release feels more important than another round of benchmark bragging because it changes where the value sits. OpenAI is trying to own the agent that moves across apps. Microsoft is trying to own the place where those apps already live. The real fight is not who talks better. It is who can hold context long enough to finish something people can actually ship.</p>
+
+      <p>In a spreadsheet or a deck, the win is not a clever response. It is the moment the file is ready, the numbers still line up, and nobody has to rebuild the whole thing by hand.</p>
+    `
+  },
   post84: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2244,6 +2272,7 @@ POST_ORDER.unshift('post81');
 POST_ORDER.unshift('post82');
 POST_ORDER.unshift('post83');
 POST_ORDER.unshift('post84');
+POST_ORDER.unshift('post85');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

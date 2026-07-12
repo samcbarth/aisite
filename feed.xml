@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 03:10:08 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 07:08:56 GMT</lastBuildDate>
+    <item>
+      <title>The real AI race is for context</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>The ugly part of office work is not the typing. It is the handoff. A number starts in Excel, gets summarized in Word, turns into slides, and then gets explained again in chat because the first three versions lost something. That is why the latest moves from OpenAI and Microsoft m</description>
+    </item>
+    <item>
+      <title>Midmarket AI is stuck at the handoff</title>
+      <link>https://samcbarth.github.io/aisite/posts/midmarket-ai-is-stuck-at-the-handoff/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/midmarket-ai-is-stuck-at-the-handoff/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>A midmarket company can buy a pilot. What it usually cannot buy is the spare staff to turn that pilot into a real system. That is the gap Accenture and Google Cloud are aiming at with their July 7 announcement of Accenture Edge . The package is built for companies with annual rev</description>
+    </item>
     <item>
       <title>IBM shrank the mainframe to fit the rack</title>
       <link>https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</link>
