@@ -12,7 +12,7 @@ const POSTS = {
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'Britain made cloud uptime a bank problem',
     category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bank-of-England.jpg',
+    image: 'assets/images/post88-hero.jpg',
     body: `
       <p>On Monday, July 13, the cloud stops being invisible in London.</p>
 
@@ -40,7 +40,7 @@ const POSTS = {
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'IBM and Red Hat turned patching into a product',
     category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Software%20Developer%20at%20Work.jpg',
+    image: 'assets/images/post87-hero.jpg',
     body: `
       <p>Every enterprise has packages it would rather not touch again. The version runs fine, the business depends on it, and the next "simple" upgrade comes with regression tests, dependency drift, and a lot of praying.</p>
 

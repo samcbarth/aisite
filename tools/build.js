@@ -158,15 +158,15 @@ function copyRecursive(src, dest) {
   }
   const INLINE_MEDIA = {
     post88: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/London%20financial%20district.jpg',
+      image: 'assets/images/post88-inline.jpg',
       caption: 'The cloud now sits inside the same risk map as the financial district it supports.', side: 'right', after: 4,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/A%20view%20of%20the%20server%20room%20at%20The%20National%20Archives.jpg',
+      supportImage: 'assets/images/post88-support.jpg',
       supportCaption: 'A critical service needs a recovery path that can survive a bad day, not just a good demo.'
     },
     post87: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laptop%20computer.jpg',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=675&fit=crop&q=85',
       caption: 'The patch starts as a developer problem before it turns into a production decision.', side: 'right', after: 3,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/BalticServers%20data%20center.jpg',
+      supportImage: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=1200&h=675&fit=crop&q=85',
       supportCaption: 'Lightwell is really about getting fixes into the stack already carrying live workloads.'
     },
     post86: {
