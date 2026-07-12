@@ -7,6 +7,48 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post79: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'The model is no longer the whole agent',
+    category: 'AI Engineering', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>An AI agent can fail while using a perfectly capable model. It can stop reading a file too early, call the wrong tool, carry the wrong context forward, or take an action outside the boundary a company intended.</p>
+
+      <p>That is why the most interesting part of a new LangChain and NVIDIA release is not the model at its center. It is the argument that the surrounding harness and runtime are becoming products companies need to own.</p>
+
+      <p>On July 8, the companies <a href="https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint" target="_blank" rel="noopener noreferrer">released the NemoClaw for LangChain Deep Agents blueprint</a>. It combines NVIDIA's open Nemotron 3 Ultra model, LangChain's Deep Agents Code harness, and NVIDIA OpenShell, a sandboxed runtime that applies policies to tools, systems, and data.</p>
+
+      <p>The three layers do different jobs. The model reasons. The harness plans tasks, manages context and memory, and decides how tools are used. The runtime controls where the agent runs and what it is allowed to touch. That separation gives a business more places to improve a system without retraining the model or replacing the entire stack.</p>
+
+      <p>LangChain reported an aggregate score of 0.86 at a cost of $4.48 for Nemotron 3 Ultra with its tuned harness. The next closest model in its evaluation cost $43.48. That is a large gap, but it needs the right label. This was LangChain's own agent evaluation suite, not an independent measure of every enterprise workload.</p>
+
+      <p>The useful result is not simply “10 times cheaper.” It is evidence that agent economics can change when a team tunes the system around a model. LangChain says the main lesson is that “agent performance improves when the model, harness, evals, and runtime are tuned together.”</p>
+
+      <p>NVIDIA's technical walkthrough makes the point concrete. In one evaluation, the agent was asked for the last non-empty line in a large file. The first read returned a full page, but the answer was farther down. The model answered early instead of continuing with another offset.</p>
+
+      <p>The fix did not require new model weights. Developers added middleware that tells the agent when a file result probably continues and instructs it to keep paging. The failing read test moved from zero passes in three runs to three passes. The broader benchmark improved from 94 to 96 correct results out of 127.</p>
+
+      <p>That example is small enough to understand and important enough to generalize. Many agent failures are not pure intelligence failures. They are interface failures. The model does not know that a tool response was truncated, that an approval is required before a write, or that a customer record came from a stale source unless the surrounding system makes those facts visible.</p>
+
+      <p>Companies already encode operating knowledge in procedures, permissions, quality checks, and exceptions. An agent harness turns some of that knowledge into software. Its prompts, tool descriptions, traces, evaluation cases, routing rules, and memory design become a record of how the company wants work done.</p>
+
+      <p>LangChain calls those assets valuable intellectual property. That is a fair description. A generic model can be rented by every competitor. A tested harness that knows when to ask for clarification, which system owns a field, how to recover from a partial response, and when to stop is much harder to copy.</p>
+
+      <p>OpenShell adds the other half of the argument. An agent that can act needs boundaries outside its own instructions. NVIDIA describes NemoClaw as a path from prototype to governed deployment, with model routing, skill execution, state, observability, and runtime controls in one setup. The runtime can sandbox execution and apply policy to data access and sensitive actions.</p>
+
+      <p>That matters because a prompt is not a security boundary. Telling an agent not to access a directory or send data to an unapproved service is weaker than preventing that connection at runtime. Businesses need both behavioral instructions and enforced limits, especially for long-running agents working with code, financial records, customer data, or production systems.</p>
+
+      <p>The open label also deserves scrutiny. The blueprint gives teams more control over model, harness, and runtime choices, and NVIDIA says it can run anywhere. But the stack still creates dependencies. Teams must understand the licenses, hosting requirements, NVIDIA infrastructure options, LangChain interfaces, and the work required to operate the components themselves.</p>
+
+      <p>Ownership is not the same as simplicity. A company can avoid one closed platform and still end up maintaining a complicated collection of open parts. The deciding question is whether that control produces better reliability, lower total cost, or a real compliance advantage for the workload.</p>
+
+      <p>This is where the process work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> connects. The business value sits in making the hidden operating rules explicit: what the agent may read, what it may change, how success is checked, and what evidence triggers a human review. The model is one component inside that design.</p>
+
+      <p>NemoClaw will be tested less by its launch benchmark than by the failure records companies build around it. Every truncated file, rejected tool call, policy block, and corrected answer can become a reusable test. Over time, that collection may be more valuable than the original agent prompt because it captures what the business learned the hard way. The companies that keep that learning in their own harness will own more than an AI agent. They will own the instructions for making it dependable.</p>
+    `
+  },
   post78: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2016,6 +2058,7 @@ POST_ORDER.unshift('post75');
 POST_ORDER.unshift('post76');
 POST_ORDER.unshift('post77');
 POST_ORDER.unshift('post78');
+POST_ORDER.unshift('post79');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

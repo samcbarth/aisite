@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post79: {
+      image: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=900&h=650&fit=crop&q=80',
+      caption: 'The harness connects model reasoning to context, memory, tools, and task execution.', side: 'right', after: 6,
+      supportImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Runtime policy creates a boundary outside the prompt for sensitive tools, systems, and data.'
+    },
     post78: {
       image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&h=650&fit=crop&q=80',
       caption: 'Cognizant is using its own engineers, project teams, and support operations as the first large deployment environment.', side: 'left', after: 5,
@@ -548,6 +554,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    langchainTunedTogether: {
+      text: 'agent performance improves when the model, harness, evals, and runtime are tuned together',
+      source: 'LangChain Team',
+      sourceUrl: 'https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint'
+    },
+    nvidiaHarnessGoal: {
+      text: 'The goal of harness engineering is to make the calls from the agent to the model more closely resemble what the model saw in the training data.',
+      source: 'NVIDIA Technical Blog',
+      sourceUrl: 'https://developer.nvidia.com/blog/create-a-langchain-deep-agents-harness-profile-for-nvidia-nemotron-3-ultra-to-improve-performance/'
+    },
     cognizantProvenInside: {
       text: 'We have built this capability, proven it inside our own business, and are now bringing it to joint clients at scale.',
       source: 'Ravi Kumar S, Cognizant CEO',
@@ -1106,6 +1122,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post79: { after: 7, quotes: [makeQuote('System tuning', QUOTE_LIBRARY.langchainTunedTogether), makeQuote('Harness goal', QUOTE_LIBRARY.nvidiaHarnessGoal)] },
     post78: { after: 7, quotes: [makeQuote('Internal proof', QUOTE_LIBRARY.cognizantProvenInside), makeQuote('Partner view', QUOTE_LIBRARY.googleFirstHand)] },
     post77: { after: 7, quotes: [makeQuote('Daily reliability', QUOTE_LIBRARY.openaiDeployEveryday), makeQuote('Field model', QUOTE_LIBRARY.northslopeAllFdes)] },
     post76: { after: 7, quotes: [makeQuote('Industrial data', QUOTE_LIBRARY.schneiderIndustrialGrade), makeQuote('Combined platform', QUOTE_LIBRARY.akerComplementaryPlatform)] },
