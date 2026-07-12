@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post84: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Half_filled_server_racks.jpg',
+      caption: 'Midmarket AI still has to fit inside the infrastructure and staffing a real business can actually support.', side: 'right', after: 4,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Business_professional_engages_in_note-taking_during_a_meeting_at_a_modern_office_desk.jpg',
+      supportCaption: 'The hard part is not the demo. It is the review, ownership, and data work behind it.'
+    },
     post83: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wikimedia_Servers-0051_19.jpg/960px-Wikimedia_Servers-0051_19.jpg',
       caption: 'IBM is trying to make mainframe scale fit standard rack math.', side: 'right', after: 5,
@@ -617,6 +623,16 @@ function copyRecursive(src, dest) {
       text: 'This deep, first-hand experience uniquely positions Cognizant to help our joint customers scale agentic AI solutions and accelerate time-to-value.',
       source: 'Karthik Narain, Google Cloud',
       sourceUrl: 'https://investors.cognizant.com/news-and-events/news/news-details/2026/Cognizant-expands-partnership-with-Google-Cloud-to-accelerate-enterprise-AI-adoption-with-Gemini-Enterprise-and-Google-Workspace/default.aspx'
+    },
+    accentureWeeksToOutcomes: {
+      text: 'Accenture Edge offerings built with Google Cloud technology help mid-market organizations do exactly that. They can deploy solutions in weeks and get measurable outcomes at the scale, budget and speed that they need to grow.',
+      source: 'Rajendra Prasad, Accenture',
+      sourceUrl: 'https://newsroom.accenture.com/news/2026/accenture-edge-and-google-cloud-bring-scalable-agentic-ai-solutions-to-mid-market-companies'
+    },
+    googleWorkflowDemand: {
+      text: 'We’re seeing tremendous demand as mid-market enterprises adopt AI agents to fundamentally reinvent their business workflows.',
+      source: 'Kevin Ichhpurani, Google Cloud',
+      sourceUrl: 'https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies'
     },
     schneiderIndustrialGrade: {
       text: 'a truly industrial grade AI platform that turns the complexity of operational data into a competitive advantage',
@@ -1186,6 +1202,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post84: { after: 4, quotes: [makeQuote('Weeks to outcomes', QUOTE_LIBRARY.accentureWeeksToOutcomes), makeQuote('Workflow demand', QUOTE_LIBRARY.googleWorkflowDemand)] },
     post83: { after: 5, quotes: [makeQuote('Rack fit', QUOTE_LIBRARY.ibmRackFit), makeQuote('Entry point', QUOTE_LIBRARY.linuxoneCostAccess)] },
     post82: { after: 7, quotes: [makeQuote('Traffic types', QUOTE_LIBRARY.cloudflareTrafficIsDifferent), makeQuote('Publisher choice', QUOTE_LIBRARY.cloudflareReadersRevenue)] },
     post81: { after: 8, quotes: [makeQuote('Investor access', QUOTE_LIBRARY.skHynixInvestorDoor), makeQuote('Capital demand', QUOTE_LIBRARY.nasdaqInfrastructureDemand)] },

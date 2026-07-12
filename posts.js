@@ -7,6 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post84: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'Midmarket AI is stuck at the handoff',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Business_professional_working_on_laptop_in_a_bright_office_space.jpg',
+    body: `
+      <p>A midmarket company can buy a pilot. What it usually cannot buy is the spare staff to turn that pilot into a real system.</p>
+
+      <p>That is the gap Accenture and Google Cloud are aiming at with their July 7 announcement of <a href="https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies" target="_blank" rel="noopener noreferrer">Accenture Edge</a>. The package is built for companies with annual revenue between $300 million and $3 billion. It combines prebuilt, industry-specific agents with Gemini Enterprise, Agentic Data Cloud, AI Threat Defense, and forward deployed engineers from Accenture.</p>
+
+      <p>That mix matters because midmarket AI usually does not fail on a missing model. It fails on the middle layer nobody budgets for. The first demo works. The integration work starts. The data gets messy. The workflow owner gets busy. The pilot sits there looking promising while the business keeps paying for the old process.</p>
+
+      <p><a href="https://www.klarus.com/news/the-state-of-ai-in-the-mid-market" target="_blank" rel="noopener noreferrer">Klarus</a> put numbers on that problem in new research from the UK and Ireland. It found that 73% of midmarket companies have partially or fully deployed AI, but only 10% have scaled every initiative beyond the pilot stage. Ninety-one percent say they are confident in their internal expertise, yet 83% report poor data quality and 59% still do not have a comprehensive governance framework.</p>
+
+      <p>That is the real market signal in this story. AI is not scarce anymore. Operational follow-through is. Accenture and Google Cloud are not just selling software. They are selling a path through the part of the rollout that usually gets hand-waved in the deck.</p>
+
+      <p>The Google Cloud side is not subtle about it. Its release says the partnership is meant to help midmarket companies move from AI pilots to production faster. Accenture says the goal is to give customers prebuilt solutions designed for the speed and scale this segment actually needs. In plain English, both companies are trying to compress the distance between interest and usable output.</p>
+
+      <p>The quote from Accenture is the cleanest version of that pitch: "Accenture Edge offerings built with Google Cloud technology help mid-market organizations do exactly that. They can deploy solutions in weeks and get measurable outcomes at the scale, budget and speed that they need to grow."</p>
+
+      <p>Google Cloud is making the same point from a different angle: "We’re seeing tremendous demand as mid-market enterprises adopt AI agents to fundamentally reinvent their business workflows."</p>
+
+      <p><a href="https://www.klarus.com/news/the-state-of-ai-in-the-mid-market" target="_blank" rel="noopener noreferrer">Klarus CTO Alper Gunaydin</a> gets closer to the trap companies keep falling into: "too many pilots stall because companies lack AI expertise, quality data and effective governance."</p>
+
+      <p>That is the middle of the story, and it is the part that matters to the business. Midmarket firms are usually agile enough to move faster than giant enterprises, but they do not have endless specialist headcount. They need a product that comes with process. They need help wiring the data, naming the owner, setting the control points, and making the rollout repeatable.</p>
+
+      <p>That is the same question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the workflow is not clear, if the data owner is not clear, and if the review step is not clear, the AI layer just creates a fancier version of the same confusion. Good tools still need a clean operating path.</p>
+
+      <p>Accenture Edge is built around six solution areas, from customer intelligence and customer experience to cybersecurity, business operations, industry solutions, and workforce enablement. That spread tells you what the market wants. Companies do not want another raw AI platform to assemble themselves. They want packaged work that lands inside a known business function and starts producing something measurable.</p>
+
+      <p>The forward deployed engineers are part of that bet. They are there because midmarket customers usually need implementation judgment, not just licenses. If the model is the engine, the FDEs are the mechanics who help get it into the car and keep it from stalling on the way out of the lot.</p>
+
+      <p>The risk is obvious. If the stack still needs too much custom work, the pitch turns back into consulting with better branding. If the stack really can move a customer from pilot to production in weeks, then this is a useful template for the part of AI adoption that has been hardest to scale. The companies that can make that handoff feel routine will own the middle of the market.</p>
+    `
+  },
   post83: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2207,6 +2243,7 @@ POST_ORDER.unshift('post80');
 POST_ORDER.unshift('post81');
 POST_ORDER.unshift('post82');
 POST_ORDER.unshift('post83');
+POST_ORDER.unshift('post84');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
