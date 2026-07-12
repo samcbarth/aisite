@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 13:10:38 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 19:13:12 GMT</lastBuildDate>
+    <item>
+      <title>Oracle added three gates to OCI AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/oracle-added-three-gates-to-oci-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/oracle-added-three-gates-to-oci-ai/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>If your model cannot cross the public internet, Oracle&apos;s July OCI update is the kind of release that matters. The company&apos;s AI and Data Science blog says this month is about &quot;more ways to tailor AI systems to their specific workloads, users, and governance needs.&quot; That line is do</description>
+    </item>
+    <item>
+      <title>Britain made cloud uptime a bank problem</title>
+      <link>https://samcbarth.github.io/aisite/posts/britain-made-cloud-uptime-a-bank-problem/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/britain-made-cloud-uptime-a-bank-problem/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Infrastructure</category>
+      <description>On Monday, July 13, the cloud stops being invisible in London. The UK Treasury has designated Microsoft Ireland Operations, Google Cloud EMEA, Amazon Web Services EMEA, and Oracle Corporation UK as Critical Third Parties. That puts the services behind a lot of financial plumbing </description>
+    </item>
     <item>
       <title>IBM and Red Hat turned patching into a product</title>
       <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-turned-patching-into-a-product/</link>

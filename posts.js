@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post89: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'Oracle added three gates to OCI AI',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/CERN_Server.jpg',
+    body: `
+      <p>If your model cannot cross the public internet, Oracle's July OCI update is the kind of release that matters.</p>
+
+      <p>The company's <a href="https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-july-2026" target="_blank" rel="noopener noreferrer">AI and Data Science blog</a> says this month is about "more ways to tailor AI systems to their specific workloads, users, and governance needs." That line is doing a lot of work. It points to the three things Oracle changed at once: model choice, network path, and guardrails.</p>
+
+      <p>On the model side, Oracle added GLM 5.2 to OCI Enterprise AI through Model Import and widened the imported list to include OpenAI Whisper Large V3 Turbo, Google MedGemma 27B Text IT, Qwen3-Next-80B-A3B-Instruct, DeepSeek V4 Flash and V4 Pro, MiniMax M3, Mistral Medium 3.5, and Moonshot AI Kimi K2.6 and K2.7 Code. Oracle's own summary says customers can import open-source and third-party models from Hugging Face and OCI Object Storage buckets into OCI Generative AI.</p>
+
+      <p>That sounds like a catalog story, but it is really a deployment story. Oracle is making the model selection happen inside a place IT already has to manage. The useful shift is not that teams get more logos to pick from. It is that they can match the model to the work without turning every choice into a separate platform decision.</p>
+
+      <p>Oracle also closed the network loop. The June 30 <a href="https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/private-endpoint-imported-models.htm" target="_blank" rel="noopener noreferrer">docs update</a> says imported models can now use private endpoints, which lets teams access them "without routing traffic over the public internet." That matters because security teams do not sign off on vibes. They sign off on where traffic goes, how it is isolated, and what happens when auditors ask for the path. A private endpoint makes the model feel less like a public demo and more like a governed internal service.</p>
+
+      <p>That is the point of the new guardrail options too. Oracle says OCI Enterprise AI Guardrails now supports image moderation and version pinning, so teams can keep content moderation, prompt injection, and PII detection stable in production instead of letting behavior drift with the service. The docs are blunt about it: this feature gives teams "more control over guardrail behavior in production." That is the kind of sentence security and platform teams like because it translates directly into change control.</p>
+
+      <p>Image moderation is not a side issue here. Oracle is explicitly aiming at the workflows where users upload screenshots, generated images, or other multimodal input. The May 29 release note says image moderation works through the existing ApplyGuardrails API and guardrails system version 1.1.0. In practice, that means one control layer can handle text and image moderation instead of making the team bolt on another piece of policy logic later.</p>
+
+      <p>That is why the July update feels like a production release rather than a feature dump. Oracle is trying to make the AI stack look less like a collection of experiments and more like a managed system. The more the model stays on a private path, the more the guardrails stay versioned, and the more the model choices stay close to the workload, the easier it becomes to answer the questions that actually slow enterprise AI down.</p>
+
+      <p>Oracle also used the month to push training. Oracle University launched an Agentic AI Foundations course and certification for developers, data scientists, and AI/ML engineers. That matters because the hard part of enterprise AI is rarely getting a prompt to run once. It is building the habits around evaluation, rollout, and ownership so the system still works after the demo is over. Oracle is telling customers that agents are now a skill track, not just a product feature.</p>
+
+      <p>The rest of the stack points the same way. Oracle's OCI updates come with webinar content around production AI on OCI and NVIDIA RTX PRO, which tells you where the company wants the conversation to land: fewer toy examples, more real deployment work. If the model, guardrail, and network choices all live inside one control plane, the buyer can spend less time stitching together policy and more time deciding which workload is worth automating first.</p>
+
+      <p>That is the real shape of the July release. Oracle is not trying to win by saying it has one best model. It is trying to win by making model choice, traffic isolation, and guardrail behavior boring enough for procurement, security, and platform teams to live with. For enterprise AI, boring is not a weak result. It is the part that gets the project through the review queue.</p>
+    `
+  },
   post88: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2358,6 +2388,7 @@ POST_ORDER.unshift('post85');
 POST_ORDER.unshift('post86');
 POST_ORDER.unshift('post87');
 POST_ORDER.unshift('post88');
+POST_ORDER.unshift('post89');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

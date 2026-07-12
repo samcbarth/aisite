@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post89: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Wikimedia_Foundation_Servers-8055_23.jpg',
+      caption: 'Private endpoints only matter once the model sits behind a real control point.',
+      side: 'right', after: 4,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Lines_of_code_%28Unsplash%29.jpg',
+      supportCaption: 'Guardrails get real when the code and review path stay boring.'
+    },
     post88: {
       image: 'assets/images/post88-inline.jpg',
       caption: 'The cloud now sits inside the same risk map as the financial district it supports.', side: 'right', after: 4,
@@ -982,6 +989,21 @@ function copyRecursive(src, dest) {
       source: 'HubSpot',
       sourceUrl: 'https://blog.hubspot.com/service/customer-success-quotes'
     },
+    oracleTailorSystems: {
+      text: 'more ways to tailor AI systems to their specific workloads, users, and governance needs',
+      source: 'Michelle Meng, Oracle AI & Data Science Blog',
+      sourceUrl: 'https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-july-2026'
+    },
+    oraclePrivateInternet: {
+      text: 'without routing traffic over the public internet',
+      source: 'Oracle Documentation',
+      sourceUrl: 'https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/private-endpoint-imported-models.htm'
+    },
+    oracleGuardrailControl: {
+      text: 'more control over guardrail behavior in production',
+      source: 'Oracle Documentation',
+      sourceUrl: 'https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/ai-guardrails-versions.htm'
+    },
     ellisonImportant: {
       text: 'Is this the most important new computer technology ever? Probably.',
       source: 'Oracle',
@@ -1253,6 +1275,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
+    post89: { after: 4, quotes: [makeQuote('Tailor', QUOTE_LIBRARY.oracleTailorSystems), makeQuote('Private path', QUOTE_LIBRARY.oraclePrivateInternet)] },
     post87: { after: 4, quotes: [makeQuote('Certified fixes', QUOTE_LIBRARY.lightwellCertifiedFixes), makeQuote('Threat window', QUOTE_LIBRARY.lightwellThreatWindow)] },
     post86: { after: 4, quotes: [makeQuote('Power', QUOTE_LIBRARY.metaAlbertaPower), makeQuote('Strategy', QUOTE_LIBRARY.albertaMostAttractive)] },
     post85: { after: 4, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkflowAction), makeQuote('Microsoft view', QUOTE_LIBRARY.microsoftMoreUseful)] },
