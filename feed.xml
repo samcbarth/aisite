@@ -6,14 +6,22 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 02:43:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 03:10:08 GMT</lastBuildDate>
+    <item>
+      <title>IBM shrank the mainframe to fit the rack</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Infrastructure</category>
+      <description>The old mainframe rule was simple. If the machine mattered enough, you gave it a room. IBM just spent July making that room less special. On July 7, the company announced new z17 and LinuxONE 5 configurations, and for the first time the full Z and LinuxONE portfolio includes rack</description>
+    </item>
     <item>
       <title>Cloudflare gave the web a third door</title>
       <link>https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</link>
       <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
       <category>Digital Business</category>
-      <description>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated. On July 1, the company introduced new controls for AI traffic and said websites can now treat Search, Agent, and Training crawlers differently. Cloudflare says &quot;not all AI</description>
+      <description>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated. On July 1, Cloudflare introduced new controls for AI traffic and said websites can now treat Search, Agent, and Training crawlers differently. Cloudflare says &quot;not all AI </description>
     </item>
     <item>
       <title>A memory chip company just raised Wall Street money</title>

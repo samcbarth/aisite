@@ -157,6 +157,12 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post83: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wikimedia_Servers-0051_19.jpg/960px-Wikimedia_Servers-0051_19.jpg',
+      caption: 'IBM is trying to make mainframe scale fit standard rack math.', side: 'right', after: 5,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Virginia_Tech_-_data_center.jpg/960px-Virginia_Tech_-_data_center.jpg',
+      supportCaption: 'The real question is whether the workload can keep its controls without getting its own room.'
+    },
     post82: {
       image: 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=900&h=650&fit=crop&q=80',
       caption: 'Cloudflare turned crawler policy into a business rule that site owners can tune.', side: 'left', after: 5,
@@ -840,6 +846,16 @@ function copyRecursive(src, dest) {
       source: 'Dremio',
       sourceUrl: 'https://www.dremio.com/blog/sap-intends-to-acquire-dremio/'
     },
+    ibmRackFit: {
+      text: 'reclaim space, improve energy efficiency',
+      source: 'IBM Newsroom',
+      sourceUrl: 'https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount'
+    },
+    linuxoneCostAccess: {
+      text: 'access advanced technologies at cost-effective prices',
+      source: 'University College London',
+      sourceUrl: 'https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount'
+    },
     ibmBobBetterAssistant: {
       text: 'The bar for enterprise AI is no longer a better coding assistant.',
       source: 'IBM Newsroom',
@@ -1170,6 +1186,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post83: { after: 5, quotes: [makeQuote('Rack fit', QUOTE_LIBRARY.ibmRackFit), makeQuote('Entry point', QUOTE_LIBRARY.linuxoneCostAccess)] },
     post82: { after: 7, quotes: [makeQuote('Traffic types', QUOTE_LIBRARY.cloudflareTrafficIsDifferent), makeQuote('Publisher choice', QUOTE_LIBRARY.cloudflareReadersRevenue)] },
     post81: { after: 8, quotes: [makeQuote('Investor access', QUOTE_LIBRARY.skHynixInvestorDoor), makeQuote('Capital demand', QUOTE_LIBRARY.nasdaqInfrastructureDemand)] },
     post80: { after: 8, quotes: [makeQuote('Detection problem', QUOTE_LIBRARY.redditArtificialHype), makeQuote('Review burden', QUOTE_LIBRARY.aiDdosDefinition)] },

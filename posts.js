@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post83: {
+    featured: false,
+    date: 'July 11, 2026', iso: '2026-07-11',
+    title: 'IBM shrank the mainframe to fit the rack',
+    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Columbia_Supercomputer_-_NASA_Advanced_Supercomputing_Facility.jpg/960px-Columbia_Supercomputer_-_NASA_Advanced_Supercomputing_Facility.jpg',
+    body: `
+      <p>The old mainframe rule was simple. If the machine mattered enough, you gave it a room.</p>
+
+      <p>IBM just spent July making that room less special. On July 7, the company announced new z17 and LinuxONE 5 configurations, and for the first time the full Z and LinuxONE portfolio includes rack-mount options alongside single-frame systems. IBM says the new systems keep the same flagship performance, security, and ecosystem standards while giving buyers more places to put the hardware.</p>
+
+      <p>That sounds like a packaging change. It is really a response to where data center economics have gone. IBM's <a href="https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount" target="_blank" rel="noopener noreferrer">release</a> points to CBRE's 2026 Global Data Center Trend Report, which describes record-low vacancy and rental rates above $400 per kW/month for sensitive workloads at scale. When floor space gets that expensive, a special-purpose room stops being a neutral detail and starts becoming part of the bill.</p>
+
+      <p>IBM says the new configs are meant to "reclaim space, improve energy efficiency" and let clients co-locate IBM and non-IBM gear. The rack mount is the practical move here. It means a mainframe can sit directly in an industry-standard rack instead of demanding a separate enclosure. For shops already running mixed infrastructure, that lowers the argument against keeping mission-critical workloads on IBM hardware.</p>
+
+      <p>The numbers are still the numbers. The expanded portfolio supports up to 82 cores and 18 TB of memory across two processor drawers, about a 20% increase in core count and 12% more memory capacity. That is not small. But IBM is not just selling bigger boxes. It is selling fit.</p>
+
+      <p>There are three product layers in the release. The z17 single frame is a complete enclosed unit with iPDUs. The z17 rack mount lets customers install IBM Z components inside their own rack. LinuxONE Rockhopper 5 brings the same idea to high-density Linux workloads, with on-chip AI acceleration, confidential computing, and post-quantum cryptography. LinuxONE 5 Express shrinks the entry point further into an 18U package aimed at smaller workloads that still need enterprise-grade controls.</p>
+
+      <p>That last part matters. Mainframe economics used to read like a bank-only story. IBM and University College London made the case more broadly by pointing out that the new LinuxONE 5 models can give organizations "access advanced technologies at cost-effective prices." The point is not that a university or midmarket team needs a relic. It is that some workloads still need this level of reliability, isolation, and transaction handling, and they need it without swallowing a whole room.</p>
+
+      <p>The software update tells the same story. IBM is adding Infrastructure Management for Z and LinuxONE, COBOL Elevate for z/OS, standard post-quantum cryptography on z17 and LinuxONE Rockhopper 5, and new crypto discovery tools. That is a reminder that the mainframe pitch is now part hardware, part operating model. IBM wants less specialist friction, better automation, and a clearer path from old applications to newer security rules.</p>
+
+      <p><a href="https://www.datacenterdynamics.com/en/news/ibm-expands-mainframe-portfolio-with-new-z17-and-linuxone-systems-offerings/" target="_blank" rel="noopener noreferrer">Data Center Dynamics</a> framed the launch as IBM trying to address cost and space constraints within data center environments. That is the cleanest summary of the market reality. The machine is still about resilience, security, and throughput. What changed is the aisle it has to fit into.</p>
+
+      <p>The timing is important too. IBM says the z17 single frame, rack mount, LinuxONE Rockhopper 5, and LinuxONE 5 Express are generally available on August 12. Infrastructure Management follows on August 14, and COBOL Elevate lands September 18. If those dates hold, buyers will have a quick answer to a practical question: can the most conservative class of enterprise compute now be deployed like a normal piece of infrastructure, or does it still need its own carve-out every time?</p>
+
+      <p>The real test is not whether IBM made the mainframe smaller. It is whether a bank, insurer, or public-sector shop can keep the workload, keep the controls, and stop paying the penalty for a room built around one machine.</p>
+    `
+  },
   post82: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
@@ -2176,6 +2206,7 @@ POST_ORDER.unshift('post79');
 POST_ORDER.unshift('post80');
 POST_ORDER.unshift('post81');
 POST_ORDER.unshift('post82');
+POST_ORDER.unshift('post83');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
