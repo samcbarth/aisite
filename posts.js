@@ -12,7 +12,7 @@ const POSTS = {
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'SAP bought the layer between data and AI',
     category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?cs=srgb&dl=pexels-artempodrez-5716001.jpg&fm=jpg',
+    image: 'assets/images/post95-hero.jpg',
     body: `
       <p>The cleanest part of SAP's Dremio deal is the part that is supposed to vanish. SAP completed the acquisition on July 6, and the point is not that it bought another data vendor. It is that it bought a way to stop making every new AI project walk raw data through one more conversion step before it can be used.</p>
 
@@ -76,7 +76,7 @@ const POSTS = {
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'The desktop is the last mile for agents',
     category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1160&h=440&dpr=1',
+    image: 'assets/images/post93-hero.jpg',
     body: `
       <p>A lot of enterprise software still needs a screen before it can move. That sounds obvious until you remember how much work still lives in ERP systems, CRMs, mainframes, and vendor tools nobody wants to rewrite.</p>
 

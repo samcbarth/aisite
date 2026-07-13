@@ -158,10 +158,10 @@ function copyRecursive(src, dest) {
   }
   const INLINE_MEDIA = {
     post95: {
-      image: 'https://images.pexels.com/photos/7993565/pexels-photo-7993565.jpeg?cs=srgb&dl=pexels-thirdman-7993565.jpg&fm=jpg',
+      image: 'assets/images/post95-inline.jpg',
       caption: 'The useful layer is the one that keeps the same context alive across teams and systems.',
       side: 'right', after: 3,
-      supportImage: 'https://images.pexels.com/photos/1181335/pexels-photo-1181335.jpeg?cs=srgb&dl=pexels-divinetechygirl-1181335.jpg&fm=jpg',
+      supportImage: 'assets/images/post95-support.jpg',
       supportCaption: 'Open formats still need a clean path through the infrastructure underneath them.'
     },
     post94: {
@@ -179,10 +179,10 @@ function copyRecursive(src, dest) {
       supportCaption: 'The office software question is how context survives the handoff.'
     },
     post93: {
-      image: 'https://images.pexels.com/photos/1181336/pexels-photo-1181336.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&dpr=1',
+      image: 'assets/images/post93-inline.jpg',
       caption: 'The last mile is still a desktop screen in a controlled workspace.',
       side: 'right', after: 3,
-      supportImage: 'https://images.pexels.com/photos/8294601/pexels-photo-8294601.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&dpr=1',
+      supportImage: 'assets/images/post93-support.jpg',
       supportCaption: 'The model is cheaper. The workflow is still the hard part.'
     },
     post91: {
