@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post96: {
+      image: 'assets/images/post96-inline.jpg',
+      caption: 'The fix only matters once it survives the path to production.',
+      side: 'right', after: 3,
+      supportImage: 'assets/images/post96-support.jpg',
+      supportCaption: 'Open source security gets expensive in the handoff, not the alert.'
+    },
     post95: {
       image: 'assets/images/post95-inline.jpg',
       caption: 'The useful layer is the one that keeps the same context alive across teams and systems.',
@@ -1346,6 +1353,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post96: { after: 4, quotes: [makeQuote('Backbone', { text: 'the backbone of today’s digital economy', source: 'IBM', sourceUrl: 'https://www.redhat.com/en/about/press-releases/project-lightwell-secure-open-source' }), makeQuote('Together', { text: 'a mission best accomplished together', source: 'Red Hat', sourceUrl: 'https://www.redhat.com/en/blog/strengthening-open-source-supply-chain-red-hat-partners' })] },
     post94: { after: 3, quotes: [makeQuote('Control', { text: 'helps keep meetings focused, organized, and action-oriented', source: 'Microsoft Support', sourceUrl: 'https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings' }), makeQuote('Meeting AI', { text: 'turn Meeting AI (Copilot, Facilitator, recap) on or off during live meetings', source: 'TechRadar', sourceUrl: 'https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap' })] },
     post95: { after: 3, quotes: [makeQuote('Bottleneck', { text: 'Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents.', source: 'SAP News', sourceUrl: 'https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/' }), makeQuote('Platform', { text: 'the only Iceberg-native data platform built for agents and managed by agents', source: 'Dremio', sourceUrl: 'https://www.dremio.com/newsroom/sap-to-acquire-dremio-to-unify-sap-and-non-sap-data-to-power-agentic-ai/' })] },
     post92: { after: 2, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkAppsFiles), makeQuote('Pricing', QUOTE_LIBRARY.willisonPricingTokens)] },

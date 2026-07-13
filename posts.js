@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post96: {
+    featured: false,
+    date: 'July 13, 2026', iso: '2026-07-13',
+    title: 'The expensive part starts after the CVE',
+    category: 'Security', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post96-hero.jpg',
+    body: `
+      <p>Nobody loses money because a CVE exists. They lose money when the fix has to move through certification, release timing, audit, and production without breaking anything.</p>
+
+      <p>That is why IBM and Red Hat's Lightwell update on July 8 matters. The companies said the commercial launch gives enterprises two subscriptions, Lightwell Network and Lightwell Clearinghouse Premier, and that Lightwell Network starts with a catalog of more than 6,500 remediated, digitally signed, and certified application-layer dependencies across Java, Python, and other ecosystems.</p>
+
+      <p>Red Hat's own description is blunt: Lightwell helps enterprises address vulnerable third-party open source dependencies when a normal upgrade creates compatibility, certification, release, audit, or production risk. That list is the story. It is not about whether open source is broken. It is about what happens when the fix is right and the upgrade is still too expensive to ship.</p>
+
+      <p>The commercial model is the interesting part. Lightwell Network gives customers signed libraries, remediations, and patched artifacts as they become available through Red Hat secured repositories. Clearinghouse Premier adds member-specific package versions, novel vulnerability verification and disclosure handling, and TAM support. IBM and Red Hat are selling a controlled path from discovery to deployment, not just another scanner that says there is a problem.</p>
+
+      <p>That is a different business than generic vulnerability management. A scanner can tell you what is exposed. It cannot tell you whether a patch will break certification, force a rebuild, delay a release, or create a new support issue in a regulated environment. Lightwell is trying to own the expensive middle where those decisions get made.</p>
+
+      <p>The scale behind it explains why the product exists at all. The July launch builds on the companies' May commitment to invest $5 billion in open source security and a global force of more than 20,000 engineers. IBM says the clearinghouse will act as a security coordination layer that uses AI to validate and test fixes across large amounts of open source code. That is not a tiny add-on. That is a whole operating model.</p>
+
+      <p>IBM says open source is "the backbone of today's digital economy," which is true in the boring way that matters. The more open source sits underneath financial services, cloud platforms, internal tools, and data pipelines, the more expensive it gets when a team has to prove a fix is safe before it can move. The patch itself is cheap. The trust around the patch is what gets priced.</p>
+
+      <p>Red Hat is pushing the same point from the partner side. Kevin Kennedy wrote that Lightwell is built on the belief that securing open source is "a mission best accomplished together." That sounds like vendor language, but the underlying point is practical. The company is not pretending one security team can shoulder the whole supply chain alone. It is trying to turn partner ecosystem scale into a service layer customers can actually buy.</p>
+
+      <p>The ecosystem list is part of the pitch. Red Hat says companies including AWS, AMD, F5, GitLab, Intel, JFrog, Microsoft, NVIDIA, Palo Alto Networks, and ServiceNow are working with it on the model. That matters because supply chain security breaks when the fix path ends at the vendor boundary. Enterprises need remediations that can flow through the tools they already use, not another isolated workflow with a nicer dashboard.</p>
+
+      <p>That is also why the financial services angle keeps showing up. Banks are the kind of buyers who notice when a one-line dependency update becomes a month-long governance problem. The work is never just code. It is release management, certification, audit evidence, support planning, and the proof that the same issue will not reappear in the next build. Lightwell is selling relief from that repeat work.</p>
+
+      <p>I keep seeing the same shape in other workflow problems, including work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once the handoff loses context, the next person has to rebuild the whole thing. Open source security is the same problem at larger scale. The context is the package version, the fix lineage, the validation path, and the release that finally makes the change real.</p>
+
+      <p>The other useful detail is that Lightwell is not trying to replace community open source. It is trying to sit between the upstream code and the production stack, then make that middle reliable enough to pay for. That is a better read than the usual "enterprise wants control" cliché. Enterprises already need control. What they are buying here is a way to keep moving without asking every team to become a patch factory.</p>
+
+      <p>That is the real story in the July launch. IBM and Red Hat are making the boring part of open source into a product: verified fixes, governed distribution, and a path that does not force customers to choose between speed and stability every time a dependency goes bad.</p>
+    `
+  },
   post95: {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
@@ -2595,6 +2629,7 @@ POST_ORDER.unshift('post92');
 POST_ORDER.unshift('post93');
 POST_ORDER.unshift('post94');
 POST_ORDER.unshift('post95');
+POST_ORDER.unshift('post96');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
