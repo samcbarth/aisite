@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post91: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/CERN_Server_03.jpg',
+      caption: 'The queue gets longer when the code still depends on old systems.',
+      side: 'right', after: 4,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Programming.jpg',
+      supportCaption: 'IBM is trying to make review feel like a process instead of a pileup.'
+    },
     post90: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Calculator_Office.jpg',
       caption: 'Microsoft is turning price changes into a cleaner planning cycle.',
@@ -936,6 +943,11 @@ function copyRecursive(src, dest) {
       source: 'IBM Bob Blog',
       sourceUrl: 'https://bob.ibm.com/blog/bob-v2-release-announcement/'
     },
+    gitlabBottleneckReview: {
+      text: '85% agree AI has shifted the bottleneck from writing code to reviewing and validating it',
+      source: 'GitLab',
+      sourceUrl: 'https://about.gitlab.com/press/releases/2026-06-23-gitlab-research-reveals-organizations-are-generating-ai-code-faster-than-they-can-control-it/'
+    },
     jackHenryAccelerateRpg: {
       text: 'our developers are able to accelerate RPG development workflows, improve code quality, and gain deeper insights into decades of accumulated system knowledge',
       source: 'IBM Newsroom',
@@ -1281,6 +1293,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post91: { after: 5, quotes: [makeQuote('Bottleneck', QUOTE_LIBRARY.gitlabBottleneckReview), makeQuote('Repeat work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post90: { after: 4, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
     post89: { after: 4, quotes: [makeQuote('Tailor', QUOTE_LIBRARY.oracleTailorSystems), makeQuote('Private path', QUOTE_LIBRARY.oraclePrivateInternet)] },

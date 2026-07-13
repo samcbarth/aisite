@@ -7,6 +7,44 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post91: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'IBM wants to sell the review queue',
+    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/15/ComputerProgrammer.jpg',
+    body: `
+      <p>Friday afternoon, the code is done. Monday morning, the review queue is not.</p>
+
+      <p>That gap is where the market moved. <a href="https://about.gitlab.com/press/releases/2026-06-23-gitlab-research-reveals-organizations-are-generating-ai-code-faster-than-they-can-control-it/" target="_blank" rel="noopener noreferrer">GitLab's new AI Accountability Report</a> says "85% agree AI has shifted the bottleneck from writing code to reviewing and validating it." <a href="https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows" target="_blank" rel="noopener noreferrer">IBM is answering that shift</a> with IBM Bob V2, a release built around multi-agent execution, cost visibility, and modernization workflows for old systems that still run the business.</p>
+
+      <p>The reason this matters is simple. We already know how to make code faster. The hard part now is deciding what is trustworthy enough to ship. GitLab says 92% of organizations report governance challenges with AI-generated code, and 80% say they adopted AI tools faster than they developed policies to govern them. That is not a tooling problem. That is an operating problem.</p>
+
+      <h2>IBM's bet</h2>
+
+      <p>IBM said Bob now has new multi-agent capabilities, built-in AI cost and use analytics, and pre-built workflows for modernizing enterprise systems. The company framed the update around something sharper than a coding assistant. Its own line is blunt: "The bar for enterprise AI is no longer a better coding assistant." That is a useful line because it tells you what IBM thinks the customer actually wants.</p>
+
+      <p>Bob V2 runs on a single agent and a shared harness, with subagents handling self-contained work so the main context stays clean. It also adds parallel, native tool calling, background tasks, rollback, and structured workflows. That sounds like architecture talk until you map it to the work most enterprises actually pay for. A lot of the value is in keeping the process from drifting while the model is doing the work.</p>
+
+      <p>IBM's premium packages make the target even clearer. The release adds opinionated workflows for IBM Z, IBM i, and Java modernization. In plain English, IBM is not just trying to help people write new code. It is trying to help them touch code they already depend on without turning every change into a one-off rescue operation.</p>
+
+      <p>The customer examples make that less abstract. IBM says Jack Henry used Bob to accelerate RPG development workflows and gain deeper insight into decades of system knowledge. Blue Pearl says a legacy modernization effort that had been projected to take nine months with 14 engineers was completed in three days. Those are not benchmark claims. They are operations claims.</p>
+
+      <p><a href="https://bob.ibm.com/blog/bob-v2-release-announcement/" target="_blank" rel="noopener noreferrer">IBM Bob's own blog</a> is even more direct about the shape of the problem. It says "AI is good at open-ended problem-solving and bad at doing the same thing twice." That is the whole reason workflows matter. One-off cleverness is useful in a demo. Repeatability is what gets a modernization program through the quarter.</p>
+
+      <h2>What buyers are buying</h2>
+
+      <p>The extra piece here is visibility. IBM added Bobalytics, its cost and usage layer, because enterprise teams do not just want output. They want to know what the output cost, what it touched, and how the result fits into a wider development process. That is the difference between a neat assistant and something a platform team can actually govern.</p>
+
+      <p>GitLab's report gets at the same point from the other side. It says 91% of organizations have two or more AI coding tools in active use, but 78% report faster code output while the overall delivery process has not accelerated at the same pace. That is the AI Paradox in one sentence. Speed went up. Control did not.</p>
+
+      <p>That is why IBM's release reads less like a model announcement and more like a product for the middle of the pipeline. The people buying this do not need another shiny demo of code generation. They need less uncertainty between the first draft and the thing they are willing to put in production.</p>
+
+      <p>The practical result is easy to see. A subagent can read, search, and figure out a local problem without polluting the main thread. A background task can keep running while somebody else keeps working. A workflow can split automation, AI, and human approval into the right steps instead of pretending every problem should be handled the same way.</p>
+
+      <p>That is where IBM is placing its bet. Not on better autocomplete. On making review, modernization, and governance boring enough that the queue stops running the business. For the companies still carrying mainframe, IBM i, and Java systems, that is not a small promise. It is the product.</p>
+    `
+  },
   post90: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2424,6 +2462,7 @@ POST_ORDER.unshift('post87');
 POST_ORDER.unshift('post88');
 POST_ORDER.unshift('post89');
 POST_ORDER.unshift('post90');
+POST_ORDER.unshift('post91');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

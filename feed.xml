@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 22:09:45 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 01:09:22 GMT</lastBuildDate>
+    <item>
+      <title>IBM wants to sell the review queue</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-wants-to-sell-the-review-queue/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-wants-to-sell-the-review-queue/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Friday afternoon, the code is done. Monday morning, the review queue is not. That gap is where the market moved. GitLab&apos;s new AI Accountability Report says &quot;85% agree AI has shifted the bottleneck from writing code to reviewing and validating it.&quot; IBM is answering that shift with</description>
+    </item>
     <item>
       <title>Microsoft put cloud pricing on a January clock</title>
       <link>https://samcbarth.github.io/aisite/posts/microsoft-put-cloud-pricing-on-a-january-clock/</link>
