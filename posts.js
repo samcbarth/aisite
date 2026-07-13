@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post95: {
+    featured: false,
+    date: 'July 13, 2026', iso: '2026-07-13',
+    title: 'SAP bought the layer between data and AI',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?cs=srgb&dl=pexels-artempodrez-5716001.jpg&fm=jpg',
+    body: `
+      <p>The cleanest part of SAP's Dremio deal is the part that is supposed to vanish. SAP completed the acquisition on July 6, and the point is not that it bought another data vendor. It is that it bought a way to stop making every new AI project walk raw data through one more conversion step before it can be used.</p>
+
+      <p>That is the business problem. SAP says the acquisition <a href="https://news.sap.com/2026/07/sap-completes-dremio-acquisition/" target="_blank" rel="noopener noreferrer">accelerates agentic AI</a> and lets customers combine SAP and non-SAP data with "no data movement or conversion necessary." Dremio says its platform is "the only Iceberg-native data platform built for agents and managed by agents." Put those together and the story gets less about ownership and more about where the work sits.</p>
+
+      <p>The work sits in the glue. Enterprises do not run on a single clean data model. They run on ERP, CRM, product, finance, and vendor systems that never agreed to speak the same language. Every translation adds latency, cost, and one more chance to lose the business context that makes the data worth anything.</p>
+
+      <p>SAP's own language is blunt on that point: <a href="https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/" target="_blank" rel="noopener noreferrer">"Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents."</a> That is the real sentence in the press release. The deal is not saying the model layer is solved. It is saying the bottleneck moved down into the platform layer, where lineage, access rights, and catalog design matter more than another model demo.</p>
+
+      <h2>The bill is ETL</h2>
+
+      <p>Futurum called the Dremio move the ETL monster, which is a good shorthand. If the same data has to be copied, cleaned, remapped, and re-approved every time a team wants to use it, then the enterprise is paying the tax before AI even starts. Dremio's pitch is attractive because it tries to leave the data where it is and make the semantic layer do the translation.</p>
+
+      <p>That is why the Apache Iceberg and Apache Polaris details matter. SAP is not only buying a lakehouse. It is buying a path to a shared catalog, federated access, and business context that can travel across SAP and non-SAP systems without a pile of one-off ETL jobs. For finance, supply chain, and analytics teams, that is the difference between a fast answer and a late answer that nobody trusts.</p>
+
+      <p>The catalog part is the part people skip too fast. SAP says it wants a universal, open catalog with meaning, relationships, access rights, and lineage all in one place. That is boring until somebody asks why the number changed between the source system and the dashboard. If the catalog can answer that question cleanly, the AI layer stops being a scavenger hunt and starts looking like governed software.</p>
+
+      <p>The timing matters too. SAP is not just promising a cleaner data path. It is promising real-time analytical and AI workloads with no movement or format conversion. Real time matters because the value of enterprise data drops every minute it sits outside the decision. A lakehouse that only works after nightly jobs is still a delay. Dremio's serverless pitch matters because elastic infrastructure is what keeps that path from turning into another expensive platform project.</p>
+
+      <p>Dremio also keeps leaning on the economics. The company says the lakehouse is serverless and elastic, which matters because enterprise analytics gets expensive when teams keep a fixed pile of infrastructure standing by for sporadic queries. The bigger point is that SAP is trying to make the data layer feel less like a project and more like a utility.</p>
+
+      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: if context gets stripped between steps, the work has to be re-explained, rechecked, and re-approved. SAP is trying to make that handoff much harder to break at enterprise scale, which is why this deal is really about control as much as it is about data.</p>
+
+      <p>The real test is not whether SAP can say "open platform" in a press release. It is whether Business Data Cloud becomes the place where companies can stop rebuilding the same context three times. If it does, the acquisition is not just about adding Dremio. It is SAP deciding that the most valuable part of AI is the layer that keeps the facts straight.</p>
+    `
+  },
   post94: {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
@@ -2562,6 +2594,7 @@ POST_ORDER.unshift('post91');
 POST_ORDER.unshift('post92');
 POST_ORDER.unshift('post93');
 POST_ORDER.unshift('post94');
+POST_ORDER.unshift('post95');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

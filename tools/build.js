@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post95: {
+      image: 'https://images.pexels.com/photos/7993565/pexels-photo-7993565.jpeg?cs=srgb&dl=pexels-thirdman-7993565.jpg&fm=jpg',
+      caption: 'The useful layer is the one that keeps the same context alive across teams and systems.',
+      side: 'right', after: 3,
+      supportImage: 'https://images.pexels.com/photos/1181335/pexels-photo-1181335.jpeg?cs=srgb&dl=pexels-divinetechygirl-1181335.jpg&fm=jpg',
+      supportCaption: 'Open formats still need a clean path through the infrastructure underneath them.'
+    },
     post94: {
       image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&h=650&fit=crop&q=85',
       caption: 'The real control point is the meeting itself, not the policy deck.',
@@ -1340,6 +1347,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post94: { after: 3, quotes: [makeQuote('Control', { text: 'helps keep meetings focused, organized, and action-oriented', source: 'Microsoft Support', sourceUrl: 'https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings' }), makeQuote('Meeting AI', { text: 'turn Meeting AI (Copilot, Facilitator, recap) on or off during live meetings', source: 'TechRadar', sourceUrl: 'https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap' })] },
+    post95: { after: 3, quotes: [makeQuote('Bottleneck', { text: 'Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents.', source: 'SAP News', sourceUrl: 'https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/' }), makeQuote('Platform', { text: 'the only Iceberg-native data platform built for agents and managed by agents', source: 'Dremio', sourceUrl: 'https://www.dremio.com/newsroom/sap-to-acquire-dremio-to-unify-sap-and-non-sap-data-to-power-agentic-ai/' })] },
     post92: { after: 2, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkAppsFiles), makeQuote('Pricing', QUOTE_LIBRARY.willisonPricingTokens)] },
     post93: { after: 3, quotes: [makeQuote('Desktop', QUOTE_LIBRARY.awsWorkspacesScreen), makeQuote('Model', QUOTE_LIBRARY.anthropicMostAgentic)] },
     post91: { after: 5, quotes: [makeQuote('Bottleneck', QUOTE_LIBRARY.gitlabBottleneckReview), makeQuote('Repeat work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
