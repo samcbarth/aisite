@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post92: {
+    featured: false,
+    date: 'July 12, 2026', iso: '2026-07-12',
+    title: 'OpenAI turned ChatGPT into the work surface',
+    category: 'Business Strategy', tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Tinkoff_bank_office_3.jpg',
+    body: `
+      <p>Three model sizes. One desktop app. A new way to think about the bill.</p>
+
+      <p>OpenAI shipped GPT-5.6 on July 9, and the launch reads less like a model tweak than a workflow rewrite. The company says ChatGPT Work is an agent that can "take action across your apps and files" and "turn a goal into finished work." That is not just a smarter answer engine. It is a claim about where office work starts and where it gets finished.</p>
+
+      <p>The product stack now has names buyers have to pay attention to. GPT-5.6 comes in Sol, Terra, and Luna, and OpenAI says free and Go users get Terra in ChatGPT Work and Codex while paid users can pick among the tiers and reasoning levels. That matters because model selection is no longer a nice technical detail. It is part of the operating cost of the task.</p>
+
+      <p>Simon Willison put the pricing problem in plain English: "price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task." He is right. Once the model can think harder, take longer, and run more steps, the old spreadsheet comparison gets messy fast. The same prompt can become a cheap draft or an expensive run depending on the route you choose.</p>
+
+      <p>The Verge's coverage makes the product move even clearer. Its read is that OpenAI has basically merged ChatGPT and Codex into one work surface for non-technical users. That is the interesting part. The release is not just about better language. It is about moving from a chat interface to a place where work can be delegated, paused, and resumed without losing the thread.</p>
+
+      <p>If you run a commercial stack, that changes the questions you ask. Who gets Sol? Who stays on Terra? What gets reserved for a higher reasoning setting? When does a task need a human review before it can keep moving? Those are not model questions. They are workflow questions, and they land in procurement, IT, RevOps, and finance whether the team wants them there or not.</p>
+
+      <p>That is the same kind of operating problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the AI can draft the thing but the review step still breaks, the task is not done. The value shows up when the handoff is clean enough that the next person does not have to rebuild the whole thing by hand. That is where most software still loses time.</p>
+
+      <p>OpenAI's own wording says ChatGPT Work can keep projects moving for hours, and that is the real commercial promise here. A model that can stay with a task is more useful than one that just sounds confident. It can gather context, move between files, and produce something a person can actually check, change, or ship. That makes the control points more important, not less. Data access, permissions, source quality, and approval rules now sit right next to the model choice.</p>
+
+      <p>That also means the cost conversation is changing. Buyers are going to route routine work to the cheaper lane and reserve the expensive lane for the work that actually needs it. Vendors love that story because it makes adoption feel efficient. Buyers should still watch the hidden cost: someone has to decide which lane each task belongs in, and that decision will shape how reliable the whole setup feels after the demo is over.</p>
+
+      <p>The more important signal is the control layer around the model. OpenAI is not just selling outputs. It is selling a place where context, review, and approval sit in the same loop. That sounds minor until you try to run it across sales, finance, legal, and operations at the same time. Each team has different risk tolerance, different source files, and different signoff habits. The app has to respect all of that without turning into another pile of tabs.</p>
+
+      <p>So the best way to read GPT-5.6 is not as one more benchmark win. It is as another step toward office software that can hold context long enough to do the whole job. The fight is moving from who answers best to who owns the workflow, the cost, and the place where the work gets signed off. That is the part that will matter long after the launch post gets buried.</p>
+    `
+  },
   post91: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2463,6 +2493,7 @@ POST_ORDER.unshift('post88');
 POST_ORDER.unshift('post89');
 POST_ORDER.unshift('post90');
 POST_ORDER.unshift('post91');
+POST_ORDER.unshift('post92');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

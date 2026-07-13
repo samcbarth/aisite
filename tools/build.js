@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post92: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/National_Cabinet_meeting.jpg',
+      caption: 'The work surface matters once the team has to check, approve, and move on.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Committee_meeting_room_No._417.jpg',
+      supportCaption: 'The office software question is how context survives the handoff.'
+    },
     post91: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/CERN_Server_03.jpg',
       caption: 'The queue gets longer when the code still depends on old systems.',
@@ -630,6 +637,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    openaiWorkAppsFiles: {
+      text: 'take action across your apps and files',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/index/chatgpt-for-your-most-ambitious-work/'
+    },
+    willisonPricingTokens: {
+      text: "price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task.",
+      source: 'Simon Willison',
+      sourceUrl: 'https://simonwillison.net/2026/Jul/9/gpt-5-6/'
+    },
     ukTrustFinancialSystem: {
       text: 'We are a world-leading financial centre, and maintaining trust in our financial system is essential to its success.',
       source: 'Rachel Blake, Economic Secretary to the Treasury',
@@ -1293,6 +1310,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post92: { after: 2, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkAppsFiles), makeQuote('Pricing', QUOTE_LIBRARY.willisonPricingTokens)] },
     post91: { after: 5, quotes: [makeQuote('Bottleneck', QUOTE_LIBRARY.gitlabBottleneckReview), makeQuote('Repeat work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post90: { after: 4, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
