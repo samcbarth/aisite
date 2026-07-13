@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post93: {
+    featured: false,
+    date: 'July 13, 2026', iso: '2026-07-13',
+    title: 'The desktop is the last mile for agents',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1160&h=440&dpr=1',
+    body: `
+      <p>A lot of enterprise software still needs a screen before it can move. That sounds obvious until you remember how much work still lives in ERP systems, CRMs, mainframes, and vendor tools nobody wants to rewrite.</p>
+
+      <p>That is the gap AWS is targeting with <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-workspaces-ai/" target="_blank" rel="noopener noreferrer">Amazon WorkSpaces for AI agents</a>. AWS says the service is now generally available and gives agents a managed cloud workspace where they can "see the screen and operate these applications the way humans do." AWS also calls the old problem a "last-mile challenge" for AI agents. That is the right phrase. The work is already in the desktop. The model just cannot reach it cleanly yet.</p>
+
+      <p>The important part is not the demo. It is the control layer. AWS says agents inherit the same identity controls, network isolation, and compliance boundaries as human users. It also says the service works with any agent framework through MCP, can use real-time session control, and can run under existing Active Directory identities. That is what makes this interesting in places like claims processing, trade settlement, patient record updates, and back-office work. The old apps stay put. The agent gets a governed way in.</p>
+
+      <p>What makes that control layer real is the way AWS priced and instrumented it. The company says the service works with Model Context Protocol, lets operators watch agent activity in real time, and can revoke access mid-session. It also says pricing scales by active session time. That matters because desktop automation is not a single API call. It is a live session with a start point, a pile of clicks, and a moment where somebody has to decide whether the agent should keep going or stop before it does damage.</p>
+
+      <h2>Sonnet 5 is the cheaper engine</h2>
+
+      <p>AWS does not want that desktop layer to sit on a weak model. On the same day, <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener noreferrer">Anthropic launched Claude Sonnet 5</a> and called it "the most agentic Sonnet model yet." Anthropic says it can make plans, use browsers and terminals, and run autonomously at a level that used to require larger, more expensive models. It also launched with introductory pricing of $2 per million input tokens and $10 per million output tokens through August 31.</p>
+
+      <p>That pricing is not a side note. If the agent is going to sit in a WorkSpaces session and click through desktop software, the model bill becomes part of the operating bill. Sonnet 5's lower price and higher rate limits make it easier to use the stronger model for the kind of long-running tasks that usually get cut off when they get expensive. AWS says Sonnet 5 is available on Amazon Bedrock and on the Claude Platform on AWS, so the same model can sit close to the managed desktop instead of living off in a separate stack.</p>
+
+      <p>Anthropic is also making the safety pitch in plain language. The company says Sonnet 5 has a lower rate of undesirable behaviors than Sonnet 4.6 and is generally safer in agentic contexts. That part matters more than benchmark bragging when the model is not just drafting text but moving through a desktop app on behalf of the user. Better output is good. Knowing when to stop is better.</p>
+
+      <p>TechCrunch's read is blunt: the differentiator now is "how cheaply they can do it and how reliably without human oversight." That is basically the whole market in one line. Agentic capability is no longer the headline. It is the entry fee.</p>
+
+      <p>The work changes in a practical way. A company that has not modernized its desktop apps can still automate the jobs around them. The important questions become session time, access control, audit logging, and where to cut off the agent if the workflow goes sideways. AWS says operators get live visibility and can revoke access mid-session. That matters more than another layer of brand naming.</p>
+
+      <p>That is why the stack matters more than the logo. WorkSpaces is not trying to replace the systems companies already trust. It is trying to put a managed layer on top of them so the old screen still exists, but the work around the screen can be automated. If that sounds dull, good. Dull is what procurement, security, and operations usually want when the workflow touches money, records, or regulated data.</p>
+
+      <p>This is where the story stops being about one model launch and starts being about the shape of enterprise software. The companies with the messiest apps are usually the ones with the most valuable workflows. If WorkSpaces can give agents a clean path into those systems and Sonnet 5 can keep the cost from ballooning, the bottleneck shifts from "can the model do it" to "what screens still deserve a human hand."</p>
+
+      <p>That also leaves the last hard question on the table. Somebody still has to decide which apps stay human-only, which ones become agent-safe, and which ones need a live operator watching the screen. The desktop is where those decisions finally show up, because it is where the software still has a visible body. The model can be remote. The risk cannot.</p>
+    `
+  },
   post92: {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
@@ -2494,6 +2528,7 @@ POST_ORDER.unshift('post89');
 POST_ORDER.unshift('post90');
 POST_ORDER.unshift('post91');
 POST_ORDER.unshift('post92');
+POST_ORDER.unshift('post93');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

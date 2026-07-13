@@ -164,6 +164,13 @@ function copyRecursive(src, dest) {
       supportImage: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Committee_meeting_room_No._417.jpg',
       supportCaption: 'The office software question is how context survives the handoff.'
     },
+    post93: {
+      image: 'https://images.pexels.com/photos/1181336/pexels-photo-1181336.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&dpr=1',
+      caption: 'The last mile is still a desktop screen in a controlled workspace.',
+      side: 'right', after: 3,
+      supportImage: 'https://images.pexels.com/photos/8294601/pexels-photo-8294601.jpeg?auto=compress&cs=tinysrgb&w=1200&h=675&dpr=1',
+      supportCaption: 'The model is cheaper. The workflow is still the hard part.'
+    },
     post91: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/CERN_Server_03.jpg',
       caption: 'The queue gets longer when the code still depends on old systems.',
@@ -641,6 +648,21 @@ function copyRecursive(src, dest) {
       text: 'take action across your apps and files',
       source: 'OpenAI',
       sourceUrl: 'https://openai.com/index/chatgpt-for-your-most-ambitious-work/'
+    },
+    awsWorkspacesScreen: {
+      text: 'see the screen and operate these applications the way humans do',
+      source: 'AWS',
+      sourceUrl: 'https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-workspaces-ai/'
+    },
+    anthropicMostAgentic: {
+      text: 'the most agentic Sonnet model yet',
+      source: 'Anthropic',
+      sourceUrl: 'https://www.anthropic.com/news/claude-sonnet-5'
+    },
+    techcrunchCheapReliable: {
+      text: 'how cheaply they can do it and how reliably without human oversight',
+      source: 'TechCrunch',
+      sourceUrl: 'https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/'
     },
     willisonPricingTokens: {
       text: "price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task.",
@@ -1311,6 +1333,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post92: { after: 2, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkAppsFiles), makeQuote('Pricing', QUOTE_LIBRARY.willisonPricingTokens)] },
+    post93: { after: 3, quotes: [makeQuote('Desktop', QUOTE_LIBRARY.awsWorkspacesScreen), makeQuote('Model', QUOTE_LIBRARY.anthropicMostAgentic)] },
     post91: { after: 5, quotes: [makeQuote('Bottleneck', QUOTE_LIBRARY.gitlabBottleneckReview), makeQuote('Repeat work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },
     post90: { after: 4, quotes: [makeQuote('Predictability', QUOTE_LIBRARY.microsoftPricingPredictability), makeQuote('Confidence', QUOTE_LIBRARY.microsoftPlanConfidence)] },
     post88: { after: 4, quotes: [makeQuote('Trust', QUOTE_LIBRARY.ukTrustFinancialSystem), makeQuote('Systemic risk', QUOTE_LIBRARY.ukMultipleFirmsOrMarkets)] },
