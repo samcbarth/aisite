@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post94: {
+      image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&h=650&fit=crop&q=85',
+      caption: 'The real control point is the meeting itself, not the policy deck.',
+      side: 'right', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&h=675&fit=crop&q=85',
+      supportCaption: 'The useful feature is the one people can stop in the room.'
+    },
     post92: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/National_Cabinet_meeting.jpg',
       caption: 'The work surface matters once the team has to check, approve, and move on.',
@@ -1332,6 +1339,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post94: { after: 3, quotes: [makeQuote('Control', { text: 'helps keep meetings focused, organized, and action-oriented', source: 'Microsoft Support', sourceUrl: 'https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings' }), makeQuote('Meeting AI', { text: 'turn Meeting AI (Copilot, Facilitator, recap) on or off during live meetings', source: 'TechRadar', sourceUrl: 'https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap' })] },
     post92: { after: 2, quotes: [makeQuote('Workflow', QUOTE_LIBRARY.openaiWorkAppsFiles), makeQuote('Pricing', QUOTE_LIBRARY.willisonPricingTokens)] },
     post93: { after: 3, quotes: [makeQuote('Desktop', QUOTE_LIBRARY.awsWorkspacesScreen), makeQuote('Model', QUOTE_LIBRARY.anthropicMostAgentic)] },
     post91: { after: 5, quotes: [makeQuote('Bottleneck', QUOTE_LIBRARY.gitlabBottleneckReview), makeQuote('Repeat work', QUOTE_LIBRARY.ibmBobWorkflowsBackbone)] },

@@ -6,7 +6,31 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2026 01:09:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 10:11:26 GMT</lastBuildDate>
+    <item>
+      <title>The real Teams update is the off switch</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-real-teams-update-is-the-off-switch/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-real-teams-update-is-the-off-switch/</guid>
+      <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI &amp; Automation</category>
+      <description>Teams now has to prove it can be turned off. Microsoft is adding a live Meeting AI switch for organizers and presenters, and that is the useful part of the story. The company says the toggle will let people turn Meeting AI &quot;on or off during live meetings&quot; , with rollout starting </description>
+    </item>
+    <item>
+      <title>The desktop is the last mile for agents</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-desktop-is-the-last-mile-for-agents/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-desktop-is-the-last-mile-for-agents/</guid>
+      <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>A lot of enterprise software still needs a screen before it can move. That sounds obvious until you remember how much work still lives in ERP systems, CRMs, mainframes, and vendor tools nobody wants to rewrite. That is the gap AWS is targeting with Amazon WorkSpaces for AI agents</description>
+    </item>
+    <item>
+      <title>OpenAI turned ChatGPT into the work surface</title>
+      <link>https://samcbarth.github.io/aisite/posts/openai-turned-chatgpt-into-the-work-surface/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-turned-chatgpt-into-the-work-surface/</guid>
+      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Three model sizes. One desktop app. A new way to think about the bill. OpenAI shipped GPT-5.6 on July 9, and the launch reads less like a model tweak than a workflow rewrite. The company says ChatGPT Work is an agent that can &quot;take action across your apps and files&quot; and &quot;turn a g</description>
+    </item>
     <item>
       <title>IBM wants to sell the review queue</title>
       <link>https://samcbarth.github.io/aisite/posts/ibm-wants-to-sell-the-review-queue/</link>

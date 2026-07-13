@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post94: {
+    featured: false,
+    date: 'July 13, 2026', iso: '2026-07-13',
+    title: 'The real Teams update is the off switch',
+    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=1160&h=440&fit=crop&q=85',
+    body: `
+      <p>Teams now has to prove it can be turned off. Microsoft is adding a live Meeting AI switch for organizers and presenters, and that is the useful part of the story.</p>
+
+      <p>The company says <a href="https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap" target="_blank" rel="noopener noreferrer">the toggle will let people turn Meeting AI "on or off during live meetings"</a>, with rollout starting in early July 2026 and no changes to existing compliance or licensing requirements. That is a very specific fix for a very specific problem. Microsoft has been pushing Copilot, Facilitator, and recap features deeper into Teams, and now it is giving the room a way to stop them in the room.</p>
+
+      <p>That matters because Teams is not just a chat app anymore. Microsoft Support says <a href="https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings" target="_blank" rel="noopener noreferrer">Facilitator "helps keep meetings focused, organized, and action-oriented"</a>. The same support pages say it generates real-time AI notes, tracks agendas, manages time, and can turn meeting discussion into tasks. Copilot goes further. Microsoft says it can analyze chat history, meeting transcripts, and calendar content to generate smart recaps and rewrite messages. Once those pieces are in the meeting flow, the control question is no longer abstract.</p>
+
+      <p>The business problem is simple. When software starts listening, summarizing, and nudging the agenda in real time, people want a brake, not another promise. Admin policy is one layer. The live meeting is another. Microsoft already knows that because it built the AI stack around meeting controls, licensing, transcription, and recap. The new toggle just admits that the last mile of trust happens while the call is still open.</p>
+
+      <p>That last mile matters because Teams is not one place. It runs across desktop, mobile, web, and room systems, and the people in those meetings do not all want the same thing. A sales leader may want recap on. An HR lead may want it off for a sensitive conversation. A project manager may want a clean handoff only after the call is over. A live toggle lets the organizer make that call without turning the meeting into a separate support ticket.</p>
+
+      <p>This is the same place the other enterprise AI stories keep landing. A feature can be useful and still feel too sticky. A workflow can be efficient and still feel too exposed. If the room cannot decide when AI is active, the rest of the rollout starts to look like a default people never really chose. That is where adoption slows down, not because the feature is bad, but because the boundary is vague.</p>
+
+      <h2>The control point is the product</h2>
+
+      <p>Microsoft is not backing away from the feature set. It is tightening the control layer around it. That is a better read than the usual "AI backlash" headline. The feature stack is still there. The company is just making it easier for the organizer to say yes for this meeting and no for the next one. That is the kind of control enterprise buyers understand immediately, because it matches how teams actually operate.</p>
+
+      <p>It also fits the way meeting software gets bought. Finance wants predictable licensing. IT wants policy and auditability. Legal wants fewer surprises about what was captured. Managers want the notes without creating a consent fight in every call. A mid-meeting toggle is not glamorous, but it is the kind of thing that makes the whole product feel more governable. If Microsoft wants Teams to be the place where AI shows up by default, it has to make turning it down feel just as normal.</p>
+
+      <p>That is the same reason the handoff work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> keeps coming back to the same point: if the review step is messy, the task is not done. Meeting AI is only useful if the people in the room trust the handoff from live conversation to recap, notes, and follow-up. If that handoff feels too automatic, the useful thing becomes the thing people resist.</p>
+
+      <p>So this is not really a story about Microsoft softening its stance. It is a story about where enterprise AI gets real. The policy lives in the admin center. The trust lives in the meeting. The useful product is the one that lets both exist without pretending they are the same thing.</p>
+
+      <p>Teams is now proving that the most important AI feature may be the one that lets the organizer kill the rest of them for ten minutes. That is not a retreat. It is the first honest control surface Microsoft has put in front of the meeting itself.</p>
+    `
+  },
   post93: {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
@@ -2529,6 +2561,7 @@ POST_ORDER.unshift('post90');
 POST_ORDER.unshift('post91');
 POST_ORDER.unshift('post92');
 POST_ORDER.unshift('post93');
+POST_ORDER.unshift('post94');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
