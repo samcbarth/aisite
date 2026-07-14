@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post97: {
+      image: 'assets/images/post97-inline.jpg',
+      caption: 'The quarter moved toward the layer under the software.',
+      side: 'right', after: 3,
+      supportImage: 'assets/images/post97-support.jpg',
+      supportCaption: 'Memory and chips sit underneath the AI budget before the software story starts.'
+    },
     post96: {
       image: 'assets/images/post96-inline.jpg',
       caption: 'The fix only matters once it survives the path to production.',
@@ -1118,6 +1125,16 @@ function copyRecursive(src, dest) {
       source: 'IBM',
       sourceUrl: 'https://www.ibm.com/think/topics/ai-agent-memory'
     },
+    ibmCapexReprioritization: {
+      text: 'We did not anticipate the magnitude of the capex reprioritization.',
+      source: 'Arvind Krishna, IBM investor letter',
+      sourceUrl: 'https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors'
+    },
+    ibmFaltered: {
+      text: 'this quarter we faltered',
+      source: 'Arvind Krishna, quoted by AP News',
+      sourceUrl: 'https://apnews.com/article/ibm-q2-2f28030dd13c572ad21a512da77d96cd'
+    },
     lightwellStructuralShift: {
       text: 'fundamental structural shift',
       source: 'Red Hat',
@@ -1353,6 +1370,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post97: { after: 4, quotes: [makeQuote('Capex', QUOTE_LIBRARY.ibmCapexReprioritization), makeQuote('Faltered', QUOTE_LIBRARY.ibmFaltered)] },
     post96: { after: 4, quotes: [makeQuote('Backbone', { text: 'the backbone of today’s digital economy', source: 'IBM', sourceUrl: 'https://www.redhat.com/en/about/press-releases/project-lightwell-secure-open-source' }), makeQuote('Together', { text: 'a mission best accomplished together', source: 'Red Hat', sourceUrl: 'https://www.redhat.com/en/blog/strengthening-open-source-supply-chain-red-hat-partners' })] },
     post94: { after: 3, quotes: [makeQuote('Control', { text: 'helps keep meetings focused, organized, and action-oriented', source: 'Microsoft Support', sourceUrl: 'https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings' }), makeQuote('Meeting AI', { text: 'turn Meeting AI (Copilot, Facilitator, recap) on or off during live meetings', source: 'TechRadar', sourceUrl: 'https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap' })] },
     post95: { after: 3, quotes: [makeQuote('Bottleneck', { text: 'Enterprise AI doesn’t stall because the models aren’t good enough; it stalls because the data isn’t ready for AI agents.', source: 'SAP News', sourceUrl: 'https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/' }), makeQuote('Platform', { text: 'the only Iceberg-native data platform built for agents and managed by agents', source: 'Dremio', sourceUrl: 'https://www.dremio.com/newsroom/sap-to-acquire-dremio-to-unify-sap-and-non-sap-data-to-power-agentic-ai/' })] },

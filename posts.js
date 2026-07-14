@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post97: {
+    featured: false,
+    date: 'July 14, 2026', iso: '2026-07-14',
+    title: 'IBM got hit by the memory bill',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post97-hero.jpg',
+    body: `
+      <p>IBM's worst day in years was not a mystery. It was a spend problem. The company said clients moved quarterly capex into servers, storage, and memory before expected price increases landed, and the stock reacted like that sentence was the whole quarter.</p>
+
+      <p>The numbers were not broken on their own. IBM's preliminary second-quarter results showed revenue of $17.2 billion, software up 5 percent, consulting flat, and infrastructure down 7 percent. But the mix mattered more than the headline. When the money moves into the layer under the software, the quarter changes shape fast.</p>
+
+      <p>Arvind Krishna said the quiet part out loud in <a href="https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors" target="_blank" rel="noopener noreferrer">his letter to investors</a>: "We did not anticipate the magnitude of the capex reprioritization." That is the sentence that matters. It says the issue was not just weak demand. It was demand showing up somewhere else, and showing up earlier than IBM modeled.</p>
+
+      <p>That is also why the old mainframe story comes back into view. IBM said the quarter was worse than expected because of a shortfall in Z performance and the associated software stack, mostly transaction processing. In plain English, a company with a still-important enterprise cash machine missed because customers were busy buying the parts around it.</p>
+
+      <h2>The money moved</h2>
+
+      <p>The buying pattern is the real story. IBM said clients shifted spend toward servers, storage, and memory to secure supply-constrained infrastructure ahead of expected price increases. That is not the AI story most vendors want to tell on stage. It is the AI story that shows up in procurement. The budget is still getting pulled into the hardware and memory that make the software possible.</p>
+
+      <p>AP's coverage of the same letter captured the tone from IBM's side: "this quarter we faltered." That is useful because it keeps the blame from turning into a clean external excuse. IBM also said it did not adapt and move quickly enough, and that numerous large deals failed to close on the timing it expected. That is an execution miss, not just a market cycle.</p>
+
+      <p>The market read it that way too. Shares fell hard before the open, and the damage spread beyond one ticker because IBM is still a decent read on how enterprise buyers are behaving. If software revenue is up while infrastructure revenue is down, the obvious question is where the next dollar is going. Right now IBM is saying to watch the capacity layer first.</p>
+
+      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once context has to move from one owner to the next, the cost shows up in delay, rework, and bad timing. IBM's version is bigger and more expensive, but the pattern is the same. The quarter changes when the handoff changes.</p>
+
+      <p>IBM also left itself some good news. Red Hat still grew faster, recent acquisitions performed well, consulting signings with GenAI were still there, and infrastructure tied to client buying had its best performance in reported history. So this was not a story about IBM falling apart. It was a story about the market buying a different part of the stack faster than IBM planned for.</p>
+
+      <p>The cleanest read is the least dramatic one. AI is not only pulling demand into software and services. It is also pulling demand into memory, storage, and the older hardware layers below the product everyone demos. IBM just had a quarter where that shift showed up all at once, and the stock punished the company for not seeing the timing fast enough.</p>
+    `
+  },
   post96: {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
@@ -2630,6 +2660,7 @@ POST_ORDER.unshift('post93');
 POST_ORDER.unshift('post94');
 POST_ORDER.unshift('post95');
 POST_ORDER.unshift('post96');
+POST_ORDER.unshift('post97');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
