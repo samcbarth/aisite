@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post99: {
+    featured: false,
+    date: 'July 14, 2026', iso: '2026-07-14',
+    title: '96% already hit the network wall',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1775519520461-6b6e068d9250?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
+    body: `
+      <p>96% of enterprise IT leaders said they ran into at least one network-related performance issue in the last year. 91% said fiber availability, carrier diversity, and low-latency connectivity limited where AI could be deployed. Flexential's new 400 Gbps rollout looks a lot less like a press release when you put those two numbers next to it.</p>
+
+      <p>The company has been saying the same thing in its <a href="https://www.flexential.com/resources/report/2026-state-ai-infrastructure" target="_blank" rel="noopener noreferrer">2026 State of AI Infrastructure Report</a>: "AI-ready isn’t infrastructure-ready." That report also says 55% of IT leaders now rank power cost or pricing differences as the top factor influencing where AI workloads go, and 89% say reliable grid power influences deployment decisions. In other words, the market is no longer pretending AI is only a model problem.</p>
+
+      <p>The July 14 release says Flexential upgraded its private network backbone to 400 Gbps across 15 data centers in Atlanta, Dallas, Denver, and Hillsboro, Oregon. Customers can now get 100 Gbps access ports and burstable capacity, with less than 90 minutes to provision additional capacity in markets that already sit on Flexential Fabric. That is not flashy. It is just what happens when traffic grows past the design limit.</p>
+
+      <p>Sam Rudek, Flexential's COO, put it plainly in the press release: "A 400 Gbps backbone gives them a foundation that matches the density and throughput their workloads require today." That is the important part. The company is not promising magic. It is promising a bigger ceiling.</p>
+
+      <h2>The ceiling moved</h2>
+
+      <p>AI training, inference, data replication, and hybrid multicloud traffic all hit the same problem at different speeds. A lot of enterprise networks were built for a different era, when 10 Gbps felt like a lot and the heavy work stayed in one place long enough to be predictable. The minute the workload starts moving between regions, clouds, and storage layers, the pipe becomes part of the application.</p>
+
+      <p>Flexential's own report says 91% of IT leaders see fiber availability, carrier diversity, and low-latency connectivity as limiting factors for site selection. That lines up with the company's rollout markets. Atlanta, Dallas, Denver, and Hillsboro are not random pins. They are places where carrier density and cloud adjacency already matter. Flexential is selling the network where the work already wants to go.</p>
+
+      <p>That is also why the number is useful but incomplete. <a href="https://hostingjournalist.com/news/flexential-upgrades-data-center-network-backbone-to-400-gbps" target="_blank" rel="noopener noreferrer">HostingJournalist's read</a> on the upgrade is blunt: a 400 Gbps backbone raises the ceiling, but the real bottleneck can still live in storage arrays, firewalls, routers, cloud gateways, and application design. That is the part buyers need to remember. Faster backbone does not automatically mean faster business result.</p>
+
+      <p>The same handoff problem shows up in other work too, including at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: when the job has to move through too many steps, the narrowest handoff decides how fast the whole thing feels. Networks are just the physical version of that problem. If the path is too tight, every team upstream starts building around the delay instead of through it.</p>
+
+      <p>Flexential is trying to make that delay less visible by cutting third-party hops and giving customers direct access to AWS, Azure, Google Cloud, and Oracle connections. That matters because most enterprises do not buy bandwidth for its own sake. They buy it to keep data movement from turning into a project. If the link is fast enough and the provisioning is fast enough, the infrastructure team can stop acting like a traffic controller.</p>
+
+      <p>The bigger story is that infrastructure is now part of AI strategy whether vendors like the framing or not. Flexential's report says 55% of IT leaders now measure AI success through cost reduction and operational efficiency, not just revenue growth. That is a quieter and more realistic metric. It means the people signing the check are asking where the money went, how long the work took, and what the network had to do to make it possible.</p>
+
+      <p>This is why the 400 Gbps rollout matters even if most customers never fully saturate it. Capacity sets the upper bound on what the company can promise, and optionality is what buyers pay for when they do not want to re-architect every time the workload changes. The useful part of the upgrade is not the headline number. It is the fact that Flexential is trying to keep the path ahead of the traffic instead of chasing it later.</p>
+
+      <p>That is the shape of the market now. AI keeps pushing the work outward, and the winning infrastructure companies are the ones that can move data, not just host it. Flexential just put a number on how much room it thinks that market needs before the old network assumptions break again.</p>
+    `
+  },
   post98: {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
@@ -2698,6 +2732,7 @@ POST_ORDER.unshift('post95');
 POST_ORDER.unshift('post96');
 POST_ORDER.unshift('post97');
 POST_ORDER.unshift('post98');
+POST_ORDER.unshift('post99');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
