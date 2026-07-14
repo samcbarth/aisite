@@ -398,9 +398,24 @@
     document.body.removeChild(ta);
     return ok;
   }
-  function shareOnLinkedIn() {
+  async function shareOnLinkedIn() {
     const url = currentShareUrl();
-    const copyPromise = copyShareText(linkedInShareText());
+    const shareText = linkedInShareText();
+    const canNativeShare = Boolean(navigator.share)
+      && (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 820);
+    if (canNativeShare) {
+      try {
+        await navigator.share({
+          title: document.getElementById('modal-title').textContent,
+          text: shareText,
+          url
+        });
+      } catch (err) {
+        if (!err || err.name !== 'AbortError') copyShareText(shareText).catch(() => {});
+      }
+      return;
+    }
+    const copyPromise = copyShareText(shareText);
     window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=600');
     copyPromise.catch(() => {});
   }
