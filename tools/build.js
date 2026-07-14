@@ -157,6 +157,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post98: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Umspannwerk_Abspannportal_Schalter.jpg',
+      caption: 'A 5GW campus only works if the grid keeps up.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/A_public_high_school_teacher_in_a_classroom_in_the_United_States_08.jpg',
+      supportCaption: 'The school side is already part of the project math.'
+    },
     post97: {
       image: 'assets/images/post97-inline.jpg',
       caption: 'The quarter moved toward the layer under the software.',
@@ -1370,6 +1377,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post98: { after: 5, quotes: [makeQuote('Schools', { text: 'Last year, our teachers received a $10,000 bonus, this year that check was over $50,000.', source: 'Sheldon Jones, Richland Parish School District', sourceUrl: 'https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/' }), makeQuote('Grid', { text: 'Meta is going to be paying for grid maintenance and upgrade costs that our residential and small business customers won\'t have to pay', source: 'Phillip May, Entergy Louisiana', sourceUrl: 'https://www.entergy.com/news/statement-from-phillip-may-president-and-ceo-entergy-louisiana' })] },
     post97: { after: 4, quotes: [makeQuote('Capex', QUOTE_LIBRARY.ibmCapexReprioritization), makeQuote('Faltered', QUOTE_LIBRARY.ibmFaltered)] },
     post96: { after: 4, quotes: [makeQuote('Backbone', { text: 'the backbone of today’s digital economy', source: 'IBM', sourceUrl: 'https://www.redhat.com/en/about/press-releases/project-lightwell-secure-open-source' }), makeQuote('Together', { text: 'a mission best accomplished together', source: 'Red Hat', sourceUrl: 'https://www.redhat.com/en/blog/strengthening-open-source-supply-chain-red-hat-partners' })] },
     post94: { after: 3, quotes: [makeQuote('Control', { text: 'helps keep meetings focused, organized, and action-oriented', source: 'Microsoft Support', sourceUrl: 'https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings' }), makeQuote('Meeting AI', { text: 'turn Meeting AI (Copilot, Facilitator, recap) on or off during live meetings', source: 'TechRadar', sourceUrl: 'https://www.techradar.com/pro/microsoft-makes-major-ai-u-turn-following-user-revolt-will-let-teams-users-turn-off-copilot-facilitator-and-recap' })] },

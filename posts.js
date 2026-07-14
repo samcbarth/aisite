@@ -7,6 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post98: {
+    featured: false,
+    date: 'July 14, 2026', iso: '2026-07-14',
+    title: 'What 5 gigawatts buys in Richland Parish',
+    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Wikimedia_Servers-0051_17.jpg',
+    body: `
+      <p>The first weird number is 5 gigawatts. The second is more than $50 billion. At that point, Meta's Richland Parish build stops looking like one more data center and starts looking like a local system with a corporate logo on it.</p>
+
+      <p>The July 13 update makes that plain. Meta says the project will expand to 5GW of compute capacity and more than $50 billion in cumulative investment. The company says Louisiana businesses have already picked up more than $1.6 billion in contracts, more than $1 billion will go into roads, water, and wastewater systems, and the campus should support more than 1,000 roles once it is operational. That is not just a tech project anymore. That is parish-scale accounting.</p>
+
+      <p>Meta also says it has given local teachers bonuses large enough to change the school payroll overnight. More than one sentence in the release could have been the lead, but the clearest local signal came from the district itself. Sheldon Jones, superintendent of the Richland Parish School District, said the bonus jump has already changed teacher recruiting and school finances. That is a real receipt, not a promise.</p>
+
+      <p>It also explains why local reaction around these projects gets complicated so fast. A data center can feel abstract when it is just a drawing and a map pin. It feels different when it changes teacher retention, contractor revenue, and the number of certified applicants showing up for school jobs.</p>
+
+      <p>The local business side matters for the same reason. Meta says Louisiana businesses have already won more than $1.6 billion in contracts on the project. That turns the campus into a supplier network before it ever turns into a finished building. In a small parish, that kind of demand shows up in payrolls, trucks, and subcontractors long before it shows up in the quarterly earnings deck.</p>
+
+      <p>Meta says the project has already funneled more than $1.6 billion into contracts for Louisiana businesses since breaking ground in December 2024. That matters because it turns the build from distant capex into payroll, vendors, and construction work people can actually point to. In a parish of 20,000 people, that kind of money does not stay theoretical for long.</p>
+
+      <h2>The power part is the deal</h2>
+
+      <p>Entergy's side of the story is just as blunt. Phillip May says Meta is going to be paying for grid maintenance and upgrade costs that residential and small business customers will not have to pay. He also says the arrangement could save other customers more than $2.65 billion over the next two decades. That is the cleanest pitch any utility can make: a giant new load, but no hidden subsidy for everyone else.</p>
+
+      <p>That still leaves a real worklist. The same Entergy statement says the proposal is only in the first steps of a regulatory process and still needs Louisiana Public Service Commission review and approval. In practice, that means generation, transmission, storm charges, and upgrade timing all have to line up before the build can be treated like normal infrastructure.</p>
+
+      <p>The bigger point is that Meta is not buying compute in a vacuum. It is buying power, permits, roads, wastewater capacity, and political cover for a project that keeps getting larger. The company says the Richland Parish site is now part of a broader build that puts AI infrastructure inside the same conversation as school bonuses and local tax revenue. That is a much more public-facing business story than the usual server-count announcement.</p>
+
+      <p>There is also the scale problem that comes with any project this big. Once a data center gets large enough, the argument stops being about a single campus and starts being about the region that has to hold it. Energy mix, water use, construction pace, and long-term operations all become part of the same budget. This is the part that turns AI from a product story into a utility story.</p>
+
+      <p>That is also why the public debate keeps moving toward the boring parts of the project. People do not spend much time arguing about a data hall layout. They argue about who pays for the wires, who absorbs the upgrade risk, and whether the promise of a new AI build is strong enough to justify all the concrete around it. That is a very different kind of business story than the one Meta would tell if this were only about server density.</p>
+
+      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once work crosses from one owner to the next, the lost context is the expensive part. This project has a dozen handoffs built into it already. Company to utility. Utility to regulator. Regulator to parish. Parish to schools and contractors. The point is not just that Meta is big. It is that the bill now moves through a lot of hands.</p>
+
+      <p>If Meta finishes what it is promising, Richland Parish will not just have a data center on the map. It will have a new power customer, a new tax base, a new infrastructure backlog, and a new reason to argue about what AI companies owe the places that host them. That is what 5 gigawatts buys there.</p>
+    `
+  },
   post97: {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
@@ -2661,6 +2697,7 @@ POST_ORDER.unshift('post94');
 POST_ORDER.unshift('post95');
 POST_ORDER.unshift('post96');
 POST_ORDER.unshift('post97');
+POST_ORDER.unshift('post98');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
