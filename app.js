@@ -398,25 +398,11 @@
     document.body.removeChild(ta);
     return ok;
   }
-  async function shareOnLinkedIn() {
-    const url = currentShareUrl();
+  function shareOnLinkedIn() {
     const shareText = linkedInShareText();
-    const canNativeShare = Boolean(navigator.share)
-      && (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 820);
-    if (canNativeShare) {
-      try {
-        await navigator.share({
-          title: document.getElementById('modal-title').textContent,
-          text: shareText,
-          url
-        });
-      } catch (err) {
-        if (!err || err.name !== 'AbortError') copyShareText(shareText).catch(() => {});
-      }
-      return;
-    }
+    const linkedInUrl = 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(shareText);
     const copyPromise = copyShareText(shareText);
-    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=600');
+    window.open(linkedInUrl, '_blank', 'noopener,width=600,height=600');
     copyPromise.catch(() => {});
   }
   function shareOnX() {

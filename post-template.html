@@ -582,35 +582,14 @@
         return ok;
       }
       btn.addEventListener('click', async () => {
-        const shareUrl = btn.dataset.shareUrl || window.location.href;
-        const shareText = btn.dataset.shareText || shareUrl;
-        const linkedInUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl);
-        const canNativeShare = Boolean(navigator.share)
-          && (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 820);
-        if (canNativeShare) {
-          try {
-            await navigator.share({
-              title: document.title.replace(' | Sam C Barth', ''),
-              text: shareText,
-              url: shareUrl
-            });
-            if (status) status.textContent = 'Share sheet opened.';
-          } catch (err) {
-            if (err && err.name !== 'AbortError' && status) {
-              status.textContent = 'Could not open share sheet. Text copied instead.';
-              copyText(shareText).catch(() => {});
-            }
-          }
-          setTimeout(() => { if (status) status.textContent = ''; }, 3500);
-          return;
-        }
-        const copyPromise = copyText(shareText);
+        const shareText = btn.dataset.shareText || window.location.href;
+        const linkedInUrl = 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(shareText);
         window.open(linkedInUrl, '_blank', 'noopener,width=700,height=700');
         try {
-          await copyPromise;
-          if (status) status.textContent = 'Text copied. LinkedIn opening.';
+          await copyText(shareText);
+          if (status) status.textContent = 'LinkedIn opening. Text copied too.';
         } catch (err) {
-          if (status) status.textContent = 'LinkedIn opening. Copy text manually if needed.';
+          if (status) status.textContent = 'LinkedIn opening.';
         }
         setTimeout(() => { if (status) status.textContent = ''; }, 3500);
       });
