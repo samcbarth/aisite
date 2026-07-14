@@ -336,6 +336,37 @@
     }
     .post-like-btn:hover { color: var(--pink); border-color: var(--pink-dim); }
     .post-like-btn.liked  { color: var(--pink); border-color: var(--pink-dim); }
+    .post-actions {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .post-share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #111827;
+      border: 1px solid #1a3a6b;
+      color: #8ec5ff;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      font-family: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+    }
+    .post-share-btn:hover {
+      color: #fff;
+      border-color: #4a90d9;
+      background: #101b2e;
+    }
+    .share-status {
+      min-height: 1.2em;
+      font-size: 1rem;
+      color: #777;
+    }
 
     /* Related posts */
     .related-section {
@@ -515,7 +546,11 @@
       POST_SUPPORT_MEDIA
       <div class="post-footer">
         <a href="../../" class="footer-back">Back to all posts</a>
-        <button class="post-like-btn" id="post-like-btn" data-id="POST_ID" aria-label="Like this post">Like</button>
+        <div class="post-actions">
+          <button class="post-share-btn" id="post-linkedin-share" data-share-url="POST_CANONICAL" data-share-text="POST_LINKEDIN_TEXT">Share on LinkedIn</button>
+          <button class="post-like-btn" id="post-like-btn" data-id="POST_ID" aria-label="Like this post">Like</button>
+          <span class="share-status" id="linkedin-share-status" aria-live="polite"></span>
+        </div>
       </div>
     </div>
 
@@ -525,6 +560,43 @@
   </main>
 
   <script src="../../post-likes.js"></script>
+  <script>
+    (function () {
+      const btn = document.getElementById('post-linkedin-share');
+      const status = document.getElementById('linkedin-share-status');
+      if (!btn) return;
+      async function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return true;
+        }
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return ok;
+      }
+      btn.addEventListener('click', async () => {
+        const shareUrl = btn.dataset.shareUrl || window.location.href;
+        const shareText = btn.dataset.shareText || shareUrl;
+        const linkedInUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl);
+        const copyPromise = copyText(shareText);
+        window.open(linkedInUrl, '_blank', 'noopener,width=700,height=700');
+        try {
+          await copyPromise;
+          if (status) status.textContent = 'Text copied. LinkedIn opening.';
+        } catch (err) {
+          if (status) status.textContent = 'LinkedIn opening. Copy text manually if needed.';
+        }
+        setTimeout(() => { if (status) status.textContent = ''; }, 3500);
+      });
+    })();
+  </script>
   <footer class="site-footer">
     <div class="site-footer-inner">
       <span>Sam C Barth</span>

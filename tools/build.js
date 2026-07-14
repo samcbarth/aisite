@@ -111,8 +111,25 @@ function copyRecursive(src, dest) {
     const text = stripHtml(body);
     return text.length > 160 ? text.slice(0, 157) + '...' : text;
   }
+  function truncateWords(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    const clipped = text.slice(0, maxLength + 1);
+    const lastSpace = clipped.lastIndexOf(' ');
+    return (lastSpace > 120 ? clipped.slice(0, lastSpace) : clipped.slice(0, maxLength)).trim() + '...';
+  }
+  function makeIntroLines(body) {
+    const paragraphs = [...body.matchAll(/<p>([\s\S]*?)<\/p>/g)]
+      .slice(0, 2)
+      .map(match => stripHtml(match[1]))
+      .filter(Boolean);
+    const text = paragraphs.join(' ');
+    return truncateWords(text, 360);
+  }
   function escAttr(str) {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function escDataAttr(str) {
+    return escAttr(str).replace(/\r?\n/g, '&#10;');
   }
   function toSlug(title) {
     return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -1582,6 +1599,17 @@ function copyRecursive(src, dest) {
     });
     return inserted ? replaced : body + '\n' + inline;
   }
+  function makeLinkedInShareText(post, postId, canonical) {
+    const intro = makeIntroLines(post.body);
+    const quote = INLINE_QUOTES[postId] && INLINE_QUOTES[postId].quotes && INLINE_QUOTES[postId].quotes[0];
+    const parts = [post.title];
+    if (intro) parts.push(intro);
+    if (quote && quote.text) {
+      parts.push(`"${quote.text}"\nSource: ${quote.source}`);
+    }
+    parts.push(`Read it here: ${canonical}`);
+    return parts.join('\n\n');
+  }
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
     if (!p) return '';
@@ -1612,6 +1640,7 @@ function copyRecursive(src, dest) {
     const canonical = `${BASE_URL}/posts/${slug}/`;
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
+    const linkedInShareText = makeLinkedInShareText(p, id, canonical);
     const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
     const supportMediaHtml = makeSupportMedia(p, id);
     const heroImageRel = makeHeroImage(p.image);
@@ -1644,6 +1673,7 @@ function copyRecursive(src, dest) {
       .replace(/POST_READ_TIME/g, String(readTime))
       .replace(/POST_CANONICAL/g, canonical)
       .replace(/POST_ID/g, id)
+      .replace('POST_LINKEDIN_TEXT', escDataAttr(linkedInShareText))
       .replace('POST_BODY', bodyHtml)
       .replace('POST_SUPPORT_MEDIA', supportMediaHtml)
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))

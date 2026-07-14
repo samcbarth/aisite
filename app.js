@@ -346,8 +346,63 @@
   function currentShareUrl() {
     return currentPostId ? postUrl(currentPostId) : SITE_URL;
   }
+  function textFromHtml(html) {
+    const el = document.createElement('div');
+    el.innerHTML = html || '';
+    return el.innerText.replace(/\s+/g, ' ').trim();
+  }
+  function truncateWords(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    const clipped = text.slice(0, maxLength + 1);
+    const lastSpace = clipped.lastIndexOf(' ');
+    return (lastSpace > 120 ? clipped.slice(0, lastSpace) : clipped.slice(0, maxLength)).trim() + '...';
+  }
+  function firstArticleLines(html) {
+    const el = document.createElement('div');
+    el.innerHTML = html || '';
+    const paragraphs = [...el.querySelectorAll('p')]
+      .slice(0, 2)
+      .map(p => p.innerText.replace(/\s+/g, ' ').trim())
+      .filter(Boolean);
+    return truncateWords(paragraphs.join(' '), 360);
+  }
+  function firstQuotedLine(text) {
+    const match = text.match(/[“"]([^”"]{24,240})[”"]/);
+    return match ? match[1].trim() : '';
+  }
+  function linkedInShareText() {
+    if (!currentPostId || !posts[currentPostId]) return currentShareUrl();
+    const p = posts[currentPostId];
+    const bodyText = textFromHtml(p.body);
+    const intro = firstArticleLines(p.body);
+    const quote = firstQuotedLine(bodyText);
+    const parts = [p.title];
+    if (intro) parts.push(intro);
+    if (quote) parts.push('"' + quote + '"');
+    parts.push('Read it here: ' + currentShareUrl());
+    return parts.join('\n\n');
+  }
+  async function copyShareText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  }
   function shareOnLinkedIn() {
-    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
+    const url = currentShareUrl();
+    const copyPromise = copyShareText(linkedInShareText());
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=600');
+    copyPromise.catch(() => {});
   }
   function shareOnX() {
     const title = document.getElementById('modal-title').textContent;
