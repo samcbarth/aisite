@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post102: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/New_office.jpg',
+      caption: 'The disclosure problem starts where the creative gets assembled.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Instagram_app_on_smartphone_%28grass_background%29_%28cropped%29.jpg',
+      supportCaption: 'The user only sees the label if the platform makes it easy to find.'
+    },
     post101: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Fiber_optic_illuminated.jpg',
       caption: 'The layer under AI still runs on fiber and racks.',
@@ -1415,6 +1422,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post102: { after: 3, quotes: [makeQuote('Disclosure', { text: 'we\'ll automatically add a disclosure to each ad\'s My Ad Center panel.', source: 'Google Ads Blog', sourceUrl: 'https://blog.google/products/ads-commerce/google-ads-ai-transparency-labels/' }), makeQuote('Feature', { text: 'Google is rolling out a new feature aimed at helping people understand when an ad they\'re seeing was made using AI technology.', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/' })] },
     post101: { after: 4, quotes: [makeQuote('Sovereignty', { text: 'The convergence of AI-led demand, supply constraints and push for digital sovereignty presents a compelling opportunity for us to emerge as a full-stack AI technology solutions provider.', source: 'HCLTech', sourceUrl: 'https://www.hcltech.com/press-releases/hcltech-launches-full-stack-ai-offering-powered-new-ai-data-center-investment' }), makeQuote('Economics', { text: 'AI has fundamentally changed the economics of computing.', source: 'The Times of India', sourceUrl: 'https://timesofindia.indiatimes.com/business/india-business/hcltech-to-up-ai-game-invest-3500-crore-in-data-centres-of-up-to-50-mw/articleshow/132378824.cms' })] },
     post100: { after: 4, quotes: [makeQuote('Trade-off', { text: 'This removes the trade-off Indian organisations face: using frontier AI while meeting compliance obligations.', source: 'Google India Team', sourceUrl: 'https://blog.google/intl/en-in/company-news/deepening-our-commitment-to-indias-ai-ambition/' }), makeQuote('Scale', { text: 'If you can use the public cloud while keeping your data in-country, you get the benefits of scale.', source: 'Richard Seroter, chief evangelist at Google Cloud', sourceUrl: 'https://timesofindia.indiatimes.com/city/bengaluru/google-rolls-out-sovereign-ai-stack-for-indias-regulated-sectors/articleshow/132398161.cms' })] },
     post99: { after: 4, quotes: [makeQuote('Ready', { text: 'AI-ready isn’t infrastructure-ready.', source: 'Flexential State of AI Infrastructure Report', sourceUrl: 'https://www.flexential.com/resources/report/2026-state-ai-infrastructure' }), makeQuote('Foundation', { text: 'A 400 Gbps backbone gives them a foundation that matches the density and throughput their workloads require today.', source: 'Sam Rudek, Flexential COO', sourceUrl: 'https://www.prnewswire.com/news-releases/flexential-deploys-400-gbps-network-infrastructure-to-power-next-generation-connectivity-services-302824803.html' })] },

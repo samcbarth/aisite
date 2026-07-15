@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post102: {
+    featured: false,
+    date: 'July 15, 2026', iso: '2026-07-15',
+    title: 'Ads need receipts now',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Pelican_hot_tubs_sale_billboard_reading_%E2%80%9CPelican_beat_the_tariffs%21%E2%80%9D.jpg',
+    body: `
+      <p>Open Google Ads on July 9 and the new thing is not a bigger model or a louder promise. It is a panel called "How this ad was made." That tells you where the pressure is now.</p>
+
+      <p><a href="https://blog.google/products/ads-commerce/google-ads-ai-transparency-labels/" target="_blank" rel="noopener noreferrer">Google says</a> the panel will show when generative AI was used to create or alter an ad across Search, YouTube, and Discover. Ads made with Google's own tools get the disclosure automatically. Ads made elsewhere depend on the advertiser to label them. That is a trust feature, but it is also a policy feature.</p>
+
+      <p>Google put it plainly: "we'll automatically add a disclosure to each ad's My Ad Center panel." That is not a tiny product note. It is the platform saying the creative stack needs a visible trail, not just a faster output path.</p>
+
+      <p>That sounds like a compliance tweak. It is really a workflow change. The ad stack has spent years making creative faster, cheaper, and more adaptive. Once the machine is doing more of the image and copy work, the question is no longer only whether the ad performs. It is whether anyone can tell what was generated, what was edited, and what was real.</p>
+
+      <h2>Receipts</h2>
+
+      <p><a href="https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/" target="_blank" rel="noopener noreferrer">TechCrunch framed it</a> from the consumer side: "Google is rolling out a new feature aimed at helping people understand when an ad they're seeing was made using AI technology." That matters because users do not experience AI as a strategy memo. They experience it as a product photo, a shopping result, or a video cut that may or may not match reality.</p>
+
+      <p><a href="https://support.google.com/adspolicy/answer/17257106?hl=en-GB&ref_topic=16794025" target="_blank" rel="noopener noreferrer">Google's policy help page</a> goes further. It says AI labels can be added directly within image and video creatives starting in July 2026, and that Google Ads may automatically apply labels to certain assets created with its own AI tools. That pushes provenance closer to the asset itself, which is where it belongs if the same creative gets copied, resized, localized, and reused across channels.</p>
+
+      <p>The line gets blurry fast. A retailer can use AI to stage a product better. A political advertiser can use AI to make something look cleaner than reality. A travel brand can use AI to render a hotel room nobody actually shot. The platform can ban misleading creative, but it still needs a readable label when AI touches the asset.</p>
+
+      <p>Google is not alone. Meta already has an AI info label, and regulators in the EU, India, and New York are forcing the issue. So this is not Google suddenly deciding to be noble. It is Google building the minimum trust layer that a 2026 ad system now needs.</p>
+
+      <p>The split between automatic labels for Google's own tools and manual labels for outside tools is the part advertisers should watch. That is where the responsibility lands. If the creative came out of Google's generative stack, Google can tag it itself. If it came from elsewhere, the advertiser has to say so. The burden is moving toward whoever actually assembled the asset.</p>
+
+      <p>That should make the reporting cleaner, but it will not make the argument go away. The next fight is how visible the label is, how often people notice it, and how much room exists between "edited with AI" and "misleading." Those are not edge cases. They are the business model.</p>
+
+      <p>Google is not slowing AI advertising down. It is trying to keep it legible while it speeds up. That is the part worth watching, because the moment the label becomes normal, the question shifts to how much of the ad stack can be machine-made before the disclosure starts to matter more than the creative.</p>
+    `
+  },
   post101: {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
@@ -2799,6 +2831,7 @@ POST_ORDER.unshift('post98');
 POST_ORDER.unshift('post99');
 POST_ORDER.unshift('post100');
 POST_ORDER.unshift('post101');
+POST_ORDER.unshift('post102');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
