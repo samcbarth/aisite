@@ -7,6 +7,41 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post103: {
+    featured: false,
+    date: 'July 15, 2026', iso: '2026-07-15',
+    title: 'Meta put a price on Muse Spark',
+    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Social_media_apps.jpg',
+    body: `
+      <p>Mark Zuckerberg's July 9 post was not a model victory lap. It was a pricing signal. Meta launched Muse Spark 1.1, opened a public preview of the Meta Model API, and gave developers a new way to buy into the stack.</p>
+
+      <p><a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" target="_blank" rel="noopener noreferrer">Meta says</a> Muse Spark 1.1 is "a significant upgrade from Muse Spark." The company says the model is built for agentic tasks, with better tool use, computer use, coding, and multimodal understanding. That is standard launch language. The useful part is that Meta stopped at capability claims and turned the model into something developers can actually test, price, and wire into a product.</p>
+
+      <p>The first real test is not the benchmark chart. It is the build log.</p>
+
+      <figure class="inline-media inline-media-right">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/DC_ROMA_AI_PC_Framework_Laptop_13_Ubuntu.jpg" alt="Developer laptop running terminal output" width="900" height="650" loading="lazy">
+        <figcaption>Meta is selling model access to developers first, so the laptop matters as much as the launch stage.</figcaption>
+      </figure>
+
+      <p><a href="https://www.livemint.com/technology/tech-news/mark-zuckerberg-returns-to-x-after-3-years-to-unveil-metas-muse-spark-1-1-ai-model-developer-api-11783622111314.html" target="_blank" rel="noopener noreferrer">Mint reported</a> Zuckerberg's own framing in a post on X: "Today we're releasing Muse Spark 1.1 -- a strong agentic and coding model at a very low price." That is the point in plain English. Meta is not trying to win with premium positioning. It is trying to win with usage.</p>
+
+      <h2>Cheap is the point</h2>
+
+      <p>Axios said Zuckerberg described the pricing as "very aggressive and attractive," and said the goal is widespread adoption. That is the right read. Once Meta charges for API access, the question stops being whether Muse Spark 1.1 is good enough for demos and becomes whether it is cheap enough to become the default layer inside other products.</p>
+
+      <p>Mint reported the first public numbers as $1.25 per million input tokens and $4.25 per million output tokens, plus $20 in free credits for new accounts. That is not a side note. It is the commercial shape of the launch. Meta is making the model easy to try, then asking developers to decide whether the economics are better than OpenAI or Anthropic.</p>
+
+      <p>That also explains why the story is bigger than one model. Muse Spark 1.1 is available in Thinking mode in the Meta AI app and on meta.ai, and Meta says it will spread across Instagram, WhatsApp, Facebook, Messenger, and smart glasses. That is a stronger moat than a standalone model page. Meta has a consumer funnel, a developer funnel, and a place to cross-sell the same intelligence across surfaces people already use.</p>
+
+      <p>The hardware side still matters too. <a href="https://www.marketwatch.com/story/metas-stock-rebounds-as-agentic-ai-coding-and-custom-chips-ease-spending-fears-16d1cb24" target="_blank" rel="noopener noreferrer">MarketWatch said</a> Meta's shares rose after the launch and after reports that its custom Iris chips could begin mass production in September. That is the part where the story gets bigger than software. Meta is trying to own the model, the API, the app surfaces, and more of the hardware bill underneath them.</p>
+
+      <p>That is also why the launch feels different from the usual AI announcement. This is not just Meta saying it caught up. It is Meta saying it can sell intelligence at a price that may undercut the market, while also using the rest of its app graph to keep distribution cheap. If the API works, the model becomes one more business line. If the chips work, the margin problem gets smaller. If both work, Meta stops looking like a company spending on AI for defense and starts looking like one trying to turn cheap inference into recurring revenue.</p>
+
+      <p>The last piece is timing. Meta did not wait for a perfect frontier model before putting a price on it. It shipped, priced, and opened the door to developers in one move. That matters because the AI business is drifting toward a simple question: who can make useful intelligence cheap enough to become habit. Meta just answered with a bill.</p>
+    `
+  },
   post102: {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
@@ -2832,6 +2867,7 @@ POST_ORDER.unshift('post99');
 POST_ORDER.unshift('post100');
 POST_ORDER.unshift('post101');
 POST_ORDER.unshift('post102');
+POST_ORDER.unshift('post103');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
