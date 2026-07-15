@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post100: {
+    featured: false,
+    date: 'July 14, 2026', iso: '2026-07-14',
+    title: 'The AI stack now has a border',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Data_center_roof.jpg',
+    body: `
+      <p>Google's India event had a lot of moving pieces. Education. Health. Languages. Cloud. The part that changes the business story is the one that lets regulated Indian buyers run Gemini on Google Distributed Cloud from inside Indian data centres.</p>
+
+      <p>Google says it is also bringing its AI Research Foundations curriculum to India, rolling out ATL Saathi for schools, expanding MedGemma work at AIIMS, and giving Gemini Live more Indian languages. That matters because the company is not treating India like a single product launch. It is building a local stack around the same customer base.</p>
+
+      <p>The blog puts the core change plainly: "This removes the trade-off Indian organisations face: using frontier AI while meeting compliance obligations." That is the whole move in one sentence. Google is not talking about a weaker version of Gemini. It is talking about the same capability with a different perimeter.</p>
+
+      <h2>Two paths</h2>
+
+      <p>Shilpa Phadnis' report in <a href="https://timesofindia.indiatimes.com/city/bengaluru/google-rolls-out-sovereign-ai-stack-for-indias-regulated-sectors/articleshow/132398161.cms" target="_blank" rel="noopener noreferrer">The Times of India</a> makes the buying choice clearer. Richard Seroter said, "If you can use the public cloud while keeping your data in-country, you get the benefits of scale." That is the route most enterprises want. They want scale first, hardware second.</p>
+
+      <p>The same report says the fully disconnected option is there for the buyers that truly need it. Defence, government, and critical infrastructure are the obvious cases. The interesting part is that Google is now selling three levels of control at once: local processing, sovereign controls, and air-gapped infrastructure. That is a much better product shape than a one-size-fits-all cloud pitch.</p>
+
+      <p>Google also says the supporting services will run fully disconnected from the public internet in the strictest deployment mode. That is not a small detail. It means the company is trying to make sovereignty a selectable product feature instead of a custom architecture project. In regulated work, that is the difference between a platform and a procurement headache.</p>
+
+      <p>The practical point is simple. Most buyers do not want to buy and manage their own infrastructure unless they have to. They want frontier AI without turning every rollout into a security exception. They want the model, the controls, and the data boundary to line up without a long consulting detour in the middle.</p>
+
+      <p>That is the same kind of workflow problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. If the handoff is fuzzy, the tool does not feel safer. It just creates a cleaner-looking version of the same confusion. Control only matters when the operating path stays simple.</p>
+
+      <p>The bigger signal here is that Google is treating India as a place where AI has to work under real constraints, not just a place where it can be demoed. The company is pairing model access with in-country processing, language work, training, and sector-specific deployment paths. That is a sharper strategy than just saying the market is important and hoping buyers will assemble the rest themselves.</p>
+
+      <p>That also fits the direction of the broader product stack. Google is trying to sell AI the same way it sells cloud: with enough flexibility that different buyers can choose different levels of control without leaving the ecosystem. If that works, regulated buyers get a cleaner on-ramp and Google gets a stronger reason to win the deployment, not just the evaluation.</p>
+
+      <p>The real change in today's announcement is not that Gemini reached another market. It is that Google made the boundary around Gemini part of the product. For Indian regulated buyers, that boundary is the product they actually have to trust.</p>
+    `
+  },
   post99: {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
@@ -2732,6 +2764,7 @@ POST_ORDER.unshift('post95');
 POST_ORDER.unshift('post96');
 POST_ORDER.unshift('post97');
 POST_ORDER.unshift('post98');
+POST_ORDER.unshift('post100');
 POST_ORDER.unshift('post99');
 
 if (typeof module !== 'undefined' && module.exports) {

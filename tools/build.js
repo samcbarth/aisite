@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post100: {
+      image: 'https://irp.cdn-website.com/896c337d/dms3rep/multi/About+Us+%28Who+are+we%29.jpg',
+      caption: 'The local control story still has to fit the room where the work gets done.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Wikimedia_foundation_office_presentation.jpg',
+      supportCaption: 'The control question still lands in a real room with real people.'
+    },
     post99: {
       image: 'https://images.unsplash.com/photo-1698668975271-2ba9a323be6b?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
       caption: 'The backbone is the product when AI traffic stops fitting the old pipe.',
@@ -1401,6 +1408,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post100: { after: 4, quotes: [makeQuote('Trade-off', { text: 'This removes the trade-off Indian organisations face: using frontier AI while meeting compliance obligations.', source: 'Google India Team', sourceUrl: 'https://blog.google/intl/en-in/company-news/deepening-our-commitment-to-indias-ai-ambition/' }), makeQuote('Scale', { text: 'If you can use the public cloud while keeping your data in-country, you get the benefits of scale.', source: 'Richard Seroter, chief evangelist at Google Cloud', sourceUrl: 'https://timesofindia.indiatimes.com/city/bengaluru/google-rolls-out-sovereign-ai-stack-for-indias-regulated-sectors/articleshow/132398161.cms' })] },
     post99: { after: 4, quotes: [makeQuote('Ready', { text: 'AI-ready isn’t infrastructure-ready.', source: 'Flexential State of AI Infrastructure Report', sourceUrl: 'https://www.flexential.com/resources/report/2026-state-ai-infrastructure' }), makeQuote('Foundation', { text: 'A 400 Gbps backbone gives them a foundation that matches the density and throughput their workloads require today.', source: 'Sam Rudek, Flexential COO', sourceUrl: 'https://www.prnewswire.com/news-releases/flexential-deploys-400-gbps-network-infrastructure-to-power-next-generation-connectivity-services-302824803.html' })] },
     post98: { after: 5, quotes: [makeQuote('Schools', { text: 'Last year, our teachers received a $10,000 bonus, this year that check was over $50,000.', source: 'Sheldon Jones, Richland Parish School District', sourceUrl: 'https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/' }), makeQuote('Grid', { text: 'Meta is going to be paying for grid maintenance and upgrade costs that our residential and small business customers won\'t have to pay', source: 'Phillip May, Entergy Louisiana', sourceUrl: 'https://www.entergy.com/news/statement-from-phillip-may-president-and-ceo-entergy-louisiana' })] },
     post97: { after: 4, quotes: [makeQuote('Capex', QUOTE_LIBRARY.ibmCapexReprioritization), makeQuote('Faltered', QUOTE_LIBRARY.ibmFaltered)] },
