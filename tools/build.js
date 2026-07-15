@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post104: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Si_wafer_12in.jpg',
+      caption: 'Custom silicon only matters if Meta can keep the economics moving down its own path.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Wafer_at_Intel_Museum.JPG',
+      supportCaption: 'The custom-chip story only matters if the production path stays real.'
+    },
     post103: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Wikimedia_Hackathon_2013%2C_Amsterdam_-_Flickr_-_Sebastiaan_ter_Burg_%2819%29.jpg',
       caption: 'Developers are the first audience that has to decide if the price actually works.',
@@ -1429,6 +1436,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post104: { after: 4, quotes: [makeQuote('Silicon', { text: 'to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' }), makeQuote('Scale', { text: 'As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we\'re building.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' })] },
     post103: { after: 5, quotes: [makeQuote('Launch', { text: 'a significant upgrade from Muse Spark', source: 'Meta AI', sourceUrl: 'https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/' }), makeQuote('Pricing', { text: 'a strong agentic and coding model at a very low price', source: 'Mint', sourceUrl: 'https://www.livemint.com/technology/tech-news/mark-zuckerberg-returns-to-x-after-3-years-to-unveil-metas-muse-spark-1-1-ai-model-developer-api-11783622111314.html' })] },
     post102: { after: 3, quotes: [makeQuote('Disclosure', { text: 'we\'ll automatically add a disclosure to each ad\'s My Ad Center panel.', source: 'Google Ads Blog', sourceUrl: 'https://blog.google/products/ads-commerce/google-ads-ai-transparency-labels/' }), makeQuote('Feature', { text: 'Google is rolling out a new feature aimed at helping people understand when an ad they\'re seeing was made using AI technology.', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/' })] },
     post101: { after: 4, quotes: [makeQuote('Sovereignty', { text: 'The convergence of AI-led demand, supply constraints and push for digital sovereignty presents a compelling opportunity for us to emerge as a full-stack AI technology solutions provider.', source: 'HCLTech', sourceUrl: 'https://www.hcltech.com/press-releases/hcltech-launches-full-stack-ai-offering-powered-new-ai-data-center-investment' }), makeQuote('Economics', { text: 'AI has fundamentally changed the economics of computing.', source: 'The Times of India', sourceUrl: 'https://timesofindia.indiatimes.com/business/india-business/hcltech-to-up-ai-game-invest-3500-crore-in-data-centres-of-up-to-50-mw/articleshow/132378824.cms' })] },

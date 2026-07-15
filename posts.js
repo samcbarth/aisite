@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post104: {
+    featured: false,
+    date: 'July 15, 2026', iso: '2026-07-15',
+    title: 'Meta is trying to own the chip bill',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Semiconductor_Wafer_of_Microelectronics.jpg',
+    body: `
+      <p>Meta's July 9 AI headline was Muse Spark 1.1 and the new Meta Model API. The more interesting detail came from Reuters: an internal memo said Meta plans to start manufacturing its newest AI chip in September, and at least one chip cleared testing in about six weeks. That is the part that changes the business math.</p>
+
+      <p><a href="https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/" target="_blank" rel="noopener noreferrer">Meta said</a> in April it was partnering with Broadcom "to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions." The company also said the agreement "exceeds 1GW" and is only the "first phase of a sustained, multi-gigawatt rollout."</p>
+
+      <p>That is not a vanity chip project. It is Meta trying to move some of its AI load off the most expensive rented compute in the market and onto silicon it can shape for its own workloads. It still needs Nvidia and AMD. But if the custom chips work, Meta gets another lever on cost, power, and timing.</p>
+
+      <h2>The second bill</h2>
+
+      <p><a href="https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> that Meta is working with Broadcom on chip design and TSMC on manufacturing, while buying RAM from Samsung, storage from Sandisk, and fiber-optic gear from Sumitomo Electric. The memo also said Meta expects to deploy 7 gigawatts of compute this year and double that next year. That is not a normal product cycle. That is a utility-scale buying plan.</p>
+
+      <p>That six-week testing line matters because it says this is already moving past lab theater. Meta is not just sketching custom silicon on a roadmap slide. It is getting parts through design, test, fabrication, and deployment fast enough that the supply chain has to line up around the schedule, not the other way around.</p>
+
+      <p>The useful part is where the chips land. Meta says MTIA is built for inference and recommendation at scale, which means ranking, feed quality, and the everyday work that keeps its apps moving. The company is not just chasing a flashy model win. It is trying to own more of the layer that decides how much each AI task costs to serve.</p>
+
+      <p>"As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we're building." That is the cleanest read on the whole thing. Meta wants its own hardware cadence to become part of its AI margin story, not just its AI brag sheet.</p>
+
+      <h2>The rest of the stack</h2>
+
+      <p>The broader pattern is not unique to Meta. Amazon, Google, OpenAI, and Anthropic all keep circling the same conclusion: if AI keeps eating budget, the company that owns more of the chip stack owns more of the economics. OpenAI's own Broadcom work points the same direction. The model may still get the demo. The silicon is where the payback gets decided.</p>
+
+      <p>This is also why Meta's chip story feels bigger than one September date. If the chip lands on time and starts taking even a small slice of inference load, the company gets a cleaner way to control spend without slowing product rollout. If it slips, Meta still bought itself a more complicated supply chain. Either way, the chip is now part of the AI bill, and Meta is the one trying to write it in-house.</p>
+    `
+  },
   post103: {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
@@ -2868,6 +2898,7 @@ POST_ORDER.unshift('post100');
 POST_ORDER.unshift('post101');
 POST_ORDER.unshift('post102');
 POST_ORDER.unshift('post103');
+POST_ORDER.unshift('post104');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

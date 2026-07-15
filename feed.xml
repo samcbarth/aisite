@@ -6,7 +6,71 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2026 16:10:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 23:10:15 GMT</lastBuildDate>
+    <item>
+      <title>Meta is trying to own the chip bill</title>
+      <link>https://samcbarth.github.io/aisite/posts/meta-is-trying-to-own-the-chip-bill/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-is-trying-to-own-the-chip-bill/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>Meta&apos;s July 9 AI headline was Muse Spark 1.1 and the new Meta Model API. The more interesting detail came from Reuters: an internal memo said Meta plans to start manufacturing its newest AI chip in September, and at least one chip cleared testing in about six weeks. That is the p</description>
+    </item>
+    <item>
+      <title>Meta put a price on Muse Spark</title>
+      <link>https://samcbarth.github.io/aisite/posts/meta-put-a-price-on-muse-spark/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-put-a-price-on-muse-spark/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Mark Zuckerberg&apos;s July 9 post was not a model victory lap. It was a pricing signal. Meta launched Muse Spark 1.1, opened a public preview of the Meta Model API, and gave developers a new way to buy into the stack. Meta says Muse Spark 1.1 is &quot;a significant upgrade from Muse Spark</description>
+    </item>
+    <item>
+      <title>Ads need receipts now</title>
+      <link>https://samcbarth.github.io/aisite/posts/ads-need-receipts-now/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ads-need-receipts-now/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Business Strategy</category>
+      <description>Open Google Ads on July 9 and the new thing is not a bigger model or a louder promise. It is a panel called &quot;How this ad was made.&quot; That tells you where the pressure is now. Google says the panel will show when generative AI was used to create or alter an ad across Search, YouTub</description>
+    </item>
+    <item>
+      <title>HCLTech is buying the layer under AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/hcltech-is-buying-the-layer-under-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hcltech-is-buying-the-layer-under-ai/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>₹3,500 crore is the part that grabs attention. The more useful detail is what HCLTech says it is buying with it: data centers that can scale to 50 MW, a new subsidiary structure to hold the spend, and a full-stack AI business that stretches from infrastructure to software. The co</description>
+    </item>
+    <item>
+      <title>The AI stack now has a border</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-ai-stack-now-has-a-border/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-stack-now-has-a-border/</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>Google&apos;s India event had a lot of moving pieces. Education. Health. Languages. Cloud. The part that changes the business story is the one that lets regulated Indian buyers run Gemini on Google Distributed Cloud from inside Indian data centres. Google says it is also bringing its </description>
+    </item>
+    <item>
+      <title>96% already hit the network wall</title>
+      <link>https://samcbarth.github.io/aisite/posts/96-already-hit-the-network-wall/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/96-already-hit-the-network-wall/</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>96% of enterprise IT leaders said they ran into at least one network-related performance issue in the last year. 91% said fiber availability, carrier diversity, and low-latency connectivity limited where AI could be deployed. Flexential&apos;s new 400 Gbps rollout looks a lot less lik</description>
+    </item>
+    <item>
+      <title>What 5 gigawatts buys in Richland Parish</title>
+      <link>https://samcbarth.github.io/aisite/posts/what-5-gigawatts-buys-in-richland-parish/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-5-gigawatts-buys-in-richland-parish/</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Infrastructure</category>
+      <description>The first weird number is 5 gigawatts. The second is more than $50 billion. At that point, Meta&apos;s Richland Parish build stops looking like one more data center and starts looking like a local system with a corporate logo on it. The July 13 update makes that plain. Meta says the p</description>
+    </item>
+    <item>
+      <title>IBM got hit by the memory bill</title>
+      <link>https://samcbarth.github.io/aisite/posts/ibm-got-hit-by-the-memory-bill/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-got-hit-by-the-memory-bill/</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>IBM&apos;s worst day in years was not a mystery. It was a spend problem. The company said clients moved quarterly capex into servers, storage, and memory before expected price increases landed, and the stock reacted like that sentence was the whole quarter. The numbers were not broken</description>
+    </item>
     <item>
       <title>The expensive part starts after the CVE</title>
       <link>https://samcbarth.github.io/aisite/posts/the-expensive-part-starts-after-the-cve/</link>
