@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post101: {
+    featured: false,
+    date: 'July 15, 2026', iso: '2026-07-15',
+    title: 'HCLTech is buying the layer under AI',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/BalticServers_data_center.jpg',
+    body: `
+      <p>₹3,500 crore is the part that grabs attention. The more useful detail is what HCLTech says it is buying with it: data centers that can scale to 50 MW, a new subsidiary structure to hold the spend, and a full-stack AI business that stretches from infrastructure to software.</p>
+
+      <p>The company said on July 13 that the plan is aimed at private sector and government demand. In the same Q1 release, HCLTech said Advanced AI revenue grew 62.1% year over year to $171 million and net new bookings hit $2.4 billion. That is why the move matters. It is not a desperate pivot. It is a company with real AI revenue deciding the floor under that revenue should belong to it.</p>
+
+      <p>HCLTech put the logic this way: "The convergence of AI-led demand, supply constraints and push for digital sovereignty presents a compelling opportunity for us to emerge as a full-stack AI technology solutions provider." That is a cleaner summary than the usual launch language. It says the market is not only about models anymore. It is about who can own the bottleneck.</p>
+
+      <h2>The bottleneck moves up the balance sheet</h2>
+
+      <p>That is a bigger shift than it looks like. HCLTech is a services company. Services companies usually make money by stitching together other people's cloud, software, and infrastructure. When one of them starts building AI data centers, it is saying the profitable layer may sit lower than the consulting slide deck.</p>
+
+      <p>The Times of India report made that plain with a short quote from C Vijayakumar: "AI has fundamentally changed the economics of computing." That is the important sentence because it explains why capex suddenly makes sense. If AI demand keeps pulling buyers toward sovereign infrastructure, the company that can stand up the hardware and run the stack has more leverage than the company that only wraps services around it.</p>
+
+      <p>HCLTech also keeps linking the move to digital sovereignty, data localization, and GPU deployments for training and inference. That matters in India, where the buyer often wants AI without handing the whole workload to a public cloud it does not fully control. The company says the new business will run through a new subsidiary and step-down subsidiaries, which tells you this is not a side project. It is meant to sit as its own business line.</p>
+
+      <p>That also lines up with HCLTech's broader AI pitch. The company already describes its AI work as a full-stack offering across hyperscalers, on-premises, edge, neo cloud, and sovereign environments. The new data center investment makes that language less abstract. It is harder to promise end-to-end AI if you never touch the part where power, cooling, and rack space become the constraint.</p>
+
+      <p>It is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Once the promise moves from the first team to the next one, the expensive part is the missing context. AI just makes that more obvious because the handoff is no longer only between sales and delivery. It is between software, facilities, operations, and the buyer who still wants everything to feel simple.</p>
+
+      <p>There is still a risk here. Capex changes the return profile. A services firm can grow by adding people and process. A data center business also needs land, power, permits, cooling, hardware, and a long operating runway. If HCLTech gets the mix wrong, the company could end up with a much heavier balance sheet and only a modest change in customer loyalty.</p>
+
+      <p>But if it gets the mix right, the payoff is real. HCLTech would not just be selling AI projects. It would be selling the infrastructure, the management, and the operating model under them. That is the kind of move that can turn a services vendor into a platform vendor, or at least make the boundary between the two much blurrier.</p>
+
+      <p>The real test is whether buyers treat the 50 MW plan as a reason to buy more from HCLTech, or just as proof that the company had to move deeper into infrastructure to stay relevant. That is the part that will decide whether this looks like a new growth line or the cost of staying in the AI race.</p>
+    `
+  },
   post100: {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
@@ -2764,8 +2796,9 @@ POST_ORDER.unshift('post95');
 POST_ORDER.unshift('post96');
 POST_ORDER.unshift('post97');
 POST_ORDER.unshift('post98');
-POST_ORDER.unshift('post100');
 POST_ORDER.unshift('post99');
+POST_ORDER.unshift('post100');
+POST_ORDER.unshift('post101');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post101: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Fiber_optic_illuminated.jpg',
+      caption: 'The layer under AI still runs on fiber and racks.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Susquehanna_International_Group_Main_Office.jpg',
+      supportCaption: 'The balance sheet question is now part of the delivery model.'
+    },
     post100: {
       image: 'https://irp.cdn-website.com/896c337d/dms3rep/multi/About+Us+%28Who+are+we%29.jpg',
       caption: 'The local control story still has to fit the room where the work gets done.',
@@ -1408,6 +1415,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post101: { after: 4, quotes: [makeQuote('Sovereignty', { text: 'The convergence of AI-led demand, supply constraints and push for digital sovereignty presents a compelling opportunity for us to emerge as a full-stack AI technology solutions provider.', source: 'HCLTech', sourceUrl: 'https://www.hcltech.com/press-releases/hcltech-launches-full-stack-ai-offering-powered-new-ai-data-center-investment' }), makeQuote('Economics', { text: 'AI has fundamentally changed the economics of computing.', source: 'The Times of India', sourceUrl: 'https://timesofindia.indiatimes.com/business/india-business/hcltech-to-up-ai-game-invest-3500-crore-in-data-centres-of-up-to-50-mw/articleshow/132378824.cms' })] },
     post100: { after: 4, quotes: [makeQuote('Trade-off', { text: 'This removes the trade-off Indian organisations face: using frontier AI while meeting compliance obligations.', source: 'Google India Team', sourceUrl: 'https://blog.google/intl/en-in/company-news/deepening-our-commitment-to-indias-ai-ambition/' }), makeQuote('Scale', { text: 'If you can use the public cloud while keeping your data in-country, you get the benefits of scale.', source: 'Richard Seroter, chief evangelist at Google Cloud', sourceUrl: 'https://timesofindia.indiatimes.com/city/bengaluru/google-rolls-out-sovereign-ai-stack-for-indias-regulated-sectors/articleshow/132398161.cms' })] },
     post99: { after: 4, quotes: [makeQuote('Ready', { text: 'AI-ready isn’t infrastructure-ready.', source: 'Flexential State of AI Infrastructure Report', sourceUrl: 'https://www.flexential.com/resources/report/2026-state-ai-infrastructure' }), makeQuote('Foundation', { text: 'A 400 Gbps backbone gives them a foundation that matches the density and throughput their workloads require today.', source: 'Sam Rudek, Flexential COO', sourceUrl: 'https://www.prnewswire.com/news-releases/flexential-deploys-400-gbps-network-infrastructure-to-power-next-generation-connectivity-services-302824803.html' })] },
     post98: { after: 5, quotes: [makeQuote('Schools', { text: 'Last year, our teachers received a $10,000 bonus, this year that check was over $50,000.', source: 'Sheldon Jones, Richland Parish School District', sourceUrl: 'https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/' }), makeQuote('Grid', { text: 'Meta is going to be paying for grid maintenance and upgrade costs that our residential and small business customers won\'t have to pay', source: 'Phillip May, Entergy Louisiana', sourceUrl: 'https://www.entergy.com/news/statement-from-phillip-may-president-and-ceo-entergy-louisiana' })] },
