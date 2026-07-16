@@ -38,14 +38,14 @@ function cspAllowsImage(src, pageUrl, sources) {
   });
 }
 
-async function fetchWithRetry(url, attempts = 3, method = 'HEAD') {
+async function fetchWithRetry(url, attempts = 3, method = 'HEAD', useRange = true) {
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
       const response = await fetch(url, {
         method,
         redirect: 'follow',
-        headers: method === 'GET'
+        headers: method === 'GET' && useRange
           ? { 'User-Agent': 'AISite homepage image verifier/1.0', Range: 'bytes=0-1023' }
           : { 'User-Agent': 'AISite homepage image verifier/1.0' },
         signal: AbortSignal.timeout(10000)
@@ -100,7 +100,7 @@ async function checkRemote(src, pageUrl) {
     const thumbIndex = parts.indexOf('thumb');
     const fileName = decodeURIComponent(parts[thumbIndex >= 0 ? parts.length - 2 : parts.length - 1]);
     const apiUrl = `https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=File:${encodeURIComponent(fileName)}`;
-    const response = await fetchWithRetry(apiUrl, 3, 'GET');
+    const response = await fetchWithRetry(apiUrl, 3, 'GET', false);
     const data = await response.json();
     const page = data.query && Object.values(data.query.pages || {})[0];
     if (response.ok && page && page.imageinfo && page.imageinfo[0] && page.imageinfo[0].url) {
@@ -134,7 +134,7 @@ async function main() {
   const pageUrl = live ? `${liveUrl}?image-check=${Date.now()}` : liveUrl;
   const html = live
     ? await (async () => {
-        const response = await fetchWithRetry(pageUrl, 3, 'GET');
+        const response = await fetchWithRetry(pageUrl, 3, 'GET', false);
         if (!response.ok) throw new Error(`homepage returned ${response.status}`);
         return response.text();
       })()
