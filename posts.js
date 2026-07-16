@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post108: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'The AI bottleneck is a connector',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fiber%20optic%20illuminated.jpg',
+    body: `
+      <p>The biggest line in the 3M and Microsoft partnership is not the AI line. It is the connector. <a href="https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/" target="_blank" rel="noopener noreferrer">Microsoft said on July 15</a> that Azure will be the first announced hyperscale cloud provider to deploy 3M&apos;s Expanded Beam Optical technology, and <a href="https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation" target="_blank" rel="noopener noreferrer">3M said</a> it will use Microsoft&apos;s AI and digital platforms across customer service, finance, sales, and marketing. That makes this look less like a model story and more like a story about the physical and operating layers underneath it.</p>
+
+      <p>3M was already moving. In March, <a href="https://news.3m.com/2026-03-16-3M-announces-capacity-investment-for-Expanded-Beam-Optical-EBO-production" target="_blank" rel="noopener noreferrer">the company said it was expanding U.S. manufacturing capacity for EBO</a> and that the expansion would more than double capacity. So this is not a sudden pivot. It is demand meeting a production plan that was already in motion.</p>
+
+      <p>That is the useful part of the deal. AI headlines keep talking about models, but data centers still care about installation time, contamination, maintenance, and whether dense racks keep performing when the room gets hot and dusty. <a href="https://news.3m.com/2026-03-16-3M-announces-capacity-investment-for-Expanded-Beam-Optical-EBO-production" target="_blank" rel="noopener noreferrer">3M&apos;s own March release</a> said the technology is built to improve deployment speed, reliability, and operational efficiency in next-generation AI data centers. That is the real product here: less friction at the point where glass, dust, and humans all meet.</p>
+
+      <p>Microsoft put the point plainly. Cliff Henson said the goal is to build datacenters "faster to deploy, more resilient and ready for the scale of AI." That is not a dramatic line, which is why it works. The whole story is about shaving pain out of the part nobody puts in the keynote.</p>
+
+      <h2>The boring layer is the business</h2>
+
+      <p>There is a reason this reads like a better business story than another model launch. Microsoft is buying a component that helps its Azure buildout stay cleaner and easier to maintain. 3M is selling something that turns materials science into operating leverage. And the two companies are using the same partnership to move into their own internal workflows.</p>
+
+      <p>The press release says 3M will use Microsoft&apos;s AI and digital capabilities in customer service, finance, sales, and marketing. It also says the companies are building an AI agent-driven workflow for customer orders, credit checks, delinquency assessments, and system updates, with human-in-the-loop controls and a monitoring dashboard. That is not a demo. That is process work. It is the part that decides whether a company gets faster or just gets more AI-shaped paperwork.</p>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually not the thing people put in the deck. It is the connector, the check, the cleanup, or the transfer that has to work every time for the rest of the system to look simple.</p>
+
+      <p>3M&apos;s Jon Van Wyck said AI can "accelerate growth, improve customer experiences and help our teams work more effectively." That is the right lens because the software side is not separate from the infrastructure side. The company is trying to shorten the path from the order, to the workflow, to the cash.</p>
+
+      <h2>3M has to ship the part</h2>
+
+      <p>The other useful detail is that 3M is not treating EBO like a side experiment. It is scaling production and trying to make the technology easier to buy, install, and standardize. That matters because hyperscalers do not build around slogans. They build around supply, timing, and reliability. If 3M can keep the part available and the deployment path cleaner, it becomes part of the AI buildout&apos;s base layer.</p>
+
+      <p>So the deal is not really about a press photo with two logos. It is about one company selling a cleaner path through the rack and another company using its own software stack to shorten the path through its own business. That is where AI spending keeps landing now. Not in the demo. In the places nobody wants to babysit.</p>
+
+      <p>The market will keep talking about models and margins, but this deal says the more interesting fight is down where the fibers meet the rack and the order meets the workflow. If 3M and Microsoft can make those handoffs cheaper, cleaner, and easier to run, that is the kind of AI story that actually changes an operating plan.</p>
+    `
+  },
   post107: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
@@ -3010,6 +3044,7 @@ POST_ORDER.unshift('post104');
 POST_ORDER.unshift('post105');
 POST_ORDER.unshift('post106');
 POST_ORDER.unshift('post107');
+POST_ORDER.unshift('post108');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

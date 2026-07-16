@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post108: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Tech%20-%20data%20center.jpg',
+      caption: 'The connector story is really about whether the rack stays easy to run.',
+      side: 'right', after: 2,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Factory%20Automation%20Robotics%20Palettizing%20Bread.jpg',
+      supportCaption: '3M still has to turn the part into something it can make at scale.'
+    },
     post107: {
       image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Slack%20HQ%20-%20500%20Howard%20(40748114295).jpg',
       caption: 'Claude Tag only works if the thread keeps its own history.',
@@ -1467,6 +1474,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post108: { after: 4, quotes: [makeQuote('Deployment', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Operations', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post105: { after: 2, quotes: [makeQuote('Workspace', QUOTE_LIBRARY.openaiCodexWorkspaceReach), makeQuote('Threads', QUOTE_LIBRARY.workLouderLiveViewThreads)] },
     post107: { after: 2, quotes: [makeQuote('Slack', { text: 'Claude Tag is a new way for teams to work with Claude.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/introducing-claude-tag' }), makeQuote('Teammate', { text: 'an “always-on Claude” that lives in Slack and acts as an AI teammate', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/' })] },
     post104: { after: 4, quotes: [makeQuote('Silicon', { text: 'to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' }), makeQuote('Scale', { text: 'As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we\'re building.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' })] },

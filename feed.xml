@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 08:14:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 11:13:07 GMT</lastBuildDate>
+    <item>
+      <title>The AI bottleneck is a connector</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-ai-bottleneck-is-a-connector/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-bottleneck-is-a-connector/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>The biggest line in the 3M and Microsoft partnership is not the AI line. It is the connector. Microsoft said on July 15 that Azure will be the first announced hyperscale cloud provider to deploy 3M&amp;apos;s Expanded Beam Optical technology, and 3M said it will use Microsoft&amp;apos;s </description>
+    </item>
     <item>
       <title>Slack is now Claude&apos;s memory layer</title>
       <link>https://samcbarth.github.io/aisite/posts/slack-is-now-claudes-memory-layer/</link>
