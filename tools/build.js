@@ -174,25 +174,32 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post110: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/KUKA_Industrial_Robot_Writer.jpg',
+      caption: 'The factory floor is where physical AI has to earn its keep.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Hospital_delivery_robot_having_priority_to_elevators.jpg',
+      supportCaption: "Japan's next test is not only factories. It is hospitals and care work too."
+    },
     post109: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clean%20room.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Clean_room.jpg',
       caption: 'The real pressure is in the clean room and the packaging line, not the press release.',
       side: 'right', after: 2,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Semiconductor%20photomask.jpg',
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Semiconductor_photomask.jpg',
       supportCaption: 'The story only works if the advanced node stays on schedule.'
     },
     post108: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Tech%20-%20data%20center.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Virginia_Tech_-_data_center.jpg',
       caption: 'The connector story is really about whether the rack stays easy to run.',
       side: 'right', after: 2,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Factory%20Automation%20Robotics%20Palettizing%20Bread.jpg',
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Factory_Automation_Robotics_Palettizing_Bread.jpg',
       supportCaption: '3M still has to turn the part into something it can make at scale.'
     },
     post107: {
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Slack%20HQ%20-%20500%20Howard%20(40748114295).jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Slack_HQ_-_500_Howard_%2840748114295%29.jpg',
       caption: 'Claude Tag only works if the thread keeps its own history.',
       side: 'right', after: 2,
-      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Video%20Conference%20Using%20Laptop.jpg',
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Video_Conference_Using_Laptop.jpg',
       supportCaption: 'The work still has to survive the jump from one meeting to the next.'
     },
     post106: {
@@ -1481,6 +1488,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post110: { after: 3, quotes: [makeQuote('Factory', { text: 'Japan invented modern manufacturing.', source: 'Jensen Huang, NVIDIA', sourceUrl: 'https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure' }), makeQuote('Pressure', { text: 'serious challenges, including ageing populations and labor shortages.', source: 'Yasuhiko Hashimoto, Kawasaki Heavy Industries', sourceUrl: 'https://global.kawasaki.com/en/corp/newsroom/news/detail/?f=20260716_2992' })] },
     post109: { after: 2, quotes: [makeQuote('Demand', { text: 'AI is reshaping our daily lives and semiconductor technology is the foundation for new capabilities and applications.', source: 'Dr. C.C. Wei, TSMC', sourceUrl: 'https://pr.tsmc.com/english/news/3210' }), makeQuote('Runway', { text: 'essential to support (its) long-term growth', source: 'William Li, Counterpoint Research via AP', sourceUrl: 'https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff' })] },
     post108: { after: 4, quotes: [makeQuote('Deployment', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Operations', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post105: { after: 2, quotes: [makeQuote('Workspace', QUOTE_LIBRARY.openaiCodexWorkspaceReach), makeQuote('Threads', QUOTE_LIBRARY.workLouderLiveViewThreads)] },

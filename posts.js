@@ -7,12 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post110: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'Japan put 13,750 chips behind physical AI',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Industrial_robot.jpg',
+    body: `
+      <p>13,750 Vera CPUs. 27,500 Rubin GPUs. 140 megawatts. That is not a teaser. That is Japan putting a hard number on physical AI. <a href="https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure" target="_blank" rel="noopener noreferrer">NVIDIA said today</a> it is working with Noetra Corp. to launch the factory, and <a href="https://apnews.com/article/86823c1bcc959ad603ecb25d022207b1" target="_blank" rel="noopener noreferrer">AP reported</a> that Fujitsu is leading the broader push with FANUC, Yaskawa Electric, and Kawasaki Heavy Industries.</p>
+
+      <p>That number lands differently because Japan is not treating robotics like a side project. The country's AI Robotics Strategy says it wants to capture more than 30% of the global AI robotics market by 2040. That is a national industrial target, not a product launch. Jensen Huang put the tone in plain English when he said, "Japan invented modern manufacturing" and called this "the next industrial revolution."</p>
+
+      <h2>The stack is the point</h2>
+
+      <p>NVIDIA says the new AI factory will support Japan's FRONTia Project and help develop open multimodal foundation models for AI agents, digital twins, robotics, and physical AI. That is the important shape of the story. This is not one model or one robot. It is compute, training data, software, and deployment discipline lined up in one program.</p>
+
+      <p>Fujitsu's own release makes the control story clearer. It says the companies are trying to build a collaborative control platform "bridging the digital and physical worlds." That is the part that usually gets hand-waved in robot demos. The robot is not the product. The control path is.</p>
+
+      <p>That is also the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The money sits in the jump between systems, not in the dashboard that names them. If the digital layer cannot talk to the physical layer cleanly, the robot just becomes another expensive island.</p>
+
+      <h2>Hospitals first</h2>
+
+      <p>Kawasaki's release shows where the pressure lands first: healthcare. It says the companies will study a hospital solution that ties electronic medical records to robot systems and AI, and that the sector faces "serious challenges, including ageing populations and labor shortages." That makes the use case obvious. Japan does not just need more automation. It needs automation that can live inside care work.</p>
+
+      <p>Kawasaki says the work could automate medication transport, specimen transport, outpatient reception, and guidance services. That is the detail that matters. Physical AI stops being a buzzword when it has to move a tray, follow a workflow, and stay useful around people.</p>
+
+      <p>Noetra's CEO said, "no single company can solve alone." That is true here. Fujitsu brings systems integration. Kawasaki brings robots and operations. NVIDIA brings the compute and model stack. The national plan only works if those pieces stay aligned long enough to ship something that survives outside the conference room.</p>
+
+      <p>This is why the announcement feels bigger than another AI partnership. Japan is trying to turn a robotics tradition into an industrial AI platform with a real bill attached. If the plan works, the country gets a path from factory floor to hospital corridor with the same control layer underneath. If it slips, it is just another announcement with good optics. The harder test is whether the first useful robot shows up in a place where the work is messy, the context is live, and the handoff cannot fail.</p>
+    `
+  },
   post109: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'TSMC turned AI demand into a build order',
     category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Building%20of%20Taiwan%20Semiconductor%20Manufacturing%20Fab%2012B%20at%20night.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Building_of_Taiwan_Semiconductor_Manufacturing_Fab_12B_at_night.jpg',
     body: `
       <p>$100 billion is not the part that matters first. The part that matters is what TSMC said it will do with it: add four more fabrication plants in Arizona and push its total U.S. commitment to $265 billion. <a href="https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff" target="_blank" rel="noopener noreferrer">AP reported</a> that the new chips will focus on 2-nanometer and below. That is not a market mood. That is a build order.</p>
 
@@ -42,7 +72,7 @@ const POSTS = {
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'The AI bottleneck is a connector',
     category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fiber%20optic%20illuminated.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Fiber_optic_illuminated.jpg',
     body: `
       <p>The biggest line in the 3M and Microsoft partnership is not the AI line. It is the connector. <a href="https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/" target="_blank" rel="noopener noreferrer">Microsoft said on July 15</a> that Azure will be the first announced hyperscale cloud provider to deploy 3M&apos;s Expanded Beam Optical technology, and <a href="https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation" target="_blank" rel="noopener noreferrer">3M said</a> it will use Microsoft&apos;s AI and digital platforms across customer service, finance, sales, and marketing. That makes this look less like a model story and more like a story about the physical and operating layers underneath it.</p>
 
@@ -76,7 +106,7 @@ const POSTS = {
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'Slack is now Claude\'s memory layer',
     category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Slack%20HQ%20-%20500%20Howard%2010th%20Floor%20(44130140882).jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Slack_HQ_-_500_Howard_10th_Floor_%2844130140882%29.jpg',
     body: `
       <p>Anthropic is putting Claude Tag in Slack first, and that detail matters more than the model name. The company says Claude Tag is available today in beta for Claude Enterprise and Team customers, which means the new product shows up where the work already lives instead of asking teams to move somewhere else.</p>
 
@@ -1756,7 +1786,7 @@ const POSTS = {
     title: 'Deutsche Telekom is the real AI-native story',
     category: 'Business Strategy',
     tag: 'Signal', tagClass: 'tag-cyan',
-    image: 'https://news.microsoft.com/source/asia/wp-content/uploads/2026/05/260422-CommBank-HR-005-1900x1268.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Deutsche_Telekom-Geb%C3%A4ude%2C_Venloer_Stra%C3%9Fe_156%2C_K%C3%B6ln-5461.jpg',
     body: `
       <p><a href="https://openai.com/index/deutsche-telekom/" target="_blank" rel="noopener noreferrer">OpenAI's July 10 Deutsche Telekom writeup</a> is not a chatbot story. It is an operating-model story. Deutsche Telekom is trying to become AI-native, and that is the right frame.</p>
 
@@ -3076,6 +3106,7 @@ POST_ORDER.unshift('post106');
 POST_ORDER.unshift('post107');
 POST_ORDER.unshift('post108');
 POST_ORDER.unshift('post109');
+POST_ORDER.unshift('post110');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
