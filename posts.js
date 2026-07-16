@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post106: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'GPT-5.6 moved into the office stack',
+    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Closeup_of_Excel_Spreadsheet_template_to_track_printouts_%2829911005444%29.jpg/1280px-Closeup_of_Excel_Spreadsheet_template_to_track_printouts_%2829911005444%29.jpg',
+    body: `
+      <p>No one buys Microsoft 365 for the model name. They buy it because Word, Excel, PowerPoint, Chat, and Cowork are already where the work lives. That is why the July 9 GPT-5.6 update matters. OpenAI says GPT-5.6 will become the <a href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank" rel="noopener noreferrer">preferred model in Microsoft 365 Copilot</a>, and that makes the release less about benchmarks and more about default behavior.</p>
+
+      <p>Default is the business story here. Office software gets judged in the middle of work, not at launch. If the assistant is one click away from the document, the spreadsheet, and the deck, then the model under it becomes part of how the company actually moves, not just how the vendor markets.</p>
+
+      <p>Microsoft put its own version plainly in the <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152" target="_blank" rel="noopener noreferrer">Microsoft 365 Copilot blog</a>: "Starting today, OpenAI's GPT-5.6 family of models is available in Microsoft 365 Copilot." That is not a teaser. It is a switch flip. The important part is not the novelty of a new model. It is that Microsoft is wiring it into the same tools people already open by muscle memory.</p>
+
+      <p>That matters because office software is bought by the admin and used by the employee. The change has to survive policy, licensing, and the people who never ask what model is underneath. If it fits those constraints, the upgrade can spread quietly. If it does not, it dies in the pilot no matter how good the launch looks.</p>
+
+      <p>That is the part a lot of AI coverage skips. The model may be smarter, faster, or cheaper, but the enterprise buyer cares about whether the change shortens the path from prompt to usable work. If the output still needs three rounds of cleanup, the upgrade is just a nicer number on a launch page.</p>
+
+      <h2>Default beats demo</h2>
+
+      <p>In Word, OpenAI says GPT-5.6 can help people draft, edit, and refine documents with fewer rounds of prompting. In Excel, it can support deeper analysis while using tokens more efficiently. In PowerPoint, it can turn early ideas into more polished presentations with less manual guidance. In Cowork, it can help users complete complex, cross-functional work with less manual coordination. That list tells you where the value is: fewer handoffs, fewer retries, and fewer little failures that add up inside a normal workday.</p>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The front end can look simple while the actual work depends on the path underneath it. Copilot only feels useful when the model and the product stay out of the way enough for people to keep moving.</p>
+
+      <p>The business angle is not just that OpenAI gets a bigger footprint inside Microsoft 365. It is that Microsoft gets a fresher model without making users learn a different product, and OpenAI gets more distribution inside the systems people already trust for daily work. That is a better deal than another standalone chatbot splash screen.</p>
+
+      <p>OpenAI also gets something more subtle here. Once a model becomes the preferred default inside Microsoft 365, the competition shifts from who has the flashiest release to who can make the everyday output feel less edited. That is where enterprise software actually wins or loses: in the second and third pass, not the first demo.</p>
+
+      <p>It also fits the pattern of the year. AI vendors keep trying to move from novelty to default. The winners are not the ones that ask people to start a new habit. They are the ones that slide into the habit that already exists and make it feel slightly less annoying. That is what makes this release worth watching.</p>
+
+      <p>When the work is documents, spreadsheets, slides, and cross-team coordination, the model choice stops being abstract. It becomes whether the next edit lands faster, whether the analysis turns into a cleaner answer, and whether the person running the meeting has to do less cleanup afterward. That is a duller story than a model launch, but it is the real one.</p>
+
+      <p>The larger shift is that Microsoft 365 is where the model wars now hide in plain sight. If GPT-5.6 keeps showing up as the quiet default inside Word, Excel, PowerPoint, Chat, and Cowork, then the real moat is not the model card. It is the place people stop noticing the model at all.</p>
+    `
+  },
   post105: {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
@@ -2934,6 +2968,7 @@ POST_ORDER.unshift('post102');
 POST_ORDER.unshift('post103');
 POST_ORDER.unshift('post104');
 POST_ORDER.unshift('post105');
+POST_ORDER.unshift('post106');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

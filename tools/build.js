@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post106: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Committee_meeting_room_No._417.jpg',
+      caption: 'The upgrade matters most when it lands in the meeting room.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Video_Conference_Using_Laptop.jpg/960px-Video_Conference_Using_Laptop.jpg',
+      supportCaption: 'The work still has to hold up once the meeting goes remote.'
+    },
     post105: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Typing_on_a_laptop_%28Unsplash%29.jpg/1280px-Typing_on_a_laptop_%28Unsplash%29.jpg',
       caption: 'The hardware story is really about making the review loop less annoying.',
