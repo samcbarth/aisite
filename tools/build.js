@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post111: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Mobile_phone_with_ChatGPT_on_keyboard_%2852916924616%29.jpg',
+      caption: 'The chatbot story starts on the device where people actually ask the question.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Smartphone_with_ChatGPT_app_and_laptop_%2852917381683%29.jpg',
+      supportCaption: 'The policy problem shows up again when the same model sits inside a company workflow.'
+    },
     post110: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/KUKA_Industrial_Robot_Writer.jpg',
       caption: 'The factory floor is where physical AI has to earn its keep.',
@@ -1488,6 +1495,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post111: { after: 3, quotes: [makeQuote('Proxy', { text: 'free speech infringements by proxy', source: 'Meta Oversight Board', sourceUrl: 'https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/' }), makeQuote('Power', { text: 'It learns from information environments that have already been shaped by institutions and power.', source: 'Hannah Waight via AP', sourceUrl: 'https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba' })] },
     post110: { after: 3, quotes: [makeQuote('Factory', { text: 'Japan invented modern manufacturing.', source: 'Jensen Huang, NVIDIA', sourceUrl: 'https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure' }), makeQuote('Pressure', { text: 'serious challenges, including ageing populations and labor shortages.', source: 'Yasuhiko Hashimoto, Kawasaki Heavy Industries', sourceUrl: 'https://global.kawasaki.com/en/corp/newsroom/news/detail/?f=20260716_2992' })] },
     post109: { after: 2, quotes: [makeQuote('Demand', { text: 'AI is reshaping our daily lives and semiconductor technology is the foundation for new capabilities and applications.', source: 'Dr. C.C. Wei, TSMC', sourceUrl: 'https://pr.tsmc.com/english/news/3210' }), makeQuote('Runway', { text: 'essential to support (its) long-term growth', source: 'William Li, Counterpoint Research via AP', sourceUrl: 'https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff' })] },
     post108: { after: 4, quotes: [makeQuote('Deployment', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Operations', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },

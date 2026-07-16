@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post111: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'AI chatbots are exporting censorship',
+    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Smartphone_with_ChatGPT_app_%2852917381673%29.jpg',
+    body: `
+      <p>Ask Claude to make a pamphlet critical of Xi Jinping or Saudi Arabia's crown prince and it may refuse. Ask the same kind of model to criticize Donald Trump or King Charles III and it will often comply. That is the odd thing AP reported today about a new <a href="https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba" target="_blank" rel="noopener noreferrer">Meta Oversight Board study</a>, and it is why this story matters to anyone selling or buying AI.</p>
+
+      <p>The board tested 10 commercial large language models from Anthropic, DeepSeek, Google, Meta and OpenAI. It queried them from Australia through the normal commercial interfaces, then asked for critical flyers, poems and opinions about leaders and governments. On average, models refused 34% of requests about restrictive jurisdictions and only 14% about permissive ones.</p>
+
+      <p>That gap is the story. It means a model can look general-purpose while still carrying different speech rules depending on who is being discussed. The board says the result is not just inconsistency. It is <a href="https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/" target="_blank" rel="noopener noreferrer">"free speech infringements by proxy"</a>. In plain English, the model becomes part of the policy layer before the user ever sees a policy screen.</p>
+
+      <h2>The hidden policy layer</h2>
+
+      <p>That is where the business problem starts. Companies are already building products on top of these models. If the base model silently changes what it will say about a country, leader or protest topic, then the app built on top of it inherits that behavior. The user just sees a refusal, a hedge, or a weirdly moralizing answer. The vendor sees a feature flag, an alignment rule or a legal risk. The customer sees confusion.</p>
+
+      <p>If the chatbot sits in customer support, finance, HR or sales, the refusal is not abstract. It changes what the team can publish, approve or explain. The policy is inside the workflow now, and that is the part enterprise buyers keep underpricing.</p>
+
+      <p>The board also says the reasons models give for their refusals are not a reliable explanation of what caused them. That matters because a lot of enterprise AI is sold as if the model is a neutral engine with a clean API. It is not. It is a stack of training choices, alignment choices, policy choices and jurisdictional choices. When the output changes, the company using it may not know why.</p>
+
+      <p>AP also quoted Hannah Waight, a co-author of a related study, saying, <a href="https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba" target="_blank" rel="noopener noreferrer">"It learns from information environments that have already been shaped by institutions and power."</a> That is the part people keep skipping. The model is not learning from some neutral internet fog. It is learning from data that already reflects who got to speak, who got heard and who got erased.</p>
+
+      <p>That is the same trust problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: if the system hides the rule that changed the result, the handoff looks clean until somebody has to debug it. This is why model cards and refusal notices matter. If the vendor is going to ship a speech rule across borders, the buyer should know which border it came from.</p>
+
+      <h2>What buyers need</h2>
+
+      <p>The board is pushing the right fix: clearer disclosure, specific notices when a refusal is driven by a legal restriction and more human-rights due diligence before the model ships. That is not activist fluff. It is product hygiene. A company that wants to sell one chatbot in a lot of countries needs to say when the chatbot is really applying a local speech rule and when it is just being cautious.</p>
+
+      <p>Otherwise the model becomes a quiet policy engine. That is the real warning here. The next enterprise procurement fight is not just about price, speed or context window. It is about whether the vendor can explain why the model said no when the company needed a straight answer.</p>
+    `
+  },
   post110: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
@@ -3107,6 +3139,7 @@ POST_ORDER.unshift('post107');
 POST_ORDER.unshift('post108');
 POST_ORDER.unshift('post109');
 POST_ORDER.unshift('post110');
+POST_ORDER.unshift('post111');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
