@@ -551,6 +551,7 @@
     .copy-btn.copied { border-color: var(--purple); color: var(--purple); }
     .share-btn { border: 1px solid #1a3a6b; color: #4a90d9; }
     .share-btn:hover { border-color: #4a90d9; color: #fff; }
+    a.share-btn { display: inline-flex; align-items: center; text-decoration: none; }
     .modal-nav {
       display: flex;
       justify-content: space-between;
@@ -3489,7 +3490,7 @@
       <div class="modal-body" id="modal-body"></div>
       <div class="modal-actions">
         <button class="copy-btn" id="copy-btn" data-action="copy-post">Copy to clipboard</button>
-        <button class="share-btn" data-action="share-linkedin">Share on LinkedIn</button>
+        <a class="share-btn" id="modal-linkedin-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsamcbarth.github.io%2Faisite%2F" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
         <button class="share-btn share-btn-x" data-action="share-x">Post on X</button>
         <button class="like-btn" id="modal-like-btn" data-action="toggle-like" aria-pressed="false">Like</button>
       </div>

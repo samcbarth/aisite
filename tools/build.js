@@ -1730,6 +1730,7 @@ function copyRecursive(src, dest) {
     const excerpt = makeExcerpt(p.body);
     const readTime = readingTime(p.body);
     const linkedInShareText = makeLinkedInShareText(p, id, canonical);
+    const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonical)}`;
     const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
     const supportMediaHtml = makeSupportMedia(p, id);
     const heroImageRel = makeHeroImage(p.image);
@@ -1762,6 +1763,7 @@ function copyRecursive(src, dest) {
       .replace(/POST_READ_TIME/g, String(readTime))
       .replace(/POST_CANONICAL/g, canonical)
       .replace(/POST_ID/g, id)
+      .replace('POST_LINKEDIN_URL', escAttr(linkedInShareUrl))
       .replace('POST_LINKEDIN_TEXT', escDataAttr(linkedInShareText))
       .replace('POST_BODY', bodyHtml)
       .replace('POST_SUPPORT_MEDIA', supportMediaHtml)

@@ -398,13 +398,6 @@
     document.body.removeChild(ta);
     return ok;
   }
-  function shareOnLinkedIn() {
-    const shareText = linkedInShareText();
-    const linkedInUrl = 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(shareText);
-    const copyPromise = copyShareText(shareText);
-    window.open(linkedInUrl, '_blank', 'noopener,width=600,height=600');
-    copyPromise.catch(() => {});
-  }
   function shareOnX() {
     const title = document.getElementById('modal-title').textContent;
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(title + ' ') + '&url=' + encodeURIComponent(currentShareUrl()), '_blank', 'noopener,width=600,height=600');
@@ -466,6 +459,9 @@
     tagEl.className = 'modal-tag ' + p.tagClass;
     document.getElementById('modal-title').textContent = p.title;
     document.getElementById('modal-body').innerHTML = p.body;
+    const linkedInBtn = document.getElementById('modal-linkedin-share');
+    linkedInBtn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentShareUrl());
+    linkedInBtn.textContent = 'Share on LinkedIn';
 
     const idx = postOrder.indexOf(id);
     document.getElementById('prev-btn').disabled = idx === 0;
@@ -552,7 +548,6 @@
     'open-post': (el) => openPost(el.dataset.id),
     'close-modal': closeModal,
     'copy-post': copyPost,
-    'share-linkedin': shareOnLinkedIn,
     'share-x': shareOnX,
     'toggle-like': toggleModalLike,
     'nav-prev': () => navigatePost(-1),
@@ -590,6 +585,14 @@
     buildFilters();
     applyFilters();
     loadLikeCounts();
+
+    const linkedInBtn = document.getElementById('modal-linkedin-share');
+    linkedInBtn.addEventListener('click', () => {
+      copyShareText(linkedInShareText()).then(() => {
+        linkedInBtn.textContent = 'Text copied. Paste in LinkedIn';
+        setTimeout(() => { linkedInBtn.textContent = 'Share on LinkedIn'; }, 3500);
+      }).catch(() => {});
+    });
 
     // Delegated clicks for everything declared with data-action, plus modal backdrop.
     document.addEventListener('click', (e) => {

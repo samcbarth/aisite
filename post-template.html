@@ -354,6 +354,7 @@
       padding: 0.4rem 1rem;
       font-family: inherit;
       font-size: 1rem;
+      text-decoration: none;
       cursor: pointer;
       transition: color 0.15s, border-color 0.15s, background 0.15s;
     }
@@ -547,7 +548,7 @@
       <div class="post-footer">
         <a href="../../" class="footer-back">Back to all posts</a>
         <div class="post-actions">
-          <button class="post-share-btn" id="post-linkedin-share" data-share-url="POST_CANONICAL" data-share-text="POST_LINKEDIN_TEXT">Share on LinkedIn</button>
+          <a class="post-share-btn" id="post-linkedin-share" href="POST_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" data-share-text="POST_LINKEDIN_TEXT">Share on LinkedIn</a>
           <button class="post-like-btn" id="post-like-btn" data-id="POST_ID" aria-label="Like this post">Like</button>
           <span class="share-status" id="linkedin-share-status" aria-live="polite"></span>
         </div>
@@ -583,11 +584,9 @@
       }
       btn.addEventListener('click', async () => {
         const shareText = btn.dataset.shareText || window.location.href;
-        const linkedInUrl = 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(shareText);
-        window.open(linkedInUrl, '_blank', 'noopener,width=700,height=700');
         try {
           await copyText(shareText);
-          if (status) status.textContent = 'LinkedIn opening. Text copied too.';
+          if (status) status.textContent = 'Post text copied. Paste it into LinkedIn.';
         } catch (err) {
           if (status) status.textContent = 'LinkedIn opening.';
         }
