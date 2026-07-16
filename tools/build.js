@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post109: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clean%20room.jpg',
+      caption: 'The real pressure is in the clean room and the packaging line, not the press release.',
+      side: 'right', after: 2,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Semiconductor%20photomask.jpg',
+      supportCaption: 'The story only works if the advanced node stays on schedule.'
+    },
     post108: {
       image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Tech%20-%20data%20center.jpg',
       caption: 'The connector story is really about whether the rack stays easy to run.',
@@ -1474,6 +1481,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post109: { after: 2, quotes: [makeQuote('Demand', { text: 'AI is reshaping our daily lives and semiconductor technology is the foundation for new capabilities and applications.', source: 'Dr. C.C. Wei, TSMC', sourceUrl: 'https://pr.tsmc.com/english/news/3210' }), makeQuote('Runway', { text: 'essential to support (its) long-term growth', source: 'William Li, Counterpoint Research via AP', sourceUrl: 'https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff' })] },
     post108: { after: 4, quotes: [makeQuote('Deployment', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Operations', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post105: { after: 2, quotes: [makeQuote('Workspace', QUOTE_LIBRARY.openaiCodexWorkspaceReach), makeQuote('Threads', QUOTE_LIBRARY.workLouderLiveViewThreads)] },
     post107: { after: 2, quotes: [makeQuote('Slack', { text: 'Claude Tag is a new way for teams to work with Claude.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/introducing-claude-tag' }), makeQuote('Teammate', { text: 'an “always-on Claude” that lives in Slack and acts as an AI teammate', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/' })] },

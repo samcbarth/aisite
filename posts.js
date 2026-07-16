@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post109: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'TSMC turned AI demand into a build order',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Building%20of%20Taiwan%20Semiconductor%20Manufacturing%20Fab%2012B%20at%20night.jpg',
+    body: `
+      <p>$100 billion is not the part that matters first. The part that matters is what TSMC said it will do with it: add four more fabrication plants in Arizona and push its total U.S. commitment to $265 billion. <a href="https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff" target="_blank" rel="noopener noreferrer">AP reported</a> that the new chips will focus on 2-nanometer and below. That is not a market mood. That is a build order.</p>
+
+      <p>The reason the number hits harder now is that the business is already moving. AP said TSMC posted record quarterly profit of NT$706.6 billion, up 77% from a year earlier, and raised its 2026 capital spending plan to $60 billion to $64 billion. The company is not guessing about demand. It is watching it arrive from the customers that already sit closest to the AI spend: Nvidia, Apple, AMD, Broadcom, and Qualcomm.</p>
+
+      <p>TSMC says the logic is simple. On its own release, Chairman and CEO Dr. C.C. Wei said, "AI is reshaping our daily lives and semiconductor technology is the foundation for new capabilities and applications." That is the cleanest line in the whole story because it skips the launch language and gets to the base layer. The AI trade is still a semiconductor trade before it is anything else.</p>
+
+      <h2>The queue is the product</h2>
+
+      <p>The extra fabs are only half the picture. The other half is timing. Advanced chips are still hard to make, hard to package, and hard to ship at volume. That is why TSMC keeps getting treated like the chokepoint and like the solution at the same time. The company is not just selling transistors. It is selling certainty inside a very long lead-time system.</p>
+
+      <p>That is also why the shape of this spend feels different from the usual AI capex story. TSMC is not chasing a shiny product category. It is keeping the production path close to the demand path so the queue does not stretch out in front of its biggest customers. If you have ever watched a process break because the handoff took too long, you know the pattern. The expensive part is almost never the thing people put in the slide deck. I keep seeing the same thing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the real money sits in the step that has to happen before the next step can start.</p>
+
+      <p>AP quoted Counterpoint analyst William Li, who said the ramped-up investment is "essential to support (its) long-term growth." That is the investor version of the same point. TSMC is spending ahead of the curve because the alternative is letting the curve outrun the factory.</p>
+
+      <h2>Still a factory story</h2>
+
+      <p>The interesting thing is how unromantic the whole plan is. There is no new theory of AI here, no new app layer, no glossy manifesto about productivity. There is just more concrete, more tooling, more advanced packaging, and a longer runway for the same customers that have already been pulling on the supply chain. TSMC's new U.S. money is not trying to make the story smaller. It is trying to make the bottleneck less dangerous.</p>
+
+      <p>That matters because the AI boom keeps getting talked about like a software race, but the constraining variable is still physical. Power, land, cleanroom time, packaging capacity, lithography, and lead times all decide how fast the industry can actually ship. TSMC is betting that if it owns more of that path in the U.S., it owns more of the next several years of AI production.</p>
+
+      <p>So the real point in today's announcement is not that TSMC is bullish. It is that demand is already loud enough to justify another giant factory program, and the company is still willing to put the next few years on the floor plan instead of on a forecast slide. That is what turns AI from a headline into an industrial schedule. Four more fabs do not solve the shortage overnight, but they do make the bill harder to ignore.</p>
+    `
+  },
   post108: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
@@ -3045,6 +3075,7 @@ POST_ORDER.unshift('post105');
 POST_ORDER.unshift('post106');
 POST_ORDER.unshift('post107');
 POST_ORDER.unshift('post108');
+POST_ORDER.unshift('post109');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

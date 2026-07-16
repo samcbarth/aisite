@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 11:13:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 15:34:59 GMT</lastBuildDate>
+    <item>
+      <title>TSMC turned AI demand into a build order</title>
+      <link>https://samcbarth.github.io/aisite/posts/tsmc-turned-ai-demand-into-a-build-order/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tsmc-turned-ai-demand-into-a-build-order/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>$100 billion is not the part that matters first. The part that matters is what TSMC said it will do with it: add four more fabrication plants in Arizona and push its total U.S. commitment to $265 billion. AP reported that the new chips will focus on 2-nanometer and below. That is</description>
+    </item>
     <item>
       <title>The AI bottleneck is a connector</title>
       <link>https://samcbarth.github.io/aisite/posts/the-ai-bottleneck-is-a-connector/</link>
