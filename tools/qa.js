@@ -95,6 +95,11 @@ function checkGeneratedPages() {
   const htmlFiles = walk(dist, file => file.endsWith('.html'));
   for (const file of htmlFiles) {
     const html = read(file);
+    if (!html.includes('data-domain="samcbarth.github.io"') || !html.includes('src="https://plausible.io/js/script.js"')) {
+      fail(`missing Plausible tracker: ${rel(file)}`);
+    }
+    if (!/script-src[^;]*https:\/\/plausible\.io/.test(html)) fail(`Plausible script blocked by CSP: ${rel(file)}`);
+    if (!/connect-src[^;]*https:\/\/plausible\.io/.test(html)) fail(`Plausible events blocked by CSP: ${rel(file)}`);
     if (!/<main\b/.test(html)) fail(`missing main element: ${rel(file)}`);
     const h1Count = (html.match(/<h1\b/g) || []).length;
     if (h1Count !== 1) fail(`expected one h1, found ${h1Count}: ${rel(file)}`);
