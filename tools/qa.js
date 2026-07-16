@@ -28,6 +28,22 @@ function imageBase(src) {
   return (src || '').split('?')[0];
 }
 
+function cspAllowsImage(src, pageUrl, sources) {
+  if (!src || src.startsWith('data:')) return sources.includes('data:');
+  const url = new URL(src, pageUrl);
+  if (sources.includes("'self'") && url.origin === new URL(pageUrl).origin) return true;
+  return sources.some(source => {
+    if (!/^https?:/.test(source)) return false;
+    const allowed = new URL(source.replace('*.', 'placeholder.'));
+    if (allowed.protocol !== url.protocol) return false;
+    if (source.includes('*.')) {
+      const suffix = allowed.hostname.replace(/^placeholder\./, '');
+      return url.hostname === suffix || url.hostname.endsWith(`.${suffix}`);
+    }
+    return allowed.origin === url.origin;
+  });
+}
+
 function toSlug(title) {
   return title.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
@@ -142,11 +158,17 @@ function checkAssets() {
 function checkImages() {
   const home = read(path.join(dist, 'index.html'));
   const homeThumbs = new Map();
+  const csp = (home.match(/<meta[^>]+http-equiv="Content-Security-Policy"[^>]+content="([^"]+)"/i) || [])[1] || '';
+  const imgSources = ((csp.match(/(?:^|;)\s*img-src\s+([^;]+)/i) || [])[1] || '').trim().split(/\s+/).filter(Boolean);
+  if (!imgSources.length) fail('homepage CSP missing img-src directive');
   for (const match of home.matchAll(/<img\b([^>]*class="post-thumb"[^>]*)>/g)) {
     const src = (match[1].match(/src="([^"]*)"/) || [])[1] || '';
     const alt = (match[1].match(/alt="([^"]*)"/) || [])[1];
     if (!src) fail('blank homepage thumbnail src');
     if (alt === undefined || alt.trim().length < 12) fail(`weak homepage thumbnail alt: ${src}`);
+    if (src && !cspAllowsImage(src, 'https://samcbarth.github.io/aisite/', imgSources)) {
+      fail(`homepage thumbnail blocked by CSP: ${src}`);
+    }
     const key = imageBase(src);
     homeThumbs.set(key, (homeThumbs.get(key) || 0) + 1);
   }

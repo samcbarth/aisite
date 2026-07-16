@@ -6,7 +6,9 @@
   "scripts": {
     "seo": "node tools/generate-seo.js",
     "build": "node tools/build.js",
-    "qa": "npm run build && node tools/qa.js"
+    "qa": "npm run build && node tools/qa.js",
+    "check:home-images": "node tools/check-home-images.js",
+    "check:home-images:live": "node tools/check-home-images.js --live"
   },
   "devDependencies": {
     "html-minifier-terser": "^7.2.0",
