@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post105: {
+    featured: false,
+    date: 'July 15, 2026', iso: '2026-07-15',
+    title: 'OpenAI put buttons on Codex',
+    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Desk-laptop-working-technology_%2824299511976%29.jpg/1280px-Desk-laptop-working-technology_%2824299511976%29.jpg',
+    body: `
+      <p>OpenAI's hardware move today is not the Jony Ive rumor. It is Codex Micro, a $230 control deck for the people already shipping code through Codex. That is the more interesting story because it is smaller, less theatrical, and closer to how AI actually gets used in businesses.</p>
+
+      <p><a href="https://openai.com/supply/co-lab/work-louder/" target="_blank" rel="noopener noreferrer">OpenAI says</a> the device "brings your agent workspace into reach." That sounds like a product slogan, but it is really a complaint about the current workflow. The work is already in the browser, the desktop app, the chat window, and the review loop. The hardware exists because the software still leaves too much of that loop in the user's head.</p>
+
+      <p><a href="https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch" target="_blank" rel="noopener noreferrer">The Verge reported</a> that the collaboration is "a limited-run collaboration that will give users more ways to monitor and manage their agents." Limited-run matters. OpenAI is not pretending this is a mass-market category yet. It is testing whether physical controls make agent work feel less like babysitting and more like operating.</p>
+
+      <p>That is the business question. AI products still get sold as intelligence, but the pain point in daily use is coordination. You start a task, wait, switch tabs, read status, decide whether the model drifted, and then do it again. Buttons, lights, a dial, and a joystick make sense when the real product is the handoff, not the prompt.</p>
+
+      <h2>The product is the control surface</h2>
+
+      <p>OpenAI's page says the six frosted keys give a live RGB status from Codex so you can tell what is thinking, running, waiting, or done before you switch chats. That is a small detail with a big meaning. OpenAI is admitting that state visibility matters almost as much as output. When the model is working, people want to know where the work stands without opening another pane.</p>
+
+      <p>The device also maps common actions to dedicated controls: accept, reject, push-to-talk, start a new chat, and more. That is where the hardware becomes useful. The fewer times a person has to hunt through menus or context-switch between windows, the less the workflow leaks. In an agent product, leakage is cost.</p>
+
+      <p>The price is also telling. At $230, the point is not cheap hardware. The point is that OpenAI is experimenting with a premium physical add-on around a software product that already wants daily attention. If developers buy it, that is a signal that the Codex habit is strong enough to support hardware on top of software. If they do not, OpenAI still learns whether agent work needs a dedicated surface or just better UI. Either way, the lesson is useful.</p>
+
+      <p>This is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Once work crosses from one tool or owner to the next, context gets expensive. Codex Micro is basically a hardware answer to that cost. It tries to move the important checkpoints back in front of the user instead of burying them in chat history.</p>
+
+      <p>There is also a clean contrast here with the broader OpenAI hardware work. The rumored Jony Ive device gets attention because it sounds like a new category. Codex Micro matters because it is trying to make current work less annoying right now. That is a much quieter bet, but probably a more honest one.</p>
+
+      <h2>Why it lands</h2>
+
+      <p>OpenAI is selling this across Mac and Windows, which tells you it is aiming at the existing business desktop, not a new consumer ritual. That is the point. The keyboard deck is not a replacement for the model. It is a way to make the model easier to steer while it is moving. That is the kind of product detail that usually gets skipped until it starts saving people time every day.</p>
+
+      <p>The real signal is that OpenAI is treating status, approval, and interruption as first-class product problems. If Codex is going to be part of everyday engineering work, then the human side of the loop has to be obvious. A physical deck with lights and a dial is a blunt way to say that, but it is an honest one.</p>
+    `
+  },
   post104: {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
@@ -2899,6 +2933,7 @@ POST_ORDER.unshift('post101');
 POST_ORDER.unshift('post102');
 POST_ORDER.unshift('post103');
 POST_ORDER.unshift('post104');
+POST_ORDER.unshift('post105');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

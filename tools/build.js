@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post105: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Typing_on_a_laptop_%28Unsplash%29.jpg/1280px-Typing_on_a_laptop_%28Unsplash%29.jpg',
+      caption: 'The hardware story is really about making the review loop less annoying.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Laptop_on_a_desk.jpg/1280px-Laptop_on_a_desk.jpg',
+      supportCaption: 'The desk is still where agent work gets checked and shipped.'
+    },
     post104: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Si_wafer_12in.jpg',
       caption: 'Custom silicon only matters if Meta can keep the economics moving down its own path.',
@@ -738,6 +745,16 @@ function copyRecursive(src, dest) {
     }
   };
   const QUOTE_LIBRARY = {
+    openaiCodexWorkspaceReach: {
+      text: 'brings your agent workspace into reach',
+      source: 'OpenAI',
+      sourceUrl: 'https://openai.com/supply/co-lab/work-louder/'
+    },
+    workLouderLiveViewThreads: {
+      text: 'live view of your Codex threads',
+      source: 'Mike Di Genova, Work Louder via The Verge',
+      sourceUrl: 'https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch'
+    },
     openaiWorkAppsFiles: {
       text: 'take action across your apps and files',
       source: 'OpenAI',
@@ -1436,6 +1453,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post105: { after: 2, quotes: [makeQuote('Workspace', QUOTE_LIBRARY.openaiCodexWorkspaceReach), makeQuote('Threads', QUOTE_LIBRARY.workLouderLiveViewThreads)] },
     post104: { after: 4, quotes: [makeQuote('Silicon', { text: 'to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' }), makeQuote('Scale', { text: 'As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we\'re building.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' })] },
     post103: { after: 5, quotes: [makeQuote('Launch', { text: 'a significant upgrade from Muse Spark', source: 'Meta AI', sourceUrl: 'https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/' }), makeQuote('Pricing', { text: 'a strong agentic and coding model at a very low price', source: 'Mint', sourceUrl: 'https://www.livemint.com/technology/tech-news/mark-zuckerberg-returns-to-x-after-3-years-to-unveil-metas-muse-spark-1-1-ai-model-developer-api-11783622111314.html' })] },
     post102: { after: 3, quotes: [makeQuote('Disclosure', { text: 'we\'ll automatically add a disclosure to each ad\'s My Ad Center panel.', source: 'Google Ads Blog', sourceUrl: 'https://blog.google/products/ads-commerce/google-ads-ai-transparency-labels/' }), makeQuote('Feature', { text: 'Google is rolling out a new feature aimed at helping people understand when an ad they\'re seeing was made using AI technology.', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/' })] },
