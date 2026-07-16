@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post107: {
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Slack%20HQ%20-%20500%20Howard%20(40748114295).jpg',
+      caption: 'Claude Tag only works if the thread keeps its own history.',
+      side: 'right', after: 2,
+      supportImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Video%20Conference%20Using%20Laptop.jpg',
+      supportCaption: 'The work still has to survive the jump from one meeting to the next.'
+    },
     post106: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Committee_meeting_room_No._417.jpg',
       caption: 'The upgrade matters most when it lands in the meeting room.',
@@ -1461,6 +1468,7 @@ function copyRecursive(src, dest) {
   }
   const INLINE_QUOTES = {
     post105: { after: 2, quotes: [makeQuote('Workspace', QUOTE_LIBRARY.openaiCodexWorkspaceReach), makeQuote('Threads', QUOTE_LIBRARY.workLouderLiveViewThreads)] },
+    post107: { after: 2, quotes: [makeQuote('Slack', { text: 'Claude Tag is a new way for teams to work with Claude.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/introducing-claude-tag' }), makeQuote('Teammate', { text: 'an “always-on Claude” that lives in Slack and acts as an AI teammate', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/' })] },
     post104: { after: 4, quotes: [makeQuote('Silicon', { text: 'to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' }), makeQuote('Scale', { text: 'As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we\'re building.', source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/' })] },
     post103: { after: 5, quotes: [makeQuote('Launch', { text: 'a significant upgrade from Muse Spark', source: 'Meta AI', sourceUrl: 'https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/' }), makeQuote('Pricing', { text: 'a strong agentic and coding model at a very low price', source: 'Mint', sourceUrl: 'https://www.livemint.com/technology/tech-news/mark-zuckerberg-returns-to-x-after-3-years-to-unveil-metas-muse-spark-1-1-ai-model-developer-api-11783622111314.html' })] },
     post102: { after: 3, quotes: [makeQuote('Disclosure', { text: 'we\'ll automatically add a disclosure to each ad\'s My Ad Center panel.', source: 'Google Ads Blog', sourceUrl: 'https://blog.google/products/ads-commerce/google-ads-ai-transparency-labels/' }), makeQuote('Feature', { text: 'Google is rolling out a new feature aimed at helping people understand when an ad they\'re seeing was made using AI technology.', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/' })] },

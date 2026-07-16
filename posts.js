@@ -7,6 +7,46 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post107: {
+    featured: false,
+    date: 'July 16, 2026', iso: '2026-07-16',
+    title: 'Slack is now Claude\'s memory layer',
+    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Slack%20HQ%20-%20500%20Howard%2010th%20Floor%20(44130140882).jpg',
+    body: `
+      <p>Anthropic is putting Claude Tag in Slack first, and that detail matters more than the model name. The company says Claude Tag is available today in beta for Claude Enterprise and Team customers, which means the new product shows up where the work already lives instead of asking teams to move somewhere else.</p>
+
+      <p>Anthropic puts the point plainly: "Claude Tag is a new way for teams to work with Claude." It also says, "We’re starting on Slack, which Claude can join as a team member." That is the release in one sentence. Claude is not being sold as a sidecar. It is being dropped into the channel where the conversation, the task list, and the follow-up already happen.</p>
+
+      <p>TechCrunch described it as an "always-on Claude" that lives in Slack and acts as an AI teammate. That is the right framing because the product is not just answering questions. It is trying to stay in the thread long enough to remember what happened last time, what was decided, and what still needs work.</p>
+
+      <h2>One Claude per channel</h2>
+
+      <p>The big change is that Claude Tag gives a channel one Claude identity. Anthropic says anyone in that channel can see what Claude has been working on and pick up the conversation from where the last person left off. That is a much bigger shift than a normal chatbot panel. It turns Slack from a message stream into a shared memory surface.</p>
+
+      <p>That matters because enterprise work keeps failing at the same handoff. Someone asks for a recap. Someone else adds a file. A third person joins late. The thread still exists, but the context gets expensive every time it has to be rebuilt. It is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the work is rarely the hard part. The context moving with it is.</p>
+
+      <p>Anthropic says Claude Tag can build context by remembering relevant information from the channels it is in, and it can pull facts from other channels or data sources if it is granted permission. That is why the product is more than another assistant. It is trying to become the memory layer around the work, not just the place where the prompt lives.</p>
+
+      <p>The company also says Claude Tag is the beginning of an evolution of Claude Code. At Anthropic, the internal version is already doing real work. The company says 65% of its product team\'s code is created by its internal Claude Tag. That number is not interesting because it sounds big. It is interesting because it shows the team is already treating Claude like a collaborator, not a novelty.</p>
+
+      <p>That internal detail lines up with the broader product shape. Slack is where teams already assign work, ask follow-up questions, and keep projects moving between meetings. If Claude can stay in that flow, then the value is not just faster replies. It is fewer dead threads, fewer repeated explanations, and fewer moments where a team has to restart the conversation from zero.</p>
+
+      <h2>Why admins care</h2>
+
+      <p>Anthropic did not make Claude Tag a loose consumer toy. System administrators choose which tools, information, and channels Claude can access, and the model stays scoped to the channels the admins define. Anthropic also says administrators can set token-spend limits and view logs of what @Claude has done. That is the part that decides whether the feature feels useful or risky inside a real company.</p>
+
+      <p>In other words, the product has to satisfy two people at once. The worker wants a teammate who remembers enough to be useful. The admin wants a system that does not leak memory across departments or turn every question into a compliance headache. Anthropic is trying to put the guardrails close enough to the work that the software still feels useful.</p>
+
+      <p>That is also why the launch credit and the 30-day migration window matter. Claude Tag replaces the existing Claude in Slack app, so Anthropic is not just adding a feature. It is moving customers onto a new operating shape and giving them a way to test it before the old path disappears.</p>
+
+      <p>Reuters also reported the launch with plans for a wider rollout, which is the other signal worth watching. Anthropic is starting with Slack because it is a natural home for collaboration, but the company clearly wants the same memory model in other places teams work. That is the real platform play. The winner is not the best chat reply. It is the place the company keeps its context.</p>
+
+      <p>That is where the competition gets serious. TechCrunch noted that Microsoft is pushing its own context stack through Graph, Copilot, and Work IQ, while Snowflake, Databricks, and Glean are all building the back-end layer that agents need to understand company history. The model may get the headline, but the context system is what makes the model stick.</p>
+
+      <p>Slack was already the place where teams buried, revived, and reassigned work. Claude Tag makes that habit explicit. If Anthropic gets the permissions and memory boundaries right, the thread stops being a place where context disappears and becomes the place where it survives long enough to matter.</p>
+    `
+  },
   post106: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
@@ -2969,6 +3009,7 @@ POST_ORDER.unshift('post103');
 POST_ORDER.unshift('post104');
 POST_ORDER.unshift('post105');
 POST_ORDER.unshift('post106');
+POST_ORDER.unshift('post107');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

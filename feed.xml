@@ -6,7 +6,31 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 23:10:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 08:14:04 GMT</lastBuildDate>
+    <item>
+      <title>Slack is now Claude&apos;s memory layer</title>
+      <link>https://samcbarth.github.io/aisite/posts/slack-is-now-claudes-memory-layer/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/slack-is-now-claudes-memory-layer/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Tools</category>
+      <description>Anthropic is putting Claude Tag in Slack first, and that detail matters more than the model name. The company says Claude Tag is available today in beta for Claude Enterprise and Team customers, which means the new product shows up where the work already lives instead of asking t</description>
+    </item>
+    <item>
+      <title>GPT-5.6 moved into the office stack</title>
+      <link>https://samcbarth.github.io/aisite/posts/gpt-5-6-moved-into-the-office-stack/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/gpt-5-6-moved-into-the-office-stack/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Tools</category>
+      <description>No one buys Microsoft 365 for the model name. They buy it because Word, Excel, PowerPoint, Chat, and Cowork are already where the work lives. That is why the July 9 GPT-5.6 update matters. OpenAI says GPT-5.6 will become the preferred model in Microsoft 365 Copilot , and that mak</description>
+    </item>
+    <item>
+      <title>OpenAI put buttons on Codex</title>
+      <link>https://samcbarth.github.io/aisite/posts/openai-put-buttons-on-codex/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-put-buttons-on-codex/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Tools</category>
+      <description>OpenAI&apos;s hardware move today is not the Jony Ive rumor. It is Codex Micro, a $230 control deck for the people already shipping code through Codex. That is the more interesting story because it is smaller, less theatrical, and closer to how AI actually gets used in businesses. Ope</description>
+    </item>
     <item>
       <title>Meta is trying to own the chip bill</title>
       <link>https://samcbarth.github.io/aisite/posts/meta-is-trying-to-own-the-chip-bill/</link>
