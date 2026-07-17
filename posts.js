@@ -7,6 +7,28 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post114: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: 'Instacart wants the shelf to tell the truth',
+    category: 'Retail Tech', tag: 'Worth noting', tagClass: 'tag-emerald',
+    image: 'assets/images/post114-hero.png',
+    body: `
+      <p>A shopper sees one thing in the aisle and another thing on the screen. That mismatch is the business problem behind <a href="https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence" target="_blank" rel="noopener noreferrer">Instacart's July 16 acquisition of Arpalus</a>. The company said the deal is meant to improve inventory accuracy for ecommerce fulfillment and in-store operations across its network. In grocery, that sounds small until you remember how many customer complaints start with a shelf that looked full to the app and empty to the person standing in front of it.</p>
+
+      <p>The release is blunt about the pain point: online orders are only as good as the inventory data underneath them. Undetected out-of-stocks and catalog gaps drive substitutions, cancellations, and eroded trust. That is not a model problem in the abstract. That is a store operations problem with a sales penalty attached. If the data is wrong, the customer feels it before the analytics team does.</p>
+
+      <p>Arpalus is built for that exact gap. Its homepage says it gives retailers and CPGs a simple way to <a href="https://www.arpalus.com/" target="_blank" rel="noopener noreferrer">collect, measure and analyze important data from physical shelves in real time through a smartphone app</a>. Instacart says the company can identify individual items with more than 95 percent accuracy on average, and the workflow runs on the same kind of device shoppers already carry. That matters because the most expensive part of grocery intelligence is not the model. It is the habit of collecting enough clean shelf data to keep the model honest.</p>
+
+      <p>Instacart already has scale on its side. The release says the company has more than 1.6 billion lifetime orders, real-time inventory views from nearly 100,000 stores, and a shopper network of 600,000 people generating more than 10 million unique daily data points. That is the part that makes the acquisition feel less like a bolt-on and more like a way to tighten the loop. Every item picked, every substitution made, and every shelf scan becomes another input into the same operating picture.</p>
+
+      <p>That is also why the Caper Carts mention matters. Instacart said Arpalus extends to carts with external cameras, which means shelf intelligence can move through the aisle instead of stopping at the checkout screen. The company is trying to connect online and in-store grocery experiences through a unified intelligence layer. If it works, the value is not just faster fulfillment. It is better store execution, cleaner availability, and fewer moments where the digital promise and the physical store disagree.</p>
+
+      <p>There is still a real limit here. Computer vision does not fix a messy catalog by itself, and it does not make a store associate restock faster just because the app knows an item is missing. But it can make the mismatch visible faster, and visibility is where a lot of retail execution starts. The point of this acquisition is not to turn grocery into software. It is to make the grocery business legible enough that the software layer can stop guessing.</p>
+
+      <p>If Instacart can keep closing that gap, the shelf stops being the weakest part of the transaction and starts acting like a live data source. In grocery, that is a more important upgrade than it sounds. The customer does not care about the model name. They care whether the item they ordered is there when the cart rolls down the aisle. That is the whole game.</p>
+    `
+  },
   post113: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3208,6 +3230,7 @@ POST_ORDER.unshift('post110');
 POST_ORDER.unshift('post111');
 POST_ORDER.unshift('post112');
 POST_ORDER.unshift('post113');
+POST_ORDER.unshift('post114');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post114: {
+      image: 'assets/images/post114-inline.png',
+      caption: 'Shelf scans only matter when the aisle and the app agree.',
+      side: 'right', after: 2,
+      supportImage: 'assets/images/post114-support.jpg',
+      supportCaption: 'The shopper is part of the data path now.'
+    },
     post113: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Man_at_a_laptop_in_an_office_%28Unsplash%29.jpg',
       caption: 'The work starts with a person, a laptop, and a room full of context.',
@@ -1509,6 +1516,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post114: { after: 3, quotes: [makeQuote('Truth', { text: 'what happens in store connects seamlessly to ecommerce in real time', source: 'David McIntosh, Instacart', sourceUrl: 'https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence' }), makeQuote('Shelf data', { text: 'collect, measure and analyze important data from physical shelves in real-time', source: 'Arpalus', sourceUrl: 'https://www.arpalus.com/' })] },
     post113: { after: 3, quotes: [makeQuote('Demand', { text: 'Enterprise demand for Claude is significantly outpacing any single delivery model.', source: 'Krishna Rao, Anthropic', sourceUrl: 'https://www.anthropic.com/news/enterprise-ai-services-company' }), makeQuote('Scale', { text: 'It\'s pretty easy to imagine this as a trillion-dollar company someday if we execute well.', source: 'Chris Taylor, Ode via TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/' })] },
     post112: { after: 3, quotes: [makeQuote('Value', { text: 'differentiated industry solutions built with Gemini are helping customers realise business value faster', source: 'Shivir Chordia, Google Cloud via TechCircle', sourceUrl: 'https://www.techcircle.in/2026/07/16/tcs-google-cloud-open-gemini-experience-center-in-kolkata-to-boost-agentic-ai-adoption' }), makeQuote('Value', { text: 'translating AI and next-generation tech into real business value', source: 'Murali Ramanathan, TCS', sourceUrl: 'https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata' })] },
     post111: { after: 3, quotes: [makeQuote('Proxy', { text: 'free speech infringements by proxy', source: 'Meta Oversight Board', sourceUrl: 'https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/' }), makeQuote('Power', { text: 'It learns from information environments that have already been shaped by institutions and power.', source: 'Hannah Waight via AP', sourceUrl: 'https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba' })] },

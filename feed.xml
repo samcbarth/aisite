@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 04:11:48 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 07:12:35 GMT</lastBuildDate>
+    <item>
+      <title>Instacart wants the shelf to tell the truth</title>
+      <link>https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Retail Tech</category>
+      <description>A shopper sees one thing in the aisle and another thing on the screen. That mismatch is the business problem behind Instacart&apos;s July 16 acquisition of Arpalus . The company said the deal is meant to improve inventory accuracy for ecommerce fulfillment and in-store operations acro</description>
+    </item>
     <item>
       <title>The company between Claude and the customer</title>
       <link>https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</link>
