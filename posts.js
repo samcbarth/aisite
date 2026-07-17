@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post117: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: "HP's OpenAI partnership started with 122 pull requests",
+    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Technician_with_laptop_working_on_server_rack_at_NERSC.jpg',
+    body: `
+      <p>122 pull requests across 43 projects. That is where HP's OpenAI partnership starts. OpenAI says one engineer used Frontier models to move through that much code in a matter of weeks, while a security team remediated several software bugs in a day. If that sounds like pilot theater, it is not. It is a number that tells you where the work moved.</p>
+
+      <p>HP's own release says the partnership will reach customer-facing experiences, customer telemetry, employee productivity, and software development. OpenAI's July 17 write-up says Frontier will act as the operating model, connecting access, context, deployment, and evaluation as the work moves from pilots toward production. That is a different kind of AI story. The model is not the headline. The handoff is.</p>
+
+      <p>Prakash Arunkundrum, HP's chief strategy and transformation officer, said, <a href="https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html" target="_blank" rel="noopener noreferrer">"With OpenAI there is an opportunity to fundamentally rethink how AI can deliver better outcomes."</a> That is the right scale for the problem. HP is not buying a chat window. It is trying to change how work moves across a big, messy company.</p>
+
+      <h2>The score is the workflow</h2>
+
+      <p>HP says the Frontier platform will be used across its business to enhance customer-facing experiences and internal operations. The company also says the partnership will stretch across store, partner, chat, voice, customer telemetry, employee productivity, and software development. That matters because most enterprise AI fails at the join between surfaces. It answers the first question and loses the thread on the second.</p>
+
+      <p>HP says more than 80% of its business flows through partners and more than 100,000 partners use the Partner Portal globally. That is why this is bigger than a single internal pilot. A chatbot inside one team is easy to show off. A consistent self-service layer across store, partner, chat, and voice is a different scale of problem, because the work has to stay coherent while it crosses systems.</p>
+
+      <p>OpenAI says the early wins showed up where time usually disappears, in tests, reviews, security checks, and handoffs across tools and sprint plans. That is why the 122 pull request number matters more than a shiny demo. It points to compressed review cycles, not just better prompts. A tool that helps once is nice. A tool that makes the second and third pass faster is what companies pay for.</p>
+
+      <p>That is also why OpenAI's own <a href="https://openai.com/index/a-scorecard-for-the-ai-age/" target="_blank" rel="noopener noreferrer">scorecard for the AI age</a> fits this story. The point there is work accomplished, not seats or token counts. HP is basically turning that idea into an operating program. The question is not whether the model can answer. The question is whether it can finish work people already trust.</p>
+
+      <h2>Telemetry is the wedge</h2>
+
+      <p>The real product detail is WXP. OpenAI says HP will use device telemetry, support knowledge, operational objects, schemas, and runbooks to help AI reason across fleet health signals, crashes, Wi-Fi issues, and app hangs. That is not the usual chatbot pitch. That is the start of a control plane.</p>
+
+      <p>Denise Dresser, OpenAI's chief revenue officer, said, <a href="https://openai.com/index/hp-frontier-partnership/" target="_blank" rel="noopener noreferrer">"HP is showing what enterprise transformation looks like when AI becomes an operating layer."</a> That is the cleanest way to say it. HP is trying to make AI answer to the same context, permissions, and evaluation rules that already govern the rest of the company.</p>
+
+      <p>That handoff problem is the same one I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The first useful result is easy. The hard part is keeping the context with the work when it moves from one tool, one team, or one approval step to the next. At HP scale, that means fewer dead ends in support, security, and partner workflows.</p>
+
+      <p>So the HP story is not "OpenAI at HP." It is HP trying to turn AI into a governed layer that can follow a case, a bug, or a customer request all the way through the system. If the partnership works, the proof will show up in the boring places first: faster reviews, cleaner support handoffs, and fewer resets when the work crosses a boundary. That is where the value lives.</p>
+    `
+  },
   post116: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3301,6 +3335,7 @@ POST_ORDER.unshift('post113');
 POST_ORDER.unshift('post115');
 POST_ORDER.unshift('post114');
 POST_ORDER.unshift('post116');
+POST_ORDER.unshift('post117');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

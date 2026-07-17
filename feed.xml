@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 10:13:52 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 22:10:00 GMT</lastBuildDate>
+    <item>
+      <title>HP&apos;s OpenAI partnership started with 122 pull requests</title>
+      <link>https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Adoption</category>
+      <description>122 pull requests across 43 projects. That is where HP&apos;s OpenAI partnership starts. OpenAI says one engineer used Frontier models to move through that much code in a matter of weeks, while a security team remediated several software bugs in a day. If that sounds like pilot theate</description>
+    </item>
+    <item>
+      <title>Microsoft gave passwords a retirement date</title>
+      <link>https://samcbarth.github.io/aisite/posts/microsoft-gave-passwords-a-retirement-date/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-gave-passwords-a-retirement-date/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Security</category>
+      <description>September 1 matters. So does February 1. Microsoft says passkeys will become the default sign-in method in Entra ID on the first date, and Microsoft-provided SMS and voice authentication will retire on the second. That is not a small product note. It is a deadline for every compa</description>
+    </item>
     <item>
       <title>Instacart wants the shelf to tell the truth</title>
       <link>https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</link>

@@ -34,7 +34,12 @@ function copyRecursive(src, dest) {
 
 (async () => {
   // 1. Fresh dist + static assets
-  fs.rmSync(dist, { recursive: true, force: true });
+  try {
+    fs.rmSync(dist, { recursive: true, force: true });
+  } catch (err) {
+    if (!err || err.code !== 'EPERM') throw err;
+    console.warn('build: dist cleanup hit EPERM, reusing existing directory');
+  }
   fs.mkdirSync(dist, { recursive: true });
 
   const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html', 'about.html', 'work.html'];
@@ -174,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post117: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Business_man_with_graph_chart_on_iPad.jpg',
+      caption: 'The part that matters is whether the work can move, not whether the demo looks neat.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Video_Conference_Using_Laptop.jpg',
+      supportCaption: 'The handoff still has to work when the work moves back to the screen.'
+    },
     post116: {
       image: 'assets/images/post116-inline.jpg',
       caption: 'The prompt is where the migration turns real.',
@@ -1530,6 +1542,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post117: { after: 4, quotes: [makeQuote('Better outcomes', { text: 'fundamentally rethink how AI can deliver better outcomes.', source: 'Prakash Arunkundrum, HP', sourceUrl: 'https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html' }), makeQuote('Operating layer', { text: 'AI becomes an operating layer.', source: 'Denise Dresser, OpenAI', sourceUrl: 'https://openai.com/index/hp-frontier-partnership/' })] },
     post116: { after: 3, quotes: [makeQuote('Deadline', { text: 'work better for users and worse for cyberattackers.', source: 'Microsoft Security Blog', sourceUrl: 'https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/' }), makeQuote('Exception', { text: 'legitimate business, regulatory, or technical need.', source: 'Microsoft Learn', sourceUrl: 'https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement' })] },
     post115: { after: 3, quotes: [makeQuote('Position', { text: 'the AWS business and team has never been in a stronger position', source: 'Matt Garman, Amazon', sourceUrl: 'https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services' }), makeQuote('Exit', { text: 'I’ll be cheering you all on from the sidelines.', source: 'Dave Brown, AWS via GeekWire', sourceUrl: 'https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/' })] },
     post114: { after: 3, quotes: [makeQuote('Truth', { text: 'what happens in store connects seamlessly to ecommerce in real time', source: 'David McIntosh, Instacart', sourceUrl: 'https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence' }), makeQuote('Shelf data', { text: 'collect, measure and analyze important data from physical shelves in real-time', source: 'Arpalus', sourceUrl: 'https://www.arpalus.com/' })] },
