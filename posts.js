@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post113: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: 'The company between Claude and the customer',
+    category: 'AI Services', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Staff_meeting.jpg',
+    body: `
+      <p>The interesting part of the Anthropic and Blackstone announcement is not that it is another AI partnership. It is that they are building the company that sits between the model and the customer. <a href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> on July 15 that Ode with Anthropic is a $1.5 billion AI implementation company, launched in May as part of the joint venture with Blackstone, Hellman &amp; Friedman, Goldman Sachs, and others. That is not a side note. That is the market admitting the hard part of AI is not the model anymore.</p>
+
+      <p>Blackstone's Jon Gray put the gap in plain English on CNBC: "How do I change marketing compliance? How do I change financial reporting? How do I make customer engagement better?" That is the real work. The model can be impressive and still be useless if nobody can turn it into the thing the business actually needs to do on Monday morning.</p>
+
+      <h2>The gap is the product</h2>
+
+      <p><a href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener noreferrer">Anthropic says</a> "Enterprise demand for Claude is significantly outpacing any single delivery model." That line is doing a lot of work. It says the model itself is pulling demand, but the company around it is what decides whether the demand gets converted into real workflows. Anthropic's own release says the new firm will work with mid-sized companies across sectors and that applied AI engineers from Anthropic will work alongside the firm's engineers to identify where Claude can have the most impact, build custom solutions, and support customers over the long term.</p>
+
+      <p>That is a different business from shipping a frontier model and hoping customers sort it out. It is closer to a mix of systems integration, product design, and change management. TechCrunch says Ode currently has 100 engineers, works closely with Anthropic's applied AI team, and is trying to build systems tailored to each organization's operations. That is the part most AI vendors keep underpricing. The software matters. The workflow rewrite matters more.</p>
+
+      <p>Chris Taylor, Ode's CEO, told TechCrunch, "It's pretty easy to imagine this as a trillion-dollar company someday if we execute well." I would not argue with the number. I would argue with the reason. The upside is not in convincing one company to try a model. The upside is in doing the unglamorous work of turning model access into something that survives procurement, training, compliance, and the third week of use.</p>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually the jump from capability to workflow. You can buy the tool, but if the approval path, the handoff, or the data model is off by one step, the business still stalls. This deal is basically a company built around fixing that gap.</p>
+
+      <h2>Consulting is not the insult</h2>
+
+      <p>Calling that consulting is not an insult. It is a category. The old consulting model sold strategy decks and implementation plans. This version has to ship code, train people, and stay close enough to the business to keep the system current as the model underneath changes. Anthropic even says the firm will become part of the Claude Partner Network, which tells you where the real channel is headed: not just direct product sales, but a layered ecosystem of firms that can do the last mile.</p>
+
+      <p>The other detail worth noticing is how practical the target customers are. Anthropic says the company will focus on mid-sized companies from community banks to manufacturers to health systems. Those are the places where AI often gets stuck, not because the model cannot answer, but because nobody owns the change across the whole process. If this works, the winner is not a cleaner demo. It is a cleaner operating path.</p>
+
+      <p>So the real news is not that Anthropic and Blackstone want a bigger slice of AI spend. It is that they are betting the next meaningful AI company will be judged on whether it can turn Claude into outcomes inside a mid-sized manufacturer, a healthcare group, or a financial services team without making the customer hire a second internal company to do it. That is where the market is moving now. Not just toward better models, but toward the people who can make the models survive contact with the business.</p>
+    `
+  },
   post112: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3177,6 +3207,7 @@ POST_ORDER.unshift('post109');
 POST_ORDER.unshift('post110');
 POST_ORDER.unshift('post111');
 POST_ORDER.unshift('post112');
+POST_ORDER.unshift('post113');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

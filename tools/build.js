@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post113: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Man_at_a_laptop_in_an_office_%28Unsplash%29.jpg',
+      caption: 'The work starts with a person, a laptop, and a room full of context.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Video_Conference_Using_Laptop.jpg',
+      supportCaption: 'The handoff still has to work when the meeting becomes a screen.'
+    },
     post112: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Wikimedia_Servers-0051_19.jpg',
       caption: 'The real test is whether the workflow still works once it leaves the demo room.',
@@ -1502,6 +1509,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post113: { after: 3, quotes: [makeQuote('Demand', { text: 'Enterprise demand for Claude is significantly outpacing any single delivery model.', source: 'Krishna Rao, Anthropic', sourceUrl: 'https://www.anthropic.com/news/enterprise-ai-services-company' }), makeQuote('Scale', { text: 'It\'s pretty easy to imagine this as a trillion-dollar company someday if we execute well.', source: 'Chris Taylor, Ode via TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/' })] },
     post112: { after: 3, quotes: [makeQuote('Value', { text: 'differentiated industry solutions built with Gemini are helping customers realise business value faster', source: 'Shivir Chordia, Google Cloud via TechCircle', sourceUrl: 'https://www.techcircle.in/2026/07/16/tcs-google-cloud-open-gemini-experience-center-in-kolkata-to-boost-agentic-ai-adoption' }), makeQuote('Value', { text: 'translating AI and next-generation tech into real business value', source: 'Murali Ramanathan, TCS', sourceUrl: 'https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata' })] },
     post111: { after: 3, quotes: [makeQuote('Proxy', { text: 'free speech infringements by proxy', source: 'Meta Oversight Board', sourceUrl: 'https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/' }), makeQuote('Power', { text: 'It learns from information environments that have already been shaped by institutions and power.', source: 'Hannah Waight via AP', sourceUrl: 'https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba' })] },
     post110: { after: 3, quotes: [makeQuote('Factory', { text: 'Japan invented modern manufacturing.', source: 'Jensen Huang, NVIDIA', sourceUrl: 'https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure' }), makeQuote('Pressure', { text: 'serious challenges, including ageing populations and labor shortages.', source: 'Yasuhiko Hashimoto, Kawasaki Heavy Industries', sourceUrl: 'https://global.kawasaki.com/en/corp/newsroom/news/detail/?f=20260716_2992' })] },

@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 01:11:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 04:11:48 GMT</lastBuildDate>
+    <item>
+      <title>The company between Claude and the customer</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Services</category>
+      <description>The interesting part of the Anthropic and Blackstone announcement is not that it is another AI partnership. It is that they are building the company that sits between the model and the customer. TechCrunch reported on July 15 that Ode with Anthropic is a $1.5 billion AI implement</description>
+    </item>
     <item>
       <title>TCS and Google Cloud opened the Kolkata test room for Gemini</title>
       <link>https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</link>

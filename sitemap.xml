@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
