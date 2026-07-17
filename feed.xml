@@ -6,7 +6,31 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 15:34:59 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 01:11:00 GMT</lastBuildDate>
+    <item>
+      <title>TCS and Google Cloud opened the Kolkata test room for Gemini</title>
+      <link>https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Tools</category>
+      <description>TCS and Google Cloud opened a Gemini Experience Center in Kolkata on July 16, and the location tells the story before the model name does. The center is aimed at retail, consumer packaged goods, travel, tourism and hospitality. That means the pitch starts with stores, supply chai</description>
+    </item>
+    <item>
+      <title>AI chatbots are exporting censorship</title>
+      <link>https://samcbarth.github.io/aisite/posts/ai-chatbots-are-exporting-censorship/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ai-chatbots-are-exporting-censorship/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Governance</category>
+      <description>Ask Claude to make a pamphlet critical of Xi Jinping or Saudi Arabia&apos;s crown prince and it may refuse. Ask the same kind of model to criticize Donald Trump or King Charles III and it will often comply. That is the odd thing AP reported today about a new Meta Oversight Board study</description>
+    </item>
+    <item>
+      <title>Japan put 13,750 chips behind physical AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/japan-put-13-750-chips-behind-physical-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/japan-put-13-750-chips-behind-physical-ai/</guid>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>13,750 Vera CPUs. 27,500 Rubin GPUs. 140 megawatts. That is not a teaser. That is Japan putting a hard number on physical AI. NVIDIA said today it is working with Noetra Corp. to launch the factory, and AP reported that Fujitsu is leading the broader push with FANUC, Yaskawa Elec</description>
+    </item>
     <item>
       <title>TSMC turned AI demand into a build order</title>
       <link>https://samcbarth.github.io/aisite/posts/tsmc-turned-ai-demand-into-a-build-order/</link>

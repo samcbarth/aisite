@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post112: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Wikimedia_Servers-0051_19.jpg',
+      caption: 'The real test is whether the workflow still works once it leaves the demo room.',
+      side: 'right', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/WLM_international_team_meeting_Vienna_2023-05-27_12.jpg',
+      supportCaption: 'The Kolkata pitch is really about the room where teams co-create and decide what ships.'
+    },
     post111: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Mobile_phone_with_ChatGPT_on_keyboard_%2852916924616%29.jpg',
       caption: 'The chatbot story starts on the device where people actually ask the question.',
@@ -1495,6 +1502,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post112: { after: 3, quotes: [makeQuote('Value', { text: 'differentiated industry solutions built with Gemini are helping customers realise business value faster', source: 'Shivir Chordia, Google Cloud via TechCircle', sourceUrl: 'https://www.techcircle.in/2026/07/16/tcs-google-cloud-open-gemini-experience-center-in-kolkata-to-boost-agentic-ai-adoption' }), makeQuote('Value', { text: 'translating AI and next-generation tech into real business value', source: 'Murali Ramanathan, TCS', sourceUrl: 'https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata' })] },
     post111: { after: 3, quotes: [makeQuote('Proxy', { text: 'free speech infringements by proxy', source: 'Meta Oversight Board', sourceUrl: 'https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/' }), makeQuote('Power', { text: 'It learns from information environments that have already been shaped by institutions and power.', source: 'Hannah Waight via AP', sourceUrl: 'https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba' })] },
     post110: { after: 3, quotes: [makeQuote('Factory', { text: 'Japan invented modern manufacturing.', source: 'Jensen Huang, NVIDIA', sourceUrl: 'https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure' }), makeQuote('Pressure', { text: 'serious challenges, including ageing populations and labor shortages.', source: 'Yasuhiko Hashimoto, Kawasaki Heavy Industries', sourceUrl: 'https://global.kawasaki.com/en/corp/newsroom/news/detail/?f=20260716_2992' })] },
     post109: { after: 2, quotes: [makeQuote('Demand', { text: 'AI is reshaping our daily lives and semiconductor technology is the foundation for new capabilities and applications.', source: 'Dr. C.C. Wei, TSMC', sourceUrl: 'https://pr.tsmc.com/english/news/3210' }), makeQuote('Runway', { text: 'essential to support (its) long-term growth', source: 'William Li, Counterpoint Research via AP', sourceUrl: 'https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff' })] },

@@ -7,6 +7,42 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post112: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: 'TCS and Google Cloud opened the Kolkata test room for Gemini',
+    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Kolkata_Skyline_over_the_Maidan.jpg',
+    body: `
+      <p>TCS and Google Cloud opened a Gemini Experience Center in Kolkata on July 16, and the location tells the story before the model name does. The center is aimed at retail, consumer packaged goods, travel, tourism and hospitality. That means the pitch starts with stores, supply chains, customer service and the messy parts of operation where AI has to do more than answer a prompt.</p>
+
+      <p><a href="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata" target="_blank" rel="noopener noreferrer">TCS says</a> the center will showcase AI-led innovations built with Google Cloud and Google's Gemini models. The company is not treating this like a generic chatbot corner. It is trying to build a room where enterprises can see what the next phase of AI-enabled transformation looks like when it is attached to actual work.</p>
+
+      <h2>Not a sandbox</h2>
+
+      <p>The Kolkata site is TCS's third Gemini Experience Center in India, after Chennai and Bengaluru, and its eighth worldwide. TCS says it plans to reach 10 centers globally by the end of 2026, including four in India. <a href="https://www.business-standard.com/amp/companies/news/tcs-google-cloud-partner-to-launch-gemini-experience-centre-in-kolkata-126071600587_1.html" target="_blank" rel="noopener noreferrer">Business Standard</a> reported the same thing and said the Kolkata center will enable enterprises to co-create, test and scale AI-led solutions across the target sectors.</p>
+
+      <p>That is the part worth paying attention to. A lot of AI launches still stop at inspiration. This one is built around the road from pilots to production. The center will show agentic AI-enabled solutions for store operations, supply chain management, omni-channel retail and customer service through immersive demonstrations and co-innovation workshops. That is not the usual model demo. That is a workflow test.</p>
+
+      <p>TCS also says it has already built 3,000 industry- and context-aware AI agents using Gemini Enterprise. That number matters less as a flex than as a sign of what kind of buyer this is aimed at. TCS is not asking consumer businesses to imagine the use case from zero. It is trying to package prebuilt domain logic into something repeatable enough to sell.</p>
+
+      <p>Google Cloud's Shivir Chordia put it cleanly: <a href="https://www.techcircle.in/2026/07/16/tcs-google-cloud-open-gemini-experience-center-in-kolkata-to-boost-agentic-ai-adoption" target="_blank" rel="noopener noreferrer">"differentiated industry solutions built with Gemini are helping customers realise business value faster."</a> That is the business model in one line. The model itself is not the pitch. The speed from problem to usable workflow is.</p>
+
+      <p>TCS CTO Murali Ramanathan said the collaboration has focused on <a href="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata" target="_blank" rel="noopener noreferrer">"translating AI and next-generation tech into real business value."</a> That line works because it skips the hype and lands on the part that decides whether a lab is useful. Enterprises do not need more language about possibility. They need something that survives procurement, security review, and the second week after launch.</p>
+
+      <p>That is also the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually not the thing people put in the deck. It is the jump between the prompt, the approval, and the thing that has to keep moving after the meeting ends. In consumer businesses, that gap shows up in store ops, supplier onboarding, invoice processing and customer service. If the context drops there, the AI project looks smart right up until somebody has to use it twice.</p>
+
+      <h2>Why Kolkata</h2>
+
+      <p>Kolkata matters because it is being used as a working site, not a trophy site. If TCS and Google Cloud can make the center useful here, then the playbook can travel to other cities and sectors without having to reinvent itself every time. That is why the company keeps repeating the same verbs: co-create, test, scale. The verbs are the product.</p>
+
+      <p>Business Standard said the center will let enterprises in retail, consumer packaged goods, and travel, tourism and hospitality co-create and scale AI-led solutions. TechCircle added that the launch is a step toward "accelerating agentic AI adoption" and that the center will help consumer businesses "co-create, test and scale next-generation innovations." Those are not flashy words. They are more useful than flashy words because they point to where the work actually has to happen.</p>
+
+      <p>The global plan matters too. Ten Gemini Experience Centers by the end of 2026 means this is not just a local experiment. It is a distribution strategy for enterprise AI, with sector-specific rooms attached to a larger hyperscaler partnership. If it works, TCS gets a repeatable way to show buyers what Gemini can do inside an actual business process. Google Cloud gets a clearer route from model capability to customer adoption. The center is where the abstraction gets local.</p>
+
+      <p>That is the practical test. Not whether Gemini sounds good in a demo, but whether a retail operator, a supply chain manager or a service lead can walk into Kolkata, watch the workflow run, and leave with something that behaves inside the business. That is a much narrower story than AI transformation. It is also the one that usually survives contact with reality.</p>
+    `
+  },
   post111: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
@@ -3140,6 +3176,7 @@ POST_ORDER.unshift('post108');
 POST_ORDER.unshift('post109');
 POST_ORDER.unshift('post110');
 POST_ORDER.unshift('post111');
+POST_ORDER.unshift('post112');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
