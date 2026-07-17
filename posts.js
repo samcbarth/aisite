@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post115: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: 'The cloud fight just moved to the org chart',
+    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/A_view_of_the_server_room_at_The_National_Archives.jpg',
+    body: `
+      <p>AWS just moved the person sitting closest to its compute engine. After nearly 19 years at the company, Dave Brown is leaving AWS, and Amazon says Dave Treadwell will take over AWS Compute and ML Services on August 1. <a href="https://www.wsj.com/tech/meta-plans-to-hire-top-amazon-computing-executive-as-it-weighs-cloud-push-2166869b" target="_blank" rel="noopener noreferrer">The Wall Street Journal</a> says Meta plans to hire Brown as it weighs a cloud push of its own. That is not a random executive shuffle. It is the kind of move that tells you where the leverage is now.</p>
+
+      <p>Brown was not a side character. He helped shape EC2, then the broader compute organization, then the machine learning services that sit under Bedrock and SageMaker. That is the layer where cloud promises turn into bills, latency, and reliability. When that layer changes, every story above it gets a little less abstract.</p>
+
+      <p>Amazon is trying to make the transition look clean. Matt Garman says the AWS business and team <a href="https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services" target="_blank" rel="noopener noreferrer">"has never been in a stronger position"</a>, and he describes Treadwell as one of the company's biggest and most vocal internal customers. That last part matters. AWS is not just handing the seat to another manager. It is putting a platform operator in the seat.</p>
+
+      <h2>The handoff is the story</h2>
+
+      <p>Treadwell comes from Amazon's eCommerce Foundation, the technical backbone of Amazon's retail business, and before that he spent 27 years at Microsoft. So Amazon is choosing someone who has spent years running a huge internal platform and years inside another giant software company. That is a clue. The next phase of cloud is about operating discipline, not just launch energy.</p>
+
+      <p>The cloud pitch used to be broad: more services, more regions, more ways to build. The pitch now feels narrower and more industrial. Buyers want fewer dead ends, clearer ownership, and less drift between the tool they buy and the system they need to keep alive. AWS has already been pushing customers toward fewer product paths and more managed surfaces. This leadership change fits that direction. It says the hard part is not adding another box to the menu. It is keeping the menu coherent.</p>
+
+      <p>That same handoff problem shows up in smaller workflows too, including at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first version is rarely the hard part. The transfer is. If the next person or system does not inherit the right context, the whole thing slows down. Cloud and AI vendors keep running into the same issue at larger scale. The platform can be impressive and still lose time if the operating handoff is messy.</p>
+
+      <p>Brown's own note is shorter and better: <a href="https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/" target="_blank" rel="noopener noreferrer">"I’ll be cheering you all on from the sidelines."</a> That sounds like a clean exit. It also sounds like somebody who knows the job has changed. AWS is no longer just the scrappy cloud upstart. It is a huge machine with real industrial constraints. At this scale, compute is not just capacity. It is energy, cooling, scheduling, silicon, and the internal politics needed to keep all of that pointed at one goal.</p>
+
+      <p>That is why the Meta angle matters. The Journal says Meta wants Brown to report to its head of infrastructure and focus on the company's data center build-out. That is the sound of a company trying to own more of the layer under its models. Meta already spends like an infrastructure company. Hiring someone who knows how AWS organizes compute is a way to buy muscle memory, not just a résumé.</p>
+
+      <h2>Meta is the tell</h2>
+
+      <p>Meta's interest also explains why this feels bigger than one AWS transition. The AI market keeps talking about models, but the money is still sitting in compute, data centers, and the people who know how to keep them all pointed at the same problem. If Meta is serious about pulling Brown in, it is saying the cloud era's best operators are now strategic hires, not just internal promotions. That is what a mature infrastructure race looks like.</p>
+
+      <p>There is a useful contrast here with the old startup logic. In the early cloud days, the winning move was to move faster than the competition and pile up services. Now the winning move is to make a giant system feel dependable. That is much less glamorous and much harder to fake. You can buy capacity. You cannot buy trust that easily.</p>
+
+      <p>That is why the org chart is the real headline. AWS is moving one of its long-time compute operators out, bringing another platform veteran in, and Meta is trying to pull the same kind of talent toward its own buildout. The cloud race is getting less about slogans and more about who can run the machine without dropping the thread.</p>
+    `
+  },
   post114: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3230,6 +3264,7 @@ POST_ORDER.unshift('post110');
 POST_ORDER.unshift('post111');
 POST_ORDER.unshift('post112');
 POST_ORDER.unshift('post113');
+POST_ORDER.unshift('post115');
 POST_ORDER.unshift('post114');
 
 if (typeof module !== 'undefined' && module.exports) {

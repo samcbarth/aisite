@@ -6,7 +6,7 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 07:12:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 10:13:52 GMT</lastBuildDate>
     <item>
       <title>Instacart wants the shelf to tell the truth</title>
       <link>https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</link>
@@ -14,6 +14,14 @@
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
       <category>Retail Tech</category>
       <description>A shopper sees one thing in the aisle and another thing on the screen. That mismatch is the business problem behind Instacart&apos;s July 16 acquisition of Arpalus . The company said the deal is meant to improve inventory accuracy for ecommerce fulfillment and in-store operations acro</description>
+    </item>
+    <item>
+      <title>The cloud fight just moved to the org chart</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-cloud-fight-just-moved-to-the-org-chart/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-cloud-fight-just-moved-to-the-org-chart/</guid>
+      <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cloud</category>
+      <description>AWS just moved the person sitting closest to its compute engine. After nearly 19 years at the company, Dave Brown is leaving AWS, and Amazon says Dave Treadwell will take over AWS Compute and ML Services on August 1. The Wall Street Journal says Meta plans to hire Brown as it wei</description>
     </item>
     <item>
       <title>The company between Claude and the customer</title>

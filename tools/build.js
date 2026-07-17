@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post115: {
+      image: 'https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=1200&h=675&fit=crop&q=80',
+      caption: 'The next handoff still needs a room where people can see the work.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Staff_meeting_%283%29.jpg',
+      supportCaption: 'The org chart only matters if the next room can keep the context.'
+    },
     post114: {
       image: 'assets/images/post114-inline.png',
       caption: 'Shelf scans only matter when the aisle and the app agree.',
@@ -1516,6 +1523,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post115: { after: 3, quotes: [makeQuote('Position', { text: 'the AWS business and team has never been in a stronger position', source: 'Matt Garman, Amazon', sourceUrl: 'https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services' }), makeQuote('Exit', { text: 'I’ll be cheering you all on from the sidelines.', source: 'Dave Brown, AWS via GeekWire', sourceUrl: 'https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/' })] },
     post114: { after: 3, quotes: [makeQuote('Truth', { text: 'what happens in store connects seamlessly to ecommerce in real time', source: 'David McIntosh, Instacart', sourceUrl: 'https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence' }), makeQuote('Shelf data', { text: 'collect, measure and analyze important data from physical shelves in real-time', source: 'Arpalus', sourceUrl: 'https://www.arpalus.com/' })] },
     post113: { after: 3, quotes: [makeQuote('Demand', { text: 'Enterprise demand for Claude is significantly outpacing any single delivery model.', source: 'Krishna Rao, Anthropic', sourceUrl: 'https://www.anthropic.com/news/enterprise-ai-services-company' }), makeQuote('Scale', { text: 'It\'s pretty easy to imagine this as a trillion-dollar company someday if we execute well.', source: 'Chris Taylor, Ode via TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/' })] },
     post112: { after: 3, quotes: [makeQuote('Value', { text: 'differentiated industry solutions built with Gemini are helping customers realise business value faster', source: 'Shivir Chordia, Google Cloud via TechCircle', sourceUrl: 'https://www.techcircle.in/2026/07/16/tcs-google-cloud-open-gemini-experience-center-in-kolkata-to-boost-agentic-ai-adoption' }), makeQuote('Value', { text: 'translating AI and next-generation tech into real business value', source: 'Murali Ramanathan, TCS', sourceUrl: 'https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata' })] },
