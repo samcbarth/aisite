@@ -174,6 +174,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post116: {
+      image: 'assets/images/post116-inline.jpg',
+      caption: 'The prompt is where the migration turns real.',
+      side: 'right', after: 2,
+      supportImage: 'assets/images/post116-support.jpg',
+      supportCaption: 'The fallback path is where the support cost shows up.'
+    },
     post115: {
       image: 'https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=1200&h=675&fit=crop&q=80',
       caption: 'The next handoff still needs a room where people can see the work.',
@@ -1523,6 +1530,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post116: { after: 3, quotes: [makeQuote('Deadline', { text: 'work better for users and worse for cyberattackers.', source: 'Microsoft Security Blog', sourceUrl: 'https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/' }), makeQuote('Exception', { text: 'legitimate business, regulatory, or technical need.', source: 'Microsoft Learn', sourceUrl: 'https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement' })] },
     post115: { after: 3, quotes: [makeQuote('Position', { text: 'the AWS business and team has never been in a stronger position', source: 'Matt Garman, Amazon', sourceUrl: 'https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services' }), makeQuote('Exit', { text: 'I’ll be cheering you all on from the sidelines.', source: 'Dave Brown, AWS via GeekWire', sourceUrl: 'https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/' })] },
     post114: { after: 3, quotes: [makeQuote('Truth', { text: 'what happens in store connects seamlessly to ecommerce in real time', source: 'David McIntosh, Instacart', sourceUrl: 'https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence' }), makeQuote('Shelf data', { text: 'collect, measure and analyze important data from physical shelves in real-time', source: 'Arpalus', sourceUrl: 'https://www.arpalus.com/' })] },
     post113: { after: 3, quotes: [makeQuote('Demand', { text: 'Enterprise demand for Claude is significantly outpacing any single delivery model.', source: 'Krishna Rao, Anthropic', sourceUrl: 'https://www.anthropic.com/news/enterprise-ai-services-company' }), makeQuote('Scale', { text: 'It\'s pretty easy to imagine this as a trillion-dollar company someday if we execute well.', source: 'Chris Taylor, Ode via TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/' })] },

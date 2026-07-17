@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post116: {
+    featured: false,
+    date: 'July 17, 2026', iso: '2026-07-17',
+    title: 'Microsoft gave passwords a retirement date',
+    category: 'Security', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post116-hero.jpg',
+    body: `
+      <p>September 1 matters. So does February 1. <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank" rel="noopener noreferrer">Microsoft says</a> passkeys will become the default sign-in method in Entra ID on the first date, and Microsoft-provided SMS and voice authentication will retire on the second. That is not a small product note. It is a deadline for every company still leaning on the old fallback because nobody wanted to touch it yet.</p>
+
+      <p>The company says it is doing this because identity attacks are getting nastier in the AI era. Microsoft says AI-enabled phishing campaigns have reached click-through rates as high as 54%, compared with roughly 12% for more traditional campaigns. Once attackers can automate the pressure, shared-secret authentication starts looking like the weak link it always was.</p>
+
+      <h2>The migration bill</h2>
+
+      <p>On the surface, the rollout is clean. Users enabled for SMS or voice will be auto-enabled for passkeys when the change reaches their tenant, and the next MFA prompt will ask them to register. That sounds tidy until you remember every identity team owns a pile of exceptions: old phones, shared devices, service accounts, and the one business unit that always asks for just one more exception because somebody in the field still needs the old path.</p>
+
+      <p>Microsoft Learn is pretty direct about the business side. If an organization has a <a href="https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement" target="_blank" rel="noopener noreferrer">"legitimate business, regulatory, or technical need"</a> to keep SMS or voice, it can move to telecom partners through the Microsoft Security Store. That keeps the door open for real edge cases. It also means the old fallback is no longer native and no longer free of paperwork.</p>
+
+      <p>The important part is that Microsoft is not pretending this is only a security upgrade. It is a migration project with a policy layer and, for some tenants, a commercial layer. If you need SMS or voice after the transition, Microsoft says the partner route will come with associated telecom costs. If you do not need it, the cleanest path is to move to passkeys and stop spending time defending the old setup.</p>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the hard part is not getting a feature to work once. The hard part is moving the work to a better system without losing the context that kept the old one alive. Identity programs fail when they treat that as a toggle instead of an operating change.</p>
+
+      <h2>Why the clock matters</h2>
+
+      <p>Passkeys use public-key cryptography instead of shared secrets, which is the real technical win here. Microsoft says that makes them phishing-resistant by design and simpler for users. The company also says passkeys can come in synced forms, like iCloud Keychain and Google Password Manager, or device-bound forms like Microsoft Authenticator, Entra passkeys on Windows, and FIDO2 security keys. That mix matters because the rollout has to fit a messy fleet, not a clean demo.</p>
+
+      <p><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/" target="_blank" rel="noopener noreferrer">BleepingComputer's read on the announcement</a> is the practical one: people already signing in with passkeys, Windows Hello for Business, FIDO2 keys, or smart cards can keep using those methods. So the real pressure is not on the people who already moved. It is on the long tail of SMS and voice users who still make the old system look normal because the organization never set a deadline.</p>
+
+      <p>That is why Microsoft is also pushing registration campaigns and tenant-level planning in its Learn docs. The company wants admins to find SMS and voice users, choose the passkey type that fits the device mix, and tell people what changes before the prompt lands. None of that is exciting. All of it is the work that decides whether a security rollout sticks or just creates another support ticket pile.</p>
+
+      <p>The useful way to read this is not as Microsoft killing choice. It is Microsoft deciding what the default should be. By making passkeys the standard and pushing SMS and voice into a managed exception, the company is saying the old convenience model is now the thing that needs a justification. That is a different kind of product decision. It turns identity from a loose preference into an operating rule.</p>
+
+      <p>So the real deadline is not the first prompt in September. It is February 1, 2027, when Microsoft-provided SMS and voice stop being a native option. After that, companies either live on passkeys, or they buy and manage a telecom path to keep the old fallback alive. That is the whole business story. The front door still works either way. The bill changes depending on which key you want to keep using.</p>
+    `
+  },
   post115: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3266,6 +3300,7 @@ POST_ORDER.unshift('post112');
 POST_ORDER.unshift('post113');
 POST_ORDER.unshift('post115');
 POST_ORDER.unshift('post114');
+POST_ORDER.unshift('post116');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
