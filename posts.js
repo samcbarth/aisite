@@ -7,6 +7,32 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post118: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: "AWS put outbound campaigns on a map",
+    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Cape_Town_CBD_skyline_as_seen_from_De_Waterkant.jpg',
+    body: `
+      <p>Cape Town is the useful clue. AWS just moved Amazon Connect Customer Outbound Campaigns into the Africa (Cape Town) Region, so SMS, WhatsApp, and email campaigns now have a very specific home on the map. The <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/connect-africa-cape-town/" target="_blank" rel="noopener noreferrer">announcement</a> says the feature is meant for service updates, promotional offers, appointment reminders, and product usage tips. That sounds like a release note. It is really a sign that customer outreach is no longer one global switch.</p>
+
+      <p>The product page says AWS wants to <a href="https://aws.amazon.com/products/connect/customer/outbound/" target="_blank" rel="noopener noreferrer">"Keep customers informed automatically."</a> That is the real pitch. It is not just about sending more messages. It is about letting the system decide when a customer action should trigger a touchpoint, then doing it without a rep rebuilding the same play every day. If the workflow is good, the outreach feels timely instead of noisy.</p>
+
+      <p>AWS also says it can <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/connect-africa-cape-town/" target="_blank" rel="noopener noreferrer">"create targeted, personalized engagement campaigns"</a> through the Connect Customer admin site and APIs. That is the useful part of the story. The stack is not just delivery. It is segmentation, event triggers, analytics, and channel choice. A retail team can send one message over SMS, another over WhatsApp, and another over email without treating every campaign like a one-off project.</p>
+
+      <p>The product page also says AWS has built-in compliance controls for TCPA, quiet times, call limits, and contact verification. That is where the pitch gets more serious. Enterprises do not buy outbound tooling because they want more volume. They buy it because they want fewer mistakes. If the system can manage time zones, retries, and compliance without the team hand-stitching every rule, that saves more pain than a shiny dashboard ever will.</p>
+
+      <h2>The rulebook is the product</h2>
+
+      <p>The region table is where the story gets less glossy and more useful. AWS docs say outbound campaigns in Africa (Cape Town) can call phone numbers based in South Africa. Then the page adds the part that matters: <a href="https://docs.aws.amazon.com/connect/latest/adminguide/regions.html" target="_blank" rel="noopener noreferrer">"No other combinations are supported."</a> That is not a footnote. That is the boundary of the business model. AWS is saying geography still governs what the system can do, even when the software looks global from the dashboard.</p>
+
+      <p>The same doc shows the channel mix is not identical everywhere. In Africa (Cape Town), SMS and WhatsApp are supported, but Apple Messages for Business and push notifications are not. So this is not a simple feature rollout. It is a localized operating surface shaped by channel availability, compliance, and the practical limits of each region. That is the part vendors keep skipping in the sales pitch.</p>
+
+      <p>This is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first workflow is easy. The hard part is making sure the rules travel with the task. If the channel, the approval path, and the geography do not line up, the automation looks good in a demo and gets awkward in production. That is where real operations live, and that is why the region table matters more than it looks like it should.</p>
+
+      <p>Cape Town is not just another row in AWS documentation. It is the place where the product, the compliance rule, and the customer channel have to agree before the system can say it is done. That is the business story here. Outbound only scales when the map and the workflow point in the same direction.</p>
+    `
+  },
   post117: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
@@ -3336,6 +3362,7 @@ POST_ORDER.unshift('post115');
 POST_ORDER.unshift('post114');
 POST_ORDER.unshift('post116');
 POST_ORDER.unshift('post117');
+POST_ORDER.unshift('post118');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

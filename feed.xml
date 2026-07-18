@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 22:10:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 01:12:00 GMT</lastBuildDate>
+    <item>
+      <title>AWS put outbound campaigns on a map</title>
+      <link>https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cloud</category>
+      <description>Cape Town is the useful clue. AWS just moved Amazon Connect Customer Outbound Campaigns into the Africa (Cape Town) Region, so SMS, WhatsApp, and email campaigns now have a very specific home on the map. The announcement says the feature is meant for service updates, promotional </description>
+    </item>
     <item>
       <title>HP&apos;s OpenAI partnership started with 122 pull requests</title>
       <link>https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</link>

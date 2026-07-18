@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post118: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Callcenter03.jpg',
+      caption: 'The region choice lands in a real workspace, not a slide deck.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Business_people_using_their_phones.jpg',
+      supportCaption: "The last mile is still a phone in somebody's hand."
+    },
     post117: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Business_man_with_graph_chart_on_iPad.jpg',
       caption: 'The part that matters is whether the work can move, not whether the demo looks neat.',
@@ -1542,6 +1549,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post118: { after: 3, quotes: [makeQuote('Automation', { text: 'Keep customers informed automatically', source: 'Amazon Connect Customer product page', sourceUrl: 'https://aws.amazon.com/products/connect/customer/outbound/' }), makeQuote('Boundary', { text: 'No other combinations are supported.', source: 'AWS docs', sourceUrl: 'https://docs.aws.amazon.com/connect/latest/adminguide/regions.html' })] },
     post117: { after: 4, quotes: [makeQuote('Better outcomes', { text: 'fundamentally rethink how AI can deliver better outcomes.', source: 'Prakash Arunkundrum, HP', sourceUrl: 'https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html' }), makeQuote('Operating layer', { text: 'AI becomes an operating layer.', source: 'Denise Dresser, OpenAI', sourceUrl: 'https://openai.com/index/hp-frontier-partnership/' })] },
     post116: { after: 3, quotes: [makeQuote('Deadline', { text: 'work better for users and worse for cyberattackers.', source: 'Microsoft Security Blog', sourceUrl: 'https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/' }), makeQuote('Exception', { text: 'legitimate business, regulatory, or technical need.', source: 'Microsoft Learn', sourceUrl: 'https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement' })] },
     post115: { after: 3, quotes: [makeQuote('Position', { text: 'the AWS business and team has never been in a stronger position', source: 'Matt Garman, Amazon', sourceUrl: 'https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services' }), makeQuote('Exit', { text: 'I’ll be cheering you all on from the sidelines.', source: 'Dave Brown, AWS via GeekWire', sourceUrl: 'https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/' })] },
