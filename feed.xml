@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 10:14:36 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 16:11:18 GMT</lastBuildDate>
+    <item>
+      <title>Kimi K3 came with a sunset clock</title>
+      <link>https://samcbarth.github.io/aisite/posts/kimi-k3-came-with-a-sunset-clock/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/kimi-k3-came-with-a-sunset-clock/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Adoption</category>
+      <description>Moonshot did not just launch Kimi K3. It also put Kimi K2.5 and the moonshot-v1 series on the way out for new users. That makes this release less like a model brag and more like a migration notice. On the product page, Moonshot says Kimi K3 is its most capable flagship model to d</description>
+    </item>
+    <item>
+      <title>The refund queue is where tiket.com tested AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-refund-queue-is-where-tiket-com-tested-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-refund-queue-is-where-tiket-com-tested-ai/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Travel Tech</category>
+      <description>Travel rarely breaks at the gate. It breaks when somebody needs a refund, a rebook, or a straight answer and gets a queue instead. That is the part tiket.com is trying to fix. Microsoft says the Indonesian travel platform&apos;s CRATER assistant now handles more than 75,000 customer i</description>
+    </item>
     <item>
       <title>Thomson Reuters is moving the AI bill into engineering</title>
       <link>https://samcbarth.github.io/aisite/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</link>

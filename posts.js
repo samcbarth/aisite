@@ -7,6 +7,34 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post123: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'Kimi K3 came with a sunset clock',
+    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikimedia_Foundation_Servers_2015-63.jpg',
+    body: `
+      <p>Moonshot did not just launch Kimi K3. It also put Kimi K2.5 and the moonshot-v1 series on the way out for new users. That makes this release less like a model brag and more like a migration notice.</p>
+
+      <p>On the product page, Moonshot says Kimi K3 is its most capable flagship model to date. It says the model has 2.8 trillion parameters, native visual understanding, and a 1M-token context window. On the home page, the pitch is even shorter: <a href="https://www.moonshot.ai/" target="_blank" rel="noopener noreferrer">"The new frontier of intelligence."</a></p>
+
+      <p>That is the simple headline. The better one is that K3 is not being sold as a demo. Moonshot's quickstart says the model is built for long-horizon coding, knowledge work, and deep reasoning. In other words, it is supposed to carry work across a long session, not just answer one prompt and disappear.</p>
+
+      <h2>The sunset is the product</h2>
+
+      <p>The model list is where the business move gets blunt. After the K3 launch, Moonshot says <a href="https://platform.kimi.ai/docs/models" target="_blank" rel="noopener noreferrer">Kimi K2.5 and the moonshot-v1 series are no longer available to newly registered users</a>, with full platform sunset on August 31. The page also says, <a href="https://platform.kimi.ai/docs/models" target="_blank" rel="noopener noreferrer">"Please switch to a newer model as soon as possible."</a> That is not soft language. That is a product team telling buyers the clock is already running.</p>
+
+      <p>That matters because a model upgrade is never just about the benchmark chart. It changes prompts, evals, tool calls, fallbacks, and the way teams measure whether the system is still doing the job. Moonshot's pricing page says K3 always reasons and can take a top-level <code>reasoning_effort</code> setting, which tells you the platform is pushing for a more controlled workflow instead of a casual chat toy.</p>
+
+      <p>This is the part I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first answer is easy, the handoff is the work. A model can look great in a demo and still be a pain when you have to migrate users, tools, and expectations around it. K3 is a cleaner story because Moonshot is admitting that the handoff is part of the product.</p>
+
+      <p>The rollout is also staged, not finished. Moonshot says the full model weights will be released by July 27, 2026. So the launch is not only a capability announcement. It is a transition plan. The company is telling developers what to use now, what to stop using next, and when the rest of the ecosystem gets the full package.</p>
+
+      <p>That is why Kimi K3 feels different from a lot of AI launches that stop at scale and speed. Moonshot is pairing the new flagship with a forced cleanup on the old stack. For buyers, that is usually the real cost. The model is only half the job. The rest is the migration.</p>
+
+      <p>So the useful read on Kimi K3 is not that it is bigger, or louder, or more futuristic. It is that Moonshot turned the release into a platform reset and said so out loud. That is the kind of move that matters when a model is meant to sit in the middle of coding, knowledge work, and long tasks. The story is not just what K3 can do. It is what Moonshot expects everyone else to move off of.</p>
+    `
+  },
   post122: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3497,6 +3525,7 @@ POST_ORDER.unshift('post118');
 POST_ORDER.unshift('post120');
 POST_ORDER.unshift('post121');
 POST_ORDER.unshift('post122');
+POST_ORDER.unshift('post123');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
