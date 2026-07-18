@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post122: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/A_woman_working_on_a_call_centre.jpg',
+      caption: 'The support desk is where the trip turns into a real test.',
+      side: 'right', after: 2,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Family_Airport_Travel.jpg',
+      supportCaption: 'The trip keeps moving only if the next handoff holds.',
+    },
     post121: {
       image: 'https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=1200&h=675&fit=crop&q=80',
       caption: 'The engineering team is where the AI bill lands first.',
@@ -1570,6 +1577,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post122: { after: 3, quotes: [makeQuote('Minutes', { text: 'In travel, every minute matters.', source: 'Gaery Undarsa, tiket.com', sourceUrl: 'https://www.tiket.com/en-id/stories/newsroom/tiketcom-luncurkan-halo-tiket' }), makeQuote('Impact', { text: 'create meaningful impact on the customer experience', source: 'Fiki Setiyono, Microsoft ASEAN', sourceUrl: 'https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/' })] },
     post121: { after: 3, quotes: [makeQuote('Force multiplier', { text: 'AI is a powerful force multiplier, but the judgment, relationships and accountability remain human, and that won’t change.', source: 'Steve Hasker, Thomson Reuters', sourceUrl: 'https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2026/' }), makeQuote('Capacity', { text: 'As customer expectations across legal, tax, and regulatory workflows evolve, we are focusing our capacity where it matters most to customers.', source: 'Thomson Reuters spokesperson via Reuters', sourceUrl: 'https://www.channelnewsasia.com/business/thomson-reuters-cut-small-number-engineering-jobs-6251961' })] },
     post120: { after: 4, quotes: [makeQuote('Deploy', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Teams', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post119: { after: 3, quotes: [makeQuote('Lead time', { text: 'it takes more than five years to develop the technology and product, prepare the capacity, and ramp it up to high-volume production.', source: 'TSMC Q2 2026 transcript', sourceUrl: 'https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf' }), makeQuote('Scale', { text: 'largest foreign direct investment in U.S. history', source: 'NIST', sourceUrl: 'https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor' })] },

@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post122: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'The refund queue is where tiket.com tested AI',
+    category: 'Travel Tech', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Bellingham_International_Airport%2C_passenger_terminal%2C_June_2012.jpg',
+    body: `
+      <p>Travel rarely breaks at the gate. It breaks when somebody needs a refund, a rebook, or a straight answer and gets a queue instead.</p>
+
+      <p>That is the part tiket.com is trying to fix. Microsoft says the Indonesian travel platform's CRATER assistant now handles more than 75,000 customer interactions a month, while halo tiket automates 87% of inquiries. tiket.com says the new setup reduces handling time and gives the support team more room for the messy cases that still need a person.</p>
+
+      <p>Gaery Undarsa, co-founder and chief marketing officer at tiket.com, put the point in plain English: <a href="https://www.tiket.com/en-id/stories/newsroom/tiketcom-luncurkan-halo-tiket" target="_blank" rel="noopener noreferrer">"In travel, every minute matters."</a> That is not a slogan. It is the operating rule for refunds, reschedules, missed connections, and the kind of trip problem nobody planned for.</p>
+
+      <p>The company was already saying that halo tiket should be fast and bounded. In its own launch note, tiket.com said customers could get instant solutions and have each issue resolved within one hour. The current Microsoft write-up adds the part that matters more now: CRATER is built on Microsoft Foundry, uses AutoGen for multi-agent orchestration, and applies guardrails across production interactions. That is the difference between a chatbot and a support system.</p>
+
+      <p>That also fits the way tiket.com presents the service on its own site. The company still puts chat, email, and call center details right in front of customers, which is a good sign. The AI is not replacing the support surface. It is getting inserted into it. That is the right order for a travel business. Nobody wants a new way to be ignored. They want a shorter path to the same answer.</p>
+
+      <h2>The hard part is the handoff</h2>
+
+      <p>This is where the story gets interesting. The value is not in letting a model chat about travel. The value is in connecting the chat to bookings, payments, refunds, and the rules that decide what can happen next. When that part works, the answer is actionable. When it does not, the customer gets a prettier dead end.</p>
+
+      <p>That is also why the people piece matters. tiket.com said halo tiket was built through cross-functional work across customer service, customer experience, product, technology, design, and data science. Microsoft framed the collaboration the same way, saying the goal is to <a href="https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/" target="_blank" rel="noopener noreferrer">"create meaningful impact on the customer experience."</a> That is the real shift. Support stops being the place where work piles up and starts being part of how the product earns trust.</p>
+
+      <p>Irvan Bastian Arief, tiket.com's vice president of data and AI, said the company is using Microsoft Azure to introduce a way for customers to personalize travel services with <a href="https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/" target="_blank" rel="noopener noreferrer">"greater speed, convenience, and seamless connectivity throughout every step of their journey."</a> That line matters because it puts the AI effort inside the travel flow instead of outside it. The customer should feel the fix, not the model.</p>
+
+      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first answer is easy, but the second step is where context either survives or gets lost. In a travel business, that context is the booking record, the refund status, the support history, and the rule that keeps the whole thing from turning into a back-and-forth loop.</p>
+
+      <p>The number mix matters too. 75,000 monthly interactions and 87% automation sound like efficiency wins, but they only work if the remaining cases get handled better, not worse. A refund that needs human review can still burn goodwill if the AI layer makes the customer repeat the story before a person ever sees it. In travel, the real test is not how many requests the model absorbs. It is whether the handoff to a human feels shorter, cleaner, and less annoying than the old queue.</p>
+
+      <p>The good part is that this is not a shiny demo problem. It is a bad-day problem. Flights change. Payments fail. Plans get rewritten. If AI can take pressure off the queue when the trip goes sideways, it is doing useful work. If it cannot, nobody is going to remember the model name. They will remember the wait.</p>
+
+      <p>If tiket.com keeps that loop tight, the customer never has to care what CRATER or halo tiket is called. They just notice that the refund lands, the booking updates, and the trip keeps moving. In travel, that is the whole business.</p>
+    `
+  },
   post121: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3462,6 +3496,7 @@ POST_ORDER.unshift('post119');
 POST_ORDER.unshift('post118');
 POST_ORDER.unshift('post120');
 POST_ORDER.unshift('post121');
+POST_ORDER.unshift('post122');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
