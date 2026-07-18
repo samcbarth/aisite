@@ -7,6 +7,36 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post119: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'TSMC put a price on lead time',
+    category: 'Semiconductors', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post119-hero.jpg',
+    body: `
+      <p>Four more fabs. One more $100 billion. TSMC's Arizona announcement is now a $265 billion commitment, and the number that matters is not the headline total. It is the amount of time the company is buying. TSMC said it will add four more advanced semiconductor manufacturing facilities in Arizona, plus advanced packaging, to support demand from U.S. customers. That is a capex story, yes. It is also a calendar story.</p>
+
+      <p>TSMC's own transcript says the company is working from a simple reality: <a href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf" target="_blank" rel="noopener noreferrer">"it takes more than five years to develop the technology and product, prepare the capacity, and ramp it up to high-volume production."</a> That line explains why the company keeps talking about multi-year demand instead of quarter-to-quarter excitement. You cannot scale leading-edge chips on the same timeline as a product launch. The fab is slower than the forecast.</p>
+
+      <h2>The slow part is the point</h2>
+
+      <p>The new Arizona money is aimed at 2-nanometer and below logic fabs, plus advanced packaging fabs. That matters because AI demand is no longer just a question of how many chips a company can order. It is a question of whether the whole stack can be assembled, packaged, and shipped fast enough to keep the roadmap alive. Packaging is not the flashy part of the conversation, but it is where a lot of the useful value sits when systems get dense, hot, and expensive.</p>
+
+      <p>TSMC is not pretending the U.S. buildout stands alone. The company also said it is building 13 leading-edge and advanced packaging fabs in Taiwan over the next several years. That is the real shape of the business. Arizona gives TSMC another geography, another customer base, and another way to absorb demand. Taiwan keeps doing the heavy lifting. The company is spreading the load instead of betting that one country can carry the whole thing.</p>
+
+      <p>AP reported that TSMC raised its 2026 capital spending plan to $60 billion to $64 billion, up from a previous $52 billion to $56 billion range, after posting record quarterly profit. AP also said TSMC now expects annual revenue growth above 40 percent, up from a prior forecast above 30 percent. That is what demand looks like when it stops being abstract. The boom is not just showing up in investor decks. It is showing up in actual budgets.</p>
+
+      <p>The U.S. government clearly wants to frame the move as industrial policy. NIST said the expansion brings TSMC's U.S. commitment to "$265 billion" and called it the <a href="https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor" target="_blank" rel="noopener noreferrer">"largest foreign direct investment in U.S. history."</a> That is a strong line, but it still misses the business logic underneath. TSMC is not building because a press release told it to. It is building because customers want supply, redundancy, and a place to put the next generation of capacity before the next generation of products ships.</p>
+
+      <h2>Geography still wins</h2>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once the work crosses a boundary, the rules have to cross with it. In TSMC's case the boundary is national, regulatory, and industrial all at once. If the advanced-node roadmap, the packaging line, the utility buildout, and the customer timetable do not line up, the money does not fix the schedule. It just makes the delay more expensive.</p>
+
+      <p>The useful reading of this story is not that Arizona replaces Taiwan. It is that TSMC is buying optionality because the AI buildout has made lead time scarce. The company can point to strong U.S. customer demand, a larger packaging footprint, and a bigger domestic manufacturing base. None of that removes the bottlenecks. It just changes where they land.</p>
+
+      <p>The headline is the extra $100 billion. The real number is the years it takes before that money turns into packaged silicon in a tray. TSMC has decided that lead time itself is worth paying for, and the rest of the industry is going to live with that choice.</p>
+    `
+  },
   post118: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3362,6 +3392,7 @@ POST_ORDER.unshift('post115');
 POST_ORDER.unshift('post114');
 POST_ORDER.unshift('post116');
 POST_ORDER.unshift('post117');
+POST_ORDER.unshift('post119');
 POST_ORDER.unshift('post118');
 
 if (typeof module !== 'undefined' && module.exports) {

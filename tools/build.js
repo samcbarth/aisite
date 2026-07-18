@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post119: {
+      image: 'assets/images/post119-inline.jpg',
+      caption: 'The expensive part is the time before the chips ship.',
+      side: 'left', after: 2,
+      supportImage: 'assets/images/post119-support.jpg',
+      supportCaption: 'Arizona adds another place to absorb demand, not a replacement for Taiwan.'
+    },
     post118: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Callcenter03.jpg',
       caption: 'The region choice lands in a real workspace, not a slide deck.',
@@ -1549,6 +1556,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post119: { after: 3, quotes: [makeQuote('Lead time', { text: 'it takes more than five years to develop the technology and product, prepare the capacity, and ramp it up to high-volume production.', source: 'TSMC Q2 2026 transcript', sourceUrl: 'https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf' }), makeQuote('Scale', { text: 'largest foreign direct investment in U.S. history', source: 'NIST', sourceUrl: 'https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor' })] },
     post118: { after: 3, quotes: [makeQuote('Automation', { text: 'Keep customers informed automatically', source: 'Amazon Connect Customer product page', sourceUrl: 'https://aws.amazon.com/products/connect/customer/outbound/' }), makeQuote('Boundary', { text: 'No other combinations are supported.', source: 'AWS docs', sourceUrl: 'https://docs.aws.amazon.com/connect/latest/adminguide/regions.html' })] },
     post117: { after: 4, quotes: [makeQuote('Better outcomes', { text: 'fundamentally rethink how AI can deliver better outcomes.', source: 'Prakash Arunkundrum, HP', sourceUrl: 'https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html' }), makeQuote('Operating layer', { text: 'AI becomes an operating layer.', source: 'Denise Dresser, OpenAI', sourceUrl: 'https://openai.com/index/hp-frontier-partnership/' })] },
     post116: { after: 3, quotes: [makeQuote('Deadline', { text: 'work better for users and worse for cyberattackers.', source: 'Microsoft Security Blog', sourceUrl: 'https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/' }), makeQuote('Exception', { text: 'legitimate business, regulatory, or technical need.', source: 'Microsoft Learn', sourceUrl: 'https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement' })] },

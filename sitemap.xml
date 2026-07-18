@@ -43,6 +43,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://samcbarth.github.io/aisite/posts/tsmc-put-a-price-on-lead-time/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>

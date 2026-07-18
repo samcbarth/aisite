@@ -6,7 +6,7 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 01:12:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 04:09:43 GMT</lastBuildDate>
     <item>
       <title>AWS put outbound campaigns on a map</title>
       <link>https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</link>
@@ -14,6 +14,14 @@
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
       <category>Cloud</category>
       <description>Cape Town is the useful clue. AWS just moved Amazon Connect Customer Outbound Campaigns into the Africa (Cape Town) Region, so SMS, WhatsApp, and email campaigns now have a very specific home on the map. The announcement says the feature is meant for service updates, promotional </description>
+    </item>
+    <item>
+      <title>TSMC put a price on lead time</title>
+      <link>https://samcbarth.github.io/aisite/posts/tsmc-put-a-price-on-lead-time/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tsmc-put-a-price-on-lead-time/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Semiconductors</category>
+      <description>Four more fabs. One more $100 billion. TSMC&apos;s Arizona announcement is now a $265 billion commitment, and the number that matters is not the headline total. It is the amount of time the company is buying. TSMC said it will add four more advanced semiconductor manufacturing facilit</description>
     </item>
     <item>
       <title>HP&apos;s OpenAI partnership started with 122 pull requests</title>
