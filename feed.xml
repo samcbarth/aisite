@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 04:09:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 07:10:08 GMT</lastBuildDate>
+    <item>
+      <title>The AI stack got a cable company</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-ai-stack-got-a-cable-company/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-stack-got-a-cable-company/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cloud</category>
+      <description>3M and Microsoft are not pretending this is only a software story. Microsoft says Azure will be the first announced hyperscale cloud provider to deploy 3M&apos;s Expanded Beam Optical technology, while 3M says it will use Microsoft&apos;s AI and digital platforms across customer service, f</description>
+    </item>
     <item>
       <title>AWS put outbound campaigns on a map</title>
       <link>https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</link>

@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post120: {
+      image: 'assets/images/post120-inline.jpg',
+      caption: 'The connector is the part that makes the deployment less fussy.',
+      side: 'right', after: 2,
+      supportImage: 'assets/images/post120-support.jpg',
+      supportCaption: 'The enterprise part still lives in a room full of people and machines.'
+    },
     post119: {
       image: 'assets/images/post119-inline.jpg',
       caption: 'The expensive part is the time before the chips ship.',
@@ -1556,6 +1563,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post120: { after: 4, quotes: [makeQuote('Deploy', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Teams', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post119: { after: 3, quotes: [makeQuote('Lead time', { text: 'it takes more than five years to develop the technology and product, prepare the capacity, and ramp it up to high-volume production.', source: 'TSMC Q2 2026 transcript', sourceUrl: 'https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf' }), makeQuote('Scale', { text: 'largest foreign direct investment in U.S. history', source: 'NIST', sourceUrl: 'https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor' })] },
     post118: { after: 3, quotes: [makeQuote('Automation', { text: 'Keep customers informed automatically', source: 'Amazon Connect Customer product page', sourceUrl: 'https://aws.amazon.com/products/connect/customer/outbound/' }), makeQuote('Boundary', { text: 'No other combinations are supported.', source: 'AWS docs', sourceUrl: 'https://docs.aws.amazon.com/connect/latest/adminguide/regions.html' })] },
     post117: { after: 4, quotes: [makeQuote('Better outcomes', { text: 'fundamentally rethink how AI can deliver better outcomes.', source: 'Prakash Arunkundrum, HP', sourceUrl: 'https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html' }), makeQuote('Operating layer', { text: 'AI becomes an operating layer.', source: 'Denise Dresser, OpenAI', sourceUrl: 'https://openai.com/index/hp-frontier-partnership/' })] },

@@ -7,6 +7,40 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post120: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'The AI stack got a cable company',
+    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post120-hero.jpg',
+    body: `
+      <p>3M and Microsoft are not pretending this is only a software story. Microsoft says Azure will be the first announced hyperscale cloud provider to deploy 3M's Expanded Beam Optical technology, while 3M says it will use Microsoft's AI and digital platforms across customer service, finance, sales, and marketing. That is a strange pairing on paper. It makes more sense once you look at the stack. One side is the physical path between racks. The other is the work inside the company.</p>
+
+      <p>The release from <a href="https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/" target="_blank" rel="noopener noreferrer">Microsoft</a> and the release from <a href="https://investors.3m.com/news-events/press-releases/detail/1937/3m-and-microsoft-announce-strategic-partnership-to-advance" target="_blank" rel="noopener noreferrer">3M</a> both use the same language about scale, resilience, and transformation. That is the tell. This is not a deal about brand alignment. It is a deal about two bottlenecks that usually get talked about separately. The network has to be easier to deploy. The business has to be easier to run.</p>
+
+      <h2>The connector is the point</h2>
+
+      <p>3M's EBO technology is designed to make fiber connections faster to install, more tolerant of contamination, and easier to maintain. In a normal product launch, that would read like a boring spec sheet. In an AI data center, it reads like labor, uptime, and schedule. Every extra cleaning step and inspection step slows the build. Every fragile connector becomes another place where the physical layer can drag on the software promise.</p>
+
+      <p>Cliff Henson, Microsoft's corporate vice president of cloud supply chain and engineering, put it plainly: "faster to deploy, more resilient and ready for the scale of AI." That sentence matters because it skips the usual cloud marketing and gets straight to the operational job. The part that decides whether the rack comes online on time is not the keynote. It is the install path.</p>
+
+      <p>Microsoft says its early use of EBO has already shown the potential to reduce network deployment timelines in certain environments and that the technology has performed well in live data center conditions where dust and routine handling are normal. That is the kind of detail that turns a partnership into procurement. If the connector survives real installation conditions, it stops being a novelty and becomes a standard.</p>
+
+      <p>That is also why 3M helping establish the EBO Multi-Source Agreement matters. Standards are where hardware turns into an ecosystem. The company is not only selling a part. It is trying to make a part common enough that hyperscalers and data center operators can build around it without treating every deployment like a custom science project.</p>
+
+      <h2>The enterprise half</h2>
+
+      <p>3M's own internal rollout is the mirror image. The company says Microsoft's AI and digital capabilities will be used across customer service, finance, sales, and marketing to simplify processes, improve decision-making, strengthen customer experiences, and raise employee productivity. The specific example is more useful than the headline. Microsoft Frontier Company is sending engineers to help 3M's Global Business Services team automate customer orders, with AI agents handling credit checks, delinquency assessments, system updates, human-in-the-loop controls, and a monitoring dashboard for approvals.</p>
+
+      <p>That is not a chatbot demo. It is an order-management workflow with guardrails. If the process works, the money shows up in faster cash flow, less manual effort, and fewer places where someone has to retype what the system already knows. That is where enterprise AI usually earns its keep, not in the first impressive answer, but in the second and third steps that keep the business moving.</p>
+
+      <p>Jon Van Wyck, 3M's chief strategy officer, said the collaboration will "accelerate growth, improve customer experiences and help our teams work more effectively." That is the right frame. The point is not to let AI sit on top of the company as another layer of noise. The point is to make the work inside the company faster to trust and easier to audit.</p>
+
+      <p>There is a useful contrast in that. On the cloud side, the problem is physical density and maintenance. On the enterprise side, the problem is handoff and control. The same partnership is trying to solve both. That is why the deal feels bigger than a product tie-up. It connects the hardware layer to the operating layer.</p>
+
+      <p>The useful reading is simple. 3M is trying to make the boring physical parts of AI infrastructure less painful, and Microsoft is trying to make the boring business parts of 3M less manual. If EBO actually helps Azure deploy faster, and if the customer-order workflow really shrinks the manual pile inside 3M, then the partnership will have done something rare. It will have made the cable path and the workflow path move in the same direction.</p>
+    `
+  },
   post119: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3394,6 +3428,7 @@ POST_ORDER.unshift('post116');
 POST_ORDER.unshift('post117');
 POST_ORDER.unshift('post119');
 POST_ORDER.unshift('post118');
+POST_ORDER.unshift('post120');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
