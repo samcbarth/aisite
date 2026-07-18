@@ -7,6 +7,38 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post121: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'Thomson Reuters is moving the AI bill into engineering',
+    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&h=675&fit=crop&q=80',
+    body: `
+      <p>500 roles on one side. More than 250 AI-native hires on the other. Thomson Reuters is telling the market where it wants the engineering center of gravity to move, and the Reuters-reported cut is the part that makes the shift visible. The company said it will eliminate a small number of engineering roles as it leans harder into AI, while also planning to hire more than 250 net-new engineering roles over the next two years.</p>
+
+      <p>That is not a clean shrink story. It is a reallocation story. The company is keeping the AI message and the staffing message in the same frame, which is smarter than pretending one has nothing to do with the other. Reuters quoted a company spokesperson saying, <a href="https://www.channelnewsasia.com/business/thomson-reuters-cut-small-number-engineering-jobs-6251961" target="_blank" rel="noopener noreferrer">"As customer expectations across legal, tax, and regulatory workflows evolve, we are focusing our capacity where it matters most to customers."</a> That is the whole move in one sentence: less broad engineering, more targeted capacity.</p>
+
+      <p>The other piece of the story is that Thomson Reuters has already spent the year saying AI is not a side project. Its <a href="https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2026/" target="_blank" rel="noopener noreferrer">Future of Professionals 2026</a> article says AI is becoming embedded in everyday professional work, but it is also exposing a widening gap between expectations and reality. The companion <a href="https://www.thomsonreuters.com/en/reports/2026-ai-in-professional-services-report" target="_blank" rel="noopener noreferrer">2026 AI in Professional Services Report</a> says the early adoption phase is over and the strategic phase has started. That is not marketing fluff. It is a map of where the company thinks the money is going.</p>
+
+      <h2>The report explains the cut</h2>
+
+      <p>The report says 74% of respondents use AI tools several times a week and 44% rely on them multiple times a day. So the issue is not whether people will use AI. They already do. The issue is whether the workflow gets better enough to justify the change. Thomson Reuters is basically saying the same thing in public and in private. Outside customers want AI in legal, tax, accounting, risk, fraud, and government work. Inside the company, that means the engineering mix has to change too.</p>
+
+      <p>Steve Hasker, Thomson Reuters' president and CEO, said, <a href="https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2026/" target="_blank" rel="noopener noreferrer">"AI is a powerful force multiplier, but the judgment, relationships and accountability remain human, and that won’t change."</a> That is the useful line here. It does not promise a magic shortcut. It says the company still has to build systems people trust, especially in the workflows where mistakes turn into legal or financial problems.</p>
+
+      <p>That is also why the staffing change feels different from the usual layoff headline. A company can cut a layer of general engineering and still add the people who know how to ship AI into regulated work. Those are not the same skill sets. Thomson Reuters is saying it wants more senior, AI-native engineers because the product now lives closer to judgment, traceability, and customer-specific workflow rules.</p>
+
+      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first AI win is easy to show, but the work only matters when the context survives the move into the operating system. Thomson Reuters sells to customers who will not accept a loose demo. Legal, tax, and regulatory teams want the answer, the source, the trail, and the control path. If the product cannot carry that baggage, the AI pitch falls apart fast.</p>
+
+      <h2>What the market should read</h2>
+
+      <p>The market usually treats AI staffing changes as a rough proxy for efficiency. Here, the better reading is narrower. Thomson Reuters is not just chasing cost cuts. It is trying to move engineering toward the part of the stack that changes customer outcomes. That means more attention on workflows, data, evaluation, and product decisions that survive real use, not just a demo.</p>
+
+      <p>That is why the Reuters quote matters more than the layoff count. The company is not saying, "AI replaces engineering." It is saying customer expectations changed, so the engineering budget has to follow the customer budget. If Thomson Reuters gets that right, the result will not look like a flashy AI launch. It will look like fewer dead ends in legal, tax, and regulatory work, and a product stack that fits the work better than the old one did.</p>
+
+      <p>In other words, the headline number is 500. The real story is where the next 250 people land, what they build, and whether the company can keep trust while it changes shape. In Thomson Reuters' business, that is not a side question. That is the business.</p>
+    `
+  },
   post120: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3429,6 +3461,7 @@ POST_ORDER.unshift('post117');
 POST_ORDER.unshift('post119');
 POST_ORDER.unshift('post118');
 POST_ORDER.unshift('post120');
+POST_ORDER.unshift('post121');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

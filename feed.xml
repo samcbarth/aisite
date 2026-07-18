@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 07:10:08 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 10:14:36 GMT</lastBuildDate>
+    <item>
+      <title>Thomson Reuters is moving the AI bill into engineering</title>
+      <link>https://samcbarth.github.io/aisite/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Adoption</category>
+      <description>500 roles on one side. More than 250 AI-native hires on the other. Thomson Reuters is telling the market where it wants the engineering center of gravity to move, and the Reuters-reported cut is the part that makes the shift visible. The company said it will eliminate a small num</description>
+    </item>
     <item>
       <title>The AI stack got a cable company</title>
       <link>https://samcbarth.github.io/aisite/posts/the-ai-stack-got-a-cable-company/</link>

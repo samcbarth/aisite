@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post121: {
+      image: 'https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=1200&h=675&fit=crop&q=80',
+      caption: 'The engineering team is where the AI bill lands first.',
+      side: 'right', after: 2,
+      supportImage: 'https://images.unsplash.com/photo-1515169067868-5387ec356754?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The report says the value gap opens when the work does not match the promise.'
+    },
     post120: {
       image: 'assets/images/post120-inline.jpg',
       caption: 'The connector is the part that makes the deployment less fussy.',
@@ -1563,6 +1570,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post121: { after: 3, quotes: [makeQuote('Force multiplier', { text: 'AI is a powerful force multiplier, but the judgment, relationships and accountability remain human, and that won’t change.', source: 'Steve Hasker, Thomson Reuters', sourceUrl: 'https://www.thomsonreuters.com/en-us/posts/technology/future-of-professionals-2026/' }), makeQuote('Capacity', { text: 'As customer expectations across legal, tax, and regulatory workflows evolve, we are focusing our capacity where it matters most to customers.', source: 'Thomson Reuters spokesperson via Reuters', sourceUrl: 'https://www.channelnewsasia.com/business/thomson-reuters-cut-small-number-engineering-jobs-6251961' })] },
     post120: { after: 4, quotes: [makeQuote('Deploy', { text: 'faster to deploy, more resilient and ready for the scale of AI', source: 'Cliff Henson, Microsoft', sourceUrl: 'https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/' }), makeQuote('Teams', { text: 'accelerate growth, improve customer experiences and help our teams work more effectively', source: 'Jon Van Wyck, 3M', sourceUrl: 'https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation' })] },
     post119: { after: 3, quotes: [makeQuote('Lead time', { text: 'it takes more than five years to develop the technology and product, prepare the capacity, and ramp it up to high-volume production.', source: 'TSMC Q2 2026 transcript', sourceUrl: 'https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf' }), makeQuote('Scale', { text: 'largest foreign direct investment in U.S. history', source: 'NIST', sourceUrl: 'https://www.nist.gov/news-events/news/2026/07/trump-administration-secures-additional-100-billion-us-semiconductor' })] },
     post118: { after: 3, quotes: [makeQuote('Automation', { text: 'Keep customers informed automatically', source: 'Amazon Connect Customer product page', sourceUrl: 'https://aws.amazon.com/products/connect/customer/outbound/' }), makeQuote('Boundary', { text: 'No other combinations are supported.', source: 'AWS docs', sourceUrl: 'https://docs.aws.amazon.com/connect/latest/adminguide/regions.html' })] },
