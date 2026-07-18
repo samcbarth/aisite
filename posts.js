@@ -7,6 +7,48 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post124: {
+    featured: false,
+    date: 'July 18, 2026', iso: '2026-07-18',
+    title: 'Airbus made jurisdiction part of the cloud spec',
+    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post124-hero.jpg',
+    body: `
+      <p>Airbus gave cloud providers a test that went beyond uptime, scale, and price. It asked who could keep sensitive industrial data under European operational and legal control. Scaleway won.</p>
+
+      <p>The multi-year agreement covers selected applications used in aircraft design, engineering, manufacturing, and enterprise operations. <a href="https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/" target="_blank" rel="noopener noreferrer">Scaleway says</a> Airbus evaluated providers on technical capability, operational resilience, and legal safeguards, including protection from non-European extraterritorial laws. Reuters reported that the review covered more than 150 technical and legal requirements.</p>
+
+      <p>That last category changes the shape of a cloud purchase. Jurisdiction is no longer fine print for the lawyers to review after engineering picks a platform. For Airbus, it was part of the product specification.</p>
+
+      <h2>Seventy applications are the first flight</h2>
+
+      <p>The initial move is substantial without pretending the whole estate changes overnight. <a href="https://www.investing.com/news/stock-market-news/airbus-picks-iliads-scaleway-for-ai-defence-work-in-sovereignty-push-4794641" target="_blank" rel="noopener noreferrer">Reuters reported</a> that Airbus plans to migrate about 70 critical applications by the end of 2028. The broader program could reach as many as 900 applications over five to six years. The value of the contract was not disclosed.</p>
+
+      <p>That sequencing makes sense for an aerospace company. A design system, manufacturing application, or defence workload is not a generic web app that can be moved on a Friday and watched over the weekend. It has dependencies, certification concerns, intellectual property, and people whose work cannot stop because the cloud strategy changed.</p>
+
+      <p>Airbus is also keeping a multi-cloud model. That matters. Sovereignty here does not mean putting every workload in one European basket. It means matching each workload to the environment that fits its technical, operational, and regulatory risk. Some applications may stay where they are. The sensitive group gets a different boundary.</p>
+
+      <p>Catherine Jestin, Airbus executive vice president for digital, described the goal as a cloud environment that keeps critical data assets <a href="https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/" target="_blank" rel="noopener noreferrer">"shielded from foreign extraterritorial laws."</a> That is unusually specific language for a technology contract. It tells suppliers that the legal identity of the operator can matter as much as the location of the server.</p>
+
+      <h2>The Mistral connection makes the timing clearer</h2>
+
+      <p>This cloud decision follows Airbus signing a separate agreement with Mistral AI in May. <a href="https://www.airbus.com/en/newsroom/press-releases/2026-05-airbus-partners-with-mistral-ai-to-strengthen-the-use-of-artificial-intelligence-in-sovereign" target="_blank" rel="noopener noreferrer">Airbus said</a> that partnership could support technical-document production, engineering simulations, on-board systems, cyber investigations, and coding tools for military work. Those are useful applications, but they also touch the exact data a strategic manufacturer cannot afford to treat casually.</p>
+
+      <p>Scaleway already runs Mistral models on its infrastructure. Jestin told Reuters that this would let Airbus accelerate its AI approach. The cloud deal and the model deal are separate, but they fit together. One provides the intelligence layer. The other provides a European place to operate it.</p>
+
+      <p>That combination also shows why the sovereignty market is getting more concrete. A buyer does not need a vague promise that its data stays in Europe. It needs interoperable services, enough computing capacity, clear governance, continuity plans, and a legal structure that survives scrutiny. Damien Lucas, Scaleway's chief executive, said the infrastructure has to combine performance with <a href="https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/" target="_blank" rel="noopener noreferrer">"trust, openness and long-term control."</a></p>
+
+      <p>Long-term control is the difficult part. Cloud platforms become sticky because data, identity, security, and development practices grow around them. A sovereign option that cannot integrate with the rest of the estate only creates a new island. Airbus says Scaleway will connect to its existing technology ecosystem, which is a more meaningful promise than simply naming the country where the hardware sits.</p>
+
+      <h2>A purchasing rule other companies can copy</h2>
+
+      <p>Most companies do not build aircraft or military systems, but the buying method travels well. Decide which data and workflows are genuinely sensitive. Write jurisdiction, continuity, interoperability, and operating control into the requirements. Then make providers compete against the full list instead of letting legal risk arrive after the shortlist is finished.</p>
+
+      <p>That is especially useful for teams deciding where AI can touch customer, product, or company data. The work I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> starts with defining that boundary before the tool spreads through the workflow. Airbus has done the same thing at industrial scale. It did not ban outside clouds or declare one platform safe for everything. It separated the workloads that need another level of control.</p>
+
+      <p>The next proof will be quieter than the announcement. It will be application 12, application 38, and application 70 moving without slowing an engineering team or weakening a security boundary. If Airbus reaches that point by 2028, European cloud sovereignty will have moved from a policy phrase into the daily machinery of building aircraft.</p>
+    `
+  },
   post123: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3526,6 +3568,7 @@ POST_ORDER.unshift('post120');
 POST_ORDER.unshift('post121');
 POST_ORDER.unshift('post122');
 POST_ORDER.unshift('post123');
+POST_ORDER.unshift('post124');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
