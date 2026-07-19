@@ -6,7 +6,23 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 16:11:18 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 07:08:15 GMT</lastBuildDate>
+    <item>
+      <title>Amazon Leo found the missing half of satellite internet</title>
+      <link>https://samcbarth.github.io/aisite/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</guid>
+      <pubDate>Sun, 19 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Connectivity</category>
+      <description>The orbit is the easy part to photograph. The harder part is getting an antenna onto a farm, answering the phone when it stops working, and sending somebody back down the road to fix it. That is why Amazon Leo&apos;s South Africa deal matters. Amazon is supplying the low Earth orbit n</description>
+    </item>
+    <item>
+      <title>Airbus made jurisdiction part of the cloud spec</title>
+      <link>https://samcbarth.github.io/aisite/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</guid>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cloud</category>
+      <description>Airbus gave cloud providers a test that went beyond uptime, scale, and price. It asked who could keep sensitive industrial data under European operational and legal control. Scaleway won. The multi-year agreement covers selected applications used in aircraft design, engineering, </description>
+    </item>
     <item>
       <title>Kimi K3 came with a sunset clock</title>
       <link>https://samcbarth.github.io/aisite/posts/kimi-k3-came-with-a-sunset-clock/</link>

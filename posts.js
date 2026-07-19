@@ -7,6 +7,50 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post125: {
+    featured: false,
+    date: 'July 19, 2026', iso: '2026-07-19',
+    title: 'Amazon Leo found the missing half of satellite internet',
+    category: 'Connectivity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post125-hero.jpg',
+    body: `
+      <p>The orbit is the easy part to photograph. The harder part is getting an antenna onto a farm, answering the phone when it stops working, and sending somebody back down the road to fix it.</p>
+
+      <p>That is why Amazon Leo's South Africa deal matters. Amazon is supplying the low Earth orbit network. Herotel is turning it into a residential service called evry, with a commercial launch targeted for 2027. The satellite company gets reach. The local internet provider gets the customer.</p>
+
+      <p><a href="https://www.aboutamazon.com/news/amazon-leo/amazon-leo-south-africa-herotel-evry" target="_blank" rel="noopener noreferrer">Amazon says</a> this is Leo's first agreement of its kind in Africa. It is aimed at homes and small businesses beyond fiber and fixed wireless, especially farms, small towns, and communities where distance and low population density make terrestrial infrastructure expensive. No financial terms were disclosed, and Herotel has not published final prices or an exact launch date.</p>
+
+      <p>What it has published is a useful outline. The <a href="https://herotel.com/evry" target="_blank" rel="noopener noreferrer">evry waitlist</a> shows two planned tiers, Nano at up to 100 Mbps and Pro at up to 300 Mbps. Herotel says registration is free and carries no commitment. That makes this a market test before it becomes a network test. The company can see where demand clusters while Amazon keeps building coverage and capacity.</p>
+
+      <h2>The local map is the asset</h2>
+
+      <p>Herotel already serves more than 350,000 active customers across more than 550 towns. It has 120 local offices around the country. Those numbers matter more to this launch than the usual satellite count because they describe who can install, support, and repair the service.</p>
+
+      <p>Amazon says Leo has more than 390 satellites deployed and that they orbit about 590 kilometers above Earth. That lower orbit can cut latency compared with traditional geostationary satellites. It does not remove the work on the ground. A customer still needs equipment, a clear setup process, billing, support, and somebody accountable when the connection fails.</p>
+
+      <p>Herotel's own explanation is better than the big space pitch: <a href="https://herotel.com/evry" target="_blank" rel="noopener noreferrer">"Global technology, local people."</a> That is the operating model in four words. Amazon does not have to recreate a national field organization. Herotel does not have to launch a constellation. Each company brings the expensive piece it already knows how to run.</p>
+
+      <p>This is also where the story connects to the work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A new technology only becomes a real service when ownership stays clear from the first order through the ugly support case. In this deal, the split is unusually legible. Leo owns the sky layer. Herotel owns the customer layer. Evry is the product that has to make the two feel like one.</p>
+
+      <h2>South Africa changes the route to market</h2>
+
+      <p>The local structure matters for another reason. <a href="https://apnews.com/article/amazon-leo-satellite-internet-musk-starlink-efbf4c29189f6c87534b7bce4d781aaa" target="_blank" rel="noopener noreferrer">The Associated Press reports</a> that South Africa's communications rules include ownership requirements intended to expand Black participation in the economy. Starlink has not launched there and has argued with the government over those rules. Amazon is entering with a South African provider that already operates the licensed network and customer infrastructure.</p>
+
+      <p>That does not make the regulatory work disappear. South Africa's regulator, ICASA, has been developing a new satellite licensing framework and <a href="https://www.icasa.org.za/pages/satellite-licensing-framework-submissions" target="_blank" rel="noopener noreferrer">publishes submissions</a> from Amazon, SpaceX, local operators, broadcasters, and other interested groups. The market is still being shaped. But Amazon's commercial path is already practical: partner with the company that knows the towns, the rules, and the service calls.</p>
+
+      <p>Van Zyl Botha, Herotel's chief executive, said evry will reach customers that fiber and fixed wireless cannot serve, adding, <a href="https://www.aboutamazon.com/news/amazon-leo/amazon-leo-south-africa-herotel-evry" target="_blank" rel="noopener noreferrer">"It no longer matters where you live."</a> That is the promise. The hard part will be making it true at a price households and small businesses can keep paying after the launch offer is gone.</p>
+
+      <h2>Amazon is building two last miles</h2>
+
+      <p>The Herotel agreement is not Amazon's only route into the region. In February, Amazon announced a separate partnership with Vanu, a mobile network equipment company. That model uses Leo as backhaul for local cellular networks. The Herotel model takes satellite connectivity directly to a home or small business through a compact antenna.</p>
+
+      <p>Those are two different products built on the same constellation. One helps an operator extend a mobile network. The other gives a customer a fixed internet service where the ground network runs out. That is smart because rural connectivity is not one gap. Sometimes a town needs a tower. Sometimes a farm needs its own link.</p>
+
+      <p>Chris Weber, Amazon Leo's vice president for consumer and enterprise, made the dependency clear in the Vanu announcement: Amazon needs <a href="https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vanu-satellite-internet-connectivity-africa" target="_blank" rel="noopener noreferrer">"partners with boots on the ground."</a> Herotel is the residential version of that answer.</p>
+
+      <p>The next milestone is not another launch photo. It is the first stretch of ordinary weeks after evry goes live in 2027: antennas installed, invoices understood, weather handled, and support calls closed by people who know the road. If that part works, customers will not think much about the 590 kilometers above them. They will notice that the signal finally reaches the gate.</p>
+    `
+  },
   post124: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
@@ -3569,6 +3613,7 @@ POST_ORDER.unshift('post121');
 POST_ORDER.unshift('post122');
 POST_ORDER.unshift('post123');
 POST_ORDER.unshift('post124');
+POST_ORDER.unshift('post125');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
