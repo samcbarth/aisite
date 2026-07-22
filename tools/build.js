@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post126: {
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mass_Spectrometry_Laboratory_%2806410491%29_%285113272619%29.jpg/1280px-Mass_Spectrometry_Laboratory_%2806410491%29_%285113272619%29.jpg',
+      caption: 'The measurement has to happen while the process can still change.',
+      side: 'left', after: 3,
+      supportImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/CNMS_clean_room_%289068814602%29.jpg/1280px-CNMS_clean_room_%289068814602%29.jpg',
+      supportCaption: 'The sensor only matters if it survives qualification inside the fab.'
+    },
     post125: {
       image: 'assets/images/post125-inline.jpg',
       caption: 'The satellite network still meets a ground network at the customer.',
@@ -1598,6 +1605,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post126: { after: 4, quotes: [makeQuote('Inside the chamber', { text: 'in situ, molecular-level process control.', source: 'Atonarp ASTON product page', sourceUrl: 'https://atonarp.com/en/products/aston-impact/' }), makeQuote('Control loop', { text: 'advance real-time sensing and gas control', source: 'Prakash Murthy, Atonarp', sourceUrl: 'https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp' })] },
     post125: { after: 4, quotes: [makeQuote('Local model', { text: 'Global technology, local people.', source: 'Herotel', sourceUrl: 'https://herotel.com/evry' }), makeQuote('Ground work', { text: 'partners with boots on the ground', source: 'Chris Weber, Amazon Leo', sourceUrl: 'https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vanu-satellite-internet-connectivity-africa' })] },
     post124: { after: 4, quotes: [makeQuote('Legal control', { text: 'shielded from foreign extraterritorial laws', source: 'Catherine Jestin, Airbus', sourceUrl: 'https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/' }), makeQuote('Long view', { text: 'trust, openness and long-term control', source: 'Damien Lucas, Scaleway', sourceUrl: 'https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/' })] },
     post123: { after: 3, quotes: [makeQuote('Frontier', { text: 'The new frontier of intelligence.', source: 'Moonshot AI', sourceUrl: 'https://www.moonshot.ai/' }), makeQuote('Migration', { text: 'Please switch to a newer model as soon as possible.', source: 'Kimi API Platform', sourceUrl: 'https://platform.kimi.ai/docs/models' })] },

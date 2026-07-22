@@ -7,6 +7,48 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post126: {
+    featured: false,
+    date: 'July 22, 2026', iso: '2026-07-22',
+    title: 'Inside the chamber, a CHF 110 million bet',
+    category: 'Semiconductors', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Silicon_wafers.jpg/1280px-Silicon_wafers.jpg',
+    body: `
+      <p>A wafer sits inside a sealed process chamber. Gases arrive, plasma changes them, material lands or gets cut away, and the result can depend on molecules nobody outside the chamber can see. By the time a later inspection finds the problem, the expensive part has already happened.</p>
+
+      <p>That is the small, difficult space behind VAT Group's new deal. The Swiss vacuum-valve company agreed to pay about CHF 110 million in cash for Atonarp, a Japan-based maker of compact mass spectrometry sensors. The transaction is expected to close in the third quarter of 2026, subject to regulatory approval and other customary conditions.</p>
+
+      <p>VAT already controls the valves that manage vacuum and gas flow in semiconductor tools. Atonarp makes sensors that can identify what is happening in the chamber while the process is running. Put those together and VAT moves from controlling the environment to reading it.</p>
+
+      <h2>The monitor moves inside the process</h2>
+
+      <p>In semiconductor manufacturing, inspection often tells you what happened after a process step. Atonarp's pitch is different. Its ASTON platform samples the molecular activity inside the chamber and reports in real time. <a href="https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp" target="_blank" rel="noopener noreferrer">VAT says</a> the sensors capture precursors, byproducts, and plasma species, creating a process fingerprint that can feed advanced controls.</p>
+
+      <p><a href="https://atonarp.com/en/products/aston-impact/" target="_blank" rel="noopener noreferrer">Atonarp describes ASTON</a> as providing <a href="https://atonarp.com/en/products/aston-impact/" target="_blank" rel="noopener noreferrer">"in situ, molecular-level process control."</a> The important words are "in situ." The sensor is not waiting for a wafer to leave the tool. It is trying to see the gas reaction as it happens, when a control system may still be able to change the recipe or stop the step.</p>
+
+      <p>The need gets sharper below the 2-nanometer node. Smaller structures and more complex processes leave less room for drift. Atonarp said last year that current monitoring approaches can struggle with separating and quantifying the reactions inside the chamber. Its development work, supported through <a href="https://www.nedo.go.jp/news/press/AA5_101873.html" target="_blank" rel="noopener noreferrer">Japan's NEDO deep-tech program</a>, is aimed at a compact sensor plus AI-based analysis software for automated process control.</p>
+
+      <p>Atonarp founder and CEO Prakash Murthy called the end goal <a href="https://atonarp.com/en/p000811/" target="_blank" rel="noopener noreferrer">"the world's first manufacturing process recipe automation."</a> That is a large target, not a delivered result. But it explains why VAT wants the technology now. A valve can execute a command. A sensor that understands the chamber can help decide what that command should be.</p>
+
+      <h2>The same-day numbers explain the price</h2>
+
+      <p>VAT announced the acquisition alongside a record quarter. Its <a href="https://www.vatgroup.com/news/vat-media-release-on-half-year-2026-results" target="_blank" rel="noopener noreferrer">second-quarter order intake reached CHF 500 million</a>, up 102% from a year earlier. Its order backlog reached CHF 648 million, up 121%. The company said AI data-center investment is driving new advanced logic and memory capacity, and it now expects global wafer-fabrication-equipment spending around $145 billion in 2026.</p>
+
+      <p>That demand gives VAT a reason to buy across the tool instead of waiting for valve volume alone. The company says adjacent products represented about a quarter of its first-half specification wins. Atonarp adds another product that can sit close to the valve, the gas line, and the process-control loop.</p>
+
+      <p>This is the business logic I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: owning one useful step is good, but the larger opportunity often sits in the next decision. VAT already helps the tool move gas and maintain vacuum. If it can also supply the signal that tells the tool what is happening, it gains more value from the same customer, the same machine, and the same production problem.</p>
+
+      <p>The financing shows this is a focused expansion, not a loose experiment. VAT will use a CHF 110 million bilateral loan to buy all outstanding Atonarp shares. It says the companies will operate separately for the time being, and its third-quarter guidance excludes any Atonarp contribution. The purchase gives VAT the technology and the team. It does not instantly turn the sensor into a standard part of every customer tool.</p>
+
+      <h2>The proof has to survive the fab</h2>
+
+      <p>Semiconductor equipment is not forgiving. A sensor has to survive harsh gases, stay accurate, fit existing tool designs, and earn trust from manufacturers that measure downtime in very expensive minutes. Atonarp says ASTON uses a filament-free plasma ionization system and self-cleaning technology to keep working in those conditions. Those are meaningful design choices, but customer qualification will decide how much of the promise becomes revenue.</p>
+
+      <p>Murthy said the combination will <a href="https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp" target="_blank" rel="noopener noreferrer">"advance real-time sensing and gas control."</a> That pairing is the deal in six words. VAT is not buying another dashboard. It is buying a way to connect measurement with the hardware already changing pressure and flow.</p>
+
+      <p>The next important announcement will not be another acquisition number. It will be an ASTON sensor qualified inside a production tool, catching drift before a wafer leaves the chamber and giving the valve a better instruction. At sub-2nm, that invisible correction is where CHF 110 million either starts to look precise or starts to look expensive.</p>
+    `
+  },
   post125: {
     featured: false,
     date: 'July 19, 2026', iso: '2026-07-19',
@@ -3614,6 +3656,7 @@ POST_ORDER.unshift('post122');
 POST_ORDER.unshift('post123');
 POST_ORDER.unshift('post124');
 POST_ORDER.unshift('post125');
+POST_ORDER.unshift('post126');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
