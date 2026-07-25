@@ -7,6 +7,48 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post127: {
+    featured: false,
+    date: 'July 25, 2026', iso: '2026-07-25',
+    title: 'The prompt now has a Monday morning',
+    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post127-hero.jpg',
+    body: `
+      <p>Last year, Meta's chief product officer reportedly told employees to <a href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" target="_blank" rel="noopener noreferrer">"focus on entertainment" and "connection with friends"</a> instead of obsessing over productivity. This week, Meta AI learned how to show up on Monday morning whether or not you ask again.</p>
+
+      <p>That is a real turn. Meta's July 24 update gives its assistant recurring tasks, calendar access, research tools, slide creation, and the ability to keep a plan moving after the first prompt. A weekly meal plan can arrive on schedule. A restock alert can keep watching. A daily briefing can check the calendar and point out a double booking.</p>
+
+      <p>The feature list is not the interesting part by itself. The change is that a prompt no longer has to expire when the answer appears. Meta AI is moving from a conversation you start into a process that can start itself.</p>
+
+      <h2>A prompt used to expire</h2>
+
+      <p>Most chatbot use has a clean boundary. You ask, the model answers, and the session ends. Meta is removing that boundary for selected tasks. In its <a href="https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/" target="_blank" rel="noopener noreferrer">official announcement</a>, the company says Muse Spark 1.1 lets Meta AI make plans, work with connected email and calendar apps, create slides, and follow through from start to finish.</p>
+
+      <p>The company's clearest line is also the one with the biggest product consequence: <a href="https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/" target="_blank" rel="noopener noreferrer">"You only have to set up tasks with Meta AI once."</a> One instruction can now become a standing order. That puts the assistant closer to a lightweight operating system for personal work, even if the first examples are ordinary things like training plans, restaurant searches, and sneaker alerts.</p>
+
+      <p>Ordinary is useful here. Meta does not need every task to look like an autonomous agent running a company. It needs the assistant to become part of a weekly habit. A half-marathon plan that adjusts to your availability or a birthday dinner search that checks the calendar can do that more naturally than another blank chat box.</p>
+
+      <p><a href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" target="_blank" rel="noopener noreferrer">The Verge reports</a> that the new assistant is rolling out in select markets. Meta says the features are starting in the Meta AI app and on the web, with more countries and surfaces, including WhatsApp, coming in the following weeks. The limited launch matters. This is a product test, not universal availability.</p>
+
+      <h2>The reversal puts Meta's distribution to work</h2>
+
+      <p>The earlier entertainment position made sense for a company built around social feeds, creators, and messaging. The new update does not abandon that world. It turns it into context. Meta says research can draw from the web plus creators and communities on its apps. A kitchen renovation task can search Facebook Marketplace, learn a user's style, stay inside a budget, and return a mood board.</p>
+
+      <p>That is where this gets more interesting as a business move. The assistant can sit between an intention and a Meta property that might satisfy it. A request to furnish a room can become a Marketplace search. A recurring task can create another reason to open Meta AI. WhatsApp can eventually put the same loop inside a service people already check all day.</p>
+
+      <p>The Verge framed the update as a move toward the productivity territory already occupied by ChatGPT, Gemini, and Claude. Meta's advantage is not simply having another model. It is the number of places where the assistant can appear and the personal context those places can carry. Its risk is the same thing. Calendar, email, shopping preferences, messages, and recurring instructions make the product more useful only if people understand what is connected and what the assistant will do next.</p>
+
+      <p>This is the operating question I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: when a prompt becomes a recurring process, who owns the schedule, the connected data, and the correction? The automation is not finished because it ran once. It is finished when the next run is predictable enough that a person does not have to babysit it.</p>
+
+      <h2>The trust test arrives every morning</h2>
+
+      <p>Meta says users can steer a report, presentation, or plan while it is being made. It also points to Incognito chats for fully private conversations. Those are useful controls, but recurring work creates a different control problem. People need to know which tasks are still active, when they will run, which apps they can read, and how to stop them without hunting through a conversation from three weeks ago.</p>
+
+      <p>The announcement does not spend much time on that management layer. It sells the outcome: set up the task once and let Meta AI keep delivering. The appeal is obvious. The failure mode is just as obvious. A stale calendar briefing, an irrelevant shopping alert, or a meal plan that ignores a changed schedule gets annoying faster when it arrives automatically.</p>
+
+      <p>So Monday morning is the right test. If the briefing catches the double booking, explains what changed, and stays easy to correct, Meta AI will feel less like a chatbot and more like a dependable part of the week. If it needs the same prompt again, Meta has not created a standing order. It has created another notification with calendar access.</p>
+    `
+  },
   post126: {
     featured: false,
     date: 'July 22, 2026', iso: '2026-07-22',
@@ -3657,6 +3699,7 @@ POST_ORDER.unshift('post123');
 POST_ORDER.unshift('post124');
 POST_ORDER.unshift('post125');
 POST_ORDER.unshift('post126');
+POST_ORDER.unshift('post127');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

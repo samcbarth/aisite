@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post127: {
+      image: 'assets/images/post127-inline.jpg',
+      caption: 'The assistant becomes more useful when the connected context stays current.',
+      side: 'right', after: 3,
+      supportImage: 'assets/images/post127-support.jpg',
+      supportCaption: 'A dinner plan is simple until the calendar, restaurant, and people all have to agree.'
+    },
     post126: {
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mass_Spectrometry_Laboratory_%2806410491%29_%285113272619%29.jpg/1280px-Mass_Spectrometry_Laboratory_%2806410491%29_%285113272619%29.jpg',
       caption: 'The measurement has to happen while the process can still change.',
@@ -1605,6 +1612,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post127: { after: 4, quotes: [makeQuote('Standing order', { text: 'You only have to set up tasks with Meta AI once.', source: 'Meta Newsroom', sourceUrl: 'https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/' }), makeQuote('Earlier strategy', { text: 'focus on entertainment', source: 'Chris Cox via The Verge', sourceUrl: 'https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update' })] },
     post126: { after: 4, quotes: [makeQuote('Inside the chamber', { text: 'in situ, molecular-level process control.', source: 'Atonarp ASTON product page', sourceUrl: 'https://atonarp.com/en/products/aston-impact/' }), makeQuote('Control loop', { text: 'advance real-time sensing and gas control', source: 'Prakash Murthy, Atonarp', sourceUrl: 'https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp' })] },
     post125: { after: 4, quotes: [makeQuote('Local model', { text: 'Global technology, local people.', source: 'Herotel', sourceUrl: 'https://herotel.com/evry' }), makeQuote('Ground work', { text: 'partners with boots on the ground', source: 'Chris Weber, Amazon Leo', sourceUrl: 'https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vanu-satellite-internet-connectivity-africa' })] },
     post124: { after: 4, quotes: [makeQuote('Legal control', { text: 'shielded from foreign extraterritorial laws', source: 'Catherine Jestin, Airbus', sourceUrl: 'https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/' }), makeQuote('Long view', { text: 'trust, openness and long-term control', source: 'Damien Lucas, Scaleway', sourceUrl: 'https://www.scaleway.com/en/news/scaleway-secures-european-trusted-cloud-services-contract-with-airbus/' })] },

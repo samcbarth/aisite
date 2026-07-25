@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 07:04:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 20:57:58 GMT</lastBuildDate>
+    <item>
+      <title>The prompt now has a Monday morning</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-prompt-now-has-a-monday-morning/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-prompt-now-has-a-monday-morning/</guid>
+      <pubDate>Sat, 25 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Adoption</category>
+      <description>Last year, Meta&apos;s chief product officer reportedly told employees to &quot;focus on entertainment&quot; and &quot;connection with friends&quot; instead of obsessing over productivity. This week, Meta AI learned how to show up on Monday morning whether or not you ask again. That is a real turn. Meta&apos;</description>
+    </item>
     <item>
       <title>Inside the chamber, a CHF 110 million bet</title>
       <link>https://samcbarth.github.io/aisite/posts/inside-the-chamber-a-chf-110-million-bet/</link>
