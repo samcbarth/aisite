@@ -7,6 +7,58 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post128: {
+    featured: false,
+    date: 'July 26, 2026', iso: '2026-07-26',
+    title: 'One AI answer now runs on two machines',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post128-hero.jpg',
+    body: `
+      <p>Reading a long prompt and writing the next token happen inside the same AI response. They are different computing jobs. AMD and Cerebras are now betting the economics improve when those jobs stop sharing the same machine.</p>
+
+      <p>The companies announced a technical partnership on July 23 that joins AMD Helios rack-scale systems with the Cerebras Wafer-Scale Engine in one inference workflow. Helios will process prompts and large context windows. Cerebras hardware will handle the decode stage, where the model generates the response token by token.</p>
+
+      <p>That split is called disaggregated inference. The term sounds like an architecture diagram, but the business idea is straightforward: stop making one expensive system compromise between two workloads with different needs.</p>
+
+      <h2>First, fill the context</h2>
+
+      <p>Before a model can answer, it has to read what you gave it. That can include a short question, a large codebase, a stack of documents, or the growing history of an agentic task. This first stage is usually called prefill. It rewards throughput because the system has to process a lot of input in parallel.</p>
+
+      <p>AMD is assigning that work to Helios. The company says the rack-scale platform will act as the high-throughput prompt engine, using Instinct GPUs to process complex requests and long context windows. AMD's <a href="https://www.amd.com/en/corporate/events/advancing-ai.html" target="_blank" rel="noopener noreferrer">Advancing AI page</a> describes the combined system as <a href="https://www.amd.com/en/corporate/events/advancing-ai.html" target="_blank" rel="noopener noreferrer">"high-performance prompt prefill with ultra-fast token generation."</a></p>
+
+      <p>The distinction matters more as AI products carry more context. A coding assistant may need to scan a repository before changing one function. A research agent may need to compare dozens of sources before it writes a paragraph. A live support agent may need the customer record, policy library, and conversation history before it can make a useful next move.</p>
+
+      <p>In each case, the visible answer is only the second half of the work. The first half is loading enough context to make that answer worth reading.</p>
+
+      <h2>Then, remove the pause</h2>
+
+      <p>Once the prompt is processed, the workload changes. The model generates tokens in sequence, and the user feels every delay. That decode stage leans heavily on memory bandwidth and low latency. Cerebras is assigning it to its Wafer-Scale Engine, a processor built as one very large piece of silicon instead of a cluster of conventional chips.</p>
+
+      <p>Cerebras CEO Andrew Feldman said the deal gives the company a way to bring its low-latency performance to more customers. His exact line was, <a href="https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution" target="_blank" rel="noopener noreferrer">"Partnering with AMD gives us an incredible opportunity to bring that performance to even more customers."</a></p>
+
+      <p>That customer language is important. Cerebras plans to install Helios systems in its own data centers and offer the joint service first through Cerebras Cloud in the second half of 2026. This is not a promise that buyers can order a finished rack today. It is a plan to turn two hardware stacks into one cloud product.</p>
+
+      <p>AMD CEO Lisa Su framed the same decision from the workload side. AI inference is growing, she said, and <a href="https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution" target="_blank" rel="noopener noreferrer">"its growing diversity requires a more flexible approach."</a> That is the larger signal. The inference market is getting big enough to specialize.</p>
+
+      <h2>The 5x claim is still a model</h2>
+
+      <p>AMD and Cerebras say the combined engines are expected to deliver up to five times more tokens per second per watt. That is the headline performance number, and it needs its footnote.</p>
+
+      <p>The figure comes from July 2026 modeling by AMD Performance Labs and Cerebras. It compares Helios plus a Cerebras Wafer-Scale Engine with a Cerebras-only configuration while running the Kimi 2.6 one-trillion-parameter model at a comparable level of interactivity. It is not an independent benchmark of deployed customer traffic. It also does not compare the joint system with every competing platform.</p>
+
+      <p><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-and-cerebras-partner-on-low-latency-high-throughput-ai-inference-epyc-processors-in-helios-rack-scale-infrastructure-paired-with-cerebras-wafer-scale-engine-wse-solutions" target="_blank" rel="noopener noreferrer">Tom's Hardware noted</a> that the companies have not disclosed how the systems will be interconnected or provided additional performance data. That missing detail is not small. Moving a live inference job between racks creates a handoff, and the speed, reliability, and cost of that handoff decide whether specialization helps or simply relocates the bottleneck.</p>
+
+      <p>This is where the story connects to the operating work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Splitting work between specialists can improve the result, but only when ownership of the transition is clear. The customer should not have to understand which machine read the context and which machine wrote the answer. The platform has to route the job, preserve its state, surface failures, and bill it as one service.</p>
+
+      <h2>The handoff is the product</h2>
+
+      <p>AMD gets another route for Helios into production inference. Cerebras gets a high-throughput front end and more scale for its cloud. Both get to argue that AI infrastructure does not have to be one vendor's rack doing every part of the job.</p>
+
+      <p>There is also a competitive point here. AI hardware has usually been sold as a complete platform with one software stack, one networking story, and one set of accelerators. AMD and Cerebras are proposing a more modular answer. If it works, customers can choose different engines for different stages without building the integration themselves.</p>
+
+      <p>The first real proof will arrive when Cerebras Cloud exposes the joint service. Watch the measured time to first token, the speed of the rest of the response, the power cost, and what happens when one side of the workflow slows down. If those numbers hold under customer traffic, two machines will feel like one fast answer. If the handoff shows up as delay or complexity, the architecture will have split the hardware more cleanly than it split the problem.</p>
+    `
+  },
   post127: {
     featured: false,
     date: 'July 25, 2026', iso: '2026-07-25',
@@ -3700,6 +3752,7 @@ POST_ORDER.unshift('post124');
 POST_ORDER.unshift('post125');
 POST_ORDER.unshift('post126');
 POST_ORDER.unshift('post127');
+POST_ORDER.unshift('post128');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

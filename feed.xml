@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 20:57:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 07:07:22 GMT</lastBuildDate>
+    <item>
+      <title>One AI answer now runs on two machines</title>
+      <link>https://samcbarth.github.io/aisite/posts/one-ai-answer-now-runs-on-two-machines/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/one-ai-answer-now-runs-on-two-machines/</guid>
+      <pubDate>Sun, 26 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>Reading a long prompt and writing the next token happen inside the same AI response. They are different computing jobs. AMD and Cerebras are now betting the economics improve when those jobs stop sharing the same machine. The companies announced a technical partnership on July 23</description>
+    </item>
     <item>
       <title>The prompt now has a Monday morning</title>
       <link>https://samcbarth.github.io/aisite/posts/the-prompt-now-has-a-monday-morning/</link>

@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post128: {
+      image: 'assets/images/post128-inline.jpg',
+      caption: 'The first stage has to absorb the prompt and its full working context.',
+      side: 'left', after: 4,
+      supportImage: 'assets/images/post128-support.jpg',
+      supportCaption: 'Specialized chips only help when the workflow crosses between them cleanly.'
+    },
     post127: {
       image: 'assets/images/post127-inline.jpg',
       caption: 'The assistant becomes more useful when the connected context stays current.',
@@ -1612,6 +1619,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post128: { after: 4, quotes: [makeQuote('Customer reach', { text: 'Partnering with AMD gives us an incredible opportunity to bring that performance to even more customers.', source: 'Andrew Feldman, Cerebras', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' }), makeQuote('Workload mix', { text: 'its growing diversity requires a more flexible approach', source: 'Lisa Su, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' })] },
     post127: { after: 4, quotes: [makeQuote('Standing order', { text: 'You only have to set up tasks with Meta AI once.', source: 'Meta Newsroom', sourceUrl: 'https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/' }), makeQuote('Earlier strategy', { text: 'focus on entertainment', source: 'Chris Cox via The Verge', sourceUrl: 'https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update' })] },
     post126: { after: 4, quotes: [makeQuote('Inside the chamber', { text: 'in situ, molecular-level process control.', source: 'Atonarp ASTON product page', sourceUrl: 'https://atonarp.com/en/products/aston-impact/' }), makeQuote('Control loop', { text: 'advance real-time sensing and gas control', source: 'Prakash Murthy, Atonarp', sourceUrl: 'https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp' })] },
     post125: { after: 4, quotes: [makeQuote('Local model', { text: 'Global technology, local people.', source: 'Herotel', sourceUrl: 'https://herotel.com/evry' }), makeQuote('Ground work', { text: 'partners with boots on the ground', source: 'Chris Weber, Amazon Leo', sourceUrl: 'https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vanu-satellite-internet-connectivity-africa' })] },
