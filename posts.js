@@ -7,6 +7,54 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post129: {
+    featured: false,
+    date: 'July 27, 2026', iso: '2026-07-27',
+    title: 'NVIDIA-SK: memory now, cloud in 2027, contracts still forming',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post129-hero.jpg',
+    body: `
+      <p>The press release puts $500 billion at the top. The legal verb is lower down: NVIDIA and SK Group signed letters of intent.</p>
+
+      <p>That difference matters. The companies announced a $500-billion-plus initiative on July 24 covering an AI cloud, NVIDIA systems, SK hynix memory, and future infrastructure. It is a serious statement of direction between companies that already depend on each other. It is not one completed purchase with one delivery date and one buyer writing the check.</p>
+
+      <p>The useful way to read this announcement is by its clocks. The memory work is already underway. The first AI factory is planned for 2027. The larger cloud build stretches beyond that. Final contracts still have to turn the letters of intent into orders, supply commitments, sites, power, and paying customers.</p>
+
+      <h2>1. The cloud starts with a 2027 promise</h2>
+
+      <p><a href="https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx" target="_blank" rel="noopener noreferrer">NVIDIA says</a> SK Telecom plans to build an AI factory of up to 2 gigawatts using its DSX architecture and Vera Rubin accelerated computing. SK hynix HBM4 will sit inside that system. The first facility is planned to come online in 2027.</p>
+
+      <p>That is the clearest delivery point in the announcement. Even then, the release does not name the first site's capacity, construction cost, customer commitments, or the amount of the $500 billion attached to it. <a href="https://www.investing.com/news/stock-market-news/nvidia-sk-group-unveil-500-billionplus-ai-data-centers-initiative-memory-partnership-4812652" target="_blank" rel="noopener noreferrer">Reuters confirmed</a> the same disclosed pieces: a 2-gigawatt data center, Vera Rubin chips, HBM4, and a 2027 start. It did not report a more detailed spending schedule because the companies did not provide one.</p>
+
+      <p>The 2-gigawatt figure also sits inside a larger SK Telecom plan. Earlier in July, <a href="https://news.sktelecom.com/227469" target="_blank" rel="noopener noreferrer">SK Telecom said</a> it wants to pursue up to 15 gigawatts of AI data center capacity by 2035, with 5 gigawatts opening in stages from 2029. Its own list of unresolved work includes sites, power supply, and anchor tenants. Those are not side details. They decide whether a capacity target becomes a functioning cloud.</p>
+
+      <h2>2. The memory clock started first</h2>
+
+      <p>The SK hynix part is further along. In June, the memory maker and NVIDIA announced a multi-year technology partnership to co-develop next-generation memory and align supply with NVIDIA's infrastructure roadmap. The companies said the agreement addresses long development cycles, advanced fabrication, and the capital needed to keep memory supply moving with AI factory demand.</p>
+
+      <p><a href="https://news.skhynix.com/en/multi-year-tech-partnership-with-nvidia/" target="_blank" rel="noopener noreferrer">SK hynix described</a> work across HBM for Vera Rubin systems, memory for Vera CPUs, personal AI computers, and robotics platforms. It also plans to use NVIDIA software for chip design, semiconductor simulation, and factory digital twins.</p>
+
+      <p>This makes the new initiative more complicated than a normal vendor sale. SK Telecom is a buyer of NVIDIA systems. NVIDIA is a buyer and co-developer of SK hynix memory. SK Group is also building the facilities where both companies' products will run. Money, equipment, and technical dependence move in both directions.</p>
+
+      <p>That circular structure can be useful. NVIDIA gets a longer view of HBM supply. SK hynix gets a longer view of NVIDIA's product roadmap. SK Telecom gets an integrated hardware stack to sell as cloud capacity. It also makes the headline number harder to read because the same umbrella includes purchases, supply, construction, and potential future expansion.</p>
+
+      <h2>3. The $500 billion is an umbrella</h2>
+
+      <p><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories" target="_blank" rel="noopener noreferrer">Tom's Hardware summarized the announcement</a> in seven accurate words: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories" target="_blank" rel="noopener noreferrer">"A lot of money, little to no details."</a> Its analysis treats the figure as the expected value of several years of commercial activity, not a single transaction. That is the sensible reading based on what the companies disclosed.</p>
+
+      <p>No public breakdown shows how much belongs to NVIDIA equipment, SK hynix memory, data center construction, networking, cooling, power, or later projects. No single term tells us how much is firmly contracted today. The announcement uses "plans," "aim," and "will" across projects with different maturity levels.</p>
+
+      <p>This is the operating distinction behind the work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: announced scope, contracted scope, installed capacity, and live service are different states. A large program becomes easier to judge when each dependency has an owner, a date, and a definition of done. One giant number can hide all three.</p>
+
+      <h2>4. The dependencies now have to move together</h2>
+
+      <p>SK Group Chairman Chey Tae-won said <a href="https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx" target="_blank" rel="noopener noreferrer">"competitiveness depends not just on how effectively AI is utilized, but on how much intelligence we can produce."</a> That explains the scale. SK wants to sell the memory, run the infrastructure, and make South Korea a place where global AI workloads are produced.</p>
+
+      <p>Production is the hard word. A 2-gigawatt system needs more than chips. It needs transmission capacity, substations, cooling, construction, network links, software, permits, and enough steady demand to keep the racks earning money. The first facility also has to arrive while Vera Rubin and HBM4 are ramping, which ties the cloud schedule directly to the semiconductor schedule.</p>
+
+      <p>The deal becomes real in a less dramatic order: HBM4 ships, a DSX hall gets power, the cloud service opens, and a customer pays for it. That sequence matters more than the half-trillion-dollar banner. NVIDIA and SK have named the size of the relationship. Now the memory, construction, power, and customer clocks all have to keep time.</p>
+    `
+  },
   post128: {
     featured: false,
     date: 'July 26, 2026', iso: '2026-07-26',
@@ -3753,6 +3801,7 @@ POST_ORDER.unshift('post125');
 POST_ORDER.unshift('post126');
 POST_ORDER.unshift('post127');
 POST_ORDER.unshift('post128');
+POST_ORDER.unshift('post129');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2026 07:07:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 07:08:16 GMT</lastBuildDate>
+    <item>
+      <title>NVIDIA-SK: memory now, cloud in 2027, contracts still forming</title>
+      <link>https://samcbarth.github.io/aisite/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</guid>
+      <pubDate>Mon, 27 Jul 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>The press release puts $500 billion at the top. The legal verb is lower down: NVIDIA and SK Group signed letters of intent. That difference matters. The companies announced a $500-billion-plus initiative on July 24 covering an AI cloud, NVIDIA systems, SK hynix memory, and future</description>
+    </item>
     <item>
       <title>One AI answer now runs on two machines</title>
       <link>https://samcbarth.github.io/aisite/posts/one-ai-answer-now-runs-on-two-machines/</link>

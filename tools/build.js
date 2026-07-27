@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post129: {
+      image: 'assets/images/post129-inline.jpg',
+      caption: 'The memory work begins before the first AI factory can open.',
+      side: 'right', after: 4,
+      supportImage: 'assets/images/post129-support.jpg',
+      supportCaption: 'A cloud target becomes a service only after the racks, power, and customers arrive together.'
+    },
     post128: {
       image: 'assets/images/post128-inline.jpg',
       caption: 'The first stage has to absorb the prompt and its full working context.',
@@ -1619,6 +1626,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post129: { after: 4, quotes: [makeQuote('Scale', { text: 'competitiveness depends not just on how effectively AI is utilized, but on how much intelligence we can produce.', source: 'Chey Tae-won, SK Group', sourceUrl: 'https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx' }), makeQuote('Disclosure', { text: 'A lot of money, little to no details.', source: 'Tom’s Hardware', sourceUrl: 'https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories' })] },
     post128: { after: 4, quotes: [makeQuote('Customer reach', { text: 'Partnering with AMD gives us an incredible opportunity to bring that performance to even more customers.', source: 'Andrew Feldman, Cerebras', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' }), makeQuote('Workload mix', { text: 'its growing diversity requires a more flexible approach', source: 'Lisa Su, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' })] },
     post127: { after: 4, quotes: [makeQuote('Standing order', { text: 'You only have to set up tasks with Meta AI once.', source: 'Meta Newsroom', sourceUrl: 'https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/' }), makeQuote('Earlier strategy', { text: 'focus on entertainment', source: 'Chris Cox via The Verge', sourceUrl: 'https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update' })] },
     post126: { after: 4, quotes: [makeQuote('Inside the chamber', { text: 'in situ, molecular-level process control.', source: 'Atonarp ASTON product page', sourceUrl: 'https://atonarp.com/en/products/aston-impact/' }), makeQuote('Control loop', { text: 'advance real-time sensing and gas control', source: 'Prakash Murthy, Atonarp', sourceUrl: 'https://www.vatgroup.com/news/vat-media-release-on-acquisition-of-atonarp' })] },
