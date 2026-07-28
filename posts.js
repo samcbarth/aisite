@@ -7,6 +7,58 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post130: {
+    featured: false,
+    date: 'July 28, 2026', iso: '2026-07-28',
+    title: 'Red finds it. Blue checks it. Green changes it.',
+    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post130-hero.jpg',
+    body: `
+      <p>Red, blue, green. Microsoft’s new security system is easier to understand by who acts than by which model runs.</p>
+
+      <p>Red-team agents look for paths into a system. Blue-team agents investigate what they find and decide what matters. Green-team agents take corrective action. Microsoft calls the system Project Perception, and it is pairing that workflow with MAI-Cyber-1-Flash, its first specialized cybersecurity model.</p>
+
+      <p>The model launch will get attention because Microsoft says the combined MDASH system scored 96% on CyberGym while costing about half as much as its current configuration. The more important business decision sits after the score. Microsoft is trying to turn vulnerability discovery into a closed loop that can also prioritize, patch, and verify the fix.</p>
+
+      <h2>Red finds more than a scanner</h2>
+
+      <p>The red-team layer is meant to think like an attacker before an attacker arrives. According to <a href="https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/" target="_blank" rel="noopener noreferrer">Microsoft’s announcement</a>, these agents identify possible paths to compromise across identities, endpoints, applications, data, clouds, and AI systems. The goal is not another scheduled scan. It is continuous testing against a digital estate that keeps changing.</p>
+
+      <p>MAI-Cyber-1-Flash is built for the code-heavy part of that job. Microsoft says the compact model can handle up to 90% of MDASH tasks, while a larger model, currently GPT-5.4, takes the hardest 10%. That split is the cost story. An always-on security product cannot send every routine check to the biggest model and hope the token bill works out later.</p>
+
+      <p>The benchmark needs a boundary. <a href="https://arxiv.org/abs/2506.02548" target="_blank" rel="noopener noreferrer">The CyberGym research paper</a> describes 1,507 real-world vulnerabilities across 188 open-source projects. Its main task asks an agent to reproduce a known vulnerability by generating a proof-of-concept test from a description and the corresponding source repository. That is difficult and useful. It is not the same as proving that a product can safely run every security workflow inside a live company.</p>
+
+      <p>So 96% tells us Microsoft has built a strong system for this measured code task. It does not tell us how Perception handles a compromised identity, a strange cloud permission, or a business application where a technically correct change can still stop revenue.</p>
+
+      <h2>Blue has to reduce the pile</h2>
+
+      <p>Finding more weak points can make a security team busier instead of safer. Blue-team agents are supposed to prevent that. They pull in context, investigate the finding, and decide whether it represents meaningful risk.</p>
+
+      <p>This is where Microsoft’s installed base becomes part of the product. The company says it sees more than 100 trillion security signals every day and draws operational insight from 1.6 million customers. Perception is meant to turn those signals into a shared view of assets, identities, relationships, risks, and activity so each agent does not have to rebuild the case from raw logs.</p>
+
+      <p>The useful line in Microsoft’s post is blunt: <a href="https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/" target="_blank" rel="noopener noreferrer">“Security teams do not need more information. They need better outcomes.”</a> Blue owns the gap between those two things. A finding becomes useful only after somebody can explain what is exposed, how urgent it is, and what should happen next.</p>
+
+      <p>That also makes the data advantage harder for a competitor to copy than the model. Models can improve quickly. Decades of exploit history, customer signals, product integrations, and completed remediations take longer to assemble. Microsoft is selling that context as much as it is selling MAI-Cyber-1-Flash.</p>
+
+      <h2>Green is where trust gets expensive</h2>
+
+      <p>The green-team layer takes the proposed correction and acts. It can change posture, add detection, or produce a code fix. <a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> that Project Perception will enter <a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener noreferrer">“an increasingly crowded field of AI cybersecurity solutions”</a> that already includes competing work from Anthropic and OpenAI. The green layer is where those products have to become more than faster analysts.</p>
+
+      <p>A proposed patch is not the same as a safe production change. A system can close one exposure and break authentication, interrupt a checkout, or remove access from the wrong employee. The correction needs an owner, a test, an approval rule, an audit trail, and a rollback path.</p>
+
+      <p>This is the same operating line that matters in the automation work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The value is not that software can recommend a next step. The value comes when the handoff between recommendation and action is clear enough to run repeatedly without hiding who approved what.</p>
+
+      <p>Microsoft says Perception keeps humans in control and inherits role-based controls, tenant isolation, encryption, auditability, and sandboxed execution from MDASH. Those are the right ingredients. The product details that matter now are more specific: which green-team actions can run automatically, which require approval, how exceptions are handled, and how a customer sees the evidence before a change lands.</p>
+
+      <h2>The model is one layer of the bet</h2>
+
+      <p>Project Perception is scheduled to enter public preview on August 3. MAI-Cyber-1-Flash gives Microsoft a cheaper specialist for the high-volume code work. MDASH coordinates more than 100 agents. Perception connects those agents to the larger security environment and gives the red, blue, and green teams a common loop.</p>
+
+      <p>That stack is the real launch. A good cyber model can find the flaw. A useful security system has to decide whether the flaw matters, make the right change, and leave a record a human can defend later.</p>
+
+      <p>If Perception works, the green-team record should be boring: what changed, why it changed, who approved it, whether it worked, and how quickly it can be reversed. Microsoft can win a benchmark with red and blue. Trust will be won or lost in green.</p>
+    `
+  },
   post129: {
     featured: false,
     date: 'July 27, 2026', iso: '2026-07-27',
@@ -3802,6 +3854,7 @@ POST_ORDER.unshift('post126');
 POST_ORDER.unshift('post127');
 POST_ORDER.unshift('post128');
 POST_ORDER.unshift('post129');
+POST_ORDER.unshift('post130');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

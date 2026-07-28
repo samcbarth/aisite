@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post130: {
+      image: 'assets/images/post130-inline.jpg',
+      caption: 'Blue-team work decides which finding deserves a person’s attention.',
+      side: 'left', after: 4,
+      supportImage: 'assets/images/post130-support.jpg',
+      supportCaption: 'The agents still depend on the systems where signals, permissions, and fixes meet.'
+    },
     post129: {
       image: 'assets/images/post129-inline.jpg',
       caption: 'The memory work begins before the first AI factory can open.',
@@ -1626,6 +1633,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post130: { after: 4, quotes: [makeQuote('Outcome', { text: 'Security teams do not need more information. They need better outcomes.', source: 'Microsoft', sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/' }), makeQuote('Competition', { text: 'an increasingly crowded field of AI cybersecurity solutions', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/' })] },
     post129: { after: 4, quotes: [makeQuote('Scale', { text: 'competitiveness depends not just on how effectively AI is utilized, but on how much intelligence we can produce.', source: 'Chey Tae-won, SK Group', sourceUrl: 'https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx' }), makeQuote('Disclosure', { text: 'A lot of money, little to no details.', source: 'Tom’s Hardware', sourceUrl: 'https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories' })] },
     post128: { after: 4, quotes: [makeQuote('Customer reach', { text: 'Partnering with AMD gives us an incredible opportunity to bring that performance to even more customers.', source: 'Andrew Feldman, Cerebras', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' }), makeQuote('Workload mix', { text: 'its growing diversity requires a more flexible approach', source: 'Lisa Su, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' })] },
     post127: { after: 4, quotes: [makeQuote('Standing order', { text: 'You only have to set up tasks with Meta AI once.', source: 'Meta Newsroom', sourceUrl: 'https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/' }), makeQuote('Earlier strategy', { text: 'focus on entertainment', source: 'Chris Cox via The Verge', sourceUrl: 'https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update' })] },
