@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post131: {
+      image: 'assets/images/post131-inline.jpg',
+      caption: 'The voice is visible. The business process behind it carries the risk.',
+      side: 'right', after: 4,
+      supportImage: 'assets/images/post131-support.jpg',
+      supportCaption: 'Multilingual speech still needs one controlled procedure underneath it.'
+    },
     post130: {
       image: 'assets/images/post130-inline.jpg',
       caption: 'Blue-team work decides which finding deserves a person’s attention.',
@@ -1633,6 +1640,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post131: { after: 4, quotes: [makeQuote('Interface', { text: 'Voice is becoming a primary interface for how enterprises engage with customers and employees.', source: 'Raul Fernandez, DXC', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' }), makeQuote('Workflow', { text: 'mission-critical workflows', source: 'Ben Budde, ElevenLabs', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' })] },
     post130: { after: 4, quotes: [makeQuote('Outcome', { text: 'Security teams do not need more information. They need better outcomes.', source: 'Microsoft', sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/' }), makeQuote('Competition', { text: 'an increasingly crowded field of AI cybersecurity solutions', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/' })] },
     post129: { after: 4, quotes: [makeQuote('Scale', { text: 'competitiveness depends not just on how effectively AI is utilized, but on how much intelligence we can produce.', source: 'Chey Tae-won, SK Group', sourceUrl: 'https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx' }), makeQuote('Disclosure', { text: 'A lot of money, little to no details.', source: 'Tom’s Hardware', sourceUrl: 'https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories' })] },
     post128: { after: 4, quotes: [makeQuote('Customer reach', { text: 'Partnering with AMD gives us an incredible opportunity to bring that performance to even more customers.', source: 'Andrew Feldman, Cerebras', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' }), makeQuote('Workload mix', { text: 'its growing diversity requires a more flexible approach', source: 'Lisa Su, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution' })] },

@@ -7,6 +7,60 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post131: {
+    featured: false,
+    date: 'July 29, 2026', iso: '2026-07-29',
+    title: 'DXC put ElevenLabs on the earnings call first',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post131-hero.jpg',
+    body: `
+      <p>DXC’s new voice AI partnership did not begin with Tuesday’s press release. It began on DXC’s own earnings calls.</p>
+
+      <p>In May, CEO Raul Fernandez told investors that his prepared remarks had been delivered through a custom ElevenLabs voice model for the third quarter in a row. The same remarks went out in six languages at once. Two months later, DXC announced a strategic partnership with ElevenLabs and disclosed that it had invested in the voice AI company’s latest funding round.</p>
+
+      <p>That order matters. DXC used the technology inside a public, repeatable business process before turning it into a bigger client pitch. It gives us something more useful than a partnership logo: a small record of how DXC wants to adopt, package, and sell voice AI.</p>
+
+      <h2>The internal deployment came first</h2>
+
+      <p>The detail sits in <a href="https://s27.q4cdn.com/120381974/files/doc_financials/2026/q4/Transcript-DXC-Technology-Q4-2026.pdf" target="_blank" rel="noopener noreferrer">DXC’s fiscal 2026 fourth-quarter transcript</a>. Fernandez described the multilingual earnings-call voice as <a href="https://s27.q4cdn.com/120381974/files/doc_financials/2026/q4/Transcript-DXC-Technology-Q4-2026.pdf" target="_blank" rel="noopener noreferrer">“customer Zero in practice.”</a> His sequence was clear: build it, use it, then take it to clients.</p>
+
+      <p>The company was doing the same thing with agents more broadly. DXC said more than 100 internal teams formed on their own, built nearly 1,300 working AI agents, and started clearing work that had sat in backlogs for months. That is still a company-reported result, not an independent measure of productivity, but it shows the internal program was larger than one executive voice demo.</p>
+
+      <p>There is business pressure behind the speed. DXC reported $12.6 billion in fiscal 2026 revenue, down 4.8% from the prior year. It has been moving toward AI services that can be sold as recurring, scalable products instead of only project labor. Voice fits that strategy because it can sit across service desks, customer support, training, and knowledge work without requiring DXC to replace every underlying system first.</p>
+
+      <h2>Tuesday changed the commercial arrangement</h2>
+
+      <p>The <a href="https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html" target="_blank" rel="noopener noreferrer">July 28 announcement</a> expands the relationship in three directions. DXC plans to use ElevenLabs across its own global operations, add the technology to client solutions, and take joint offerings to market through LabX, its AI product incubator and platforms group.</p>
+
+      <p>DXC also said it participated in ElevenLabs’ Series D round. <a href="https://elevenlabs.io/blog/series-d" target="_blank" rel="noopener noreferrer">ElevenLabs announced that round in February</a>: $500 million at an $11 billion valuation, with more than $330 million in 2025 annual recurring revenue. DXC did not disclose the size of its investment. The partnership release also gives no contract value, revenue target, first client, or rollout schedule.</p>
+
+      <p>So the investment is alignment, not proof of a finished commercial product. DXC now has a financial interest in the vendor it is bringing into client work. That can help both companies prioritize integrations and industry packages. It also means a client should expect a clear answer when ElevenLabs is the best fit and when another voice platform would be better.</p>
+
+      <p>Fernandez said <a href="https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html" target="_blank" rel="noopener noreferrer">“Voice is becoming a primary interface for how enterprises engage with customers and employees.”</a> The first use cases named in the deal support that view: service desks, training, knowledge management, multilingual customer service, virtual assistants, and application modernization.</p>
+
+      <h2>A natural voice is only the front door</h2>
+
+      <p>ElevenLabs brings speech models, multilingual audio, and the ElevenAgents platform. DXC brings the systems integration, managed services, industry knowledge, and client relationships. The split sounds clean until the conversation needs to change an address, dispute a charge, reset access, or open a claim.</p>
+
+      <p>At that point, voice quality is not the whole product. The agent needs the right customer record, a current policy, permission to call the right tool, and a reliable way to hand the case to a person. ElevenLabs is building more of that operating layer. Its <a href="https://elevenlabs.io/blog/procedures" target="_blank" rel="noopener noreferrer">Procedures feature</a>, currently in alpha, can turn existing standard operating procedures into structured or flexible agent instructions. Its <a href="https://elevenlabs.io/blog/introducing-elevenagents-spotlight" target="_blank" rel="noopener noreferrer">Spotlight product</a> reviews voice and chat conversations against plain-language evaluations.</p>
+
+      <p>The distinction is familiar in the operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A good interface can start the interaction. The system behind it still has to own the data, decision, handoff, and follow-up. Voice makes that gap more visible because the customer hears the answer in real time.</p>
+
+      <h2>The buyer still owns the hard parts</h2>
+
+      <p>ElevenLabs revenue leader Ben Budde said the partnership can put voice AI into <a href="https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html" target="_blank" rel="noopener noreferrer">“mission-critical workflows.”</a> That phrase raises the standard. A support voice cannot casually invent a refund policy. A service-desk agent cannot reset a privileged account because the caller sounds convincing. A multilingual version cannot change the meaning of a legal disclosure.</p>
+
+      <p>DXC’s value is supposed to live in those boundaries. The company already operates complex estates for regulated enterprises and public-sector organizations. Clients are not hiring it just to make a synthetic voice sound natural. They are hiring it to connect that voice to old systems, define access, log actions, manage exceptions, and keep the service running when the model or integration fails.</p>
+
+      <p>The practical questions are specific: How does the agent verify identity? Where are recordings and transcripts stored? Which actions need human approval? How does a customer reach a person? Can an auditor reconstruct the conversation, tool call, decision, and outcome? Who owns the fix when the voice is accurate but the workflow behind it is wrong?</p>
+
+      <h2>The commercial gap remains</h2>
+
+      <p>DXC has shown one internal use case for three quarters and named a broad list of future ones. The space between those facts is now the job. LabX has to turn the voice model, procedures, monitoring, client systems, and DXC delivery teams into packages a buyer can price and govern. The announcement does not say when that work will ship or how success will be measured.</p>
+
+      <p>That leaves the partnership with a useful head start and a real obligation. DXC is not putting a cold vendor demo in front of clients. It has already put the technology in the CEO’s mouth during a regulated investor communication. Now its name sits behind the procedure, escalation path, and multilingual answer that follows. ElevenLabs supplies the voice. DXC owns what the conversation does.</p>
+    `
+  },
   post130: {
     featured: false,
     date: 'July 28, 2026', iso: '2026-07-28',
@@ -3855,6 +3909,7 @@ POST_ORDER.unshift('post127');
 POST_ORDER.unshift('post128');
 POST_ORDER.unshift('post129');
 POST_ORDER.unshift('post130');
+POST_ORDER.unshift('post131');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
