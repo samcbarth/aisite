@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 07:07:32 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 07:07:20 GMT</lastBuildDate>
+    <item>
+      <title>Amazon made more cloud money and less free cash</title>
+      <link>https://samcbarth.github.io/aisite/posts/amazon-made-more-cloud-money-and-less-free-cash/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amazon-made-more-cloud-money-and-less-free-cash/</guid>
+      <pubDate>Fri, 31 Jul 2026 12:00:00 GMT</pubDate>
+      <category>Cloud Economics</category>
+      <description>Memory got more expensive, so Amazon added $20 billion to its spending plan after trailing free cash flow had already fallen below zero. That sounds backwards until you look at what AWS sold. Amazon’s cloud business grew 37% in the second quarter, its fastest rate in 18 quarters.</description>
+    </item>
     <item>
       <title>DXC put ElevenLabs on the earnings call first</title>
       <link>https://samcbarth.github.io/aisite/posts/dxc-put-elevenlabs-on-the-earnings-call-first/</link>

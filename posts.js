@@ -7,6 +7,60 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post132: {
+    featured: false,
+    date: 'July 31, 2026', iso: '2026-07-31',
+    title: 'Amazon made more cloud money and less free cash',
+    category: 'Cloud Economics', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post132-hero.jpg',
+    body: `
+      <p>Memory got more expensive, so Amazon added $20 billion to its spending plan after trailing free cash flow had already fallen below zero.</p>
+
+      <p>That sounds backwards until you look at what AWS sold. Amazon’s cloud business grew 37% in the second quarter, its fastest rate in 18 quarters. AWS produced $42.2 billion in sales and $16.6 billion in operating income. Amazon says its AI business and its chips business have each passed a $25 billion annual revenue run rate.</p>
+
+      <p>The quarter is not a clean story about AI spending finally paying off. It is a cash-cycle story. Demand is growing fast enough to justify more capacity, while the cost of building that capacity arrives well before all of the revenue does.</p>
+
+      <h2>The cloud result is real</h2>
+
+      <p>Amazon’s <a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx" target="_blank" rel="noopener noreferrer">second-quarter release</a> gives AWS a $169 billion annualized revenue run rate. Sales growth accelerated from 28% in the first quarter to 37% in the second. Operating income rose from $10.2 billion a year ago to $16.6 billion.</p>
+
+      <p>CEO Andy Jassy opened his statement with three plain words: <a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx" target="_blank" rel="noopener noreferrer">“AWS is booming.”</a> Amazon also said its AI and chips businesses are growing at triple-digit rates. Those are company-reported figures, and Amazon does not break either business out as a separate segment, but they put commercial weight behind the capacity build.</p>
+
+      <p>The customer list is not theoretical either. Amazon named multi-year, multi-gigawatt Trainium commitments from Anthropic and OpenAI, plus adoption from Uber, Pinterest, startups, and AI labs. In his <a href="https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2025-letter-to-shareholders" target="_blank" rel="noopener noreferrer">2025 shareholder letter</a>, Jassy said a substantial portion of 2026 AWS capital spending already had customer commitments behind it.</p>
+
+      <p>That does not eliminate execution risk. A signed commitment still needs land, power, memory, servers, networking, and a working service. It does explain why Amazon sees a shortage and keeps spending into it.</p>
+
+      <h2>The extra $20 billion is not a victory lap</h2>
+
+      <p><a href="https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee" target="_blank" rel="noopener noreferrer">The Associated Press reported</a> that Amazon now expects 2026 capital spending of $220 billion, up from the $200 billion plan announced in February and $128 billion spent last year. The total includes technology beyond AWS, such as robots, semiconductors, and satellites. Jassy said higher memory-chip costs were the main reason for the increase.</p>
+
+      <p>Memory is not a small input when AI systems need more high-bandwidth memory around each accelerator and cloud providers are filling entire data centers at once. A price increase moves through a build plan measured in gigawatts. It can raise the cost of capacity before Amazon has turned on a single additional rack.</p>
+
+      <p>Jassy told investors the company still will not have enough capacity to meet this year’s demand. He added that <a href="https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee" target="_blank" rel="noopener noreferrer">“the demand we already have for 2028 is striking.”</a> That is the strongest argument for spending now. It is also Amazon’s forecast, not cash already collected.</p>
+
+      <h2>The profit headline needs an asterisk</h2>
+
+      <p>Amazon reported $62.6 billion in quarterly net income. That figure is eye-catching, but $53.4 billion came from non-operating pre-tax gains, primarily the rising value of its Anthropic investment. That gain says something about the value of Amazon’s stake. It does not mean the retail, advertising, and cloud operations suddenly generated $62.6 billion in ordinary quarterly profit.</p>
+
+      <p>Operating income is the cleaner line for the business itself: $27.5 billion, up 43% from a year ago. AWS supplied about 61% of that amount. The cloud segment is not only growing. It is funding a large share of Amazon’s current operating profit while Amazon uses corporate cash to build the next wave of cloud capacity.</p>
+
+      <p>This distinction matters in the operating work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Revenue, accounting profit, and cash movement can all improve or weaken for different reasons in the same period. A useful business read connects the sale to the capacity, cost, and collection schedule instead of stopping at the largest number on the page.</p>
+
+      <h2>Cash is where the timing shows up</h2>
+
+      <p>Amazon’s trailing operating cash flow grew 33% to $161.4 billion. At the same time, purchases of property and equipment rose to $169 billion. The result was a $7.6 billion free-cash-flow outflow, compared with an $18.2 billion inflow a year earlier.</p>
+
+      <p><a href="https://www.axios.com/2026/07/30/amazon-earnings-revenue-ai" target="_blank" rel="noopener noreferrer">Axios framed the quarter</a> cleanly: cloud revenue soared while free cash flow turned negative. The Associated Press described the investor concern more bluntly, saying the spending <a href="https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee" target="_blank" rel="noopener noreferrer">“may not ultimately be worth it”</a> if AI fails to deliver the expected productivity and profit.</p>
+
+      <p>Amazon’s answer is that this is how the AWS cash cycle works. Buildings can last decades, while chips and servers are bought months before they produce billable usage. Fast growth can therefore make near-term free cash flow look worse because the company is paying for next year’s service with this year’s cash.</p>
+
+      <h2>Amazon has moved the argument</h2>
+
+      <p>The question is no longer whether AWS can find AI revenue. A 37% growth rate, $16.6 billion of quarterly operating income, and two $25 billion run-rate businesses say it can. The question is how much capacity Amazon must buy ahead of that revenue, and what happens to the economics when memory, power, or construction costs move against it.</p>
+
+      <p>This quarter leaves Amazon with two lines that have to converge. AWS revenue is accelerating. Property spending is still rising faster than operating cash. The bet works when the first keeps compounding after the second stops outrunning it. Until then, “AWS is booming” and negative free cash flow belong in the same sentence.</p>
+    `
+  },
   post131: {
     featured: false,
     date: 'July 29, 2026', iso: '2026-07-29',
@@ -3910,6 +3964,7 @@ POST_ORDER.unshift('post128');
 POST_ORDER.unshift('post129');
 POST_ORDER.unshift('post130');
 POST_ORDER.unshift('post131');
+POST_ORDER.unshift('post132');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
