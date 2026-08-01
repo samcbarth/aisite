@@ -7,6 +7,60 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post133: {
+    featured: false,
+    date: 'August 1, 2026', iso: '2026-08-01',
+    title: 'What Francis deSouza is being hired to hold together',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post133-hero.jpg',
+    body: `
+      <p>Francis deSouza starts as Scale AI’s chief executive on August 10. Three different customers will be waiting for him: frontier AI labs, large companies, and governments.</p>
+
+      <p>They do not buy the same thing. Labs buy expert data and model evaluation. Enterprises buy applications that have to work inside an operating process. Governments buy many of those capabilities with added demands around security, sovereignty, and accountability.</p>
+
+      <p>Scale’s July 30 appointment announcement presents those businesses as one platform. DeSouza’s job is to keep them connected without pretending their trust requirements are interchangeable.</p>
+
+      <h2>Frontier labs still need the original Scale</h2>
+
+      <p>Scale built its name by supplying the human feedback, labeled data, and evaluations used to train and test advanced models. That business remains important. In a <a href="https://scale.com/blog/scales-next-era-building-for-2026" target="_blank" rel="noopener noreferrer">January company update</a>, Scale said its data unit grew during 2025, became profitable, delivered more than 150,000 hours of robotics data, and published more than 450 evaluations across over 50 model releases.</p>
+
+      <p>Those are company-reported results, but they matter because the data business entered 2026 with a trust problem created outside the product. Meta invested $14.3 billion in Scale in June 2025, took a 49% stake, and recruited founder Alexandr Wang. <a href="https://www.investing.com/news/stock-market-news/exclusivegoogle-scale-ais-largest-customer-plans-split-after-meta-deal-sources-say-4095811" target="_blank" rel="noopener noreferrer">Reuters reported</a> that Google planned to cut ties after the deal because Scale had become closely connected to a competing model company.</p>
+
+      <p>Scale answered that concern directly. It said the company would remain independent, Meta would not gain access to internal systems or customer information, and the same restrictions would apply to Meta as to other customers. Those protections are necessary. The next CEO also has to make them commercially believable to labs that share sensitive model-development work.</p>
+
+      <h2>Enterprises are buying the second Scale</h2>
+
+      <p>The faster-growing business sits above the data layer. Scale says its applications unit more than doubled revenue in the second half of 2025 and should roughly double again this year. It named BP, Mayo Clinic, and Allianz among recent enterprise customers. <a href="https://www.axios.com/2026/07/30/scale-ai-google-cloud-coo-francis-desouza" target="_blank" rel="noopener noreferrer">Axios reported</a> that applications could overtake data within 18 months.</p>
+
+      <p>That changes the sale. A lab can measure the quality of a dataset or benchmark. A company buying an AI application has to connect models, internal data, permissions, workflow rules, human review, and a business metric. The model can perform well while the deployment still fails because the handoff or ownership is weak.</p>
+
+      <p>DeSouza chose the right phrase in <a href="https://scale.com/blog/scale-appoints-new-ceo" target="_blank" rel="noopener noreferrer">Scale’s announcement</a>: his focus includes <a href="https://scale.com/blog/scale-appoints-new-ceo" target="_blank" rel="noopener noreferrer">“showing our value through provable outcomes.”</a> That is a different promise from supplying excellent training data. It asks Scale to stay through deployment and prove that the system changed something the customer can measure.</p>
+
+      <p>This is where the operating work I write about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> connects to the hire. Enterprise AI becomes real when the owner, approval path, exception process, and outcome are visible. A vendor moving into applications inherits those questions instead of leaving them with the buyer.</p>
+
+      <h2>Governments make trust part of the product</h2>
+
+      <p>Scale’s third customer group raises the standard again. The company said its U.S. government business received two 2025 contracts totaling nearly $200 million and continues to lead Project Thunderforge, a Pentagon effort to put AI agents into mission planning. Scale also said its international public-sector revenue doubled last year as it expanded in Qatar, Saudi Arabia, the United Arab Emirates, and the United Kingdom.</p>
+
+      <p>A government deployment brings procurement rules, classified or sensitive information, national data requirements, and decisions that may need to be defended years later. “Provable outcomes” cannot only mean speed or labor saved. It has to include who authorized an action, what data crossed a boundary, which model made a recommendation, and how a person can review or reverse it.</p>
+
+      <p>That creates a hard balance. The same technical foundation may serve a lab, a hospital, and a defense agency. Their data and governance cannot blur together just because the platform diagram looks cleaner when everything shares one box.</p>
+
+      <h2>The resume fits the junction</h2>
+
+      <p>DeSouza most recently served as Google Cloud’s chief operating officer and president of security products. Before that he ran Illumina, the genomic-data company, and held senior roles at Symantec. Scale’s announcement says Illumina revenue grew past $4.5 billion during his tenure and the company reached more than 150 countries.</p>
+
+      <p>That background covers enterprise selling, security, regulated data, and global operations. It also explains the board’s choice. Scale does not need a new founder story. It needs an operator who can keep technical credibility with model builders while making the applications business repeatable and the government business defensible.</p>
+
+      <p>Wang, now Scale’s chairman, said deSouza understands how to serve enterprises and governments at a high level of trust and reliability, then added: <a href="https://scale.com/blog/scale-appoints-new-ceo" target="_blank" rel="noopener noreferrer">“That’s exactly what Scale needs.”</a> The line is short, but it names the board’s concern. Growth across all three rooms only helps if trust survives the movement between them.</p>
+
+      <h2>The handoff starts August 10</h2>
+
+      <p>Scale says the data and applications businesses are additive, not a pivot away from one into the other. That can work. Better evaluations can improve applications, and application deployments can reveal where models and data still fail. Government work can force stronger controls that enterprise buyers also need.</p>
+
+      <p>It can also create tension. A frontier lab wants proof its work is isolated from Meta. An enterprise wants measurable results without rebuilding its whole operation around Scale. A government wants authority over where data and decisions live. DeSouza succeeds when each customer can explain why Scale is safe and useful for its specific job. One broad promise about reliable AI will not hold those three rooms together.</p>
+    `
+  },
   post132: {
     featured: false,
     date: 'July 31, 2026', iso: '2026-07-31',
@@ -3965,6 +4019,7 @@ POST_ORDER.unshift('post129');
 POST_ORDER.unshift('post130');
 POST_ORDER.unshift('post131');
 POST_ORDER.unshift('post132');
+POST_ORDER.unshift('post133');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post133: {
+      image: 'assets/images/post133-inline.jpg',
+      caption: 'The data business still has to earn trust from model builders sharing sensitive work.',
+      side: 'right', after: 4,
+      supportImage: 'assets/images/post133-support.jpg',
+      supportCaption: 'Government AI adds procurement, security, sovereignty, and auditability to the same platform.'
+    },
     post132: {
       image: 'assets/images/post132-inline.jpg',
       caption: 'Cloud revenue arrives from equipment that had to be bought, connected, and powered first.',
@@ -1647,6 +1654,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post133: { after: 4, quotes: [makeQuote('Outcome', { text: 'showing our value through provable outcomes.', source: 'Francis deSouza, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' }), makeQuote('Board view', { text: 'That\'s exactly what Scale needs.', source: 'Alexandr Wang, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' })] },
     post132: { after: 4, quotes: [makeQuote('Demand', { text: 'AWS is booming.', source: 'Andy Jassy, Amazon', sourceUrl: 'https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx' }), makeQuote('Risk', { text: 'may not ultimately be worth it', source: 'Associated Press', sourceUrl: 'https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee' })] },
     post131: { after: 4, quotes: [makeQuote('Interface', { text: 'Voice is becoming a primary interface for how enterprises engage with customers and employees.', source: 'Raul Fernandez, DXC', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' }), makeQuote('Workflow', { text: 'mission-critical workflows', source: 'Ben Budde, ElevenLabs', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' })] },
     post130: { after: 4, quotes: [makeQuote('Outcome', { text: 'Security teams do not need more information. They need better outcomes.', source: 'Microsoft', sourceUrl: 'https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/' }), makeQuote('Competition', { text: 'an increasingly crowded field of AI cybersecurity solutions', source: 'TechCrunch', sourceUrl: 'https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/' })] },
