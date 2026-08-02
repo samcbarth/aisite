@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post134: {
+      image: 'assets/images/post134-inline.jpg',
+      caption: 'A design can look convincing before electrical, timing, and physical checks expose the failure.',
+      side: 'left', after: 5,
+      supportImage: 'assets/images/post134-support.jpg',
+      supportCaption: 'The finished board depends on many verified choices made before fabrication.'
+    },
     post133: {
       image: 'assets/images/post133-inline.jpg',
       caption: 'The data business still has to earn trust from model builders sharing sensitive work.',
@@ -1654,6 +1661,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post134: { after: 5, quotes: [makeQuote('Verification', { text: 'trusted, self-verifying AI workflows', source: 'Amit Gupta, Siemens EDA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' }), makeQuote('Tool layer', { text: 'AI agents need trusted tools to reason, act and verify their work.', source: 'Timothy Costa, NVIDIA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' })] },
     post133: { after: 4, quotes: [makeQuote('Outcome', { text: 'showing our value through provable outcomes.', source: 'Francis deSouza, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' }), makeQuote('Board view', { text: 'That\'s exactly what Scale needs.', source: 'Alexandr Wang, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' })] },
     post132: { after: 4, quotes: [makeQuote('Demand', { text: 'AWS is booming.', source: 'Andy Jassy, Amazon', sourceUrl: 'https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx' }), makeQuote('Risk', { text: 'may not ultimately be worth it', source: 'Associated Press', sourceUrl: 'https://apnews.com/article/amazon-second-quarter-earnings-cloud-b4ce02b4666a35b8975823c5c22072ee' })] },
     post131: { after: 4, quotes: [makeQuote('Interface', { text: 'Voice is becoming a primary interface for how enterprises engage with customers and employees.', source: 'Raul Fernandez, DXC', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' }), makeQuote('Workflow', { text: 'mission-critical workflows', source: 'Ben Budde, ElevenLabs', sourceUrl: 'https://www.prnewswire.com/news-releases/dxc-and-elevenlabs-announce-strategic-partnership-to-scale-enterprise-ai-and-voice-innovation-302835490.html' })] },

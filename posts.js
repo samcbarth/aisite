@@ -7,6 +7,60 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post134: {
+    featured: false,
+    date: 'August 2, 2026', iso: '2026-08-02',
+    title: 'The chip agent does not get to argue with physics',
+    category: 'AI Engineering', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post134-hero.jpg',
+    body: `
+      <p>A chatbot can be persuasive and wrong. A chip layout cannot talk its way past an electrical rule, a thermal limit, or a verification failure.</p>
+
+      <p>That difference is the reason Siemens and NVIDIA’s latest partnership matters. On July 26, the companies announced an update to Siemens’ Fuse EDA AI Agent that connects long-running AI work to deterministic, physics-based electronic design automation tools. The agent can propose a step, call the engineering software that checks it, and use the result before moving on.</p>
+
+      <p>This is not a promise that AI can design a finished chip alone. It is a more useful claim: an agent doing complicated engineering work needs a way to discover that it is wrong while there is still time to change course.</p>
+
+      <h2>The check moves inside the loop</h2>
+
+      <p>Electronic design automation, or EDA, covers the software used to design and verify chips and printed circuit boards. A modern design moves through many connected tasks, including architecture, logic, placement, routing, timing, power, thermal analysis, and signoff. A change that improves one target can create a problem somewhere else.</p>
+
+      <p><a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" target="_blank" rel="noopener noreferrer">Siemens says</a> Fuse can now orchestrate multiple tools and agents across that process, while continuously checking decisions against its established EDA engines. Amit Gupta, Siemens EDA’s chief AI strategy officer, called the goal <a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" target="_blank" rel="noopener noreferrer">“trusted, self-verifying AI workflows.”</a></p>
+
+      <p>The important word is not “self.” It is “verifying.” A language model can explain why a layout looks reasonable. The deterministic tool still has to test whether the design meets the rules. Putting that test inside the agent’s working loop can catch a bad direction before an engineer receives a polished answer built on top of it.</p>
+
+      <h2>Speed has to include the rejected work</h2>
+
+      <p>Siemens reported one concrete result from the broader toolchain. In its Solido Characterization Suite, the company says agentic workflows are cutting characterization turnaround time by more than 10 times and token costs by 5 to 10 times. That is a company-reported result, and the announcement does not provide the customer, baseline, workload mix, or error rate behind it.</p>
+
+      <p>Those missing details decide whether the gain survives production. A fast agent that creates more rework can make the first task look better while slowing the whole design. A useful measurement would include how many proposals fail verification, how many retries are needed, whether a later check finds a regression, and how often an engineer has to repair the agent’s path.</p>
+
+      <p>This is where the operating discipline behind <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> connects to the engineering story. Automation earns trust when the system records the proposal, the check, the failure, the correction, and the person who accepted the result. In chip design, that record is not overhead. It is part of how a team knows which decision can move toward signoff.</p>
+
+      <h2>NVIDIA is supplying more than a model</h2>
+
+      <p><a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" target="_blank" rel="noopener noreferrer">NVIDIA’s role in the Siemens announcement</a> places the work inside a larger engineering push. The stack includes CUDA-X libraries for accelerated solvers, Nemotron open models, NeMo Gym for improving agents, and OpenShell for access controls and audit trails.</p>
+
+      <p>NVIDIA executive Timothy Costa put the requirement plainly: <a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" target="_blank" rel="noopener noreferrer">“AI agents need trusted tools to reason, act and verify their work.”</a> That is the commercial strategy. NVIDIA wants its models, training software, libraries, and accelerated computing to sit underneath domain agents, while engineering software companies supply the tools those agents call.</p>
+
+      <p>For Siemens, the value comes from owning the domain tools the agent must call. A general model may help plan the work, read documentation, or write code. Siemens’ EDA software holds the rule checks, simulators, and verification flows that decide whether the work is usable. The agent makes those established products more active instead of replacing them.</p>
+
+      <h2>A research benchmark shows the distance left</h2>
+
+      <p>A May preprint called <a href="https://arxiv.org/abs/2605.15226" target="_blank" rel="noopener noreferrer">Phoenix-bench</a> tested software-engineering agents on 511 verified hardware problems from 114 public repositories. The researchers found that four agent and model combinations scoring between 60% and 73% on a software benchmark fell by 37 to 58 percentage points on the hardware benchmark.</p>
+
+      <p>The paper did not test Fuse, and repository bug repair is not the same job as full chip design. Its value here is the warning. Hardware work adds hierarchy, signal dependencies, executable verification, and changes that cross files and modules. Even giving an agent the correct file did little on average because the system still had to understand what to change without breaking designs that already passed.</p>
+
+      <p>That result supports Siemens’ direction without proving Siemens’ product. The path to a dependable engineering agent is not only a better model. It is repeated access to the tools that can reject a bad answer and enough context to respond correctly when they do.</p>
+
+      <h2>Signoff is still a human responsibility</h2>
+
+      <p>Siemens says Fuse is integrated with Intelligence Center X, its environment for coordinating agents across design, manufacturing, and supply chain work. That wider connection could let a design decision meet a manufacturing constraint earlier. It also expands the blast radius when the context, tool call, or retry logic is wrong.</p>
+
+      <p>Engineering teams still need clear limits around which actions run automatically, which results require review, and what evidence travels with the recommendation. “Self-verifying” should not become shorthand for self-approving. A deterministic check can confirm a timing rule or simulation result. It cannot decide by itself whether the business should accept a cost tradeoff, change a product target, or send the design forward.</p>
+
+      <p>The best outcome from this launch is not an agent that sounds like an engineer. It is a shorter, cleaner trail of rejected layouts, corrected decisions, and checks that pass for known reasons. When the design reaches signoff, the physics engine should have had the last word on the circuit, and a person should still have the last word on whether to build it.</p>
+    `
+  },
   post133: {
     featured: false,
     date: 'August 1, 2026', iso: '2026-08-01',
@@ -4020,6 +4074,7 @@ POST_ORDER.unshift('post130');
 POST_ORDER.unshift('post131');
 POST_ORDER.unshift('post132');
 POST_ORDER.unshift('post133');
+POST_ORDER.unshift('post134');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
