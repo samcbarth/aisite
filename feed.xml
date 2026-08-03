@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 07:15:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 07:12:14 GMT</lastBuildDate>
+    <item>
+      <title>Europe delayed high-risk AI but kept the customer-facing rules</title>
+      <link>https://samcbarth.github.io/aisite/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</guid>
+      <pubDate>Mon, 03 Aug 2026 12:00:00 GMT</pubDate>
+      <category>AI Governance</category>
+      <description>Europe postponed the AI Act rules most companies had circled in red. It did not postpone the part a customer can see. On August 2, transparency duties under Article 50 became enforceable, along with enforcement for general-purpose AI models and several rules already on the books.</description>
+    </item>
     <item>
       <title>The chip agent does not get to argue with physics</title>
       <link>https://samcbarth.github.io/aisite/posts/the-chip-agent-does-not-get-to-argue-with-physics/</link>

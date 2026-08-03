@@ -7,6 +7,60 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post135: {
+    featured: false,
+    date: 'August 3, 2026', iso: '2026-08-03',
+    title: 'Europe delayed high-risk AI but kept the customer-facing rules',
+    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post135-hero.jpg',
+    body: `
+      <p>Europe postponed the AI Act rules most companies had circled in red. It did not postpone the part a customer can see.</p>
+
+      <p>On August 2, transparency duties under Article 50 became enforceable, along with enforcement for general-purpose AI models and several rules already on the books. The higher-risk requirements for systems used in areas such as employment, law enforcement, and regulated products moved further out.</p>
+
+      <p>That split changes the immediate job. Many companies do not need a full high-risk conformity program today. They may still need to tell a person that a bot is a bot, label a deepfake, preserve a real editorial review, or make generated content detectable.</p>
+
+      <h2>The high-risk date moved</h2>
+
+      <p>The delay is real. The EU’s <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744" target="_blank" rel="noopener noreferrer">June amendment</a> moved rules for stand-alone high-risk systems to December 2, 2027. High-risk systems built into regulated products move to August 2, 2028.</p>
+
+      <p>Those dates cover difficult work around risk management, data governance, documentation, human oversight, accuracy, and conformity assessment. Europe moved them because standards and support tools were not ready on the original schedule. It did not erase the requirements.</p>
+
+      <p>The <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline" target="_blank" rel="noopener noreferrer">Commission’s current timeline</a> is much more useful than the old shorthand that “the AI Act starts in August 2026.” Some rules started in 2025. Transparency and model enforcement started now. High-risk duties arrive later. A business has to map its system to the right line instead of treating one date as the whole law.</p>
+
+      <h2>The first disclosure belongs at first contact</h2>
+
+      <p>Article 50 starts with a direct interaction. The <a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener noreferrer">Commission’s guidance</a> says providers of chatbots, agents, avatars, and other systems that communicate directly with people must inform them that they are interacting with AI. The notice has to appear from the start of the first interaction, clearly and accessibly.</p>
+
+      <p>There is an exception when the use of AI is obvious, but the Commission says that exception should be read narrowly. A robot icon or clever product name may not settle the question. The test is whether an average, reasonably informed person would understand that the system itself is speaking.</p>
+
+      <p>For a customer-support bot, this becomes product work. The disclosure has to survive a mobile screen, a language change, and a handoff to a human agent. The log should show which experience the customer received. A legal sentence hidden in a privacy policy does not do the same job as a clear notice beside the conversation.</p>
+
+      <h2>A machine mark and a visible label are different jobs</h2>
+
+      <p>Providers of generative systems also have to make synthetic audio, images, video, and text machine-readable and detectable as AI-generated or manipulated. Systems already on the market before August 2 get a limited extension for that technical marking duty until December 2, 2026.</p>
+
+      <p>Deployers have separate obligations. A company publishing a deepfake has to disclose it visibly or audibly by the first exposure. A company publishing AI-generated text about a matter of public interest must label it unless the text received substantive human review or sits under real editorial control and responsibility.</p>
+
+      <p>That human-review exception is not a checkbox. The Commission says spelling, grammar, and other superficial checks are not enough. The reviewer needs subject knowledge, authority to change or reject the substance, and responsibility for the publication. That makes the review path part of the content system, not a note added after the content is already live.</p>
+
+      <h2>The vendor and the buyer each own a piece</h2>
+
+      <p>The provider builds and sells the AI system. The deployer uses it under its authority. A provider outside Europe can still fall under the Act when its system’s output is used in the EU. A company using a vendor’s model can still own the disclosure around its deepfake, emotion-recognition system, or public-interest text.</p>
+
+      <p>That is why the contract and the operating map have to meet. For the CRM and automation work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, the useful inventory is not just a list of AI vendors. It is the customer touchpoint, the provider, the deployer, the output, the required notice, the evidence, and the person who can stop publication or switch the system off.</p>
+
+      <p>A video team, for example, needs to know whether the tool preserves a machine-readable mark after export and whether the publisher still owes the audience a visible label. A support team needs to know whether the vendor supplies the disclosure or whether the company must add it in the interface. Buying a compliant model does not automatically create a compliant customer experience.</p>
+
+      <h2>Enforcement now has somewhere to start</h2>
+
+      <p>National market-surveillance authorities will handle most Article 50 enforcement. The EU AI Office has authority over general-purpose models and certain systems built on them. For transparency violations, the Commission says fines can reach €15 million or 3% of worldwide annual turnover, with proportionality considered for smaller companies.</p>
+
+      <p>EU technology chief Henna Virkkunen described the goal to the <a href="https://apnews.com/article/eu-ai-regulation-deepfakes-hacking-f4fcee1f9750e2b32cdf26ad73ee5ec2" target="_blank" rel="noopener noreferrer">Associated Press</a> as AI that <a href="https://apnews.com/article/eu-ai-regulation-deepfakes-hacking-f4fcee1f9750e2b32cdf26ad73ee5ec2" target="_blank" rel="noopener noreferrer">“people and businesses can understand and trust.”</a> The technology industry has warned about the opposite failure. CCIA Europe said, <a href="https://ccianet.org/news/2025/12/ai-acts-transparency-code-risks-user-fatigue-and-technical-deadlock-roundtable-concludes/" target="_blank" rel="noopener noreferrer">“If we have to label everything, the labelling of AI content will lose all meaning.”</a></p>
+
+      <p>Article 50 now has to live between those two outcomes. A disclosure that arrives after the bot has already persuaded someone is too late. A label attached to every routine edit becomes wallpaper. The rule will prove itself at the exact moment a person meets a synthetic voice, image, answer, or article and gets enough information to judge what is in front of them without needing a compliance manual.</p>
+    `
+  },
   post134: {
     featured: false,
     date: 'August 2, 2026', iso: '2026-08-02',
@@ -4075,6 +4129,7 @@ POST_ORDER.unshift('post131');
 POST_ORDER.unshift('post132');
 POST_ORDER.unshift('post133');
 POST_ORDER.unshift('post134');
+POST_ORDER.unshift('post135');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
