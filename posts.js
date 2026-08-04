@@ -7,6 +7,54 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post136: {
+    featured: false,
+    date: 'August 4, 2026', iso: '2026-08-04',
+    title: 'Control is now on Palantir\'s AI invoice',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post136-hero.jpg',
+    body: `
+      <p>Palantir's second quarter reads like a software invoice with a data-rights clause attached.</p>
+
+      <p>The company reported $1.94 billion in revenue, up 93% from a year earlier. U.S. commercial revenue reached $764 million, up 149%. Those are extraordinary numbers for a software business at this scale, but CEO Alex Karp placed a different promise beside them: <a href="https://investors.palantir.com/news-details/2026/Palantir-Reports-Q2-2026-U-S--Comm-Revenue-Growth-of-149-YY-and-Revenue-Growth-of-93-YY-Raises-FY-2026-Revenue-Guidance-to-82-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-134-YY-Crushing-Consensus-Expectations/" target="_blank" rel="noopener noreferrer">“Their competitive advantage should never become the training data for future models.”</a></p>
+
+      <p>That sentence turns control into part of the product. Palantir is telling companies that the model is replaceable, but the operating knowledge connecting a company’s data, decisions, and actions belongs to the company. The quarter suggests buyers are willing to pay for that distinction.</p>
+
+      <h2>The contract value ran ahead of the revenue</h2>
+
+      <p>Palantir closed $3.37 billion in total contract value during the quarter. U.S. commercial contracts supplied a record $2.13 billion of that amount, up 153% from a year earlier. The remaining value of U.S. commercial deals reached $6.24 billion, up 124%.</p>
+
+      <p>Contract value is not recognized revenue. It can include future periods and customer options, so it should not be dropped straight into a sales forecast. It still shows the shape of the commitment. Palantir booked almost three dollars of U.S. commercial contract value for each dollar of revenue that segment recognized in the quarter.</p>
+
+      <p>The company also produced $912 million in GAAP operating income, a 47% margin, and $1.22 billion in operating cash flow. This is not a growth story being bought entirely with losses. Palantir has pricing power, operating leverage, and $9.2 billion in cash and short-term U.S. Treasury securities.</p>
+
+      <p>The buyer question is what sits behind those economics. A large contract can mean a platform is spreading into more decisions. It can also make exit harder if the data model, approvals, workflows, and institutional knowledge all become dependent on one vendor.</p>
+
+      <h2>Sovereignty has to exist below the slogan</h2>
+
+      <p>Palantir calls its answer AI sovereignty. The term is broad, but the operating version is concrete. A customer should be able to choose a model, keep sensitive data inside an approved boundary, control which tools the model can call, record what happened, and change one layer without rebuilding the entire process.</p>
+
+      <p>Palantir's own <a href="https://www.palantir.com/docs/foundry/getting-started/foundry-platform-summary-llm" target="_blank" rel="noopener noreferrer">Foundry documentation</a> describes access to commercial models from OpenAI, Anthropic, Google, Meta, and xAI, plus custom enterprise models. Its Ontology maps the objects, relationships, decisions, and actions of the business. That layer is the commercial center of the argument. Models can change quickly. The governed representation of how a company actually operates changes more slowly.</p>
+
+      <p>A European competitor is selling a different version of the same concern. After France selected ChapsVision's Argonos platform for a domestic security project, CEO Silvano Sansoni said <a href="https://www.chapsvision.com/press-release/chapsvision-chosen-by-france-to-deploy-argonos-for-otdh-project/" target="_blank" rel="noopener noreferrer">“demand for technological autonomy has never been stronger.”</a> The words sound similar to Palantir's pitch. The difference is who the buyer trusts to supply the control.</p>
+
+      <p>For the CRM and automation work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, this is where the architecture meets the commercial agreement. The useful questions are specific: Can the provider train on prompts, outputs, corrections, or tool traces? Who owns the workflow definitions? Can the customer export the business objects and their relationships? What evidence survives when the model changes? The invoice should match those answers.</p>
+
+      <h2>The growth still has a home address</h2>
+
+      <p>Palantir generated $1.57 billion of the quarter's revenue in the United States. That is about 81% of the company total. U.S. government revenue rose 90% to $809 million, while U.S. commercial revenue grew even faster.</p>
+
+      <p>The concentration is both strength and boundary. American companies and agencies are buying Palantir's version of operational AI at a remarkable pace. Other governments may hear “sovereignty” and prefer a domestic supplier. <a href="https://www.chapsvision.com/press-release/chapsvision-chosen-by-france-to-deploy-argonos-for-otdh-project/" target="_blank" rel="noopener noreferrer">ChapsVision said</a> its selection for the French domestic security project prioritizes technology designed and operated in Europe.</p>
+
+      <p>That tension will not be solved by a better benchmark. A customer may want control from its software vendor while a country wants control over the vendor itself. Palantir's U.S. results prove that its pitch can sell. They do not yet prove that the same pitch travels cleanly across borders.</p>
+
+      <h2>The renewal will test the promise</h2>
+
+      <p>Palantir has made control part of the commercial offer and attached record growth to it. The next evidence should come from what a customer can do after signing: swap a model, isolate a sensitive process, audit a decision, export the operating context, or leave without surrendering the knowledge built during the relationship.</p>
+
+      <p>That is the hard edge of the quarter. Palantir can charge for sovereignty only while the buyer can exercise it. The contract gets larger when the platform reaches deeper into the business. The right to control, change, and eventually remove that platform has to grow with it.</p>
+    `
+  },
   post135: {
     featured: false,
     date: 'August 3, 2026', iso: '2026-08-03',
@@ -4130,6 +4178,7 @@ POST_ORDER.unshift('post132');
 POST_ORDER.unshift('post133');
 POST_ORDER.unshift('post134');
 POST_ORDER.unshift('post135');
+POST_ORDER.unshift('post136');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

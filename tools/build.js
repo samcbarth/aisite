@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post136: {
+      image: 'assets/images/post136-inline.jpg',
+      caption: 'Data control eventually reaches the physical systems where models and company information run. Photo: Carl Lender via Wikimedia Commons, CC BY 2.0.',
+      side: 'left', after: 5,
+      supportImage: 'assets/images/post136-support.jpg',
+      supportCaption: 'The contract should define what the buyer can keep, change, audit, and remove. Photo: Shixart1985 via Wikimedia Commons, CC BY 2.0.'
+    },
     post135: {
       image: 'assets/images/post135-inline.jpg',
       caption: 'A direct AI interaction needs a clear disclosure at the start, not after the customer has already relied on it.',
@@ -1668,6 +1675,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post136: { after: 5, quotes: [makeQuote('Data rights', { text: 'Their competitive advantage should never become the training data for future models.', source: 'Alex Karp, Palantir', sourceUrl: 'https://investors.palantir.com/news-details/2026/Palantir-Reports-Q2-2026-U-S--Comm-Revenue-Growth-of-149-YY-and-Revenue-Growth-of-93-YY-Raises-FY-2026-Revenue-Guidance-to-82-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-134-YY-Crushing-Consensus-Expectations/' }), makeQuote('European demand', { text: 'demand for technological autonomy has never been stronger.', source: 'Silvano Sansoni, ChapsVision', sourceUrl: 'https://www.chapsvision.com/press-release/chapsvision-chosen-by-france-to-deploy-argonos-for-otdh-project/' })] },
     post135: { after: 5, quotes: [makeQuote('Trust goal', { text: 'people and businesses can understand and trust', source: 'Henna Virkkunen via Associated Press', sourceUrl: 'https://apnews.com/article/eu-ai-regulation-deepfakes-hacking-f4fcee1f9750e2b32cdf26ad73ee5ec2' }), makeQuote('Label risk', { text: 'If we have to label everything, the labelling of AI content will lose all meaning.', source: 'Boniface de Champris, CCIA Europe', sourceUrl: 'https://ccianet.org/news/2025/12/ai-acts-transparency-code-risks-user-fatigue-and-technical-deadlock-roundtable-concludes/' })] },
     post134: { after: 5, quotes: [makeQuote('Verification', { text: 'trusted, self-verifying AI workflows', source: 'Amit Gupta, Siemens EDA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' }), makeQuote('Tool layer', { text: 'AI agents need trusted tools to reason, act and verify their work.', source: 'Timothy Costa, NVIDIA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' })] },
     post133: { after: 4, quotes: [makeQuote('Outcome', { text: 'showing our value through provable outcomes.', source: 'Francis deSouza, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' }), makeQuote('Board view', { text: 'That\'s exactly what Scale needs.', source: 'Alexandr Wang, Scale AI', sourceUrl: 'https://scale.com/blog/scale-appoints-new-ceo' })] },

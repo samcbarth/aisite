@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2026 07:12:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 07:10:37 GMT</lastBuildDate>
+    <item>
+      <title>Control is now on Palantir&apos;s AI invoice</title>
+      <link>https://samcbarth.github.io/aisite/posts/control-is-now-on-palantirs-ai-invoice/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/control-is-now-on-palantirs-ai-invoice/</guid>
+      <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Enterprise AI</category>
+      <description>Palantir&apos;s second quarter reads like a software invoice with a data-rights clause attached. The company reported $1.94 billion in revenue, up 93% from a year earlier. U.S. commercial revenue reached $764 million, up 149%. Those are extraordinary numbers for a software business at</description>
+    </item>
     <item>
       <title>Europe delayed high-risk AI but kept the customer-facing rules</title>
       <link>https://samcbarth.github.io/aisite/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</link>
