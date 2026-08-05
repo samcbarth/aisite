@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 07:10:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 07:12:40 GMT</lastBuildDate>
+    <item>
+      <title>Follow the AI order into Caterpillar&apos;s backlog</title>
+      <link>https://samcbarth.github.io/aisite/posts/follow-the-ai-order-into-caterpillars-backlog/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/follow-the-ai-order-into-caterpillars-backlog/</guid>
+      <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>Start with a 2-gigawatt power order in West Virginia. It needs engines, battery storage, switchgear, financing, parts, and technicians. The chips are not on that invoice. Caterpillar is. That order, announced in February for American Intelligence and Power&apos;s Monarch campus, is a </description>
+    </item>
     <item>
       <title>Control is now on Palantir&apos;s AI invoice</title>
       <link>https://samcbarth.github.io/aisite/posts/control-is-now-on-palantirs-ai-invoice/</link>

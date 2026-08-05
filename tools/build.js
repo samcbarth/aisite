@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post137: {
+      image: 'assets/images/post137-inline.jpg',
+      caption: 'The generator is only one part of the site. Switchgear and controls decide how power reaches the computing load. Photo: P199 via Wikimedia Commons, public domain.',
+      side: 'right', after: 4,
+      supportImage: 'assets/images/post137-support.jpg',
+      supportCaption: 'Primary power turns a data-center build into a long-running maintenance and parts relationship. Photo: Dave Meckler via Unsplash.'
+    },
     post136: {
       image: 'assets/images/post136-inline.jpg',
       caption: 'Data control eventually reaches the physical systems where models and company information run. Photo: Carl Lender via Wikimedia Commons, CC BY 2.0.',
@@ -1675,6 +1682,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post137: { after: 4, quotes: [makeQuote('Backlog', { text: 'Strong order rates and a growing backlog reflect broadening momentum across all three of our primary segments.', source: 'Joe Creed, Caterpillar', sourceUrl: 'https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Earnings-Release-Final.pdf' }), makeQuote('Fuel', { text: 'Natural gas supply is critical as we forecast that U.S. liquefied natural gas exports expand and electricity demand rises through 2027, driven largely by increasing demand from large computing facilities, including data centers.', source: 'Tristan Abbey, U.S. EIA', sourceUrl: 'https://www.eia.gov/pressroom/releases/press582.php' })] },
     post136: { after: 5, quotes: [makeQuote('Data rights', { text: 'Their competitive advantage should never become the training data for future models.', source: 'Alex Karp, Palantir', sourceUrl: 'https://investors.palantir.com/news-details/2026/Palantir-Reports-Q2-2026-U-S--Comm-Revenue-Growth-of-149-YY-and-Revenue-Growth-of-93-YY-Raises-FY-2026-Revenue-Guidance-to-82-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-134-YY-Crushing-Consensus-Expectations/' }), makeQuote('European demand', { text: 'demand for technological autonomy has never been stronger.', source: 'Silvano Sansoni, ChapsVision', sourceUrl: 'https://www.chapsvision.com/press-release/chapsvision-chosen-by-france-to-deploy-argonos-for-otdh-project/' })] },
     post135: { after: 5, quotes: [makeQuote('Trust goal', { text: 'people and businesses can understand and trust', source: 'Henna Virkkunen via Associated Press', sourceUrl: 'https://apnews.com/article/eu-ai-regulation-deepfakes-hacking-f4fcee1f9750e2b32cdf26ad73ee5ec2' }), makeQuote('Label risk', { text: 'If we have to label everything, the labelling of AI content will lose all meaning.', source: 'Boniface de Champris, CCIA Europe', sourceUrl: 'https://ccianet.org/news/2025/12/ai-acts-transparency-code-risks-user-fatigue-and-technical-deadlock-roundtable-concludes/' })] },
     post134: { after: 5, quotes: [makeQuote('Verification', { text: 'trusted, self-verifying AI workflows', source: 'Amit Gupta, Siemens EDA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' }), makeQuote('Tool layer', { text: 'AI agents need trusted tools to reason, act and verify their work.', source: 'Timothy Costa, NVIDIA', sourceUrl: 'https://news.siemens.com/en-us/siemens-nvidia-dac-2026/' })] },

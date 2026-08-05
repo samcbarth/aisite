@@ -7,6 +7,56 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post137: {
+    featured: false,
+    date: 'August 5, 2026', iso: '2026-08-05',
+    title: 'Follow the AI order into Caterpillar\'s backlog',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post137-hero.jpg',
+    body: `
+      <p>Start with a 2-gigawatt power order in West Virginia. It needs engines, battery storage, switchgear, financing, parts, and technicians. The chips are not on that invoice. Caterpillar is.</p>
+
+      <p>That order, announced in February for American Intelligence and Power's Monarch campus, is a clean way to read Caterpillar's second quarter. AI demand is reaching the company before a server rack is installed and staying with it after the data center opens.</p>
+
+      <p>On August 4, Caterpillar reported its first quarter above $20 billion in sales and revenue. The useful story is not that a century-old equipment company found an AI label. It is how one power constraint now touches several Caterpillar businesses at different points in the same project.</p>
+
+      <h2>A single campus shows the bundle</h2>
+
+      <p><a href="https://investors.caterpillar.com/news/news-details/2026/American-Intelligence--Power-Forms-Strategic-Alliance-with-Caterpillar-and-Boyd-CAT-to-Deploy-2-Gigawatts-of-Dedicated-Power-for-Hyperscale-AI-Infrastructure/default.aspx" target="_blank" rel="noopener noreferrer">American Intelligence &amp; Power ordered 2 gigawatts</a> of Caterpillar G3516 natural-gas generator sets for the first phase of Monarch. Deliveries are scheduled from September 2026 through August 2027. The generators will be paired with batteries that can absorb the rapid changes in load created by AI computing.</p>
+
+      <p>Caterpillar says a G3516 can move from zero to full load in about seven seconds. That speed matters when the campus is running behind the meter instead of waiting for new utility transmission. AIP says the equipment can be commissioned within months of delivery.</p>
+
+      <p>The order does not stop at engines. It includes controls, monitoring, operations planning, parts support, maintenance strategy, and equipment financing through Cat Financial. Boyd CAT supplies the local dealer layer. Caterpillar gets several chances to earn revenue from one site before the first customer pays for compute.</p>
+
+      <h2>The quarter separates demand from revenue</h2>
+
+      <p><a href="https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Earnings-Release-Final.pdf" target="_blank" rel="noopener noreferrer">Caterpillar reported</a> $20.54 billion in second-quarter sales and revenue, up 24% from a year earlier. Power &amp; Energy sales rose 17% to $8.24 billion, while segment profit climbed 30% to $2.03 billion.</p>
+
+      <p>Inside that segment, reported power-generation sales increased 29% to $3.10 billion. A separate <a href="https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Analyst-Slide-Deck_Final.pdf" target="_blank" rel="noopener noreferrer">retail-sales measure</a>, based on dealer reports and direct sales to end users, rose 72%. Those numbers measure different points in the channel and should not be combined. The 72% figure shows equipment reaching customers. The 29% figure shows the revenue Caterpillar booked in the application during the quarter.</p>
+
+      <p>The larger forward indicator is backlog. It reached a record $72.1 billion, up $34.6 billion from a year earlier and $9.4 billion in three months. CEO Joe Creed said, <a href="https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Earnings-Release-Final.pdf" target="_blank" rel="noopener noreferrer">“Strong order rates and a growing backlog reflect broadening momentum across all three of our primary segments.”</a></p>
+
+      <p>Data centers are showing up in more than Power &amp; Energy. A campus needs grading, roads, foundations, utility work, and ongoing material handling. Caterpillar's Construction Industries sales rose 35%. The release does not isolate how much of that increase came from data centers, so the connection should not be turned into a made-up segment number. It is still part of the same physical build.</p>
+
+      <h2>Backup power became bridge power</h2>
+
+      <p>The important product change is the job the equipment performs. Data centers have long bought diesel generators for emergencies. Caterpillar now describes engines and turbines supplying primary or bridge power while a site waits for the grid, with backup generators behind them.</p>
+
+      <p>Its <a href="https://s25.q4cdn.com/358376879/files/doc_downloads/2026/03/Power-Energy-Investor-Presentation-2026.pdf" target="_blank" rel="noopener noreferrer">Power &amp; Energy investor presentation</a> says the company is working to double large-engine capacity and lift gas-turbine capacity 2.5 times compared with 2024. Capacity is being added each year through the end of the decade. That is not a temporary rental response. Caterpillar is expanding factories for a longer cycle.</p>
+
+      <p>The demand behind it is measurable. A <a href="https://eta-publications.lbl.gov/publications/united-states-data-center-energy-2025" target="_blank" rel="noopener noreferrer">June 2026 Lawrence Berkeley National Laboratory update</a> estimates data centers could use 11.8% of U.S. electricity in 2030, with scenarios ranging from 9.5% to 15.3%. The wide range is a warning, but even the low case puts a large new load on a system built during years of much slower demand growth.</p>
+
+      <p>The U.S. Energy Information Administration expects electricity use to keep rising through 2027, largely because of large computing facilities. Administrator Tristan Abbey put the fuel implication plainly: <a href="https://www.eia.gov/pressroom/releases/press582.php" target="_blank" rel="noopener noreferrer">“Natural gas supply is critical as we forecast that U.S. liquefied natural gas exports expand and electricity demand rises through 2027, driven largely by increasing demand from large computing facilities, including data centers.”</a> Caterpillar is selling into the gap between a computing schedule measured in months and a transmission schedule often measured in years.</p>
+
+      <h2>The operating hours decide the second sale</h2>
+
+      <p>This is where the infrastructure story connects to the operating work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The order is not the finished business system. The owner still has to connect the construction schedule, equipment delivery, fuel contract, capacity commitment, uptime target, maintenance window, and customer billing date. A delay in any one of them can leave expensive equipment waiting on the others.</p>
+
+      <p>Caterpillar has a useful position because it can earn from the initial machine, finance it, and service it. Primary power also runs far more hours than emergency backup. More loaded hours mean more maintenance, more replacement parts, and more dealer work. That recurring layer can outlast the construction surge if the campuses stay busy.</p>
+
+      <p>It also creates the real test for the backlog. A generator does not care whether the electricity feeds a valuable production workload or an underused block of reserved compute. Caterpillar gets the first sale when the iron ships. The quality of its AI business will show up later in loaded hours, service visits, parts demand, and whether customers order the next phase. The chip race has reached the dealer's service bay.</p>
+    `
+  },
   post136: {
     featured: false,
     date: 'August 4, 2026', iso: '2026-08-04',
@@ -4179,6 +4229,7 @@ POST_ORDER.unshift('post133');
 POST_ORDER.unshift('post134');
 POST_ORDER.unshift('post135');
 POST_ORDER.unshift('post136');
+POST_ORDER.unshift('post137');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
