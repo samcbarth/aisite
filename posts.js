@@ -7,6 +7,52 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post138: {
+    featured: false,
+    date: 'August 6, 2026', iso: '2026-08-06',
+    title: 'What does a HubSpot agent cost after the demo?',
+    category: 'CRM & RevOps', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post138-hero.jpg',
+    body: `
+      <p>On July 23, every HubSpot agent moved onto the same meter. On August 5, HubSpot reported the quarter that explains why the meter matters.</p>
+
+      <p>The rate looks simple: one HubSpot credit costs one cent after the included allowance. The work does not. A data-agent response uses 10 credits. A resolved text conversation uses 50. A prospecting recommendation uses 100. One piece from the content agent uses 1,000.</p>
+
+      <p>That puts a new operating question inside the CRM. Before a team asks whether an agent can do the work, someone has to decide how much of that work should run, what a successful run is worth, and where the monthly limit belongs.</p>
+
+      <h2>Put 5,000 credits into a workweek</h2>
+
+      <p>A <a href="https://www.hubspot.com/pricing/suite?tier=professional" target="_blank" rel="noopener noreferrer">Professional Customer Platform subscription</a> starts at $1,300 a month and includes 5,000 credits. Used one way, that allowance covers 100 text conversations resolved by Customer Agent. Used another way, it covers 50 prospecting recommendations, 500 data-agent responses, or five content-agent pieces.</p>
+
+      <p>Most teams will mix those jobs. Twenty-five resolved conversations, ten prospecting recommendations, 75 data responses, and two content pieces use exactly 5,000 credits. The credit is a common currency, but the business value still comes from four different processes with four different owners.</p>
+
+      <p><a href="https://legal.hubspot.com/hubspot-product-and-services-catalog" target="_blank" rel="noopener noreferrer">HubSpot's rate sheet</a> makes the marginal math visible. Above the included amount, a resolved text conversation is 50 cents, a prospect recommendation is $1, a data response is 10 cents, and a content piece is $10. Those prices can be reasonable. They are not outcomes by themselves. A ticket that reopens, an outreach recommendation nobody sends, and a record answer nobody trusts still consume the meter.</p>
+
+      <h2>The quarter is healthy, while the model changes</h2>
+
+      <p><a href="https://ir.hubspot.com/news-releases/news-release-details/hubspot-reports-q2-2026-results" target="_blank" rel="noopener noreferrer">HubSpot reported</a> $911.7 million in second-quarter revenue, up 20% from a year earlier. It reached 306,446 customers, up 14%, while average subscription revenue per customer rose 4% to $11,800. GAAP operating income was $43.3 million after a $24.6 million loss in the same quarter last year.</p>
+
+      <p>The forward numbers are slower. Calculated billings grew 14%, and HubSpot guided third-quarter revenue to $924 million to $925 million, also up 14%. That would be only about 1.4% sequential growth at the midpoint. The company still expects 18% reported growth for the full year, but the next quarter has less room than the headline Q2 result suggests.</p>
+
+      <p>CEO Yamini Rangan connected that transition directly to the AI offer: <a href="https://ir.hubspot.com/news-releases/news-release-details/hubspot-reports-q2-2026-results" target="_blank" rel="noopener noreferrer">“Scaling companies want real outcomes and predictable pricing when adopting AI.”</a> The new credit system is HubSpot's attempt to provide both. It lets a customer begin with an included allowance, buy fixed packs, or turn on pay-as-you-go instead of adding another seat for work done by software.</p>
+
+      <h2>HubSpot is paying its side of the meter</h2>
+
+      <p>Usage pricing is not only a way to charge more. It also connects revenue to a cost that moves when an agent runs. HubSpot's subscription revenue rose 20% in Q2, while subscription cost of revenue rose 37%. Gross margin remained healthy because subscription revenue is much larger, but the cost line is worth watching.</p>
+
+      <p>The <a href="https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm" target="_blank" rel="noopener noreferrer">10-Q</a> says subscription cost includes managed hosting, third-party services, and AI inferencing. It attributes the increase to customer growth, higher platform usage, more subscription and hosting costs, and continued investment in AI-enabled tools. It does not disclose how much of the increase came from inference, so that piece should not be guessed.</p>
+
+      <p>The filing gives the risk in unusually plain language: <a href="https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm" target="_blank" rel="noopener noreferrer">“Our consumption-based pricing strategies are novel and evolving.”</a> HubSpot may earn more when agents do more useful work. It can also face less predictable consumption, higher delivery costs, or customers who ration usage because the value is hard to measure.</p>
+
+      <h2>The admin screen now carries the promise</h2>
+
+      <p>HubSpot's own <a href="https://knowledge.hubspot.com/ai/review-estimated-credit-costs-when-using-agents" target="_blank" rel="noopener noreferrer">July guidance</a> recommends reviewing the estimated credit cost of every agent execution and setting monthly run limits to avoid unexpected charges. It also warns that estimates can differ from actual use. Credits reset each month and do not roll over.</p>
+
+      <p>This is where the story connects to the CRM operations work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The useful control is not just a spend cap. Each agent needs a denominator tied to its job: cost per conversation that stays resolved, cost per accepted prospect recommendation, cost per corrected record, or cost per content asset that actually ships. Without that denominator, the credit dashboard is only a faster invoice.</p>
+
+      <p>HubSpot now has 306,446 customers making those small allocation decisions. If an admin can see a 50-credit conversation become a durable resolution, the next 50 credits are easy to approve. If the estimate moves, the ticket reopens, or the team cannot connect use to a result, the run limit becomes the product's ceiling. HubSpot's next growth number will be shaped inside that admin screen, one metered agent job at a time.</p>
+    `
+  },
   post137: {
     featured: false,
     date: 'August 5, 2026', iso: '2026-08-05',
@@ -4230,6 +4276,7 @@ POST_ORDER.unshift('post134');
 POST_ORDER.unshift('post135');
 POST_ORDER.unshift('post136');
 POST_ORDER.unshift('post137');
+POST_ORDER.unshift('post138');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

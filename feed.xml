@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 07:12:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 07:10:36 GMT</lastBuildDate>
+    <item>
+      <title>What does a HubSpot agent cost after the demo?</title>
+      <link>https://samcbarth.github.io/aisite/posts/what-does-a-hubspot-agent-cost-after-the-demo/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-does-a-hubspot-agent-cost-after-the-demo/</guid>
+      <pubDate>Thu, 06 Aug 2026 12:00:00 GMT</pubDate>
+      <category>CRM &amp; RevOps</category>
+      <description>On July 23, every HubSpot agent moved onto the same meter. On August 5, HubSpot reported the quarter that explains why the meter matters. The rate looks simple: one HubSpot credit costs one cent after the included allowance. The work does not. A data-agent response uses 10 credit</description>
+    </item>
     <item>
       <title>Follow the AI order into Caterpillar&apos;s backlog</title>
       <link>https://samcbarth.github.io/aisite/posts/follow-the-ai-order-into-caterpillars-backlog/</link>
