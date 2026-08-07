@@ -7,6 +7,54 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post139: {
+    featured: false,
+    date: 'August 7, 2026', iso: '2026-08-07',
+    title: 'The Jira ticket no longer starts in Jira',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post139-hero.jpg',
+    body: `
+      <p>An employee can ask Claude to find a project decision, turn it into a Jira item, and update a Confluence page without opening either Atlassian product. The work still lands in Atlassian. The starting point moved.</p>
+
+      <p>Atlassian's August 6 results show that behavior at a scale worth reading carefully. Monthly active users of its Rovo MCP server and Teamwork Graph command-line tool more than doubled during the quarter to pass one million. MCP calls rose more than 400%, while Jira work items and Confluence pages generated through MCP increased nearly four times.</p>
+
+      <h2>Follow one request into the graph</h2>
+
+      <p>MCP, or Model Context Protocol, gives an AI client a standard way to connect with outside tools and data. When Anthropic introduced it in 2024, the company described the problem plainly: <a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" rel="noopener noreferrer">“Every new data source requires its own custom implementation, making truly connected systems difficult to scale.”</a></p>
+
+      <p>Atlassian's server provides that connection for Jira, Confluence, Compass, and Rovo. A person can work from Claude, ChatGPT, Cursor, or another compatible client while the server searches Atlassian, reads a record, or writes a change. The client supplies the interface and model. Atlassian supplies the company context and the destination for the work.</p>
+
+      <p>The <a href="https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/teamq42026shareholderlet.htm" target="_blank" rel="noopener noreferrer">shareholder letter</a> says the Teamwork Graph links six kinds of context: knowledge, work, communications, code, assets, and people. That can connect a ticket to a document, a Slack discussion, a code change, a service owner, and a business goal instead of handing the model a pile of isolated text.</p>
+
+      <p>CEO Mike Cannon-Brookes drew a sharp line between the two layers: <a href="https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/teamq42026shareholderlet.htm" target="_blank" rel="noopener noreferrer">“Organizations can hire intelligence by the token. Context is much harder for organizations to build. And it cannot be hired.”</a> That is Atlassian's product argument. Models are available from many vendors. A reliable map of who decided what, which work is blocked, and where the supporting evidence lives has to be built inside the business.</p>
+
+      <h2>The person did not leave the workflow</h2>
+
+      <p>One million monthly active users does not mean Atlassian has one million autonomous agents. The metric combines users of the MCP server and the Teamwork Graph CLI. Atlassian also says 98% of those users were active in the Jira interface during the same month.</p>
+
+      <p>That second number changes the story. AI clients are becoming another entrance to Atlassian, but they have not made the visible record irrelevant. A developer may create an issue from an editor. A service agent may update an incident from a chat. Someone still returns to Jira to review priority, ownership, dependencies, status, and what happened next.</p>
+
+      <p>Atlassian reports that Rovo adopters complete 20% more Jira work items and create or edit 25% more Confluence pages than non-adopters. Their annual recurring revenue also grows more than twice as fast. Those are company-reported comparisons, not proof that Rovo caused every difference. Larger, faster-growing customers may also have more reason to adopt it. The useful signal is that AI usage and core product activity are rising together.</p>
+
+      <h2>Permissions now shape the work item</h2>
+
+      <p>An AI client that can write a Jira issue can also create noise, expose the wrong record, or make a change with more reach than the user understands. Atlassian's <a href="https://support.atlassian.com/security-and-access-policies/docs/Configure-Atlassian-Rovo-MCP-server-permission/" target="_blank" rel="noopener noreferrer">admin controls</a> split access into read, write, and search permissions. An administrator can allow or block them by application. Interactive users normally connect through OAuth 2.1 and keep their existing access. API tokens support machine-to-machine jobs when an administrator enables them.</p>
+
+      <p>This is where the workflow work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> becomes more important, not less. A generated ticket still needs a source, an owner, an approval rule, and a clear way to reverse a bad change. Those controls should travel with the work item. If they live only in the AI client that created it, the shared record starts incomplete.</p>
+
+      <p>Atlassian's own support guidance says to use least privilege, review high-impact changes, and monitor audit logs. That is practical because MCP widens the number of places where a Jira change can begin. The control cannot depend on remembering which chat window or coding tool made the request.</p>
+
+      <h2>More entrances create a new cost line</h2>
+
+      <p>The quarter gives the strategy a business base. <a href="https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/ex991q4fy26.htm" target="_blank" rel="noopener noreferrer">Atlassian reported</a> $1.766 billion in revenue, up 28% from a year earlier. Cloud revenue reached $1.213 billion, up 31%, and remaining performance obligations rose 44% to $4.817 billion. GAAP operating margin was 12%.</p>
+
+      <p>AI usage is not free to deliver. Atlassian expects growing Rovo usage and hosting costs to weigh on fiscal 2027 gross margin, even as it works to route workloads across multiple models. Its current <a href="https://support.atlassian.com/atlassian-rovo-mcp-server/docs/supported-tools/" target="_blank" rel="noopener noreferrer">MCP tool list</a> says some beta Teamwork Graph calls may later cost at least one Rovo credit each, with higher prices possible for inference or multi-step graph queries.</p>
+
+      <p>That makes the shared record more than an administrative detail. If an agent creates four times as many tickets and pages but leaves people sorting duplicates, weak context, and missing owners, Atlassian pays to run more AI while customers inherit more cleanup. If the item arrives with its evidence, permissions, owner, and intended outcome intact, the new entrance makes Jira more useful.</p>
+
+      <p>The ticket may no longer start in Jira. Its value still comes together when the source, decision, person, and result meet in the same record, ready for the next human or agent to pick up without guessing what happened before.</p>
+    `
+  },
   post138: {
     featured: false,
     date: 'August 6, 2026', iso: '2026-08-06',
@@ -4277,6 +4325,7 @@ POST_ORDER.unshift('post135');
 POST_ORDER.unshift('post136');
 POST_ORDER.unshift('post137');
 POST_ORDER.unshift('post138');
+POST_ORDER.unshift('post139');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2026 07:10:36 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 07:07:49 GMT</lastBuildDate>
+    <item>
+      <title>The Jira ticket no longer starts in Jira</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-jira-ticket-no-longer-starts-in-jira/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-jira-ticket-no-longer-starts-in-jira/</guid>
+      <pubDate>Fri, 07 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Enterprise AI</category>
+      <description>An employee can ask Claude to find a project decision, turn it into a Jira item, and update a Confluence page without opening either Atlassian product. The work still lands in Atlassian. The starting point moved. Atlassian&apos;s August 6 results show that behavior at a scale worth re</description>
+    </item>
     <item>
       <title>What does a HubSpot agent cost after the demo?</title>
       <link>https://samcbarth.github.io/aisite/posts/what-does-a-hubspot-agent-cost-after-the-demo/</link>
