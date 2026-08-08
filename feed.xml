@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 07:07:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 07:09:26 GMT</lastBuildDate>
+    <item>
+      <title>The missing number in Twilio&apos;s AI quarter</title>
+      <link>https://samcbarth.github.io/aisite/posts/the-missing-number-in-twilios-ai-quarter/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-missing-number-in-twilios-ai-quarter/</guid>
+      <pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>The line item is not there. Twilio reported $1.499 billion in second-quarter revenue, $84.5 million in operating income, and $352.6 million in free cash flow. The same release called Twilio “the infrastructure for customer engagement in the AI era.” It did not break out revenue f</description>
+    </item>
     <item>
       <title>The Jira ticket no longer starts in Jira</title>
       <link>https://samcbarth.github.io/aisite/posts/the-jira-ticket-no-longer-starts-in-jira/</link>

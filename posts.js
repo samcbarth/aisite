@@ -7,6 +7,52 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post140: {
+    featured: false,
+    date: 'August 8, 2026', iso: '2026-08-08',
+    title: 'The missing number in Twilio\'s AI quarter',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post140-hero.jpg',
+    body: `
+      <p>The line item is not there.</p>
+
+      <p>Twilio reported $1.499 billion in second-quarter revenue, $84.5 million in operating income, and $352.6 million in free cash flow. The same release called Twilio “the infrastructure for customer engagement in the AI era.” It did not break out revenue from Voice AI, Conversation Memory, Conversation Orchestrator, or its other new AI products.</p>
+
+      <p>That does not make the AI story empty. It shows exactly where the evidence stops. Twilio has a strong quarter, a plausible place in the AI stack, and no clean number telling us how much of the growth came from that position.</p>
+
+      <h2>First, count the quarter we actually have</h2>
+
+      <p><a href="https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm" target="_blank" rel="noopener noreferrer">Revenue grew 22%</a> from a year earlier. Organic revenue, which strips out acquisitions, divestitures, and certain carrier fee effects, grew 17%. Dollar-based net expansion reached 116%, up from 108% a year ago. Existing customers, as a group, spent more.</p>
+
+      <p>Profitability improved too. GAAP operating income rose from $37 million to $84.5 million. Free cash flow increased from $263.5 million to $352.6 million. Twilio raised its full-year organic growth outlook from a 9.5% to 10.5% range to a new range of 13% to 13.5%.</p>
+
+      <p>Those numbers matter before anyone adds an AI label. They show a usage-based communications business growing faster while producing more cash. CEO Khozema Shipchandler connected that performance to the larger pitch: <a href="https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm" target="_blank" rel="noopener noreferrer">“In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both.”</a></p>
+
+      <h2>The AI product can hide inside an ordinary call</h2>
+
+      <p>Twilio's position is unusual because an AI transaction may look like old communications revenue. A voice agent still needs a phone number, carrier connection, audio stream, identity check, and a handoff when the conversation goes wrong. A messaging agent still sends SMS, WhatsApp, or RCS traffic. The model can come from another company while Twilio gets paid for moving the conversation.</p>
+
+      <p>In May, Twilio made that architecture more explicit. <a href="https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e" target="_blank" rel="noopener noreferrer">Conversation Memory</a> carries customer history and state across interactions. Conversation Orchestrator manages routing and handoffs. Conversation Intelligence turns live exchanges into signals and workflow actions. Agent Connect links outside models to Twilio's voice and messaging channels without forcing the customer to rewire the channel each time it changes models.</p>
+
+      <p>That bundle can create several kinds of revenue at once: more call minutes, more messages, software usage for memory and orchestration, and a larger enterprise agreement. The earnings release and <a href="https://www.sec.gov/Archives/edgar/data/1447669/000144766926000092/twlo-20260630.htm" target="_blank" rel="noopener noreferrer">August 7 Form 10-Q</a> combine those effects into company-wide results. They do not give investors an AI product mix, AI-native customer revenue, agent conversation volume, or attach rate for the new Conversations products.</p>
+
+      <p>There is product evidence, just not a financial bridge. Centerfield CTO Aniketh Parmar said the company uses the new products to capture conversations and guide both people and AI systems. His practical test was direct: <a href="https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e" target="_blank" rel="noopener noreferrer">“We can see what's driving conversations so we can standardize what works, eliminate what doesn't and continuously improve outcomes at scale.”</a></p>
+
+      <h2>More traffic is not automatically better traffic</h2>
+
+      <p>Twilio's usage model gives it an attractive AI upside. An agent can place or answer more calls than a person. It can also create cheap, low-value traffic, repeat failed attempts, escalate too late, or keep a bad conversation running. Revenue can rise while the customer's outcome gets worse.</p>
+
+      <p>The margin line deserves the same attention. GAAP gross margin was 48%, down from 49% a year earlier. Non-GAAP gross margin fell from 51% to 49%. Twilio says product mix, cloud infrastructure, carrier charges, geography, and pricing all affect that number. The filing also warns that there is no assurance AI benefits will arrive “in a timely or cost-effective manner.”</p>
+
+      <p>This is the measurement problem I see in the operations work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A team can count agent calls and still miss whether the customer got an answer. The useful operating record connects Twilio minutes and messages to completed bookings, resolved cases, successful identity checks, human transfers, repeat contacts, and cost per finished outcome.</p>
+
+      <h2>Give the AI claim its own denominator</h2>
+
+      <p>Twilio does not need to label every AI-assisted message as a separate product. It does need a repeatable way to show that the AI strategy is changing the business. AI-native customer revenue, Voice AI minutes, Conversations attach rate, or gross profit from agent traffic would each make the claim easier to test over time.</p>
+
+      <p>Until then, the quarter proves that Twilio is growing, customers are expanding, and the business is producing more cash. It does not prove which part came from AI. The next useful number is not another count of agents or product launches. It is the one that separates a profitable AI conversation from an ordinary phone bill and shows whether the customer had to call back.</p>
+    `
+  },
   post139: {
     featured: false,
     date: 'August 7, 2026', iso: '2026-08-07',
@@ -4326,6 +4372,7 @@ POST_ORDER.unshift('post136');
 POST_ORDER.unshift('post137');
 POST_ORDER.unshift('post138');
 POST_ORDER.unshift('post139');
+POST_ORDER.unshift('post140');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

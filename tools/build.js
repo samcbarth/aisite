@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post140: {
+      image: 'assets/images/post140-inline.jpg',
+      caption: 'An AI conversation can create ordinary messaging revenue even when the model comes from another vendor. Photo: Paul Hanaoka via Unsplash.',
+      side: 'left', after: 5,
+      supportImage: 'assets/images/post140-support.jpg',
+      supportCaption: 'Twilio sells the communications rails beneath voice and messaging agents, including the carrier and network connections. Photo: Lightsaber Collection via Unsplash.'
+    },
     post139: {
       image: 'assets/images/post139-inline.jpg',
       caption: 'MCP lets an AI client reach Jira and Confluence from a coding tool or another interface. Photo: Jakub Zerdzicki via Unsplash.',
@@ -1696,6 +1703,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post140: { after: 4, quotes: [makeQuote('Infrastructure claim', { text: 'In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both.', source: 'Khozema Shipchandler, Twilio', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm' }), makeQuote('Customer measure', { text: 'We can see what\'s driving conversations so we can standardize what works, eliminate what doesn\'t and continuously improve outcomes at scale.', source: 'Aniketh Parmar, Centerfield', sourceUrl: 'https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e' })] },
     post139: { after: 4, quotes: [makeQuote('Context', { text: 'Organizations can hire intelligence by the token. Context is much harder for organizations to build. And it cannot be hired.', source: 'Mike Cannon-Brookes, Atlassian', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/teamq42026shareholderlet.htm' }), makeQuote('Integration problem', { text: 'Every new data source requires its own custom implementation, making truly connected systems difficult to scale.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/model-context-protocol' })] },
     post138: { after: 4, quotes: [makeQuote('Customer promise', { text: 'Scaling companies want real outcomes and predictable pricing when adopting AI.', source: 'Yamini Rangan, HubSpot', sourceUrl: 'https://ir.hubspot.com/news-releases/news-release-details/hubspot-reports-q2-2026-results' }), makeQuote('Filing risk', { text: 'Our consumption-based pricing strategies are novel and evolving.', source: 'HubSpot Q2 2026 Form 10-Q', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm' })] },
     post137: { after: 4, quotes: [makeQuote('Backlog', { text: 'Strong order rates and a growing backlog reflect broadening momentum across all three of our primary segments.', source: 'Joe Creed, Caterpillar', sourceUrl: 'https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Earnings-Release-Final.pdf' }), makeQuote('Fuel', { text: 'Natural gas supply is critical as we forecast that U.S. liquefied natural gas exports expand and electricity demand rises through 2027, driven largely by increasing demand from large computing facilities, including data centers.', source: 'Tristan Abbey, U.S. EIA', sourceUrl: 'https://www.eia.gov/pressroom/releases/press582.php' })] },
