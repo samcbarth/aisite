@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 07:09:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 07:05:31 GMT</lastBuildDate>
+    <item>
+      <title>Airtable sold. The bases did not become simple.</title>
+      <link>https://samcbarth.github.io/aisite/posts/airtable-sold-the-bases-did-not-become-simple/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/airtable-sold-the-bases-did-not-become-simple/</guid>
+      <pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Business Software</category>
+      <description>A campaign calendar. A product launch queue. A vendor approval. A customer research library. Airtable can look like a spreadsheet in each case, while quietly carrying the rules, permissions, interfaces, and automations that make the work move. That is what Bending Spoons agreed t</description>
+    </item>
     <item>
       <title>The missing number in Twilio&apos;s AI quarter</title>
       <link>https://samcbarth.github.io/aisite/posts/the-missing-number-in-twilios-ai-quarter/</link>

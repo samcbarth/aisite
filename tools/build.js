@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post141: {
+      image: 'assets/images/post141-inline.jpg',
+      caption: 'Airtable customers turn tables, interfaces, and automations into working applications. Photo: Vitaly Gariev via Unsplash.',
+      side: 'right', after: 5,
+      supportImage: 'assets/images/post141-support.jpg',
+      supportCaption: 'The acquisition agreement changes ownership. Customer workflows still have to work through the transition. Photo: Mina Rad via Unsplash.'
+    },
     post140: {
       image: 'assets/images/post140-inline.jpg',
       caption: 'An AI conversation can create ordinary messaging revenue even when the model comes from another vendor. Photo: Paul Hanaoka via Unsplash.',
@@ -1703,6 +1710,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post141: { after: 5, quotes: [makeQuote('Buyer playbook', { text: 'The transformation is often deep, with some interventions potentially appearing drastic or involving controversial steps, such as workforce reductions.', source: 'Bending Spoons prospectus', sourceUrl: 'https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf' }), makeQuote('Airtable vision', { text: 'Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly.', source: 'Howie Liu, Airtable', sourceUrl: 'https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable' })] },
     post140: { after: 4, quotes: [makeQuote('Infrastructure claim', { text: 'In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both.', source: 'Khozema Shipchandler, Twilio', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm' }), makeQuote('Customer measure', { text: 'We can see what\'s driving conversations so we can standardize what works, eliminate what doesn\'t and continuously improve outcomes at scale.', source: 'Aniketh Parmar, Centerfield', sourceUrl: 'https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e' })] },
     post139: { after: 4, quotes: [makeQuote('Context', { text: 'Organizations can hire intelligence by the token. Context is much harder for organizations to build. And it cannot be hired.', source: 'Mike Cannon-Brookes, Atlassian', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/teamq42026shareholderlet.htm' }), makeQuote('Integration problem', { text: 'Every new data source requires its own custom implementation, making truly connected systems difficult to scale.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/model-context-protocol' })] },
     post138: { after: 4, quotes: [makeQuote('Customer promise', { text: 'Scaling companies want real outcomes and predictable pricing when adopting AI.', source: 'Yamini Rangan, HubSpot', sourceUrl: 'https://ir.hubspot.com/news-releases/news-release-details/hubspot-reports-q2-2026-results' }), makeQuote('Filing risk', { text: 'Our consumption-based pricing strategies are novel and evolving.', source: 'HubSpot Q2 2026 Form 10-Q', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm' })] },

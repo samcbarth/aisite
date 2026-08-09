@@ -7,6 +7,54 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post141: {
+    featured: false,
+    date: 'August 9, 2026', iso: '2026-08-09',
+    title: 'Airtable sold. The bases did not become simple.',
+    category: 'Business Software', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post141-hero.jpg',
+    body: `
+      <p>A campaign calendar. A product launch queue. A vendor approval. A customer research library. Airtable can look like a spreadsheet in each case, while quietly carrying the rules, permissions, interfaces, and automations that make the work move.</p>
+
+      <p>That is what Bending Spoons agreed to buy on August 4. The headline price describes a software company. The operational value sits inside thousands of bases that other companies have assembled into their own applications.</p>
+
+      <p>The acquisition will work only if Bending Spoons can change Airtable without making those applications feel less dependable. Its own public playbook says the changes will not be small.</p>
+
+      <h2>One sale came with two correct prices</h2>
+
+      <p><a href="https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable" target="_blank" rel="noopener noreferrer">Bending Spoons announced</a> an all-cash enterprise value of $1.285 billion and an implied equity value of approximately $2.25 billion. The roughly $965 million difference is Airtable's current net cash and cash equivalents. Enterprise value measures what the buyer is assigning to the operation after accounting for that cash. Equity value measures what all outstanding shares are worth in the deal.</p>
+
+      <p>The lower number gives a useful rough multiple. Airtable had approximately $480 million in annual recurring revenue as of June, growing more than 20% from a year earlier. That puts the announced enterprise value at about 2.7 times ARR. ARR is not the same as audited annual revenue, but it helps explain why the buyer calls the business predictable.</p>
+
+      <p>The old venture price tells a different story. <a href="https://www.axios.com/2026/08/04/bending-spoons-airtable" target="_blank" rel="noopener noreferrer">Axios reported</a> that Airtable raised $735 million in 2021 at an $11 billion pre-money valuation. <a href="https://www.airtable.com/newsroom" target="_blank" rel="noopener noreferrer">Airtable's newsroom</a> lists $1.36 billion in total funding. The $2.25 billion equity value is far below the peak private valuation, but it does not tell us what every investor or employee receives. Preference terms, share classes, purchase dates, and the company's cash balance all affect that outcome.</p>
+
+      <h2>Predictable revenue met an aggressive playbook</h2>
+
+      <p>This is Bending Spoons' first acquisition since its July 1 Nasdaq listing. Airtable also fits the criteria the buyer described before the IPO. In its <a href="https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf" target="_blank" rel="noopener noreferrer">prospectus</a>, Bending Spoons said it evaluates targets partly on the predictability of cash flows and the room to improve product, technology, monetization, and operations.</p>
+
+      <p>There is plenty of recurrence to evaluate. More than 500,000 organizations use Airtable, including 80% of the Fortune 100, according to the deal announcement. The buyer is not starting with an unproven product. It is starting with subscriptions, embedded work, and a large customer base that may find replacement difficult.</p>
+
+      <p>CEO Luca Ferrari said, <a href="https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable" target="_blank" rel="noopener noreferrer">“We’re committed to investing in Airtable for the long run.”</a> Bending Spoons also says what its long run usually begins with: reorganizing teams, overhauling technology, redesigning interfaces, changing marketing and monetization, and putting more AI into the product and the work of operating it.</p>
+
+      <p>The prospectus is unusually direct about the human side: <a href="https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf" target="_blank" rel="noopener noreferrer">“The transformation is often deep, with some interventions potentially appearing drastic or involving controversial steps, such as workforce reductions.”</a> That is not a prediction of a specific Airtable cut. It is the buyer's stated method, and it matters when customers depend on product knowledge, support, security work, and the people who understand why an old feature behaves the way it does.</p>
+
+      <h2>A base is software someone else assembled</h2>
+
+      <p>Airtable's own <a href="https://support.airtable.com/v1/docs/taking-and-restoring-base-snapshots" target="_blank" rel="noopener noreferrer">snapshot documentation</a> gives the best definition of what is at stake. A base can contain automations, interfaces, extensions, tables, views, and records. Restoring one creates a new base. In other words, the customer has not just entered rows. It has assembled an application with behavior and history.</p>
+
+      <p>Airtable has been making that application layer more ambitious. Its AI-native platform lets Omni generate apps through conversation and chain AI steps into recurring workflows. Founder and CEO Howie Liu framed the acquisition around that direction: <a href="https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable" target="_blank" rel="noopener noreferrer">“Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly.”</a></p>
+
+      <p>The opportunity is real. Bending Spoons can bring shared infrastructure, faster experiments, better payment systems, stronger data tools, and more engineering capacity. Airtable can give the portfolio a serious enterprise platform. The risk is that a pricing experiment, permission change, interface redesign, or altered automation limit reaches past Airtable's screen and changes how a customer's operation runs.</p>
+
+      <h2>The ownership change needs a base-level record</h2>
+
+      <p>This is where the workflow discipline I write about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> applies directly. Before the deal closes, an Airtable customer should be able to name the owner of each critical base, its outside integrations, its automation failure alerts, the people allowed to change it, and the process that would stop if it went down. That is not panic migration. It is the operating record the company should already have.</p>
+
+      <p>The same record makes Bending Spoons' work easier to judge. Faster releases help if they reduce broken automations and make large bases easier to govern. AI features help if administrators can see what they changed and reverse a bad action. New pricing can work if a company can connect the bill to a workflow it still wants to run. A cleaner interface is valuable only if the people using a custom app can still find the decision in front of them.</p>
+
+      <p>The transaction is expected to close later this year after regulatory approvals. Until then, the companies remain independent. The two prices will keep getting attention because they show how far Airtable moved from its 2021 funding round. The more important test begins after closing, when Bending Spoons starts changing the product and a Monday morning approval still has to reach the right person, with the right data, for the right reason.</p>
+    `
+  },
   post140: {
     featured: false,
     date: 'August 8, 2026', iso: '2026-08-08',
@@ -4373,6 +4421,7 @@ POST_ORDER.unshift('post137');
 POST_ORDER.unshift('post138');
 POST_ORDER.unshift('post139');
 POST_ORDER.unshift('post140');
+POST_ORDER.unshift('post141');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
