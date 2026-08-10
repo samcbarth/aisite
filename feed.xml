@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 07:05:31 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 07:08:58 GMT</lastBuildDate>
+    <item>
+      <title>AMD bought less flexibility on purpose</title>
+      <link>https://samcbarth.github.io/aisite/posts/amd-bought-less-flexibility-on-purpose/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amd-bought-less-flexibility-on-purpose/</guid>
+      <pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <description>A model that changes every week belongs on flexible hardware. A model that runs the same job millions of times may be wasting money on flexibility it no longer needs. AMD entered that tradeoff on August 6 when it agreed to acquire Taalas, a Toronto chip startup that builds the ha</description>
+    </item>
     <item>
       <title>Airtable sold. The bases did not become simple.</title>
       <link>https://samcbarth.github.io/aisite/posts/airtable-sold-the-bases-did-not-become-simple/</link>

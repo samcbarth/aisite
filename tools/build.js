@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post142: {
+      image: 'assets/images/post142-inline.jpg',
+      caption: 'Taalas builds a specific model into silicon instead of keeping every workload programmable. Photo: Omar Sabra via Unsplash.',
+      side: 'left', after: 5,
+      supportImage: 'assets/images/post142-support.jpg',
+      supportCaption: 'AMD plans to combine specialized Taalas technology with Instinct GPUs in system-level inference products. Photo: Kier in Sight Archives via Unsplash.'
+    },
     post141: {
       image: 'assets/images/post141-inline.jpg',
       caption: 'Airtable customers turn tables, interfaces, and automations into working applications. Photo: Vitaly Gariev via Unsplash.',
@@ -1710,6 +1717,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post142: { after: 5, quotes: [makeQuote('Specialization', { text: 'General-purpose computing entered the mainstream by becoming easy to build, fast, and cheap.', source: 'Ljubisa Bajic, Taalas', sourceUrl: 'https://taalas.com/the-path-to-ubiquitous-ai/' }), makeQuote('AMD plan', { text: 'the right compute solutions for every AI workload', source: 'Vamsi Boppana, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market' })] },
     post141: { after: 5, quotes: [makeQuote('Buyer playbook', { text: 'The transformation is often deep, with some interventions potentially appearing drastic or involving controversial steps, such as workforce reductions.', source: 'Bending Spoons prospectus', sourceUrl: 'https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf' }), makeQuote('Airtable vision', { text: 'Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly.', source: 'Howie Liu, Airtable', sourceUrl: 'https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable' })] },
     post140: { after: 4, quotes: [makeQuote('Infrastructure claim', { text: 'In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both.', source: 'Khozema Shipchandler, Twilio', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm' }), makeQuote('Customer measure', { text: 'We can see what\'s driving conversations so we can standardize what works, eliminate what doesn\'t and continuously improve outcomes at scale.', source: 'Aniketh Parmar, Centerfield', sourceUrl: 'https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e' })] },
     post139: { after: 4, quotes: [makeQuote('Context', { text: 'Organizations can hire intelligence by the token. Context is much harder for organizations to build. And it cannot be hired.', source: 'Mike Cannon-Brookes, Atlassian', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1650372/000165037226000031/teamq42026shareholderlet.htm' }), makeQuote('Integration problem', { text: 'Every new data source requires its own custom implementation, making truly connected systems difficult to scale.', source: 'Anthropic', sourceUrl: 'https://www.anthropic.com/news/model-context-protocol' })] },
