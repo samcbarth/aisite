@@ -7,6 +7,56 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post143: {
+    featured: false,
+    date: 'August 11, 2026', iso: '2026-08-11',
+    title: 'Intel turned its rally into a factory budget',
+    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post143-hero.jpg',
+    body: `
+      <p>Intel's stock rally did more than repair the mood around the company. On August 10, Intel turned part of that confidence into financing.</p>
+
+      <p>The company announced a $15 billion underwritten common-stock offering, with a 30-day option that could add another $2.25 billion. The money may support capital expenditures and working capital. That is enough to buy a lot of factory equipment, but Intel did not tie the offering to one named customer, one fab, or one production commitment.</p>
+
+      <p>This is the useful way to read the news: Intel has moved the cost of future capacity onto today's balance sheet. The offering may be a sign that demand is real. It is not the same thing as revenue from that demand.</p>
+
+      <h2>The number is large. The use is broad.</h2>
+
+      <p><a href="https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm" target="_blank" rel="noopener noreferrer">Intel's offering announcement</a> says, <a href="https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm" target="_blank" rel="noopener noreferrer">“Customers continue to signal a strong and sustainable demand environment.”</a> It points to AI compute, physical AI, purpose-built silicon, advanced packaging, and external wafer production as growth opportunities.</p>
+
+      <p>The filing is much less specific about where the cash goes. Intel says the proceeds are for general corporate purposes, which may include capital spending and working capital. Its <a href="https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341318/d98483d424b5.htm" target="_blank" rel="noopener noreferrer">preliminary prospectus</a> also says management has broad discretion over the proceeds and warns that the money could fail to produce an effective return.</p>
+
+      <p>The final share count was not available in that preliminary filing because the offering price had not been set. That matters. Existing owners know the target amount Intel wants to raise, but the actual dilution depends on the price and number of shares sold. The underwriters' option can make the deal 15% larger.</p>
+
+      <p>Intel chose equity even though it finished the second quarter with about $30 billion in cash and short-term investments and a $10 billion revolving credit line. Equity does not create the same scheduled interest bill as debt, which helps protect liquidity and an investment-grade credit profile. The trade is permanent ownership. New shares leave every existing share with a smaller percentage of the company.</p>
+
+      <h2>The earnings call made the timing visible</h2>
+
+      <p>Intel had already told investors to watch for this. The company reported <a href="https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results" target="_blank" rel="noopener noreferrer">$16.1 billion in second-quarter revenue</a>, up 25% from a year earlier, and $7 billion in operating cash flow. It raised expected 2026 capital spending to more than $20 billion and said 2027 spending would rise meaningfully.</p>
+
+      <p>During the July 23 earnings call, CFO David Zinsner said customer prepayments had already helped Intel unlock capacity. Then he added the condition that now looks like a preview: <a href="https://www.alphaspread.com/security/nasdaq/intc/investor-relations/earnings-call/q2-2026" target="_blank" rel="noopener noreferrer">“if we're super successful, which we're driving to, we may need to tap the capital markets.”</a> Eighteen days later, Intel did.</p>
+
+      <p>The sequence is encouraging, but it does not tell us what “super successful” means. Strong server CPU demand can require more Intel 3 capacity. Internal products can require 18A and 18A-P tools. Advanced packaging can need back-end equipment and outside suppliers. A major external foundry commitment can require years of spending before the first high-volume wafer ships. All of those needs can sit inside the same $15 billion general-purpose bucket.</p>
+
+      <h2>A purchase order is not a customer announcement</h2>
+
+      <p>Factory timing makes this difficult. Intel cannot wait for 2028 revenue before ordering the tools needed for a 2028 production ramp. In the earnings call, the company said 2026 tooling investment would increase about 40% from 2025. It also committed to high-volume 14A production in 2028 and said most current capital spending is going into equipment rather than new factory shells.</p>
+
+      <p>That creates a legitimate reason to raise money before every customer detail is public. Large chip customers protect product roadmaps, volumes, and supplier negotiations. Equipment makers also have their own lead times. Intel may need to place orders while the commercial agreement stays confidential.</p>
+
+      <p>Investors are reading the signal in that direction. <a href="https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049" target="_blank" rel="noopener noreferrer">Melius Research analysts told Reuters</a>, <a href="https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049" target="_blank" rel="noopener noreferrer">“The capex increase not only signals confidence in cash flow upside and demand visibility from long-term agreements for products, but also confidence that Foundry customers are coming.”</a></p>
+
+      <p>That is a reasonable interpretation, not a disclosed allocation. Intel Foundry still reported a $2.1 billion operating loss in the second quarter. The offering announcement did not identify a new foundry customer, committed wafer volume, expected revenue, factory location, or return threshold. Those gaps do not make the raise a bad decision. They define what Intel still has to prove.</p>
+
+      <h2>The return has to reach the wafer</h2>
+
+      <p>A useful capital record should connect each block of spending to a customer commitment, tool order, installation date, yield target, production window, and expected cash return. That is the same operating-chain discipline I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, applied to one of the most expensive production systems in business. “AI demand” is not a sufficient owner or approval field for a multibillion-dollar tool order.</p>
+
+      <p>The next filings can close that chain without exposing a customer's secret chip design. Intel can report the final offering price and share count, explain how capital spending changed, separate internal product capacity from external foundry capacity, show tool installations, track 18A and 14A yield progress, and disclose when outside wafer revenue begins to move.</p>
+
+      <p>Intel has converted market confidence into a factory budget. The next conversion is harder: budget into installed tools, tools into good wafers, and wafers into customer revenue before the added share count becomes the most durable result of the deal.</p>
+    `
+  },
   post142: {
     featured: false,
     date: 'August 10, 2026', iso: '2026-08-10',
@@ -4469,6 +4519,7 @@ POST_ORDER.unshift('post139');
 POST_ORDER.unshift('post140');
 POST_ORDER.unshift('post141');
 POST_ORDER.unshift('post142');
+POST_ORDER.unshift('post143');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

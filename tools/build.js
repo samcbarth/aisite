@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post143: {
+      image: 'assets/images/post143-inline.jpg',
+      caption: 'Intel can order production equipment years before the related wafers create customer revenue. Photo: Louis Reed via Unsplash.',
+      side: 'right', after: 5,
+      supportImage: 'assets/images/post143-support.jpg',
+      supportCaption: 'The return on new capital ultimately depends on usable chips, customer volume, and foundry economics. Photo: Anne Nygard via Unsplash.'
+    },
     post142: {
       image: 'assets/images/post142-inline.jpg',
       caption: 'Taalas builds a specific model into silicon instead of keeping every workload programmable. Photo: Omar Sabra via Unsplash.',
@@ -1717,6 +1724,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post143: { after: 5, quotes: [makeQuote('Demand signal', { text: 'Customers continue to signal a strong and sustainable demand environment.', source: 'Intel offering announcement', sourceUrl: 'https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm' }), makeQuote('Investor reading', { text: 'The capex increase not only signals confidence in cash flow upside and demand visibility from long-term agreements for products, but also confidence that Foundry customers are coming.', source: 'Melius Research via Reuters', sourceUrl: 'https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049' })] },
     post142: { after: 5, quotes: [makeQuote('Specialization', { text: 'General-purpose computing entered the mainstream by becoming easy to build, fast, and cheap.', source: 'Ljubisa Bajic, Taalas', sourceUrl: 'https://taalas.com/the-path-to-ubiquitous-ai/' }), makeQuote('AMD plan', { text: 'the right compute solutions for every AI workload', source: 'Vamsi Boppana, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market' })] },
     post141: { after: 5, quotes: [makeQuote('Buyer playbook', { text: 'The transformation is often deep, with some interventions potentially appearing drastic or involving controversial steps, such as workforce reductions.', source: 'Bending Spoons prospectus', sourceUrl: 'https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf' }), makeQuote('Airtable vision', { text: 'Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly.', source: 'Howie Liu, Airtable', sourceUrl: 'https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable' })] },
     post140: { after: 4, quotes: [makeQuote('Infrastructure claim', { text: 'In a world where humans and AI agents increasingly work side by side, Twilio is providing the infrastructure to power them both.', source: 'Khozema Shipchandler, Twilio', sourceUrl: 'https://www.sec.gov/Archives/edgar/data/1447669/000144766926000088/twloq226ex991.htm' }), makeQuote('Customer measure', { text: 'We can see what\'s driving conversations so we can standardize what works, eliminate what doesn\'t and continuously improve outcomes at scale.', source: 'Aniketh Parmar, Centerfield', sourceUrl: 'https://www.twilio.com/en-us/press/releases/twilio-s-next-generation-platform--an-infrastructure-layer-for-e' })] },
