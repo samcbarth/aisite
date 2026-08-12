@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 07:10:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 07:06:46 GMT</lastBuildDate>
+    <item>
+      <title>Hyundai put a stopwatch on enterprise AI</title>
+      <link>https://samcbarth.github.io/aisite/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</guid>
+      <pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Enterprise AI</category>
+      <description>Thirty-five minutes became five. Crash-safety case review time fell by roughly 90%. Unnecessary production downtime fell by roughly 86%. Vehicle-maintenance response time fell by roughly 42%. Those are Hyundai Motor Group&apos;s own measurements, released August 12 at an internal AI a</description>
+    </item>
     <item>
       <title>Intel turned its rally into a factory budget</title>
       <link>https://samcbarth.github.io/aisite/posts/intel-turned-its-rally-into-a-factory-budget/</link>

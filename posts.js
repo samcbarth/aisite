@@ -7,6 +7,58 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post144: {
+    featured: false,
+    date: 'August 12, 2026', iso: '2026-08-12',
+    title: 'Hyundai put a stopwatch on enterprise AI',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post144-hero.jpg',
+    body: `
+      <p>Thirty-five minutes became five. Crash-safety case review time fell by roughly 90%. Unnecessary production downtime fell by roughly 86%. Vehicle-maintenance response time fell by roughly 42%.</p>
+
+      <p>Those are Hyundai Motor Group's own measurements, released August 12 at an internal AI achievement showcase. They are not independent benchmarks, and Hyundai did not publish the sample sizes or calculation methods behind them. They are still more useful than another broad claim that AI will transform manufacturing.</p>
+
+      <p>The company also talked about physical AI, autonomous vehicles and robots. That future will get the attention. The more credible story is already running through crash-test records, parts carts, service manuals and customer reviews. Hyundai put a stopwatch on the work.</p>
+
+      <h2>The models arrived after the record</h2>
+
+      <p><a href="https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era" target="_blank" rel="noopener noreferrer">Hyundai's announcement</a> starts its timeline in 2019, not with the release of ChatGPT. The group standardized project work and decision tracking through Jira, Dooray and Confluence, rolled Microsoft 365 across the business and built a Global One Data Pipeline connecting research, production, quality and sales.</p>
+
+      <p>That order matters. The AI did not create the crash-test history, production status or service record. It got a more usable path into information Hyundai had already been collecting. A model can search a scattered archive faster. A connected record lets it compare test conditions, vehicle structures, injury mechanisms and prior design changes as one case.</p>
+
+      <p>Hyundai then gave employees a common front door. H Chat Pro provides protected access to ChatGPT, Gemini and Claude. More than 30,000 people used it actively as of July, according to the company, equal to about 80% of the general employee population at Hyundai Motor and Kia. That is wide distribution for an internal AI platform. It also means access is no longer the best explanation for slow adoption.</p>
+
+      <h2>Four jobs have four denominators</h2>
+
+      <p>The crash-safety assistant is measured in case-review time. Engineers can search test results, images and analysis data through one knowledge system, cutting the time spent finding and reviewing relevant cases by about 90%. The claim is not that AI made the safety decision. Hyundai says engineers can spend the saved time interpreting results and changing vehicle designs.</p>
+
+      <p>On production lines, cameras and vision AI read vehicle identification numbers and compare each vehicle with system records. Hyundai says the service now runs across about 70 processes in Korea, the United States, Europe, India and the Asia-Pacific region, producing approximately KRW 5.24 billion, or $3.9 million, in annual savings.</p>
+
+      <p>A separate routing system uses reinforcement learning and existing optimization methods to restore parts-cart movement after equipment problems. Hyundai reports about 86% less unnecessary downtime. In service centers, a language model searches manuals and historical records from a fault code or symptom, reducing maintenance response time by about 42%.</p>
+
+      <p>Then there is the smallest-looking job. Hyundai, Kia and Genesis receive customer reviews through their apps. An AI system categorizes the review, reads sentiment, drafts a response and flags issues for escalation. Average handling time dropped from 35 minutes to about five while a person still reviews the output.</p>
+
+      <p>This is the measurement discipline I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Each system gets a denominator tied to its actual job: minutes per case, downtime per interruption, cost per process, response time per repair. One company-wide count of prompts would hide all four outcomes.</p>
+
+      <h2>Thirty thousand users do not settle the quality question</h2>
+
+      <p>Hyundai says employees without software backgrounds are building task-specific agents through H Chat Pro. That is a meaningful change in who can automate work. It also spreads the review burden. A useful internal platform needs to show which model handled a request, what company data it used, what the agent changed and whether anyone checked the result.</p>
+
+      <p>Eunsook Jin, Hyundai Motor Group's president and head of ICT management, put the emphasis in the right place: <a href="https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era" target="_blank" rel="noopener noreferrer">“What matters is not the technology itself.”</a> Hyundai's published figures begin to answer what does matter. They do not yet show error rates, reopened service cases, false VIN reads, bad routes or escalations missed by the review system.</p>
+
+      <p>“Active user” needs the same treatment. The company did not define whether it means a daily, weekly or monthly user, or show how use varies by role. Eighty percent reach is impressive. Durable value still comes from the smaller records showing whether the same job became faster, safer or cheaper without moving rework somewhere else.</p>
+
+      <h2>The first safety driver leaves in September</h2>
+
+      <p>Hyundai plans to fully automate customer-review responses in September. That is a near-term control change, not a distant robot promise. The current five-minute workflow includes a person reviewing the draft. Full automation removes that checkpoint, so Hyundai will need a clear boundary for which complaints can receive an automatic answer and which ones still reach a person.</p>
+
+      <p>The larger physical-AI plan runs on a longer clock. Hyundai and NVIDIA previously announced <a href="https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-nvidia-blackwell-ai-factory" target="_blank" rel="noopener noreferrer">an AI factory using 50,000 Blackwell GPUs</a> and roughly $3 billion of investment around physical AI in Korea. Hyundai plans to put Boston Dynamics Atlas robots into sequencing work at its Georgia plant by 2028, with more complex assembly work targeted for 2030.</p>
+
+      <p>That ambition deserves caution. After Atlas appeared publicly at CES, McKinsey partner Alex Panas gave the Associated Press the right question: <a href="https://apnews.com/article/ces-humanoid-robots-atlas-hyundai-boston-dynamics-8de7b2470c23f5f22441ad1ad7555136" target="_blank" rel="noopener noreferrer">“what are the use cases and where is the applicability?”</a> Hyundai's current systems answer that question better than a stage demonstration because they name the work and attach a before-and-after measure.</p>
+
+      <p>The customer-review queue is the next clean test. If September automation keeps the five-minute gain, preserves response quality and sends serious complaints to a person, Hyundai will have another measured result. If the queue gets faster while customers repeat themselves or escalations vanish, the stopwatch will expose that too. Atlas can wait until 2028. Hyundai's first AI system to lose its safety driver is scheduled for next month.</p>
+    `
+  },
   post143: {
     featured: false,
     date: 'August 11, 2026', iso: '2026-08-11',
@@ -4520,6 +4572,7 @@ POST_ORDER.unshift('post140');
 POST_ORDER.unshift('post141');
 POST_ORDER.unshift('post142');
 POST_ORDER.unshift('post143');
+POST_ORDER.unshift('post144');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post144: {
+      image: 'assets/images/post144-inline.jpg',
+      caption: 'Hyundai reports less avoidable downtime after applying AI to production routing and verification. Photo: Lenny Kuhne via Unsplash.',
+      side: 'left', after: 5,
+      supportImage: 'assets/images/post144-support.jpg',
+      supportCaption: 'The model becomes useful after engineers connect it to a defined job and a measurable result. Photo: ThisisEngineering via Unsplash.'
+    },
     post143: {
       image: 'assets/images/post143-inline.jpg',
       caption: 'Intel can order production equipment years before the related wafers create customer revenue. Photo: Louis Reed via Unsplash.',
@@ -1724,6 +1731,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post144: { after: 5, quotes: [makeQuote('Hyundai view', { text: 'What matters is not the technology itself.', source: 'Eunsook Jin, Hyundai Motor Group', sourceUrl: 'https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era' }), makeQuote('Use-case test', { text: 'what are the use cases and where is the applicability?', source: 'Alex Panas via Associated Press', sourceUrl: 'https://apnews.com/article/ces-humanoid-robots-atlas-hyundai-boston-dynamics-8de7b2470c23f5f22441ad1ad7555136' })] },
     post143: { after: 5, quotes: [makeQuote('Demand signal', { text: 'Customers continue to signal a strong and sustainable demand environment.', source: 'Intel offering announcement', sourceUrl: 'https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm' }), makeQuote('Investor reading', { text: 'The capex increase not only signals confidence in cash flow upside and demand visibility from long-term agreements for products, but also confidence that Foundry customers are coming.', source: 'Melius Research via Reuters', sourceUrl: 'https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049' })] },
     post142: { after: 5, quotes: [makeQuote('Specialization', { text: 'General-purpose computing entered the mainstream by becoming easy to build, fast, and cheap.', source: 'Ljubisa Bajic, Taalas', sourceUrl: 'https://taalas.com/the-path-to-ubiquitous-ai/' }), makeQuote('AMD plan', { text: 'the right compute solutions for every AI workload', source: 'Vamsi Boppana, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market' })] },
     post141: { after: 5, quotes: [makeQuote('Buyer playbook', { text: 'The transformation is often deep, with some interventions potentially appearing drastic or involving controversial steps, such as workforce reductions.', source: 'Bending Spoons prospectus', sourceUrl: 'https://bendingspoons.com/documents/financials/2026/Bending%20Spoons%20Final%20Prospectus%20As%20Filed.pdf' }), makeQuote('Airtable vision', { text: 'Partnering with Bending Spoons gives us the resources and the long-term commitment Airtable needs to pursue that vision even more boldly.', source: 'Howie Liu, Airtable', sourceUrl: 'https://investors.bendingspoons.com/newsroom/bending-spoons-agrees-to-acquire-airtable' })] },
