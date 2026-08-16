@@ -7,6 +7,52 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post145: {
+    featured: false,
+    date: 'August 16, 2026', iso: '2026-08-16',
+    title: 'A green dashboard can hide a bad AI answer',
+    category: 'Business Software', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post145-hero.jpg',
+    body: `
+      <p>A customer-support bot can return the wrong refund policy in 600 milliseconds. The endpoint is up. The database is reachable. The GPUs are not overloaded. Every traditional dashboard stays green while the customer receives a bad answer.</p>
+
+      <p>That gap explains why Dynatrace agreed on August 13 to acquire Arize for $915 million. Dynatrace already watches the application and infrastructure. Arize evaluates the model, retrieval, tools and output. The deal is a bet that those two records now belong in the same incident.</p>
+
+      <h2>“Running” stopped being a complete status</h2>
+
+      <p>Ordinary software observability answers familiar questions. Did the request finish? How long did it take? Which service failed? What changed before the error rate rose? Logs, metrics and traces give an operator a path from an alert to the piece of software or infrastructure causing it.</p>
+
+      <p>An AI application adds another failure surface. The request can finish on time and still retrieve the wrong document, call the wrong tool, ignore a policy, invent a fact or give an answer that a customer cannot use. Arize co-founder Jason Lopatecki described the distinction cleanly in <a href="https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize" target="_blank" rel="noopener noreferrer">Dynatrace's announcement</a>: <a href="https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize" target="_blank" rel="noopener noreferrer">“AI teams needed a way to know their agents were actually working correctly, not just running.”</a></p>
+
+      <p>Arize's Phoenix documentation makes the same problem practical: <a href="https://arize.com/docs/phoenix/tracing" target="_blank" rel="noopener noreferrer">“A trace showing ‘200 OK’ doesn’t mean the answer was right.”</a> Phoenix records model calls, retrievals, tool use, prompts, outputs, token counts and latency. Evaluations and human labels can then score whether a result was relevant, accurate or useful.</p>
+
+      <p>Dynatrace sees the other half. It can connect the request to application performance, infrastructure health, GPU use and business events. Put the two together and the support-bot failure no longer ends with “the service was available.” The operator can see which policy document was retrieved, which model generated the answer, whether the evaluation caught it, how the customer reacted and what the correction cost.</p>
+
+      <h2>The purchase price is for the feedback loop</h2>
+
+      <p>The headline transaction value is $915 million. The detailed terms call for about $815 million in cash plus replacement equity awards for Arize employees joining Dynatrace. Both Arize founders are expected to join after closing, and Lopatecki will continue leading the Arize team.</p>
+
+      <p>Dynatrace expects the deal to add about two percentage points to annual recurring revenue growth in fiscal 2027 while reducing non-GAAP operating margin by about 1.75 percentage points. Those estimates make the business trade visible. Dynatrace is accepting a near-term margin cost to add a product, developer community and sales path in AI evaluation.</p>
+
+      <p>The useful asset is not another dashboard. It is the loop between production and development. A bad live conversation should become an evaluation case. A changed prompt or model should run against that case before release. The new version should then carry the same trace fields back into production. Without that loop, teams can collect more telemetry and still repeat the same failure.</p>
+
+      <p>This is where the operating record I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> gets specific. The trace needs more than a model name and response time. It needs the customer request, approved source, tool action, owner, quality score, correction and final business result. Otherwise, engineering can close the technical incident while operations keeps handling the customer damage.</p>
+
+      <h2>One platform still needs open exits</h2>
+
+      <p>There is a real tension in the deal. Arize argued in 2021 that specialized monitoring tools should work together because <a href="https://arize.com/blog/best-of-breed-ml-monitoring/" target="_blank" rel="noopener noreferrer">“interoperability between tools becomes more important than ever before.”</a> Now Arize is becoming part of a broad observability platform whose commercial value includes consolidation.</p>
+
+      <p>Phoenix helps protect that flexibility. It is open source, accepts traces through OpenTelemetry and uses OpenInference instrumentation. The <a href="https://opentelemetry.io/blog/2025/ai-agent-observability/" target="_blank" rel="noopener noreferrer">OpenTelemetry project</a> is also developing common conventions for models, vector databases and agents. Those standards matter because a company may change models, agent frameworks or monitoring vendors long before it changes the customer workflow.</p>
+
+      <p>Dynatrace can make the combined product easier to buy without turning the trace into a proprietary dead end. Customers should be able to export the prompt, retrieval, tool and evaluation history, send the same telemetry to another system and keep a failure dataset when they replace a model. A unified view is useful. A record that only makes sense inside one vendor's interface is a future migration project.</p>
+
+      <h2>The incident has to reach the customer record</h2>
+
+      <p>Even a perfect technical trace does not know by itself whether the refund answer caused a repeat contact, a cancellation or a manual credit. That outcome usually lives in the CRM, ticketing system, payment platform or warehouse. The combined platform still has to connect model behavior with the system where the business result is recorded.</p>
+
+      <p>That is the line between AI observability and expensive log storage. The deal earns its price when one support incident carries the prompt, retrieved policy, tool call, model version, latency, customer correction and final resolution in a usable chain. If the product only makes a larger dashboard, Dynatrace paid $915 million to place two shades of green beside each other. The meaningful alert is the one that opens even when the server is healthy, because the answer is wrong.</p>
+    `
+  },
   post144: {
     featured: false,
     date: 'August 12, 2026', iso: '2026-08-12',
@@ -4573,6 +4619,7 @@ POST_ORDER.unshift('post141');
 POST_ORDER.unshift('post142');
 POST_ORDER.unshift('post143');
 POST_ORDER.unshift('post144');
+POST_ORDER.unshift('post145');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };

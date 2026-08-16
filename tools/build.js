@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post145: {
+      image: 'assets/images/post145-inline.jpg',
+      caption: 'AI engineers need the model trace and the production trace to describe the same request. Photo: Flipsnack via Unsplash.',
+      side: 'right', after: 5,
+      supportImage: 'assets/images/post145-support.jpg',
+      supportCaption: 'A technically healthy support bot can still create a failed customer interaction. Photo: Vagaro via Unsplash.'
+    },
     post144: {
       image: 'assets/images/post144-inline.jpg',
       caption: 'Hyundai reports less avoidable downtime after applying AI to production routing and verification. Photo: Lenny Kuhne via Unsplash.',
@@ -1731,6 +1738,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post145: { after: 5, quotes: [makeQuote('Correct, not running', { text: 'AI teams needed a way to know their agents were actually working correctly, not just running.', source: 'Jason Lopatecki, Arize', sourceUrl: 'https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize' }), makeQuote('A green trace', { text: 'A trace showing “200 OK” doesn’t mean the answer was right.', source: 'Arize Phoenix documentation', sourceUrl: 'https://arize.com/docs/phoenix/tracing' })] },
     post144: { after: 5, quotes: [makeQuote('Hyundai view', { text: 'What matters is not the technology itself.', source: 'Eunsook Jin, Hyundai Motor Group', sourceUrl: 'https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era' }), makeQuote('Use-case test', { text: 'what are the use cases and where is the applicability?', source: 'Alex Panas via Associated Press', sourceUrl: 'https://apnews.com/article/ces-humanoid-robots-atlas-hyundai-boston-dynamics-8de7b2470c23f5f22441ad1ad7555136' })] },
     post143: { after: 5, quotes: [makeQuote('Demand signal', { text: 'Customers continue to signal a strong and sustainable demand environment.', source: 'Intel offering announcement', sourceUrl: 'https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm' }), makeQuote('Investor reading', { text: 'The capex increase not only signals confidence in cash flow upside and demand visibility from long-term agreements for products, but also confidence that Foundry customers are coming.', source: 'Melius Research via Reuters', sourceUrl: 'https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049' })] },
     post142: { after: 5, quotes: [makeQuote('Specialization', { text: 'General-purpose computing entered the mainstream by becoming easy to build, fast, and cheap.', source: 'Ljubisa Bajic, Taalas', sourceUrl: 'https://taalas.com/the-path-to-ubiquitous-ai/' }), makeQuote('AMD plan', { text: 'the right compute solutions for every AI workload', source: 'Vamsi Boppana, AMD', sourceUrl: 'https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market' })] },
