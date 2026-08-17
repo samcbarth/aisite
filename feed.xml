@@ -6,7 +6,15 @@
     <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2026 22:09:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:11:46 GMT</lastBuildDate>
+    <item>
+      <title>Week 26 is where the AI rollout gets honest</title>
+      <link>https://samcbarth.github.io/aisite/posts/week-26-is-where-the-ai-rollout-gets-honest/</link>
+      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/week-26-is-where-the-ai-rollout-gets-honest/</guid>
+      <pubDate>Mon, 17 Aug 2026 12:00:00 GMT</pubDate>
+      <category>Enterprise AI</category>
+      <description>At week 26, researchers took a snapshot of the AI rollout. Not the license announcement. Not an executive survey about plans. They looked at who was active, how often they sent messages, and what kind of work was moving through ChatGPT Enterprise six months after a company adopte</description>
+    </item>
     <item>
       <title>A green dashboard can hide a bad AI answer</title>
       <link>https://samcbarth.github.io/aisite/posts/a-green-dashboard-can-hide-a-bad-ai-answer/</link>

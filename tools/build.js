@@ -179,6 +179,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post146: {
+      image: 'assets/images/post146-inline.jpg',
+      caption: 'Six months after adoption, active use spans levels and functions even when message volume does not. Photo: Blake Wisz via Unsplash.',
+      side: 'left', after: 6,
+      supportImage: 'assets/images/post146-support.jpg',
+      supportCaption: 'The business result needs its own record beside the message count. Photo: Walls.io via Unsplash.'
+    },
     post145: {
       image: 'assets/images/post145-inline.jpg',
       caption: 'AI engineers need the model trace and the production trace to describe the same request. Photo: Flipsnack via Unsplash.',
@@ -1738,6 +1745,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post146: { after: 6, quotes: [makeQuote('Use is not output', { text: 'The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.', source: 'OpenAI enterprise usage working paper', sourceUrl: 'https://arxiv.org/html/2608.12236' }), makeQuote('Common work', { text: 'writing dominates, but users also rely on it for information retrieval, analysis, decision making and strategizing', source: 'Microsoft Research', sourceUrl: 'https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/' })] },
     post145: { after: 5, quotes: [makeQuote('Correct, not running', { text: 'AI teams needed a way to know their agents were actually working correctly, not just running.', source: 'Jason Lopatecki, Arize', sourceUrl: 'https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize' }), makeQuote('A green trace', { text: 'A trace showing “200 OK” doesn’t mean the answer was right.', source: 'Arize Phoenix documentation', sourceUrl: 'https://arize.com/docs/phoenix/tracing' })] },
     post144: { after: 5, quotes: [makeQuote('Hyundai view', { text: 'What matters is not the technology itself.', source: 'Eunsook Jin, Hyundai Motor Group', sourceUrl: 'https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era' }), makeQuote('Use-case test', { text: 'what are the use cases and where is the applicability?', source: 'Alex Panas via Associated Press', sourceUrl: 'https://apnews.com/article/ces-humanoid-robots-atlas-hyundai-boston-dynamics-8de7b2470c23f5f22441ad1ad7555136' })] },
     post143: { after: 5, quotes: [makeQuote('Demand signal', { text: 'Customers continue to signal a strong and sustainable demand environment.', source: 'Intel offering announcement', sourceUrl: 'https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-341325/d82791dfwp.htm' }), makeQuote('Investor reading', { text: 'The capex increase not only signals confidence in cash flow upside and demand visibility from long-term agreements for products, but also confidence that Foundry customers are coming.', source: 'Melius Research via Reuters', sourceUrl: 'https://www.investing.com/news/stock-market-news/intel-rises-as-strong-forecasts-signal-ai-boost-for-turnaround-4811049' })] },

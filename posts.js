@@ -7,6 +7,58 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post146: {
+    featured: false,
+    date: 'August 17, 2026', iso: '2026-08-17',
+    title: 'Week 26 is where the AI rollout gets honest',
+    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    image: 'assets/images/post146-hero.jpg',
+    body: `
+      <p>At week 26, researchers took a snapshot of the AI rollout. Not the license announcement. Not an executive survey about plans. They looked at who was active, how often they sent messages, and what kind of work was moving through ChatGPT Enterprise six months after a company adopted it.</p>
+
+      <p>The picture is wide and uneven. Managers and directors make up the largest identified group of weekly active users at the average company. Early-career workers make up a much smaller share, but those who are active send roughly eight to nine more messages per week than the average active user inside the same firm. Executives send fewer.</p>
+
+      <p>That reversal is the useful business story in <a href="https://arxiv.org/html/2608.12236" target="_blank" rel="noopener noreferrer">a new OpenAI-affiliated working paper</a> released August 12. Access may be approved at the top. The daily experimentation is happening closer to the work.</p>
+
+      <h2>The snapshot starts with a selection problem</h2>
+
+      <p>The researchers studied de-identified ChatGPT Enterprise activity through March 2026. Their worker-characteristics sample included 1,764 organizations and 17,446,551 messages. A smaller task-classification sample covered 973 organizations and about 8.7 million classified messages. No researcher manually read individual customer messages, according to the paper.</p>
+
+      <p>That is unusually detailed evidence, but it is still one vendor looking through one product window. The sample excludes personal accounts, most API use, internally built systems and competing products. Administrative job titles were incomplete. The researchers also did not know the total number of employees in every role, so a role's share of active users is not the same thing as its adoption rate.</p>
+
+      <p>The paper is direct about those limits. It does not show that 7% of all early-career employees adopted ChatGPT, for example. It shows that early-career workers were 7% of identified weekly active users at the average firm after six months. That distinction keeps a usage chart from turning into a workforce claim it cannot support.</p>
+
+      <h2>The message count tilts down the org chart</h2>
+
+      <p>At the average firm, managers and directors represented about 24% of weekly active users. Individual contributors and professionals were 15%, senior individual contributors and principals were 14%, executives were 10%, and early-career workers and trainees were 7%.</p>
+
+      <p>Usage intensity tells a different story. Active early-career workers and trainees sent roughly eight to nine more weekly messages than the average active user in their firm. Managers, directors and executives sent fewer. Analysts and people in marketing and communications were also heavier users than the average active colleague.</p>
+
+      <p>I would not turn that into a clean story about junior jobs disappearing. A message count does not tell us whether the person drafted a useful deliverable, checked a weak answer, learned a new skill or spent 20 minutes correcting a bad response. It does show where practice is accumulating. The employees sending more messages are getting more chances to learn what the system can do, where it fails and how much review the work needs.</p>
+
+      <h2>Different departments still meet in the same few tasks</h2>
+
+      <p>More than half of active users performed documentation or technical-writing work. Nearly half did technical digital work. Research, planning, data analysis, legal work, finance, sales and marketing also appeared broadly, but the largest message volumes kept returning to writing, technical work and communication.</p>
+
+      <p>A separate <a href="https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/" target="_blank" rel="noopener noreferrer">Microsoft Research study of about 5.5 million Copilot Chat sessions</a> reached a similar shape across another product: <a href="https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/" target="_blank" rel="noopener noreferrer">“writing dominates, but users also rely on it for information retrieval, analysis, decision making and strategizing.”</a> The products and samples differ, so the figures should not be merged. The shared pattern matters anyway. Enterprise AI is spreading through common knowledge work before it becomes one narrow, standardized workflow.</p>
+
+      <p>The work also keeps its departmental accent. Engineers use the tool more for technical work and debugging. Finance workers use it for financial and tax tasks. Sales and marketing workers use it for customer-facing work. A general tool does not erase the function. It gives each function another way to produce its existing output.</p>
+
+      <h2>Seven times more tokens leaves one blank column</h2>
+
+      <p>ChatGPT Enterprise output tokens grew about sevenfold between June 2025 and March 2026. Among companies that had already adopted by June 2025, output grew roughly fourfold. Half the overall growth therefore came from deeper use inside existing customers, not just new logos.</p>
+
+      <p>That is strong evidence that use deepens after purchase. It is not a productivity result. The task classifier describes messages, not the downstream work product, time saved, error rate, revenue, cost or change in an operating routine. The authors say it plainly: <a href="https://arxiv.org/html/2608.12236" target="_blank" rel="noopener noreferrer">“The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.”</a></p>
+
+      <p>This is where the operating record I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> belongs beside the telemetry. A useful chain connects the AI conversation to a named task, an accepted output, a reviewer, elapsed time, rework and the business result. Messages and tokens show activity. That second record shows whether the activity changed the work.</p>
+
+      <h2>The job description will arrive late</h2>
+
+      <p>Companies usually update roles after behavior changes, not before. Six months into these rollouts, the same core categories are already crossing levels and departments, while the heaviest practice sits with people early in their careers. Managers may still own approval and risk, but they are not necessarily the people learning the tool through the most repetitions.</p>
+
+      <p>The org chart in the study has not been redrawn. The work underneath it has started moving anyway. By the time a job description catches up, an analyst, marketer or engineer may already be producing a different mix of drafts, research and technical work than the title describes. The important part of week 26 is not that the message count rose. It is that the people closest to production are quietly deciding which of those new tasks will become normal work.</p>
+    `
+  },
   post145: {
     featured: false,
     date: 'August 16, 2026', iso: '2026-08-16',
@@ -4620,6 +4672,7 @@ POST_ORDER.unshift('post142');
 POST_ORDER.unshift('post143');
 POST_ORDER.unshift('post144');
 POST_ORDER.unshift('post145');
+POST_ORDER.unshift('post146');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER };
