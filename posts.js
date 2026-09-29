@@ -7,6 +7,47 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post149: {
+    featured: false,
+    date: 'September 29, 2026', iso: '2026-09-29',
+    title: "Meta wants HubSpot's small customers. It still doesn't have the CRM.",
+    category: 'HubSpot & CRM', tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
+    image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Meta spent two days this week pointing its AI at the small-business market. Monday it launched Meta Enterprise Platform and hired MongoDB's CEO to run it. Tuesday it started rolling out Muse for Small Business, an agent that plugs into a company's ad accounts, Facebook and Instagram pages, and the software it already uses. By Tuesday morning, a Forbes column was calling HubSpot the most exposed company in the fight.</p>
+
+      <p>I think that is half right. Meta has the thing HubSpot has always had to work hardest for: distribution. What it does not have yet is the customer record. For a lot of small businesses, that difference decides which system they should actually build on.</p>
+
+      <h2>What Meta launched</h2>
+
+      <p>In <a href="https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/" target="_blank" rel="noopener noreferrer">Meta's announcement</a>, Mark Zuckerberg called the Enterprise Platform "the next major pillar of our business." It starts by bringing the Muse agent, Meta Business Agent, the Muse API, and Muse Code to businesses and developers. CJ Desai, who led MongoDB and spent nearly eight years at ServiceNow, will run it and report directly to Zuckerberg. MongoDB shares fell more than 18% on the news.</p>
+
+      <p>The small-business product came the next day. <a href="https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/" target="_blank" rel="noopener noreferrer">According to TechCrunch</a>, Muse for Small Business connects to Instagram analytics, Facebook Pages, and Meta ad accounts, plus tools like Shopify, Stripe, QuickBooks, Slack, Klaviyo, HighLevel, and Canva. It is free with usage limits, with paid plans for heavier use. Meta's own pitch is plain: small businesses "told us they're short on hours, not ideas."</p>
+
+      <p>Meta also has the reach to make that stick. It said in June that more than 1 million businesses already use Meta Business Agent to answer customers on WhatsApp and Messenger, and more than 8 million advertisers use its AI tools to make ads.</p>
+
+      <h2>Why HubSpot looks exposed</h2>
+
+      <p>The <a href="https://www.forbes.com/sites/jonmarkman/2026/09/29/meta-hires-mongodbs-ceo-as-its-ai-push-takes-aim-at-hubspots-customers/" target="_blank" rel="noopener noreferrer">Forbes argument</a> is simple. HubSpot sells marketing, sales, and service software to small and midsized companies, and it manages ads across channels, Meta's included. If Meta bundles agents, ad credits, and messaging inside the apps those businesses already use, a separate subscription gets harder to justify. In Jon Markman's words, Meta's move "raises the bar on what a standalone marketing platform must prove to justify its cost."</p>
+
+      <p>For the smallest businesses, I agree. A salon that books through Instagram messages and runs a few Facebook ads may never need a CRM with pipelines and lifecycle stages. If Muse can answer the questions, draft the posts, and read the ad results for free, that owner should use it.</p>
+
+      <h2>Where the argument gets thinner</h2>
+
+      <p>The picture changes once a business has an actual sales process. Leads come in from the website, referrals, trade shows, and cold outreach, not only from Meta ads. Deals take weeks and pass between people. Somebody needs to know which campaign produced revenue, not just clicks. That is the work a CRM exists to hold, and it is the part Meta has never owned.</p>
+
+      <p>Muse can connect to a lot of tools, and HubSpot was not on the integration list TechCrunch reported. That could change quickly. For now it means a business using both would have two AI agents working from two different pictures of the same customer. One knows the ad and the DM. The other knows the deal, the quote, and the support ticket.</p>
+
+      <p>HubSpot's recent moves read like it sees this coming. Its <a href="../your-chatgpt-ads-will-only-be-as-smart-as-your-crm/">ChatGPT Ads integration</a> and its self-updating Smart CRM are both arguments that the record, not the channel, is the valuable part. As I wrote about the <a href="../hubspots-crm-now-updates-itself-someone-still-has-to-own-the-truth/">new Smart CRM</a>, that argument only holds if the record is actually right.</p>
+
+      <h2>The decision for a small team</h2>
+
+      <p>If most of your customers find you, talk to you, and buy from you inside Meta's apps, Muse is worth a serious look before you add more software. If your revenue depends on a pipeline with stages, owners, and follow-up, the question is not which AI is smarter. It is which system holds the source of truth, so every agent reads from the same place instead of splitting the customer into two versions.</p>
+
+      <p>That choice is easy to make now and expensive to undo later, which is why I would sort it out before trying either agent. It is the kind of <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM and RevOps decision</a> small teams usually make by accident. Meta has the audience. The business that knows where its customer record lives gets to decide how much of that audience it actually needs.</p>
+    `
+  },
   post148: {
     featured: false,
     date: 'September 29, 2026', iso: '2026-09-29',
@@ -4926,6 +4967,7 @@ POST_ORDER.unshift('post145');
 POST_ORDER.unshift('post146');
 POST_ORDER.unshift('post147');
 POST_ORDER.unshift('post148');
+POST_ORDER.unshift('post149');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER, HUBS };

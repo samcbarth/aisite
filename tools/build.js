@@ -233,6 +233,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post149: {
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&h=650&fit=crop&q=80',
+      caption: 'For many small businesses, the customer conversation already lives on a phone inside Meta apps. Photo via Unsplash.',
+      side: 'right', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The sale itself still has to land in a system that remembers it. Photo via Unsplash.'
+    },
     post148: {
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=900&h=650&fit=crop&q=80',
       caption: 'Capturing activity is the easy half of keeping a CRM current. Photo via Unsplash.',
@@ -1813,6 +1820,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post149: { after: 7, quotes: [makeQuote('Meta view', { text: "They told us they're short on hours, not ideas.", source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/09/introducing-muse-small-business/' }), makeQuote('Analyst view', { text: "Meta's move raises the bar on what a standalone marketing platform must prove to justify its cost.", source: 'Jon Markman, Forbes', sourceUrl: 'https://www.forbes.com/sites/jonmarkman/2026/09/29/meta-hires-mongodbs-ceo-as-its-ai-push-takes-aim-at-hubspots-customers/' })] },
     post148: { after: 8, quotes: [makeQuote('Vendor view', { text: "they don't want to think about which AI tools to use, they just want outcomes", source: 'Duncan Lennox, HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/fall-26-spotlight' }), makeQuote('Skeptic view', { text: "Right now, everything that's happening is 'let's bolt an AI solution onto some stack.'", source: 'Vasili Triant, UJET, via CX Today', sourceUrl: 'https://cxtoday.com/crm-complexity-contact-center-ai' })] },
     post147: { after: 7, quotes: [makeQuote('Vendor promise', { text: 'targeting is smarter from day one and you get true ROI analysis on your ChatGPT ads spend', source: 'HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership' }), makeQuote('Platform guardrail', { text: 'protecting the trust people place in ChatGPT remains our North Star', source: 'OpenAI', sourceUrl: 'https://openai.com/index/reimagining-advertising-with-ai/' })] },
     post146: { after: 6, quotes: [makeQuote('Use is not output', { text: 'The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.', source: 'OpenAI enterprise usage working paper', sourceUrl: 'https://arxiv.org/html/2608.12236' }), makeQuote('Common work', { text: 'writing dominates, but users also rely on it for information retrieval, analysis, decision making and strategizing', source: 'Microsoft Research', sourceUrl: 'https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/' })] },

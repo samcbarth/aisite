@@ -6,7 +6,15 @@
     <atom:link href="https://blog.samcbarth.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 17:41:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 18:54:15 GMT</lastBuildDate>
+    <item>
+      <title>Meta wants HubSpot&apos;s small customers. It still doesn&apos;t have the CRM.</title>
+      <link>https://blog.samcbarth.com/posts/meta-wants-hubspots-small-customers-it-still-doesnt-have-the-crm/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/meta-wants-hubspots-small-customers-it-still-doesnt-have-the-crm/</guid>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot &amp; CRM</category>
+      <description>Meta spent two days this week pointing its AI at the small-business market. Monday it launched Meta Enterprise Platform and hired MongoDB&apos;s CEO to run it. Tuesday it started rolling out Muse for Small Business, an agent that plugs into a company&apos;s ad accounts, Facebook and Instag</description>
+    </item>
     <item>
       <title>HubSpot&apos;s CRM now updates itself. Someone still has to own the truth.</title>
       <link>https://blog.samcbarth.com/posts/hubspots-crm-now-updates-itself-someone-still-has-to-own-the-truth/</link>
