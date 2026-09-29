@@ -7,6 +7,55 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post148: {
+    featured: false,
+    date: 'September 29, 2026', iso: '2026-09-29',
+    title: "HubSpot's CRM now updates itself. Someone still has to own the truth.",
+    category: 'HubSpot & CRM', tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
+    image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>HubSpot's biggest bet this fall is not a new agent. It is the idea that the CRM can finally keep itself current. The trade is simple: fewer hours of manual data entry in exchange for letting software decide what goes into the record. For most teams that is a good trade. It is also a different job for whoever owns the system.</p>
+
+      <p>At its <a href="https://www.hubspot.com/company-news/fall-26-spotlight" target="_blank" rel="noopener noreferrer">Fall 2026 Spotlight</a> on September 16, HubSpot introduced a "self-updating Smart CRM" that it describes as "completely touchless." Calls, emails, and meetings can be captured and synced automatically. A new Context Home gives a score showing how complete that context foundation is and where the gaps are. On top of that sits Breeze Assistant, which takes a plain request, assigns the right agents, and returns proposals, reports, and campaign plans grounded in the CRM.</p>
+
+      <p>Duncan Lennox, HubSpot's chief product and technology officer, framed the whole release around one customer complaint: "they don't want to think about which AI tools to use, they just want outcomes."</p>
+
+      <h2>Why HubSpot needs this to work</h2>
+
+      <p>The timing is not an accident. According to <a href="https://www.cmswire.com/customer-experience/hubspot-debuts-breeze-assistant-selfupdating-crm/" target="_blank" rel="noopener noreferrer">CMSWire</a>, HubSpot shares were down roughly 48% for the year going into the conference, with investors worried that AI threatens a business built on selling seats. If agents do more of the work, fewer people need logins. HubSpot's answer is to sell outcomes instead, and it has already moved two Breeze agents to pay-per-result pricing.</p>
+
+      <p>Outcome pricing only works if the platform can prove the outcome, and proof lives in the record. That is why the CRM itself is the center of this release. An agent that books meetings, drafts quotes, and updates deal plans is only as useful as the data it reads and writes.</p>
+
+      <h2>Captured is not the same as correct</h2>
+
+      <p>Automatic capture solves the oldest problem in CRM: reps do not log their activity. It does not solve the second oldest one, which is that the activity lands on the wrong record. An email thread with three people from one company and one from a partner. A meeting booked from a personal address. A call with a contact who changed jobs last quarter. Software can capture all of it perfectly and still attach it to the wrong contact, company, or deal.</p>
+
+      <p>The completeness score has the same limit. A score can tell you a field is filled. It cannot tell you the value is true. A deal with a close date, an amount, and a stage looks complete whether or not anyone still believes it will close in October.</p>
+
+      <p>HubSpot seems to know this. Its revamped Deal Progression takes a meeting transcript, surfaces suggested updates, drafts the follow-up, and keeps the deal plan current "with one click approval." That approval step is the most important design choice in the release. It keeps a person on the decisions that move money.</p>
+
+      <h2>The headline numbers need a footnote</h2>
+
+      <p>HubSpot says businesses whose AI runs on high-quality context create 3.6x more MQLs, win 3.2x more deals, and close over 2x more tickets. The footnote matters: the comparison is Professional and Enterprise customers using AI with high-quality context versus those not using AI. That is a comparison between two groups of customers, not a controlled test. Teams that already keep clean data and adopt new tools early would likely outperform either way.</p>
+
+      <p>None of that makes the direction wrong. It means the number describes the kind of company that gets value from AI, not a guaranteed result for the company that turns it on.</p>
+
+      <h2>More layers, or fewer</h2>
+
+      <p>Not everyone thinks another AI layer is the answer. In a <a href="https://cxtoday.com/crm-complexity-contact-center-ai" target="_blank" rel="noopener noreferrer">CX Today interview</a>, UJET CEO Vasili Triant argued that most of the industry is bolting AI onto stacks that were already too complicated: "Right now, everything that's happening is 'let's bolt an AI solution onto some stack.'" His view is that the savings come from removing software, not adding it.</p>
+
+      <p>HubSpot's pitch is closer to that than it looks. One assistant instead of a dozen tools, and a CRM that fills itself in instead of a data-entry backlog, is a simplification argument. The risk is that the simplicity is on the surface while the rules underneath get harder to see.</p>
+
+      <h2>What I would set before turning it on</h2>
+
+      <p>I would split the properties into two groups before letting anything write to the CRM on its own. The first group is activity: emails, calls, meeting notes, and the basic contact details that come with them. Let the machine handle that. The second group is judgment: lifecycle stage, deal stage, amount, close date, and owner. Those should need a person's approval, the way Deal Progression already works.</p>
+
+      <p>Then I would check association rules, because that is where automatic capture quietly goes wrong. Decide which domain wins when a thread has several companies on it, and what happens to activity from a personal email address. It is the same kind of <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot cleanup</a> that decides whether new features help or just move faster.</p>
+
+      <p>The same question sits under HubSpot's <a href="../your-chatgpt-ads-will-only-be-as-smart-as-your-crm/">ChatGPT Ads integration</a> and its <a href="../what-does-a-hubspot-agent-cost-after-the-demo/">credit-based agents</a>. Each one assumes the record is right. A CRM that updates itself makes the record fuller and fresher. Keeping it true is still somebody's job, and now it is a more important one.</p>
+    `
+  },
   post147: {
     featured: false,
     date: 'September 28, 2026', iso: '2026-09-28',
@@ -4876,6 +4925,7 @@ POST_ORDER.unshift('post144');
 POST_ORDER.unshift('post145');
 POST_ORDER.unshift('post146');
 POST_ORDER.unshift('post147');
+POST_ORDER.unshift('post148');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER, HUBS };

@@ -233,6 +233,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post148: {
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=900&h=650&fit=crop&q=80',
+      caption: 'Capturing activity is the easy half of keeping a CRM current. Photo via Unsplash.',
+      side: 'left', after: 4,
+      supportImage: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'The wins HubSpot promises depend on records someone still trusts. Photo via Unsplash.'
+    },
     post147: {
       image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=900&h=650&fit=crop&q=80',
       caption: 'A new ad channel still has to land in the same pipeline report. Photo via Unsplash.',
@@ -1806,6 +1813,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post148: { after: 8, quotes: [makeQuote('Vendor view', { text: "they don't want to think about which AI tools to use, they just want outcomes", source: 'Duncan Lennox, HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/fall-26-spotlight' }), makeQuote('Skeptic view', { text: "Right now, everything that's happening is 'let's bolt an AI solution onto some stack.'", source: 'Vasili Triant, UJET, via CX Today', sourceUrl: 'https://cxtoday.com/crm-complexity-contact-center-ai' })] },
     post147: { after: 7, quotes: [makeQuote('Vendor promise', { text: 'targeting is smarter from day one and you get true ROI analysis on your ChatGPT ads spend', source: 'HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership' }), makeQuote('Platform guardrail', { text: 'protecting the trust people place in ChatGPT remains our North Star', source: 'OpenAI', sourceUrl: 'https://openai.com/index/reimagining-advertising-with-ai/' })] },
     post146: { after: 6, quotes: [makeQuote('Use is not output', { text: 'The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.', source: 'OpenAI enterprise usage working paper', sourceUrl: 'https://arxiv.org/html/2608.12236' }), makeQuote('Common work', { text: 'writing dominates, but users also rely on it for information retrieval, analysis, decision making and strategizing', source: 'Microsoft Research', sourceUrl: 'https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/' })] },
     post145: { after: 5, quotes: [makeQuote('Correct, not running', { text: 'AI teams needed a way to know their agents were actually working correctly, not just running.', source: 'Jason Lopatecki, Arize', sourceUrl: 'https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize' }), makeQuote('A green trace', { text: 'A trace showing “200 OK” doesn’t mean the answer was right.', source: 'Arize Phoenix documentation', sourceUrl: 'https://arize.com/docs/phoenix/tracing' })] },

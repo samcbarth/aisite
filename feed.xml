@@ -6,7 +6,15 @@
     <atom:link href="https://blog.samcbarth.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 03:31:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 17:41:46 GMT</lastBuildDate>
+    <item>
+      <title>HubSpot&apos;s CRM now updates itself. Someone still has to own the truth.</title>
+      <link>https://blog.samcbarth.com/posts/hubspots-crm-now-updates-itself-someone-still-has-to-own-the-truth/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-crm-now-updates-itself-someone-still-has-to-own-the-truth/</guid>
+      <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot &amp; CRM</category>
+      <description>HubSpot&apos;s biggest bet this fall is not a new agent. It is the idea that the CRM can finally keep itself current. The trade is simple: fewer hours of manual data entry in exchange for letting software decide what goes into the record. For most teams that is a good trade. It is als</description>
+    </item>
     <item>
       <title>Your ChatGPT ads will only be as smart as your CRM</title>
       <link>https://blog.samcbarth.com/posts/your-chatgpt-ads-will-only-be-as-smart-as-your-crm/</link>
