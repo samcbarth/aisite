@@ -16,11 +16,45 @@ const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { minify: minifyHtml } = require('html-minifier-terser');
 const { minify: minifyJs } = require('terser');
-const { POSTS, POST_ORDER } = require('../posts.js');
+const { POSTS, POST_ORDER, HUBS } = require('../posts.js');
+const SITE_HOME_URL = 'https://samcbarth.com';
+const MEETING_URL = 'https://meetings.hubspot.com/sam-barth/free-hubspot-workshop';
+
+// Listed = indexable and shown in lists. Noindexed posts keep their page; merged posts become redirects.
+const isListed = (id) => Boolean(POSTS[id] && !POSTS[id].noindex && !POSTS[id].mergedInto);
+const hubMembers = (hub) => POST_ORDER.filter(id => isListed(id) && POSTS[id].hub === hub);
+
+const CARD_COPY = {
+  home: {
+    'hubspot-ai': ['When the portal needs cleanup more than another feature', 'I help teams untangle HubSpot, fix CRM data, and build reporting people actually use.'],
+    'ai-costs': ['Know what the tools cost before the invoice does', 'I help teams sort out HubSpot, CRM, and RevOps so spend lines up with the work it supports.'],
+    'ai-adoption': ['AI sticks when the CRM underneath it is clean', 'I help teams get HubSpot, data, and handoffs in shape so new tools have something solid to run on.'],
+    'ai-infrastructure': ['The bill shows up in your stack eventually', 'I help operators keep HubSpot and RevOps simple enough that bigger shifts do not break the basics.'],
+    default: ['HubSpot and RevOps help from the person who wrote this', 'I help teams clean up HubSpot, CRM data, and reporting so the system matches how the business runs.']
+  },
+  meeting: ['Bring one HubSpot problem to a free 30-minute call', 'A screen-share walkthrough of your portal with me, not a salesperson, and a short roadmap at the end. No contract or credit card.']
+};
+
+// kind: 'home' (samcbarth.com) or 'meeting' (free workshop booking link)
+function makeLinkCard(kind, hub) {
+  if (kind === 'meeting') {
+    return `<a class="sb-card sb-card-meeting" href="${MEETING_URL}" target="_blank" rel="noopener">` +
+      `<span class="sb-card-kicker">Free HubSpot workshop</span>` +
+      `<span class="sb-card-title">${CARD_COPY.meeting[0]}</span>` +
+      `<span class="sb-card-text">${CARD_COPY.meeting[1]}</span>` +
+      `<span class="sb-card-cta">Book the free workshop</span></a>`;
+  }
+  const [title, text] = CARD_COPY.home[hub] || CARD_COPY.home.default;
+  return `<a class="sb-card sb-card-home" href="${SITE_HOME_URL}" target="_blank" rel="noopener">` +
+    `<span class="sb-card-kicker">Sam C Barth</span>` +
+    `<span class="sb-card-title">${title}</span>` +
+    `<span class="sb-card-text">${text}</span>` +
+    `<span class="sb-card-cta">Visit samcbarth.com</span></a>`;
+}
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
-const BASE_URL = 'https://samcbarth.github.io/aisite';
+const BASE_URL = 'https://blog.samcbarth.com';
 function copyRecursive(src, dest) {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
@@ -59,7 +93,26 @@ function copyRecursive(src, dest) {
     .replace(/src="posts\.js"/g, `src="posts.js?v=${assetVersion}"`)
     .replace(/src="app\.js"/g, `src="app.js?v=${assetVersion}"`);
   html = syncHomepageCards(html);
+  const topicStrip = `<nav class="hub-strip" aria-label="Topics">` +
+    Object.entries(HUBS).map(([slug, h]) => `<a class="hub-link" href="topics/${slug}/">${h.title}</a>`).join(' ') +
+    `</nav>` + makeLinkCard('home', null);
+  html = html.replace('<div id="featured-section" class="featured-section"></div>',
+    '<div id="featured-section" class="featured-section"></div>' + topicStrip);
   fs.writeFileSync(path.join(dist, 'index.html'), html);
+
+  // 2b. Start Here: fill the hub reading map from posts.js so it never goes stale
+  const startPath = path.join(dist, 'start-here.html');
+  const READ_FIRST = ['post12', 'post35', 'post138'].filter(isListed);
+  const startLink = (id) => `<a class="post-link" href="posts/${toSlug(POSTS[id].title)}/"><span>${POSTS[id].title}</span><em>Read</em></a>`;
+  const startHtml = `<div class="cluster" id="read-first"><h2>Read these first</h2><p>Three posts that show how I think about AI, HubSpot, and the work underneath them.</p><div class="post-list">${READ_FIRST.map(startLink).join('')}</div></div>` +
+    Object.entries(HUBS).map(([slug, h]) => {
+      const members = hubMembers(slug);
+      return `<div class="cluster" id="${slug}"><h2>${h.title}</h2><p>${h.blurb}</p><div class="post-list">` +
+        members.slice(0, 4).map(startLink).join('') +
+        `</div><a class="related-more" href="topics/${slug}/">All ${members.length} posts in this topic</a></div>`;
+    }).join('');
+  fs.writeFileSync(startPath, fs.readFileSync(startPath, 'utf8')
+    .replace(/<!-- HUBS:START -->[\s\S]*?<!-- HUBS:END -->/, startHtml + makeLinkCard('meeting', null)));
 
   // 3. Regenerate SEO artifacts against dist (fresh JSON-LD + sitemap + feed)
   execFileSync('node', [path.join(root, 'tools', 'generate-seo.js'), dist], { stdio: 'inherit' });
@@ -167,6 +220,7 @@ function copyRecursive(src, dest) {
       const id = (cardHtml.match(/data-id="([^"]+)"/) || [])[1];
       const post = POSTS[id];
       if (!post) return cardHtml;
+      if (!isListed(id)) return '';
       const excerpt = makeExcerpt(post.body);
       return cardHtml
         .replace(/(<img class="post-thumb"[^>]*?)src="[^"]*" alt="[^"]*"/, `$1src="${makeCardImage(post.image)}" alt="${escAttr(post.title)} thumbnail"`)
@@ -2011,10 +2065,27 @@ function copyRecursive(src, dest) {
   function makeRelatedHtml(postId) {
     const p = POSTS[postId];
     if (!p) return '';
-    const related = POST_ORDER
-      .filter(id => id !== postId && POSTS[id] && (POSTS[id].category === p.category || POSTS[id].tag === p.tag))
-      .slice(0, 2);
+    // Hub siblings first, nearest in time; then same category.
+    const pool = POST_ORDER.filter(id => id !== postId && isListed(id));
+    const pos = POST_ORDER.indexOf(postId);
+    const near = (a, b) => Math.abs(POST_ORDER.indexOf(a) - pos) - Math.abs(POST_ORDER.indexOf(b) - pos);
+    const sameHub = p.hub ? pool.filter(id => POSTS[id].hub === p.hub).sort(near) : [];
+    const sameCat = pool.filter(id => POSTS[id].category === p.category && !sameHub.includes(id)).sort(near);
+    // Skip candidates whose thumbnail repeats an image already on this page or in the grid.
+    const media = INLINE_MEDIA[postId] || {};
+    const usedImages = new Set([p.image, media.image, p.inlineImage, media.supportImage || pickSupportImage(postId)]
+      .filter(Boolean).map(imageKey));
+    const related = [];
+    for (const id of sameHub.concat(sameCat)) {
+      const key = imageKey(POSTS[id].image);
+      if (usedImages.has(key)) continue;
+      usedImages.add(key);
+      related.push(id);
+      if (related.length === 3) break;
+    }
     if (!related.length) return '';
+    const hubMore = p.hub && HUBS[p.hub]
+      ? `<a class="related-more" href="../../topics/${p.hub}/">All posts in ${HUBS[p.hub].title}</a>` : '';
     const cards = related.map(id => {
       const rp = POSTS[id];
       const thumb = makePostPageImage(rp.image.replace(/w=\d+&h=\d+/, 'w=600&h=300'));
@@ -2025,7 +2096,25 @@ function copyRecursive(src, dest) {
         `<div class="related-post-title">${rp.title}</div>` +
         `</div></a>`;
     }).join('');
-    return `<div class="related-label">More posts</div><div class="related-grid">${cards}</div>`;
+    const label = p.hub && HUBS[p.hub] ? `More in ${HUBS[p.hub].title}` : 'More posts';
+    return `<div class="related-label">${label}</div><div class="related-grid">${cards}</div>${hubMore}`;
+  }
+
+  // Link cards: one mid-article, one at the end. Which target goes where alternates post to post.
+  function injectMidCard(body, card) {
+    const total = (body.match(/<\/p>/g) || []).length;
+    if (total < 4) return body;
+    const target = Math.round(total * 0.6);
+    let n = 0;
+    return body.replace(/<\/p>/g, (m) => (++n === target ? m + '\n' + card : m));
+  }
+
+  function makeRedirectPage(fromPost, toPost) {
+    const url = `${BASE_URL}/posts/${toSlug(toPost.title)}/`;
+    return `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${escAttr(toPost.title)} - Sam C Barth</title>` +
+      `<meta name="robots" content="noindex, follow"><link rel="canonical" href="${url}">` +
+      `<meta http-equiv="refresh" content="0; url=../${toSlug(toPost.title)}/"></head>` +
+      `<body data-redirect="true"><p>This post was merged into <a href="../${toSlug(toPost.title)}/">${escAttr(toPost.title)}</a>.</p></body></html>`;
   }
 
   const postsDir = path.join(dist, 'posts');
@@ -2040,8 +2129,12 @@ function copyRecursive(src, dest) {
     const readTime = readingTime(p.body);
     const linkedInShareText = makeLinkedInShareText(p, id, canonical);
     const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonical)}`;
-    const bodyHtml = injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id);
-    const supportMediaHtml = makeSupportMedia(p, id);
+    const midKind = POST_ORDER.indexOf(id) % 2 === 0 ? 'home' : 'meeting';
+    const endKind = midKind === 'home' ? 'meeting' : 'home';
+    const bodyHtml = injectMidCard(injectInlineQuotes(injectInlineMedia(p.body.trim(), p, id), id), makeLinkCard(midKind, p.hub));
+    const supportMediaHtml = makeSupportMedia(p, id) + makeLinkCard(endKind, p.hub);
+    const hubLinkHtml = p.hub && HUBS[p.hub]
+      ? `<span class="sep">·</span><a class="hub-link" href="../../topics/${p.hub}/">${HUBS[p.hub].title}</a>` : '';
     const heroImageRel = makeHeroImage(p.image);
     const heroImageAbs = makeOgImage(p.image);
     const jsonLd = JSON.stringify({
@@ -2077,7 +2170,11 @@ function copyRecursive(src, dest) {
       .replace('POST_BODY', bodyHtml)
       .replace('POST_SUPPORT_MEDIA', supportMediaHtml)
       .replace('POST_RELATED_HTML', makeRelatedHtml(id))
+      .replace('POST_HUB_LINK', hubLinkHtml)
       .replace('POST_JSON_LD', jsonLd);
+    if (p.noindex) {
+      page = page.replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex, follow">');
+    }
 
     const postDir = path.join(postsDir, slug);
     fs.mkdirSync(postDir, { recursive: true });
@@ -2093,5 +2190,52 @@ function copyRecursive(src, dest) {
     fs.writeFileSync(path.join(postDir, 'index.html'), minPage);
   }
   console.log(`build: generated ${POST_ORDER.length} post pages in dist/posts/`);
+
+  // 7. Redirect stubs for merged posts so old URLs land on the surviving post
+  const merged = Object.keys(POSTS).filter(id => POSTS[id].mergedInto);
+  for (const id of merged) {
+    const target = POSTS[POSTS[id].mergedInto];
+    if (!target) throw new Error(`mergedInto target missing for ${id}`);
+    const dir = path.join(postsDir, toSlug(POSTS[id].title));
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), makeRedirectPage(POSTS[id], target));
+  }
+  console.log(`build: wrote ${merged.length} merged-post redirects`);
+
+  // 8. Topic hub pages, built on the Start Here page shell
+  const shell = fs.readFileSync(path.join(root, 'start-here.html'), 'utf8');
+  for (const [slug, hub] of Object.entries(HUBS)) {
+    const members = hubMembers(slug);
+    const canonical = `${BASE_URL}/topics/${slug}/`;
+    const desc = escAttr(hub.blurb);
+    const list = members.map((id, i) => {
+      const mp = POSTS[id];
+      const row = `<a class="post-link" href="posts/${toSlug(mp.title)}/"><span>${escAttr(mp.title)}</span><em class="hub-post-meta">${escAttr(mp.date)}</em></a>`;
+      return i === 5 ? makeLinkCard('meeting', slug) + row : row;
+    }).join('');
+    const main = `<main><section class="hero"><div class="label">Topic</div><h1>${escAttr(hub.title)}</h1>` +
+      `<p class="lede">${escAttr(hub.blurb)} ${members.length} posts, newest first.</p></section>` +
+      `<section class="section">${makeLinkCard('home', slug)}<div class="post-list">${list}</div></section></main>`;
+    const ld = JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: hub.title, url: canonical, description: hub.blurb,
+      author: { '@type': 'Person', name: 'Sam C Barth', url: 'https://samcbarth.com' },
+      hasPart: members.map(id => ({ '@type': 'BlogPosting', headline: POSTS[id].title, url: `${BASE_URL}/posts/${toSlug(POSTS[id].title)}/` })) });
+    const hubPage = shell
+      .replace(/<title>[^<]*<\/title>/, `<title>${escAttr(hub.title)} - Sam C Barth</title>`)
+      .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${desc}">`)
+      .replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${canonical}">`)
+      .replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${canonical}">`)
+      .replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${escAttr(hub.title)} - Sam C Barth">`)
+      .replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${desc}">`)
+      .replace(/<span class="brand-sub">[^<]*<\/span>/, '<span class="brand-sub">Topic</span>')
+      .replace(/<main>[\s\S]*<\/main>/, main)
+      .replace('</head>', `<script type="application/ld+json">${ld}</script>\n</head>`)
+      // Hub pages live two levels down: re-root every relative link and asset.
+      .replace(/(href|src)="(?!https?:|mailto:|#|\/|data:|\.\.\/)([^"]+)"/g, '$1="../../$2"')
+      .replace(/url\('(?!https?:|data:|\/)([^']+)'\)/g, "url('../../$1')");
+    const hubDir = path.join(dist, 'topics', slug);
+    fs.mkdirSync(hubDir, { recursive: true });
+    fs.writeFileSync(path.join(hubDir, 'index.html'), await minifyHtml(hubPage, { collapseWhitespace: true, removeComments: true, minifyCSS: true, keepClosingSlash: true }));
+  }
+  console.log(`build: generated ${Object.keys(HUBS).length} topic hub pages`);
 
 })().catch((e) => { console.error(e); process.exit(1); });

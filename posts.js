@@ -11,7 +11,8 @@ const POSTS = {
     featured: false,
     date: 'August 17, 2026', iso: '2026-08-17',
     title: 'Week 26 is where the AI rollout gets honest',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post146-hero.jpg',
     body: `
       <p>At week 26, researchers took a snapshot of the AI rollout. Not the license announcement. Not an executive survey about plans. They looked at who was active, how often they sent messages, and what kind of work was moving through ChatGPT Enterprise six months after a company adopted it.</p>
@@ -50,7 +51,7 @@ const POSTS = {
 
       <p>That is strong evidence that use deepens after purchase. It is not a productivity result. The task classifier describes messages, not the downstream work product, time saved, error rate, revenue, cost or change in an operating routine. The authors say it plainly: <a href="https://arxiv.org/html/2608.12236" target="_blank" rel="noopener noreferrer">“The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.”</a></p>
 
-      <p>This is where the operating record I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> belongs beside the telemetry. A useful chain connects the AI conversation to a named task, an accepted output, a reviewer, elapsed time, rework and the business result. Messages and tokens show activity. That second record shows whether the activity changed the work.</p>
+      <p>If I were setting up this report for a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps team</a>, the operating record would sit right beside the telemetry. A useful chain connects the AI conversation to a named task, an accepted output, a reviewer, elapsed time, rework and the business result. Messages and tokens show activity. That second record shows whether the activity changed the work.</p>
 
       <h2>The job description will arrive late</h2>
 
@@ -63,7 +64,8 @@ const POSTS = {
     featured: false,
     date: 'August 16, 2026', iso: '2026-08-16',
     title: 'A green dashboard can hide a bad AI answer',
-    category: 'Business Software', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post145-hero.jpg',
     body: `
       <p>A customer-support bot can return the wrong refund policy in 600 milliseconds. The endpoint is up. The database is reachable. The GPUs are not overloaded. Every traditional dashboard stays green while the customer receives a bad answer.</p>
@@ -88,7 +90,7 @@ const POSTS = {
 
       <p>The useful asset is not another dashboard. It is the loop between production and development. A bad live conversation should become an evaluation case. A changed prompt or model should run against that case before release. The new version should then carry the same trace fields back into production. Without that loop, teams can collect more telemetry and still repeat the same failure.</p>
 
-      <p>This is where the operating record I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> gets specific. The trace needs more than a model name and response time. It needs the customer request, approved source, tool action, owner, quality score, correction and final business result. Otherwise, engineering can close the technical incident while operations keeps handling the customer damage.</p>
+      <p>The trace I would want in any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM-connected support setup</a> is more specific than an uptime chart. The trace needs more than a model name and response time. It needs the customer request, approved source, tool action, owner, quality score, correction and final business result. Otherwise, engineering can close the technical incident while operations keeps handling the customer damage.</p>
 
       <h2>One platform still needs open exits</h2>
 
@@ -109,7 +111,8 @@ const POSTS = {
     featured: false,
     date: 'August 12, 2026', iso: '2026-08-12',
     title: 'Hyundai put a stopwatch on enterprise AI',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post144-hero.jpg',
     body: `
       <p>Thirty-five minutes became five. Crash-safety case review time fell by roughly 90%. Unnecessary production downtime fell by roughly 86%. Vehicle-maintenance response time fell by roughly 42%.</p>
@@ -136,7 +139,7 @@ const POSTS = {
 
       <p>Then there is the smallest-looking job. Hyundai, Kia and Genesis receive customer reviews through their apps. An AI system categorizes the review, reads sentiment, drafts a response and flags issues for escalation. Average handling time dropped from 35 minutes to about five while a person still reviews the output.</p>
 
-      <p>This is the measurement discipline I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Each system gets a denominator tied to its actual job: minutes per case, downtime per interruption, cost per process, response time per repair. One company-wide count of prompts would hide all four outcomes.</p>
+      <p>Hyundai is using the kind of denominator I push for in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps reporting</a>. Each system gets a denominator tied to its actual job: minutes per case, downtime per interruption, cost per process, response time per repair. One company-wide count of prompts would hide all four outcomes.</p>
 
       <h2>Thirty thousand users do not settle the quality question</h2>
 
@@ -161,7 +164,8 @@ const POSTS = {
     featured: false,
     date: 'August 11, 2026', iso: '2026-08-11',
     title: 'Intel turned its rally into a factory budget',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post143-hero.jpg',
     body: `
       <p>Intel's stock rally did more than repair the mood around the company. On August 10, Intel turned part of that confidence into financing.</p>
@@ -200,7 +204,7 @@ const POSTS = {
 
       <h2>The return has to reach the wafer</h2>
 
-      <p>A useful capital record should connect each block of spending to a customer commitment, tool order, installation date, yield target, production window, and expected cash return. That is the same operating-chain discipline I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, applied to one of the most expensive production systems in business. “AI demand” is not a sufficient owner or approval field for a multibillion-dollar tool order.</p>
+      <p>A useful capital record should connect each block of spending to a customer commitment, tool order, installation date, yield target, production window, and expected cash return. It is the same chain I try to build into a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot pipeline</a>, just attached to one of the most expensive production systems in business. “AI demand” is not a sufficient owner or approval field for a multibillion-dollar tool order.</p>
 
       <p>The next filings can close that chain without exposing a customer's secret chip design. Intel can report the final offering price and share count, explain how capital spending changed, separate internal product capacity from external foundry capacity, show tool installations, track 18A and 14A yield progress, and disclose when outside wafer revenue begins to move.</p>
 
@@ -211,7 +215,8 @@ const POSTS = {
     featured: false,
     date: 'August 10, 2026', iso: '2026-08-10',
     title: 'AMD bought less flexibility on purpose',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post142-hero.jpg',
     body: `
       <p>A model that changes every week belongs on flexible hardware. A model that runs the same job millions of times may be wasting money on flexibility it no longer needs.</p>
@@ -248,7 +253,7 @@ const POSTS = {
 
       <p>The integration risk sits in that last phrase. Two architectures do not become one product because they share a rack. Developers need a clean path for deciding where a model runs, measuring quality and cost, moving traffic, handling a model update, and falling back when dedicated capacity is full. AMD did not announce that operating layer, a shipping date, an acquisition price, or a first joint customer.</p>
 
-      <p>This is where the operations work I write about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> meets the hardware decision. Before choosing the fastest system, a company needs a workload inventory: which model is approved, how often it changes, how much traffic is predictable, what quality floor applies, and who owns the exit if the model moves on. Without that record, cheap inference can become expensive stranded hardware.</p>
+      <p>The hardware choice needs the same kind of inventory a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM cleanup</a> starts with. Before choosing the fastest system, a company needs a workload inventory: which model is approved, how often it changes, how much traffic is predictable, what quality floor applies, and who owns the exit if the model moves on. Without that record, cheap inference can become expensive stranded hardware.</p>
 
       <p>AMD is buying the possibility that inference stops being one market. Some workloads will keep paying for flexibility. Others may run often enough, and change slowly enough, to earn a chip built around them. Taalas succeeds inside AMD when choosing that second path becomes a repeatable purchasing decision, not a science project. The decisive number will not be 17,000 tokens per second. It will be how many useful workloads stay still long enough to make their silicon pay.</p>
     `
@@ -257,7 +262,8 @@ const POSTS = {
     featured: false,
     date: 'August 9, 2026', iso: '2026-08-09',
     title: 'Airtable sold. The bases did not become simple.',
-    category: 'Business Software', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'RevOps & Ops', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai',
     image: 'assets/images/post141-hero.jpg',
     body: `
       <p>A campaign calendar. A product launch queue. A vendor approval. A customer research library. Airtable can look like a spreadsheet in each case, while quietly carrying the rules, permissions, interfaces, and automations that make the work move.</p>
@@ -294,7 +300,7 @@ const POSTS = {
 
       <h2>The ownership change needs a base-level record</h2>
 
-      <p>This is where the workflow discipline I write about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> applies directly. Before the deal closes, an Airtable customer should be able to name the owner of each critical base, its outside integrations, its automation failure alerts, the people allowed to change it, and the process that would stop if it went down. That is not panic migration. It is the operating record the company should already have.</p>
+      <p>The prep is the same one I would run on any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">ops system before a vendor change</a>. Before the deal closes, an Airtable customer should be able to name the owner of each critical base, its outside integrations, its automation failure alerts, the people allowed to change it, and the process that would stop if it went down. That is not panic migration. It is the operating record the company should already have.</p>
 
       <p>The same record makes Bending Spoons' work easier to judge. Faster releases help if they reduce broken automations and make large bases easier to govern. AI features help if administrators can see what they changed and reverse a bad action. New pricing can work if a company can connect the bill to a workflow it still wants to run. A cleaner interface is valuable only if the people using a custom app can still find the decision in front of them.</p>
 
@@ -305,7 +311,8 @@ const POSTS = {
     featured: false,
     date: 'August 8, 2026', iso: '2026-08-08',
     title: 'The missing number in Twilio\'s AI quarter',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post140-hero.jpg',
     body: `
       <p>The line item is not there.</p>
@@ -338,7 +345,7 @@ const POSTS = {
 
       <p>The margin line deserves the same attention. GAAP gross margin was 48%, down from 49% a year earlier. Non-GAAP gross margin fell from 51% to 49%. Twilio says product mix, cloud infrastructure, carrier charges, geography, and pricing all affect that number. The filing also warns that there is no assurance AI benefits will arrive “in a timely or cost-effective manner.”</p>
 
-      <p>This is the measurement problem I see in the operations work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A team can count agent calls and still miss whether the customer got an answer. The useful operating record connects Twilio minutes and messages to completed bookings, resolved cases, successful identity checks, human transfers, repeat contacts, and cost per finished outcome.</p>
+      <p>Twilio's gap is one I see often in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps reporting</a>. A team can count agent calls and still miss whether the customer got an answer. The useful operating record connects Twilio minutes and messages to completed bookings, resolved cases, successful identity checks, human transfers, repeat contacts, and cost per finished outcome.</p>
 
       <h2>Give the AI claim its own denominator</h2>
 
@@ -351,7 +358,8 @@ const POSTS = {
     featured: false,
     date: 'August 7, 2026', iso: '2026-08-07',
     title: 'The Jira ticket no longer starts in Jira',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post139-hero.jpg',
     body: `
       <p>An employee can ask Claude to find a project decision, turn it into a Jira item, and update a Confluence page without opening either Atlassian product. The work still lands in Atlassian. The starting point moved.</p>
@@ -380,7 +388,7 @@ const POSTS = {
 
       <p>An AI client that can write a Jira issue can also create noise, expose the wrong record, or make a change with more reach than the user understands. Atlassian's <a href="https://support.atlassian.com/security-and-access-policies/docs/Configure-Atlassian-Rovo-MCP-server-permission/" target="_blank" rel="noopener noreferrer">admin controls</a> split access into read, write, and search permissions. An administrator can allow or block them by application. Interactive users normally connect through OAuth 2.1 and keep their existing access. API tokens support machine-to-machine jobs when an administrator enables them.</p>
 
-      <p>This is where the workflow work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> becomes more important, not less. A generated ticket still needs a source, an owner, an approval rule, and a clear way to reverse a bad change. Those controls should travel with the work item. If they live only in the AI client that created it, the shared record starts incomplete.</p>
+      <p>Generated tickets make <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">workflow ownership</a> more important, not less. A generated ticket still needs a source, an owner, an approval rule, and a clear way to reverse a bad change. Those controls should travel with the work item. If they live only in the AI client that created it, the shared record starts incomplete.</p>
 
       <p>Atlassian's own support guidance says to use least privilege, review high-impact changes, and monitor audit logs. That is practical because MCP widens the number of places where a Jira change can begin. The control cannot depend on remembering which chat window or coding tool made the request.</p>
 
@@ -399,7 +407,8 @@ const POSTS = {
     featured: false,
     date: 'August 6, 2026', iso: '2026-08-06',
     title: 'What does a HubSpot agent cost after the demo?',
-    category: 'CRM & RevOps', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'HubSpot & CRM', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai',
     image: 'assets/images/post138-hero.jpg',
     body: `
       <p>On July 23, every HubSpot agent moved onto the same meter. On August 5, HubSpot reported the quarter that explains why the meter matters.</p>
@@ -436,7 +445,7 @@ const POSTS = {
 
       <p>HubSpot's own <a href="https://knowledge.hubspot.com/ai/review-estimated-credit-costs-when-using-agents" target="_blank" rel="noopener noreferrer">July guidance</a> recommends reviewing the estimated credit cost of every agent execution and setting monthly run limits to avoid unexpected charges. It also warns that estimates can differ from actual use. Credits reset each month and do not roll over.</p>
 
-      <p>This is where the story connects to the CRM operations work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The useful control is not just a spend cap. Each agent needs a denominator tied to its job: cost per conversation that stays resolved, cost per accepted prospect recommendation, cost per corrected record, or cost per content asset that actually ships. Without that denominator, the credit dashboard is only a faster invoice.</p>
+      <p>This is the part of <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot admin work</a> the credit dashboard will not do for you. The useful control is not just a spend cap. Each agent needs a denominator tied to its job: cost per conversation that stays resolved, cost per accepted prospect recommendation, cost per corrected record, or cost per content asset that actually ships. Without that denominator, the credit dashboard is only a faster invoice.</p>
 
       <p>HubSpot now has 306,446 customers making those small allocation decisions. If an admin can see a 50-credit conversation become a durable resolution, the next 50 credits are easy to approve. If the estimate moves, the ticket reopens, or the team cannot connect use to a result, the run limit becomes the product's ceiling. HubSpot's next growth number will be shaped inside that admin screen, one metered agent job at a time.</p>
     `
@@ -445,7 +454,8 @@ const POSTS = {
     featured: false,
     date: 'August 5, 2026', iso: '2026-08-05',
     title: 'Follow the AI order into Caterpillar\'s backlog',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post137-hero.jpg',
     body: `
       <p>Start with a 2-gigawatt power order in West Virginia. It needs engines, battery storage, switchgear, financing, parts, and technicians. The chips are not on that invoice. Caterpillar is.</p>
@@ -484,7 +494,7 @@ const POSTS = {
 
       <h2>The operating hours decide the second sale</h2>
 
-      <p>This is where the infrastructure story connects to the operating work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The order is not the finished business system. The owner still has to connect the construction schedule, equipment delivery, fuel contract, capacity commitment, uptime target, maintenance window, and customer billing date. A delay in any one of them can leave expensive equipment waiting on the others.</p>
+      <p>Operators know this gap from much smaller projects, including the <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM rollouts</a> I work on. The order is not the finished business system. The owner still has to connect the construction schedule, equipment delivery, fuel contract, capacity commitment, uptime target, maintenance window, and customer billing date. A delay in any one of them can leave expensive equipment waiting on the others.</p>
 
       <p>Caterpillar has a useful position because it can earn from the initial machine, finance it, and service it. Primary power also runs far more hours than emergency backup. More loaded hours mean more maintenance, more replacement parts, and more dealer work. That recurring layer can outlast the construction surge if the campuses stay busy.</p>
 
@@ -495,7 +505,8 @@ const POSTS = {
     featured: false,
     date: 'August 4, 2026', iso: '2026-08-04',
     title: 'Control is now on Palantir\'s AI invoice',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'assets/images/post136-hero.jpg',
     body: `
       <p>Palantir's second quarter reads like a software invoice with a data-rights clause attached.</p>
@@ -522,7 +533,7 @@ const POSTS = {
 
       <p>A European competitor is selling a different version of the same concern. After France selected ChapsVision's Argonos platform for a domestic security project, CEO Silvano Sansoni said <a href="https://www.chapsvision.com/press-release/chapsvision-chosen-by-france-to-deploy-argonos-for-otdh-project/" target="_blank" rel="noopener noreferrer">“demand for technological autonomy has never been stronger.”</a> The words sound similar to Palantir's pitch. The difference is who the buyer trusts to supply the control.</p>
 
-      <p>For the CRM and automation work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, this is where the architecture meets the commercial agreement. The useful questions are specific: Can the provider train on prompts, outputs, corrections, or tool traces? Who owns the workflow definitions? Can the customer export the business objects and their relationships? What evidence survives when the model changes? The invoice should match those answers.</p>
+      <p>Anyone who has negotiated a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM or automation contract</a> will recognize this spot, where the architecture meets the commercial agreement. The useful questions are specific: Can the provider train on prompts, outputs, corrections, or tool traces? Who owns the workflow definitions? Can the customer export the business objects and their relationships? What evidence survives when the model changes? The invoice should match those answers.</p>
 
       <h2>The growth still has a home address</h2>
 
@@ -543,7 +554,7 @@ const POSTS = {
     featured: false,
     date: 'August 3, 2026', iso: '2026-08-03',
     title: 'Europe delayed high-risk AI but kept the customer-facing rules',
-    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post135-hero.jpg',
     body: `
       <p>Europe postponed the AI Act rules most companies had circled in red. It did not postpone the part a customer can see.</p>
@@ -580,7 +591,7 @@ const POSTS = {
 
       <p>The provider builds and sells the AI system. The deployer uses it under its authority. A provider outside Europe can still fall under the Act when its system’s output is used in the EU. A company using a vendor’s model can still own the disclosure around its deepfake, emotion-recognition system, or public-interest text.</p>
 
-      <p>That is why the contract and the operating map have to meet. For the CRM and automation work I cover at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>, the useful inventory is not just a list of AI vendors. It is the customer touchpoint, the provider, the deployer, the output, the required notice, the evidence, and the person who can stop publication or switch the system off.</p>
+      <p>That is why the contract and the operating map have to meet. In a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM and automation stack</a>, the useful inventory is not just a list of AI vendors. It is the customer touchpoint, the provider, the deployer, the output, the required notice, the evidence, and the person who can stop publication or switch the system off.</p>
 
       <p>A video team, for example, needs to know whether the tool preserves a machine-readable mark after export and whether the publisher still owes the audience a visible label. A support team needs to know whether the vendor supplies the disclosure or whether the company must add it in the interface. Buying a compliant model does not automatically create a compliant customer experience.</p>
 
@@ -597,7 +608,8 @@ const POSTS = {
     featured: false,
     date: 'August 2, 2026', iso: '2026-08-02',
     title: 'The chip agent does not get to argue with physics',
-    category: 'AI Engineering', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post134-hero.jpg',
     body: `
       <p>A chatbot can be persuasive and wrong. A chip layout cannot talk its way past an electrical rule, a thermal limit, or a verification failure.</p>
@@ -620,7 +632,7 @@ const POSTS = {
 
       <p>Those missing details decide whether the gain survives production. A fast agent that creates more rework can make the first task look better while slowing the whole design. A useful measurement would include how many proposals fail verification, how many retries are needed, whether a later check finds a regression, and how often an engineer has to repair the agent’s path.</p>
 
-      <p>This is where the operating discipline behind <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> connects to the engineering story. Automation earns trust when the system records the proposal, the check, the failure, the correction, and the person who accepted the result. In chip design, that record is not overhead. It is part of how a team knows which decision can move toward signoff.</p>
+      <p>Chip design and <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">business automation</a> share one rule for earning trust. Automation earns trust when the system records the proposal, the check, the failure, the correction, and the person who accepted the result. In chip design, that record is not overhead. It is part of how a team knows which decision can move toward signoff.</p>
 
       <h2>NVIDIA is supplying more than a model</h2>
 
@@ -651,7 +663,8 @@ const POSTS = {
     featured: false,
     date: 'August 1, 2026', iso: '2026-08-01',
     title: 'What Francis deSouza is being hired to hold together',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post133-hero.jpg',
     body: `
       <p>Francis deSouza starts as Scale AI’s chief executive on August 10. Three different customers will be waiting for him: frontier AI labs, large companies, and governments.</p>
@@ -676,7 +689,7 @@ const POSTS = {
 
       <p>DeSouza chose the right phrase in <a href="https://scale.com/blog/scale-appoints-new-ceo" target="_blank" rel="noopener noreferrer">Scale’s announcement</a>: his focus includes <a href="https://scale.com/blog/scale-appoints-new-ceo" target="_blank" rel="noopener noreferrer">“showing our value through provable outcomes.”</a> That is a different promise from supplying excellent training data. It asks Scale to stay through deployment and prove that the system changed something the customer can measure.</p>
 
-      <p>This is where the operating work I write about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> connects to the hire. Enterprise AI becomes real when the owner, approval path, exception process, and outcome are visible. A vendor moving into applications inherits those questions instead of leaving them with the buyer.</p>
+      <p>deSouza is being hired to fix the same thing that stalls <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">smaller AI rollouts</a>. Enterprise AI becomes real when the owner, approval path, exception process, and outcome are visible. A vendor moving into applications inherits those questions instead of leaving them with the buyer.</p>
 
       <h2>Governments make trust part of the product</h2>
 
@@ -705,7 +718,8 @@ const POSTS = {
     featured: false,
     date: 'July 31, 2026', iso: '2026-07-31',
     title: 'Amazon made more cloud money and less free cash',
-    category: 'Cloud Economics', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'assets/images/post132-hero.jpg',
     body: `
       <p>Memory got more expensive, so Amazon added $20 billion to its spending plan after trailing free cash flow had already fallen below zero.</p>
@@ -738,7 +752,7 @@ const POSTS = {
 
       <p>Operating income is the cleaner line for the business itself: $27.5 billion, up 43% from a year ago. AWS supplied about 61% of that amount. The cloud segment is not only growing. It is funding a large share of Amazon’s current operating profit while Amazon uses corporate cash to build the next wave of cloud capacity.</p>
 
-      <p>This distinction matters in the operating work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Revenue, accounting profit, and cash movement can all improve or weaken for different reasons in the same period. A useful business read connects the sale to the capacity, cost, and collection schedule instead of stopping at the largest number on the page.</p>
+      <p>Anyone who has built a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">revenue report</a> knows why this distinction matters. Revenue, accounting profit, and cash movement can all improve or weaken for different reasons in the same period. A useful business read connects the sale to the capacity, cost, and collection schedule instead of stopping at the largest number on the page.</p>
 
       <h2>Cash is where the timing shows up</h2>
 
@@ -759,7 +773,8 @@ const POSTS = {
     featured: false,
     date: 'July 29, 2026', iso: '2026-07-29',
     title: 'DXC put ElevenLabs on the earnings call first',
-    category: 'Enterprise AI', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post131-hero.jpg',
     body: `
       <p>DXC’s new voice AI partnership did not begin with Tuesday’s press release. It began on DXC’s own earnings calls.</p>
@@ -792,7 +807,7 @@ const POSTS = {
 
       <p>At that point, voice quality is not the whole product. The agent needs the right customer record, a current policy, permission to call the right tool, and a reliable way to hand the case to a person. ElevenLabs is building more of that operating layer. Its <a href="https://elevenlabs.io/blog/procedures" target="_blank" rel="noopener noreferrer">Procedures feature</a>, currently in alpha, can turn existing standard operating procedures into structured or flexible agent instructions. Its <a href="https://elevenlabs.io/blog/introducing-elevenagents-spotlight" target="_blank" rel="noopener noreferrer">Spotlight product</a> reviews voice and chat conversations against plain-language evaluations.</p>
 
-      <p>The distinction is familiar in the operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A good interface can start the interaction. The system behind it still has to own the data, decision, handoff, and follow-up. Voice makes that gap more visible because the customer hears the answer in real time.</p>
+      <p>Voice AI runs into the same split I see in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM work</a>. A good interface can start the interaction. The system behind it still has to own the data, decision, handoff, and follow-up. Voice makes that gap more visible because the customer hears the answer in real time.</p>
 
       <h2>The buyer still owns the hard parts</h2>
 
@@ -813,7 +828,7 @@ const POSTS = {
     featured: false,
     date: 'July 28, 2026', iso: '2026-07-28',
     title: 'Red finds it. Blue checks it. Green changes it.',
-    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post130-hero.jpg',
     body: `
       <p>Red, blue, green. Microsoft’s new security system is easier to understand by who acts than by which model runs.</p>
@@ -848,7 +863,7 @@ const POSTS = {
 
       <p>A proposed patch is not the same as a safe production change. A system can close one exposure and break authentication, interrupt a checkout, or remove access from the wrong employee. The correction needs an owner, a test, an approval rule, an audit trail, and a rollback path.</p>
 
-      <p>This is the same operating line that matters in the automation work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The value is not that software can recommend a next step. The value comes when the handoff between recommendation and action is clear enough to run repeatedly without hiding who approved what.</p>
+      <p>Security teams and <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps teams</a> end up drawing the same line. The value is not that software can recommend a next step. The value comes when the handoff between recommendation and action is clear enough to run repeatedly without hiding who approved what.</p>
 
       <p>Microsoft says Perception keeps humans in control and inherits role-based controls, tenant isolation, encryption, auditability, and sandboxed execution from MDASH. Those are the right ingredients. The product details that matter now are more specific: which green-team actions can run automatically, which require approval, how exceptions are handled, and how a customer sees the evidence before a change lands.</p>
 
@@ -865,7 +880,8 @@ const POSTS = {
     featured: false,
     date: 'July 27, 2026', iso: '2026-07-27',
     title: 'NVIDIA-SK: memory now, cloud in 2027, contracts still forming',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post129-hero.jpg',
     body: `
       <p>The press release puts $500 billion at the top. The legal verb is lower down: NVIDIA and SK Group signed letters of intent.</p>
@@ -898,7 +914,7 @@ const POSTS = {
 
       <p>No public breakdown shows how much belongs to NVIDIA equipment, SK hynix memory, data center construction, networking, cooling, power, or later projects. No single term tells us how much is firmly contracted today. The announcement uses "plans," "aim," and "will" across projects with different maturity levels.</p>
 
-      <p>This is the operating distinction behind the work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: announced scope, contracted scope, installed capacity, and live service are different states. A large program becomes easier to judge when each dependency has an owner, a date, and a definition of done. One giant number can hide all three.</p>
+      <p>Big programs blur four states that any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">project owner</a> has to keep apart: announced scope, contracted scope, installed capacity, and live service. A large program becomes easier to judge when each dependency has an owner, a date, and a definition of done. One giant number can hide all three.</p>
 
       <h2>4. The dependencies now have to move together</h2>
 
@@ -913,7 +929,8 @@ const POSTS = {
     featured: false,
     date: 'July 26, 2026', iso: '2026-07-26',
     title: 'One AI answer now runs on two machines',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post128-hero.jpg',
     body: `
       <p>Reading a long prompt and writing the next token happen inside the same AI response. They are different computing jobs. AMD and Cerebras are now betting the economics improve when those jobs stop sharing the same machine.</p>
@@ -950,7 +967,7 @@ const POSTS = {
 
       <p><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-and-cerebras-partner-on-low-latency-high-throughput-ai-inference-epyc-processors-in-helios-rack-scale-infrastructure-paired-with-cerebras-wafer-scale-engine-wse-solutions" target="_blank" rel="noopener noreferrer">Tom's Hardware noted</a> that the companies have not disclosed how the systems will be interconnected or provided additional performance data. That missing detail is not small. Moving a live inference job between racks creates a handoff, and the speed, reliability, and cost of that handoff decide whether specialization helps or simply relocates the bottleneck.</p>
 
-      <p>This is where the story connects to the operating work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Splitting work between specialists can improve the result, but only when ownership of the transition is clear. The customer should not have to understand which machine read the context and which machine wrote the answer. The platform has to route the job, preserve its state, surface failures, and bill it as one service.</p>
+      <p>The same rule applies to any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">handoff between systems</a>. Splitting work between specialists can improve the result, but only when ownership of the transition is clear. The customer should not have to understand which machine read the context and which machine wrote the answer. The platform has to route the job, preserve its state, surface failures, and bill it as one service.</p>
 
       <h2>The handoff is the product</h2>
 
@@ -965,7 +982,8 @@ const POSTS = {
     featured: false,
     date: 'July 25, 2026', iso: '2026-07-25',
     title: 'The prompt now has a Monday morning',
-    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post127-hero.jpg',
     body: `
       <p>Last year, Meta's chief product officer reportedly told employees to <a href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" target="_blank" rel="noopener noreferrer">"focus on entertainment" and "connection with friends"</a> instead of obsessing over productivity. This week, Meta AI learned how to show up on Monday morning whether or not you ask again.</p>
@@ -992,7 +1010,7 @@ const POSTS = {
 
       <p>The Verge framed the update as a move toward the productivity territory already occupied by ChatGPT, Gemini, and Claude. Meta's advantage is not simply having another model. It is the number of places where the assistant can appear and the personal context those places can carry. Its risk is the same thing. Calendar, email, shopping preferences, messages, and recurring instructions make the product more useful only if people understand what is connected and what the assistant will do next.</p>
 
-      <p>This is the operating question I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: when a prompt becomes a recurring process, who owns the schedule, the connected data, and the correction? The automation is not finished because it ran once. It is finished when the next run is predictable enough that a person does not have to babysit it.</p>
+      <p>When a prompt becomes a recurring process, the question I ask in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">automation work</a> is who owns the schedule, the connected data, and the correction. The automation is not finished because it ran once. It is finished when the next run is predictable enough that a person does not have to babysit it.</p>
 
       <h2>The trust test arrives every morning</h2>
 
@@ -1007,7 +1025,8 @@ const POSTS = {
     featured: false,
     date: 'July 22, 2026', iso: '2026-07-22',
     title: 'Inside the chamber, a CHF 110 million bet',
-    category: 'Semiconductors', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Silicon_wafers.jpg/1280px-Silicon_wafers.jpg',
     body: `
       <p>A wafer sits inside a sealed process chamber. Gases arrive, plasma changes them, material lands or gets cut away, and the result can depend on molecules nobody outside the chamber can see. By the time a later inspection finds the problem, the expensive part has already happened.</p>
@@ -1032,7 +1051,7 @@ const POSTS = {
 
       <p>That demand gives VAT a reason to buy across the tool instead of waiting for valve volume alone. The company says adjacent products represented about a quarter of its first-half specification wins. Atonarp adds another product that can sit close to the valve, the gas line, and the process-control loop.</p>
 
-      <p>This is the business logic I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: owning one useful step is good, but the larger opportunity often sits in the next decision. VAT already helps the tool move gas and maintain vacuum. If it can also supply the signal that tells the tool what is happening, it gains more value from the same customer, the same machine, and the same production problem.</p>
+      <p>Owning one useful step is good, but in most businesses I look at, including <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM and RevOps work</a>, the bigger opportunity sits in the next decision. VAT already helps the tool move gas and maintain vacuum. If it can also supply the signal that tells the tool what is happening, it gains more value from the same customer, the same machine, and the same production problem.</p>
 
       <p>The financing shows this is a focused expansion, not a loose experiment. VAT will use a CHF 110 million bilateral loan to buy all outstanding Atonarp shares. It says the companies will operate separately for the time being, and its third-quarter guidance excludes any Atonarp contribution. The purchase gives VAT the technology and the team. It does not instantly turn the sensor into a standard part of every customer tool.</p>
 
@@ -1049,7 +1068,8 @@ const POSTS = {
     featured: false,
     date: 'July 19, 2026', iso: '2026-07-19',
     title: 'Amazon Leo found the missing half of satellite internet',
-    category: 'Connectivity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post125-hero.jpg',
     body: `
       <p>The orbit is the easy part to photograph. The harder part is getting an antenna onto a farm, answering the phone when it stops working, and sending somebody back down the road to fix it.</p>
@@ -1068,7 +1088,7 @@ const POSTS = {
 
       <p>Herotel's own explanation is better than the big space pitch: <a href="https://herotel.com/evry" target="_blank" rel="noopener noreferrer">"Global technology, local people."</a> That is the operating model in four words. Amazon does not have to recreate a national field organization. Herotel does not have to launch a constellation. Each company brings the expensive piece it already knows how to run.</p>
 
-      <p>This is also where the story connects to the work I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. A new technology only becomes a real service when ownership stays clear from the first order through the ugly support case. In this deal, the split is unusually legible. Leo owns the sky layer. Herotel owns the customer layer. Evry is the product that has to make the two feel like one.</p>
+      <p>Leo's deal is a useful case study for anyone planning a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM rollout</a> with a partner. A new technology only becomes a real service when ownership stays clear from the first order through the ugly support case. In this deal, the split is unusually legible. Leo owns the sky layer. Herotel owns the customer layer. Evry is the product that has to make the two feel like one.</p>
 
       <h2>South Africa changes the route to market</h2>
 
@@ -1093,7 +1113,8 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'Airbus made jurisdiction part of the cloud spec',
-    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post124-hero.jpg',
     body: `
       <p>Airbus gave cloud providers a test that went beyond uptime, scale, and price. It asked who could keep sensitive industrial data under European operational and legal control. Scaleway won.</p>
@@ -1126,7 +1147,7 @@ const POSTS = {
 
       <p>Most companies do not build aircraft or military systems, but the buying method travels well. Decide which data and workflows are genuinely sensitive. Write jurisdiction, continuity, interoperability, and operating control into the requirements. Then make providers compete against the full list instead of letting legal risk arrive after the shortlist is finished.</p>
 
-      <p>That is especially useful for teams deciding where AI can touch customer, product, or company data. The work I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> starts with defining that boundary before the tool spreads through the workflow. Airbus has done the same thing at industrial scale. It did not ban outside clouds or declare one platform safe for everything. It separated the workloads that need another level of control.</p>
+      <p>That is especially useful for teams deciding where AI can touch customer, product, or company data. Drawing that boundary before the tool spreads is also where I would start a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot AI rollout</a>. Airbus has done the same thing at industrial scale. It did not ban outside clouds or declare one platform safe for everything. It separated the workloads that need another level of control.</p>
 
       <p>The next proof will be quieter than the announcement. It will be application 12, application 38, and application 70 moving without slowing an engineering team or weakening a security boundary. If Airbus reaches that point by 2028, European cloud sovereignty will have moved from a policy phrase into the daily machinery of building aircraft.</p>
     `
@@ -1135,7 +1156,8 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'Kimi K3 came with a sunset clock',
-    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikimedia_Foundation_Servers_2015-63.jpg',
     body: `
       <p>Moonshot did not just launch Kimi K3. It also put Kimi K2.5 and the moonshot-v1 series on the way out for new users. That makes this release less like a model brag and more like a migration notice.</p>
@@ -1150,20 +1172,21 @@ const POSTS = {
 
       <p>That matters because a model upgrade is never just about the benchmark chart. It changes prompts, evals, tool calls, fallbacks, and the way teams measure whether the system is still doing the job. Moonshot's pricing page says K3 always reasons and can take a top-level <code>reasoning_effort</code> setting, which tells you the platform is pushing for a more controlled workflow instead of a casual chat toy.</p>
 
-      <p>This is the part I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first answer is easy, the handoff is the work. A model can look great in a demo and still be a pain when you have to migrate users, tools, and expectations around it. K3 is a cleaner story because Moonshot is admitting that the handoff is part of the product.</p>
+      <p>The first answer is easy. The handoff is the work, and that is true in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM automation</a> as much as in model launches. A model can look great in a demo and still be a pain when you have to migrate users, tools, and expectations around it. K3 is a cleaner story because Moonshot is admitting that the handoff is part of the product.</p>
 
       <p>The rollout is also staged, not finished. Moonshot says the full model weights will be released by July 27, 2026. So the launch is not only a capability announcement. It is a transition plan. The company is telling developers what to use now, what to stop using next, and when the rest of the ecosystem gets the full package.</p>
 
       <p>That is why Kimi K3 feels different from a lot of AI launches that stop at scale and speed. Moonshot is pairing the new flagship with a forced cleanup on the old stack. For buyers, that is usually the real cost. The model is only half the job. The rest is the migration.</p>
 
-      <p>So the useful read on Kimi K3 is not that it is bigger, or louder, or more futuristic. It is that Moonshot turned the release into a platform reset and said so out loud. That is the kind of move that matters when a model is meant to sit in the middle of coding, knowledge work, and long tasks. The story is not just what K3 can do. It is what Moonshot expects everyone else to move off of.</p>
+      <p>So the useful read on Kimi K3 is not that it is bigger, or louder, or more futuristic. It is that Moonshot turned the release into a platform reset and said so out loud. That is the kind of move that matters when a model is meant to sit in the middle of coding, knowledge work, and long tasks. The story is what Moonshot expects everyone else to move off of.</p>
     `
   },
   post122: {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'The refund queue is where tiket.com tested AI',
-    category: 'Travel Tech', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Bellingham_International_Airport%2C_passenger_terminal%2C_June_2012.jpg',
     body: `
       <p>Travel rarely breaks at the gate. It breaks when somebody needs a refund, a rebook, or a straight answer and gets a queue instead.</p>
@@ -1180,11 +1203,11 @@ const POSTS = {
 
       <p>This is where the story gets interesting. The value is not in letting a model chat about travel. The value is in connecting the chat to bookings, payments, refunds, and the rules that decide what can happen next. When that part works, the answer is actionable. When it does not, the customer gets a prettier dead end.</p>
 
-      <p>That is also why the people piece matters. tiket.com said halo tiket was built through cross-functional work across customer service, customer experience, product, technology, design, and data science. Microsoft framed the collaboration the same way, saying the goal is to <a href="https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/" target="_blank" rel="noopener noreferrer">"create meaningful impact on the customer experience."</a> That is the real shift. Support stops being the place where work piles up and starts being part of how the product earns trust.</p>
+      <p>That is also why the people piece matters. tiket.com said halo tiket was built through cross-functional work across customer service, customer experience, product, technology, design, and data science. Microsoft framed the collaboration the same way, saying the goal is to <a href="https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/" target="_blank" rel="noopener noreferrer">"create meaningful impact on the customer experience."</a> Support stops being the place where work piles up and starts being part of how the product earns trust.</p>
 
       <p>Irvan Bastian Arief, tiket.com's vice president of data and AI, said the company is using Microsoft Azure to introduce a way for customers to personalize travel services with <a href="https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/" target="_blank" rel="noopener noreferrer">"greater speed, convenience, and seamless connectivity throughout every step of their journey."</a> That line matters because it puts the AI effort inside the travel flow instead of outside it. The customer should feel the fix, not the model.</p>
 
-      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first answer is easy, but the second step is where context either survives or gets lost. In a travel business, that context is the booking record, the refund status, the support history, and the rule that keeps the whole thing from turning into a back-and-forth loop.</p>
+      <p>Refunds are a clean test because the second step is where context either survives or gets lost, the same place most <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">support automations</a> break. In a travel business, that context is the booking record, the refund status, the support history, and the rule that keeps the whole thing from turning into a back-and-forth loop.</p>
 
       <p>The number mix matters too. 75,000 monthly interactions and 87% automation sound like efficiency wins, but they only work if the remaining cases get handled better, not worse. A refund that needs human review can still burn goodwill if the AI layer makes the customer repeat the story before a person ever sees it. In travel, the real test is not how many requests the model absorbs. It is whether the handoff to a human feels shorter, cleaner, and less annoying than the old queue.</p>
 
@@ -1197,7 +1220,8 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'Thomson Reuters is moving the AI bill into engineering',
-    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&h=675&fit=crop&q=80',
     body: `
       <p>500 roles on one side. More than 250 AI-native hires on the other. Thomson Reuters is telling the market where it wants the engineering center of gravity to move, and the Reuters-reported cut is the part that makes the shift visible. The company said it will eliminate a small number of engineering roles as it leans harder into AI, while also planning to hire more than 250 net-new engineering roles over the next two years.</p>
@@ -1214,7 +1238,7 @@ const POSTS = {
 
       <p>That is also why the staffing change feels different from the usual layoff headline. A company can cut a layer of general engineering and still add the people who know how to ship AI into regulated work. Those are not the same skill sets. Thomson Reuters is saying it wants more senior, AI-native engineers because the product now lives closer to judgment, traceability, and customer-specific workflow rules.</p>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first AI win is easy to show, but the work only matters when the context survives the move into the operating system. Thomson Reuters sells to customers who will not accept a loose demo. Legal, tax, and regulatory teams want the answer, the source, the trail, and the control path. If the product cannot carry that baggage, the AI pitch falls apart fast.</p>
+      <p>The first AI win is easy to show, but the work only matters when the context survives the move into the operating system, a pattern I watch for in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps projects</a> too. Thomson Reuters sells to customers who will not accept a loose demo. Legal, tax, and regulatory teams want the answer, the source, the trail, and the control path. If the product cannot carry that baggage, the AI pitch falls apart fast.</p>
 
       <h2>What the market should read</h2>
 
@@ -1229,7 +1253,8 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'The AI stack got a cable company',
-    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post120-hero.jpg',
     body: `
       <p>3M and Microsoft are not pretending this is only a software story. Microsoft says Azure will be the first announced hyperscale cloud provider to deploy 3M's Expanded Beam Optical technology, while 3M says it will use Microsoft's AI and digital platforms across customer service, finance, sales, and marketing. That is a strange pairing on paper. It makes more sense once you look at the stack. One side is the physical path between racks. The other is the work inside the company.</p>
@@ -1252,7 +1277,7 @@ const POSTS = {
 
       <p>That is not a chatbot demo. It is an order-management workflow with guardrails. If the process works, the money shows up in faster cash flow, less manual effort, and fewer places where someone has to retype what the system already knows. That is where enterprise AI usually earns its keep, not in the first impressive answer, but in the second and third steps that keep the business moving.</p>
 
-      <p>Jon Van Wyck, 3M's chief strategy officer, said the collaboration will "accelerate growth, improve customer experiences and help our teams work more effectively." That is the right frame. The point is not to let AI sit on top of the company as another layer of noise. The point is to make the work inside the company faster to trust and easier to audit.</p>
+      <p>Jon Van Wyck, 3M's chief strategy officer, said the collaboration will "accelerate growth, improve customer experiences and help our teams work more effectively." The point is not to let AI sit on top of the company as another layer of noise. The point is to make the work inside the company faster to trust and easier to audit.</p>
 
       <p>There is a useful contrast in that. On the cloud side, the problem is physical density and maintenance. On the enterprise side, the problem is handoff and control. The same partnership is trying to solve both. That is why the deal feels bigger than a product tie-up. It connects the hardware layer to the operating layer.</p>
 
@@ -1263,7 +1288,8 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: 'TSMC put a price on lead time',
-    category: 'Semiconductors', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'assets/images/post119-hero.jpg',
     body: `
       <p>Four more fabs. One more $100 billion. TSMC's Arizona announcement is now a $265 billion commitment, and the number that matters is not the headline total. It is the amount of time the company is buying. TSMC said it will add four more advanced semiconductor manufacturing facilities in Arizona, plus advanced packaging, to support demand from U.S. customers. That is a capex story, yes. It is also a calendar story.</p>
@@ -1282,7 +1308,7 @@ const POSTS = {
 
       <h2>Geography still wins</h2>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once the work crosses a boundary, the rules have to cross with it. In TSMC's case the boundary is national, regulatory, and industrial all at once. If the advanced-node roadmap, the packaging line, the utility buildout, and the customer timetable do not line up, the money does not fix the schedule. It just makes the delay more expensive.</p>
+      <p>Once the work crosses a boundary, the rules have to cross with it, whether the boundary is a country or a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM integration</a>. In TSMC's case the boundary is national, regulatory, and industrial all at once. If the advanced-node roadmap, the packaging line, the utility buildout, and the customer timetable do not line up, the money does not fix the schedule. It just makes the delay more expensive.</p>
 
       <p>The useful reading of this story is not that Arizona replaces Taiwan. It is that TSMC is buying optionality because the AI buildout has made lead time scarce. The company can point to strong U.S. customer demand, a larger packaging footprint, and a bigger domestic manufacturing base. None of that removes the bottlenecks. It just changes where they land.</p>
 
@@ -1293,14 +1319,15 @@ const POSTS = {
     featured: false,
     date: 'July 18, 2026', iso: '2026-07-18',
     title: "AWS put outbound campaigns on a map",
-    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'RevOps & Ops', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai',
     image: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Cape_Town_CBD_skyline_as_seen_from_De_Waterkant.jpg',
     body: `
       <p>Cape Town is the useful clue. AWS just moved Amazon Connect Customer Outbound Campaigns into the Africa (Cape Town) Region, so SMS, WhatsApp, and email campaigns now have a very specific home on the map. The <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/connect-africa-cape-town/" target="_blank" rel="noopener noreferrer">announcement</a> says the feature is meant for service updates, promotional offers, appointment reminders, and product usage tips. That sounds like a release note. It is really a sign that customer outreach is no longer one global switch.</p>
 
       <p>The product page says AWS wants to <a href="https://aws.amazon.com/products/connect/customer/outbound/" target="_blank" rel="noopener noreferrer">"Keep customers informed automatically."</a> That is the real pitch. It is not just about sending more messages. It is about letting the system decide when a customer action should trigger a touchpoint, then doing it without a rep rebuilding the same play every day. If the workflow is good, the outreach feels timely instead of noisy.</p>
 
-      <p>AWS also says it can <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/connect-africa-cape-town/" target="_blank" rel="noopener noreferrer">"create targeted, personalized engagement campaigns"</a> through the Connect Customer admin site and APIs. That is the useful part of the story. The stack is not just delivery. It is segmentation, event triggers, analytics, and channel choice. A retail team can send one message over SMS, another over WhatsApp, and another over email without treating every campaign like a one-off project.</p>
+      <p>AWS also says it can <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/connect-africa-cape-town/" target="_blank" rel="noopener noreferrer">"create targeted, personalized engagement campaigns"</a> through the Connect Customer admin site and APIs. That is the useful part of the story. The stack is segmentation, event triggers, analytics, and channel choice. A retail team can send one message over SMS, another over WhatsApp, and another over email without treating every campaign like a one-off project.</p>
 
       <p>The product page also says AWS has built-in compliance controls for TCPA, quiet times, call limits, and contact verification. That is where the pitch gets more serious. Enterprises do not buy outbound tooling because they want more volume. They buy it because they want fewer mistakes. If the system can manage time zones, retries, and compliance without the team hand-stitching every rule, that saves more pain than a shiny dashboard ever will.</p>
 
@@ -1308,18 +1335,19 @@ const POSTS = {
 
       <p>The region table is where the story gets less glossy and more useful. AWS docs say outbound campaigns in Africa (Cape Town) can call phone numbers based in South Africa. Then the page adds the part that matters: <a href="https://docs.aws.amazon.com/connect/latest/adminguide/regions.html" target="_blank" rel="noopener noreferrer">"No other combinations are supported."</a> That is not a footnote. That is the boundary of the business model. AWS is saying geography still governs what the system can do, even when the software looks global from the dashboard.</p>
 
-      <p>The same doc shows the channel mix is not identical everywhere. In Africa (Cape Town), SMS and WhatsApp are supported, but Apple Messages for Business and push notifications are not. So this is not a simple feature rollout. It is a localized operating surface shaped by channel availability, compliance, and the practical limits of each region. That is the part vendors keep skipping in the sales pitch.</p>
+      <p>The same doc shows the channel mix is not identical everywhere. In Africa (Cape Town), SMS and WhatsApp are supported, but Apple Messages for Business and push notifications are not. So this is not a simple feature rollout. It is a localized operating surface shaped by channel availability, compliance, and the practical limits of each region.</p>
 
-      <p>This is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first workflow is easy. The hard part is making sure the rules travel with the task. If the channel, the approval path, and the geography do not line up, the automation looks good in a demo and gets awkward in production. That is where real operations live, and that is why the region table matters more than it looks like it should.</p>
+      <p>The first workflow is the easy one in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">marketing ops</a> and in contact centers alike. The hard part is making sure the rules travel with the task. If the channel, the approval path, and the geography do not line up, the automation looks good in a demo and gets awkward in production. That is where real operations live, and that is why the region table matters more than it looks like it should.</p>
 
-      <p>Cape Town is not just another row in AWS documentation. It is the place where the product, the compliance rule, and the customer channel have to agree before the system can say it is done. That is the business story here. Outbound only scales when the map and the workflow point in the same direction.</p>
+      <p>Cape Town is the place where the product, the compliance rule, and the customer channel have to agree before the system can say it is done. Outbound only scales when the map and the workflow point in the same direction.</p>
     `
   },
   post117: {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: "HP's OpenAI partnership started with 122 pull requests",
-    category: 'AI Adoption', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Technician_with_laptop_working_on_server_rack_at_NERSC.jpg',
     body: `
       <p>122 pull requests across 43 projects. That is where HP's OpenAI partnership starts. OpenAI says one engineer used Frontier models to move through that much code in a matter of weeks, while a security team remediated several software bugs in a day. If that sounds like pilot theater, it is not. It is a number that tells you where the work moved.</p>
@@ -1344,7 +1372,7 @@ const POSTS = {
 
       <p>Denise Dresser, OpenAI's chief revenue officer, said, <a href="https://openai.com/index/hp-frontier-partnership/" target="_blank" rel="noopener noreferrer">"HP is showing what enterprise transformation looks like when AI becomes an operating layer."</a> That is the cleanest way to say it. HP is trying to make AI answer to the same context, permissions, and evaluation rules that already govern the rest of the company.</p>
 
-      <p>That handoff problem is the same one I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The first useful result is easy. The hard part is keeping the context with the work when it moves from one tool, one team, or one approval step to the next. At HP scale, that means fewer dead ends in support, security, and partner workflows.</p>
+      <p>HP is running into the same wall every <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">ops team</a> hits after the first win. The first useful result is easy. The hard part is keeping the context with the work when it moves from one tool, one team, or one approval step to the next. At HP scale, that means fewer dead ends in support, security, and partner workflows.</p>
 
       <p>So the HP story is not "OpenAI at HP." It is HP trying to turn AI into a governed layer that can follow a case, a bug, or a customer request all the way through the system. If the partnership works, the proof will show up in the boring places first: faster reviews, cleaner support handoffs, and fewer resets when the work crosses a boundary. That is where the value lives.</p>
     `
@@ -1353,7 +1381,7 @@ const POSTS = {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: 'Microsoft gave passwords a retirement date',
-    category: 'Security', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post116-hero.jpg',
     body: `
       <p>September 1 matters. So does February 1. <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank" rel="noopener noreferrer">Microsoft says</a> passkeys will become the default sign-in method in Entra ID on the first date, and Microsoft-provided SMS and voice authentication will retire on the second. That is not a small product note. It is a deadline for every company still leaning on the old fallback because nobody wanted to touch it yet.</p>
@@ -1368,7 +1396,7 @@ const POSTS = {
 
       <p>The important part is that Microsoft is not pretending this is only a security upgrade. It is a migration project with a policy layer and, for some tenants, a commercial layer. If you need SMS or voice after the transition, Microsoft says the partner route will come with associated telecom costs. If you do not need it, the cleanest path is to move to passkeys and stop spending time defending the old setup.</p>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the hard part is not getting a feature to work once. The hard part is moving the work to a better system without losing the context that kept the old one alive. Identity programs fail when they treat that as a toggle instead of an operating change.</p>
+      <p>Passwordless login has the same trap as any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">system migration</a>: the hard part is not getting a feature to work once. The hard part is moving the work to a better system without losing the context that kept the old one alive. Identity programs fail when they treat that as a toggle instead of an operating change.</p>
 
       <h2>Why the clock matters</h2>
 
@@ -1387,7 +1415,8 @@ const POSTS = {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: 'The cloud fight just moved to the org chart',
-    category: 'Cloud', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/A_view_of_the_server_room_at_The_National_Archives.jpg',
     body: `
       <p>AWS just moved the person sitting closest to its compute engine. After nearly 19 years at the company, Dave Brown is leaving AWS, and Amazon says Dave Treadwell will take over AWS Compute and ML Services on August 1. <a href="https://www.wsj.com/tech/meta-plans-to-hire-top-amazon-computing-executive-as-it-weighs-cloud-push-2166869b" target="_blank" rel="noopener noreferrer">The Wall Street Journal</a> says Meta plans to hire Brown as it weighs a cloud push of its own. That is not a random executive shuffle. It is the kind of move that tells you where the leverage is now.</p>
@@ -1402,9 +1431,9 @@ const POSTS = {
 
       <p>The cloud pitch used to be broad: more services, more regions, more ways to build. The pitch now feels narrower and more industrial. Buyers want fewer dead ends, clearer ownership, and less drift between the tool they buy and the system they need to keep alive. AWS has already been pushing customers toward fewer product paths and more managed surfaces. This leadership change fits that direction. It says the hard part is not adding another box to the menu. It is keeping the menu coherent.</p>
 
-      <p>That same handoff problem shows up in smaller workflows too, including at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the first version is rarely the hard part. The transfer is. If the next person or system does not inherit the right context, the whole thing slows down. Cloud and AI vendors keep running into the same issue at larger scale. The platform can be impressive and still lose time if the operating handoff is messy.</p>
+      <p>Anyone who has handed off a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">half-built workflow</a> knows the first version is rarely the hard part. The transfer is. If the next person or system does not inherit the right context, the whole thing slows down. Cloud and AI vendors keep running into the same issue at larger scale. The platform can be impressive and still lose time if the operating handoff is messy.</p>
 
-      <p>Brown's own note is shorter and better: <a href="https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/" target="_blank" rel="noopener noreferrer">"I’ll be cheering you all on from the sidelines."</a> That sounds like a clean exit. It also sounds like somebody who knows the job has changed. AWS is no longer just the scrappy cloud upstart. It is a huge machine with real industrial constraints. At this scale, compute is not just capacity. It is energy, cooling, scheduling, silicon, and the internal politics needed to keep all of that pointed at one goal.</p>
+      <p>Brown's own note is shorter and better: <a href="https://www.geekwire.com/2026/aws-ec2-and-ai-leader-dave-brown-to-exit-replaced-by-amazon-exec-and-microsoft-vet-dave-treadwell/" target="_blank" rel="noopener noreferrer">"I’ll be cheering you all on from the sidelines."</a> That sounds like a clean exit. It also sounds like somebody who knows the job has changed. AWS is no longer just the scrappy cloud upstart. It is a huge machine with real industrial constraints. At this scale, compute is energy, cooling, scheduling, silicon, and the internal politics needed to keep all of that pointed at one goal.</p>
 
       <p>That is why the Meta angle matters. The Journal says Meta wants Brown to report to its head of infrastructure and focus on the company's data center build-out. That is the sound of a company trying to own more of the layer under its models. Meta already spends like an infrastructure company. Hiring someone who knows how AWS organizes compute is a way to buy muscle memory, not just a résumé.</p>
 
@@ -1421,7 +1450,8 @@ const POSTS = {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: 'Instacart wants the shelf to tell the truth',
-    category: 'Retail Tech', tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post114-hero.png',
     body: `
       <p>A shopper sees one thing in the aisle and another thing on the screen. That mismatch is the business problem behind <a href="https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-arpalus-advance-real-time-shelf-intelligence" target="_blank" rel="noopener noreferrer">Instacart's July 16 acquisition of Arpalus</a>. The company said the deal is meant to improve inventory accuracy for ecommerce fulfillment and in-store operations across its network. In grocery, that sounds small until you remember how many customer complaints start with a shelf that looked full to the app and empty to the person standing in front of it.</p>
@@ -1443,7 +1473,8 @@ const POSTS = {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: 'The company between Claude and the customer',
-    category: 'AI Services', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Staff_meeting.jpg',
     body: `
       <p>The interesting part of the Anthropic and Blackstone announcement is not that it is another AI partnership. It is that they are building the company that sits between the model and the customer. <a href="https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> on July 15 that Ode with Anthropic is a $1.5 billion AI implementation company, launched in May as part of the joint venture with Blackstone, Hellman &amp; Friedman, Goldman Sachs, and others. That is not a side note. That is the market admitting the hard part of AI is not the model anymore.</p>
@@ -1454,11 +1485,11 @@ const POSTS = {
 
       <p><a href="https://www.anthropic.com/news/enterprise-ai-services-company" target="_blank" rel="noopener noreferrer">Anthropic says</a> "Enterprise demand for Claude is significantly outpacing any single delivery model." That line is doing a lot of work. It says the model itself is pulling demand, but the company around it is what decides whether the demand gets converted into real workflows. Anthropic's own release says the new firm will work with mid-sized companies across sectors and that applied AI engineers from Anthropic will work alongside the firm's engineers to identify where Claude can have the most impact, build custom solutions, and support customers over the long term.</p>
 
-      <p>That is a different business from shipping a frontier model and hoping customers sort it out. It is closer to a mix of systems integration, product design, and change management. TechCrunch says Ode currently has 100 engineers, works closely with Anthropic's applied AI team, and is trying to build systems tailored to each organization's operations. That is the part most AI vendors keep underpricing. The software matters. The workflow rewrite matters more.</p>
+      <p>That is a different business from shipping a frontier model and hoping customers sort it out. It is closer to a mix of systems integration, product design, and change management. TechCrunch says Ode currently has 100 engineers, works closely with Anthropic's applied AI team, and is trying to build systems tailored to each organization's operations. The software matters. The workflow rewrite matters more.</p>
 
       <p>Chris Taylor, Ode's CEO, told TechCrunch, "It's pretty easy to imagine this as a trillion-dollar company someday if we execute well." I would not argue with the number. I would argue with the reason. The upside is not in convincing one company to try a model. The upside is in doing the unglamorous work of turning model access into something that survives procurement, training, compliance, and the third week of use.</p>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually the jump from capability to workflow. You can buy the tool, but if the approval path, the handoff, or the data model is off by one step, the business still stalls. This deal is basically a company built around fixing that gap.</p>
+      <p>The expensive part is usually the jump from capability to workflow, which is also where most <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM projects</a> stall. You can buy the tool, but if the approval path, the handoff, or the data model is off by one step, the business still stalls. This deal is basically a company built around fixing that gap.</p>
 
       <h2>Consulting is not the insult</h2>
 
@@ -1473,7 +1504,8 @@ const POSTS = {
     featured: false,
     date: 'July 17, 2026', iso: '2026-07-17',
     title: 'TCS and Google Cloud opened the Kolkata test room for Gemini',
-    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Kolkata_Skyline_over_the_Maidan.jpg',
     body: `
       <p>TCS and Google Cloud opened a Gemini Experience Center in Kolkata on July 16, and the location tells the story before the model name does. The center is aimed at retail, consumer packaged goods, travel, tourism and hospitality. That means the pitch starts with stores, supply chains, customer service and the messy parts of operation where AI has to do more than answer a prompt.</p>
@@ -1492,7 +1524,7 @@ const POSTS = {
 
       <p>TCS CTO Murali Ramanathan said the collaboration has focused on <a href="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-google-cloud-launch-gemini-experience-center-kolkata" target="_blank" rel="noopener noreferrer">"translating AI and next-generation tech into real business value."</a> That line works because it skips the hype and lands on the part that decides whether a lab is useful. Enterprises do not need more language about possibility. They need something that survives procurement, security review, and the second week after launch.</p>
 
-      <p>That is also the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually not the thing people put in the deck. It is the jump between the prompt, the approval, and the thing that has to keep moving after the meeting ends. In consumer businesses, that gap shows up in store ops, supplier onboarding, invoice processing and customer service. If the context drops there, the AI project looks smart right up until somebody has to use it twice.</p>
+      <p>The expensive part of an AI project is rarely the thing people put in the deck, and <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">ops work</a> makes that obvious fast. It is the jump between the prompt, the approval, and the thing that has to keep moving after the meeting ends. In consumer businesses, that gap shows up in store ops, supplier onboarding, invoice processing and customer service. If the context drops there, the AI project looks smart right up until somebody has to use it twice.</p>
 
       <h2>Why Kolkata</h2>
 
@@ -1509,14 +1541,14 @@ const POSTS = {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'AI chatbots are exporting censorship',
-    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Smartphone_with_ChatGPT_app_%2852917381673%29.jpg',
     body: `
       <p>Ask Claude to make a pamphlet critical of Xi Jinping or Saudi Arabia's crown prince and it may refuse. Ask the same kind of model to criticize Donald Trump or King Charles III and it will often comply. That is the odd thing AP reported today about a new <a href="https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba" target="_blank" rel="noopener noreferrer">Meta Oversight Board study</a>, and it is why this story matters to anyone selling or buying AI.</p>
 
       <p>The board tested 10 commercial large language models from Anthropic, DeepSeek, Google, Meta and OpenAI. It queried them from Australia through the normal commercial interfaces, then asked for critical flyers, poems and opinions about leaders and governments. On average, models refused 34% of requests about restrictive jurisdictions and only 14% about permissive ones.</p>
 
-      <p>That gap is the story. It means a model can look general-purpose while still carrying different speech rules depending on who is being discussed. The board says the result is not just inconsistency. It is <a href="https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/" target="_blank" rel="noopener noreferrer">"free speech infringements by proxy"</a>. In plain English, the model becomes part of the policy layer before the user ever sees a policy screen.</p>
+      <p>That gap is the story. It means a model can look general-purpose while still carrying different speech rules depending on who is being discussed. The board says the result is <a href="https://www.oversightboard.com/news/are-llms-stifling-political-speech-an-assessment-of-how-ai-models-protect-free-expression/" target="_blank" rel="noopener noreferrer">"free speech infringements by proxy"</a>. In plain English, the model becomes part of the policy layer before the user ever sees a policy screen.</p>
 
       <h2>The hidden policy layer</h2>
 
@@ -1528,20 +1560,21 @@ const POSTS = {
 
       <p>AP also quoted Hannah Waight, a co-author of a related study, saying, <a href="https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba" target="_blank" rel="noopener noreferrer">"It learns from information environments that have already been shaped by institutions and power."</a> That is the part people keep skipping. The model is not learning from some neutral internet fog. It is learning from data that already reflects who got to speak, who got heard and who got erased.</p>
 
-      <p>That is the same trust problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: if the system hides the rule that changed the result, the handoff looks clean until somebody has to debug it. This is why model cards and refusal notices matter. If the vendor is going to ship a speech rule across borders, the buyer should know which border it came from.</p>
+      <p>Hidden rules cause the same kind of mess in a chatbot that they cause in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM workflow</a>: the handoff looks clean until somebody has to debug it. This is why model cards and refusal notices matter. If the vendor is going to ship a speech rule across borders, the buyer should know which border it came from.</p>
 
       <h2>What buyers need</h2>
 
       <p>The board is pushing the right fix: clearer disclosure, specific notices when a refusal is driven by a legal restriction and more human-rights due diligence before the model ships. That is not activist fluff. It is product hygiene. A company that wants to sell one chatbot in a lot of countries needs to say when the chatbot is really applying a local speech rule and when it is just being cautious.</p>
 
-      <p>Otherwise the model becomes a quiet policy engine. That is the real warning here. The next enterprise procurement fight is not just about price, speed or context window. It is about whether the vendor can explain why the model said no when the company needed a straight answer.</p>
+      <p>Otherwise the model becomes a quiet policy engine. That is the real warning here. The next enterprise procurement fight is about whether the vendor can explain why the model said no when the company needed a straight answer.</p>
     `
   },
   post110: {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'Japan put 13,750 chips behind physical AI',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Industrial_robot.jpg',
     body: `
       <p>13,750 Vera CPUs. 27,500 Rubin GPUs. 140 megawatts. That is not a teaser. That is Japan putting a hard number on physical AI. <a href="https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure" target="_blank" rel="noopener noreferrer">NVIDIA said today</a> it is working with Noetra Corp. to launch the factory, and <a href="https://apnews.com/article/86823c1bcc959ad603ecb25d022207b1" target="_blank" rel="noopener noreferrer">AP reported</a> that Fujitsu is leading the broader push with FANUC, Yaskawa Electric, and Kawasaki Heavy Industries.</p>
@@ -1554,13 +1587,13 @@ const POSTS = {
 
       <p>Fujitsu's own release makes the control story clearer. It says the companies are trying to build a collaborative control platform "bridging the digital and physical worlds." That is the part that usually gets hand-waved in robot demos. The robot is not the product. The control path is.</p>
 
-      <p>That is also the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The money sits in the jump between systems, not in the dashboard that names them. If the digital layer cannot talk to the physical layer cleanly, the robot just becomes another expensive island.</p>
+      <p>Physical AI has the problem every <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">integration project</a> has. The money sits in the jump between systems, not in the dashboard that names them. If the digital layer cannot talk to the physical layer cleanly, the robot just becomes another expensive island.</p>
 
       <h2>Hospitals first</h2>
 
       <p>Kawasaki's release shows where the pressure lands first: healthcare. It says the companies will study a hospital solution that ties electronic medical records to robot systems and AI, and that the sector faces "serious challenges, including ageing populations and labor shortages." That makes the use case obvious. Japan does not just need more automation. It needs automation that can live inside care work.</p>
 
-      <p>Kawasaki says the work could automate medication transport, specimen transport, outpatient reception, and guidance services. That is the detail that matters. Physical AI stops being a buzzword when it has to move a tray, follow a workflow, and stay useful around people.</p>
+      <p>Kawasaki says the work could automate medication transport, specimen transport, outpatient reception, and guidance services. Physical AI stops being a buzzword when it has to move a tray, follow a workflow, and stay useful around people.</p>
 
       <p>Noetra's CEO said, "no single company can solve alone." That is true here. Fujitsu brings systems integration. Kawasaki brings robots and operations. NVIDIA brings the compute and model stack. The national plan only works if those pieces stay aligned long enough to ship something that survives outside the conference room.</p>
 
@@ -1571,7 +1604,8 @@ const POSTS = {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'TSMC turned AI demand into a build order',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Building_of_Taiwan_Semiconductor_Manufacturing_Fab_12B_at_night.jpg',
     body: `
       <p>$100 billion is not the part that matters first. The part that matters is what TSMC said it will do with it: add four more fabrication plants in Arizona and push its total U.S. commitment to $265 billion. <a href="https://apnews.com/article/taiwan-tsmc-chipmaking-ai-arizona-fab-ba05b1b952257d371acb9d070e7914ff" target="_blank" rel="noopener noreferrer">AP reported</a> that the new chips will focus on 2-nanometer and below. That is not a market mood. That is a build order.</p>
@@ -1584,7 +1618,7 @@ const POSTS = {
 
       <p>The extra fabs are only half the picture. The other half is timing. Advanced chips are still hard to make, hard to package, and hard to ship at volume. That is why TSMC keeps getting treated like the chokepoint and like the solution at the same time. The company is not just selling transistors. It is selling certainty inside a very long lead-time system.</p>
 
-      <p>That is also why the shape of this spend feels different from the usual AI capex story. TSMC is not chasing a shiny product category. It is keeping the production path close to the demand path so the queue does not stretch out in front of its biggest customers. If you have ever watched a process break because the handoff took too long, you know the pattern. The expensive part is almost never the thing people put in the slide deck. I keep seeing the same thing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the real money sits in the step that has to happen before the next step can start.</p>
+      <p>That is also why the shape of this spend feels different from the usual AI capex story. TSMC is not chasing a shiny product category. It is keeping the production path close to the demand path so the queue does not stretch out in front of its biggest customers. If you have ever watched a process break because the handoff took too long, you know the pattern. The expensive part is almost never the thing people put in the slide deck. The real money sits in the step that has to happen before the next step can start, which is as true in a fab as in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">sales pipeline</a>.</p>
 
       <p>AP quoted Counterpoint analyst William Li, who said the ramped-up investment is "essential to support (its) long-term growth." That is the investor version of the same point. TSMC is spending ahead of the curve because the alternative is letting the curve outrun the factory.</p>
 
@@ -1601,7 +1635,8 @@ const POSTS = {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'The AI bottleneck is a connector',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Fiber_optic_illuminated.jpg',
     body: `
       <p>The biggest line in the 3M and Microsoft partnership is not the AI line. It is the connector. <a href="https://news.microsoft.com/source/2026/07/15/3m-and-microsoft-announce-strategic-partnership-to-advance-ai-data-center-infrastructure-and-enterprise-transformation/" target="_blank" rel="noopener noreferrer">Microsoft said on July 15</a> that Azure will be the first announced hyperscale cloud provider to deploy 3M&apos;s Expanded Beam Optical technology, and <a href="https://news.3m.com/2026-07-15-3M-and-Microsoft-announce-strategic-partnership-to-advance-AI-data-center-infrastructure-and-enterprise-transformation" target="_blank" rel="noopener noreferrer">3M said</a> it will use Microsoft&apos;s AI and digital platforms across customer service, finance, sales, and marketing. That makes this look less like a model story and more like a story about the physical and operating layers underneath it.</p>
@@ -1618,7 +1653,7 @@ const POSTS = {
 
       <p>The press release says 3M will use Microsoft&apos;s AI and digital capabilities in customer service, finance, sales, and marketing. It also says the companies are building an AI agent-driven workflow for customer orders, credit checks, delinquency assessments, and system updates, with human-in-the-loop controls and a monitoring dashboard. That is not a demo. That is process work. It is the part that decides whether a company gets faster or just gets more AI-shaped paperwork.</p>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the expensive part is usually not the thing people put in the deck. It is the connector, the check, the cleanup, or the transfer that has to work every time for the rest of the system to look simple.</p>
+      <p>The expensive part is usually not the thing people put in the deck, and that holds for <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">automation work</a> as much as for chips. It is the connector, the check, the cleanup, or the transfer that has to work every time for the rest of the system to look simple.</p>
 
       <p>3M&apos;s Jon Van Wyck said AI can "accelerate growth, improve customer experiences and help our teams work more effectively." That is the right lens because the software side is not separate from the infrastructure side. The company is trying to shorten the path from the order, to the workflow, to the cash.</p>
 
@@ -1635,26 +1670,27 @@ const POSTS = {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'Slack is now Claude\'s memory layer',
-    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Slack_HQ_-_500_Howard_10th_Floor_%2844130140882%29.jpg',
     body: `
       <p>Anthropic is putting Claude Tag in Slack first, and that detail matters more than the model name. The company says Claude Tag is available today in beta for Claude Enterprise and Team customers, which means the new product shows up where the work already lives instead of asking teams to move somewhere else.</p>
 
       <p>Anthropic puts the point plainly: "Claude Tag is a new way for teams to work with Claude." It also says, "We’re starting on Slack, which Claude can join as a team member." That is the release in one sentence. Claude is not being sold as a sidecar. It is being dropped into the channel where the conversation, the task list, and the follow-up already happen.</p>
 
-      <p>TechCrunch described it as an "always-on Claude" that lives in Slack and acts as an AI teammate. That is the right framing because the product is not just answering questions. It is trying to stay in the thread long enough to remember what happened last time, what was decided, and what still needs work.</p>
+      <p>TechCrunch described it as an "always-on Claude" that lives in Slack and acts as an AI teammate. That is the right framing because the product is trying to stay in the thread long enough to remember what happened last time, what was decided, and what still needs work.</p>
 
       <h2>One Claude per channel</h2>
 
       <p>The big change is that Claude Tag gives a channel one Claude identity. Anthropic says anyone in that channel can see what Claude has been working on and pick up the conversation from where the last person left off. That is a much bigger shift than a normal chatbot panel. It turns Slack from a message stream into a shared memory surface.</p>
 
-      <p>That matters because enterprise work keeps failing at the same handoff. Someone asks for a recap. Someone else adds a file. A third person joins late. The thread still exists, but the context gets expensive every time it has to be rebuilt. It is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: the work is rarely the hard part. The context moving with it is.</p>
+      <p>That matters because enterprise work keeps failing at the same handoff. Someone asks for a recap. Someone else adds a file. A third person joins late. The thread still exists, but the context gets expensive every time it has to be rebuilt. The work is rarely the hard part, and anyone who has cleaned up a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">messy CRM</a> knows it. The context moving with it is.</p>
 
       <p>Anthropic says Claude Tag can build context by remembering relevant information from the channels it is in, and it can pull facts from other channels or data sources if it is granted permission. That is why the product is more than another assistant. It is trying to become the memory layer around the work, not just the place where the prompt lives.</p>
 
       <p>The company also says Claude Tag is the beginning of an evolution of Claude Code. At Anthropic, the internal version is already doing real work. The company says 65% of its product team\'s code is created by its internal Claude Tag. That number is not interesting because it sounds big. It is interesting because it shows the team is already treating Claude like a collaborator, not a novelty.</p>
 
-      <p>That internal detail lines up with the broader product shape. Slack is where teams already assign work, ask follow-up questions, and keep projects moving between meetings. If Claude can stay in that flow, then the value is not just faster replies. It is fewer dead threads, fewer repeated explanations, and fewer moments where a team has to restart the conversation from zero.</p>
+      <p>That internal detail lines up with the broader product shape. Slack is where teams already assign work, ask follow-up questions, and keep projects moving between meetings. If Claude can stay in that flow, then the value is fewer dead threads, fewer repeated explanations, and fewer moments where a team has to restart the conversation from zero.</p>
 
       <h2>Why admins care</h2>
 
@@ -1662,7 +1698,7 @@ const POSTS = {
 
       <p>In other words, the product has to satisfy two people at once. The worker wants a teammate who remembers enough to be useful. The admin wants a system that does not leak memory across departments or turn every question into a compliance headache. Anthropic is trying to put the guardrails close enough to the work that the software still feels useful.</p>
 
-      <p>That is also why the launch credit and the 30-day migration window matter. Claude Tag replaces the existing Claude in Slack app, so Anthropic is not just adding a feature. It is moving customers onto a new operating shape and giving them a way to test it before the old path disappears.</p>
+      <p>That is also why the launch credit and the 30-day migration window matter. Claude Tag replaces the existing Claude in Slack app, so Anthropic is moving customers onto a new operating shape and giving them a way to test it before the old path disappears.</p>
 
       <p>Reuters also reported the launch with plans for a wider rollout, which is the other signal worth watching. Anthropic is starting with Slack because it is a natural home for collaboration, but the company clearly wants the same memory model in other places teams work. That is the real platform play. The winner is not the best chat reply. It is the place the company keeps its context.</p>
 
@@ -1675,7 +1711,8 @@ const POSTS = {
     featured: false,
     date: 'July 16, 2026', iso: '2026-07-16',
     title: 'GPT-5.6 moved into the office stack',
-    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Closeup_of_Excel_Spreadsheet_template_to_track_printouts_%2829911005444%29.jpg/1280px-Closeup_of_Excel_Spreadsheet_template_to_track_printouts_%2829911005444%29.jpg',
     body: `
       <p>No one buys Microsoft 365 for the model name. They buy it because Word, Excel, PowerPoint, Chat, and Cowork are already where the work lives. That is why the July 9 GPT-5.6 update matters. OpenAI says GPT-5.6 will become the <a href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank" rel="noopener noreferrer">preferred model in Microsoft 365 Copilot</a>, and that makes the release less about benchmarks and more about default behavior.</p>
@@ -1692,9 +1729,9 @@ const POSTS = {
 
       <p>In Word, OpenAI says GPT-5.6 can help people draft, edit, and refine documents with fewer rounds of prompting. In Excel, it can support deeper analysis while using tokens more efficiently. In PowerPoint, it can turn early ideas into more polished presentations with less manual guidance. In Cowork, it can help users complete complex, cross-functional work with less manual coordination. That list tells you where the value is: fewer handoffs, fewer retries, and fewer little failures that add up inside a normal workday.</p>
 
-      <p>That is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. The front end can look simple while the actual work depends on the path underneath it. Copilot only feels useful when the model and the product stay out of the way enough for people to keep moving.</p>
+      <p>Office AI lives or dies on the same thing <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM adoption</a> does. The front end can look simple while the actual work depends on the path underneath it. Copilot only feels useful when the model and the product stay out of the way enough for people to keep moving.</p>
 
-      <p>The business angle is not just that OpenAI gets a bigger footprint inside Microsoft 365. It is that Microsoft gets a fresher model without making users learn a different product, and OpenAI gets more distribution inside the systems people already trust for daily work. That is a better deal than another standalone chatbot splash screen.</p>
+      <p>The business angle is that Microsoft gets a fresher model without making users learn a different product, and OpenAI gets more distribution inside the systems people already trust for daily work. That is a better deal than another standalone chatbot splash screen.</p>
 
       <p>OpenAI also gets something more subtle here. Once a model becomes the preferred default inside Microsoft 365, the competition shifts from who has the flashiest release to who can make the everyday output feel less edited. That is where enterprise software actually wins or loses: in the second and third pass, not the first demo.</p>
 
@@ -1709,7 +1746,8 @@ const POSTS = {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
     title: 'OpenAI put buttons on Codex',
-    category: 'AI Tools', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Desk-laptop-working-technology_%2824299511976%29.jpg/1280px-Desk-laptop-working-technology_%2824299511976%29.jpg',
     body: `
       <p>OpenAI's hardware move today is not the Jony Ive rumor. It is Codex Micro, a $230 control deck for the people already shipping code through Codex. That is the more interesting story because it is smaller, less theatrical, and closer to how AI actually gets used in businesses.</p>
@@ -1728,7 +1766,7 @@ const POSTS = {
 
       <p>The price is also telling. At $230, the point is not cheap hardware. The point is that OpenAI is experimenting with a premium physical add-on around a software product that already wants daily attention. If developers buy it, that is a signal that the Codex habit is strong enough to support hardware on top of software. If they do not, OpenAI still learns whether agent work needs a dedicated surface or just better UI. Either way, the lesson is useful.</p>
 
-      <p>This is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Once work crosses from one tool or owner to the next, context gets expensive. Codex Micro is basically a hardware answer to that cost. It tries to move the important checkpoints back in front of the user instead of burying them in chat history.</p>
+      <p>Codex has the same weak spot as any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">workflow handoff</a>. Once work crosses from one tool or owner to the next, context gets expensive. Codex Micro is basically a hardware answer to that cost. It tries to move the important checkpoints back in front of the user instead of burying them in chat history.</p>
 
       <p>There is also a clean contrast here with the broader OpenAI hardware work. The rumored Jony Ive device gets attention because it sounds like a new category. Codex Micro matters because it is trying to make current work less annoying right now. That is a much quieter bet, but probably a more honest one.</p>
 
@@ -1743,7 +1781,8 @@ const POSTS = {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
     title: 'Meta is trying to own the chip bill',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Semiconductor_Wafer_of_Microelectronics.jpg',
     body: `
       <p>Meta's July 9 AI headline was Muse Spark 1.1 and the new Meta Model API. The more interesting detail came from Reuters: an internal memo said Meta plans to start manufacturing its newest AI chip in September, and at least one chip cleared testing in about six weeks. That is the part that changes the business math.</p>
@@ -1756,9 +1795,9 @@ const POSTS = {
 
       <p><a href="https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> that Meta is working with Broadcom on chip design and TSMC on manufacturing, while buying RAM from Samsung, storage from Sandisk, and fiber-optic gear from Sumitomo Electric. The memo also said Meta expects to deploy 7 gigawatts of compute this year and double that next year. That is not a normal product cycle. That is a utility-scale buying plan.</p>
 
-      <p>That six-week testing line matters because it says this is already moving past lab theater. Meta is not just sketching custom silicon on a roadmap slide. It is getting parts through design, test, fabrication, and deployment fast enough that the supply chain has to line up around the schedule, not the other way around.</p>
+      <p>That six-week testing line matters because it says this is already moving past lab theater. Meta is getting parts through design, test, fabrication, and deployment fast enough that the supply chain has to line up around the schedule, not the other way around.</p>
 
-      <p>The useful part is where the chips land. Meta says MTIA is built for inference and recommendation at scale, which means ranking, feed quality, and the everyday work that keeps its apps moving. The company is not just chasing a flashy model win. It is trying to own more of the layer that decides how much each AI task costs to serve.</p>
+      <p>The useful part is where the chips land. Meta says MTIA is built for inference and recommendation at scale, which means ranking, feed quality, and the everyday work that keeps its apps moving. The company is trying to own more of the layer that decides how much each AI task costs to serve.</p>
 
       <p>"As we roll out more than 1GW of our custom silicon to start and then multiple gigawatts over time, this partnership will give us greater performance and efficiency for everything we're building." That is the cleanest read on the whole thing. Meta wants its own hardware cadence to become part of its AI margin story, not just its AI brag sheet.</p>
 
@@ -1773,7 +1812,8 @@ const POSTS = {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
     title: 'Meta put a price on Muse Spark',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Social_media_apps.jpg',
     body: `
       <p>Mark Zuckerberg's July 9 post was not a model victory lap. It was a pricing signal. Meta launched Muse Spark 1.1, opened a public preview of the Meta Model API, and gave developers a new way to buy into the stack.</p>
@@ -1797,7 +1837,7 @@ const POSTS = {
 
       <p>That also explains why the story is bigger than one model. Muse Spark 1.1 is available in Thinking mode in the Meta AI app and on meta.ai, and Meta says it will spread across Instagram, WhatsApp, Facebook, Messenger, and smart glasses. That is a stronger moat than a standalone model page. Meta has a consumer funnel, a developer funnel, and a place to cross-sell the same intelligence across surfaces people already use.</p>
 
-      <p>The hardware side still matters too. <a href="https://www.marketwatch.com/story/metas-stock-rebounds-as-agentic-ai-coding-and-custom-chips-ease-spending-fears-16d1cb24" target="_blank" rel="noopener noreferrer">MarketWatch said</a> Meta's shares rose after the launch and after reports that its custom Iris chips could begin mass production in September. That is the part where the story gets bigger than software. Meta is trying to own the model, the API, the app surfaces, and more of the hardware bill underneath them.</p>
+      <p>The hardware side still matters too. <a href="https://www.marketwatch.com/story/metas-stock-rebounds-as-agentic-ai-coding-and-custom-chips-ease-spending-fears-16d1cb24" target="_blank" rel="noopener noreferrer">MarketWatch said</a> Meta's shares rose after the launch and after reports that its custom Iris chips could begin mass production in September. Meta is trying to own the model, the API, the app surfaces, and more of the hardware bill underneath them.</p>
 
       <p>That is also why the launch feels different from the usual AI announcement. This is not just Meta saying it caught up. It is Meta saying it can sell intelligence at a price that may undercut the market, while also using the rest of its app graph to keep distribution cheap. If the API works, the model becomes one more business line. If the chips work, the margin problem gets smaller. If both work, Meta stops looking like a company spending on AI for defense and starts looking like one trying to turn cheap inference into recurring revenue.</p>
 
@@ -1808,7 +1848,7 @@ const POSTS = {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
     title: 'Ads need receipts now',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Pelican_hot_tubs_sale_billboard_reading_%E2%80%9CPelican_beat_the_tariffs%21%E2%80%9D.jpg',
     body: `
       <p>Open Google Ads on July 9 and the new thing is not a bigger model or a louder promise. It is a panel called "How this ad was made." That tells you where the pressure is now.</p>
@@ -1840,7 +1880,8 @@ const POSTS = {
     featured: false,
     date: 'July 15, 2026', iso: '2026-07-15',
     title: 'HCLTech is buying the layer under AI',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/BalticServers_data_center.jpg',
     body: `
       <p>₹3,500 crore is the part that grabs attention. The more useful detail is what HCLTech says it is buying with it: data centers that can scale to 50 MW, a new subsidiary structure to hold the spend, and a full-stack AI business that stretches from infrastructure to software.</p>
@@ -1859,7 +1900,7 @@ const POSTS = {
 
       <p>That also lines up with HCLTech's broader AI pitch. The company already describes its AI work as a full-stack offering across hyperscalers, on-premises, edge, neo cloud, and sovereign environments. The new data center investment makes that language less abstract. It is harder to promise end-to-end AI if you never touch the part where power, cooling, and rack space become the constraint.</p>
 
-      <p>It is the same handoff problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. Once the promise moves from the first team to the next one, the expensive part is the missing context. AI just makes that more obvious because the handoff is no longer only between sales and delivery. It is between software, facilities, operations, and the buyer who still wants everything to feel simple.</p>
+      <p>HCLTech is buying its way into the handoff that sinks a lot of <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">technology rollouts</a>. Once the promise moves from the first team to the next one, the expensive part is the missing context. AI just makes that more obvious because the handoff is no longer only between sales and delivery. It is between software, facilities, operations, and the buyer who still wants everything to feel simple.</p>
 
       <p>There is still a risk here. Capex changes the return profile. A services firm can grow by adding people and process. A data center business also needs land, power, permits, cooling, hardware, and a long operating runway. If HCLTech gets the mix wrong, the company could end up with a much heavier balance sheet and only a modest change in customer loyalty.</p>
 
@@ -1872,7 +1913,8 @@ const POSTS = {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
     title: 'The AI stack now has a border',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Data_center_roof.jpg',
     body: `
       <p>Google's India event had a lot of moving pieces. Education. Health. Languages. Cloud. The part that changes the business story is the one that lets regulated Indian buyers run Gemini on Google Distributed Cloud from inside Indian data centres.</p>
@@ -1891,7 +1933,7 @@ const POSTS = {
 
       <p>The practical point is simple. Most buyers do not want to buy and manage their own infrastructure unless they have to. They want frontier AI without turning every rollout into a security exception. They want the model, the controls, and the data boundary to line up without a long consulting detour in the middle.</p>
 
-      <p>That is the same kind of workflow problem I keep seeing at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>. If the handoff is fuzzy, the tool does not feel safer. It just creates a cleaner-looking version of the same confusion. Control only matters when the operating path stays simple.</p>
+      <p>A border rule creates the same risk as a fuzzy <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">approval workflow</a>. If the handoff is fuzzy, the tool does not feel safer. It just creates a cleaner-looking version of the same confusion. Control only matters when the operating path stays simple.</p>
 
       <p>The bigger signal here is that Google is treating India as a place where AI has to work under real constraints, not just a place where it can be demoed. The company is pairing model access with in-country processing, language work, training, and sector-specific deployment paths. That is a sharper strategy than just saying the market is important and hoping buyers will assemble the rest themselves.</p>
 
@@ -1904,7 +1946,8 @@ const POSTS = {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
     title: '96% already hit the network wall',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1775519520461-6b6e068d9250?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
     body: `
       <p>96% of enterprise IT leaders said they ran into at least one network-related performance issue in the last year. 91% said fiber availability, carrier diversity, and low-latency connectivity limited where AI could be deployed. Flexential's new 400 Gbps rollout looks a lot less like a press release when you put those two numbers next to it.</p>
@@ -1923,7 +1966,7 @@ const POSTS = {
 
       <p>That is also why the number is useful but incomplete. <a href="https://hostingjournalist.com/news/flexential-upgrades-data-center-network-backbone-to-400-gbps" target="_blank" rel="noopener noreferrer">HostingJournalist's read</a> on the upgrade is blunt: a 400 Gbps backbone raises the ceiling, but the real bottleneck can still live in storage arrays, firewalls, routers, cloud gateways, and application design. That is the part buyers need to remember. Faster backbone does not automatically mean faster business result.</p>
 
-      <p>The same handoff problem shows up in other work too, including at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: when the job has to move through too many steps, the narrowest handoff decides how fast the whole thing feels. Networks are just the physical version of that problem. If the path is too tight, every team upstream starts building around the delay instead of through it.</p>
+      <p>When the job has to move through too many steps, the narrowest handoff decides how fast the whole thing feels, in a network or in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">sales process</a>. Networks are just the physical version of that problem. If the path is too tight, every team upstream starts building around the delay instead of through it.</p>
 
       <p>Flexential is trying to make that delay less visible by cutting third-party hops and giving customers direct access to AWS, Azure, Google Cloud, and Oracle connections. That matters because most enterprises do not buy bandwidth for its own sake. They buy it to keep data movement from turning into a project. If the link is fast enough and the provisioning is fast enough, the infrastructure team can stop acting like a traffic controller.</p>
 
@@ -1938,7 +1981,8 @@ const POSTS = {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
     title: 'What 5 gigawatts buys in Richland Parish',
-    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Wikimedia_Servers-0051_17.jpg',
     body: `
       <p>The first weird number is 5 gigawatts. The second is more than $50 billion. At that point, Meta's Richland Parish build stops looking like one more data center and starts looking like a local system with a corporate logo on it.</p>
@@ -1965,7 +2009,7 @@ const POSTS = {
 
       <p>That is also why the public debate keeps moving toward the boring parts of the project. People do not spend much time arguing about a data hall layout. They argue about who pays for the wires, who absorbs the upgrade risk, and whether the promise of a new AI build is strong enough to justify all the concrete around it. That is a very different kind of business story than the one Meta would tell if this were only about server density.</p>
 
-      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once work crosses from one owner to the next, the lost context is the expensive part. This project has a dozen handoffs built into it already. Company to utility. Utility to regulator. Regulator to parish. Parish to schools and contractors. The point is not just that Meta is big. It is that the bill now moves through a lot of hands.</p>
+      <p>Once work crosses from one owner to the next, the lost context is the expensive part, and <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">operations work</a> at any size runs on that rule. This project has a dozen handoffs built into it already. Company to utility. Utility to regulator. Regulator to parish. Parish to schools and contractors. The point is that the bill now moves through a lot of hands.</p>
 
       <p>If Meta finishes what it is promising, Richland Parish will not just have a data center on the map. It will have a new power customer, a new tax base, a new infrastructure backlog, and a new reason to argue about what AI companies owe the places that host them. That is what 5 gigawatts buys there.</p>
     `
@@ -1974,14 +2018,15 @@ const POSTS = {
     featured: false,
     date: 'July 14, 2026', iso: '2026-07-14',
     title: 'IBM got hit by the memory bill',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'assets/images/post97-hero.jpg',
     body: `
       <p>IBM's worst day in years was not a mystery. It was a spend problem. The company said clients moved quarterly capex into servers, storage, and memory before expected price increases landed, and the stock reacted like that sentence was the whole quarter.</p>
 
       <p>The numbers were not broken on their own. IBM's preliminary second-quarter results showed revenue of $17.2 billion, software up 5 percent, consulting flat, and infrastructure down 7 percent. But the mix mattered more than the headline. When the money moves into the layer under the software, the quarter changes shape fast.</p>
 
-      <p>Arvind Krishna said the quiet part out loud in <a href="https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors" target="_blank" rel="noopener noreferrer">his letter to investors</a>: "We did not anticipate the magnitude of the capex reprioritization." That is the sentence that matters. It says the issue was not just weak demand. It was demand showing up somewhere else, and showing up earlier than IBM modeled.</p>
+      <p>Arvind Krishna said the quiet part out loud in <a href="https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors" target="_blank" rel="noopener noreferrer">his letter to investors</a>: "We did not anticipate the magnitude of the capex reprioritization." That is the sentence that matters. It says the issue was demand showing up somewhere else, and showing up earlier than IBM modeled.</p>
 
       <p>That is also why the old mainframe story comes back into view. IBM said the quarter was worse than expected because of a shortfall in Z performance and the associated software stack, mostly transaction processing. In plain English, a company with a still-important enterprise cash machine missed because customers were busy buying the parts around it.</p>
 
@@ -1993,7 +2038,7 @@ const POSTS = {
 
       <p>The market read it that way too. Shares fell hard before the open, and the damage spread beyond one ticker because IBM is still a decent read on how enterprise buyers are behaving. If software revenue is up while infrastructure revenue is down, the obvious question is where the next dollar is going. Right now IBM is saying to watch the capacity layer first.</p>
 
-      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once context has to move from one owner to the next, the cost shows up in delay, rework, and bad timing. IBM's version is bigger and more expensive, but the pattern is the same. The quarter changes when the handoff changes.</p>
+      <p>Once context has to move from one owner to the next, the cost shows up in delay, rework, and bad timing, whether the context is memory supply or a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">pipeline report</a>. IBM's version is bigger and more expensive, but the pattern is the same. The quarter changes when the handoff changes.</p>
 
       <p>IBM also left itself some good news. Red Hat still grew faster, recent acquisitions performed well, consulting signings with GenAI were still there, and infrastructure tied to client buying had its best performance in reported history. So this was not a story about IBM falling apart. It was a story about the market buying a different part of the stack faster than IBM planned for.</p>
 
@@ -2004,7 +2049,7 @@ const POSTS = {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'The expensive part starts after the CVE',
-    category: 'Security', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post96-hero.jpg',
     body: `
       <p>Nobody loses money because a CVE exists. They lose money when the fix has to move through certification, release timing, audit, and production without breaking anything.</p>
@@ -2027,7 +2072,7 @@ const POSTS = {
 
       <p>That is also why the financial services angle keeps showing up. Banks are the kind of buyers who notice when a one-line dependency update becomes a month-long governance problem. The work is never just code. It is release management, certification, audit evidence, support planning, and the proof that the same issue will not reappear in the next build. Lightwell is selling relief from that repeat work.</p>
 
-      <p>I keep seeing the same shape in other workflow problems, including work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: once the handoff loses context, the next person has to rebuild the whole thing. Open source security is the same problem at larger scale. The context is the package version, the fix lineage, the validation path, and the release that finally makes the change real.</p>
+      <p>Once a handoff loses context, the next person has to rebuild the whole thing, which is the same thing that makes <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM cleanup</a> slow. Open source security is the same problem at larger scale. The context is the package version, the fix lineage, the validation path, and the release that finally makes the change real.</p>
 
       <p>The other useful detail is that Lightwell is not trying to replace community open source. It is trying to sit between the upstream code and the production stack, then make that middle reliable enough to pay for. That is a better read than the usual "enterprise wants control" cliché. Enterprises already need control. What they are buying here is a way to keep moving without asking every team to become a patch factory.</p>
 
@@ -2038,7 +2083,8 @@ const POSTS = {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'SAP bought the layer between data and AI',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post95-hero.jpg',
     body: `
       <p>The cleanest part of SAP's Dremio deal is the part that is supposed to vanish. SAP completed the acquisition on July 6, and the point is not that it bought another data vendor. It is that it bought a way to stop making every new AI project walk raw data through one more conversion step before it can be used.</p>
@@ -2057,20 +2103,21 @@ const POSTS = {
 
       <p>The catalog part is the part people skip too fast. SAP says it wants a universal, open catalog with meaning, relationships, access rights, and lineage all in one place. That is boring until somebody asks why the number changed between the source system and the dashboard. If the catalog can answer that question cleanly, the AI layer stops being a scavenger hunt and starts looking like governed software.</p>
 
-      <p>The timing matters too. SAP is not just promising a cleaner data path. It is promising real-time analytical and AI workloads with no movement or format conversion. Real time matters because the value of enterprise data drops every minute it sits outside the decision. A lakehouse that only works after nightly jobs is still a delay. Dremio's serverless pitch matters because elastic infrastructure is what keeps that path from turning into another expensive platform project.</p>
+      <p>The timing matters too. SAP is promising real-time analytical and AI workloads with no movement or format conversion. Real time matters because the value of enterprise data drops every minute it sits outside the decision. A lakehouse that only works after nightly jobs is still a delay. Dremio's serverless pitch matters because elastic infrastructure is what keeps that path from turning into another expensive platform project.</p>
 
       <p>Dremio also keeps leaning on the economics. The company says the lakehouse is serverless and elastic, which matters because enterprise analytics gets expensive when teams keep a fixed pile of infrastructure standing by for sporadic queries. The bigger point is that SAP is trying to make the data layer feel less like a project and more like a utility.</p>
 
-      <p>That is the same handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a>: if context gets stripped between steps, the work has to be re-explained, rechecked, and re-approved. SAP is trying to make that handoff much harder to break at enterprise scale, which is why this deal is really about control as much as it is about data.</p>
+      <p>If context gets stripped between steps, the work has to be re-explained, rechecked, and re-approved, and that is most of what <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">data cleanup</a> costs. SAP is trying to make that handoff much harder to break at enterprise scale, which is why this deal is really about control as much as it is about data.</p>
 
-      <p>The real test is not whether SAP can say "open platform" in a press release. It is whether Business Data Cloud becomes the place where companies can stop rebuilding the same context three times. If it does, the acquisition is not just about adding Dremio. It is SAP deciding that the most valuable part of AI is the layer that keeps the facts straight.</p>
+      <p>The real test is not whether SAP can say "open platform" in a press release. It is whether Business Data Cloud becomes the place where companies can stop rebuilding the same context three times. If it does, the acquisition means SAP has decided that the most valuable part of AI is the layer that keeps the facts straight.</p>
     `
   },
   post94: {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'The real Teams update is the off switch',
-    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=1160&h=440&fit=crop&q=85',
     body: `
       <p>Teams now has to prove it can be turned off. Microsoft is adding a live Meeting AI switch for organizers and presenters, and that is the useful part of the story.</p>
@@ -2091,7 +2138,7 @@ const POSTS = {
 
       <p>It also fits the way meeting software gets bought. Finance wants predictable licensing. IT wants policy and auditability. Legal wants fewer surprises about what was captured. Managers want the notes without creating a consent fight in every call. A mid-meeting toggle is not glamorous, but it is the kind of thing that makes the whole product feel more governable. If Microsoft wants Teams to be the place where AI shows up by default, it has to make turning it down feel just as normal.</p>
 
-      <p>That is the same reason the handoff work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">samcbarth.com</a> keeps coming back to the same point: if the review step is messy, the task is not done. Meeting AI is only useful if the people in the room trust the handoff from live conversation to recap, notes, and follow-up. If that handoff feels too automatic, the useful thing becomes the thing people resist.</p>
+      <p>If the review step is messy, the task is not done, and that rule holds for meeting recaps as much as for <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM automations</a>. Meeting AI is only useful if the people in the room trust the handoff from live conversation to recap, notes, and follow-up. If that handoff feels too automatic, the useful thing becomes the thing people resist.</p>
 
       <p>So this is not really a story about Microsoft softening its stance. It is a story about where enterprise AI gets real. The policy lives in the admin center. The trust lives in the meeting. The useful product is the one that lets both exist without pretending they are the same thing.</p>
 
@@ -2102,7 +2149,8 @@ const POSTS = {
     featured: false,
     date: 'July 13, 2026', iso: '2026-07-13',
     title: 'The desktop is the last mile for agents',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post93-hero.jpg',
     body: `
       <p>A lot of enterprise software still needs a screen before it can move. That sounds obvious until you remember how much work still lives in ERP systems, CRMs, mainframes, and vendor tools nobody wants to rewrite.</p>
@@ -2136,28 +2184,29 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'OpenAI turned ChatGPT into the work surface',
-    category: 'Business Strategy', tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Tinkoff_bank_office_3.jpg',
     body: `
       <p>Three model sizes. One desktop app. A new way to think about the bill.</p>
 
-      <p>OpenAI shipped GPT-5.6 on July 9, and the launch reads less like a model tweak than a workflow rewrite. The company says ChatGPT Work is an agent that can "take action across your apps and files" and "turn a goal into finished work." That is not just a smarter answer engine. It is a claim about where office work starts and where it gets finished.</p>
+      <p>OpenAI shipped GPT-5.6 on July 9, and the launch reads less like a model tweak than a workflow rewrite. The company says ChatGPT Work is an agent that can "take action across your apps and files" and "turn a goal into finished work." That is a claim about where office work starts and where it gets finished.</p>
 
       <p>The product stack now has names buyers have to pay attention to. GPT-5.6 comes in Sol, Terra, and Luna, and OpenAI says free and Go users get Terra in ChatGPT Work and Codex while paid users can pick among the tiers and reasoning levels. That matters because model selection is no longer a nice technical detail. It is part of the operating cost of the task.</p>
 
       <p>Simon Willison put the pricing problem in plain English: "price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task." He is right. Once the model can think harder, take longer, and run more steps, the old spreadsheet comparison gets messy fast. The same prompt can become a cheap draft or an expensive run depending on the route you choose.</p>
 
-      <p>The Verge's coverage makes the product move even clearer. Its read is that OpenAI has basically merged ChatGPT and Codex into one work surface for non-technical users. That is the interesting part. The release is not just about better language. It is about moving from a chat interface to a place where work can be delegated, paused, and resumed without losing the thread.</p>
+      <p>The Verge's coverage makes the product move even clearer. Its read is that OpenAI has basically merged ChatGPT and Codex into one work surface for non-technical users. That is the interesting part. The release is about moving from a chat interface to a place where work can be delegated, paused, and resumed without losing the thread.</p>
 
       <p>If you run a commercial stack, that changes the questions you ask. Who gets Sol? Who stays on Terra? What gets reserved for a higher reasoning setting? When does a task need a human review before it can keep moving? Those are not model questions. They are workflow questions, and they land in procurement, IT, RevOps, and finance whether the team wants them there or not.</p>
 
-      <p>That is the same kind of operating problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the AI can draft the thing but the review step still breaks, the task is not done. The value shows up when the handoff is clean enough that the next person does not have to rebuild the whole thing by hand. That is where most software still loses time.</p>
+      <p>ChatGPT Work runs into the rule I use for any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">automation project</a>. If the AI can draft the thing but the review step still breaks, the task is not done. The value shows up when the handoff is clean enough that the next person does not have to rebuild the whole thing by hand. That is where most software still loses time.</p>
 
       <p>OpenAI's own wording says ChatGPT Work can keep projects moving for hours, and that is the real commercial promise here. A model that can stay with a task is more useful than one that just sounds confident. It can gather context, move between files, and produce something a person can actually check, change, or ship. That makes the control points more important, not less. Data access, permissions, source quality, and approval rules now sit right next to the model choice.</p>
 
       <p>That also means the cost conversation is changing. Buyers are going to route routine work to the cheaper lane and reserve the expensive lane for the work that actually needs it. Vendors love that story because it makes adoption feel efficient. Buyers should still watch the hidden cost: someone has to decide which lane each task belongs in, and that decision will shape how reliable the whole setup feels after the demo is over.</p>
 
-      <p>The more important signal is the control layer around the model. OpenAI is not just selling outputs. It is selling a place where context, review, and approval sit in the same loop. That sounds minor until you try to run it across sales, finance, legal, and operations at the same time. Each team has different risk tolerance, different source files, and different signoff habits. The app has to respect all of that without turning into another pile of tabs.</p>
+      <p>The more important signal is the control layer around the model. OpenAI is selling a place where context, review, and approval sit in the same loop. That sounds minor until you try to run it across sales, finance, legal, and operations at the same time. Each team has different risk tolerance, different source files, and different signoff habits. The app has to respect all of that without turning into another pile of tabs.</p>
 
       <p>So the best way to read GPT-5.6 is not as one more benchmark win. It is as another step toward office software that can hold context long enough to do the whole job. The fight is moving from who answers best to who owns the workflow, the cost, and the place where the work gets signed off. That is the part that will matter long after the launch post gets buried.</p>
     `
@@ -2166,7 +2215,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'IBM wants to sell the review queue',
-    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/1/15/ComputerProgrammer.jpg',
     body: `
       <p>Friday afternoon, the code is done. Monday morning, the review queue is not.</p>
@@ -2181,7 +2231,7 @@ const POSTS = {
 
       <p>Bob V2 runs on a single agent and a shared harness, with subagents handling self-contained work so the main context stays clean. It also adds parallel, native tool calling, background tasks, rollback, and structured workflows. That sounds like architecture talk until you map it to the work most enterprises actually pay for. A lot of the value is in keeping the process from drifting while the model is doing the work.</p>
 
-      <p>IBM's premium packages make the target even clearer. The release adds opinionated workflows for IBM Z, IBM i, and Java modernization. In plain English, IBM is not just trying to help people write new code. It is trying to help them touch code they already depend on without turning every change into a one-off rescue operation.</p>
+      <p>IBM's premium packages make the target even clearer. The release adds opinionated workflows for IBM Z, IBM i, and Java modernization. In plain English, IBM is trying to help them touch code they already depend on without turning every change into a one-off rescue operation.</p>
 
       <p>The customer examples make that less abstract. IBM says Jack Henry used Bob to accelerate RPG development workflows and gain deeper insight into decades of system knowledge. Blue Pearl says a legacy modernization effort that had been projected to take nine months with 14 engineers was completed in three days. Those are not benchmark claims. They are operations claims.</p>
 
@@ -2204,7 +2254,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'Microsoft put cloud pricing on a January clock',
-    category: 'Business Strategy', tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Laptop_computer.jpeg',
     body: `
       <p>Microsoft did two pricing things in early July, and both of them matter if you run a real commercial stack.</p>
@@ -2219,7 +2270,7 @@ const POSTS = {
 
       <p>The useful way to read this is not as a headline about Microsoft getting more expensive. It is a signal that Microsoft wants price movement to happen on a schedule buyers can plan around. That is a real difference. Annual FX updates give partners fewer surprises. Renewal-based pricing gives customers a cleaner moment to review contracts, usage, and seat mix. It does not make the bill smaller, but it does make the bill easier to model.</p>
 
-      <p>That matters more now because Microsoft is not just selling software. It is bundling more security, storage, and AI into the suite and tying that to the commercial value story. The FAQ says the update arrives alongside "additional security, storage, and AI capabilities," including Defender for Office 365 Plan 1, Intune Remote Help, Intune Advanced Analytics, Intune Plan 2, Intune Privilege Management, Microsoft Cloud PKI, and Intune Application Management. That is a lot of product movement attached to one pricing window.</p>
+      <p>That matters more now because Microsoft is bundling more security, storage, and AI into the suite and tying that to the commercial value story. The FAQ says the update arrives alongside "additional security, storage, and AI capabilities," including Defender for Office 365 Plan 1, Intune Remote Help, Intune Advanced Analytics, Intune Plan 2, Intune Privilege Management, Microsoft Cloud PKI, and Intune Application Management. That is a lot of product movement attached to one pricing window.</p>
 
       <p>Microsoft is also careful to frame the change as value, not just cost. The Learn note says Microsoft remains committed to helping customers and partners "plan with confidence and invest in the technologies they need to grow and adapt." That is the right corporate language for a company that knows buyers want both predictability and a story they can take to procurement.</p>
 
@@ -2238,7 +2289,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'Oracle added three gates to OCI AI',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/CERN_Server.jpg',
     body: `
       <p>If your model cannot cross the public internet, Oracle's July OCI update is the kind of release that matters.</p>
@@ -2268,7 +2320,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'Britain made cloud uptime a bank problem',
-    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post88-hero.jpg',
     body: `
       <p>On Monday, July 13, the cloud stops being invisible in London.</p>
@@ -2296,7 +2349,7 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'IBM and Red Hat turned patching into a product',
-    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post87-hero.jpg',
     body: `
       <p>Every enterprise has packages it would rather not touch again. The version runs fine, the business depends on it, and the next "simple" upgrade comes with regression tests, dependency drift, and a lot of praying.</p>
@@ -2313,7 +2366,7 @@ const POSTS = {
 
       <p>The launch also builds on the $5 billion commitment IBM and Red Hat announced in May, backed by a global force of more than 20,000 engineers. Scale matters here because this work is not a dashboard trick. Someone has to validate the fix, sign it, and prove it will not knock over the environment when it lands. That is why this kind of product belongs closer to engineering and release management than to a glossy security demo.</p>
 
-      <p>It is the same kind of operating problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the fix does not fit the workflow already in production, it is not really a fix yet. Lightwell is interesting because it treats trust as a delivery system, not just a policy layer.</p>
+      <p>Patching has the same test as any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">ops change</a>. If the fix does not fit the workflow already in production, it is not really a fix yet. Lightwell is interesting because it treats trust as a delivery system, not just a policy layer.</p>
 
       <p>The real shift is not that IBM and Red Hat found a faster patch. It is that they are trying to stop one bad dependency from turning into three separate jobs, a production fire, a compliance review, and a permanent private fork. That is the part of enterprise software people pay for when they say they want security without the upgrade pain.</p>
     `
@@ -2322,7 +2375,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: "Meta bought room on Alberta's grid",
-    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Data_centers_in_Ashburn.jpg/1280px-Data_centers_in_Ashburn.jpg',
     body: `
       <p>A 1GW data center is not a product launch. It is a site plan, a transmission order, a water decision, and a lot of trucks.</p>
@@ -2350,7 +2404,8 @@ const POSTS = {
     featured: false,
     date: 'July 12, 2026', iso: '2026-07-12',
     title: 'The real AI race is for context',
-    category: 'AI & Automation', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/New_office.jpg/1280px-New_office.jpg',
     body: `
       <p>The ugly part of office work is not the typing. It is the handoff. A number starts in Excel, gets summarized in Word, turns into slides, and then gets explained again in chat because the first three versions lost something.</p>
@@ -2378,7 +2433,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Midmarket AI is stuck at the handoff',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Business_professional_working_on_laptop_in_a_bright_office_space.jpg',
     body: `
       <p>A midmarket company can buy a pilot. What it usually cannot buy is the spare staff to turn that pilot into a real system.</p>
@@ -2389,7 +2445,7 @@ const POSTS = {
 
       <p><a href="https://www.klarus.com/news/the-state-of-ai-in-the-mid-market" target="_blank" rel="noopener noreferrer">Klarus</a> put numbers on that problem in new research from the UK and Ireland. It found that 73% of midmarket companies have partially or fully deployed AI, but only 10% have scaled every initiative beyond the pilot stage. Ninety-one percent say they are confident in their internal expertise, yet 83% report poor data quality and 59% still do not have a comprehensive governance framework.</p>
 
-      <p>That is the real market signal in this story. AI is not scarce anymore. Operational follow-through is. Accenture and Google Cloud are not just selling software. They are selling a path through the part of the rollout that usually gets hand-waved in the deck.</p>
+      <p>That is the real market signal in this story. AI is not scarce anymore. Operational follow-through is. Accenture and Google Cloud are selling a path through the part of the rollout that usually gets hand-waved in the deck.</p>
 
       <p>The Google Cloud side is not subtle about it. Its release says the partnership is meant to help midmarket companies move from AI pilots to production faster. Accenture says the goal is to give customers prebuilt solutions designed for the speed and scale this segment actually needs. In plain English, both companies are trying to compress the distance between interest and usable output.</p>
 
@@ -2401,7 +2457,7 @@ const POSTS = {
 
       <p>That is the middle of the story, and it is the part that matters to the business. Midmarket firms are usually agile enough to move faster than giant enterprises, but they do not have endless specialist headcount. They need a product that comes with process. They need help wiring the data, naming the owner, setting the control points, and making the rollout repeatable.</p>
 
-      <p>That is the same question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If the workflow is not clear, if the data owner is not clear, and if the review step is not clear, the AI layer just creates a fancier version of the same confusion. Good tools still need a clean operating path.</p>
+      <p>Midmarket teams ask me some version of this about <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot and AI</a> all the time. If the workflow is not clear, if the data owner is not clear, and if the review step is not clear, the AI layer just creates a fancier version of the same confusion. Good tools still need a clean operating path.</p>
 
       <p>Accenture Edge is built around six solution areas, from customer intelligence and customer experience to cybersecurity, business operations, industry solutions, and workforce enablement. That spread tells you what the market wants. Companies do not want another raw AI platform to assemble themselves. They want packaged work that lands inside a known business function and starts producing something measurable.</p>
 
@@ -2414,7 +2470,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'IBM shrank the mainframe to fit the rack',
-    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Columbia_Supercomputer_-_NASA_Advanced_Supercomputing_Facility.jpg/960px-Columbia_Supercomputer_-_NASA_Advanced_Supercomputing_Facility.jpg',
     body: `
       <p>The old mainframe rule was simple. If the machine mattered enough, you gave it a room.</p>
@@ -2444,7 +2501,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Cloudflare gave the web a third door',
-    category: 'Digital Business', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated.</p>
@@ -2474,7 +2532,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'A memory chip company just raised Wall Street money',
-    category: 'AI Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1634979150028-39f84c54d007?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>SK Hynix did not need an American listing to prove it matters. Its memory already sits beside the processors running much of the AI boom. The company is profitable, established in South Korea, and one of the few suppliers capable of producing high-bandwidth memory at scale.</p>
@@ -2505,7 +2564,7 @@ const POSTS = {
 
       <p>Investors also need to separate a strong first trading day from a strong long-term return. The shares arrived after SK Hynix had already more than tripled in Seoul this year. The offering funds capacity, but more capacity across the industry can eventually pressure prices. Capital solves the shortage only by creating the possibility of the next surplus.</p>
 
-      <p>For businesses buying AI systems, this financing explains why hardware roadmaps deserve the same attention as model roadmaps. A promised agent, search tool, or analytics product may depend on memory supply negotiated years earlier. The operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> starts with the workflow, but its cost and timing still inherit constraints from the physical stack underneath it.</p>
+      <p>For businesses buying AI systems, this financing explains why hardware roadmaps deserve the same attention as model roadmaps. A promised agent, search tool, or analytics product may depend on memory supply negotiated years earlier. Even <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">workflow-level ops work</a> inherits cost and timing constraints from the physical stack underneath it.</p>
 
       <p>The closing bell gave SK Hynix a new ticker. The more important clock is running inside its factories. The company now has billions more to turn into clean-room capacity, packaging lines, qualified parts, and delivered memory. Wall Street priced the promise in one morning. SK Hynix has to manufacture it one stack at a time.</p>
     `
@@ -2514,7 +2573,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Reddit cannot sell a conversation nobody trusts',
-    category: 'Digital Business', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1600267185393-e158a98703de?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Picture the ordinary Reddit thread that starts with a simple question: Which accounting tool works for a five-person company? The answers look personal. One person describes a clean migration. Another warns about support. A third mentions a product nobody else has considered.</p>
@@ -2547,7 +2607,7 @@ const POSTS = {
 
       <p>That pattern should be on every company's risk register. Customer reviews, sales leads, support tickets, job applications, vendor questionnaires, code contributions, expense receipts, and market research can all be produced faster than a human team can validate them. The bottleneck moves from creating information to deciding which information deserves attention.</p>
 
-      <p>This connects directly to the operating work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. A business cannot solve the problem with a blanket rule that says “use AI carefully.” It needs signals, thresholds, evidence, ownership, and an appeal path. Which actions can happen automatically? Which claims need a second source? Which anomalies stop a workflow? Who reviews a false positive?</p>
+      <p>Moderation has the same shape as any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">review process</a> a business runs. A business cannot solve the problem with a blanket rule that says “use AI carefully.” It needs signals, thresholds, evidence, ownership, and an appeal path. Which actions can happen automatically? Which claims need a second source? Which anomalies stop a workflow? Who reviews a false positive?</p>
 
       <p>Reddit is now maintaining something closer to a trust ledger than a content feed. Every blocked campaign, restored account, suspicious vote, moderator decision, and user report updates its estimate of what deserves distribution. That ledger is becoming as important as the posts themselves.</p>
 
@@ -2558,7 +2618,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'The model is no longer the whole agent',
-    category: 'AI Engineering', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>An AI agent can fail while using a perfectly capable model. It can stop reading a file too early, call the wrong tool, carry the wrong context forward, or take an action outside the boundary a company intended.</p>
@@ -2591,7 +2652,7 @@ const POSTS = {
 
       <p>Ownership is not the same as simplicity. A company can avoid one closed platform and still end up maintaining a complicated collection of open parts. The deciding question is whether that control produces better reliability, lower total cost, or a real compliance advantage for the workload.</p>
 
-      <p>This is where the process work at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> connects. The business value sits in making the hidden operating rules explicit: what the agent may read, what it may change, how success is checked, and what evidence triggers a human review. The model is one component inside that design.</p>
+      <p>Agent design is turning into <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">process design</a>. The business value sits in making the hidden operating rules explicit: what the agent may read, what it may change, how success is checked, and what evidence triggers a human review. The model is one component inside that design.</p>
 
       <p>NemoClaw will be tested less by its launch benchmark than by the failure records companies build around it. Every truncated file, rejected tool call, policy block, and corrected answer can become a reusable test. Over time, that collection may be more valuable than the original agent prompt because it captures what the business learned the hard way. The companies that keep that learning in their own harness will own more than an AI agent. They will own the instructions for making it dependable.</p>
     `
@@ -2600,7 +2661,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Cognizant put itself inside the AI sales pitch',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Cognizant wants companies to trust it with a large AI rollout. So it is making its own workforce the first large reference account.</p>
@@ -2629,7 +2691,7 @@ const POSTS = {
 
       <p>That last number should slow down anyone expecting a two-week sprint to produce a finished system. Fast development can get an agent into a workflow. Five hundred optimizations show how much operating work can follow. Someone still has to study failures, update instructions, test changes, protect customer data, watch for regressions, and decide when a human should take over.</p>
 
-      <p>This is where the workflow focus at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> fits the story. The useful asset is not a library of 2,000 agent demos. It is a record of which steps were safe to automate, what evidence proved the result, where review stayed necessary, and how the team kept improving the system after launch.</p>
+      <p>The part worth buying is the one most <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">automation programs</a> skip. The useful asset is not a library of 2,000 agent demos. It is a record of which steps were safe to automate, what evidence proved the result, where review stayed necessary, and how the team kept improving the system after launch.</p>
 
       <p>Cognizant now has a rare chance to make its own operations part of the product. The 100,000-person rollout will be convincing when the company publishes comparable results across roles, including quality and rework instead of adoption alone. Until then, the strongest part of the pitch is not that Cognizant knows Gemini. It is that Cognizant has volunteered to find the difficult parts before its clients do.</p>
     `
@@ -2638,7 +2700,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'OpenAI is buying the people who make AI stick',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>In May, OpenAI launched a new company with more than $4 billion to spend and about 150 deployment specialists arriving through its planned acquisition of Tomoro. Less than two months later, that company is buying again.</p>
@@ -2669,7 +2732,7 @@ const POSTS = {
 
       <p>The right contract is not only about model price. Businesses need to know who owns the application code, how data is separated, whether another model can be substituted, what happens when the deployed engineers leave, and which internal team can operate the system afterward. A successful pilot that cannot survive its original builders is still a pilot.</p>
 
-      <p>This is where the workflow work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> connects to the acquisition. The valuable step is usually not generating one good answer. It is putting that answer into a process with the right context, review, handoff, and measurement. Northslope gives OpenAI more people who know how to do that work in the field.</p>
+      <p>OpenAI is buying the skill that decides whether any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">AI rollout</a> sticks. The valuable step is usually not generating one good answer. It is putting that answer into a process with the right context, review, handoff, and measurement. Northslope gives OpenAI more people who know how to do that work in the field.</p>
 
       <p>Watch what happens after those teams leave the conference room. If their fixes become reusable products, OpenAI will have built a distribution advantage that model benchmarks cannot show. If each deployment remains a custom engagement held together by the people assigned to it, the company will have bought an impressive bench of engineers and a very expensive way to keep every customer different.</p>
     `
@@ -2678,7 +2741,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'What $3.1 billion buys inside an industrial plant',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>A factory already knows a lot about itself. Sensors record pressure, temperature, vibration, flow, energy use, alarms, and equipment states. Engineering systems know how the plant was designed. Maintenance systems know what broke and what was replaced. The problem is that those records often describe the same asset in different ways.</p>
@@ -2707,7 +2771,7 @@ const POSTS = {
 
       <p>The transaction still needs regulatory approval and is expected to close in the coming quarters. After closing, Cognite will sit inside Schneider's Industrial Automation business and be integrated with AVEVA. That reporting structure makes sense, but product integration will be harder than financial consolidation.</p>
 
-      <p>This connects to the systems work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because the same rule applies outside a factory: automation is only as useful as the context underneath it. In a plant, the cost of bad context is simply higher. The wrong asset, stale reading, or missing constraint can turn a confident answer into downtime or danger.</p>
+      <p>Automation is only as useful as the context underneath it, in a plant or in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM</a>. In a plant, the cost of bad context is simply higher. The wrong asset, stale reading, or missing constraint can turn a confident answer into downtime or danger.</p>
 
       <p>Schneider has bought the layer that can tell software what a plant's data means. Now it has to preserve Cognite's openness while connecting that meaning to AVEVA and Schneider controls. If the first combined deployments require less cleanup and produce safer actions, the $3.1 billion will look like infrastructure. If they create another closed stack, it will look like an expensive new silo beside the old ones.</p>
     `
@@ -2716,7 +2780,7 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Geneva gave AI governance a room, not a rulebook',
-    category: 'AI Governance', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>For two days in Geneva, governments, researchers, companies, and civil society sat inside the same United Nations process to talk about AI. Then the meeting ended without a treaty, a regulator, or a global list of prohibited uses.</p>
@@ -2747,7 +2811,7 @@ const POSTS = {
 
       <p>The UN's description of the dialogue is careful. It calls it a platform to discuss cooperation, share practices, and support "open, transparent and inclusive discussions." That is not the language of a global AI regulator. It is the language of coordination, and coordination can still matter when systems cross borders faster than laws do.</p>
 
-      <p>This is where the operating work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> meets policy. A company does not need to predict the final international agreement. It needs enough visibility into its own AI use to respond when two markets reach different answers.</p>
+      <p>Policy only helps a company that can see its own <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">AI and data workflows</a>. A company does not need to predict the final international agreement. It needs enough visibility into its own AI use to respond when two markets reach different answers.</p>
 
       <p>Geneva did not close the gap between those answers. It created a place to measure it in public. By the New York session next May, the useful question will be whether the dialogue can turn one shared evidence base into a short list of actions countries can actually implement. If it returns with another broad set of principles, the room will exist, but the rulebook will still be written somewhere else.</p>
     `
@@ -2756,7 +2820,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'The next AI bottleneck sits underneath the processor',
-    category: 'Infrastructure', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post74-hero.jpg',
     body: `
       <p>Look at an AI server from the top and the expensive processor gets all the attention. Look underneath it and a less glamorous problem appears: how do you deliver a huge amount of power to that chip without wasting space, losing energy, or missing a sudden change in demand?</p>
@@ -2785,7 +2850,7 @@ const POSTS = {
 
       <p>For businesses buying AI infrastructure, this is a reminder that processor specifications are not system economics. Performance per watt, rack density, cooling demand, utilization, and electrical losses determine how much useful work a facility can actually produce. A faster chip that forces a costly redesign of power and cooling may be the worse purchase.</p>
 
-      <p>That wider system view connects naturally to the technology decisions I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI capacity is not one procurement line. It is a chain of constraints, and the weakest link decides how much of the headline compute a business can use.</p>
+      <p>That wider view matters for anyone making <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">technology buying decisions</a>. AI capacity is not one procurement line. It is a chain of constraints, and the weakest link decides how much of the headline compute a business can use.</p>
 
       <p>Empower's technology will mostly disappear beneath processors and inside packages. That is exactly why the deal matters. If ADI can turn a shorter electrical path into denser, cooler, more responsive systems, some of the next major AI performance gains will arrive from a component most users never see.</p>
     `
@@ -2794,7 +2859,7 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'GitHub found the security control hiding in its org chart',
-    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>A secret scanner can find an exposed credential in seconds. The awkward part starts when nobody knows who can safely rotate it.</p>
@@ -2825,7 +2890,7 @@ const POSTS = {
 
       <p>This is also a useful warning for the agent era. More AI-generated code means more repositories, branches, experiments, and automated actions. If creation gets cheaper while ownership stays optional, the inventory grows faster than the company can govern it. The right control is not another cleanup every year. It is making ownership part of creation and checking continuously that the owner still exists.</p>
 
-      <p>The workflow work I track at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> usually starts with handoffs, and this story shows why. A finding without an accountable destination is just a notification. GitHub improved the scanner's value without changing the scanner. It made sure every result had somewhere valid to go.</p>
+      <p>GitHub's fix is the same first move I would make in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">messy CRM</a>: give every finding an owner. A finding without an accountable destination is just a notification. GitHub improved the scanner's value without changing the scanner. It made sure every result had somewhere valid to go.</p>
 
       <p>GitHub's 11,000 archived repositories are not the win by themselves. The win is that the next exposed secret, broken dependency, or policy exception no longer begins with a search for a person. The repository already knows who answers.</p>
     `
@@ -2834,7 +2899,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: '84.6% is the number to watch in CommBank\'s AI rollout',
-    category: 'Artificial Intelligence', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post72-hero.jpg',
     body: `
       <p>84.6%.</p>
@@ -2865,7 +2931,7 @@ const POSTS = {
 
       <p>The next measurement should be harder. How often does the 15.4% that leaves self-service reach the correct human on the first handoff? How many customers repeat information? What happens to complaint rates, fraud dispute time, abandonment, and cost per resolved conversation? A channel resolution percentage is useful, but customer service is only finished when the customer's issue is finished.</p>
 
-      <p>This connects to the workflow work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because orchestration is where AI stops being a feature and starts becoming an operating model. The value comes from knowing which system should answer, which rules apply, when a person takes over, and what context follows the handoff.</p>
+      <p>Orchestration is where AI stops being a feature and starts becoming an operating model, in a bank or in a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps stack</a>. The value comes from knowing which system should answer, which rules apply, when a person takes over, and what context follows the handoff.</p>
 
       <p>CommBank's 84.6% gives the industry a real production marker. The more revealing number will come from the remaining 15.4%. If those customers reach the right person with the right context and no restart, the bank has built more than a capable bot. It has built a customer service system that knows its own limits.</p>
     `
@@ -2874,7 +2940,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'AWS is closing the door on its first enterprise AI stack',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post71-hero.jpg',
     body: `
       <p>A company bought Amazon Kendra to search its internal knowledge. It added Amazon Q Business so employees could ask questions against that information. It started testing Bedrock Agents to move from answers into actions. Each decision made sense on its own. Now all three products are being moved out of the path AWS wants new customers to take.</p>
@@ -2907,7 +2974,7 @@ const POSTS = {
 
       <p>AWS says, "Customers already using these services and features can continue to do so." That sentence protects continuity. It should not be confused with a roadmap. Businesses need both.</p>
 
-      <p>This is the kind of platform change I watch at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because architecture decisions eventually become operating decisions. The question is no longer whether the old stack works. It is how much more process, data, and customer experience a company wants to attach to products AWS has removed from the new-customer path.</p>
+      <p>Architecture decisions eventually become operating decisions, and AWS just made that concrete for <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">anyone running on its stack</a>. The question is no longer whether the old stack works. It is how much more process, data, and customer experience a company wants to attach to products AWS has removed from the new-customer path.</p>
 
       <p>The July 30 cutoff gives teams a date, but not a reason to rush into a new logo. The useful work is tracing every answer, search result, and agent action back to the system that produces it. Once that map exists, AWS's consolidation becomes a migration that can be priced and tested instead of a surprise hidden inside the next renewal.</p>
     `
@@ -2916,7 +2983,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'The forecast businesses need is a range, not a number',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'RevOps & Ops', tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>An energy trader sees clouds moving toward a solar farm. A shipping operator sees a storm forming near a port. A utility sees heat building across its service area. None of them only needs the most likely forecast. They need to know how wrong that forecast could be, and what the expensive version of wrong looks like.</p>
@@ -2945,7 +3013,7 @@ const POSTS = {
 
       <p>BKW, a Swiss energy company, is an early example. Microsoft says BKW is using Aurora 1.5 alongside existing operational weather models to manage renewable generation and infrastructure planning. The phrase "alongside" is important. Weather is too consequential for a clean replacement story. The practical path is comparison, calibration, and then a measured increase in trust.</p>
 
-      <p>This fits the work I think about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because uncertainty is often where a workflow becomes real. A dashboard that says rain is likely is information. A system that shows the range, connects it to inventory or capacity, and defines the action threshold is an operating tool.</p>
+      <p>Uncertainty is often where a workflow becomes real, which is why I prefer ranges in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">revenue forecasts</a> too. A dashboard that says rain is likely is information. A system that shows the range, connects it to inventory or capacity, and defines the action threshold is an operating tool.</p>
 
       <p>Aurora 1.5 will matter if companies stop asking it for one confident answer and start using it to make better bets. For a solar farm, port, farm, insurer, or emergency planner, the most valuable forecast may be the one that admits several futures and makes the cost of each one visible.</p>
     `
@@ -2954,7 +3022,8 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: "Inside Accenture's plan to make enterprise AI fit the middle market",
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Accenture drew a line around a market that large consulting firms have often struggled to serve efficiently. The new Accenture Edge business is aimed at companies with annual revenue between $300 million and $3 billion. Now Google Cloud is helping fill that business with prebuilt AI offers.</p>
@@ -2981,14 +3050,15 @@ const POSTS = {
 
       <p>This model also changes Accenture's economics. Repeatable delivery can spread product development and specialized talent across more accounts. Managed services can keep Accenture involved after deployment. The company gets access to a large market that may have been too small for its traditional project structure, while Google Cloud gets a scaled route into customers that often rely on partners to make major platform decisions.</p>
 
-      <p>At <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>, I keep coming back to the point where a sales promise becomes an operating system. Accenture Edge will be convincing when a middle-market customer can recognize the solution, understand the price and ownership, and get it running without recreating a Global 2000 transformation program. The revenue band opened the door. Repeatability has to make the room fit.</p>
+      <p>The question I care most about in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM and RevOps work</a> is the moment a sales promise becomes an operating system. Accenture Edge will be convincing when a middle-market customer can recognize the solution, understand the price and ownership, and get it running without recreating a Global 2000 transformation program. The revenue band opened the door. Repeatability has to make the room fit.</p>
     `
   },
   post68: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'A $4.48 agent run changes where teams should look for savings',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>$4.48 versus $43.48 is the kind of gap that changes a buying conversation. It is also the kind of benchmark result that needs to be read carefully.</p>
@@ -3015,7 +3085,7 @@ const POSTS = {
 
       <p>Buyers should also notice that the stack remains modular. The harness, model, and runtime are separate layers. That gives a company room to tune one without rebuilding everything else. It also creates real integration work. Version changes, evaluation drift, policy maintenance, and debugging across three layers do not disappear because the initial blueprint is easy to install.</p>
 
-      <p>This connects with the operating questions I work through at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. If an AI project has no agreed task, success measure, owner, or review point, a better model will not fix the process. The harness forces those decisions into the system. What can the agent do? What context should it keep? When should it stop? Who reviews the result?</p>
+      <p>The harness makes an AI project answer the questions I start every <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">automation project</a> with. If an AI project has no agreed task, success measure, owner, or review point, a better model will not fix the process. The harness forces those decisions into the system. What can the agent do? What context should it keep? When should it stop? Who reviews the result?</p>
 
       <p>The $4.48 result is useful because it moves the conversation away from model rankings and toward unit economics. Now the work is to reproduce that result on a real company task, with its actual data, tools, policies, and failure costs. If the gap holds there, the winning AI stack may not be the one with the most powerful model. It may be the one that wastes the fewest moves.</p>
     `
@@ -3024,7 +3094,7 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'One identity console could change the economics of managed security',
-    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>A managed service provider does not have one identity system to protect. It may have hundreds, spread across customers with different tools, rules, users, and risk levels. Every extra console adds another login, another alert queue, and another place for a small mistake to become a large problem.</p>
@@ -3051,7 +3121,7 @@ const POSTS = {
 
       <p>AI makes the identity model wider again. Companies now have human users, service accounts, API keys, bots, and agents that may act across several systems. Barracuda calls these human and non-human identities. The useful question is not whether an agent has a login. It is who authorized it, what it can reach, how long that authority lasts, and whether the MSP can explain its actions after something goes wrong.</p>
 
-      <p>That connects directly to the operating work I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Access rules only help when ownership and handoffs are clear. If nobody owns the privileged account, the exception process, or the response after a risky login, more automation just moves the confusion faster.</p>
+      <p>Identity has the same weak point as most <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">ops systems</a>. Access rules only help when ownership and handoffs are clear. If nobody owns the privileged account, the exception process, or the response after a risky login, more automation just moves the confusion faster.</p>
 
       <p>Barracuda did not disclose what it paid for Evo, so the clearest way to judge this deal will be inside the MSP's day. If one technician can protect more customers without losing separation or context, the acquisition improves the economics of managed security. If BarracudaONE becomes one more place to check before opening the same old consoles, it has bought features without removing the real cost.</p>
     `
@@ -3060,7 +3130,7 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Akamai paid $205 million to put AI policy inside the browser',
-    category: 'Cybersecurity', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>An employee pastes a customer record into an AI tool, uploads a contract for a summary, or lets an agent work through a SaaS application. The company firewall may be working exactly as designed. The data can still leave through the browser.</p>
@@ -3085,7 +3155,7 @@ const POSTS = {
 
       <p>Agents make that balance harder. A person pauses, notices an unusual page, or questions a request. An agent can move through several browser steps quickly and repeat the same mistake at scale. Security teams will need rules based on the action, the data, the agent, and the destination. They will also need a record that explains why an action was allowed or stopped.</p>
 
-      <p>That is where this story connects with the work I follow at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI governance becomes useful when it sits inside the workflow and can make a specific decision. A policy document that says employees should protect customer data does not stop a spreadsheet upload. A browser control can, assuming the company has defined the data, exceptions, and ownership clearly enough.</p>
+      <p>Akamai is putting governance where I would put it in any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM or data workflow</a>: at the point of the decision. AI governance becomes useful when it sits inside the workflow and can make a specific decision. A policy document that says employees should protect customer data does not stop a spreadsheet upload. A browser control can, assuming the company has defined the data, exceptions, and ownership clearly enough.</p>
 
       <p>Akamai paid a rich multiple because it believes the browser is becoming an enforcement layer for both people and agents. The acquisition will earn that price only if LayerX can stay nearly invisible during normal work and become precise when data or automated actions cross a real boundary. If employees have to fight the control, they will find another route. If they barely notice it while risky actions stop, Akamai will have bought the right place in the stack.</p>
     `
@@ -3094,7 +3164,7 @@ const POSTS = {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'WBD wants one advertising market across television and streaming',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets', tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'assets/images/post65-hero.jpg',
     body: `
       <p>Warner Bros. Discovery sells audiences across HBO Max, CNN, TNT, Discovery, and a long list of other brands. The problem is that an advertiser has not been buying all of that as one clean market. Linear television and digital inventory still come with different planning systems, order flows, measurements, and operating teams.</p>
@@ -3119,14 +3189,15 @@ const POSTS = {
 
       <p>There is also a broader competitive point. WBD is not just competing with other television networks. It is competing for advertising budgets that can move to YouTube, Amazon, social platforms, retail media, and programmatic marketplaces. Those companies trained buyers to expect fast audience selection, automated purchasing, and continuous measurement. WBD's content gives it differentiated supply. A unified platform is an attempt to remove the operational penalty attached to buying that supply.</p>
 
-      <p>This is the kind of system question I care about at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>: can the company connect its data, commercial rules, and teams well enough for the automation to make a better decision? By the end of the year, WBD should have enough of the order, pricing, and stewardship stack in market to show whether one advertising market is real. If buyers still need separate plans and explanations for television and streaming, the agents will only be moving the old silos faster.</p>
+      <p>The system question underneath it is the same one I ask in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">RevOps work</a>: can the company connect its data, commercial rules, and teams well enough for the automation to make a better decision? By the end of the year, WBD should have enough of the order, pricing, and stewardship stack in market to show whether one advertising market is real. If buyers still need separate plans and explanations for television and streaming, the agents will only be moving the old silos faster.</p>
     `
   },
   post64: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Presidio has put a $6 million price tag on escaping AI pilot mode',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>What does it actually cost to move a company beyond AI pilots? Presidio just gave us one answer: 18 months and $6 million for a large investment firm.</p>
@@ -3153,14 +3224,15 @@ const POSTS = {
 
       <p>For buyers, the better questions are specific. Which business metric changes? Who owns the process after launch? How are errors found? What happens when a model, vendor, policy, or data source changes? How much of the work becomes reusable, and how much remains custom consulting?</p>
 
-      <p>Those are the same implementation questions I focus on at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>, especially when a technology project crosses sales, operations, data, and governance. Presidio now has a neat structure for answering them. The investment-firm engagement will tell us whether that structure can do more than organize a pilot. If the client reaches meaningful progress toward $10 billion in new assets without matching headcount growth, Presidio will have a case study worth much more than another AI blueprint.</p>
+      <p>Those questions get harder when a project crosses sales, operations, data, and governance, which is where most <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">implementation work</a> lives. Presidio now has a neat structure for answering them. The investment-firm engagement will tell us whether that structure can do more than organize a pilot. If the client reaches meaningful progress toward $10 billion in new assets without matching headcount growth, Presidio will have a case study worth much more than another AI blueprint.</p>
     `
   },
   post63: {
     featured: false,
     date: 'July 11, 2026', iso: '2026-07-11',
     title: 'Rackspace is trading today\'s revenue for an AI infrastructure bet',
-    category: 'Business Strategy', tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Rackspace just put a price on its AI pivot. The company lowered its 2026 revenue outlook by $150 million and adjusted EBITDA outlook by $20 million while it redirects capacity, people, and capital toward enterprise AI.</p>
@@ -3174,7 +3246,7 @@ const POSTS = {
       <p>I would not turn one customer result into a broad promise. But it shows what Rackspace is trying to sell. The product is not a GPU by itself. It is a team that can put governed AI into a regulated or operationally sensitive environment and connect the technology to a measurable workflow.</p>
       <p>CEO Gajen Kandiah said the capital raise will let Rackspace "expedite our AI Enterprise strategy." Apollo partner Aaron Sobel said the company is taking "the right steps to fund its next phase of growth." Both quotes point back to financing. This pivot needs capacity before it creates revenue, and capacity is expensive.</p>
       <p>The investor math and the customer math now have to meet. Investors need the AI business to replace declining resale revenue fast enough to justify the upfront cost. Customers need the governed stack to deliver better control without recreating the lock-in they were trying to avoid. Rackspace says it will stay model-agnostic and use private cloud where control matters and public cloud where elasticity matters. Execution will decide whether that remains a useful design or becomes another complicated bundle.</p>
-      <p>This is the kind of business transition I watch at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> because the tradeoff is visible. Rackspace is not hiding the revenue it is walking away from or the capital it needs to spend. By the end of 2027, those 15 megawatts need to show that governed AI can become a better business than reselling cloud capacity. Until then, the gap between the lowered outlook and the promised margins is the whole Rackspace story.</p>
+      <p>The tradeoff is unusually visible here, which makes it a useful case for anyone weighing a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">platform change</a>. Rackspace is not hiding the revenue it is walking away from or the capital it needs to spend. By the end of 2027, those 15 megawatts need to show that governed AI can become a better business than reselling cloud capacity. Until then, the gap between the lowered outlook and the promised margins is the whole Rackspace story.</p>
     `
   },
   post62: {
@@ -3182,8 +3254,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: 'Microsoft cut 4,800 jobs while rebuilding how it sells AI',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Microsoft eliminated about 4,800 roles this week, roughly 2.1% of its workforce. The number matters. The reason matters more. The cuts landed mostly in Microsoft's commercial and Xbox organizations while the company is rebuilding its commercial business around AI deployment.</p>
@@ -3206,7 +3279,7 @@ const POSTS = {
 
       <p>Employees are carrying the immediate cost of that transition. Microsoft's note says it will try to place people into roles aligned with new priorities and invest in AI skills, but 4,800 eliminated roles are still 4,800 disrupted careers. A strategy can make business sense and still deserve a direct accounting of the human cost.</p>
 
-      <p>The question I would ask at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a> is whether the delivery model changes the result after the contract is signed. Microsoft is betting that fewer handoffs and more engineering inside the account will get AI into production faster. If Frontier Company cannot shorten that distance, the reorganization will look like a cost cut wrapped around an AI story. If it can, Microsoft will have changed what customers are actually buying from it.</p>
+      <p>The question I would ask, the same one I ask about any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM implementation</a>, is whether the delivery model changes the result after the contract is signed. Microsoft is betting that fewer handoffs and more engineering inside the account will get AI into production faster. If Frontier Company cannot shorten that distance, the reorganization will look like a cost cut wrapped around an AI story. If it can, Microsoft will have changed what customers are actually buying from it.</p>
     `
   },
   post61: {
@@ -3214,8 +3287,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: "Microsoft's AI report is really a workflow redesign story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://news.microsoft.com/source/emea/2026/07/swiss-ai-users-outperform-global-peers-on-productivity/" target="_blank" rel="noopener noreferrer">Microsoft's July 9 Swiss AI note</a> and the linked <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization" target="_blank" rel="noopener noreferrer">2026 Work Trend Index Annual Report</a> say the same thing in different words. AI value does not come from stacking on more tools. It comes from changing how work gets done.</p>
@@ -3226,7 +3300,7 @@ const POSTS = {
 
       <p>Microsoft's own framing is blunt, and it is the right one. The work has to be redesigned, and human judgment still has to sit at the center of it. That is the part a lot of companies want to skip.</p>
 
-      <p>My read is simple. The teams that win will not be the ones with the most copilots on the shelf. They will be the ones that clean up the operating model so AI can actually move the work forward. That is the business question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+      <p>The teams that win will not be the ones with the most copilots on the shelf. They will be the ones that clean up the operating model so AI can actually move the work forward. It is the same question I ask before any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot or RevOps change</a>.</p>
     `
   },
   post60: {
@@ -3234,8 +3308,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: 'IBM Bob is the workflow control story',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-adoption', mergedInto: 'post91',
     image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Mobile_developer_at_work_%28Unsplash%29.jpg',
     body: `
       <p><a href="https://newsroom.ibm.com/2026-07-09-ibm-advances-enterprise-ai-software-development-with-multi-agent-capabilities-and-specialized-modernization-workflows" target="_blank" rel="noopener noreferrer">IBM's July 9 Bob update</a> is not about a better autocomplete box. It is IBM trying to sell control over how enterprise software gets written, checked, and modernized.</p>
@@ -3256,8 +3331,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: 'Crusoe is selling an exit door with its AI cloud',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post59-hero.jpg',
     body: `
       <p><a href="https://www.globenewswire.com/news-release/2026/07/07/3323398/0/en/Crusoe-Launches-Serverless-Fine-Tuning-and-Self-Serve-Inference-Deployments-Accelerating-Open-Model-Development-From-Experiment-to-Production.html" target="_blank" rel="noopener noreferrer">Crusoe launched serverless fine-tuning and self-serve inference on July 7</a>. The interesting part is not that another cloud can customize an open model. It is that Crusoe is trying to make the managed experience easier without taking ownership of the model away from the customer.</p>
@@ -3278,7 +3354,7 @@ const POSTS = {
 
       <p>I like the direction because it treats model ownership as leverage, not a developer preference. Managed infrastructure can save time. Portable weights keep the provider honest. Clear lineage makes the work easier to govern. The buyer still has to test whether the promised convenience holds up under real usage, but at least the tradeoff is visible.</p>
 
-      <p>That is the business question I would keep in front of the technical one. Who owns the model, what makes the bill move, and how hard is it to leave? Those are the practical AI operating questions I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Crusoe is making a useful bet that customers will pay for convenience when control stays with them.</p>
+      <p>That is the business question I would keep in front of the technical one. Who owns the model, what makes the bill move, and how hard is it to leave? They are the same questions I would ask before signing any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">software contract</a>. Crusoe is making a useful bet that customers will pay for convenience when control stays with them.</p>
     `
   },
   post58: {
@@ -3286,8 +3362,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: 'Lumen is buying control of the AI network',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'assets/images/post58-hero.jpg',
     body: `
       <p><a href="https://ir.lumen.com/news/news-details/2026/Lumen-Completes-Alkira-Acquisition-Accelerating-Its-Unified-Digital-Platform-for-AI-Era-Networking/default.aspx" target="_blank" rel="noopener noreferrer">Lumen completed its acquisition of Alkira on July 7</a>. The useful part is not another company attaching AI to a press release. Lumen owns a large fiber network. Alkira gives it software that can control how traffic moves across clouds, data centers, partners, and AI workloads.</p>
@@ -3306,7 +3383,7 @@ const POSTS = {
 
       <p>Customers should still keep one eye on lock-in. A single control layer can remove a lot of friction, but it can also make the provider harder to replace. The best version of this deal gives teams one view without taking away their choice of cloud, carrier, or security tool. Alkira's carrier-agnostic design is important for that reason. Lumen needs to preserve it while connecting the software to its own network.</p>
 
-      <p>My takeaway is that the control point is moving. AI infrastructure is not only about models, chips, and data centers. It is also about who can move the data, enforce the rules, and show the customer what is happening without slowing the work down. That is the practical systems question I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. Lumen has bought a stronger position. Now it has to make the network feel like one product.</p>
+      <p>My takeaway is that the control point is moving. AI infrastructure is not only about models, chips, and data centers. It is also about who can move the data, enforce the rules, and show the customer what is happening without slowing the work down. It is also the question to ask about any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">data or CRM platform</a> you depend on. Lumen has bought a stronger position. Now it has to make the network feel like one product.</p>
     `
   },
   post57: {
@@ -3314,8 +3391,9 @@ const POSTS = {
     date: 'July 11, 2026',
     iso: '2026-07-11',
     title: 'Deutsche Telekom is the real AI-native story',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Deutsche_Telekom-Geb%C3%A4ude%2C_Venloer_Stra%C3%9Fe_156%2C_K%C3%B6ln-5461.jpg',
     body: `
       <p><a href="https://openai.com/index/deutsche-telekom/" target="_blank" rel="noopener noreferrer">OpenAI's July 10 Deutsche Telekom writeup</a> is not a chatbot story. It is an operating-model story. Deutsche Telekom is trying to become AI-native, and that is the right frame.</p>
@@ -3332,11 +3410,12 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Microsoft's Cobalt 200 is really a cloud economics story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-costs',
     image: 'assets/images/post56-hero.jpg',
     body: `
-      <p>Microsoft's Cobalt 200 is not just another chip announcement. It is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again.</p>
+      <p>Microsoft's Cobalt 200 is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again.</p>
 
       <p><a href="https://news.microsoft.com/build-2026/" target="_blank" rel="noopener noreferrer">Microsoft says</a> "AI alone won’t change your business. The system running it will." That is the right frame. The system now includes the CPUs, the servers, the networking, and the workflow that keeps agents busy.</p>
 
@@ -3344,7 +3423,7 @@ const POSTS = {
 
       <p>The detail I keep coming back to is Microsoft’s line that "agents are unique from traditional workloads." That is useful because the work does not behave like a normal request-response app. If agents reason, make sequential decisions, and run continuously at scale, the infrastructure has to be built for that pattern too.</p>
 
-      <p>My read is simple. The companies that win here will not just ask what model to buy. They will ask what the work costs per run, what the infra costs per hour, and whether the stack can stay boring as usage grows. That is the part I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. AI only matters when the operating math works.</p>
+      <p>The companies that win here will not just ask what model to buy. They will ask what the work costs per run, what the infra costs per hour, and whether the stack can stay boring as usage grows. The same math applies to any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">tool in the RevOps stack</a>. AI only matters when the operating math works.</p>
     `
   },
   post55: {
@@ -3352,8 +3431,8 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Cloudflare's Meerkat is really a control-plane story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
     image: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/CERN_Server_03.jpg',
     body: `
       <p>Cloudflare's Meerkat is not a shiny product launch. It is Cloudflare saying its control plane has become too important to leave on a leader-and-timeout setup.</p>
@@ -3364,7 +3443,7 @@ const POSTS = {
 
       <p>The paper behind QuePaxa says it is "the first protocol offering state-of-the-art normal-case efficiency without depending on timeouts." That is the useful tradeoff. Keep the common case fast, but do not let one slow leader or one bad link freeze the whole system.</p>
 
-      <p>My read is simple. This is still experimental and internal-only, but it is a real business story because it shows where the hard work sits in global software. Consensus is part of the operating stack now, not just academic plumbing. That is the kind of system-level problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+      <p>This is still experimental and internal-only, but it is a real business story because it shows where the hard work sits in global software. Consensus is part of the operating stack now, not just academic plumbing. Global software has the same hard part as a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">multi-team CRM</a>.</p>
     `
   },
   post54: {
@@ -3372,8 +3451,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Microsoft's annual cloud pricing update is really a budgeting story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-costs', mergedInto: 'post90',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Desktop_with_laptop_and_calculator_%28Unsplash%29.jpg/1280px-Desktop_with_laptop_and_calculator_%28Unsplash%29.jpg',
     body: `
       <p>Microsoft's annual cloud pricing update is not just currency housekeeping. It is Microsoft telling finance teams that cloud spend now needs a calendar.</p>
@@ -3392,8 +3472,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Meta's Alberta data center is really a power and policy story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure', mergedInto: 'post86',
     image: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Cern_datacenter.jpg',
     body: `
       <p>Meta's Alberta data center is not just a capacity announcement. It is Meta saying AI now lives or dies on power, permitting, and site control.</p>
@@ -3412,8 +3493,8 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Google's bid update is really a budget control story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
     image: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Startup_Business_People_Working_on_Laptop_Copy_Space_%2826666483257%29.jpg',
     body: `
       <p>Google's bid update is not a small settings tweak. It is Google telling advertisers that target CPA and target ROAS need tighter discipline when budgets move.</p>
@@ -3424,7 +3505,7 @@ const POSTS = {
 
       <p>The bigger picture is on the <a href="https://blog.google/products/ads-commerce/bidding-budgeting-google-marketing-live-2026/" target="_blank" rel="noopener noreferrer">Google Marketing Live</a> side. Google says the new tools help advertisers "manage your budgets and stay ahead of shifting consumer behavior." It is also pushing "journey-aware bidding" and demand-led pacing, which is just Google saying it wants cleaner signals and less manual babysitting.</p>
 
-      <p>My read is simple. This is a budget control story, not just an ads story. The teams with clean funnels, honest targets, and someone who actually owns the spend will adjust fast. The teams that have been letting the algorithm hide bad planning are about to feel it. That is the kind of practical workflow change I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>.</p>
+      <p>This is a budget control story, not just an ads story. The teams with clean funnels, honest targets, and someone who actually owns the spend will adjust fast. The teams that have been letting the algorithm hide bad planning are about to feel it. Ad budgets need the same owner that a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">clean funnel</a> does.</p>
     `
   },
   post51: {
@@ -3432,8 +3513,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Meta's Muse Image is really a monetization story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'assets/images/post3-marketing-team-1200.jpg',
     body: `
       <p>Meta's Muse Image is not just another AI feature. It is Meta trying to own the part of image generation that turns ideas into posts, ads, and product work people actually use.</p>
@@ -3444,7 +3526,7 @@ const POSTS = {
 
       <p>The monetization part is plain. Meta says Muse Image is free for everyday creation, but "for people who want to create even more, it's available as part of Meta's subscription plans." It also says "advertisers and agencies will be able to tap into Muse Image through Advantage+ creative." That is the real play: free usage on the front end, paid usage on the back end, and ad tooling in the middle.</p>
 
-      <p>My read is simple. The model matters, but the business model matters more. If Meta can make image creation feel native to its apps, it keeps the work inside its ecosystem and gives businesses one more reason to stay there too. This is the kind of workflow and customer behavior shift I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The tool is the headline. The distribution is the business.</p>
+      <p>The model matters, but the business model matters more. If Meta can make image creation feel native to its apps, it keeps the work inside its ecosystem and gives businesses one more reason to stay there too. It is also a shift in where customers expect <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">marketing work</a> to happen. The tool is the headline. The distribution is the business.</p>
     `
   },
   post50: {
@@ -3452,8 +3534,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Meta's Business Agent is really a service business story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Meta's Business Agent is not really a chatbot launch. It is Meta trying to package first-line customer work as a product. The company says it can be set up in minutes or plugged directly into existing enterprise infrastructure so you can "10X or 100X output." That is a service business, not a demo.</p>
@@ -3464,7 +3547,7 @@ const POSTS = {
 
       <p>Meta says the platform can connect to a growing suite of hundreds of systems like Shopify, Zendesk, and Shopee. That is where this becomes more than auto-replies. Once the agent can touch the catalog, support system, and booking flow, it starts acting like a front-end operating layer.</p>
 
-      <p>My read is simple. If this works, Meta gets a new paid layer on top of messaging and a stronger hold on small-business revenue operations. If it does not, it is just another bot that sounds polished until a real customer needs a real answer. This is the kind of workflow and handoff problem I keep coming back to at <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>. The tech matters, but the process around it matters just as much.</p>
+      <p>If this works, Meta gets a new paid layer on top of messaging and a stronger hold on small-business revenue operations. If it does not, it is just another bot that sounds polished until a real customer needs a real answer. Small businesses will judge it the way they judge any <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">customer-facing automation</a>. The tech matters, but the process around it matters just as much.</p>
     `
   },
   post49: {
@@ -3472,8 +3555,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "Microsoft's Frontier Company is the AI install phase",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption', mergedInto: 'post41',
     image: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Microsoft's Frontier Company is not a normal product launch. It is Microsoft admitting the hard part of AI is now installation.</p>
@@ -3494,8 +3578,8 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "IBM and OpenAI's cyber deal is really about control",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance',
+    tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://fastly.picsum.photos/id/7/1200/630.jpg?hmac=Ly6Ie4eKcj-GNPD3gR1va_3mQIsWSPKxF0QEF6Zj_ss',
     body: `
       <p>IBM and OpenAI's cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control.</p>
@@ -3504,9 +3588,9 @@ const POSTS = {
 
       <p>The important detail is the setup. IBM says the work runs inside the client's environment, with read-only access and bounded execution. That is the part that makes this an enterprise story instead of a demo story. If AI is touching security, the conversation has to be about governance as much as capability.</p>
 
-      <p><a href="https://openai.com/daybreak/" target="_blank" rel="noopener noreferrer">OpenAI says</a> the point is "trusted, AI-powered cyber defense" for more organizations. That is the right frame. Attackers are already using AI. Defenders do not need a demo. They need a faster way to surface the risks that matter and act without handing over the keys.</p>
+      <p><a href="https://openai.com/daybreak/" target="_blank" rel="noopener noreferrer">OpenAI says</a> the point is "trusted, AI-powered cyber defense" for more organizations. Attackers are already using AI. Defenders do not need a demo. They need a faster way to surface the risks that matter and act without handing over the keys.</p>
 
-      <p>My read is simple. This is what useful AI looks like in security: shorter vulnerability windows, clearer governance, and less chaos around the workflow. The model matters. The controls matter more.</p>
+      <p>This is what useful AI looks like in security: shorter vulnerability windows, clearer governance, and less chaos around the workflow. The model matters. The controls matter more.</p>
     `
   },
   post47: {
@@ -3514,8 +3598,9 @@ const POSTS = {
     date: 'July 10, 2026',
     iso: '2026-07-10',
     title: "SAP's Dremio deal is really a data context play",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption', mergedInto: 'post95',
     image: 'assets/images/post47-hero.jpg',
     body: `
       <p>SAP buying Dremio is not really a headline about M&amp;A. It is a headline about the part of enterprise AI most teams still skip: the data layer.</p>
@@ -3536,8 +3621,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: "OpenAI's partner network is the real enterprise AI channel",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-adoption',
     image: 'assets/images/post46-hero.jpg',
     body: `
       <p>OpenAI's partner network is the part of this week's news I would watch. It says the company knows enterprise AI is no longer just a model problem. It is a delivery problem.</p>
@@ -3556,8 +3642,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'IBM Bob is the real enterprise AI development story',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption', mergedInto: 'post91',
     image: 'assets/images/post45-hero.jpg',
     body: `
       <p>IBM Bob is not a coding toy. It is IBM trying to sell enterprise AI around the part of software work that actually costs money: review, validation, modernization, and cleanup.</p>
@@ -3576,8 +3663,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'ChatGPT Work is the real workflow shift',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption', mergedInto: 'post92',
     image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank" rel="noopener noreferrer">OpenAI's July 9 ChatGPT Work announcement</a> is not a chatbot story. It is a workflow story. The company is trying to move the product from answering questions to finishing repeatable work across the apps and files people already use.</p>
@@ -3594,8 +3682,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'GPT-5.6 is a price-per-task story',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs', mergedInto: 'post106',
     image: 'https://images.unsplash.com/photo-1758518730151-cf64fddb4f0a?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>GPT-5.6 is not really a hype story. It is a cost story. OpenAI and Microsoft are both pushing the same idea: the win is more useful work for the same spend.</p>
@@ -3617,8 +3706,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'IBM and Red Hat are turning open source security into an AI business',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Security & Governance',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    mergedInto: 'post87',
     image: 'https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>AI makes code faster. That is not the hard part anymore. The hard part is making sure the code can be trusted, patched, and shipped without breaking the system around it.</p>
@@ -3641,8 +3731,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: "Microsoft's Frontier Company is the real AI services story",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1496843916299-590492c751f4?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Microsoft's Frontier Company is not a normal product launch. It is Microsoft admitting that enterprise AI now needs people inside the customer workflow, not just another model to test.</p>
@@ -3655,7 +3746,7 @@ const POSTS = {
 
       <p>Microsoft says early work with LSEG, Unilever, and Novo Nordisk is already producing results. That is the part I would watch closely. If the company can keep turning those examples into repeatable deployments, Frontier Company becomes more than a press release.</p>
 
-      <p>My read is simple. The AI market is moving from access to implementation. The hard part now is not getting a model. It is stitching the model into real work, protecting customer data, and proving the outcome was worth the spend.</p>
+      <p>The AI market is moving from access to implementation. The hard part now is not getting a model. It is stitching the model into real work, protecting customer data, and proving the outcome was worth the spend.</p>
     `
   },
   post40: {
@@ -3663,15 +3754,16 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'OpenAI and Broadcom are pulling AI economics in-house',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>OpenAI and Broadcom said on June 24 that they are building Jalapeño, OpenAI's first Intelligence Processor, for LLM inference. That is the part that matters. It is not just a faster chip. It is OpenAI pushing deeper into the infrastructure underneath ChatGPT, Codex, and the API.</p>
+      <p>OpenAI and Broadcom said on June 24 that they are building Jalapeño, OpenAI's first Intelligence Processor, for LLM inference. That is the part that matters. It is OpenAI pushing deeper into the infrastructure underneath ChatGPT, Codex, and the API.</p>
 
       <p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI said</a> the chip is "to be deployed at gigawatt scale with data center partners, over multiple generations." That is not startup language. That is utility-scale language. It tells me the company is thinking about power, racks, networking, and capital like a real infrastructure business.</p>
 
-      <p>The quote that stands out is Greg Brockman's: "The world is moving to a compute-powered economy." He is right. Once compute becomes the bottleneck, the winner is not just the company with the best model. It is the company that can deliver enough intelligence at a cost customers will actually pay for.</p>
+      <p>The quote that stands out is Greg Brockman's: "The world is moving to a compute-powered economy." He is right. Once compute becomes the bottleneck, the winner is the company that can deliver enough intelligence at a cost customers will actually pay for.</p>
 
       <p>Broadcom's framing is just as telling. Hock Tan said, "This is just the beginning of a multi-generation roadmap." That sounds like a company expecting a long run of demand, not a one-off custom order. The economics of AI are moving from renting compute to owning more of the stack underneath it.</p>
 
@@ -3679,7 +3771,7 @@ const POSTS = {
 
       <p>I also think this says something about where the market is headed. The companies with the biggest AI ambitions are no longer satisfied with being app layer buyers. They want control over chips, networking, data centers, and the software that ties all of it together. That is vertical integration with a very modern label on it.</p>
 
-      <p>My take is simple. This is a business story first and a chip story second. The chip is proof that the AI race is now about cost structure, supply chain control, and how much of the stack a company can own before the economics get too crowded.</p>
+      <p>This is a business story first and a chip story second. The chip is proof that the AI race is now about cost structure, supply chain control, and how much of the stack a company can own before the economics get too crowded.</p>
     `
   },
   post39: {
@@ -3687,8 +3779,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'Streaming changed movies, and theaters are rewarding smaller bets',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Streaming changed movies. It did not kill them. It just changed what people will show up for, what they will wait to watch at home, and what kind of movie can still feel like a win.</p>
@@ -3705,7 +3798,7 @@ const POSTS = {
 
       <p>That does not mean every movie needs to be tiny. It means the business is rewarding clarity. If the movie is interesting, people will still show up. If it is generic, the audience has more options than ever and no reason to be loyal to a bloated budget.</p>
 
-      <p>My read is simple. Streaming trained people to be selective. Theaters are adapting by leaning harder into movies that feel worth leaving home for. The winners are the projects that know how to do more with less and still feel like real art.</p>
+      <p>Streaming trained people to be selective. Theaters are adapting by leaning harder into movies that feel worth leaving home for. The winners are the projects that know how to do more with less and still feel like real art.</p>
     `
   },
   post38: {
@@ -3713,8 +3806,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'RAM prices are turning into an electronics problem',
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>RAM is not just getting annoying. It is getting expensive in a way that can spill into phones, laptops, PCs, and anything else that needs memory to work.</p>
@@ -3727,11 +3821,11 @@ const POSTS = {
 
       <p>The lawsuit part matters too, but only if people keep the words straight. <a href="https://www.tomshardware.com/tech-industry/samsung-sk-hynix-and-micron-sued-over-alleged-dram-price-fixing-amid-record-memory-costs" target="_blank" rel="noopener noreferrer">A class-action filing in California alleges Samsung, SK Hynix, and Micron coordinated supply cuts and used the AI shift as cover to inflate DRAM prices</a>. The companies deny collusion. The allegations are not proof, but they do show how much suspicion is building around the market.</p>
 
-      <p>My view is simple. AI demand may be real. The shortage may be real. The legal allegations may or may not hold up. None of that changes the bigger point: when memory gets tight, everybody downstream pays for it.</p>
+      <p>AI demand may be real. The shortage may be real. The legal allegations may or may not hold up. None of that changes the bigger point: when memory gets tight, everybody downstream pays for it.</p>
 
       <p>That is why I keep watching this. The first place it shows up is usually the cheapest hardware, the lowest-margin products, and the devices where companies have the least room to absorb cost. Then it spreads from there.</p>
 
-      <p>If RAM keeps moving like this, the story stops being about one component and starts being about the price of basic electronics. That is the part worth paying attention to.</p>
+      <p>If RAM keeps moving like this, the story stops being about one component and starts being about the price of basic electronics.</p>
     `
   },
   post36: {
@@ -3739,8 +3833,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'The World Cup is at its best when the fans matter more than FIFA\'s money',
-    category: 'Business Strategy',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>One of my favorite stories around this World Cup has nothing to do with a score. It is seeing international soccer fans travel across North America and get genuinely excited about the food.</p>
@@ -3753,7 +3848,7 @@ const POSTS = {
 
       <p>At the same time, I have been watching <a href="https://www.netflix.com/title/80221113" target="_blank" rel="noopener noreferrer"><em>FIFA Uncovered</em> on Netflix</a>. The documentary came out in 2022, but it is difficult to watch it during this World Cup without thinking about the difference between what soccer means to fans and what FIFA has allowed the business around soccer to become.</p>
 
-      <p>My takeaway is pretty simple. Once enough money got into the system, too much of the organization became focused on keeping control of that money. The game still mattered because the game created the audience. But the audience also created television rights, sponsorships, hosting power, political access, and a huge amount of leverage.</p>
+      <p>Once enough money got into the system, too much of the organization became focused on keeping control of that money. The game still mattered because the game created the audience. But the audience also created television rights, sponsorships, hosting power, political access, and a huge amount of leverage.</p>
 
       <p>That is where the incentives can get ugly. FIFA is supposed to be a steward of international soccer. When the same organization controls the event, the commercial relationships, and much of the decision-making around who gets access, there has to be serious accountability outside that structure.</p>
 
@@ -3777,8 +3872,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: 'Qualification, research, and AEO are how AI becomes normal business',
-    category: 'RevOps',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'RevOps & Ops',
+    tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business" target="_blank" rel="noopener noreferrer">Harvard Business Review looked at how three small and midsize businesses</a>, including a manufacturer, a boutique hotel, and a B2B software company, are adapting as AI changes how customers research, evaluate, and choose suppliers.</p>
@@ -3815,8 +3911,9 @@ const POSTS = {
     date: 'July 8, 2026',
     iso: '2026-07-08',
     title: 'Sony executives selling stock makes the Bungie layoffs look even worse',
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1767424412548-1a1ac7f4b9bc?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Sony's executive stock sales are a bad look, especially when you put them next to what just happened at Bungie. <a href="https://www.sec.gov/Archives/edgar/data/313838/000119312526297130/xslF345X06/ownership.xml" target="_blank" rel="noopener noreferrer">Sony President and CEO Hiroki Totoki disclosed</a> that he sold 225,000 Sony shares on July 3 at $21.02 per share. That comes out to about $4.73 million.</p>
@@ -3841,7 +3938,7 @@ const POSTS = {
 
       <p>From a business operations perspective, confidence is not only communicated through earnings calls and press releases. It is communicated through incentives and behavior. If leadership says the future is strong while reducing teams and selling large portions of its own equity, the market is going to compare the words with the actions.</p>
 
-      <p>My take is simple. The sales may be legal and may have ordinary explanations. They are still a bad sign at a bad time. Sony needs to show that its leaders believe in the long-term strategy with more than talking points. Right now, the employees are carrying the downside while executives are cashing out part of the upside. That is not a healthy signal for Bungie, PlayStation, or the future of AAA gaming.</p>
+      <p>The sales may be legal and may have ordinary explanations. They are still a bad sign at a bad time. Sony needs to show that its leaders believe in the long-term strategy with more than talking points. Right now, the employees are carrying the downside while executives are cashing out part of the upside. That is not a healthy signal for Bungie, PlayStation, or the future of AAA gaming.</p>
     `
   },
   post33: {
@@ -3849,13 +3946,14 @@ const POSTS = {
     date: 'July 7, 2026',
     iso: '2026-07-07',
     title: "HubSpot's data enrichment reversal is really a trust problem",
-    category: 'HubSpot',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'HubSpot & CRM',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://community.hubspot.com/t/we-got-this-wrong-and-we-are-fixing-it/152063" target="_blank" rel="noopener noreferrer">HubSpot reversed its planned data enrichment terms change</a> after a pretty loud customer backlash, especially on LinkedIn. Duncan Lennox, HubSpot's Chief Product and Technology Officer, said they got it wrong and would not move forward with the terms of service changes communicated on July 1.</p>
 
-      <p>I think reversing it was the right call. But this definitely should not have happened in the first place. HubSpot is not just another data vendor sitting outside the customer relationship. It is the CRM. That changes the standard.</p>
+      <p>I think reversing it was the right call. But this definitely should not have happened in the first place. HubSpot is the CRM. That changes the standard.</p>
 
       <p>The part that made people react so strongly is pretty easy to understand. Customers import the contacts. Customers clean the records. Customers pay teams to maintain the data. Customers build the context inside the CRM. Then the platform says that enrichment data may be shared into a broader dataset unless customers opt out. That feels backwards.</p>
 
@@ -3869,9 +3967,9 @@ const POSTS = {
 
       <p>I do give HubSpot credit for reversing quickly. They listened, they acknowledged the mistake, and they put a public statement behind it. That matters. But the trust issue does not disappear just because the rollback happened quickly.</p>
 
-      <p>For RevOps teams, this is a reminder that CRM data governance is not just an internal cleanup project. It is also a vendor-risk question. Who can access the data? What can the platform do with it? What changes when terms are updated? What defaults are turned on quietly? Those questions have to be part of the operating model now.</p>
+      <p>For RevOps teams, this is a reminder that CRM data governance is also a vendor-risk question. Who can access the data? What can the platform do with it? What changes when terms are updated? What defaults are turned on quietly? Those questions have to be part of the operating model now.</p>
 
-      <p>My view is simple. HubSpot can still build good enrichment tools. I actually think better enrichment inside the CRM would be useful. But if the product is powered by customer data, the permission model has to be clean. Not technically defensible. Clean. Obvious. Opt-in. Easy to explain to a client without feeling weird about it.</p>
+      <p>HubSpot can still build good enrichment tools. I actually think better enrichment inside the CRM would be useful. But if the product is powered by customer data, the permission model has to be clean. Not technically defensible. Clean. Obvious. Opt-in. Easy to explain to a client without feeling weird about it.</p>
 
       <p>That is the whole issue. HubSpot has spent years building trust as the friendly CRM. This was the kind of move that makes people question whether that trust is still the center of the relationship. The reversal was good. The lesson should be louder than the apology.</p>
     `
@@ -3881,8 +3979,9 @@ const POSTS = {
     date: 'July 7, 2026',
     iso: '2026-07-07',
     title: "Trump's $2.2 billion year is a public trust problem",
-    category: 'Business Strategy',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.wsj.com/finance/trump-investments-presidency-4ca88728" target="_blank" rel="noopener noreferrer">The Wall Street Journal reported</a> that President Donald Trump's personal income rose to more than $2.2 billion in the first year of his second term, with a huge portion of that tied to crypto ventures, licensing, investments, and his broader business holdings.</p>
@@ -3907,12 +4006,13 @@ const POSTS = {
     `
   },
   post31: {
-    featured: true,
+    featured: false,
     date: 'July 7, 2026',
     iso: '2026-07-07',
     title: 'The Xbox and Sony layoffs show why AAA gaming feels broken',
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://news.xbox.com/en-us/2026/07/06/resetting-xbox/" target="_blank" rel="noopener noreferrer">Xbox announced</a> one of the most significant restructures in its history, with about 3,200 roles being reduced through FY27 and four studios leaving Xbox to new management. Microsoft also said it is eliminating around 4,800 roles overall, with the changes mostly falling within Commercial and Xbox.</p>
@@ -3941,8 +4041,9 @@ const POSTS = {
     date: 'July 9, 2026',
     iso: '2026-07-09',
     title: "HubSpot's enrichment backlash is really about first-party data trust",
-    category: 'HubSpot',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'HubSpot & CRM',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai', mergedInto: 'post33',
     image: 'https://images.unsplash.com/photo-1783584731439-06cc9e1efbb2?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>HubSpot's data enrichment backlash was not really about one feature. It was about who people think owns the data once it lives in the CRM.</p>
@@ -3967,8 +4068,9 @@ const POSTS = {
     date: 'June 19, 2026',
     iso: '2026-06-19',
     title: 'SpaceX in retirement accounts is where the hype gets personal',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.theguardian.com/science/2026/jun/19/spacex-retirement-savings-elon-musk" target="_blank" rel="noopener noreferrer">The Guardian reported</a> that the SpaceX story is starting to reach retirement savings, and that is where the whole thing gets more personal. Once a company becomes something index funds and 401(k)s have to carry, the risk stops being a billionaire game and starts touching ordinary people.</p>
@@ -3979,7 +4081,7 @@ const POSTS = {
 
       <p>That is why I do not think this should be framed as a clean stock story. It is a structure story. It is about who ends up carrying the risk when the narrative gets big enough that it stops feeling like one company and starts feeling like an entire ecosystem.</p>
 
-      <p>My view is simple. The company can be real and the structure can still be too aggressive. Those are not contradictions.</p>
+      <p>The company can be real and the structure can still be too aggressive. Those are not contradictions.</p>
     `
   },
   post29: {
@@ -3987,8 +4089,9 @@ const POSTS = {
     date: 'June 18, 2026',
     iso: '2026-06-18',
     title: "Apple's price hike warning shows the AI boom is reaching consumers",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.aljazeera.com/news/2026/6/18/apple-ceo-warns-price-rises-unavoidable-amid-ai-boom" target="_blank" rel="noopener noreferrer">Al Jazeera reported</a> that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause.</p>
@@ -4011,8 +4114,9 @@ const POSTS = {
     date: 'June 17, 2026',
     iso: '2026-06-17',
     title: 'The memory crunch is the part of the AI boom people are ignoring',
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs', mergedInto: 'post38',
     image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.euronews.com/business/2026/06/18/apple-price-rises-are-unavoidable-ceo-warns-as-ai-chip-costs-surge" target="_blank" rel="noopener noreferrer">Euronews reported</a> that the AI-driven memory crunch is already pushing hardware costs higher. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story.</p>
@@ -4035,8 +4139,9 @@ const POSTS = {
     date: 'June 16, 2026',
     iso: '2026-06-16',
     title: 'The pushback against data centers is the real AI story now',
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/data-center-bans-moratoriums-opposition-map-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that communities are pushing back on data centers and winning some of those fights. I think that is the next phase of the AI infrastructure story.</p>
@@ -4059,8 +4164,9 @@ const POSTS = {
     date: 'June 15, 2026',
     iso: '2026-06-15',
     title: 'The mega-IPO wave is what happens when the market gets crowded with hype',
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/profg-podcast-ed-elson-ipos-stocks-spacex-openai-anthropic-spcx-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that trader Ed Elson is bearish on the coming mega-IPO wave, including SpaceX, OpenAI, Anthropic, and other big names. I think that is the part worth paying attention to.</p>
@@ -4077,13 +4183,15 @@ const POSTS = {
 
       <p>This feels less like healthy capital formation and more like too many giant promises arriving at once.</p>
     `
-  },  post25: {
+  },
+  post25: {
     featured: false,
     date: 'June 11, 2026',
     iso: '2026-06-11',
     title: "Anthropic's compute deal shows AI is turning into balance-sheet infrastructure",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai" target="_blank" rel="noopener noreferrer">Apollo announced</a> a $35 billion capital solution with Blackstone and Broadcom tied to AI compute infrastructure. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure.</p>
@@ -4102,8 +4210,9 @@ const POSTS = {
     date: 'June 11, 2026',
     iso: '2026-06-11',
     title: "Amazon's new AI loan makes the spending story impossible to ignore",
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/" target="_blank" rel="noopener noreferrer">TechCrunch reported</a> that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle.</p>
@@ -4122,8 +4231,9 @@ const POSTS = {
     date: 'June 11, 2026',
     iso: '2026-06-11',
     title: "Texas telling data centers to pay their own way is where this gets real",
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/texas-governor-proposes-new-data-center-regulations-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that Texas Governor Greg Abbott wants data centers to pay more of their own way when it comes to power, water, and infrastructure. That is a big signal because Texas is not exactly known for being hostile to business.</p>
@@ -4142,8 +4252,9 @@ const POSTS = {
     date: 'June 11, 2026',
     iso: '2026-06-11',
     title: "OpenAI's data center influence warning shows the AI fight is bigger than zoning",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.businessinsider.com/openai-china-data-centers-influence-campaign-2026-6" target="_blank" rel="noopener noreferrer">Business Insider reported</a> that OpenAI disrupted a suspected China-linked influence operation trying to shape the conversation around US data centers. That is a strange story on the surface, but it makes sense once you think about where the AI race is heading.</p>
@@ -4154,7 +4265,7 @@ const POSTS = {
 
       <p>That puts more responsibility on the companies building these projects. If they are vague, secretive, or dismissive, they leave a vacuum that other people can fill. If they are transparent and specific about costs, benefits, and environmental impact, they give communities something real to evaluate.</p>
 
-      <p>My takeaway is that the AI infrastructure story has moved into a much more complicated phase. It is not just a Wall Street story and it is not just a zoning story. It is a trust story, an information story, and increasingly a national strategy story.</p>
+      <p>My takeaway is that the AI infrastructure story has moved into a much more complicated phase. It is a trust story, an information story, and increasingly a national strategy story.</p>
     `
   },
   post21: {
@@ -4162,8 +4273,9 @@ const POSTS = {
     date: 'June 11, 2026',
     iso: '2026-06-11',
     title: "HubSpot's agentic AI bet is really about whether CRM becomes the operating layer",
-    category: 'HubSpot',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'HubSpot & CRM',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.fastslowmotion.com/agentic-ai-hubspot-crm-guide/" target="_blank" rel="noopener noreferrer">Fast Slow Motion's guide</a> to agentic AI in HubSpot gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else?</p>
@@ -4182,8 +4294,9 @@ const POSTS = {
     date: 'June 10, 2026',
     iso: '2026-06-10',
     title: "Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-costs',
     image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.ft.com/content/6e15876d-1882-45e2-a13c-16a1327079d7" target="_blank" rel="noopener noreferrer">The Financial Times reported</a> that AI demand is driving a record wave of power and utility dealmaking. I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When you see investors pouring unprecedented cash into AI infrastructure, it is hard to tell whether that is the market seeing something real or just chasing the trade.</p>
@@ -4202,11 +4315,12 @@ const POSTS = {
     date: 'June 10, 2026',
     iso: '2026-06-10',
     title: "HubSpot's new AI pricing makes the product story feel more real",
-    category: 'HubSpot',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'HubSpot & CRM',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1160&h=440&fit=crop&q=80',
     body: `
-      <p>The interesting part of <a href="https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete" target="_blank" rel="noopener noreferrer">HubSpot's Customer Agent and Prospecting Agent announcement</a> is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
+      <p>The interesting part of <a href="https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete" target="_blank" rel="noopener noreferrer">HubSpot's Customer Agent and Prospecting Agent announcement</a> is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful.</p>
 
       <p>Instead of treating these like shiny add-ons, HubSpot is tying them to outcomes. That is a much cleaner story for teams that want to test AI without feeling like they are buying another seat-based promise they may or may not use.</p>
 
@@ -4219,7 +4333,7 @@ const POSTS = {
         <li><strong>Operational value</strong> is the point. These tools are supposed to save time on real work, not just look impressive in a demo.</li>
       </ul>
 
-      <p>I think that matters because it makes the product feel more tangible. HubSpot is not just saying it has AI. It is saying, in effect, here is what the agent did, here is what it saved you, and here is what you paid for the result.</p>
+      <p>I think that matters because it makes the product feel more tangible. HubSpot is saying, in effect, here is what the agent did, here is what it saved you, and here is what you paid for the result.</p>
 
       <p>That is a much stronger position than vague AI branding. It is more measurable, easier to explain internally, and probably much easier to sell to teams that are already skeptical of software that promises too much and delivers too little.</p>
     `
@@ -4229,8 +4343,9 @@ const POSTS = {
     date: 'June 9, 2026',
     iso: '2026-06-09',
     title: "HubSpot's Spring 2026 Spotlight is all about making AI actually useful",
-    category: 'HubSpot',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'HubSpot & CRM',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.hubspot.com/company-news/spring-2026-spotlight" target="_blank" rel="noopener noreferrer">HubSpot's Spring 2026 Spotlight</a> reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it.</p>
@@ -4256,8 +4371,9 @@ const POSTS = {
     date: 'June 8, 2026',
     iso: '2026-06-08',
     title: "SpaceX's IPO story is really a story about what the market will pay for momentum",
-    category: 'Business Strategy',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation. The <a href="https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/Project%20Apex%20-%20Australian%20Wrap%20and%20S-1%20-%20Final%20%28Lodgement%204%20June%202026%29%20-%20Compressed%20vF.pdf" target="_blank" rel="noopener noreferrer">SpaceX filing</a> makes the ambition very clear.</p>
@@ -4282,8 +4398,9 @@ const POSTS = {
     date: 'June 6, 2026',
     iso: '2026-06-06',
     title: "Oracle's AI infrastructure rally is about to meet the real world",
-    category: 'AI & Automation',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow. <a href="https://blogs.oracle.com/connect/larry-ellison-oracle-shape-future-healthcare" target="_blank" rel="noopener noreferrer">Oracle's own AI positioning</a> shows how big that ambition has become.</p>
@@ -4302,8 +4419,9 @@ const POSTS = {
     date: 'June 5, 2026',
     iso: '2026-06-05',
     title: 'Stargate is the clearest sign that AI is now a utility-scale business',
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://openai.com/index/five-new-stargate-sites/" target="_blank" rel="noopener noreferrer">OpenAI, Oracle, and SoftBank's five-site Stargate expansion</a> is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, permits, cooling, financing, and whether the country actually has enough grid capacity to support the plan.</p>
@@ -4320,8 +4438,9 @@ const POSTS = {
     date: 'June 3, 2026',
     iso: '2026-06-03',
     title: "The AI data center boom is running into a political problem",
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. <a href="https://www.businessinsider.com/data-center-bans-moratoriums-opposition-map-2026-6" target="_blank" rel="noopener noreferrer">Business Insider has tracked</a> how data center opposition is showing up around the country. People have seen what these projects can do to power demand, water use, traffic, and local politics, and they are much less willing to just trust the pitch.</p>
@@ -4330,7 +4449,7 @@ const POSTS = {
 
       <p>The part that makes this even more sensitive is how little transparency some of these communities get. When residents feel like the details were hidden until the deal was already moving, it turns what should have been a development conversation into a trust conversation. Once that happens, the backlash usually gets a lot bigger.</p>
 
-      <p>My view is pretty simple. If these companies want to keep building, they need to act like they actually plan to stay. That means cleaner projects, honest communication, and some real return for the places taking on the burden. Without that, I think the political pushback is only going to get stronger.</p>
+      <p>If these companies want to keep building, they need to act like they actually plan to stay. That means cleaner projects, honest communication, and some real return for the places taking on the burden. Without that, I think the political pushback is only going to get stronger.</p>
     `
   },
   post17: {
@@ -4338,8 +4457,9 @@ const POSTS = {
     date: 'June 2, 2026',
     iso: '2026-06-02',
     title: "China's space-based AI plan says a lot about where this race is headed",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. <a href="https://www.tomshardware.com/tech-industry/data-centers/china-unifies-tech-sector-to-build-grid-free-orbiting-satellite-ai-data-centers-challenging-elon-musks-spacex-beijings-forced-chip-and-satellite-alliance-announced-a-week-before-musks-ai1-reveal" target="_blank" rel="noopener noreferrer">Tom's Hardware reported</a> on China's push toward orbiting AI data centers, and when people start talking seriously about putting compute in orbit, that tells you the power and cooling problem on Earth is already getting extreme.</p>
@@ -4352,12 +4472,13 @@ const POSTS = {
     `
   },
   post12: {
-    featured: false,
+    featured: true,
     date: 'May 31, 2026',
     iso: '2026-05-31',
     title: "The most valuable AI use case isn't a product. It's a personal tool.",
-    category: 'AI & Automation',
-    tag: 'In the wild', tagClass: 'tag-pink',
+    category: 'AI Adoption',
+    tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1467987506553-8f3916508521?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>There is a version of AI that gets a lot of attention and a version that does not. The one that gets the attention is commercial: AI copilots, AI add-ons, AI agents that companies can license. The one that does not is quieter and, honestly, more genuinely useful.</p>
@@ -4397,8 +4518,9 @@ const POSTS = {
     date: 'May 29, 2026',
     iso: '2026-05-29',
     title: "The Bricks & Minifigs Lego mess is a resale-business problem waiting to happen",
-    category: 'Business Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'Business & Markets',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1606166325683-e6deb697d301?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>There is a serious trust issue in the <a href="https://katu.com/news/local/keizer-lego-collection-dispute-sparks-multiple-lawsuits-national-attention-keizer-oregon-viral-dispute-reckless-ben-youtube-consignment-local-lawsuit-legal" target="_blank" rel="noopener noreferrer">Bricks & Minifigs story</a>. Once a resale business takes custody of somebody else's inventory, the business is responsible for protecting both the items and the expectation around them.</p>
@@ -4418,8 +4540,9 @@ const POSTS = {
     date: 'May 27, 2026',
     iso: '2026-05-27',
     title: "Costco's gas boom is a lesson in leveraging a great core business",
-    category: 'Business Strategy',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'Business & Markets',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.costco.com/f/-/my-life-fuel-costco-gas-stations" target="_blank" rel="noopener noreferrer">Costco's gas business</a> works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up.</p>
@@ -4439,8 +4562,9 @@ const POSTS = {
     date: 'May 25, 2026',
     iso: '2026-05-25',
     title: "Dell's best day ever tells you where enterprise AI is actually going",
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     poster: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1160&h=440&fit=crop&q=80',
     body: `
@@ -4457,8 +4581,9 @@ const POSTS = {
     date: 'May 24, 2026',
     iso: '2026-05-24',
     title: "Samsung just promised $400K bonuses. That's an AI story too.",
-    category: 'RevOps',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'AI Cost & Infrastructure',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.theguardian.com/technology/2026/may/27/samsung-memory-chip-staff-bonuses-ai-profit-sharing-deal" target="_blank" rel="noopener noreferrer">Samsung Electronics' profit-sharing deal</a> could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division's operating profit directly to employees.</p>
@@ -4472,8 +4597,8 @@ const POSTS = {
     date: 'May 22, 2026',
     iso: '2026-05-22',
     title: "AI is making cybersecurity harder - and that's a GTM problem too",
-    category: 'AI & Automation',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'Security & Governance',
+    tag: 'Analysis', tagClass: 'tag-cyan',
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.crn.com/news/security/2025/george-kurtz-s-5-boldest-ai-statements-at-crowdstrike-fal-con-2025" target="_blank" rel="noopener noreferrer">CrowdStrike's AI security comments</a> point to a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on both sides of the equation.</p>
@@ -4487,8 +4612,9 @@ const POSTS = {
     date: 'May 20, 2026',
     iso: '2026-05-20',
     title: 'Where AI actually falls apart',
-    category: 'AI & Automation',
-    tag: 'Signal', tagClass: 'tag-cyan',
+    category: 'AI Adoption',
+    tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'ai-adoption',
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1160&h=440&fit=crop&q=80',
     body: `
@@ -4509,8 +4635,9 @@ const POSTS = {
     date: 'May 18, 2026',
     iso: '2026-05-18',
     title: 'The shift from "AI tools" to AI with actual business context',
-    category: 'CRM Strategy',
-    tag: 'Watch this space', tagClass: 'tag-amber',
+    category: 'HubSpot & CRM',
+    tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>One thing I'm watching closely in the HubSpot ecosystem right now is the shift from "AI tools" to AI with actual business context.</p>
@@ -4526,8 +4653,9 @@ const POSTS = {
     date: 'May 16, 2026',
     iso: '2026-05-16',
     title: 'HubSpot vs. Salesforce: two very different bets on AI agents',
-    category: 'HubSpot',
-    tag: 'Worth noting', tagClass: 'tag-emerald',
+    category: 'HubSpot & CRM',
+    tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.salesforce.com/news/stories/agentic-ai-reshapes-workforce/" target="_blank" rel="noopener noreferrer">Salesforce has been loud</a> about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They've since cut 4,000 customer service roles. The message is pretty clear: agents in, people out.</p>
@@ -4541,8 +4669,9 @@ const POSTS = {
     date: 'May 15, 2026',
     iso: '2026-05-15',
     title: "HubSpot's AI push is a signal every RevOps team should read",
-    category: 'RevOps',
-    tag: 'On my radar', tagClass: 'tag-orange',
+    category: 'HubSpot & CRM',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1160&h=440&fit=crop&q=80',
     body: `
       <p><a href="https://www.hubspot.com/web-guide/customer-connection-blueprint/future" target="_blank" rel="noopener noreferrer">HubSpot continuing to invest</a> into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record.</p>
@@ -4556,8 +4685,9 @@ const POSTS = {
     date: 'May 13, 2026',
     iso: '2026-05-13',
     title: 'Site is live, built and deployed with AI',
-    category: 'AI & Automation',
-    tag: 'In the wild', tagClass: 'tag-pink',
+    category: 'AI Adoption',
+    tag: 'Opinion', tagClass: 'tag-amber',
+    noindex: true,
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I built this entire site using <a href="https://www.anthropic.com/product/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>, Anthropic's AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it.</p>
@@ -4572,8 +4702,9 @@ const POSTS = {
     date: 'May 12, 2026',
     iso: '2026-05-12',
     title: 'What 10 years in marketing ops actually teaches you',
-    category: 'Marketing Ops',
+    category: 'RevOps & Ops',
     tag: 'Timeless', tagClass: 'tag-purple',
+    hub: 'hubspot-ai',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1160&h=440&fit=crop&q=80',
     body: `
       <p>I've spent over 10 years helping organizations market themselves online through <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">SamCBarth.com</a>: generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions.</p>
@@ -4586,7 +4717,27 @@ const POSTS = {
   }
 };
 
-const POST_ORDER = ['post62', 'post61', 'post60', 'post59', 'post58', 'post57', 'post56', 'post55', 'post54', 'post53', 'post52', 'post51', 'post50', 'post49', 'post48', 'post47', 'post46', 'post45', 'post44', 'post43', 'post42', 'post41', 'post40', 'post39', 'post38', 'post31', 'post37', 'post36', 'post35', 'post34', 'post33', 'post32', 'post30', 'post29', 'post28', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
+// Topic hubs. Built into /topics/<slug>/ pages and linked from every member post.
+const HUBS = {
+  'hubspot-ai': {
+    title: 'HubSpot and AI in practice',
+    blurb: 'What HubSpot, CRM data, and RevOps work look like once AI features, credits, and agents land in a real portal.'
+  },
+  'ai-costs': {
+    title: 'What AI actually costs',
+    blurb: 'Pricing, credits, per-task economics, and where the AI bill lands after the demo.'
+  },
+  'ai-adoption': {
+    title: 'AI adoption inside real companies',
+    blurb: 'Rollouts, measurement, handoffs, and the operating work that decides whether AI sticks.'
+  },
+  'ai-infrastructure': {
+    title: 'The AI infrastructure bill',
+    blurb: 'Chips, memory, power, data centers, and cloud capacity, read for what they mean to the businesses paying for them.'
+  }
+};
+
+const POST_ORDER = ['post62', 'post61', 'post59', 'post58', 'post57', 'post56', 'post55', 'post52', 'post51', 'post50', 'post48', 'post46', 'post41', 'post40', 'post39', 'post38', 'post36', 'post35', 'post34', 'post31', 'post33', 'post32', 'post30', 'post29', 'post27', 'post26', 'post25', 'post24', 'post23', 'post22', 'post21', 'post20', 'post19', 'post18', 'post14', 'post13', 'post15', 'post16', 'post17', 'post12', 'post11', 'post10', 'post7', 'post8', 'post9', 'post6', 'post5', 'post4', 'post1', 'post2', 'post3'];
 
 // Dual export: browser globals + CommonJS for the build-time SEO generator.
 POST_ORDER.unshift('post63');
@@ -4675,9 +4826,10 @@ POST_ORDER.unshift('post145');
 POST_ORDER.unshift('post146');
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { POSTS, POST_ORDER };
+  module.exports = { POSTS, POST_ORDER, HUBS };
 }
 if (typeof window !== 'undefined') {
   window.POSTS = POSTS;
   window.POST_ORDER = POST_ORDER;
+  window.HUBS = HUBS;
 }

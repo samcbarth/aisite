@@ -2,1177 +2,1001 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam C Barth - RevOps, AI &amp; CRM Strategy</title>
-    <link>https://samcbarth.github.io/aisite/</link>
-    <atom:link href="https://samcbarth.github.io/aisite/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://blog.samcbarth.com/</link>
+    <atom:link href="https://blog.samcbarth.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 07:11:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 02:47:56 GMT</lastBuildDate>
     <item>
       <title>Week 26 is where the AI rollout gets honest</title>
-      <link>https://samcbarth.github.io/aisite/posts/week-26-is-where-the-ai-rollout-gets-honest/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/week-26-is-where-the-ai-rollout-gets-honest/</guid>
+      <link>https://blog.samcbarth.com/posts/week-26-is-where-the-ai-rollout-gets-honest/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/week-26-is-where-the-ai-rollout-gets-honest/</guid>
       <pubDate>Mon, 17 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Adoption</category>
       <description>At week 26, researchers took a snapshot of the AI rollout. Not the license announcement. Not an executive survey about plans. They looked at who was active, how often they sent messages, and what kind of work was moving through ChatGPT Enterprise six months after a company adopte</description>
     </item>
     <item>
       <title>A green dashboard can hide a bad AI answer</title>
-      <link>https://samcbarth.github.io/aisite/posts/a-green-dashboard-can-hide-a-bad-ai-answer/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/a-green-dashboard-can-hide-a-bad-ai-answer/</guid>
+      <link>https://blog.samcbarth.com/posts/a-green-dashboard-can-hide-a-bad-ai-answer/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/a-green-dashboard-can-hide-a-bad-ai-answer/</guid>
       <pubDate>Sun, 16 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Business Software</category>
+      <category>AI Adoption</category>
       <description>A customer-support bot can return the wrong refund policy in 600 milliseconds. The endpoint is up. The database is reachable. The GPUs are not overloaded. Every traditional dashboard stays green while the customer receives a bad answer. That gap explains why Dynatrace agreed on A</description>
     </item>
     <item>
       <title>Hyundai put a stopwatch on enterprise AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hyundai-put-a-stopwatch-on-enterprise-ai/</guid>
       <pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Adoption</category>
       <description>Thirty-five minutes became five. Crash-safety case review time fell by roughly 90%. Unnecessary production downtime fell by roughly 86%. Vehicle-maintenance response time fell by roughly 42%. Those are Hyundai Motor Group&apos;s own measurements, released August 12 at an internal AI a</description>
     </item>
     <item>
       <title>Intel turned its rally into a factory budget</title>
-      <link>https://samcbarth.github.io/aisite/posts/intel-turned-its-rally-into-a-factory-budget/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/intel-turned-its-rally-into-a-factory-budget/</guid>
+      <link>https://blog.samcbarth.com/posts/intel-turned-its-rally-into-a-factory-budget/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/intel-turned-its-rally-into-a-factory-budget/</guid>
       <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Intel&apos;s stock rally did more than repair the mood around the company. On August 10, Intel turned part of that confidence into financing. The company announced a $15 billion underwritten common-stock offering, with a 30-day option that could add another $2.25 billion. The money ma</description>
     </item>
     <item>
       <title>AMD bought less flexibility on purpose</title>
-      <link>https://samcbarth.github.io/aisite/posts/amd-bought-less-flexibility-on-purpose/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amd-bought-less-flexibility-on-purpose/</guid>
+      <link>https://blog.samcbarth.com/posts/amd-bought-less-flexibility-on-purpose/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/amd-bought-less-flexibility-on-purpose/</guid>
       <pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>A model that changes every week belongs on flexible hardware. A model that runs the same job millions of times may be wasting money on flexibility it no longer needs. AMD entered that tradeoff on August 6 when it agreed to acquire Taalas, a Toronto chip startup that builds the ha</description>
     </item>
     <item>
       <title>Airtable sold. The bases did not become simple.</title>
-      <link>https://samcbarth.github.io/aisite/posts/airtable-sold-the-bases-did-not-become-simple/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/airtable-sold-the-bases-did-not-become-simple/</guid>
+      <link>https://blog.samcbarth.com/posts/airtable-sold-the-bases-did-not-become-simple/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/airtable-sold-the-bases-did-not-become-simple/</guid>
       <pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Business Software</category>
+      <category>RevOps &amp; Ops</category>
       <description>A campaign calendar. A product launch queue. A vendor approval. A customer research library. Airtable can look like a spreadsheet in each case, while quietly carrying the rules, permissions, interfaces, and automations that make the work move. That is what Bending Spoons agreed t</description>
     </item>
     <item>
       <title>The missing number in Twilio&apos;s AI quarter</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-missing-number-in-twilios-ai-quarter/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-missing-number-in-twilios-ai-quarter/</guid>
+      <link>https://blog.samcbarth.com/posts/the-missing-number-in-twilios-ai-quarter/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-missing-number-in-twilios-ai-quarter/</guid>
       <pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The line item is not there. Twilio reported $1.499 billion in second-quarter revenue, $84.5 million in operating income, and $352.6 million in free cash flow. The same release called Twilio “the infrastructure for customer engagement in the AI era.” It did not break out revenue f</description>
     </item>
     <item>
       <title>The Jira ticket no longer starts in Jira</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-jira-ticket-no-longer-starts-in-jira/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-jira-ticket-no-longer-starts-in-jira/</guid>
+      <link>https://blog.samcbarth.com/posts/the-jira-ticket-no-longer-starts-in-jira/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-jira-ticket-no-longer-starts-in-jira/</guid>
       <pubDate>Fri, 07 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Adoption</category>
       <description>An employee can ask Claude to find a project decision, turn it into a Jira item, and update a Confluence page without opening either Atlassian product. The work still lands in Atlassian. The starting point moved. Atlassian&apos;s August 6 results show that behavior at a scale worth re</description>
     </item>
     <item>
       <title>What does a HubSpot agent cost after the demo?</title>
-      <link>https://samcbarth.github.io/aisite/posts/what-does-a-hubspot-agent-cost-after-the-demo/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-does-a-hubspot-agent-cost-after-the-demo/</guid>
+      <link>https://blog.samcbarth.com/posts/what-does-a-hubspot-agent-cost-after-the-demo/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/what-does-a-hubspot-agent-cost-after-the-demo/</guid>
       <pubDate>Thu, 06 Aug 2026 12:00:00 GMT</pubDate>
-      <category>CRM &amp; RevOps</category>
+      <category>HubSpot &amp; CRM</category>
       <description>On July 23, every HubSpot agent moved onto the same meter. On August 5, HubSpot reported the quarter that explains why the meter matters. The rate looks simple: one HubSpot credit costs one cent after the included allowance. The work does not. A data-agent response uses 10 credit</description>
     </item>
     <item>
       <title>Follow the AI order into Caterpillar&apos;s backlog</title>
-      <link>https://samcbarth.github.io/aisite/posts/follow-the-ai-order-into-caterpillars-backlog/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/follow-the-ai-order-into-caterpillars-backlog/</guid>
+      <link>https://blog.samcbarth.com/posts/follow-the-ai-order-into-caterpillars-backlog/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/follow-the-ai-order-into-caterpillars-backlog/</guid>
       <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Start with a 2-gigawatt power order in West Virginia. It needs engines, battery storage, switchgear, financing, parts, and technicians. The chips are not on that invoice. Caterpillar is. That order, announced in February for American Intelligence and Power&apos;s Monarch campus, is a </description>
     </item>
     <item>
       <title>Control is now on Palantir&apos;s AI invoice</title>
-      <link>https://samcbarth.github.io/aisite/posts/control-is-now-on-palantirs-ai-invoice/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/control-is-now-on-palantirs-ai-invoice/</guid>
+      <link>https://blog.samcbarth.com/posts/control-is-now-on-palantirs-ai-invoice/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/control-is-now-on-palantirs-ai-invoice/</guid>
       <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Palantir&apos;s second quarter reads like a software invoice with a data-rights clause attached. The company reported $1.94 billion in revenue, up 93% from a year earlier. U.S. commercial revenue reached $764 million, up 149%. Those are extraordinary numbers for a software business at</description>
     </item>
     <item>
       <title>Europe delayed high-risk AI but kept the customer-facing rules</title>
-      <link>https://samcbarth.github.io/aisite/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</guid>
+      <link>https://blog.samcbarth.com/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/europe-delayed-high-risk-ai-but-kept-the-customer-facing-rules/</guid>
       <pubDate>Mon, 03 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Governance</category>
+      <category>Security &amp; Governance</category>
       <description>Europe postponed the AI Act rules most companies had circled in red. It did not postpone the part a customer can see. On August 2, transparency duties under Article 50 became enforceable, along with enforcement for general-purpose AI models and several rules already on the books.</description>
     </item>
     <item>
       <title>The chip agent does not get to argue with physics</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-chip-agent-does-not-get-to-argue-with-physics/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-chip-agent-does-not-get-to-argue-with-physics/</guid>
+      <link>https://blog.samcbarth.com/posts/the-chip-agent-does-not-get-to-argue-with-physics/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-chip-agent-does-not-get-to-argue-with-physics/</guid>
       <pubDate>Sun, 02 Aug 2026 12:00:00 GMT</pubDate>
-      <category>AI Engineering</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>A chatbot can be persuasive and wrong. A chip layout cannot talk its way past an electrical rule, a thermal limit, or a verification failure. That difference is the reason Siemens and NVIDIA’s latest partnership matters. On July 26, the companies announced an update to Siemens’ F</description>
     </item>
     <item>
       <title>What Francis deSouza is being hired to hold together</title>
-      <link>https://samcbarth.github.io/aisite/posts/what-francis-desouza-is-being-hired-to-hold-together/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-francis-desouza-is-being-hired-to-hold-together/</guid>
+      <link>https://blog.samcbarth.com/posts/what-francis-desouza-is-being-hired-to-hold-together/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/what-francis-desouza-is-being-hired-to-hold-together/</guid>
       <pubDate>Sat, 01 Aug 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Adoption</category>
       <description>Francis deSouza starts as Scale AI’s chief executive on August 10. Three different customers will be waiting for him: frontier AI labs, large companies, and governments. They do not buy the same thing. Labs buy expert data and model evaluation. Enterprises buy applications that h</description>
     </item>
     <item>
       <title>Amazon made more cloud money and less free cash</title>
-      <link>https://samcbarth.github.io/aisite/posts/amazon-made-more-cloud-money-and-less-free-cash/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amazon-made-more-cloud-money-and-less-free-cash/</guid>
+      <link>https://blog.samcbarth.com/posts/amazon-made-more-cloud-money-and-less-free-cash/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/amazon-made-more-cloud-money-and-less-free-cash/</guid>
       <pubDate>Fri, 31 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cloud Economics</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Memory got more expensive, so Amazon added $20 billion to its spending plan after trailing free cash flow had already fallen below zero. That sounds backwards until you look at what AWS sold. Amazon’s cloud business grew 37% in the second quarter, its fastest rate in 18 quarters.</description>
     </item>
     <item>
       <title>DXC put ElevenLabs on the earnings call first</title>
-      <link>https://samcbarth.github.io/aisite/posts/dxc-put-elevenlabs-on-the-earnings-call-first/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/dxc-put-elevenlabs-on-the-earnings-call-first/</guid>
+      <link>https://blog.samcbarth.com/posts/dxc-put-elevenlabs-on-the-earnings-call-first/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/dxc-put-elevenlabs-on-the-earnings-call-first/</guid>
       <pubDate>Wed, 29 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Enterprise AI</category>
+      <category>AI Adoption</category>
       <description>DXC’s new voice AI partnership did not begin with Tuesday’s press release. It began on DXC’s own earnings calls. In May, CEO Raul Fernandez told investors that his prepared remarks had been delivered through a custom ElevenLabs voice model for the third quarter in a row. The same</description>
     </item>
     <item>
       <title>Red finds it. Blue checks it. Green changes it.</title>
-      <link>https://samcbarth.github.io/aisite/posts/red-finds-it-blue-checks-it-green-changes-it/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/red-finds-it-blue-checks-it-green-changes-it/</guid>
+      <link>https://blog.samcbarth.com/posts/red-finds-it-blue-checks-it-green-changes-it/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/red-finds-it-blue-checks-it-green-changes-it/</guid>
       <pubDate>Tue, 28 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cybersecurity</category>
+      <category>Security &amp; Governance</category>
       <description>Red, blue, green. Microsoft’s new security system is easier to understand by who acts than by which model runs. Red-team agents look for paths into a system. Blue-team agents investigate what they find and decide what matters. Green-team agents take corrective action. Microsoft c</description>
     </item>
     <item>
       <title>NVIDIA-SK: memory now, cloud in 2027, contracts still forming</title>
-      <link>https://samcbarth.github.io/aisite/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</guid>
+      <link>https://blog.samcbarth.com/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/nvidia-sk-memory-now-cloud-in-2027-contracts-still-forming/</guid>
       <pubDate>Mon, 27 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The press release puts $500 billion at the top. The legal verb is lower down: NVIDIA and SK Group signed letters of intent. That difference matters. The companies announced a $500-billion-plus initiative on July 24 covering an AI cloud, NVIDIA systems, SK hynix memory, and future</description>
     </item>
     <item>
       <title>One AI answer now runs on two machines</title>
-      <link>https://samcbarth.github.io/aisite/posts/one-ai-answer-now-runs-on-two-machines/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/one-ai-answer-now-runs-on-two-machines/</guid>
+      <link>https://blog.samcbarth.com/posts/one-ai-answer-now-runs-on-two-machines/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/one-ai-answer-now-runs-on-two-machines/</guid>
       <pubDate>Sun, 26 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Reading a long prompt and writing the next token happen inside the same AI response. They are different computing jobs. AMD and Cerebras are now betting the economics improve when those jobs stop sharing the same machine. The companies announced a technical partnership on July 23</description>
     </item>
     <item>
       <title>The prompt now has a Monday morning</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-prompt-now-has-a-monday-morning/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-prompt-now-has-a-monday-morning/</guid>
+      <link>https://blog.samcbarth.com/posts/the-prompt-now-has-a-monday-morning/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-prompt-now-has-a-monday-morning/</guid>
       <pubDate>Sat, 25 Jul 2026 12:00:00 GMT</pubDate>
       <category>AI Adoption</category>
       <description>Last year, Meta&apos;s chief product officer reportedly told employees to &quot;focus on entertainment&quot; and &quot;connection with friends&quot; instead of obsessing over productivity. This week, Meta AI learned how to show up on Monday morning whether or not you ask again. That is a real turn. Meta&apos;</description>
     </item>
     <item>
       <title>Inside the chamber, a CHF 110 million bet</title>
-      <link>https://samcbarth.github.io/aisite/posts/inside-the-chamber-a-chf-110-million-bet/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/inside-the-chamber-a-chf-110-million-bet/</guid>
+      <link>https://blog.samcbarth.com/posts/inside-the-chamber-a-chf-110-million-bet/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/inside-the-chamber-a-chf-110-million-bet/</guid>
       <pubDate>Wed, 22 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Semiconductors</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>A wafer sits inside a sealed process chamber. Gases arrive, plasma changes them, material lands or gets cut away, and the result can depend on molecules nobody outside the chamber can see. By the time a later inspection finds the problem, the expensive part has already happened. </description>
     </item>
     <item>
       <title>Amazon Leo found the missing half of satellite internet</title>
-      <link>https://samcbarth.github.io/aisite/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</guid>
+      <link>https://blog.samcbarth.com/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/amazon-leo-found-the-missing-half-of-satellite-internet/</guid>
       <pubDate>Sun, 19 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Connectivity</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The orbit is the easy part to photograph. The harder part is getting an antenna onto a farm, answering the phone when it stops working, and sending somebody back down the road to fix it. That is why Amazon Leo&apos;s South Africa deal matters. Amazon is supplying the low Earth orbit n</description>
     </item>
     <item>
       <title>Airbus made jurisdiction part of the cloud spec</title>
-      <link>https://samcbarth.github.io/aisite/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</guid>
+      <link>https://blog.samcbarth.com/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/airbus-made-jurisdiction-part-of-the-cloud-spec/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cloud</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Airbus gave cloud providers a test that went beyond uptime, scale, and price. It asked who could keep sensitive industrial data under European operational and legal control. Scaleway won. The multi-year agreement covers selected applications used in aircraft design, engineering, </description>
     </item>
     <item>
       <title>Kimi K3 came with a sunset clock</title>
-      <link>https://samcbarth.github.io/aisite/posts/kimi-k3-came-with-a-sunset-clock/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/kimi-k3-came-with-a-sunset-clock/</guid>
+      <link>https://blog.samcbarth.com/posts/kimi-k3-came-with-a-sunset-clock/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/kimi-k3-came-with-a-sunset-clock/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
       <category>AI Adoption</category>
       <description>Moonshot did not just launch Kimi K3. It also put Kimi K2.5 and the moonshot-v1 series on the way out for new users. That makes this release less like a model brag and more like a migration notice. On the product page, Moonshot says Kimi K3 is its most capable flagship model to d</description>
     </item>
     <item>
       <title>The refund queue is where tiket.com tested AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-refund-queue-is-where-tiket-com-tested-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-refund-queue-is-where-tiket-com-tested-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/the-refund-queue-is-where-tiket-com-tested-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-refund-queue-is-where-tiket-com-tested-ai/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Travel Tech</category>
+      <category>AI Adoption</category>
       <description>Travel rarely breaks at the gate. It breaks when somebody needs a refund, a rebook, or a straight answer and gets a queue instead. That is the part tiket.com is trying to fix. Microsoft says the Indonesian travel platform&apos;s CRATER assistant now handles more than 75,000 customer i</description>
     </item>
     <item>
       <title>Thomson Reuters is moving the AI bill into engineering</title>
-      <link>https://samcbarth.github.io/aisite/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</guid>
+      <link>https://blog.samcbarth.com/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/thomson-reuters-is-moving-the-ai-bill-into-engineering/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Adoption</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>500 roles on one side. More than 250 AI-native hires on the other. Thomson Reuters is telling the market where it wants the engineering center of gravity to move, and the Reuters-reported cut is the part that makes the shift visible. The company said it will eliminate a small num</description>
     </item>
     <item>
       <title>The AI stack got a cable company</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-ai-stack-got-a-cable-company/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-stack-got-a-cable-company/</guid>
+      <link>https://blog.samcbarth.com/posts/the-ai-stack-got-a-cable-company/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-ai-stack-got-a-cable-company/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cloud</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>3M and Microsoft are not pretending this is only a software story. Microsoft says Azure will be the first announced hyperscale cloud provider to deploy 3M&apos;s Expanded Beam Optical technology, while 3M says it will use Microsoft&apos;s AI and digital platforms across customer service, f</description>
     </item>
     <item>
       <title>AWS put outbound campaigns on a map</title>
-      <link>https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/aws-put-outbound-campaigns-on-a-map/</guid>
+      <link>https://blog.samcbarth.com/posts/aws-put-outbound-campaigns-on-a-map/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/aws-put-outbound-campaigns-on-a-map/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cloud</category>
+      <category>RevOps &amp; Ops</category>
       <description>Cape Town is the useful clue. AWS just moved Amazon Connect Customer Outbound Campaigns into the Africa (Cape Town) Region, so SMS, WhatsApp, and email campaigns now have a very specific home on the map. The announcement says the feature is meant for service updates, promotional </description>
     </item>
     <item>
       <title>TSMC put a price on lead time</title>
-      <link>https://samcbarth.github.io/aisite/posts/tsmc-put-a-price-on-lead-time/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tsmc-put-a-price-on-lead-time/</guid>
+      <link>https://blog.samcbarth.com/posts/tsmc-put-a-price-on-lead-time/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/tsmc-put-a-price-on-lead-time/</guid>
       <pubDate>Sat, 18 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Semiconductors</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Four more fabs. One more $100 billion. TSMC&apos;s Arizona announcement is now a $265 billion commitment, and the number that matters is not the headline total. It is the amount of time the company is buying. TSMC said it will add four more advanced semiconductor manufacturing facilit</description>
     </item>
     <item>
       <title>HP&apos;s OpenAI partnership started with 122 pull requests</title>
-      <link>https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hps-openai-partnership-started-with-122-pull-requests/</guid>
+      <link>https://blog.samcbarth.com/posts/hps-openai-partnership-started-with-122-pull-requests/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hps-openai-partnership-started-with-122-pull-requests/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
       <category>AI Adoption</category>
       <description>122 pull requests across 43 projects. That is where HP&apos;s OpenAI partnership starts. OpenAI says one engineer used Frontier models to move through that much code in a matter of weeks, while a security team remediated several software bugs in a day. If that sounds like pilot theate</description>
     </item>
     <item>
       <title>Microsoft gave passwords a retirement date</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsoft-gave-passwords-a-retirement-date/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-gave-passwords-a-retirement-date/</guid>
+      <link>https://blog.samcbarth.com/posts/microsoft-gave-passwords-a-retirement-date/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsoft-gave-passwords-a-retirement-date/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Security</category>
+      <category>Security &amp; Governance</category>
       <description>September 1 matters. So does February 1. Microsoft says passkeys will become the default sign-in method in Entra ID on the first date, and Microsoft-provided SMS and voice authentication will retire on the second. That is not a small product note. It is a deadline for every compa</description>
     </item>
     <item>
       <title>Instacart wants the shelf to tell the truth</title>
-      <link>https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/instacart-wants-the-shelf-to-tell-the-truth/</guid>
+      <link>https://blog.samcbarth.com/posts/instacart-wants-the-shelf-to-tell-the-truth/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/instacart-wants-the-shelf-to-tell-the-truth/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Retail Tech</category>
+      <category>AI Adoption</category>
       <description>A shopper sees one thing in the aisle and another thing on the screen. That mismatch is the business problem behind Instacart&apos;s July 16 acquisition of Arpalus . The company said the deal is meant to improve inventory accuracy for ecommerce fulfillment and in-store operations acro</description>
     </item>
     <item>
       <title>The cloud fight just moved to the org chart</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-cloud-fight-just-moved-to-the-org-chart/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-cloud-fight-just-moved-to-the-org-chart/</guid>
+      <link>https://blog.samcbarth.com/posts/the-cloud-fight-just-moved-to-the-org-chart/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-cloud-fight-just-moved-to-the-org-chart/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cloud</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>AWS just moved the person sitting closest to its compute engine. After nearly 19 years at the company, Dave Brown is leaving AWS, and Amazon says Dave Treadwell will take over AWS Compute and ML Services on August 1. The Wall Street Journal says Meta plans to hire Brown as it wei</description>
     </item>
     <item>
       <title>The company between Claude and the customer</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-company-between-claude-and-the-customer/</guid>
+      <link>https://blog.samcbarth.com/posts/the-company-between-claude-and-the-customer/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-company-between-claude-and-the-customer/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Services</category>
+      <category>AI Adoption</category>
       <description>The interesting part of the Anthropic and Blackstone announcement is not that it is another AI partnership. It is that they are building the company that sits between the model and the customer. TechCrunch reported on July 15 that Ode with Anthropic is a $1.5 billion AI implement</description>
     </item>
     <item>
       <title>TCS and Google Cloud opened the Kolkata test room for Gemini</title>
-      <link>https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</guid>
+      <link>https://blog.samcbarth.com/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/tcs-and-google-cloud-opened-the-kolkata-test-room-for-gemini/</guid>
       <pubDate>Fri, 17 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Tools</category>
+      <category>AI Adoption</category>
       <description>TCS and Google Cloud opened a Gemini Experience Center in Kolkata on July 16, and the location tells the story before the model name does. The center is aimed at retail, consumer packaged goods, travel, tourism and hospitality. That means the pitch starts with stores, supply chai</description>
     </item>
     <item>
       <title>AI chatbots are exporting censorship</title>
-      <link>https://samcbarth.github.io/aisite/posts/ai-chatbots-are-exporting-censorship/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ai-chatbots-are-exporting-censorship/</guid>
+      <link>https://blog.samcbarth.com/posts/ai-chatbots-are-exporting-censorship/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ai-chatbots-are-exporting-censorship/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Governance</category>
+      <category>Security &amp; Governance</category>
       <description>Ask Claude to make a pamphlet critical of Xi Jinping or Saudi Arabia&apos;s crown prince and it may refuse. Ask the same kind of model to criticize Donald Trump or King Charles III and it will often comply. That is the odd thing AP reported today about a new Meta Oversight Board study</description>
     </item>
     <item>
       <title>Japan put 13,750 chips behind physical AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/japan-put-13-750-chips-behind-physical-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/japan-put-13-750-chips-behind-physical-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/japan-put-13-750-chips-behind-physical-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/japan-put-13-750-chips-behind-physical-ai/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>13,750 Vera CPUs. 27,500 Rubin GPUs. 140 megawatts. That is not a teaser. That is Japan putting a hard number on physical AI. NVIDIA said today it is working with Noetra Corp. to launch the factory, and AP reported that Fujitsu is leading the broader push with FANUC, Yaskawa Elec</description>
     </item>
     <item>
       <title>TSMC turned AI demand into a build order</title>
-      <link>https://samcbarth.github.io/aisite/posts/tsmc-turned-ai-demand-into-a-build-order/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/tsmc-turned-ai-demand-into-a-build-order/</guid>
+      <link>https://blog.samcbarth.com/posts/tsmc-turned-ai-demand-into-a-build-order/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/tsmc-turned-ai-demand-into-a-build-order/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>$100 billion is not the part that matters first. The part that matters is what TSMC said it will do with it: add four more fabrication plants in Arizona and push its total U.S. commitment to $265 billion. AP reported that the new chips will focus on 2-nanometer and below. That is</description>
     </item>
     <item>
       <title>The AI bottleneck is a connector</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-ai-bottleneck-is-a-connector/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-bottleneck-is-a-connector/</guid>
+      <link>https://blog.samcbarth.com/posts/the-ai-bottleneck-is-a-connector/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-ai-bottleneck-is-a-connector/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The biggest line in the 3M and Microsoft partnership is not the AI line. It is the connector. Microsoft said on July 15 that Azure will be the first announced hyperscale cloud provider to deploy 3M&amp;apos;s Expanded Beam Optical technology, and 3M said it will use Microsoft&amp;apos;s </description>
     </item>
     <item>
       <title>Slack is now Claude&apos;s memory layer</title>
-      <link>https://samcbarth.github.io/aisite/posts/slack-is-now-claudes-memory-layer/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/slack-is-now-claudes-memory-layer/</guid>
+      <link>https://blog.samcbarth.com/posts/slack-is-now-claudes-memory-layer/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/slack-is-now-claudes-memory-layer/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Tools</category>
+      <category>AI Adoption</category>
       <description>Anthropic is putting Claude Tag in Slack first, and that detail matters more than the model name. The company says Claude Tag is available today in beta for Claude Enterprise and Team customers, which means the new product shows up where the work already lives instead of asking t</description>
     </item>
     <item>
       <title>GPT-5.6 moved into the office stack</title>
-      <link>https://samcbarth.github.io/aisite/posts/gpt-5-6-moved-into-the-office-stack/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/gpt-5-6-moved-into-the-office-stack/</guid>
+      <link>https://blog.samcbarth.com/posts/gpt-5-6-moved-into-the-office-stack/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/gpt-5-6-moved-into-the-office-stack/</guid>
       <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Tools</category>
+      <category>AI Adoption</category>
       <description>No one buys Microsoft 365 for the model name. They buy it because Word, Excel, PowerPoint, Chat, and Cowork are already where the work lives. That is why the July 9 GPT-5.6 update matters. OpenAI says GPT-5.6 will become the preferred model in Microsoft 365 Copilot , and that mak</description>
     </item>
     <item>
       <title>OpenAI put buttons on Codex</title>
-      <link>https://samcbarth.github.io/aisite/posts/openai-put-buttons-on-codex/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-put-buttons-on-codex/</guid>
+      <link>https://blog.samcbarth.com/posts/openai-put-buttons-on-codex/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openai-put-buttons-on-codex/</guid>
       <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Tools</category>
+      <category>AI Adoption</category>
       <description>OpenAI&apos;s hardware move today is not the Jony Ive rumor. It is Codex Micro, a $230 control deck for the people already shipping code through Codex. That is the more interesting story because it is smaller, less theatrical, and closer to how AI actually gets used in businesses. Ope</description>
     </item>
     <item>
       <title>Meta is trying to own the chip bill</title>
-      <link>https://samcbarth.github.io/aisite/posts/meta-is-trying-to-own-the-chip-bill/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-is-trying-to-own-the-chip-bill/</guid>
+      <link>https://blog.samcbarth.com/posts/meta-is-trying-to-own-the-chip-bill/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/meta-is-trying-to-own-the-chip-bill/</guid>
       <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Meta&apos;s July 9 AI headline was Muse Spark 1.1 and the new Meta Model API. The more interesting detail came from Reuters: an internal memo said Meta plans to start manufacturing its newest AI chip in September, and at least one chip cleared testing in about six weeks. That is the p</description>
     </item>
     <item>
       <title>Meta put a price on Muse Spark</title>
-      <link>https://samcbarth.github.io/aisite/posts/meta-put-a-price-on-muse-spark/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-put-a-price-on-muse-spark/</guid>
+      <link>https://blog.samcbarth.com/posts/meta-put-a-price-on-muse-spark/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/meta-put-a-price-on-muse-spark/</guid>
       <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Mark Zuckerberg&apos;s July 9 post was not a model victory lap. It was a pricing signal. Meta launched Muse Spark 1.1, opened a public preview of the Meta Model API, and gave developers a new way to buy into the stack. Meta says Muse Spark 1.1 is &quot;a significant upgrade from Muse Spark</description>
     </item>
     <item>
       <title>Ads need receipts now</title>
-      <link>https://samcbarth.github.io/aisite/posts/ads-need-receipts-now/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ads-need-receipts-now/</guid>
+      <link>https://blog.samcbarth.com/posts/ads-need-receipts-now/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ads-need-receipts-now/</guid>
       <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>Business &amp; Markets</category>
       <description>Open Google Ads on July 9 and the new thing is not a bigger model or a louder promise. It is a panel called &quot;How this ad was made.&quot; That tells you where the pressure is now. Google says the panel will show when generative AI was used to create or alter an ad across Search, YouTub</description>
     </item>
     <item>
       <title>HCLTech is buying the layer under AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/hcltech-is-buying-the-layer-under-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hcltech-is-buying-the-layer-under-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/hcltech-is-buying-the-layer-under-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hcltech-is-buying-the-layer-under-ai/</guid>
       <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Adoption</category>
       <description>₹3,500 crore is the part that grabs attention. The more useful detail is what HCLTech says it is buying with it: data centers that can scale to 50 MW, a new subsidiary structure to hold the spend, and a full-stack AI business that stretches from infrastructure to software. The co</description>
     </item>
     <item>
       <title>The AI stack now has a border</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-ai-stack-now-has-a-border/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-stack-now-has-a-border/</guid>
+      <link>https://blog.samcbarth.com/posts/the-ai-stack-now-has-a-border/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-ai-stack-now-has-a-border/</guid>
       <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Google&apos;s India event had a lot of moving pieces. Education. Health. Languages. Cloud. The part that changes the business story is the one that lets regulated Indian buyers run Gemini on Google Distributed Cloud from inside Indian data centres. Google says it is also bringing its </description>
     </item>
     <item>
       <title>96% already hit the network wall</title>
-      <link>https://samcbarth.github.io/aisite/posts/96-already-hit-the-network-wall/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/96-already-hit-the-network-wall/</guid>
+      <link>https://blog.samcbarth.com/posts/96-already-hit-the-network-wall/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/96-already-hit-the-network-wall/</guid>
       <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>96% of enterprise IT leaders said they ran into at least one network-related performance issue in the last year. 91% said fiber availability, carrier diversity, and low-latency connectivity limited where AI could be deployed. Flexential&apos;s new 400 Gbps rollout looks a lot less lik</description>
     </item>
     <item>
       <title>What 5 gigawatts buys in Richland Parish</title>
-      <link>https://samcbarth.github.io/aisite/posts/what-5-gigawatts-buys-in-richland-parish/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-5-gigawatts-buys-in-richland-parish/</guid>
+      <link>https://blog.samcbarth.com/posts/what-5-gigawatts-buys-in-richland-parish/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/what-5-gigawatts-buys-in-richland-parish/</guid>
       <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The first weird number is 5 gigawatts. The second is more than $50 billion. At that point, Meta&apos;s Richland Parish build stops looking like one more data center and starts looking like a local system with a corporate logo on it. The July 13 update makes that plain. Meta says the p</description>
     </item>
     <item>
       <title>IBM got hit by the memory bill</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-got-hit-by-the-memory-bill/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-got-hit-by-the-memory-bill/</guid>
+      <link>https://blog.samcbarth.com/posts/ibm-got-hit-by-the-memory-bill/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ibm-got-hit-by-the-memory-bill/</guid>
       <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>IBM&apos;s worst day in years was not a mystery. It was a spend problem. The company said clients moved quarterly capex into servers, storage, and memory before expected price increases landed, and the stock reacted like that sentence was the whole quarter. The numbers were not broken</description>
     </item>
     <item>
       <title>The expensive part starts after the CVE</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-expensive-part-starts-after-the-cve/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-expensive-part-starts-after-the-cve/</guid>
+      <link>https://blog.samcbarth.com/posts/the-expensive-part-starts-after-the-cve/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-expensive-part-starts-after-the-cve/</guid>
       <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Security</category>
+      <category>Security &amp; Governance</category>
       <description>Nobody loses money because a CVE exists. They lose money when the fix has to move through certification, release timing, audit, and production without breaking anything. That is why IBM and Red Hat&apos;s Lightwell update on July 8 matters. The companies said the commercial launch giv</description>
     </item>
     <item>
       <title>SAP bought the layer between data and AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/sap-bought-the-layer-between-data-and-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/sap-bought-the-layer-between-data-and-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/sap-bought-the-layer-between-data-and-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/sap-bought-the-layer-between-data-and-ai/</guid>
       <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Adoption</category>
       <description>The cleanest part of SAP&apos;s Dremio deal is the part that is supposed to vanish. SAP completed the acquisition on July 6, and the point is not that it bought another data vendor. It is that it bought a way to stop making every new AI project walk raw data through one more conversio</description>
     </item>
     <item>
       <title>The real Teams update is the off switch</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-real-teams-update-is-the-off-switch/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-real-teams-update-is-the-off-switch/</guid>
+      <link>https://blog.samcbarth.com/posts/the-real-teams-update-is-the-off-switch/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-real-teams-update-is-the-off-switch/</guid>
       <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Adoption</category>
       <description>Teams now has to prove it can be turned off. Microsoft is adding a live Meeting AI switch for organizers and presenters, and that is the useful part of the story. The company says the toggle will let people turn Meeting AI &quot;on or off during live meetings&quot; , with rollout starting </description>
     </item>
     <item>
       <title>The desktop is the last mile for agents</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-desktop-is-the-last-mile-for-agents/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-desktop-is-the-last-mile-for-agents/</guid>
+      <link>https://blog.samcbarth.com/posts/the-desktop-is-the-last-mile-for-agents/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-desktop-is-the-last-mile-for-agents/</guid>
       <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Adoption</category>
       <description>A lot of enterprise software still needs a screen before it can move. That sounds obvious until you remember how much work still lives in ERP systems, CRMs, mainframes, and vendor tools nobody wants to rewrite. That is the gap AWS is targeting with Amazon WorkSpaces for AI agents</description>
     </item>
     <item>
       <title>OpenAI turned ChatGPT into the work surface</title>
-      <link>https://samcbarth.github.io/aisite/posts/openai-turned-chatgpt-into-the-work-surface/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-turned-chatgpt-into-the-work-surface/</guid>
+      <link>https://blog.samcbarth.com/posts/openai-turned-chatgpt-into-the-work-surface/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openai-turned-chatgpt-into-the-work-surface/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Three model sizes. One desktop app. A new way to think about the bill. OpenAI shipped GPT-5.6 on July 9, and the launch reads less like a model tweak than a workflow rewrite. The company says ChatGPT Work is an agent that can &quot;take action across your apps and files&quot; and &quot;turn a g</description>
     </item>
     <item>
       <title>IBM wants to sell the review queue</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-wants-to-sell-the-review-queue/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-wants-to-sell-the-review-queue/</guid>
+      <link>https://blog.samcbarth.com/posts/ibm-wants-to-sell-the-review-queue/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ibm-wants-to-sell-the-review-queue/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Adoption</category>
       <description>Friday afternoon, the code is done. Monday morning, the review queue is not. That gap is where the market moved. GitLab&apos;s new AI Accountability Report says &quot;85% agree AI has shifted the bottleneck from writing code to reviewing and validating it.&quot; IBM is answering that shift with</description>
     </item>
     <item>
       <title>Microsoft put cloud pricing on a January clock</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsoft-put-cloud-pricing-on-a-january-clock/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-put-cloud-pricing-on-a-january-clock/</guid>
+      <link>https://blog.samcbarth.com/posts/microsoft-put-cloud-pricing-on-a-january-clock/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsoft-put-cloud-pricing-on-a-january-clock/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Microsoft did two pricing things in early July, and both of them matter if you run a real commercial stack. On July 8, the company told Partner Center users it was moving commercial cloud local currency pricing updates to once a year every January. The Microsoft Learn note says t</description>
     </item>
     <item>
       <title>Oracle added three gates to OCI AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/oracle-added-three-gates-to-oci-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/oracle-added-three-gates-to-oci-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/oracle-added-three-gates-to-oci-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/oracle-added-three-gates-to-oci-ai/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>If your model cannot cross the public internet, Oracle&apos;s July OCI update is the kind of release that matters. The company&apos;s AI and Data Science blog says this month is about &quot;more ways to tailor AI systems to their specific workloads, users, and governance needs.&quot; That line is do</description>
     </item>
     <item>
       <title>Britain made cloud uptime a bank problem</title>
-      <link>https://samcbarth.github.io/aisite/posts/britain-made-cloud-uptime-a-bank-problem/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/britain-made-cloud-uptime-a-bank-problem/</guid>
+      <link>https://blog.samcbarth.com/posts/britain-made-cloud-uptime-a-bank-problem/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/britain-made-cloud-uptime-a-bank-problem/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>On Monday, July 13, the cloud stops being invisible in London. The UK Treasury has designated Microsoft Ireland Operations, Google Cloud EMEA, Amazon Web Services EMEA, and Oracle Corporation UK as Critical Third Parties. That puts the services behind a lot of financial plumbing </description>
     </item>
     <item>
       <title>IBM and Red Hat turned patching into a product</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-turned-patching-into-a-product/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-turned-patching-into-a-product/</guid>
+      <link>https://blog.samcbarth.com/posts/ibm-and-red-hat-turned-patching-into-a-product/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ibm-and-red-hat-turned-patching-into-a-product/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cybersecurity</category>
+      <category>Security &amp; Governance</category>
       <description>Every enterprise has packages it would rather not touch again. The version runs fine, the business depends on it, and the next &quot;simple&quot; upgrade comes with regression tests, dependency drift, and a lot of praying. IBM and Red Hat are trying to sell a way around that with Lightwell</description>
     </item>
     <item>
       <title>Meta bought room on Alberta&apos;s grid</title>
-      <link>https://samcbarth.github.io/aisite/posts/meta-bought-room-on-albertas-grid/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/meta-bought-room-on-albertas-grid/</guid>
+      <link>https://blog.samcbarth.com/posts/meta-bought-room-on-albertas-grid/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/meta-bought-room-on-albertas-grid/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>A 1GW data center is not a product launch. It is a site plan, a transmission order, a water decision, and a lot of trucks. That is what Meta says it is building in Sturgeon County, north of Edmonton. In its announcement , the company says the new facility will be its first data c</description>
     </item>
     <item>
       <title>The real AI race is for context</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-real-ai-race-is-for-context/</guid>
+      <link>https://blog.samcbarth.com/posts/the-real-ai-race-is-for-context/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-real-ai-race-is-for-context/</guid>
       <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Adoption</category>
       <description>The ugly part of office work is not the typing. It is the handoff. A number starts in Excel, gets summarized in Word, turns into slides, and then gets explained again in chat because the first three versions lost something. That is why the latest moves from OpenAI and Microsoft m</description>
     </item>
     <item>
       <title>Midmarket AI is stuck at the handoff</title>
-      <link>https://samcbarth.github.io/aisite/posts/midmarket-ai-is-stuck-at-the-handoff/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/midmarket-ai-is-stuck-at-the-handoff/</guid>
+      <link>https://blog.samcbarth.com/posts/midmarket-ai-is-stuck-at-the-handoff/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/midmarket-ai-is-stuck-at-the-handoff/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>A midmarket company can buy a pilot. What it usually cannot buy is the spare staff to turn that pilot into a real system. That is the gap Accenture and Google Cloud are aiming at with their July 7 announcement of Accenture Edge . The package is built for companies with annual rev</description>
     </item>
     <item>
       <title>IBM shrank the mainframe to fit the rack</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</guid>
+      <link>https://blog.samcbarth.com/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ibm-shrank-the-mainframe-to-fit-the-rack/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The old mainframe rule was simple. If the machine mattered enough, you gave it a room. IBM just spent July making that room less special. On July 7, the company announced new z17 and LinuxONE 5 configurations, and for the first time the full Z and LinuxONE portfolio includes rack</description>
     </item>
     <item>
       <title>Cloudflare gave the web a third door</title>
-      <link>https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cloudflare-gave-the-web-a-third-door/</guid>
+      <link>https://blog.samcbarth.com/posts/cloudflare-gave-the-web-a-third-door/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/cloudflare-gave-the-web-a-third-door/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Digital Business</category>
+      <category>AI Adoption</category>
       <description>A site used to have two choices. Let a crawler in, or block it. Cloudflare just made that binary look dated. On July 1, Cloudflare introduced new controls for AI traffic and said websites can now treat Search, Agent, and Training crawlers differently. Cloudflare says &quot;not all AI </description>
     </item>
     <item>
       <title>A memory chip company just raised Wall Street money</title>
-      <link>https://samcbarth.github.io/aisite/posts/a-memory-chip-company-just-raised-wall-street-money/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/a-memory-chip-company-just-raised-wall-street-money/</guid>
+      <link>https://blog.samcbarth.com/posts/a-memory-chip-company-just-raised-wall-street-money/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/a-memory-chip-company-just-raised-wall-street-money/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>SK Hynix did not need an American listing to prove it matters. Its memory already sits beside the processors running much of the AI boom. The company is profitable, established in South Korea, and one of the few suppliers capable of producing high-bandwidth memory at scale. What </description>
     </item>
     <item>
       <title>Reddit cannot sell a conversation nobody trusts</title>
-      <link>https://samcbarth.github.io/aisite/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</guid>
+      <link>https://blog.samcbarth.com/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/reddit-cannot-sell-a-conversation-nobody-trusts/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Digital Business</category>
+      <category>AI Adoption</category>
       <description>Picture the ordinary Reddit thread that starts with a simple question: Which accounting tool works for a five-person company? The answers look personal. One person describes a clean migration. Another warns about support. A third mentions a product nobody else has considered. Now</description>
     </item>
     <item>
       <title>The model is no longer the whole agent</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-model-is-no-longer-the-whole-agent/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-model-is-no-longer-the-whole-agent/</guid>
+      <link>https://blog.samcbarth.com/posts/the-model-is-no-longer-the-whole-agent/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-model-is-no-longer-the-whole-agent/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Engineering</category>
+      <category>AI Adoption</category>
       <description>An AI agent can fail while using a perfectly capable model. It can stop reading a file too early, call the wrong tool, carry the wrong context forward, or take an action outside the boundary a company intended. That is why the most interesting part of a new LangChain and NVIDIA r</description>
     </item>
     <item>
       <title>Cognizant put itself inside the AI sales pitch</title>
-      <link>https://samcbarth.github.io/aisite/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</guid>
+      <link>https://blog.samcbarth.com/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/cognizant-put-itself-inside-the-ai-sales-pitch/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Cognizant wants companies to trust it with a large AI rollout. So it is making its own workforce the first large reference account. On July 7, the technology services company expanded its Google Cloud partnership and laid out an unusually specific internal plan. Cognizant aims to</description>
     </item>
     <item>
       <title>OpenAI is buying the people who make AI stick</title>
-      <link>https://samcbarth.github.io/aisite/posts/openai-is-buying-the-people-who-make-ai-stick/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-is-buying-the-people-who-make-ai-stick/</guid>
+      <link>https://blog.samcbarth.com/posts/openai-is-buying-the-people-who-make-ai-stick/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openai-is-buying-the-people-who-make-ai-stick/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>In May, OpenAI launched a new company with more than $4 billion to spend and about 150 deployment specialists arriving through its planned acquisition of Tomoro. Less than two months later, that company is buying again. On July 8, Axios reported that the OpenAI Deployment Company</description>
     </item>
     <item>
       <title>What $3.1 billion buys inside an industrial plant</title>
-      <link>https://samcbarth.github.io/aisite/posts/what-3-1-billion-buys-inside-an-industrial-plant/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-3-1-billion-buys-inside-an-industrial-plant/</guid>
+      <link>https://blog.samcbarth.com/posts/what-3-1-billion-buys-inside-an-industrial-plant/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/what-3-1-billion-buys-inside-an-industrial-plant/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>A factory already knows a lot about itself. Sensors record pressure, temperature, vibration, flow, energy use, alarms, and equipment states. Engineering systems know how the plant was designed. Maintenance systems know what broke and what was replaced. The problem is that those r</description>
     </item>
     <item>
       <title>Geneva gave AI governance a room, not a rulebook</title>
-      <link>https://samcbarth.github.io/aisite/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</guid>
+      <link>https://blog.samcbarth.com/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/geneva-gave-ai-governance-a-room-not-a-rulebook/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>AI Governance</category>
+      <category>Security &amp; Governance</category>
       <description>For two days in Geneva, governments, researchers, companies, and civil society sat inside the same United Nations process to talk about AI. Then the meeting ended without a treaty, a regulator, or a global list of prohibited uses. That does not make the first Global Dialogue on A</description>
     </item>
     <item>
       <title>The next AI bottleneck sits underneath the processor</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</guid>
+      <link>https://blog.samcbarth.com/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-next-ai-bottleneck-sits-underneath-the-processor/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Infrastructure</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Look at an AI server from the top and the expensive processor gets all the attention. Look underneath it and a less glamorous problem appears: how do you deliver a huge amount of power to that chip without wasting space, losing energy, or missing a sudden change in demand? Analog</description>
     </item>
     <item>
       <title>GitHub found the security control hiding in its org chart</title>
-      <link>https://samcbarth.github.io/aisite/posts/github-found-the-security-control-hiding-in-its-org-chart/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/github-found-the-security-control-hiding-in-its-org-chart/</guid>
+      <link>https://blog.samcbarth.com/posts/github-found-the-security-control-hiding-in-its-org-chart/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/github-found-the-security-control-hiding-in-its-org-chart/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cybersecurity</category>
+      <category>Security &amp; Governance</category>
       <description>A secret scanner can find an exposed credential in seconds. The awkward part starts when nobody knows who can safely rotate it. GitHub ran into that problem inside its own company. Its primary internal organization held more than 14,000 repositories, but fewer than half had clear</description>
     </item>
     <item>
       <title>84.6% is the number to watch in CommBank&apos;s AI rollout</title>
-      <link>https://samcbarth.github.io/aisite/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</guid>
+      <link>https://blog.samcbarth.com/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/84-6-is-the-number-to-watch-in-commbanks-ai-rollout/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Artificial Intelligence</category>
+      <category>AI Adoption</category>
       <description>84.6%. That is the share of Commonwealth Bank self-service messaging conversations resolved inside the messaging channel in May. It is a better number than another announcement about an AI banking assistant because it measures whether customers actually got through the work. Comm</description>
     </item>
     <item>
       <title>AWS is closing the door on its first enterprise AI stack</title>
-      <link>https://samcbarth.github.io/aisite/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</guid>
+      <link>https://blog.samcbarth.com/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/aws-is-closing-the-door-on-its-first-enterprise-ai-stack/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>A company bought Amazon Kendra to search its internal knowledge. It added Amazon Q Business so employees could ask questions against that information. It started testing Bedrock Agents to move from answers into actions. Each decision made sense on its own. Now all three products </description>
     </item>
     <item>
       <title>The forecast businesses need is a range, not a number</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-forecast-businesses-need-is-a-range-not-a-number/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-forecast-businesses-need-is-a-range-not-a-number/</guid>
+      <link>https://blog.samcbarth.com/posts/the-forecast-businesses-need-is-a-range-not-a-number/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-forecast-businesses-need-is-a-range-not-a-number/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>RevOps &amp; Ops</category>
       <description>An energy trader sees clouds moving toward a solar farm. A shipping operator sees a storm forming near a port. A utility sees heat building across its service area. None of them only needs the most likely forecast. They need to know how wrong that forecast could be, and what the </description>
     </item>
     <item>
       <title>Inside Accenture&apos;s plan to make enterprise AI fit the middle market</title>
-      <link>https://samcbarth.github.io/aisite/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</guid>
+      <link>https://blog.samcbarth.com/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/inside-accentures-plan-to-make-enterprise-ai-fit-the-middle-market/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Accenture drew a line around a market that large consulting firms have often struggled to serve efficiently. The new Accenture Edge business is aimed at companies with annual revenue between $300 million and $3 billion. Now Google Cloud is helping fill that business with prebuilt</description>
     </item>
     <item>
       <title>A $4.48 agent run changes where teams should look for savings</title>
-      <link>https://samcbarth.github.io/aisite/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</guid>
+      <link>https://blog.samcbarth.com/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/a-4-48-agent-run-changes-where-teams-should-look-for-savings/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>$4.48 versus $43.48 is the kind of gap that changes a buying conversation. It is also the kind of benchmark result that needs to be read carefully. LangChain says NVIDIA&apos;s Nemotron 3 Ultra scored 0.86 on its agent evaluation suite when paired with a tuned Deep Agents harness. The</description>
     </item>
     <item>
       <title>One identity console could change the economics of managed security</title>
-      <link>https://samcbarth.github.io/aisite/posts/one-identity-console-could-change-the-economics-of-managed-security/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/one-identity-console-could-change-the-economics-of-managed-security/</guid>
+      <link>https://blog.samcbarth.com/posts/one-identity-console-could-change-the-economics-of-managed-security/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/one-identity-console-could-change-the-economics-of-managed-security/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cybersecurity</category>
+      <category>Security &amp; Governance</category>
       <description>A managed service provider does not have one identity system to protect. It may have hundreds, spread across customers with different tools, rules, users, and risk levels. Every extra console adds another login, another alert queue, and another place for a small mistake to become</description>
     </item>
     <item>
       <title>Akamai paid $205 million to put AI policy inside the browser</title>
-      <link>https://samcbarth.github.io/aisite/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</guid>
+      <link>https://blog.samcbarth.com/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/akamai-paid-205-million-to-put-ai-policy-inside-the-browser/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Cybersecurity</category>
+      <category>Security &amp; Governance</category>
       <description>An employee pastes a customer record into an AI tool, uploads a contract for a summary, or lets an agent work through a SaaS application. The company firewall may be working exactly as designed. The data can still leave through the browser. That gap explains why Akamai spent appr</description>
     </item>
     <item>
       <title>WBD wants one advertising market across television and streaming</title>
-      <link>https://samcbarth.github.io/aisite/posts/wbd-wants-one-advertising-market-across-television-and-streaming/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/wbd-wants-one-advertising-market-across-television-and-streaming/</guid>
+      <link>https://blog.samcbarth.com/posts/wbd-wants-one-advertising-market-across-television-and-streaming/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/wbd-wants-one-advertising-market-across-television-and-streaming/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>Business &amp; Markets</category>
       <description>Warner Bros. Discovery sells audiences across HBO Max, CNN, TNT, Discovery, and a long list of other brands. The problem is that an advertiser has not been buying all of that as one clean market. Linear television and digital inventory still come with different planning systems, </description>
     </item>
     <item>
       <title>Presidio has put a $6 million price tag on escaping AI pilot mode</title>
-      <link>https://samcbarth.github.io/aisite/posts/presidio-has-put-a-6-million-price-tag-on-escaping-ai-pilot-mode/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/presidio-has-put-a-6-million-price-tag-on-escaping-ai-pilot-mode/</guid>
+      <link>https://blog.samcbarth.com/posts/presidio-has-put-a-6-million-price-tag-on-escaping-ai-pilot-mode/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/presidio-has-put-a-6-million-price-tag-on-escaping-ai-pilot-mode/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>What does it actually cost to move a company beyond AI pilots? Presidio just gave us one answer: 18 months and $6 million for a large investment firm. That number is more interesting than the usual promise that a new framework will help companies scale AI. It turns an abstract tr</description>
     </item>
     <item>
       <title>Rackspace is trading today&apos;s revenue for an AI infrastructure bet</title>
-      <link>https://samcbarth.github.io/aisite/posts/rackspace-is-trading-todays-revenue-for-an-ai-infrastructure-bet/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/rackspace-is-trading-todays-revenue-for-an-ai-infrastructure-bet/</guid>
+      <link>https://blog.samcbarth.com/posts/rackspace-is-trading-todays-revenue-for-an-ai-infrastructure-bet/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/rackspace-is-trading-todays-revenue-for-an-ai-infrastructure-bet/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Rackspace just put a price on its AI pivot. The company lowered its 2026 revenue outlook by $150 million and adjusted EBITDA outlook by $20 million while it redirects capacity, people, and capital toward enterprise AI. That is more useful than another announcement about an AI par</description>
     </item>
     <item>
       <title>Microsoft cut 4,800 jobs while rebuilding how it sells AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</guid>
+      <link>https://blog.samcbarth.com/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsoft-cut-4-800-jobs-while-rebuilding-how-it-sells-ai/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Microsoft eliminated about 4,800 roles this week, roughly 2.1% of its workforce. The number matters. The reason matters more. The cuts landed mostly in Microsoft&apos;s commercial and Xbox organizations while the company is rebuilding its commercial business around AI deployment. That</description>
     </item>
     <item>
       <title>Microsoft&apos;s AI report is really a workflow redesign story</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</guid>
+      <link>https://blog.samcbarth.com/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsofts-ai-report-is-really-a-workflow-redesign-story/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Microsoft&apos;s July 9 Swiss AI note and the linked 2026 Work Trend Index Annual Report say the same thing in different words. AI value does not come from stacking on more tools. It comes from changing how work gets done. The numbers are the useful part. 65% of Swiss AI users say the</description>
     </item>
     <item>
-      <title>IBM Bob is the workflow control story</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-workflow-control-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-workflow-control-story/</guid>
-      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>IBM&apos;s July 9 Bob update is not about a better autocomplete box. It is IBM trying to sell control over how enterprise software gets written, checked, and modernized. The company says the bottleneck has moved from writing code to reviewing and validating it. That is the real shift.</description>
-    </item>
-    <item>
       <title>Crusoe is selling an exit door with its AI cloud</title>
-      <link>https://samcbarth.github.io/aisite/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</guid>
+      <link>https://blog.samcbarth.com/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/crusoe-is-selling-an-exit-door-with-its-ai-cloud/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Crusoe launched serverless fine-tuning and self-serve inference on July 7 . The interesting part is not that another cloud can customize an open model. It is that Crusoe is trying to make the managed experience easier without taking ownership of the model away from the customer. </description>
     </item>
     <item>
       <title>Lumen is buying control of the AI network</title>
-      <link>https://samcbarth.github.io/aisite/posts/lumen-is-buying-control-of-the-ai-network/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/lumen-is-buying-control-of-the-ai-network/</guid>
+      <link>https://blog.samcbarth.com/posts/lumen-is-buying-control-of-the-ai-network/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/lumen-is-buying-control-of-the-ai-network/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Lumen completed its acquisition of Alkira on July 7 . The useful part is not another company attaching AI to a press release. Lumen owns a large fiber network. Alkira gives it software that can control how traffic moves across clouds, data centers, partners, and AI workloads. Tha</description>
     </item>
     <item>
       <title>Deutsche Telekom is the real AI-native story</title>
-      <link>https://samcbarth.github.io/aisite/posts/deutsche-telekom-is-the-real-ai-native-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/deutsche-telekom-is-the-real-ai-native-story/</guid>
+      <link>https://blog.samcbarth.com/posts/deutsche-telekom-is-the-real-ai-native-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/deutsche-telekom-is-the-real-ai-native-story/</guid>
       <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>OpenAI&apos;s July 10 Deutsche Telekom writeup is not a chatbot story. It is an operating-model story. Deutsche Telekom is trying to become AI-native, and that is the right frame. The real point is not the model. It is where the work moves. OpenAI says it is bringing AI directly into </description>
     </item>
     <item>
       <title>Microsoft&apos;s Cobalt 200 is really a cloud economics story</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</guid>
+      <link>https://blog.samcbarth.com/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsofts-cobalt-200-is-really-a-cloud-economics-story/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Microsoft&apos;s Cobalt 200 is not just another chip announcement. It is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again. Microsoft says &quot;AI alone won’t change your business. The system running it will.&quot; That is the right frame. The system no</description>
+      <category>AI Cost &amp; Infrastructure</category>
+      <description>Microsoft&apos;s Cobalt 200 is Microsoft saying agentic AI is turning cloud buying into a price-performance problem again. Microsoft says &quot;AI alone won’t change your business. The system running it will.&quot; That is the right frame. The system now includes the CPUs, the servers, the netw</description>
     </item>
     <item>
       <title>Cloudflare&apos;s Meerkat is really a control-plane story</title>
-      <link>https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/cloudflares-meerkat-is-really-a-control-plane-story/</guid>
+      <link>https://blog.samcbarth.com/posts/cloudflares-meerkat-is-really-a-control-plane-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/cloudflares-meerkat-is-really-a-control-plane-story/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Cloudflare&apos;s Meerkat is not a shiny product launch. It is Cloudflare saying its control plane has become too important to leave on a leader-and-timeout setup. Cloudflare says the service is needed because internal systems across its 330+ data centers have to read and modify the s</description>
     </item>
     <item>
-      <title>Microsoft&apos;s annual cloud pricing update is really a budgeting story</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsofts-annual-cloud-pricing-update-is-really-a-budgeting-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-annual-cloud-pricing-update-is-really-a-budgeting-story/</guid>
-      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Microsoft&apos;s annual cloud pricing update is not just currency housekeeping. It is Microsoft telling finance teams that cloud spend now needs a calendar. Microsoft says it will move to annual local currency pricing updates every January because it wants &quot;greater pricing predictabil</description>
-    </item>
-    <item>
-      <title>Meta&apos;s Alberta data center is really a power and policy story</title>
-      <link>https://samcbarth.github.io/aisite/posts/metas-alberta-data-center-is-really-a-power-and-policy-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/metas-alberta-data-center-is-really-a-power-and-policy-story/</guid>
-      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Meta&apos;s Alberta data center is not just a capacity announcement. It is Meta saying AI now lives or dies on power, permitting, and site control. Meta says the site will &quot;help power our AI innovations and core products.&quot; It is also a 1GW, AI-optimized data center in Sturgeon County,</description>
-    </item>
-    <item>
       <title>Google&apos;s bid update is really a budget control story</title>
-      <link>https://samcbarth.github.io/aisite/posts/googles-bid-update-is-really-a-budget-control-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/googles-bid-update-is-really-a-budget-control-story/</guid>
+      <link>https://blog.samcbarth.com/posts/googles-bid-update-is-really-a-budget-control-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/googles-bid-update-is-really-a-budget-control-story/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>Business &amp; Markets</category>
       <description>Google&apos;s bid update is not a small settings tweak. It is Google telling advertisers that target CPA and target ROAS need tighter discipline when budgets move. Google says the change will make bidding systems deliver &quot;more consistent and predictable performance&quot; based on the targe</description>
     </item>
     <item>
       <title>Meta&apos;s Muse Image is really a monetization story</title>
-      <link>https://samcbarth.github.io/aisite/posts/metas-muse-image-is-really-a-monetization-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/metas-muse-image-is-really-a-monetization-story/</guid>
+      <link>https://blog.samcbarth.com/posts/metas-muse-image-is-really-a-monetization-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/metas-muse-image-is-really-a-monetization-story/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Meta&apos;s Muse Image is not just another AI feature. It is Meta trying to own the part of image generation that turns ideas into posts, ads, and product work people actually use. Meta says Muse Image is &quot;the first image generation model from Meta Superintelligence Labs, now availabl</description>
     </item>
     <item>
       <title>Meta&apos;s Business Agent is really a service business story</title>
-      <link>https://samcbarth.github.io/aisite/posts/metas-business-agent-is-really-a-service-business-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/metas-business-agent-is-really-a-service-business-story/</guid>
+      <link>https://blog.samcbarth.com/posts/metas-business-agent-is-really-a-service-business-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/metas-business-agent-is-really-a-service-business-story/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Meta&apos;s Business Agent is not really a chatbot launch. It is Meta trying to package first-line customer work as a product. The company says it can be set up in minutes or plugged directly into existing enterprise infrastructure so you can &quot;10X or 100X output.&quot; That is a service bu</description>
     </item>
     <item>
-      <title>Microsoft&apos;s Frontier Company is the AI install phase</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-ai-install-phase/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-ai-install-phase/</guid>
-      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Microsoft&apos;s Frontier Company is not a normal product launch. It is Microsoft admitting the hard part of AI is now installation. Microsoft says it is putting $2.5 billion into the effort and embedding more than 6,000 industry and engineering experts inside customer organizations. </description>
-    </item>
-    <item>
       <title>IBM and OpenAI&apos;s cyber deal is really about control</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-and-openais-cyber-deal-is-really-about-control/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-openais-cyber-deal-is-really-about-control/</guid>
+      <link>https://blog.samcbarth.com/posts/ibm-and-openais-cyber-deal-is-really-about-control/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ibm-and-openais-cyber-deal-is-really-about-control/</guid>
       <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>Security &amp; Governance</category>
       <description>IBM and OpenAI&apos;s cyber deal is not really about model bragging rights. It is about whether enterprise security can move faster without giving up control. IBM says it has launched a new application security service that uses OpenAI&apos;s cyber capabilities to help organizations identi</description>
     </item>
     <item>
-      <title>SAP&apos;s Dremio deal is really a data context play</title>
-      <link>https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/saps-dremio-deal-is-really-a-data-context-play/</guid>
-      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>SAP buying Dremio is not really a headline about M&amp;amp;A. It is a headline about the part of enterprise AI most teams still skip: the data layer. SAP says the deal is meant to accelerate agentic AI and combine SAP and non-SAP data in real time. That is the right problem. Most AI </description>
-    </item>
-    <item>
       <title>OpenAI&apos;s partner network is the real enterprise AI channel</title>
-      <link>https://samcbarth.github.io/aisite/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</guid>
+      <link>https://blog.samcbarth.com/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openais-partner-network-is-the-real-enterprise-ai-channel/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>OpenAI&apos;s partner network is the part of this week&apos;s news I would watch. It says the company knows enterprise AI is no longer just a model problem. It is a delivery problem. OpenAI says the limiting factor is not model capability anymore. The harder work is finding the right use c</description>
     </item>
     <item>
-      <title>IBM Bob is the real enterprise AI development story</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-real-enterprise-ai-development-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-bob-is-the-real-enterprise-ai-development-story/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>IBM Bob is not a coding toy. It is IBM trying to sell enterprise AI around the part of software work that actually costs money: review, validation, modernization, and cleanup. IBM says the bottleneck has moved from writing code to reviewing and validating it. That is the right pr</description>
-    </item>
-    <item>
-      <title>ChatGPT Work is the real workflow shift</title>
-      <link>https://samcbarth.github.io/aisite/posts/chatgpt-work-is-the-real-workflow-shift/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/chatgpt-work-is-the-real-workflow-shift/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>OpenAI&apos;s July 9 ChatGPT Work announcement is not a chatbot story. It is a workflow story. The company is trying to move the product from answering questions to finishing repeatable work across the apps and files people already use. That is why the pitch matters. OpenAI says ChatG</description>
-    </item>
-    <item>
-      <title>GPT-5.6 is a price-per-task story</title>
-      <link>https://samcbarth.github.io/aisite/posts/gpt-5-6-is-a-price-per-task-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/gpt-5-6-is-a-price-per-task-story/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>GPT-5.6 is not really a hype story. It is a cost story. OpenAI and Microsoft are both pushing the same idea: the win is more useful work for the same spend. OpenAI said GPT-5.6 brings &quot;more intelligence from every token&quot; . That is the right lens. The company also split the family</description>
-    </item>
-    <item>
-      <title>IBM and Red Hat are turning open source security into an AI business</title>
-      <link>https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-are-turning-open-source-security-into-an-ai-business/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ibm-and-red-hat-are-turning-open-source-security-into-an-ai-business/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>AI makes code faster. That is not the hard part anymore. The hard part is making sure the code can be trusted, patched, and shipped without breaking the system around it. IBM and Red Hat said on July 8 they are commercializing Lightwell, which starts with automated vulnerability </description>
-    </item>
-    <item>
       <title>Microsoft&apos;s Frontier Company is the real AI services story</title>
-      <link>https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-real-ai-services-story/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/microsofts-frontier-company-is-the-real-ai-services-story/</guid>
+      <link>https://blog.samcbarth.com/posts/microsofts-frontier-company-is-the-real-ai-services-story/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/microsofts-frontier-company-is-the-real-ai-services-story/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Adoption</category>
       <description>Microsoft&apos;s Frontier Company is not a normal product launch. It is Microsoft admitting that enterprise AI now needs people inside the customer workflow, not just another model to test. In its July 2 announcement , Microsoft said it is making a $2.5 billion investment and embeddin</description>
     </item>
     <item>
       <title>OpenAI and Broadcom are pulling AI economics in-house</title>
-      <link>https://samcbarth.github.io/aisite/posts/openai-and-broadcom-are-pulling-ai-economics-in-house/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openai-and-broadcom-are-pulling-ai-economics-in-house/</guid>
+      <link>https://blog.samcbarth.com/posts/openai-and-broadcom-are-pulling-ai-economics-in-house/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openai-and-broadcom-are-pulling-ai-economics-in-house/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>OpenAI and Broadcom said on June 24 that they are building Jalapeño, OpenAI&apos;s first Intelligence Processor, for LLM inference. That is the part that matters. It is not just a faster chip. It is OpenAI pushing deeper into the infrastructure underneath ChatGPT, Codex, and the API. </description>
-    </item>
-    <item>
-      <title>Streaming changed movies, and theaters are rewarding smaller bets</title>
-      <link>https://samcbarth.github.io/aisite/posts/streaming-changed-movies-and-theaters-are-rewarding-smaller-bets/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/streaming-changed-movies-and-theaters-are-rewarding-smaller-bets/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Streaming changed movies. It did not kill them. It just changed what people will show up for, what they will wait to watch at home, and what kind of movie can still feel like a win. Netflix is still a big part of that story. In its Q1 2026 shareholder letter , the company said re</description>
+      <category>AI Cost &amp; Infrastructure</category>
+      <description>OpenAI and Broadcom said on June 24 that they are building Jalapeño, OpenAI&apos;s first Intelligence Processor, for LLM inference. That is the part that matters. It is OpenAI pushing deeper into the infrastructure underneath ChatGPT, Codex, and the API. OpenAI said the chip is &quot;to be</description>
     </item>
     <item>
       <title>RAM prices are turning into an electronics problem</title>
-      <link>https://samcbarth.github.io/aisite/posts/ram-prices-are-turning-into-an-electronics-problem/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ram-prices-are-turning-into-an-electronics-problem/</guid>
+      <link>https://blog.samcbarth.com/posts/ram-prices-are-turning-into-an-electronics-problem/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ram-prices-are-turning-into-an-electronics-problem/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>RAM is not just getting annoying. It is getting expensive in a way that can spill into phones, laptops, PCs, and anything else that needs memory to work. Reuters reported on a global memory shortage forcing AI and consumer-electronics companies to fight for supply, with some segm</description>
     </item>
     <item>
-      <title>The Xbox and Sony layoffs show why AAA gaming feels broken</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-xbox-and-sony-layoffs-show-why-aaa-gaming-feels-broken/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-xbox-and-sony-layoffs-show-why-aaa-gaming-feels-broken/</guid>
-      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Xbox announced one of the most significant restructures in its history, with about 3,200 roles being reduced through FY27 and four studios leaving Xbox to new management. Microsoft also said it is eliminating around 4,800 roles overall, with the changes mostly falling within Comm</description>
-    </item>
-    <item>
-      <title>HubSpot&apos;s enrichment backlash is really about first-party data trust</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-enrichment-backlash-is-really-about-first-party-data-trust/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-enrichment-backlash-is-really-about-first-party-data-trust/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
-      <description>HubSpot&apos;s data enrichment backlash was not really about one feature. It was about who people think owns the data once it lives in the CRM. That is why the reaction got loud so fast. If you run CRM the right way, first-party data is the asset. Notes, deals, lifecycle stages, call </description>
-    </item>
-    <item>
-      <title>The World Cup is at its best when the fans matter more than FIFA&apos;s money</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-world-cup-is-at-its-best-when-the-fans-matter-more-than-fifas-money/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-world-cup-is-at-its-best-when-the-fans-matter-more-than-fifas-money/</guid>
-      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>One of my favorite stories around this World Cup has nothing to do with a score. It is seeing international soccer fans travel across North America and get genuinely excited about the food. The Associated Press reported on fans trying local food across the United States, Canada, </description>
-    </item>
-    <item>
       <title>Qualification, research, and AEO are how AI becomes normal business</title>
-      <link>https://samcbarth.github.io/aisite/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</guid>
+      <link>https://blog.samcbarth.com/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/qualification-research-and-aeo-are-how-ai-becomes-normal-business/</guid>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
-      <category>RevOps</category>
+      <category>RevOps &amp; Ops</category>
       <description>Harvard Business Review looked at how three small and midsize businesses , including a manufacturer, a boutique hotel, and a B2B software company, are adapting as AI changes how customers research, evaluate, and choose suppliers. I agree with the larger point, but what stands out</description>
     </item>
     <item>
-      <title>Sony executives selling stock makes the Bungie layoffs look even worse</title>
-      <link>https://samcbarth.github.io/aisite/posts/sony-executives-selling-stock-makes-the-bungie-layoffs-look-even-worse/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/sony-executives-selling-stock-makes-the-bungie-layoffs-look-even-worse/</guid>
-      <pubDate>Wed, 08 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Sony&apos;s executive stock sales are a bad look, especially when you put them next to what just happened at Bungie. Sony President and CEO Hiroki Totoki disclosed that he sold 225,000 Sony shares on July 3 at $21.02 per share. That comes out to about $4.73 million. The part that stan</description>
-    </item>
-    <item>
       <title>HubSpot&apos;s data enrichment reversal is really a trust problem</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-data-enrichment-reversal-is-really-a-trust-problem/</guid>
       <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
+      <category>HubSpot &amp; CRM</category>
       <description>HubSpot reversed its planned data enrichment terms change after a pretty loud customer backlash, especially on LinkedIn. Duncan Lennox, HubSpot&apos;s Chief Product and Technology Officer, said they got it wrong and would not move forward with the terms of service changes communicated</description>
     </item>
     <item>
-      <title>Trump&apos;s $2.2 billion year is a public trust problem</title>
-      <link>https://samcbarth.github.io/aisite/posts/trumps-2-2-billion-year-is-a-public-trust-problem/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/trumps-2-2-billion-year-is-a-public-trust-problem/</guid>
-      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>The Wall Street Journal reported that President Donald Trump&apos;s personal income rose to more than $2.2 billion in the first year of his second term, with a huge portion of that tied to crypto ventures, licensing, investments, and his broader business holdings. A New York Times rep</description>
-    </item>
-    <item>
-      <title>SpaceX in retirement accounts is where the hype gets personal</title>
-      <link>https://samcbarth.github.io/aisite/posts/spacex-in-retirement-accounts-is-where-the-hype-gets-personal/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/spacex-in-retirement-accounts-is-where-the-hype-gets-personal/</guid>
-      <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>The Guardian reported that the SpaceX story is starting to reach retirement savings, and that is where the whole thing gets more personal. Once a company becomes something index funds and 401(k)s have to carry, the risk stops being a billionaire game and starts touching ordinary </description>
-    </item>
-    <item>
       <title>Apple&apos;s price hike warning shows the AI boom is reaching consumers</title>
-      <link>https://samcbarth.github.io/aisite/posts/apples-price-hike-warning-shows-the-ai-boom-is-reaching-consumers/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/apples-price-hike-warning-shows-the-ai-boom-is-reaching-consumers/</guid>
+      <link>https://blog.samcbarth.com/posts/apples-price-hike-warning-shows-the-ai-boom-is-reaching-consumers/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/apples-price-hike-warning-shows-the-ai-boom-is-reaching-consumers/</guid>
       <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Al Jazeera reported that Tim Cook says price increases for some Apple products are unavoidable because the AI boom is driving memory and storage costs higher. That is the part of the story that should make people pause. I think this is where the AI boom stops being abstract. Peop</description>
     </item>
     <item>
-      <title>The memory crunch is the part of the AI boom people are ignoring</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-memory-crunch-is-the-part-of-the-ai-boom-people-are-ignoring/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-memory-crunch-is-the-part-of-the-ai-boom-people-are-ignoring/</guid>
-      <pubDate>Wed, 17 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
-      <description>Euronews reported that the AI-driven memory crunch is already pushing hardware costs higher. That is the hidden constraint most people skip over when they talk about AI as if it is only a software story. I think this is the real pressure point. Everyone wants to focus on the mode</description>
-    </item>
-    <item>
       <title>The pushback against data centers is the real AI story now</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-pushback-against-data-centers-is-the-real-ai-story-now/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-pushback-against-data-centers-is-the-real-ai-story-now/</guid>
+      <link>https://blog.samcbarth.com/posts/the-pushback-against-data-centers-is-the-real-ai-story-now/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-pushback-against-data-centers-is-the-real-ai-story-now/</guid>
       <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Business Insider reported that communities are pushing back on data centers and winning some of those fights. I think that is the next phase of the AI infrastructure story. For a while, the industry acted like these projects could just show up anywhere and everyone would call it </description>
     </item>
     <item>
-      <title>The mega-IPO wave is what happens when the market gets crowded with hype</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-mega-ipo-wave-is-what-happens-when-the-market-gets-crowded-with-hype/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-mega-ipo-wave-is-what-happens-when-the-market-gets-crowded-with-hype/</guid>
-      <pubDate>Mon, 15 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Business Insider reported that trader Ed Elson is bearish on the coming mega-IPO wave, including SpaceX, OpenAI, Anthropic, and other big names. I think that is the part worth paying attention to. When too many giant stories hit the market at the same time, the market stops rewar</description>
-    </item>
-    <item>
       <title>Anthropic&apos;s compute deal shows AI is turning into balance-sheet infrastructure</title>
-      <link>https://samcbarth.github.io/aisite/posts/anthropics-compute-deal-shows-ai-is-turning-into-balance-sheet-infrastructure/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/anthropics-compute-deal-shows-ai-is-turning-into-balance-sheet-infrastructure/</guid>
+      <link>https://blog.samcbarth.com/posts/anthropics-compute-deal-shows-ai-is-turning-into-balance-sheet-infrastructure/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/anthropics-compute-deal-shows-ai-is-turning-into-balance-sheet-infrastructure/</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Apollo announced a $35 billion capital solution with Blackstone and Broadcom tied to AI compute infrastructure. That is a very different kind of AI story than a model launch or a product demo. This is AI being financed like infrastructure. I think that is the part worth paying at</description>
     </item>
     <item>
       <title>Amazon&apos;s new AI loan makes the spending story impossible to ignore</title>
-      <link>https://samcbarth.github.io/aisite/posts/amazons-new-ai-loan-makes-the-spending-story-impossible-to-ignore/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/amazons-new-ai-loan-makes-the-spending-story-impossible-to-ignore/</guid>
+      <link>https://blog.samcbarth.com/posts/amazons-new-ai-loan-makes-the-spending-story-impossible-to-ignore/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/amazons-new-ai-loan-makes-the-spending-story-impossible-to-ignore/</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>TechCrunch reported that Amazon has lined up another $17.5 billion loan tied to its AI expansion. That is the kind of number that makes it hard to keep treating AI spending like a normal tech investment cycle. Amazon has a real business underneath this. AWS is not some speculativ</description>
     </item>
     <item>
       <title>Texas telling data centers to pay their own way is where this gets real</title>
-      <link>https://samcbarth.github.io/aisite/posts/texas-telling-data-centers-to-pay-their-own-way-is-where-this-gets-real/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/texas-telling-data-centers-to-pay-their-own-way-is-where-this-gets-real/</guid>
+      <link>https://blog.samcbarth.com/posts/texas-telling-data-centers-to-pay-their-own-way-is-where-this-gets-real/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/texas-telling-data-centers-to-pay-their-own-way-is-where-this-gets-real/</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Business Insider reported that Texas Governor Greg Abbott wants data centers to pay more of their own way when it comes to power, water, and infrastructure. That is a big signal because Texas is not exactly known for being hostile to business. This is where the data center story </description>
     </item>
     <item>
       <title>OpenAI&apos;s data center influence warning shows the AI fight is bigger than zoning</title>
-      <link>https://samcbarth.github.io/aisite/posts/openais-data-center-influence-warning-shows-the-ai-fight-is-bigger-than-zoning/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/openais-data-center-influence-warning-shows-the-ai-fight-is-bigger-than-zoning/</guid>
+      <link>https://blog.samcbarth.com/posts/openais-data-center-influence-warning-shows-the-ai-fight-is-bigger-than-zoning/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/openais-data-center-influence-warning-shows-the-ai-fight-is-bigger-than-zoning/</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Business Insider reported that OpenAI disrupted a suspected China-linked influence operation trying to shape the conversation around US data centers. That is a strange story on the surface, but it makes sense once you think about where the AI race is heading. Data centers are no </description>
     </item>
     <item>
       <title>HubSpot&apos;s agentic AI bet is really about whether CRM becomes the operating layer</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-agentic-ai-bet-is-really-about-whether-crm-becomes-the-operating-layer/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-agentic-ai-bet-is-really-about-whether-crm-becomes-the-operating-layer/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspots-agentic-ai-bet-is-really-about-whether-crm-becomes-the-operating-layer/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-agentic-ai-bet-is-really-about-whether-crm-becomes-the-operating-layer/</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
+      <category>HubSpot &amp; CRM</category>
       <description>Fast Slow Motion&apos;s guide to agentic AI in HubSpot gets at the real question for CRM right now: can the CRM become the operating layer for the business, or is it still just the place where teams log activity after the real work happens somewhere else? That is why I think HubSpot&apos;s</description>
     </item>
     <item>
       <title>Wall Street is flooding the hyperscalers with cash, but the real bill is still ahead</title>
-      <link>https://samcbarth.github.io/aisite/posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/</guid>
+      <link>https://blog.samcbarth.com/posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/wall-street-is-flooding-the-hyperscalers-with-cash-but-the-real-bill-is-still-ahead/</guid>
       <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>The Financial Times reported that AI demand is driving a record wave of power and utility dealmaking. I think the hyperscaler investment story is one of the hardest ones to read right now, because the numbers are so large that they almost stop meaning anything on first pass. When</description>
     </item>
     <item>
       <title>HubSpot&apos;s new AI pricing makes the product story feel more real</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-new-ai-pricing-makes-the-product-story-feel-more-real/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-new-ai-pricing-makes-the-product-story-feel-more-real/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspots-new-ai-pricing-makes-the-product-story-feel-more-real/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-new-ai-pricing-makes-the-product-story-feel-more-real/</guid>
       <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
-      <description>The interesting part of HubSpot&apos;s Customer Agent and Prospecting Agent announcement is not just that they exist. It is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful. Instead of treating these like shiny add-ons, HubSpot</description>
+      <category>HubSpot &amp; CRM</category>
+      <description>The interesting part of HubSpot&apos;s Customer Agent and Prospecting Agent announcement is the way HubSpot is pricing them. That tells you a lot about where the company thinks AI is actually useful. Instead of treating these like shiny add-ons, HubSpot is tying them to outcomes. That</description>
     </item>
     <item>
       <title>HubSpot&apos;s Spring 2026 Spotlight is all about making AI actually useful</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-spring-2026-spotlight-is-all-about-making-ai-actually-useful/</guid>
       <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
+      <category>HubSpot &amp; CRM</category>
       <description>HubSpot&apos;s Spring 2026 Spotlight reads like a company trying to make one very clear point: AI is only helpful if it knows enough about the business to do something useful with it. That is what I think makes this release more interesting than a normal product update. It is not just</description>
     </item>
     <item>
-      <title>SpaceX&apos;s IPO story is really a story about what the market will pay for momentum</title>
-      <link>https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/spacexs-ipo-story-is-really-a-story-about-what-the-market-will-pay-for-momentum/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>My actual take on the SpaceX IPO story is simple. SpaceX is a good company. I do think that. But I also think the company is being tied into a much bigger Elon Musk story, and that whole package is being used to chase a trillion-dollar valuation. The SpaceX filing makes the ambit</description>
-    </item>
-    <item>
       <title>Oracle&apos;s AI infrastructure rally is about to meet the real world</title>
-      <link>https://samcbarth.github.io/aisite/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</guid>
+      <link>https://blog.samcbarth.com/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/oracles-ai-infrastructure-rally-is-about-to-meet-the-real-world/</guid>
       <pubDate>Sat, 06 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Oracle has clearly benefited from the AI infrastructure trade, and I understand why investors have been willing to reward that story. The market loves a clean narrative, and right now the narrative is simple: build data centers, support the AI buildout, and let the demand follow.</description>
     </item>
     <item>
       <title>Stargate is the clearest sign that AI is now a utility-scale business</title>
-      <link>https://samcbarth.github.io/aisite/posts/stargate-is-the-clearest-sign-that-ai-is-now-a-utility-scale-business/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/stargate-is-the-clearest-sign-that-ai-is-now-a-utility-scale-business/</guid>
+      <link>https://blog.samcbarth.com/posts/stargate-is-the-clearest-sign-that-ai-is-now-a-utility-scale-business/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/stargate-is-the-clearest-sign-that-ai-is-now-a-utility-scale-business/</guid>
       <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>OpenAI, Oracle, and SoftBank&apos;s five-site Stargate expansion is what happens when an AI story stops being about features and starts being about infrastructure. Once you get to five new data centers, you are not talking about software anymore. You are talking about land, power, per</description>
     </item>
     <item>
       <title>The AI data center boom is running into a political problem</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-ai-data-center-boom-is-running-into-a-political-problem/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-ai-data-center-boom-is-running-into-a-political-problem/</guid>
+      <link>https://blog.samcbarth.com/posts/the-ai-data-center-boom-is-running-into-a-political-problem/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-ai-data-center-boom-is-running-into-a-political-problem/</guid>
       <pubDate>Wed, 03 Jun 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>I think one of the biggest changes in the AI story right now is that communities are no longer reacting like they did at the beginning of the boom. Business Insider has tracked how data center opposition is showing up around the country. People have seen what these projects can d</description>
     </item>
     <item>
       <title>China&apos;s space-based AI plan says a lot about where this race is headed</title>
-      <link>https://samcbarth.github.io/aisite/posts/chinas-space-based-ai-plan-says-a-lot-about-where-this-race-is-headed/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/chinas-space-based-ai-plan-says-a-lot-about-where-this-race-is-headed/</guid>
+      <link>https://blog.samcbarth.com/posts/chinas-space-based-ai-plan-says-a-lot-about-where-this-race-is-headed/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/chinas-space-based-ai-plan-says-a-lot-about-where-this-race-is-headed/</guid>
       <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>I do not think space-based AI data centers are the near-term answer for most companies. But I do think the idea says a lot about where the competition is heading. Tom&apos;s Hardware reported on China&apos;s push toward orbiting AI data centers, and when people start talking seriously abou</description>
     </item>
     <item>
       <title>The most valuable AI use case isn&apos;t a product. It&apos;s a personal tool.</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-most-valuable-ai-use-case-isnt-a-product-its-a-personal-tool/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-most-valuable-ai-use-case-isnt-a-product-its-a-personal-tool/</guid>
+      <link>https://blog.samcbarth.com/posts/the-most-valuable-ai-use-case-isnt-a-product-its-a-personal-tool/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-most-valuable-ai-use-case-isnt-a-product-its-a-personal-tool/</guid>
       <pubDate>Sun, 31 May 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Adoption</category>
       <description>There is a version of AI that gets a lot of attention and a version that does not. The one that gets the attention is commercial: AI copilots, AI add-ons, AI agents that companies can license. The one that does not is quieter and, honestly, more genuinely useful. It is people bui</description>
     </item>
     <item>
-      <title>The Bricks &amp; Minifigs Lego mess is a resale-business problem waiting to happen</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-bricks-minifigs-lego-mess-is-a-resale-business-problem-waiting-to-happen/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-bricks-minifigs-lego-mess-is-a-resale-business-problem-waiting-to-happen/</guid>
-      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>There is a serious trust issue in the Bricks &amp; Minifigs story . Once a resale business takes custody of somebody else&apos;s inventory, the business is responsible for protecting both the items and the expectation around them. That is where this gets messy. Franchise changes, weak pap</description>
-    </item>
-    <item>
-      <title>Costco&apos;s gas boom is a lesson in leveraging a great core business</title>
-      <link>https://samcbarth.github.io/aisite/posts/costcos-gas-boom-is-a-lesson-in-leveraging-a-great-core-business/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/costcos-gas-boom-is-a-lesson-in-leveraging-a-great-core-business/</guid>
-      <pubDate>Wed, 27 May 2026 12:00:00 GMT</pubDate>
-      <category>Business Strategy</category>
-      <description>Costco&apos;s gas business works because it reinforces the membership model. The cheap gas is not separate from the warehouse business. It is part of why people keep showing up. That is the point I keep coming back to. A strong core business gives you room to build adjacent economics </description>
-    </item>
-    <item>
       <title>Dell&apos;s best day ever tells you where enterprise AI is actually going</title>
-      <link>https://samcbarth.github.io/aisite/posts/dells-best-day-ever-tells-you-where-enterprise-ai-is-actually-going/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/dells-best-day-ever-tells-you-where-enterprise-ai-is-actually-going/</guid>
+      <link>https://blog.samcbarth.com/posts/dells-best-day-ever-tells-you-where-enterprise-ai-is-actually-going/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/dells-best-day-ever-tells-you-where-enterprise-ai-is-actually-going/</guid>
       <pubDate>Mon, 25 May 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Dell&apos;s AI infrastructure story explains why the market reacted so strongly. Dell&apos;s stock had its best single day ever on Thursday - up 32%. The reason: AI server revenue. Not AI features. Not AI announcements. Not a partnership press release. Actual infrastructure revenue from en</description>
     </item>
     <item>
       <title>Samsung just promised $400K bonuses. That&apos;s an AI story too.</title>
-      <link>https://samcbarth.github.io/aisite/posts/samsung-just-promised-400k-bonuses-thats-an-ai-story-too/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/samsung-just-promised-400k-bonuses-thats-an-ai-story-too/</guid>
+      <link>https://blog.samcbarth.com/posts/samsung-just-promised-400k-bonuses-thats-an-ai-story-too/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/samsung-just-promised-400k-bonuses-thats-an-ai-story-too/</guid>
       <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
-      <category>RevOps</category>
+      <category>AI Cost &amp; Infrastructure</category>
       <description>Samsung Electronics&apos; profit-sharing deal could pay semiconductor workers average bonuses of nearly $400,000. The agreement runs ten years and allocates 10.5% of the semiconductor division&apos;s operating profit directly to employees. That&apos;s a significant number. And it&apos;s an interesti</description>
     </item>
     <item>
       <title>AI is making cybersecurity harder - and that&apos;s a GTM problem too</title>
-      <link>https://samcbarth.github.io/aisite/posts/ai-is-making-cybersecurity-harder-and-thats-a-gtm-problem-too/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/ai-is-making-cybersecurity-harder-and-thats-a-gtm-problem-too/</guid>
+      <link>https://blog.samcbarth.com/posts/ai-is-making-cybersecurity-harder-and-thats-a-gtm-problem-too/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/ai-is-making-cybersecurity-harder-and-thats-a-gtm-problem-too/</guid>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>Security &amp; Governance</category>
       <description>CrowdStrike&apos;s AI security comments point to a warning worth paying attention to: AI cybersecurity tools are approaching the point where they will outpace human researchers at finding vulnerabilities. AI systems are already accelerating how fast security flaws get discovered - on </description>
     </item>
     <item>
       <title>Where AI actually falls apart</title>
-      <link>https://samcbarth.github.io/aisite/posts/where-ai-actually-falls-apart/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/where-ai-actually-falls-apart/</guid>
+      <link>https://blog.samcbarth.com/posts/where-ai-actually-falls-apart/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/where-ai-actually-falls-apart/</guid>
       <pubDate>Wed, 20 May 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
+      <category>AI Adoption</category>
       <description>I&apos;ve been testing Claude, Claude Co-Work, and Claude Dispatch to see how much of my own workload I can actually hand off. The answer is: some of it, but not the parts that depend on memory, state, or judgment. That is where AI falls apart. It can look persistent and helpful, but </description>
     </item>
     <item>
       <title>The shift from &quot;AI tools&quot; to AI with actual business context</title>
-      <link>https://samcbarth.github.io/aisite/posts/the-shift-from-ai-tools-to-ai-with-actual-business-context/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/the-shift-from-ai-tools-to-ai-with-actual-business-context/</guid>
+      <link>https://blog.samcbarth.com/posts/the-shift-from-ai-tools-to-ai-with-actual-business-context/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/the-shift-from-ai-tools-to-ai-with-actual-business-context/</guid>
       <pubDate>Mon, 18 May 2026 12:00:00 GMT</pubDate>
-      <category>CRM Strategy</category>
+      <category>HubSpot &amp; CRM</category>
       <description>One thing I&apos;m watching closely in the HubSpot ecosystem right now is the shift from &quot;AI tools&quot; to AI with actual business context. HubSpot&apos;s recent Spring Spotlight updates around AEO, AI agents, and contextual CRM data feel less like simple AI features and more like the beginnin</description>
     </item>
     <item>
       <title>HubSpot vs. Salesforce: two very different bets on AI agents</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspot-vs-salesforce-two-very-different-bets-on-ai-agents/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspot-vs-salesforce-two-very-different-bets-on-ai-agents/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspot-vs-salesforce-two-very-different-bets-on-ai-agents/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspot-vs-salesforce-two-very-different-bets-on-ai-agents/</guid>
       <pubDate>Sat, 16 May 2026 12:00:00 GMT</pubDate>
-      <category>HubSpot</category>
+      <category>HubSpot &amp; CRM</category>
       <description>Salesforce has been loud about what AI means for their workforce. Marc Benioff said they would not hire new engineers this year because AI is doing the work. They&apos;ve since cut 4,000 customer service roles. The message is pretty clear: agents in, people out. HubSpot is taking a di</description>
     </item>
     <item>
       <title>HubSpot&apos;s AI push is a signal every RevOps team should read</title>
-      <link>https://samcbarth.github.io/aisite/posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/</guid>
+      <link>https://blog.samcbarth.com/posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/hubspots-ai-push-is-a-signal-every-revops-team-should-read/</guid>
       <pubDate>Fri, 15 May 2026 12:00:00 GMT</pubDate>
-      <category>RevOps</category>
+      <category>HubSpot &amp; CRM</category>
       <description>HubSpot continuing to invest into AI-powered automation is a reminder that CRM platforms are turning into operational systems, not just databases of record. For RevOps teams, this matters. The tools are getting smarter, but the strategy still has to come from people who understan</description>
     </item>
     <item>
-      <title>Site is live, built and deployed with AI</title>
-      <link>https://samcbarth.github.io/aisite/posts/site-is-live-built-and-deployed-with-ai/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/site-is-live-built-and-deployed-with-ai/</guid>
-      <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
-      <category>AI &amp; Automation</category>
-      <description>I built this entire site using Claude Code , Anthropic&apos;s AI coding tool. Start to finish: under an hour. GitHub repo, GitHub Pages deployment, custom workflow, all of it. The workflow is simple: describe what you want, review the output, push. No boilerplate hunting, no getting l</description>
-    </item>
-    <item>
       <title>What 10 years in marketing ops actually teaches you</title>
-      <link>https://samcbarth.github.io/aisite/posts/what-10-years-in-marketing-ops-actually-teaches-you/</link>
-      <guid isPermaLink="false">https://samcbarth.github.io/aisite/posts/what-10-years-in-marketing-ops-actually-teaches-you/</guid>
+      <link>https://blog.samcbarth.com/posts/what-10-years-in-marketing-ops-actually-teaches-you/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/what-10-years-in-marketing-ops-actually-teaches-you/</guid>
       <pubDate>Tue, 12 May 2026 12:00:00 GMT</pubDate>
-      <category>Marketing Ops</category>
+      <category>RevOps &amp; Ops</category>
       <description>I&apos;ve spent over 10 years helping organizations market themselves online through SamCBarth.com : generating leads, tracking attribution, managing CRMs, and turning raw data into reporting that actually drives decisions. The answer is always the same: garbage in, garbage out. The b</description>
     </item>
   </channel>

@@ -24,6 +24,12 @@
 - `index.html` contains matching static homepage cards.
 - `tools/build.js` contains inline media, quote cards, and SamCBarth.com context.
 - New posts must update all three surfaces.
+- Public site: https://blog.samcbarth.com (GitHub Pages custom domain).
+- Categories (use exactly one): HubSpot & CRM, RevOps & Ops, AI Adoption, AI Cost & Infrastructure, Security & Governance, Business & Markets.
+- Tags: Analysis (tag-cyan), Opinion (tag-amber), Timeless (tag-purple).
+- Set `hub` to one of the `HUBS` keys in posts.js (hubspot-ai, ai-costs, ai-adoption, ai-infrastructure) when the post fits one. Hub pages, related posts, and Start Here are generated from it.
+- `noindex: true` keeps a page live but out of lists, sitemap, and feed. `mergedInto: 'postN'` turns a post into a redirect; remove it from POST_ORDER.
+- Every post page gets two build-time link cards (samcbarth.com and the free workshop booking link). Do not add a generic samcbarth.com sign-off in the body; link samcbarth.com only where it fits the point.
 
 ## Publishing
 

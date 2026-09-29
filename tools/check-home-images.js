@@ -7,7 +7,7 @@ const { spawn } = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const live = process.argv.includes('--live');
-const liveUrl = 'https://samcbarth.github.io/aisite/';
+const liveUrl = 'https://blog.samcbarth.com/';
 
 function decodeHtml(value) {
   return value.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');

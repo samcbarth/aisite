@@ -1,6 +1,6 @@
 /*
  * sw.js - service worker for the site (scope: the directory it's served from,
- * i.e. /aisite/ in production). Provides an offline app-shell and tiered caching:
+ * i.e. / on blog.samcbarth.com). Provides an offline app-shell and tiered caching:
  *   - same-origin shell assets -> cache-first
  *   - navigations              -> network-first, fall back to cached shell
  *   - Unsplash images          -> stale-while-revalidate
@@ -21,7 +21,7 @@ const SHELL = [
   'posts.js',
   'premium.js',
   'manifest.webmanifest',
-  'assets/section-page.css',
+  'assets/section-page.css', 'assets/sb-cards.css',
   'assets/fonts/space-grotesk-latin.woff2',
   'assets/fonts/space-grotesk-latin-ext.woff2',
   'assets/icons/icon-192.png',

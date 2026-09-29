@@ -342,7 +342,7 @@
   }
 
   // Share.
-  const SITE_URL = 'https://samcbarth.github.io/aisite/';
+  const SITE_URL = 'https://blog.samcbarth.com/';
   function currentShareUrl() {
     return currentPostId ? postUrl(currentPostId) : SITE_URL;
   }

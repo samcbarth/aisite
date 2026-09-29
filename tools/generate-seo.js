@@ -11,9 +11,11 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { POSTS, POST_ORDER } = require('../posts.js');
+const { POSTS, POST_ORDER: ALL_ORDER, HUBS } = require('../posts.js');
+// Noindexed and merged posts stay out of the sitemap, feed, and blog JSON-LD.
+const POST_ORDER = ALL_ORDER.filter((id) => POSTS[id] && !POSTS[id].noindex && !POSTS[id].mergedInto);
 
-const SITE = 'https://samcbarth.github.io/aisite/';
+const SITE = 'https://blog.samcbarth.com/';
 const targetDir = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve(__dirname, '..');
 
 const esc = (s) => String(s)
@@ -33,13 +35,14 @@ const jsonLd = {
       '@id': SITE + '#person',
       name: 'Sam C Barth',
       url: SITE,
-      jobTitle: 'HubSpot Strategy & Operations Manager',
-      worksFor: { '@type': 'Organization', name: 'LAIRE' },
+      jobTitle: 'CMO and RevOps Professional',
+      knowsAbout: ['HubSpot', 'Revenue Operations', 'CRM strategy', 'Marketing operations', 'AI adoption'],
       address: [
         { '@type': 'PostalAddress', addressLocality: 'Dallas', addressRegion: 'TX', addressCountry: 'US' },
         { '@type': 'PostalAddress', addressLocality: 'El Reno', addressRegion: 'OK', addressCountry: 'US' }
       ],
       sameAs: [
+        'https://samcbarth.com',
         'https://linkedin.com/in/samcbarth',
         'https://samcbarthresume.work/'
       ]
@@ -92,7 +95,7 @@ const staticUrls = [
   { loc: SITE + 'resources.html', changefreq: 'monthly', priority: '0.7' },
   { loc: SITE + 'about.html', changefreq: 'monthly', priority: '0.7' },
   { loc: SITE + 'work.html', changefreq: 'monthly', priority: '0.8' }
-];
+].concat(Object.keys(HUBS).map((slug) => ({ loc: SITE + 'topics/' + slug + '/', changefreq: 'weekly', priority: '0.8' })));
 const sitemapEntries = staticUrls.map((item) => `  <url>
     <loc>${esc(item.loc)}</loc>
     <lastmod>${now.toISOString().slice(0, 10)}</lastmod>

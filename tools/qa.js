@@ -6,7 +6,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { POSTS, POST_ORDER } = require('../posts.js');
+const { POSTS, POST_ORDER, HUBS } = require('../posts.js');
 
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
@@ -104,13 +104,15 @@ function checkPostData() {
 
 function checkGeneratedPages() {
   const postPages = walk(path.join(dist, 'posts'), file => file.endsWith('index.html'));
-  if (postPages.length !== POST_ORDER.length) {
-    fail(`generated post page count mismatch: expected ${POST_ORDER.length}, found ${postPages.length}`);
+  const mergedCount = Object.values(POSTS).filter(p => p.mergedInto).length;
+  if (postPages.length !== POST_ORDER.length + mergedCount) {
+    fail(`generated post page count mismatch: expected ${POST_ORDER.length + mergedCount}, found ${postPages.length}`);
   }
 
   const htmlFiles = walk(dist, file => file.endsWith('.html'));
   for (const file of htmlFiles) {
     const html = read(file);
+    if (html.includes('data-redirect="true"')) continue;
     if (!html.includes('id="hs-script-loader"') || !html.includes('src="https://js.hs-scripts.com/20693956.js"')) {
       fail(`missing HubSpot tracker: ${rel(file)}`);
     }
@@ -166,7 +168,7 @@ function checkImages() {
     const alt = (match[1].match(/alt="([^"]*)"/) || [])[1];
     if (!src) fail('blank homepage thumbnail src');
     if (alt === undefined || alt.trim().length < 12) fail(`weak homepage thumbnail alt: ${src}`);
-    if (src && !cspAllowsImage(src, 'https://samcbarth.github.io/aisite/', imgSources)) {
+    if (src && !cspAllowsImage(src, 'https://blog.samcbarth.com/', imgSources)) {
       fail(`homepage thumbnail blocked by CSP: ${src}`);
     }
     const key = imageBase(src);
@@ -200,7 +202,19 @@ function checkSeoArtifacts() {
   const feed = read(path.join(dist, 'feed.xml'));
   for (const id of POST_ORDER) {
     const slug = toSlug(POSTS[id].title);
-    if (!sitemap.includes(`/posts/${slug}/`)) fail(`sitemap missing post: ${id}`);
+    const listed = !POSTS[id].noindex;
+    if (listed && !sitemap.includes(`/posts/${slug}/`)) fail(`sitemap missing post: ${id}`);
+    if (!listed && sitemap.includes(`/posts/${slug}/`)) fail(`sitemap includes noindex post: ${id}`);
+  }
+  for (const [id, p] of Object.entries(POSTS)) {
+    if (!p.mergedInto) continue;
+    if (POST_ORDER.includes(id)) fail(`merged post still in POST_ORDER: ${id}`);
+    if (!POSTS[p.mergedInto] || !POST_ORDER.includes(p.mergedInto)) fail(`merge target not live: ${id} -> ${p.mergedInto}`);
+    if (!fs.existsSync(path.join(dist, 'posts', toSlug(p.title), 'index.html'))) fail(`missing redirect page: ${id}`);
+  }
+  for (const slug of Object.keys(HUBS)) {
+    if (!fs.existsSync(path.join(dist, 'topics', slug, 'index.html'))) fail(`missing hub page: ${slug}`);
+    if (!sitemap.includes(`/topics/${slug}/`)) fail(`sitemap missing hub: ${slug}`);
   }
   if (feed.includes('#post')) fail('feed contains old #post anchors');
   if (!feed.includes('/posts/')) fail('feed missing post page links');
