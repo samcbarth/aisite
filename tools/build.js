@@ -233,6 +233,13 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post147: {
+      image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=900&h=650&fit=crop&q=80',
+      caption: 'A new ad channel still has to land in the same pipeline report. Photo via Unsplash.',
+      side: 'right', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&h=675&fit=crop&q=80',
+      supportCaption: 'Attribution is only as good as the records it reads. Photo via Unsplash.'
+    },
     post146: {
       image: 'assets/images/post146-inline.jpg',
       caption: 'Six months after adoption, active use spans levels and functions even when message volume does not. Photo: Blake Wisz via Unsplash.',
@@ -1799,6 +1806,7 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post147: { after: 7, quotes: [makeQuote('Vendor promise', { text: 'targeting is smarter from day one and you get true ROI analysis on your ChatGPT ads spend', source: 'HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership' }), makeQuote('Platform guardrail', { text: 'protecting the trust people place in ChatGPT remains our North Star', source: 'OpenAI', sourceUrl: 'https://openai.com/index/reimagining-advertising-with-ai/' })] },
     post146: { after: 6, quotes: [makeQuote('Use is not output', { text: 'The rapid adoption of generative AI by firms should therefore not be equated with immediate productivity transformation.', source: 'OpenAI enterprise usage working paper', sourceUrl: 'https://arxiv.org/html/2608.12236' }), makeQuote('Common work', { text: 'writing dominates, but users also rely on it for information retrieval, analysis, decision making and strategizing', source: 'Microsoft Research', sourceUrl: 'https://www.microsoft.com/en-us/research/publication/ai-in-the-enterprise-how-people-use-m365-copilot-chat/' })] },
     post145: { after: 5, quotes: [makeQuote('Correct, not running', { text: 'AI teams needed a way to know their agents were actually working correctly, not just running.', source: 'Jason Lopatecki, Arize', sourceUrl: 'https://ir.dynatrace.com/news-events/press-releases/detail/435/dynatrace-to-acquire-ai-observability-leader-arize' }), makeQuote('A green trace', { text: 'A trace showing “200 OK” doesn’t mean the answer was right.', source: 'Arize Phoenix documentation', sourceUrl: 'https://arize.com/docs/phoenix/tracing' })] },
     post144: { after: 5, quotes: [makeQuote('Hyundai view', { text: 'What matters is not the technology itself.', source: 'Eunsook Jin, Hyundai Motor Group', sourceUrl: 'https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-accelerates-ai-transformation-across-its-business-advancing-toward-the-physical-ai-era' }), makeQuote('Use-case test', { text: 'what are the use cases and where is the applicability?', source: 'Alex Panas via Associated Press', sourceUrl: 'https://apnews.com/article/ces-humanoid-robots-atlas-hyundai-boston-dynamics-8de7b2470c23f5f22441ad1ad7555136' })] },

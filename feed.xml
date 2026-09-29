@@ -6,7 +6,15 @@
     <atom:link href="https://blog.samcbarth.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>RevOps, AI, and CRM strategy from Sam C Barth.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 03:23:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 03:31:02 GMT</lastBuildDate>
+    <item>
+      <title>Your ChatGPT ads will only be as smart as your CRM</title>
+      <link>https://blog.samcbarth.com/posts/your-chatgpt-ads-will-only-be-as-smart-as-your-crm/</link>
+      <guid isPermaLink="false">https://blog.samcbarth.com/posts/your-chatgpt-ads-will-only-be-as-smart-as-your-crm/</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <category>HubSpot &amp; CRM</category>
+      <description>On September 16, HubSpot became the first CRM that can run ChatGPT Ads. You can build a campaign, set a budget, and launch it next to your Google and LinkedIn campaigns without leaving the portal. The pitch is that your CRM makes the ads smarter, and that sentence deserves a clos</description>
+    </item>
     <item>
       <title>Week 26 is where the AI rollout gets honest</title>
       <link>https://blog.samcbarth.com/posts/week-26-is-where-the-ai-rollout-gets-honest/</link>

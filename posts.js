@@ -7,6 +7,51 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post147: {
+    featured: false,
+    date: 'September 28, 2026', iso: '2026-09-28',
+    title: 'Your ChatGPT ads will only be as smart as your CRM',
+    category: 'HubSpot & CRM', tag: 'Opinion', tagClass: 'tag-amber',
+    hub: 'hubspot-ai',
+    image: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>On September 16, HubSpot became the first CRM that can run ChatGPT Ads. You can build a campaign, set a budget, and launch it next to your Google and LinkedIn campaigns without leaving the portal. The pitch is that your CRM makes the ads smarter, and that sentence deserves a closer look before anyone moves budget.</p>
+
+      <p><a href="https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership" target="_blank" rel="noopener noreferrer">HubSpot's announcement</a> puts it plainly: because the integration is built on CRM context, "targeting is smarter from day one and you get true ROI analysis on your ChatGPT ads spend." <a href="https://openai.com/index/reimagining-advertising-with-ai/" target="_blank" rel="noopener noreferrer">OpenAI's version</a> says businesses can create ads, track performance, and follow up on leads "directly in HubSpot powered by their HubSpot context."</p>
+
+      <p>Both statements are true in the way product launches are true. They describe what the system can do with good data. Neither one describes what it does with the data most businesses actually have.</p>
+
+      <h2>What actually shipped</h2>
+
+      <p>The ads integration is one piece of a wider HubSpot and OpenAI package. The updated HubSpot connector for ChatGPT now lets people run email campaigns, build landing pages for ads, analyze closed-won deals, and track lead progress from inside ChatGPT. According to <a href="https://www.cmswire.com/customer-experience/hubspot-openai-deepen-crmchatgpt-integration/" target="_blank" rel="noopener noreferrer">CMSWire's coverage</a>, the companies said the connector's weekly active users grew 250% since launch.</p>
+
+      <p>There is also a sales offer attached. The AI Growth Bundle pairs discounted HubSpot Starter and credits with a ChatGPT Business seat, and new ChatGPT Ads accounts opened by September 30 get a $750 spend match. That deadline is this week, which is exactly the kind of timing that gets a channel turned on before anyone has decided how to measure it.</p>
+
+      <p>On OpenAI's side, the same day brought Sponsored Agents, which let someone click an ad and start a labeled conversation with a business's own agent, plus AI-written ad copy and opt-in text that adapts headlines to the conversation. Sponsored Agents are only being tested with select U.S. advertisers for now.</p>
+
+      <h2>The attribution promise assumes a clean record</h2>
+
+      <p>"True ROI analysis" means HubSpot can trace a closed deal back to the ad that started it. That only works if a chain of boring things is already right. The contact has to be created with the correct original source. The contact has to be associated to the deal. The deal has to reach closed-won with a real amount on it. Lifecycle stages have to move when the buyer actually moves, not when someone remembers to update them in a quarterly cleanup.</p>
+
+      <p>Break any link in that chain and the report still renders. It just gives the credit to the wrong place. A ChatGPT ad that starts a conversation, followed by a sales call that creates a second contact record, can end up showing zero return while an old nurture email takes the win. Nothing in the dashboard will warn you.</p>
+
+      <p>Targeting has the same dependency. If "smarter from day one" means building audiences from CRM lists and closed-won patterns, then duplicate companies, stale lifecycle stages, and contacts with no owner all become targeting inputs. The model will do its job well on whatever it is given.</p>
+
+      <h2>A new channel with a short feedback loop</h2>
+
+      <p>This matters more for ChatGPT than for older channels because the buying path is still forming. People are asking an assistant to compare options before they ever visit a website, and OpenAI is betting that more of that research will happen inside a conversation. If the first touch happens in a chat and the next one happens on a sales call, the CRM is the only place those two moments can meet.</p>
+
+      <p>There is also a credibility question sitting on top of the measurement one. OpenAI's own post says "protecting the trust people place in ChatGPT remains our North Star," and it keeps Sponsored Agent conversations separate from ChatGPT's independent answers. That separation is good for users. It also means advertisers are buying placement next to answers people trust, which raises the cost of an ad that says the wrong thing to the wrong person.</p>
+
+      <h2>Before the $750 match</h2>
+
+      <p>I think the channel is worth testing. I would just do the plumbing first. Check that new contacts from ads get a clean original source. Check that deals are associated to the right contacts and companies. Pick the one lifecycle stage that counts as a real sales conversation and make sure it moves on its own, not by hand. Then run a small budget long enough to see whether any of it reaches a closed deal.</p>
+
+      <p>HubSpot's credit-based agents raised a similar question in August: <a href="../what-does-a-hubspot-agent-cost-after-the-demo/">what the work costs after the demo</a>. Ads raise the paid version of it. The same goes for <a href="../qualification-research-and-aeo-are-how-ai-becomes-normal-business/">showing up in AI answers organically</a>, where HubSpot now wants paid and organic AI search in one place.</p>
+
+      <p>That is the kind of setup work I do in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot portals</a>, and it is rarely the exciting part of a launch. But the ads will be exactly as smart as the records underneath them. Duncan Lennox framed the partnership as giving businesses a way of "understanding what's working, and acting on it quickly." The understanding part is the one that has to be built.</p>
+    `
+  },
   post146: {
     featured: false,
     date: 'August 17, 2026', iso: '2026-08-17',
@@ -4830,6 +4875,7 @@ POST_ORDER.unshift('post143');
 POST_ORDER.unshift('post144');
 POST_ORDER.unshift('post145');
 POST_ORDER.unshift('post146');
+POST_ORDER.unshift('post147');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER, HUBS };
