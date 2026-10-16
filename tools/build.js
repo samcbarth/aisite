@@ -76,7 +76,7 @@ function copyRecursive(src, dest) {
   }
   fs.mkdirSync(dist, { recursive: true });
 
-  const staticFiles = ['manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html', 'about.html', 'work.html'];
+  const staticFiles = ['gtag-init.js', 'manifest.webmanifest', 'sw.js', 'robots.txt', '.nojekyll', 'premium.html', 'premium.js', 'start-here.html', 'resources.html', 'about.html', 'work.html'];
   for (const f of staticFiles) {
     if (fs.existsSync(path.join(root, f))) fs.copyFileSync(path.join(root, f), path.join(dist, f));
   }
