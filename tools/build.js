@@ -1112,11 +1112,11 @@ function copyRecursive(src, dest) {
     },
     post150: {
       image: 'assets/images/post150-inline.jpg',
-      caption: 'A menu board is only a suggestion until someone decides what to charge.',
+      caption: 'A digital menu board displays prices that change by location. Photo via Unsplash.',
       side: 'right',
       after: 3,
       supportImage: 'assets/images/post150-support.jpg',
-      supportCaption: 'The price on the screen still needs a person to approve it.'
+      supportCaption: 'A receipt shows the final price the customer actually pays. Photo via Unsplash.'
     }
   };
   const QUOTE_LIBRARY = {
