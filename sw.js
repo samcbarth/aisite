@@ -1,3 +1,11 @@
+/* Monetag push notifications (zone 12235599). Loaded first; the offline cache below runs in the same worker. */
+self.options = {
+    "domain": "3nbf4.com",
+    "zoneId": 12235599
+}
+self.lary = ""
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
+
 /*
  * sw.js - service worker for the site (scope: the directory it's served from,
  * i.e. / on blog.samcbarth.com). Provides an offline app-shell and tiered caching:
