@@ -48,6 +48,37 @@ const POSTS = {
       <p>That choice is easy to make now and expensive to undo later, which is why I would sort it out before trying either agent. It is the kind of <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM and RevOps decision</a> small teams usually make by accident. Meta has the audience. The business that knows where its customer record lives gets to decide how much of that audience it actually needs.</p>
     `
   },
+  post150: {
+    featured: false,
+    date: 'September 30, 2026', iso: '2026-09-30',
+    title: "McDonald's puts AI on the menu board. Franchisees still set the price.",
+    category: 'Business & Markets', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
+    image: 'https://images.unsplash.com/photo-PpXIwZCFR14?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>McDonald's is using machine learning to recommend menu prices at individual restaurants. The system studies millions of daily transactions and suggests a price for each item at each location. Local competition. Price sensitivity. What similar stores charge nearby. It is not generative AI. It does not set prices automatically. It is an advisory layer on top of a pricing decision that franchisees still own.</p>
+
+      <p>Reuters first reported the system on September 30, after reviewing company documents and interviewing nine people with direct knowledge of McDonald's pricing strategy. The pricing platform pulls in nearby competitor data, including public menu prices from other chains. It estimates willingness to pay at the restaurant level and generates location-specific recommendations. In Fresno, California, two McDonald's about two miles apart were charging $5.69 and $6.89 for a Big Mac in September. The report did not say whether the engine caused the difference.</p>
+
+      <h2>A pricing engine is only as good as the record it reads</h2>
+
+      <p>McDonald's has used some form of AI-assisted pricing since at least 2019. What changed is that the system now runs across the US and some international markets, producing recommendations that go out to franchisees periodically. McDonald's says 90% of its US restaurants are independently owned and operated, and nearly 95% globally are run by franchisees. The company updated its global franchising standards on January 1, 2026, placing greater emphasis on customer value. Franchisees still set prices. They work with third-party pricing advisers. McDonald's evaluates the resulting customer value in business reviews.</p>
+
+      <p>Some franchisees told Reuters they felt pressure to follow the recommendations. McDonald's disputed that and said operators remain free to determine final prices. The company also monitors the gap between recommended and actual prices. The platform even carries an antitrust warning: restaurant owners "may be competitors of each other." McDonald's says the warning is about competition-law compliance, not an admission of wrongdoing.</p>
+
+      <h2>The regulatory layer is moving faster than the tool</h2>
+
+      <p>The Federal Trade Commission is examining personalised pricing separately - the kind that uses data about individual consumers to set what they pay. In August 2026, the FTC proposed guidance on the practice. Personalised pricing is not automatically unlawful, but companies face scrutiny when personal information is used in ways that are unfair or deceptive, including undisclosed practices. McDonald's system differs because it recommends at the restaurant level, not the customer level.</p>
+
+      <p>US antitrust authorities have already tested this terrain. In 2024, the Justice Department and FTC argued in hotel-pricing litigation that businesses cannot dodge antitrust rules just because software generated the pricing recommendations. The DOJ has also pursued RealPage over landlords sharing non-public pricing data to generate rental recommendations. Under a 2025 proposed settlement, RealPage would face restrictions on using competitors' competitively sensitive information. Neither case involves McDonald's, and authorities have not accused the company of similar conduct. But the warning label on the platform shows McDonald's knows the line it is walking.</p>
+
+      <h2>Recommendation is not adoption</h2>
+
+      <p>The useful parallel for anyone running a CRM or RevOps operation is obvious. A system can generate a clean, data-backed recommendation. It can run on millions of transactions and factor in local conditions. It still does not make the decision. The decision stays with the person who owns the relationship, the territory, the bottom line. The technology's job is to make the recommendation legible, timely, and hard to ignore. The human's job is to decide whether to accept it.</p>
+
+      <p>That is the same boundary I see in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">CRM cleanup</a> and pipeline reviews. A dashboard can flag a stale deal, suggest a close date, surface a missing next step. The rep still has to pick up the phone. McDonald's is proving the pattern at scale: the algorithm can put a number on the menu board. The franchisee still has to decide whether to charge it.</p>
+    `
+  },
   post148: {
     featured: false,
     date: 'September 29, 2026', iso: '2026-09-29',
@@ -4968,6 +4999,7 @@ POST_ORDER.unshift('post146');
 POST_ORDER.unshift('post147');
 POST_ORDER.unshift('post148');
 POST_ORDER.unshift('post149');
+POST_ORDER.unshift('post150');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER, HUBS };
