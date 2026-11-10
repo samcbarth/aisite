@@ -54,7 +54,7 @@ const POSTS = {
     title: "McDonald's puts AI on the menu board. Franchisees still set the price.",
     category: 'Business & Markets', tag: 'Analysis', tagClass: 'tag-cyan',
     hub: 'ai-adoption',
-    image: 'https://images.unsplash.com/photo-PpXIwZCFR14?w=1160&h=440&fit=crop&q=80',
+    image: 'assets/images/post150-hero.jpg',
     body: `
       <p>McDonald's is using machine learning to recommend menu prices at individual restaurants. The system studies millions of daily transactions and suggests a price for each item at each location. Local competition. Price sensitivity. What similar stores charge nearby. It is not generative AI. It does not set prices automatically. It is an advisory layer on top of a pricing decision that franchisees still own.</p>
 

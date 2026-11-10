@@ -1111,11 +1111,11 @@ function copyRecursive(src, dest) {
       supportCaption: 'A dashboard-style view fits the reporting side of the work.'
     },
     post150: {
-      image: 'https://images.unsplash.com/photo-wRMff4EEypg?w=900&h=650&fit=crop&q=80',
+      image: 'assets/images/post150-inline.jpg',
       caption: 'A menu board is only a suggestion until someone decides what to charge.',
       side: 'right',
       after: 3,
-      supportImage: 'https://images.unsplash.com/photo-Y5OQe6caIr0?w=1200&h=675&fit=crop&q=80',
+      supportImage: 'assets/images/post150-support.jpg',
       supportCaption: 'The price on the screen still needs a person to approve it.'
     }
   };
