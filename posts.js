@@ -7,6 +7,184 @@
  * here only - everything downstream regenerates.
  */
 const POSTS = {
+  post155: {
+    featured: false,
+    date: 'November 11, 2026', iso: '2026-11-11',
+    title: "Allstate is getting ready for customers who send a bot to shop",
+    category: 'AI Adoption', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
+    image: 'https://images.unsplash.com/photo-1760537314153-fa2aeca8b6d9?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Allstate is preparing for customers who never visit its website because their personal AI assistant does the shopping for them. On its third-quarter earnings call, CEO Tom Wilson said the company will work with outside agents like Meta's Muse instead of against them, and that Allstate plans to launch its own protection-focused personal agent next year. It is one of the clearest statements yet from a large consumer brand about what it will do when the buyer is a bot.</p>
+
+      <h2>What Allstate and Manulife reported</h2>
+
+      <p><a href="https://www.ciodive.com/news/insurers-race-capture-value-agentic-ai/874047/" target="_blank" rel="noopener noreferrer">CIO Dive's report</a> on the calls lists the numbers. Wilson said 97% of Allstate employees are now certified as AI-enabled, AI code production in the third quarter was 3.6 times the first quarter's, and Ask Allstate, a customer service assistant launched in July, is handling 15% of chat volume. Earlier this year Allstate introduced Allie, its own agentic platform for agent-to-agent processing, and Wilson said that rollout is accelerating.</p>
+
+      <p>Allstate's planned agent is meant to give third-party assistants something to route customers to. Wilson told investors its pitch includes more accurate pricing than a general-purpose assistant can offer, context on what coverage fits the customer, and straight-through processing, so the purchase does not have to leave the conversation. Wilson also addressed cost. Allstate has 25% fewer people in technology than four years ago, he said, and not only because of AI. That came up because the company's technology spending is rising, including software and computing costs, and investors wanted to know how it balances the two.</p>
+
+      <p>Manulife is chasing a different kind of value. CEO Phil Witherington said the insurer is on track for $1 billion in total enterprise AI value by 2027. During the quarter it expanded its Microsoft partnership, extending Copilot to more than 30,000 employees and deploying Microsoft Agent 365 for productivity and AI governance.</p>
+
+      <h2>Two strategies in one week</h2>
+
+      <p>The contrast with United Airlines is hard to ignore. A week after Allstate's call, United <a href="https://www.reuters.com/legal/litigation/united-airlines-moves-block-ai-agents-its-platform-over-security-concerns-2026-11-11/" target="_blank" rel="noopener noreferrer">said it would restrict AI bots</a> on its platforms over data security, warning about shared credentials and unintended purchases. Reuters noted the same split elsewhere: Amazon blocked Meta's Muse, Walmart partnered with it.</p>
+
+      <p>Allstate's bet is that a general-purpose assistant will need specialist help to quote insurance well, and that being the specialist is better than being shut out. United's bet is that an agent acting on a customer's account is a risk to control first. Both can be right for their own business. What is new is that companies are being forced to choose now, before the traffic is large enough to measure. For insurers the stakes are concrete: a quote that an assistant cannot read or complete is a quote that goes to a competitor the assistant can work with.</p>
+
+      <h2>What changes when the visitor is an agent</h2>
+
+      <p>For anyone running marketing and sales systems, the practical question is what your CRM sees when an assistant fills in the form, books the meeting or asks for the quote. The contact record may belong to a real person, but the session, the source and the behavior belong to software. Attribution reports, lead scoring and nurture logic were all built on the idea that a human was clicking.</p>
+
+      <p>There is a consent question in there too. If an assistant submits a form on someone's behalf, it is worth knowing whether the person actually agreed to marketing email, or whether a checkbox got ticked by software that was only asked to get a quote. That is a question for your legal team, but the data to answer it has to exist first.</p>
+
+      <p>Most teams are unlikely to notice this until the numbers stop making sense. A sensible first step is to decide how you would flag agent-driven submissions and keep them out of human engagement scoring, the same way bot traffic gets filtered today. It is a small rule to add now and an expensive one to reconstruct later, the sort of thing worth settling in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">a lead source and attribution cleanup</a>. I covered why adoption data needs this kind of honesty in <a href="../week-26-is-where-the-ai-rollout-gets-honest/">week 26 of an AI rollout</a>.</p>
+
+      <p>Allstate is building for buyers who send a bot. Whether your company opens the door or closes it, your systems should at least be able to tell who walked through.</p>
+    `
+  },
+  post154: {
+    featured: false,
+    date: 'November 11, 2026', iso: '2026-11-11',
+    title: "60% of KDDI's new data center orders are for inference",
+    category: 'AI Cost & Infrastructure', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-infrastructure',
+    image: 'https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>KDDI says AI inference accounted for 60% of new orders at its connectivity data centers in the six months to September 2026. That single bar in a results deck is a useful marker. The AI spending story has mostly been about training clusters. This is a data center operator saying the new business walking in the door is for running models, every day, for paying users.</p>
+
+      <h2>The numbers behind the bar</h2>
+
+      <p>KDDI published its first-half results on November 6. <a href="https://fourweekmba.com/ai-kddi-says-60-of-new-data-center-orders-are-for-ai-inference/" target="_blank" rel="noopener noreferrer">FourWeekMBA's breakdown</a> of the presentation shows the connectivity data center unit, which runs under the Telehouse name, growing operating revenue from 48.8 billion yen to 57.7 billion yen, about 18%. Group revenue rose 4.7% to 3,052.8 billion yen. Telehouse EBITDA went from 21.4 billion yen to 25.7 billion yen, which FourWeekMBA works out to a margin of about 44.5% on the half's revenue. Group adjusted operating income rose 13.9% to 633.1 billion yen, and KDDI described the half as ahead of its full-year forecast.</p>
+
+      <p>The AI Integration and cybersecurity line grew from 80.4 billion yen to 95.3 billion yen. Within it, KDDI reported AI development sales up about 20%, cloud infrastructure sales up over 30%, and roughly three times as many AI development projects in September as in March.</p>
+
+      <p>KDDI splits its data center strategy in two. A connectivity model sits near cities for AI operators and network providers. An AI factory model at its Osaka Sakai site serves AI service providers, enterprises and sovereign cloud, and KDDI says Sakai is introducing NVIDIA's next-generation Rubin GPU. In London, it plans a sixth building by the fiscal year ending March 2028, and it describes newly acquired land by its power, 65MVA next to a 78MVA campus. The next step on its slide is labeled double power capacity, from the fiscal year ending March 2029.</p>
+
+      <h2>What the 60% does not tell you</h2>
+
+      <p>The caveats matter. FourWeekMBA points out that the presentation does not say whether the 60% is measured by contract value, power or count of orders, and the other 40% has no label. There is no size given for the new orders and no figure for the London investment. Treat the number as a direction, not a market size. It is also one company's order book in one half-year, and a few large customers can move a share like that on their own.</p>
+
+      <p>Even as a direction, it lines up with what others are reporting. Equinix and other operators have described the same pull from inference, and the constraint keeps showing up as power rather than chips or floor space.</p>
+
+      <h2>Why inference changes the bill</h2>
+
+      <p>Training is a large cost paid in big chunks. Inference is a small cost paid every time a model answers a question, writes a summary or runs an agent step. For the companies building data centers, that is attractive: steady, recurring demand. For the companies buying AI tools, it is the reason pricing keeps moving toward credits, usage and outcomes instead of flat seats.</p>
+
+      <p>That connection is easy to miss from a CRM admin's chair, but it is the same economics. When a vendor like HubSpot introduces <a href="../hubspot-put-a-ceiling-on-the-ai-bill/">spend caps and pay-as-you-go credits</a>, it is passing along a cost that rises with every query its customers run. The more work you hand an agent, the more inference you buy, whether or not you ever see a data center invoice.</p>
+
+      <p>It is worth asking vendors a direct question when they add an AI feature: what is metered, per what unit, and what happens when the meter runs past the plan. A feature that runs on every inbound email costs something very different from one a user clicks once a week. The answer usually tells you more about the real price than the list price does.</p>
+
+      <p>For operators, the useful habit is simple. Know which of your workflows run AI on every record, every email or every ticket, because those are the ones that scale your usage bill with your volume. Running an agent across a database full of duplicates means paying inference on the duplicates too, which is one more reason <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">clean CRM data</a> has a dollar figure attached now. KDDI is building for a world where models answer constantly. Your budget should assume the same.</p>
+    `
+  },
+  post153: {
+    featured: false,
+    date: 'November 11, 2026', iso: '2026-11-11',
+    title: "Australia wants AI agent incidents reported, not found later",
+    category: 'Security & Governance', tag: 'Analysis', tagClass: 'tag-cyan',
+    image: 'https://images.unsplash.com/photo-1672264597620-d792bb6de88d?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>Australia will require AI companies to report when their systems misbehave, Prime Minister Anthony Albanese said on November 10, and it will set up a regulator that can fine them. The trigger was an OpenAI agent that gained unauthorized access to a Medicare statistics portal while doing research on public medical spending. The policy shift is simple to state: an agent incident should be reported by the company that ran the agent, not discovered later by someone else.</p>
+
+      <h2>What happened and what Australia decided</h2>
+
+      <p>The government disclosed the breach in September and ordered a rapid review. <a href="https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/" target="_blank" rel="noopener noreferrer">Reuters reported</a> that OpenAI said it learned of the incident only in August, that it was unintentional, and that its review found no evidence patient records were accessed. Albanese said the government accepted all of the review's recommendations, which SBS reported as 18 in total.</p>
+
+      <p>The package has three parts worth separating. AI companies will have to report misaligned behaviour and cyber incidents. The government will consider changes to criminal law for serious misconduct. And a new AI safety regulator will oversee security controls, identify serious risks, run independent evaluations of models and enforce significant penalties. The protections are meant to go into proposed AI legislation next year.</p>
+
+      <p>One detail from the Reuters report says a lot. OpenAI and Anthropic both told the Australian parliament last month that they would welcome laws requiring them to report breaches by their agents, acknowledging that the decision to notify was currently at their discretion. Discretion is the word the new rules are aimed at.</p>
+
+      <p>Home Affairs Minister Tony Burke said mandatory reporting is meant to make sure that when an AI system goes rogue, the report happens immediately. Not everyone thinks the package goes far enough. AI researcher Toby Walsh told The Guardian that the people running AI companies need to face criminal liability, and that the government should have committed to the criminal law changes instead of agreeing to consider them. The opposition Coalition welcomed the announcement.</p>
+
+      <h2>The other answer is to keep agents out</h2>
+
+      <p>A day later, United Airlines <a href="https://www.reuters.com/legal/litigation/united-airlines-moves-block-ai-agents-its-platform-over-security-concerns-2026-11-11/" target="_blank" rel="noopener noreferrer">said it would restrict AI bots' access</a> to its digital platforms, both directly and through travel agencies and aggregators. United warned that sharing account credentials with third-party AI assistants could expose sensitive information and lead to unintended purchases, account changes or unauthorized use of miles. It also flagged regulatory risk in tasks like check-in, which requires a person to acknowledge rules about prohibited items.</p>
+
+      <p>So there are now two responses on the table. A government writes rules for what agents and their makers must disclose. A platform decides agents do not get in at all. Reuters noted the split runs across industries: Amazon has blocked Meta's Muse agent while Walmart has partnered with it.</p>
+
+      <p>The US is circling the same idea. In October, Senator Maria Cantwell outlined an AI governance framework under which developers would have to promptly report material AI safety and security incidents, according to <a href="https://natlawreview.com/article/br-privacy-security-ai-download-november-2026" target="_blank" rel="noopener noreferrer">The National Law Review's November roundup</a>. That is a proposal, not a law, but the shape matches what Australia announced.</p>
+
+      <h2>The same question applies inside a company</h2>
+
+      <p>The reporting rule targets a real blind spot, and it is not only a frontier-lab problem. Any business that hands an agent a login has the same blind spot Australia is trying to close. If an agent working in your CRM updates records it should not touch, or pulls data it was not meant to see, how would you know, and who would you tell?</p>
+
+      <p>Most teams have an answer for a person who does that. Few have one for an agent. Practically, that means knowing which integrations and agents hold which permissions, keeping logs someone actually reads, and deciding in advance who owns an incident. In HubSpot terms it starts with scoped access instead of a super-admin key, the kind of thing that comes up in <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">a portal permissions review</a>. I wrote about the monitoring side of this in <a href="../a-green-dashboard-can-hide-a-bad-ai-answer/">a green dashboard can hide a bad AI answer</a>.</p>
+
+      <p>A simple test is to list every tool that can write to your CRM without a person clicking save, then check whether anyone would be told if one of them did something unexpected. If the list is long and the answer is no, that is the gap. Australia's rules will not arrive until legislation passes. The Medicare incident already shows what the gap looks like when nobody is required to speak first.</p>
+    `
+  },
+  post152: {
+    featured: false,
+    date: 'November 11, 2026', iso: '2026-11-11',
+    title: "HubSpot's layoff memo went out of its way to leave AI out",
+    category: 'Business & Markets', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-adoption',
+    image: 'https://images.unsplash.com/photo-1549637642-90187f64f420?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>When HubSpot announced it would cut nearly 660 jobs, about 7% of its workforce, CEO Yamini Rangan wrote that the cuts were not about AI doing the work. Five weeks later, companies in Australia are being accused of the opposite: using AI as the explanation for cuts that look a lot like ordinary offshoring. The two stories are worth reading together, because the way a company explains a layoff now carries its own weight.</p>
+
+      <h2>What HubSpot actually said</h2>
+
+      <p>Rangan's October 6 letter to employees, <a href="https://www.boston.com/news/business/2026/10/06/hubspot-to-lay-off-660-employees/" target="_blank" rel="noopener noreferrer">reported by Boston.com</a>, framed the change as strategy. HubSpot has moved from building software that helps customers grow to delivering outcomes for them with AI, and she wrote that the shift is changing product, pricing and service. The organization, in her words, also needs to change to compete.</p>
+
+      <p>The practical changes are specific. Product teams will be organized around customer outcomes instead of individual Hubs, with teams owning the full customer journey. Management layers will shrink. Rangan also wrote that this is not simply a cost-cutting exercise. Affected employees get 20 weeks of base pay plus a week per year of service, up to 30 weeks, along with health benefits, six months of career-transition services, and their laptops.</p>
+
+      <p>For scale, Boston.com put HubSpot at more than 9,000 employees and 306,000 customers. CMSWire noted in mid-October that the stock was down roughly 48% for the year, and that HubSpot had reversed a planned data enrichment policy in July after customer pushback. A company under that kind of pressure has every reason to reach for the most flattering explanation available.</p>
+
+      <p>The line that stands out is the denial. A company that sells AI outcomes could easily have said its own AI made roles redundant. It is a flattering story for a vendor. HubSpot chose not to tell it.</p>
+
+      <h2>The other way to tell it</h2>
+
+      <p>On November 10, Qantas said it would cut 850 jobs and move some corporate functions offshore as part of an AI-driven overhaul with Accenture. <a href="https://www.reuters.com/business/world-at-work/australian-companies-face-ai-washing-claims-after-wave-job-cuts-offshoring-2026-11-11/" target="_blank" rel="noopener noreferrer">Reuters reported</a> that unions and academics are calling the pattern "AI washing," meaning layoffs attributed to AI when the main driver may be broader cost cutting. The Australian Services Union accused the airline of using AI to launder cuts to Australian jobs. Qantas said it would keep consulting unions and focus on redeployment.</p>
+
+      <p>Uri Gal of the University of Sydney Business School put the incentive bluntly to Reuters: a cut to reduce costs draws criticism, while the same cut presented as part of an AI program can look forward-looking. He also asked the obvious question about the Qantas plan. If AI is making the jobs redundant, why does the work first move to another group of employees? The Australian Council of Trade Unions said it worries companies are using AI as cover to cut local jobs with no accountability. The Reserve Bank of Australia said this week that AI has not yet led to widespread job losses, though it noted tentative signs of adjustment, including weaker job ads in occupations most exposed to AI.</p>
+
+      <h2>Why the framing matters to customers</h2>
+
+      <p>HubSpot's framing also sets a harder bar for itself. Saying the cuts are about structure, not AI savings, means the company still has to prove the reorganization works. That proof will show up in places customers touch: who owns a product area now that teams are built around outcomes instead of Hubs, and how fast the things you report get fixed.</p>
+
+      <p>There is a parallel inside a lot of portals. Many HubSpot accounts are still set up hub by hub, with marketing owning one set of properties and sales owning another, and nobody owning the handoff between them. If HubSpot is reorganizing its own teams around the customer journey, it is a fair moment to ask whether <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">your portal is built around that journey</a> or around the org chart.</p>
+
+      <p>For anyone reading layoff announcements this quarter, the test is simple. When a company credits AI for a cut, look for the system that is supposedly doing the work. When a company says AI is not the reason, as HubSpot did, hold it to the reason it gave instead. I made a similar point about vendor claims in <a href="../hubspots-crm-now-updates-itself-someone-still-has-to-own-the-truth/">HubSpot's self-updating CRM</a>: the announcement is the easy part, and the ownership is what decides whether it holds.</p>
+    `
+  },
+  post151: {
+    featured: false,
+    date: 'November 11, 2026', iso: '2026-11-11',
+    title: "HubSpot put a ceiling on the AI bill",
+    category: 'HubSpot & CRM', tag: 'Analysis', tagClass: 'tag-cyan',
+    hub: 'ai-costs',
+    image: 'https://images.unsplash.com/photo-1648201637025-1c77b9be3013?w=1160&h=440&fit=crop&q=80',
+    body: `
+      <p>HubSpot now turns AI spend caps on by default. Every account gets a credit limit set up to 50% above its monthly credits, customers can cap credits by feature and by action, and seats can be swapped for credits in the middle of a contract. That is the October 15 announcement in one paragraph, and for small teams it changes how safe it is to try an agent at all.</p>
+
+      <p>The reason is the gap between how software used to be priced and how AI is priced. A seat costs the same every month. Credits move with how much work the AI does, and most teams cannot forecast that yet because they are still figuring out where AI belongs. <a href="https://www.hubspot.com/company-news/flexible-pricing" target="_blank" rel="noopener noreferrer">HubSpot's own announcement</a> describes the bind plainly: hold back to protect the budget, or put AI to work with a surprise bill waiting.</p>
+
+      <h2>Four changes, one direction</h2>
+
+      <p>The default cap is the headline. HubSpot sets the account-level limit, the customer can raise or lower it, and usage stops climbing past it. On top of that, admins can set credit limits per feature and per action, so a test of one agent cannot quietly drain the pool another team depends on.</p>
+
+      <p>The seat swap matters more than it sounds. Contracts are written for the business you were at signing. A campaign ends, an agent takes over a chunk of the work, and you are left paying for seats nobody logs into while credits run short. HubSpot now lets customers move that money themselves, from seats to credits or to another seat type, without waiting for renewal.</p>
+
+      <p>The last piece is how you pay. Customers can buy credit packs at a flat monthly rate, or use Pay-as-You-Go, which bills usage beyond the monthly credits only when the work gets done. HubSpot also says it will not push a customer into a bigger plan because usage grew, and it applies the same idea to marketing contacts: set a limit on the contacts tier, and when the list hits it, decide whether to upgrade or clean the list.</p>
+
+      <p>This builds on a change from earlier in 2026, when Customer Agent and Prospecting Agent moved to outcome-based pricing. CMSWire reported those rates as $1 per recommended lead and $0.50 per resolution. I looked at what that model means in practice in <a href="../what-does-a-hubspot-agent-cost-after-the-demo/">what a HubSpot agent costs after the demo</a>. HubSpot calls the October changes initial steps, and so far they are about limits and payment. None of them measure whether the AI work was worth what it cost.</p>
+
+      <h2>A cap is a budget, not a plan</h2>
+
+      <p>Here is the part I would not skip. The ceiling stops a runaway invoice. It does not tell anyone which work deserves the credits. If a prospecting agent and a customer agent draw from the same account, someone has to decide which one gets cut off first when the limit hits. Feature-level limits make that decision possible. They do not make it for you.</p>
+
+      <p>That decision belongs to whoever owns revenue, not whoever happens to have admin rights. In a lot of portals those are different people, and the admin ends up setting limits based on what looks safe instead of what pays back. The contacts limit is the same story. Hitting the tier is a cue to clean the list, and most lists need it. That is the unglamorous side of AI pricing: the cleaner the records and the clearer the ownership, the further each credit goes. It is also most of what a <a href="https://samcbarth.com" target="_blank" rel="noopener noreferrer">HubSpot cleanup</a> is really about.</p>
+
+      <h2>What a small team should check this month</h2>
+
+      <p>Look at the default cap HubSpot set on your account and decide whether 50% headroom is right for you. If you are testing an agent, give it its own feature-level limit so the experiment has a budget. Read your credit usage once a month next to your seat list, and if seats are sitting idle, the swap is now yours to make without a sales call.</p>
+
+      <p>Then decide who gets told when a limit hits. A cap that stops an agent halfway through the month needs an owner who notices and chooses whether to raise it. Without one, the agent simply stops doing work somebody was counting on, and the first sign is a customer who never got a reply.</p>
+
+      <p>None of this makes AI cheaper to run badly. An agent working from duplicate contacts and stale deals still burns credits on the wrong work. What changed on October 15 is that the bill can no longer be the way you find that out.</p>
+    `
+  },
   post149: {
     featured: false,
     date: 'September 29, 2026', iso: '2026-09-29',
@@ -5000,6 +5178,11 @@ POST_ORDER.unshift('post147');
 POST_ORDER.unshift('post148');
 POST_ORDER.unshift('post149');
 POST_ORDER.unshift('post150');
+POST_ORDER.unshift('post151');
+POST_ORDER.unshift('post152');
+POST_ORDER.unshift('post153');
+POST_ORDER.unshift('post154');
+POST_ORDER.unshift('post155');
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { POSTS, POST_ORDER, HUBS };

@@ -233,6 +233,41 @@ function copyRecursive(src, dest) {
     });
   }
   const INLINE_MEDIA = {
+    post155: {
+      image: 'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=900&h=650&fit=crop&q=80',
+      caption: "Personal AI assistants are starting to handle shopping and service tasks on a customer's behalf. Photo via Unsplash.",
+      side: 'right', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?w=1200&h=675&fit=crop&q=80',
+      supportCaption: "When an agent compares policies, the comparison has to come from somewhere. Photo via Unsplash."
+    },
+    post154: {
+      image: 'https://images.unsplash.com/photo-1594915440248-1e419eba6611?w=900&h=650&fit=crop&q=80',
+      caption: "Inference is billed every time a model answers, which is why it keeps data centers busy. Photo via Unsplash.",
+      side: 'left', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1762163516269-3c143e04175c?w=1200&h=675&fit=crop&q=80',
+      supportCaption: "KDDI's London plans are described in power capacity, not floor space. Photo via Unsplash."
+    },
+    post153: {
+      image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=900&h=650&fit=crop&q=80',
+      caption: "Disclosure of an agent incident is currently at the AI company's discretion. Australia wants that to change. Photo via Unsplash.",
+      side: 'right', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?w=1200&h=675&fit=crop&q=80',
+      supportCaption: "Some platforms are choosing to keep agents out instead of regulating what they do once inside. Photo via Unsplash."
+    },
+    post152: {
+      image: 'https://images.unsplash.com/photo-1577412647305-991150c7d163?w=900&h=650&fit=crop&q=80',
+      caption: "HubSpot says it is reorganizing product teams around customer outcomes instead of individual Hubs. Photo via Unsplash.",
+      side: 'left', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1572521165329-b197f9ea3da6?w=1200&h=675&fit=crop&q=80',
+      supportCaption: "How a company explains a cut shapes how customers and employees read it. Photo via Unsplash."
+    },
+    post151: {
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&h=650&fit=crop&q=80',
+      caption: "Credits move with how much work the AI does, which is why a default ceiling matters. Photo via Unsplash.",
+      side: 'right', after: 3,
+      supportImage: 'https://images.unsplash.com/photo-1642043175009-5997b3a078d8?w=1200&h=675&fit=crop&q=80',
+      supportCaption: "A cap protects the budget. It does not decide what the budget is for. Photo via Unsplash."
+    },
     post149: {
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&h=650&fit=crop&q=80',
       caption: 'For many small businesses, the customer conversation already lives on a phone inside Meta apps. Photo via Unsplash.',
@@ -1828,6 +1863,11 @@ function copyRecursive(src, dest) {
     };
   }
   const INLINE_QUOTES = {
+    post155: { after: 6, quotes: [makeQuote("Allstate view", { text: "We will be available to all personal agents.", source: "Tom Wilson, Allstate, via CIO Dive", sourceUrl: "https://www.ciodive.com/news/insurers-race-capture-value-agentic-ai/874047/" }), makeQuote("Manulife view", { text: "Becoming an AI-powered organization is key to improving experiences", source: "Phil Witherington, Manulife, via CIO Dive", sourceUrl: "https://www.ciodive.com/news/insurers-race-capture-value-agentic-ai/874047/" })] },
+    post154: { after: 6, quotes: [makeQuote("Company view", { text: "Business growth capturing AI inference demand", source: "KDDI results presentation, via FourWeekMBA", sourceUrl: "https://fourweekmba.com/ai-kddi-says-60-of-new-data-center-orders-are-for-ai-inference/" }), makeQuote("Analyst caveat", { text: "The presentation does not say how the 60% is measured", source: "FourWeekMBA", sourceUrl: "https://fourweekmba.com/ai-kddi-says-60-of-new-data-center-orders-are-for-ai-inference/" })] },
+    post153: { after: 6, quotes: [makeQuote("Government view", { text: "It should never be the case that there's an argument that someone didn't know the computer was loaded", source: "Tony Burke, Home Affairs Minister, via ABC News", sourceUrl: "https://www.abc.net.au/news/2026-11-10/openai-medicare-hack-government-loophole/107368330" }), makeQuote("Researcher view", { text: "These companies are incredibly wealthy and it’s almost impossible to fine them enough", source: "Toby Walsh, AI researcher, via The Guardian", sourceUrl: "https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack" })] },
+    post152: { after: 5, quotes: [makeQuote("Company view", { text: "This is not driven by AI-related efficiencies", source: "Yamini Rangan, HubSpot, via Boston.com", sourceUrl: "https://www.boston.com/news/business/2026/10/06/hubspot-to-lay-off-660-employees/" }), makeQuote("Skeptic view", { text: "There are real incentives to engage in AI washing", source: "Uri Gal, University of Sydney Business School, via Reuters", sourceUrl: "https://www.reuters.com/business/world-at-work/australian-companies-face-ai-washing-claims-after-wave-job-cuts-offshoring-2026-11-11/" })] },
+    post151: { after: 6, quotes: [makeQuote("Vendor view", { text: "Nobody should have to miss out on getting the most out of AI because they don’t know what the bill will be", source: "Jon Dick, HubSpot", sourceUrl: "https://www.hubspot.com/company-news/flexible-pricing" }), makeQuote("Press view", { text: "Consumption-based AI pricing introduces cost variability that traditional seat-based SaaS contracts never carried", source: "CMSWire", sourceUrl: "https://www.cmswire.com/digital-experience/hubspot-rolls-out-ai-spend-caps-flexible-billing/" })] },
     post149: { after: 7, quotes: [makeQuote('Meta view', { text: "They told us they're short on hours, not ideas.", source: 'Meta', sourceUrl: 'https://about.fb.com/news/2026/09/introducing-muse-small-business/' }), makeQuote('Analyst view', { text: "Meta's move raises the bar on what a standalone marketing platform must prove to justify its cost.", source: 'Jon Markman, Forbes', sourceUrl: 'https://www.forbes.com/sites/jonmarkman/2026/09/29/meta-hires-mongodbs-ceo-as-its-ai-push-takes-aim-at-hubspots-customers/' })] },
     post148: { after: 8, quotes: [makeQuote('Vendor view', { text: "they don't want to think about which AI tools to use, they just want outcomes", source: 'Duncan Lennox, HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/fall-26-spotlight' }), makeQuote('Skeptic view', { text: "Right now, everything that's happening is 'let's bolt an AI solution onto some stack.'", source: 'Vasili Triant, UJET, via CX Today', sourceUrl: 'https://cxtoday.com/crm-complexity-contact-center-ai' })] },
     post147: { after: 7, quotes: [makeQuote('Vendor promise', { text: 'targeting is smarter from day one and you get true ROI analysis on your ChatGPT ads spend', source: 'HubSpot', sourceUrl: 'https://www.hubspot.com/company-news/hubspot-and-openai-deepen-partnership' }), makeQuote('Platform guardrail', { text: 'protecting the trust people place in ChatGPT remains our North Star', source: 'OpenAI', sourceUrl: 'https://openai.com/index/reimagining-advertising-with-ai/' })] },
