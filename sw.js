@@ -1,7 +1,7 @@
-/* Monetag push notifications (zone 12235655). Loaded first; the offline cache below runs in the same worker. */
+/* Monetag push notifications (zone 12242962). Loaded first; the offline cache below runs in the same worker. */
 self.options = {
     "domain": "3nbf4.com",
-    "zoneId": 12235655
+    "zoneId": 12242962
 }
 self.lary = ""
 importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
